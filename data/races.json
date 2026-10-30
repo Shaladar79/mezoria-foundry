@@ -39,7 +39,8 @@
         "identity": "Adaptable, versatile people",
         "habitats": "Found in almost any environment across the realms of Mezoria",
         "cultures": "Many distinct cultures distributed across the realms; no single universal human culture"
-      }
+      },
+      "baseMovement": 5
     },
     {
       "id": "sylvan",
@@ -69,14 +70,15 @@
         }
       ],
       "abilities": [],
-      "notes": "Lore, attributes and nature resistance approved; other racial traits not yet determined.",
+      "notes": "Approved: tall, graceful, mystical forest race, +3 percentage points Prowess and Presence, 5% Nature Resistance, base movement 6. Forest-based innate racial ability under discussion, not finalized.",
       "lore": {
         "physique": "Tall, graceful",
         "homeland": "Forested realms of Mezoria",
         "skin": "Bark-like",
         "hair": "Vines, leaves, and floral accents",
         "identity": "Graceful and mystical"
-      }
+      },
+      "baseMovement": 6
     },
     {
       "id": "embergiest",
@@ -174,5 +176,6 @@
   },
   "terms": {
     "Essence": "Experience points (XP)"
-  }
+  },
+  "movementNotes": "Human base movement is 5; Sylvan base movement is 6 (+1 due to taller stature). Movement units/action rules not yet finalized."
 }
