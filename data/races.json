@@ -8,10 +8,34 @@
       "designOrder": "initial",
       "subgroupType": null,
       "subgroups": [],
-      "attributes": null,
-      "traits": [],
+      "attributes": {
+        "choiceCount": 3,
+        "bonusPercentPerChosenAttribute": 2,
+        "distinctAttributes": true,
+        "rounding": "pending",
+        "application": "percent modifier; exact rounding/order TBD"
+      },
+      "traits": [
+        {
+          "id": "human-adaptability",
+          "name": "Adaptable",
+          "effect": "Choose three distinct attributes; each receives a +2% racial modifier."
+        },
+        {
+          "id": "human-versatility",
+          "name": "Versatile",
+          "effect": "Gain one additional Skill Talent of choice at character creation.",
+          "additionalSkillTalentChoices": 1
+        },
+        {
+          "id": "human-essence-affinity",
+          "name": "Essence Affinity",
+          "effect": "Gain 5% additional Essence from all sources.",
+          "essenceGainMultiplier": 1.05
+        }
+      ],
       "abilities": [],
-      "notes": "Lore identity approved; mechanical attributes, traits and talents remain to be designed.",
+      "notes": "Approved racial mechanics. Attribute bonus rounding and stacking order remain to be designed.",
       "lore": {
         "identity": "Adaptable, versatile people",
         "habitats": "Found in almost any environment across the realms of Mezoria",
@@ -122,5 +146,8 @@
     "name": null,
     "status": "user recalls at least one more race but not its name",
     "mechanics": null
+  },
+  "terms": {
+    "Essence": "Experience points (XP)"
   }
 }
