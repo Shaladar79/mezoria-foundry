@@ -94,10 +94,35 @@
       "designOrder": "initial",
       "subgroupType": null,
       "subgroups": [],
-      "attributes": null,
+      "attributes": {
+        "bonuses": [
+          {
+            "attribute": "Might",
+            "percentagePoints": 3
+          },
+          {
+            "attribute": "Endurance",
+            "percentagePoints": 3
+          }
+        ]
+      },
       "traits": [],
-      "abilities": [],
-      "notes": "Mechanics and lore not yet specified"
+      "abilities": [
+        {
+          "id": "barehanded-forging",
+          "name": "Bare-Handed Forging",
+          "type": "innate-racial",
+          "description": "Can forge metal using their bare hands, without requiring ordinary external heating tools.",
+          "mechanicsStatus": "Limits, crafting checks, and interaction with Crafting talent to be determined"
+        }
+      ],
+      "notes": "Origin, appearance, smithing tradition, +3 Might and Endurance percentage points, and movement 4 established. Any damage resistances or crafting proficiency bonuses remain undecided.",
+      "lore": {
+        "origin": "Children of the volcanoes, born from flows of magma",
+        "appearance": "Skin of stone with the heat of magma glowing from within",
+        "craftTradition": "All Embergiests are expert smiths, able to forge metal with their bare hands"
+      },
+      "baseMovement": 4
     },
     {
       "id": "faye",
