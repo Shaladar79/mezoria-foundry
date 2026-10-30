@@ -11,7 +11,12 @@
       "attributes": null,
       "traits": [],
       "abilities": [],
-      "notes": "Mechanics and lore not yet specified"
+      "notes": "Lore identity approved; mechanical attributes, traits and talents remain to be designed.",
+      "lore": {
+        "identity": "Adaptable, versatile people",
+        "habitats": "Found in almost any environment across the realms of Mezoria",
+        "cultures": "Many distinct cultures distributed across the realms; no single universal human culture"
+      }
     },
     {
       "id": "sylvan",
