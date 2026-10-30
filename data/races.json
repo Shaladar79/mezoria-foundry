@@ -69,8 +69,16 @@
           "calculation": "pending full resistance system"
         }
       ],
-      "abilities": [],
-      "notes": "Approved: tall, graceful, mystical forest race, +3 percentage points Prowess and Presence, 5% Nature Resistance, base movement 6. Forest-based innate racial ability under discussion, not finalized.",
+      "abilities": [
+        {
+          "id": "forest-stride",
+          "name": "Forest Stride",
+          "type": "innate-racial",
+          "description": "Ordinary natural forest undergrowth, roots, fallen branches, and vegetation do not impose movement penalties on the Sylvan.",
+          "limitations": "Does not bypass magical obstacles, impassable terrain, or physical hazards that genuinely prevent movement."
+        }
+      ],
+      "notes": "Approved: tall graceful mystical forest race, +3 percentage points Prowess and Presence, 5% Nature Resistance, base movement 6, Forest Stride. Resistance math pending.",
       "lore": {
         "physique": "Tall, graceful",
         "homeland": "Forested realms of Mezoria",
