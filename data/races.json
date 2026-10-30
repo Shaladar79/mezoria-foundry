@@ -210,8 +210,16 @@
           "calculation": "Pending full resistance system"
         }
       ],
-      "abilities": [],
-      "notes": "Approved race appearance and bonuses. Additional innate abilities, if any, remain undecided.",
+      "abilities": [
+        {
+          "id": "rune-mastery",
+          "name": "Rune Mastery",
+          "type": "innate-racial",
+          "description": "Can read and understand runes, identifying their nature and effects.",
+          "limitations": "Understanding a rune does not by itself activate, disable, alter, or reproduce its magic; whether exceptional runes require checks is not yet defined."
+        }
+      ],
+      "notes": "Confirmed: crystalline humanoid, internal runic markings, arcane resonance, +3 percentage points Intellect and Endurance, movement 4, 5% Arcane Resistance, innate Rune Mastery.",
       "lore": {
         "body": "Humanoid made of crystalline structures",
         "markings": "Runic markings within their crystalline bodies",
