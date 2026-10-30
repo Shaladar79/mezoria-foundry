@@ -228,17 +228,6 @@
       "baseMovement": 4
     },
     {
-      "id": "atherian",
-      "name": "Atherian",
-      "designOrder": "initial",
-      "subgroupType": null,
-      "subgroups": [],
-      "attributes": null,
-      "traits": [],
-      "abilities": [],
-      "notes": "Mechanics and lore not yet specified"
-    },
-    {
       "id": "mythrain",
       "name": "Mythrain",
       "designOrder": "last",
@@ -283,11 +272,6 @@
       "notes": "Mechanics and lore not yet specified"
     }
   ],
-  "unnamedRacePlaceholder": {
-    "name": null,
-    "status": "user recalls at least one more race but not its name",
-    "mechanics": null
-  },
   "terms": {
     "Essence": "Experience points (XP)"
   },
