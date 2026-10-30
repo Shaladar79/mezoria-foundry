@@ -138,10 +138,50 @@
       "designOrder": "initial",
       "subgroupType": null,
       "subgroups": [],
-      "attributes": null,
-      "traits": [],
-      "abilities": [],
-      "notes": "Mechanics and lore not yet specified"
+      "attributes": {
+        "bonuses": [
+          {
+            "attribute": "Prowess",
+            "percentagePoints": 3
+          },
+          {
+            "attribute": "Presence",
+            "percentagePoints": 3
+          }
+        ]
+      },
+      "traits": [
+        {
+          "id": "faye-mind-control-resistance",
+          "name": "Mind Control Resistance",
+          "resistanceType": "mind-control effects",
+          "valuePercent": 5,
+          "calculation": "How percentage applies to mind control effects is pending resistance rules"
+        }
+      ],
+      "abilities": [
+        {
+          "id": "faye-low-flight",
+          "name": "Low-Altitude Flight",
+          "type": "innate-racial",
+          "description": "Can hover and fly close to the ground at movement speed 5, while ground movement is 3.",
+          "maximumHeightFeet": 5,
+          "mechanicsStatus": "Rules for airborne movement and interaction with terrain pending"
+        }
+      ],
+      "notes": "Approved lore, +3 percentage points Prowess and Presence, 5% mind control resistance, ground speed 3 and low flight 5 with a five-foot height limit; other mechanics pending.",
+      "lore": {
+        "height": "Approximately 3 feet tall",
+        "appearance": "Small fairies with luminescent hair and wings",
+        "flightMechanism": "Wings produce sufficient lift only while within five feet of the ground"
+      },
+      "baseMovement": 3,
+      "movement": {
+        "ground": 3,
+        "flight": 5,
+        "flightMaxHeightFeet": 5,
+        "flightRestriction": "Must remain within five feet of the ground for wing-generated lift; cannot fly higher by this racial ability alone."
+      }
     },
     {
       "id": "prismatic",
