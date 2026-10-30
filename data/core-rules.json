@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "status": "design-foundation",
+  "playable": false,
+  "ranks": [
+    {
+      "rank": 0,
+      "name": "Normal",
+      "use": "unmarked NPC baseline"
+    },
+    {
+      "rank": 1,
+      "name": "Quartz",
+      "feature": "markOfPower",
+      "playerStartingRank": true
+    },
+    {
+      "rank": 2,
+      "name": "Garnet",
+      "feature": "specialization"
+    },
+    {
+      "rank": 3,
+      "name": "Amethyst",
+      "feature": "soulWeapon"
+    },
+    {
+      "rank": 4,
+      "name": "Topaz",
+      "feature": "elementalMark",
+      "deferred": true
+    },
+    {
+      "rank": 5,
+      "name": "Opal",
+      "feature": "beastMark",
+      "deferred": true
+    },
+    {
+      "rank": 6,
+      "name": "Emerald",
+      "feature": "conceptMark",
+      "deferred": true
+    },
+    {
+      "rank": 7,
+      "name": "Ruby",
+      "feature": "eldritchMark",
+      "deferred": true
+    },
+    {
+      "rank": 8,
+      "name": "Sapphire",
+      "deferred": true
+    },
+    {
+      "rank": 9,
+      "name": "Diamond",
+      "deferred": true
+    },
+    {
+      "rank": 10,
+      "name": "Astralite",
+      "deferred": true
+    }
+  ],
+  "phaseOneMaxRank": 3,
+  "attributes": {
+    "names": [
+      "Might",
+      "Prowess",
+      "Endurance",
+      "Intellect",
+      "Presence"
+    ],
+    "preAllocationBase": 25,
+    "startingAllocationPool": null
+  },
+  "marksOfPower": [
+    {
+      "id": "defender",
+      "specializations": [
+        "guardian",
+        "bulwark",
+        "vanguard"
+      ]
+    },
+    {
+      "id": "striker",
+      "specializations": [
+        "ravager",
+        "reaver",
+        "marksman"
+      ]
+    },
+    {
+      "id": "skirmisher",
+      "specializations": [
+        "stalker",
+        "duelist",
+        "ranger"
+      ]
+    },
+    {
+      "id": "warden",
+      "specializations": [
+        "restoration",
+        "lifebinder",
+        "preserver"
+      ]
+    },
+    {
+      "id": "arcanist",
+      "specializations": [
+        "evoker",
+        "enchanter",
+        "conjurer"
+      ]
+    },
+    {
+      "id": "adept",
+      "specializations": [
+        "traveler",
+        "herald",
+        "artificer"
+      ]
+    }
+  ],
+  "characterCreation": {
+    "startingRank": 1,
+    "skillTalents": {
+      "markGrantCount": 2,
+      "markGrantCountStatus": "provisional: user phrasing previously also mentioned three; using latest clarified working allocation",
+      "playerChoiceCount": 3,
+      "backgroundGrantCount": 1,
+      "backgroundOptionsStatus": "deferred until after races",
+      "markSkillListsStatus": "not yet assigned",
+      "raceOptionsStatus": "not yet designed",
+      "skillSelectionsStatus": "not yet finalized"
+    }
+  },
+  "skills": {
+    "governingAttributeAsBasePercent": true,
+    "tiers": [
+      {
+        "id": "untrained",
+        "bonus": 0
+      },
+      {
+        "id": "talent",
+        "bonus": 5
+      },
+      {
+        "id": "expertise",
+        "bonus": 10,
+        "requires": "talent"
+      },
+      {
+        "id": "mastery",
+        "bonus": 15,
+        "requires": "expertise"
+      }
+    ],
+    "someSkillsRequireTraining": true,
+    "trainingGatesStatus": "skill roster and restrictions pending",
+    "spellcastingAndArcana": "proposed distinct talents, awaiting final confirmation"
+  },
+  "rolls": {
+    "dice": "1d100",
+    "successCondition": "roll <= modified target",
+    "successesOnSuccess": "1 + floor((modified target - roll) / 10)",
+    "criticalNaturalRange": [
+      1,
+      5
+    ],
+    "criticalExtraSuccesses": 3
+  },
+  "resources": {
+    "names": [
+      "Health",
+      "Mana"
+    ],
+    "allActivatedPowersUseMana": true,
+    "healthAttributeTens": "floor(Might/10) + floor(Endurance/10)",
+    "manaAttributeTens": "floor(Intellect/10) + floor(Presence/10)",
+    "finalPoolScaling": "pending"
+  },
+  "combat": {
+    "physicalDefense": "Dodge + Block + Parry",
+    "baseDodge": "floor(Prowess/10)",
+    "avoidableSpellDefense": "Dodge + Spell Resistance",
+    "unavoidableSpellDefense": "Spell Resistance",
+    "damageOrder": [
+      "applicableDamageResistance",
+      "shieldMitigationPool",
+      "armorMitigationPool",
+      "Health",
+      "Wounds"
+    ],
+    "damagePerSuccess": "weapon or ability specific; values pending"
+  },
+  "wounds": {
+    "quartzBaseCapacity": 3,
+    "threshold": "Rank + floor(floor(Endurance/10)/2)",
+    "positiveOverflowWounds": "ceil(overflow / threshold)",
+    "fullWoundState": "Bleeding to Death",
+    "rankZeroZeroThresholdHandling": "pending"
+  },
+  "soulWeapon": {
+    "awakeningRank": 3,
+    "identity": "unique physical manifestation of the wielder's soul",
+    "progression": "grows with wielder; mechanical details pending"
+  },
+  "futureMarks": {
+    "elementalChoices": [
+      "Fire",
+      "Water",
+      "Earth",
+      "Air",
+      "Nature",
+      "Light",
+      "Shadow",
+      "Arcane",
+      "Lightning",
+      "Ice"
+    ],
+    "conceptChoices": [
+      "Time",
+      "Space",
+      "Gravity",
+      "Order",
+      "Life",
+      "Death",
+      "Dream",
+      "Spirit",
+      "Fate",
+      "Chaos",
+      "Void",
+      "Balance"
+    ],
+    "eldritchFormation": "standardized combination of Power, Specialization, Elemental, and Concept Marks; enhances Soul Weapon and familiar; neither determines Eldritch identity",
+    "implementation": "deferred"
+  }
+}
