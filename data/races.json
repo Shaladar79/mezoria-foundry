@@ -106,7 +106,15 @@
           }
         ]
       },
-      "traits": [],
+      "traits": [
+        {
+          "id": "embergiest-fire-resistance",
+          "name": "Fire Resistance",
+          "resistanceType": "Fire",
+          "valuePercent": 5,
+          "calculation": "pending full resistance system"
+        }
+      ],
       "abilities": [
         {
           "id": "barehanded-forging",
@@ -116,7 +124,7 @@
           "mechanicsStatus": "Limits, crafting checks, and interaction with Crafting talent to be determined"
         }
       ],
-      "notes": "Origin, appearance, smithing tradition, +3 Might and Endurance percentage points, and movement 4 established. Any damage resistances or crafting proficiency bonuses remain undecided.",
+      "notes": "Approved: volcanic origin, stone skin with magma glow, expert smiths, +3 percentage points Might and Endurance, movement 4, bare-handed forging, 5% Fire Resistance. Crafting and resistance calculations pending.",
       "lore": {
         "origin": "Children of the volcanoes, born from flows of magma",
         "appearance": "Skin of stone with the heat of magma glowing from within",
