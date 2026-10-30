@@ -289,13 +289,13 @@
       ],
       "abilities": [
         {
-          "id": "anthozoan-water-breathing",
-          "name": "Water Breathing",
+          "id": "anthozoan-amphibious-breathing",
+          "name": "Amphibious Breathing",
           "type": "innate-racial",
-          "description": "Can breathe underwater."
+          "description": "Can naturally breathe both air and water."
         }
       ],
-      "notes": "Approved coral-colony origin, aquatic humanoid form, +3 percentage points Endurance and Presence, 5% Water Resistance, water breathing, land movement 4, swim movement 6. Air breathing not yet defined.",
+      "notes": "Approved coral-colony aquatic humanoid, +3 percentage points Endurance and Presence, 5% Water Resistance, air and water breathing, land movement 4, swim movement 6.",
       "lore": {
         "origin": "Born from the reefs of Mezoria",
         "appearance": "Aquatic humanoid formed from coral",
