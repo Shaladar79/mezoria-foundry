@@ -266,10 +266,46 @@
       "designOrder": "initial",
       "subgroupType": null,
       "subgroups": [],
-      "attributes": null,
-      "traits": [],
-      "abilities": [],
-      "notes": "Mechanics and lore not yet specified"
+      "attributes": {
+        "bonuses": [
+          {
+            "attribute": "Endurance",
+            "percentagePoints": 3
+          },
+          {
+            "attribute": "Presence",
+            "percentagePoints": 3
+          }
+        ]
+      },
+      "traits": [
+        {
+          "id": "anthozoan-water-resistance",
+          "name": "Water Resistance",
+          "resistanceType": "Water",
+          "valuePercent": 5,
+          "calculation": "pending full resistance system"
+        }
+      ],
+      "abilities": [
+        {
+          "id": "anthozoan-water-breathing",
+          "name": "Water Breathing",
+          "type": "innate-racial",
+          "description": "Can breathe underwater."
+        }
+      ],
+      "notes": "Approved coral-colony origin, aquatic humanoid form, +3 percentage points Endurance and Presence, 5% Water Resistance, water breathing, land movement 4, swim movement 6. Air breathing not yet defined.",
+      "lore": {
+        "origin": "Born from the reefs of Mezoria",
+        "appearance": "Aquatic humanoid formed from coral",
+        "biology": "A sentient coral colony inhabiting a humanoid form"
+      },
+      "baseMovement": 4,
+      "movement": {
+        "land": 4,
+        "swim": 6
+      }
     }
   ],
   "terms": {
