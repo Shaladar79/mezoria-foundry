@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "status": "names-confirmed-mechanics-pending",
+  "races": [
+    {
+      "id": "human",
+      "name": "Human",
+      "designOrder": "initial",
+      "subgroupType": null,
+      "subgroups": [],
+      "attributes": null,
+      "traits": [],
+      "abilities": [],
+      "notes": "Mechanics and lore not yet specified"
+    },
+    {
+      "id": "sylvan",
+      "name": "Sylvan",
+      "designOrder": "initial",
+      "subgroupType": null,
+      "subgroups": [],
+      "attributes": null,
+      "traits": [],
+      "abilities": [],
+      "notes": "Mechanics and lore not yet specified"
+    },
+    {
+      "id": "embergiest",
+      "name": "Embergiest",
+      "designOrder": "initial",
+      "subgroupType": null,
+      "subgroups": [],
+      "attributes": null,
+      "traits": [],
+      "abilities": [],
+      "notes": "Mechanics and lore not yet specified"
+    },
+    {
+      "id": "faye",
+      "name": "Faye",
+      "designOrder": "initial",
+      "subgroupType": null,
+      "subgroups": [],
+      "attributes": null,
+      "traits": [],
+      "abilities": [],
+      "notes": "Mechanics and lore not yet specified"
+    },
+    {
+      "id": "prismatic",
+      "name": "Prismatic",
+      "designOrder": "initial",
+      "subgroupType": null,
+      "subgroups": [],
+      "attributes": null,
+      "traits": [],
+      "abilities": [],
+      "notes": "Mechanics and lore not yet specified"
+    },
+    {
+      "id": "atherian",
+      "name": "Atherian",
+      "designOrder": "initial",
+      "subgroupType": null,
+      "subgroups": [],
+      "attributes": null,
+      "traits": [],
+      "abilities": [],
+      "notes": "Mechanics and lore not yet specified"
+    },
+    {
+      "id": "mythrain",
+      "name": "Mythrain",
+      "designOrder": "last",
+      "subgroupType": "tribes",
+      "subgroups": [],
+      "attributes": null,
+      "traits": [],
+      "abilities": [],
+      "notes": "Mechanics and lore not yet specified"
+    },
+    {
+      "id": "draconian",
+      "name": "Draconian",
+      "designOrder": "last",
+      "subgroupType": "clans",
+      "subgroups": [],
+      "attributes": null,
+      "traits": [],
+      "abilities": [],
+      "notes": "Mechanics and lore not yet specified"
+    },
+    {
+      "id": "sion",
+      "name": "Sion",
+      "designOrder": "last",
+      "subgroupType": "aspects",
+      "subgroups": [],
+      "attributes": null,
+      "traits": [],
+      "abilities": [],
+      "notes": "Mechanics and lore not yet specified"
+    },
+    {
+      "id": "anthozoans",
+      "name": "Anthozoans",
+      "designOrder": "initial",
+      "subgroupType": null,
+      "subgroups": [],
+      "attributes": null,
+      "traits": [],
+      "abilities": [],
+      "notes": "Mechanics and lore not yet specified"
+    }
+  ],
+  "unnamedRacePlaceholder": {
+    "name": null,
+    "status": "user recalls at least one more race but not its name",
+    "mechanics": null
+  }
+}
