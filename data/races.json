@@ -47,10 +47,36 @@
       "designOrder": "initial",
       "subgroupType": null,
       "subgroups": [],
-      "attributes": null,
-      "traits": [],
+      "attributes": {
+        "bonuses": [
+          {
+            "attribute": "Prowess",
+            "percentagePoints": 3
+          },
+          {
+            "attribute": "Presence",
+            "percentagePoints": 3
+          }
+        ]
+      },
+      "traits": [
+        {
+          "id": "sylvan-nature-resistance",
+          "name": "Nature Resistance",
+          "resistanceType": "Nature",
+          "valuePercent": 5,
+          "calculation": "pending full resistance system"
+        }
+      ],
       "abilities": [],
-      "notes": "Mechanics and lore not yet specified"
+      "notes": "Lore, attributes and nature resistance approved; other racial traits not yet determined.",
+      "lore": {
+        "physique": "Tall, graceful",
+        "homeland": "Forested realms of Mezoria",
+        "skin": "Bark-like",
+        "hair": "Vines, leaves, and floral accents",
+        "identity": "Graceful and mystical"
+      }
     },
     {
       "id": "embergiest",
