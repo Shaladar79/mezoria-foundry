@@ -10,16 +10,15 @@
       "subgroups": [],
       "attributes": {
         "choiceCount": 3,
-        "bonusPercentPerChosenAttribute": 2,
+        "bonusPercentagePointsPerChosenAttribute": 2,
         "distinctAttributes": true,
-        "rounding": "pending",
-        "application": "percent modifier; exact rounding/order TBD"
+        "application": "Flat +2 percentage points added to each selected attribute score (e.g. 35% becomes 37%), not 2% of current score."
       },
       "traits": [
         {
           "id": "human-adaptability",
           "name": "Adaptable",
-          "effect": "Choose three distinct attributes; each receives a +2% racial modifier."
+          "effect": "Choose three distinct attributes; each increases by 2 percentage points (e.g. 35% to 37%)."
         },
         {
           "id": "human-versatility",
@@ -35,7 +34,7 @@
         }
       ],
       "abilities": [],
-      "notes": "Approved racial mechanics. Attribute bonus rounding and stacking order remain to be designed.",
+      "notes": "Approved racial mechanics. Attributes themselves are percentages; +2% means +2 percentage points, not multiplicative scaling. Essence bonus remains multiplicative +5%.",
       "lore": {
         "identity": "Adaptable, versatile people",
         "habitats": "Found in almost any environment across the realms of Mezoria",
