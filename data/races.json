@@ -189,10 +189,35 @@
       "designOrder": "initial",
       "subgroupType": null,
       "subgroups": [],
-      "attributes": null,
-      "traits": [],
+      "attributes": {
+        "bonuses": [
+          {
+            "attribute": "Intellect",
+            "percentagePoints": 3
+          },
+          {
+            "attribute": "Endurance",
+            "percentagePoints": 3
+          }
+        ]
+      },
+      "traits": [
+        {
+          "id": "prismatic-arcane-resistance",
+          "name": "Arcane Resistance",
+          "resistanceType": "Arcane",
+          "valuePercent": 5,
+          "calculation": "Pending full resistance system"
+        }
+      ],
       "abilities": [],
-      "notes": "Mechanics and lore not yet specified"
+      "notes": "Approved race appearance and bonuses. Additional innate abilities, if any, remain undecided.",
+      "lore": {
+        "body": "Humanoid made of crystalline structures",
+        "markings": "Runic markings within their crystalline bodies",
+        "affinity": "Resonate with arcane forces"
+      },
+      "baseMovement": 4
     },
     {
       "id": "atherian",
