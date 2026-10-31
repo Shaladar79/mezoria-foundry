@@ -139,3 +139,9 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Eligible damage is absorbed by the shield pool after applicable resistance and before armor mitigation, up to the shield's remaining capacity.
 - This does not change equipment shield Block rules: ordinary equipped shields cannot Block magic unless they have an explicit relevant property.
 - Still pending: how limited shield capacity is allocated among damage components when a mixed-type attack exceeds the remaining magical shield pool.
+
+## Magical shield mixed-damage allocation: Physical first (approved)
+- After resolving each damage type's resistance independently, eligible **Physical damage consumes an ability-created magical shield mitigation pool before eligible non-Physical damage**.
+- Shield mitigation is limited by its current remaining pool and the types the ability can absorb.
+- Example: a standard barrier with 15 mitigation takes 12 Physical + 8 Fire after resistance; it absorbs 12 Physical and 3 Fire, leaving 5 Fire. Ordinary armor cannot absorb the remaining Fire.
+- Ordering when an attack includes **multiple non-Physical damage types** remains pending.
