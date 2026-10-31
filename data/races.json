@@ -1325,11 +1325,36 @@
           "name": "Fire",
           "element": "Fire",
           "bodyComposition": "Living fire elemental energy in humanoid form",
-          "attributes": null,
-          "movement": null,
-          "resistance": null,
-          "innateAbility": null,
-          "mechanicsStatus": "pending"
+          "attributes": {
+            "bonuses": [
+              {
+                "attribute": "Intellect",
+                "percentagePoints": 3
+              },
+              {
+                "attribute": "Presence",
+                "percentagePoints": 3
+              }
+            ]
+          },
+          "movement": {
+            "ground": 5
+          },
+          "resistance": {
+            "type": "Fire",
+            "valuePercent": 5,
+            "calculation": "pending general resistance rules"
+          },
+          "innateAbility": {
+            "name": "Living Flame",
+            "type": "innate-aspect",
+            "description": "Produce light from the Scion's own fiery body at will. The light may be suppressed or restored voluntarily.",
+            "manaCost": 0,
+            "activation": "at will",
+            "additionalDamage": 0,
+            "lightRadius": "pending illumination rules"
+          },
+          "mechanicsStatus": "approved"
         },
         {
           "name": "Water",
