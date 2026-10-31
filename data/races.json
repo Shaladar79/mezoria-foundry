@@ -648,12 +648,35 @@
             {
               "name": "Strigine",
               "creatures": "Owls",
-              "mechanicsStatus": "pending",
-              "attributes": null,
-              "movement": null,
-              "innateAbility": null,
+              "mechanicsStatus": "approved; detailed glide movement mechanics pending",
+              "attributes": {
+                "bonuses": [
+                  {
+                    "attribute": "Prowess",
+                    "percentagePoints": 3
+                  },
+                  {
+                    "attribute": "Intellect",
+                    "percentagePoints": 3
+                  }
+                ]
+              },
+              "movement": {
+                "ground": 4,
+                "glide": true,
+                "poweredFlight": false,
+                "glideMechanics": "Controls descent, can travel horizontally while losing altitude, cannot ascend from gliding alone; detailed distances pending"
+              },
+              "innateAbility": {
+                "name": "Nocturnal Hunter",
+                "type": "innate-tribal",
+                "description": "Exceptional auditory awareness when hunting or detecting creatures.",
+                "skill": "Perception",
+                "bonusPercentagePoints": 10,
+                "condition": "Checks relying on hearing, including locating creatures in darkness or detecting movement out of sight"
+              },
               "resistance": null,
-              "resistanceStatus": "undecided; optional"
+              "resistanceStatus": "No innate resistance"
             }
           ]
         },
