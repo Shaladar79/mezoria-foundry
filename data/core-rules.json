@@ -424,6 +424,15 @@
         "appliesTo": "multiple eligible non-Physical damage types in a mixed-damage attack",
         "physicalPriority": "Physical always precedes non-Physical damage regardless of attacker preference",
         "lockedAfterDeclaration": true
+      },
+      "stacking": {
+        "status": "approved",
+        "maximumSimultaneousActiveShieldsPerTarget": 1,
+        "stackingAllowed": false,
+        "strongerShieldRule": "Casting/applying a stronger magical shield replaces the existing magical shield entirely, including its damage-type coverage and remaining mitigation pool; pools never add together.",
+        "comparativeStrengthMethod": "pending",
+        "weakerOrEqualShieldRule": "pending",
+        "scope": "Ability-created magical shield mitigation pools; equipment Block shields remain separate"
       }
     }
   },
