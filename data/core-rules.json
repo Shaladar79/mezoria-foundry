@@ -188,7 +188,7 @@
   "combat": {
     "physicalDefense": "Attack-type-dependent: melee uses Parry + applicable Block; ranged uses Dodge + applicable Block. Dodge does not defend melee; Parry does not defend ranged.",
     "baseDodge": "floor(Prowess/10)",
-    "avoidableSpellDefense": "Dodge + Spell Resistance",
+    "avoidableSpellDefense": "Magical projectile: Dodge + Spell Resistance (+ Block only from magic-blocking shield); melee spell: Parry + Spell Resistance (+ Block only from magic-blocking shield)",
     "unavoidableSpellDefense": "Spell Resistance",
     "damageOrder": [
       "applicableDamageResistance",
@@ -220,7 +220,9 @@
         "role": "defense",
         "mechanic": "Grants Block percentage to reduce attackers' chance to hit",
         "usesMitigationPool": false,
-        "exactBlockValues": "pending equipment design"
+        "exactBlockValues": "pending equipment design",
+        "defaultBlocksMagic": false,
+        "canBlockMagicIf": "Shield has an explicit magic-blocking item property"
       },
       "magical": {
         "role": "damage mitigation",
@@ -294,7 +296,38 @@
       },
       "notes": "Block may apply to either melee or ranged when the defender has applicable Block. The interaction of these values with attack rolls and their exact calculations remain pending."
     },
-    "spellDefenseInteractionStatus": "Pending: how melee/ranged restrictions apply to avoidable spells, including whether spell attacks count as ranged for Dodge"
+    "spellDefenseInteractionStatus": "Attack categories and default magic-block restriction approved; detailed calculations pending",
+    "spellDefense": {
+      "magicalProjectile": {
+        "attackCategory": "ranged",
+        "applicableDefense": [
+          "Dodge",
+          "Spell Resistance"
+        ],
+        "conditionalDefense": "Block only if equipped shield explicitly has property allowing magical attacks to be blocked",
+        "defaultEquipmentShieldCanBlock": false,
+        "parryApplies": false
+      },
+      "meleeSpellAttack": {
+        "attackCategory": "melee",
+        "applicableDefense": [
+          "Parry",
+          "Spell Resistance"
+        ],
+        "conditionalDefense": "Block only if equipped shield explicitly has property allowing magical attacks to be blocked",
+        "defaultEquipmentShieldCanBlock": false,
+        "dodgeApplies": false
+      },
+      "unavoidableSpell": {
+        "applicableDefense": [
+          "Spell Resistance"
+        ],
+        "blockApplies": false,
+        "dodgeApplies": false,
+        "parryApplies": false
+      },
+      "note": "Special shield properties can enable Block against magic, but ordinary equipment shields cannot. Exact accuracy and defense resolution remain pending."
+    }
   },
   "wounds": {
     "quartzBaseCapacity": 3,
