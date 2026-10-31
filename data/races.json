@@ -941,12 +941,48 @@
             {
               "name": "Crustacean",
               "creatures": "Crabs, lobsters",
-              "mechanicsStatus": "pending",
-              "attributes": null,
-              "movement": null,
-              "innateAbility": null,
-              "resistance": null,
-              "resistanceStatus": "undecided; optional"
+              "mechanicsStatus": "approved; grapple and damage calculations pending",
+              "attributes": {
+                "bonuses": [
+                  {
+                    "attribute": "Might",
+                    "percentagePoints": 3
+                  },
+                  {
+                    "attribute": "Endurance",
+                    "percentagePoints": 3
+                  }
+                ]
+              },
+              "movement": {
+                "land": 4,
+                "swim": 5
+              },
+              "innateAbility": {
+                "name": "Crushing Claws",
+                "type": "innate-tribal",
+                "description": "Powerful natural pincers allow grappling and restraining opponents.",
+                "skill": "Grapple",
+                "bonusPercentagePoints": 5,
+                "condition": "Checks to initiate or maintain a grapple",
+                "damage": "pending combat system",
+                "grappleMechanics": "pending combat system"
+              },
+              "resistance": {
+                "type": "Physical",
+                "valuePercent": 5,
+                "appliesTo": [
+                  "Slashing",
+                  "Piercing",
+                  "Bludgeoning"
+                ],
+                "calculation": "pending general resistance system"
+              },
+              "resistanceStatus": "approved",
+              "breathing": {
+                "air": true,
+                "water": true
+              }
             }
           ]
         }
