@@ -470,6 +470,20 @@
         "exactMechanics": "Dispel contest, strength comparison, targeting, and success conditions pending magic ability design",
         "notes": "Dispelling is an alternative to depleting the mitigation pool or waiting for duration expiry"
       }
+    },
+    "areaOfEffectDefense": {
+      "status": "approved",
+      "targetResolution": "Resolve each affected creature independently",
+      "perTargetOrder": [
+        "applicableDamageResistance",
+        "magicalShieldMitigationPoolFromAbilities",
+        "armorMitigationPool",
+        "Health",
+        "Wounds"
+      ],
+      "shieldPools": "Each target uses only their own active magical shield mitigation pool; no shared mitigation across targets",
+      "damageTypeRules": "Apply established damage type resistance, magical shield priority, and armor coverage separately for each target",
+      "attackAndSaveMechanics": "Whether area attacks use one attack roll or separate rolls and how unavoidable effects or saves work remains pending"
     }
   },
   "wounds": {
