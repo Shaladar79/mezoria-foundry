@@ -1690,13 +1690,15 @@
           "description": "Summon a magical storage space that the Anthozoan can access to store and retrieve belongings.",
           "storageType": "magical extradimensional",
           "summonable": true,
-          "capacity": "Base capacity pending; may be expanded by racial talents",
+          "capacity": "Base weight limit pending; expanded through future racial talents",
           "manaCost": "pending",
           "summoningAction": "pending",
           "accessAndSecurityRules": "pending",
-          "mechanicsStatus": "approved concept and talent-based capacity progression; initial capacity and summoning/access details pending",
-          "capacityProgression": "Only through racial talents designed later; no automatic increase from rank advancement",
-          "capacityProgressionStatus": "approved"
+          "mechanicsStatus": "approved concept, weight-based capacity and racial-talent expansion; base weight limit and summoning details pending",
+          "capacityProgression": "Racial talents increase the chest's maximum stored weight; no automatic rank-based increase",
+          "capacityProgressionStatus": "approved",
+          "capacitySystem": "weight-based",
+          "capacityUnit": "pending inventory encumbrance system"
         }
       ],
       "notes": "Approved coral-colony aquatic humanoid, +3 percentage points Endurance and Presence, 5% Water Resistance, air and water breathing, land movement 4, swim movement 6. Balance audit: Reinforced Coral natural protection and Chest of the Deep summonable magical storage approved as concepts; exact mechanics pending. Existing racial traits retained.",
