@@ -240,7 +240,24 @@
       "repairCostAndRate": "pending equipment design",
       "magicalRepairRateAndConditions": "pending item design",
       "poolSize": "pending equipment design",
-      "status": "approved foundation"
+      "status": "approved foundation",
+      "fieldRepairs": {
+        "status": "approved foundation",
+        "location": "field; no full workshop required",
+        "skillRequirement": "Appropriate Crafting skill for armor material and type",
+        "skillCheck": "appropriate Crafting check; difficulty pending",
+        "restorationLimitPercentOfMaximumPool": 25,
+        "restorationLimitInterpretation": "Field repair can restore at most 25% of the armor's maximum mitigation pool; whether this cap resets after repeat attempts or is cumulative until workshop repair remains pending",
+        "materialsAndTools": "exact requirements pending",
+        "rounding": "pending shared rounding decision"
+      },
+      "fullRepairs": {
+        "location": "appropriate workshop for armor type",
+        "skillRequirement": "Appropriate Crafting skill",
+        "materialsAndTools": "pending",
+        "canRestoreFullPool": true,
+        "checkAndTime": "pending"
+      }
     }
   },
   "wounds": {
