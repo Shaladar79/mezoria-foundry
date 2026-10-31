@@ -207,6 +207,13 @@
       "damageTypeHandling": "apply only to matching damage type; mixed-type hits have their portions calculated separately",
       "fractionalCarryover": false,
       "notes": "At 5% resistance, 1 incoming matching damage is fully prevented; balance impact on small attacks should be playtested."
+    },
+    "mixedDamageResistance": {
+      "status": "approved",
+      "rule": "For attacks with multiple damage types, divide incoming damage by damage type and resolve applicable resistance on each component separately, using the approved floor with minimum 1 prevention for positive matching resistance and damage.",
+      "perTypeFormula": "min(componentDamage, max(1, floor(componentDamage * applicableResistancePercent / 100))) when both componentDamage and applicableResistancePercent are positive; otherwise zero",
+      "order": "Resolve each type's resistance separately first, then carry combined remaining damage to shield mitigation, armor mitigation, Health and Wounds in the established damage order.",
+      "shieldArmorHandling": "How subsequent shield and armor mitigation is allocated among remaining damage types is pending."
     }
   },
   "wounds": {
