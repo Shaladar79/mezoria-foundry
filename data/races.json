@@ -232,11 +232,162 @@
       "name": "Mythrain",
       "designOrder": "last",
       "subgroupType": "tribes",
-      "subgroups": [],
+      "subgroups": [
+        "Lupine",
+        "Feline",
+        "Ursine",
+        "Cervine",
+        "Vulpine",
+        "Saurian",
+        "Serpentine",
+        "Crocodilian",
+        "Chelonian",
+        "Aquiline",
+        "Corvine",
+        "Strigine",
+        "Mantid",
+        "Formicine",
+        "Scarabine",
+        "Arachnid",
+        "Selachian",
+        "Cephalid",
+        "Anuran",
+        "Crustacean"
+      ],
       "attributes": null,
       "traits": [],
       "abilities": [],
-      "notes": "Mechanics and lore not yet specified"
+      "notes": "Twenty tribe names and creature associations approved; racial and tribal mechanics pending. Arachnids grouped with Insectoid for roster purposes.",
+      "lore": {
+        "identity": "Beastfolk of Mezoria, divided into tribes inspired by mammals, reptiles, avians, insectoids and aquatic creatures."
+      },
+      "tribeFamilies": [
+        {
+          "name": "Mammalian",
+          "tribes": [
+            {
+              "name": "Lupine",
+              "creatures": "Wolves",
+              "mechanicsStatus": "pending"
+            },
+            {
+              "name": "Feline",
+              "creatures": "Cats, lions, tigers, panthers",
+              "mechanicsStatus": "pending"
+            },
+            {
+              "name": "Ursine",
+              "creatures": "Bears",
+              "mechanicsStatus": "pending"
+            },
+            {
+              "name": "Cervine",
+              "creatures": "Deer, elk",
+              "mechanicsStatus": "pending"
+            },
+            {
+              "name": "Vulpine",
+              "creatures": "Foxes",
+              "mechanicsStatus": "pending"
+            }
+          ]
+        },
+        {
+          "name": "Reptilian",
+          "tribes": [
+            {
+              "name": "Saurian",
+              "creatures": "Lizards",
+              "mechanicsStatus": "pending"
+            },
+            {
+              "name": "Serpentine",
+              "creatures": "Snakes",
+              "mechanicsStatus": "pending"
+            },
+            {
+              "name": "Crocodilian",
+              "creatures": "Crocodiles, alligators",
+              "mechanicsStatus": "pending"
+            },
+            {
+              "name": "Chelonian",
+              "creatures": "Turtles, tortoises",
+              "mechanicsStatus": "pending"
+            }
+          ]
+        },
+        {
+          "name": "Avian",
+          "tribes": [
+            {
+              "name": "Aquiline",
+              "creatures": "Eagles, hawks",
+              "mechanicsStatus": "pending"
+            },
+            {
+              "name": "Corvine",
+              "creatures": "Ravens, crows",
+              "mechanicsStatus": "pending"
+            },
+            {
+              "name": "Strigine",
+              "creatures": "Owls",
+              "mechanicsStatus": "pending"
+            }
+          ]
+        },
+        {
+          "name": "Insectoid",
+          "tribes": [
+            {
+              "name": "Mantid",
+              "creatures": "Praying mantises",
+              "mechanicsStatus": "pending"
+            },
+            {
+              "name": "Formicine",
+              "creatures": "Ants",
+              "mechanicsStatus": "pending"
+            },
+            {
+              "name": "Scarabine",
+              "creatures": "Beetles",
+              "mechanicsStatus": "pending"
+            },
+            {
+              "name": "Arachnid",
+              "creatures": "Spiders, scorpions",
+              "mechanicsStatus": "pending"
+            }
+          ]
+        },
+        {
+          "name": "Aquatic",
+          "tribes": [
+            {
+              "name": "Selachian",
+              "creatures": "Sharks",
+              "mechanicsStatus": "pending"
+            },
+            {
+              "name": "Cephalid",
+              "creatures": "Octopuses, cuttlefish",
+              "mechanicsStatus": "pending"
+            },
+            {
+              "name": "Anuran",
+              "creatures": "Frogs, toads",
+              "mechanicsStatus": "pending"
+            },
+            {
+              "name": "Crustacean",
+              "creatures": "Crabs, lobsters",
+              "mechanicsStatus": "pending"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "draconian",
