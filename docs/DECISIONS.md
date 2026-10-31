@@ -106,3 +106,10 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Roll d100. An attack succeeds when the roll is at most the **final attack target**.
 - Successful attack's successes use **1 + floor((final attack target − roll) / 10)**, so defense can reduce both accuracy and success count.
 - Existing successful natural 01–05 critical bonus of 3 successes remains unchanged; target floors/ceilings and edge cases will be reviewed separately.
+
+## Automatic low-roll hits and critical successes (approved)
+- On **attack rolls**, natural **01–05 always hits**, even if defenses reduce the final attack target to 0 or below. The minimum hit probability is therefore 5%.
+- If the **final attack target is 5% or less**, a natural 01–05 hit is a **normal success (1 success)** and gets **no +3 critical successes**.
+- If the final attack target is **greater than 5%**, natural 01–05 retains the ordinary **+3 critical successes**, calculated in addition to the standard success formula.
+- All other successful attacks calculate successes with `1 + floor((final target − roll)/10)`.
+- This modifies **combat attack** resolution; non-attack skill checks are not changed by this decision.
