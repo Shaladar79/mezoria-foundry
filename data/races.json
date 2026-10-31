@@ -582,19 +582,9 @@
             {
               "name": "Aquiline",
               "creatures": "Eagles, hawks",
-              "mechanicsStatus": "Gliding instead of powered flight approved; other traits remain proposed",
-              "attributes": null,
-              "movement": {
-                "ground": null,
-                "glide": true,
-                "poweredFlight": false,
-                "glideMechanics": "pending"
-              },
-              "innateAbility": null,
-              "resistance": null,
-              "resistanceStatus": "undecided; optional",
-              "proposals": {
-                "attributes": [
+              "mechanicsStatus": "approved; exact gliding distance and action rules pending",
+              "attributes": {
+                "bonuses": [
                   {
                     "attribute": "Prowess",
                     "percentagePoints": 3
@@ -603,16 +593,24 @@
                     "attribute": "Intellect",
                     "percentagePoints": 3
                   }
-                ],
-                "groundMovement": 4,
-                "resistance": null,
-                "innateAbility": {
-                  "name": "Eagle Eyes",
-                  "skill": "Perception",
-                  "bonusPercentagePoints": 10,
-                  "condition": "Spotting distant creatures, objects or movement"
-                }
-              }
+                ]
+              },
+              "movement": {
+                "ground": 4,
+                "glide": true,
+                "poweredFlight": false,
+                "glideMechanics": "Can control descent, travel horizontally while losing altitude, cannot gain altitude through gliding alone; exact glide distance ratio pending."
+              },
+              "innateAbility": {
+                "name": "Eagle Eyes",
+                "type": "innate-tribal",
+                "skill": "Perception",
+                "bonusPercentagePoints": 10,
+                "condition": "Spotting distant creatures, movement, or objects",
+                "description": "Exceptional long-range vision."
+              },
+              "resistance": null,
+              "resistanceStatus": "No innate resistance"
             },
             {
               "name": "Corvine",
