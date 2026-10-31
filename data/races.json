@@ -238,9 +238,19 @@
           "type": "innate-racial",
           "description": "Can read and understand runes, identifying their nature and effects.",
           "limitations": "Understanding a rune does not by itself activate, disable, alter, or reproduce its magic; whether exceptional runes require checks is not yet defined."
+        },
+        {
+          "id": "arcane-awareness",
+          "name": "Arcane Awareness",
+          "type": "innate-racial",
+          "description": "Sense and examine magical phenomena, including magical energy, active effects, and unusual magical disturbances.",
+          "skill": "appropriate detection or investigation skill",
+          "bonusPercentagePoints": 10,
+          "condition": "Checks involving detecting magical energy, investigating magical effects, or identifying magical disturbances",
+          "limitations": "Does not automatically identify every spell, reveal all concealed magic, or replace Rune Mastery."
         }
       ],
-      "notes": "Confirmed: crystalline humanoid, internal runic markings, arcane resonance, +3 percentage points Intellect and Endurance, movement 4, 5% Arcane Resistance, innate Rune Mastery.",
+      "notes": "Confirmed: crystalline humanoid, internal runic markings, arcane resonance, +3 percentage points Intellect and Endurance, movement 4, 5% Arcane Resistance, innate Rune Mastery. Balance audit approved: Arcane Awareness adds +10 percentage points to appropriate checks involving detection or investigation of magical phenomena.",
       "lore": {
         "body": "Humanoid made of crystalline structures",
         "markings": "Runic markings within their crystalline bodies",
