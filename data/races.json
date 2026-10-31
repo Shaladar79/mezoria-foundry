@@ -615,12 +615,35 @@
             {
               "name": "Corvine",
               "creatures": "Ravens, crows",
-              "mechanicsStatus": "pending",
-              "attributes": null,
-              "movement": null,
-              "innateAbility": null,
+              "mechanicsStatus": "approved; gliding distance/action rules pending",
+              "attributes": {
+                "bonuses": [
+                  {
+                    "attribute": "Intellect",
+                    "percentagePoints": 3
+                  },
+                  {
+                    "attribute": "Presence",
+                    "percentagePoints": 3
+                  }
+                ]
+              },
+              "movement": {
+                "ground": 4,
+                "glide": true,
+                "poweredFlight": false,
+                "glideMechanics": "Can control descent and travel horizontally while losing altitude, but cannot gain altitude through gliding; exact distance pending"
+              },
+              "innateAbility": {
+                "name": "Carrion's Insight",
+                "type": "innate-tribal",
+                "description": "Carefully observe and study details, objects, and unfamiliar mechanisms.",
+                "skill": "Investigation",
+                "bonusPercentagePoints": 10,
+                "condition": "Examining objects, searching for hidden details, or studying unfamiliar mechanisms"
+              },
               "resistance": null,
-              "resistanceStatus": "undecided; optional"
+              "resistanceStatus": "No innate resistance"
             },
             {
               "name": "Strigine",
