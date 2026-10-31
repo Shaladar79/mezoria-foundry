@@ -186,13 +186,13 @@
     "finalPoolScaling": "pending"
   },
   "combat": {
-    "physicalDefense": "Dodge + Block + Parry",
+    "physicalDefense": "Dodge + Block + Parry; equipped shields grant Block percentage that reduces the chance an attack hits",
     "baseDodge": "floor(Prowess/10)",
     "avoidableSpellDefense": "Dodge + Spell Resistance",
     "unavoidableSpellDefense": "Spell Resistance",
     "damageOrder": [
       "applicableDamageResistance",
-      "shieldMitigationPool",
+      "magicalShieldMitigationPoolFromAbilities",
       "armorMitigationPool",
       "Health",
       "Wounds"
@@ -212,8 +212,23 @@
       "status": "approved",
       "rule": "For attacks with multiple damage types, divide incoming damage by damage type and resolve applicable resistance on each component separately, using the approved floor with minimum 1 prevention for positive matching resistance and damage.",
       "perTypeFormula": "min(componentDamage, max(1, floor(componentDamage * applicableResistancePercent / 100))) when both componentDamage and applicableResistancePercent are positive; otherwise zero",
-      "order": "Resolve each type's resistance separately first, then carry combined remaining damage to shield mitigation, armor mitigation, Health and Wounds in the established damage order.",
+      "order": "Apply resistance separately by damage type, then pass remaining damage through magical shield mitigation from abilities, armor mitigation, Health, and Wounds. Equipped shields affect Block during hit resolution, not this damage pipeline.",
       "shieldArmorHandling": "How subsequent shield and armor mitigation is allocated among remaining damage types is pending."
+    },
+    "shieldTypes": {
+      "equipment": {
+        "role": "defense",
+        "mechanic": "Grants Block percentage to reduce attackers' chance to hit",
+        "usesMitigationPool": false,
+        "exactBlockValues": "pending equipment design"
+      },
+      "magical": {
+        "role": "damage mitigation",
+        "source": "Abilities",
+        "mechanic": "Grants magical shield mitigation pool that absorbs damage after resistance and before armor",
+        "usesMitigationPool": true,
+        "poolCapacityAndDuration": "pending ability design"
+      }
     }
   },
   "wounds": {
