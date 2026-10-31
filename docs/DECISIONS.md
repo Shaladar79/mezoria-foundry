@@ -82,3 +82,7 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Full mitigation-pool repair requires an appropriate workshop. The appropriate Crafting skill is required for field repairs and workshop repairs.
 - Starting/max Durability, amount restored by workshop repair, 25% ceiling rounding, tools/materials, and interaction with magical self-repair will be defined later.
 - This replaces the earlier interpretation of field repairs as a cumulative 25%-of-maximum restoration allowance.
+
+## Deferred to equipment design: armor Durability values
+- Do not select starting/maximum Durability by armor category or by material yet. Revisit both options when designing equipment rules.
+- Preserve the already-approved mitigation depletion, Durability loss at zero mitigation, field repair ceiling, and workshop requirements.
