@@ -686,9 +686,22 @@
             {
               "name": "Mantid",
               "creatures": "Praying mantises",
-              "mechanicsStatus": "Bonus approved, other traits proposed",
-              "attributes": null,
-              "movement": null,
+              "mechanicsStatus": "approved",
+              "attributes": {
+                "bonuses": [
+                  {
+                    "attribute": "Prowess",
+                    "percentagePoints": 3
+                  },
+                  {
+                    "attribute": "Might",
+                    "percentagePoints": 3
+                  }
+                ]
+              },
+              "movement": {
+                "ground": 5
+              },
               "innateAbility": {
                 "name": "Predatory Reflexes",
                 "bonusPercentagePoints": 5,
@@ -697,25 +710,36 @@
                 "status": "approved"
               },
               "resistance": null,
-              "resistanceStatus": "undecided; optional",
-              "proposals": {
-                "attributes": [
-                  "Prowess +3",
-                  "Might +3"
-                ],
-                "groundMovement": 5,
-                "resistance": null
-              }
+              "resistanceStatus": "No innate resistance"
             },
             {
               "name": "Formicine",
               "creatures": "Ants",
-              "mechanicsStatus": "pending",
-              "attributes": null,
-              "movement": null,
-              "innateAbility": null,
+              "mechanicsStatus": "approved",
+              "attributes": {
+                "bonuses": [
+                  {
+                    "attribute": "Might",
+                    "percentagePoints": 3
+                  },
+                  {
+                    "attribute": "Endurance",
+                    "percentagePoints": 3
+                  }
+                ]
+              },
+              "movement": {
+                "ground": 5
+              },
+              "innateAbility": {
+                "name": "Colony Cooperation",
+                "type": "innate-tribal",
+                "skill": "Athletics",
+                "bonusPercentagePoints": 10,
+                "condition": "Working with at least one ally to lift, push, pull, or move heavy objects"
+              },
               "resistance": null,
-              "resistanceStatus": "undecided; optional"
+              "resistanceStatus": "No innate resistance"
             },
             {
               "name": "Scarabine",
