@@ -453,6 +453,14 @@
         "rule": "The magical shield ends immediately when either condition occurs",
         "specificDurations": "Deferred to ability design",
         "recasting": "An accepted replacement shield uses the new casting's duration and mitigation, rather than extending the old shield"
+      },
+      "maintenance": {
+        "status": "approved",
+        "defaultRequiresConcentration": false,
+        "defaultOngoingManaCost": 0,
+        "defaultBehavior": "Once cast, an ability-created magical shield persists independently without concentration or ongoing Mana expenditure until its ability-specific duration expires or its mitigation pool reaches zero.",
+        "exceptions": "An individual shield ability may explicitly require concentration, recurring Mana, or other upkeep.",
+        "initialCastingCost": "Set by individual ability; not altered by this rule"
       }
     }
   },
