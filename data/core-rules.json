@@ -267,9 +267,10 @@
         "onPoolDepleted": "Lose 1 Durability when the mitigation pool transitions from positive to zero; further damage at zero does not deduct additional Durability until it has been restored and depleted again",
         "minimumDurability": 0,
         "atZero": "No field repairs possible until repaired at an appropriate workshop",
-        "maximumDurability": "pending armor design",
+        "maximumDurability": "deferred until equipment rules; decide armor-category versus material-based values then",
         "workshopDurabilityRestoration": "pending workshop repair rules",
-        "interactionWithMagicalRegeneration": "pending"
+        "interactionWithMagicalRegeneration": "pending",
+        "maximumDurabilityStatus": "explicitly deferred by user"
       }
     }
   },
