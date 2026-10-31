@@ -113,3 +113,9 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - If the final attack target is **greater than 5%**, natural 01–05 retains the ordinary **+3 critical successes**, calculated in addition to the standard success formula.
 - All other successful attacks calculate successes with `1 + floor((final target − roll)/10)`.
 - This modifies **combat attack** resolution; non-attack skill checks are not changed by this decision.
+
+## Automatic high-roll misses (approved)
+- On combat attack rolls, natural **96–100 always misses**, regardless of final attack target or accuracy bonuses.
+- These are **ordinary misses**, not automatic critical failures and do not inherently apply extra penalties.
+- Together with natural 01–05 automatic hits, effective attack hit chance is bounded between **5% and 95%**, even if the calculated target lies outside that range.
+- Attack resolution precedence: natural 96–100 misses; natural 01–05 hits (normal 1 success if final target <=5); otherwise compare the roll to the unmodified-by-these-exceptions final target.
