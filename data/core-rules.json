@@ -229,6 +229,18 @@
         "usesMitigationPool": true,
         "poolCapacityAndDuration": "pending ability design"
       }
+    },
+    "armorMitigation": {
+      "type": "equipment mitigation pool",
+      "depletesAsDamageAbsorbed": true,
+      "persistsAcrossEncounters": true,
+      "restoresAutomaticallyAfterCombat": false,
+      "standardRestoration": "requires repairs",
+      "magicalArmorException": "Some magical armor restores its mitigation pool over time as specified by the armor's own properties",
+      "repairCostAndRate": "pending equipment design",
+      "magicalRepairRateAndConditions": "pending item design",
+      "poolSize": "pending equipment design",
+      "status": "approved foundation"
     }
   },
   "wounds": {
