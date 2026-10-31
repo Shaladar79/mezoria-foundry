@@ -1299,14 +1299,126 @@
     },
     {
       "id": "sion",
-      "name": "Sion",
+      "name": "Scion",
       "designOrder": "last",
       "subgroupType": "aspects",
-      "subgroups": [],
+      "subgroups": [
+        "Fire",
+        "Water",
+        "Earth",
+        "Air",
+        "Light",
+        "Shadow",
+        "Lightning",
+        "Ice"
+      ],
       "attributes": null,
       "traits": [],
       "abilities": [],
-      "notes": "Mechanics and lore not yet specified"
+      "notes": "Eight approved elemental aspects; excludes Nature and Arcane. Display name Scion; legacy data id sion retained for compatibility. Aspect mechanics still pending.",
+      "lore": {
+        "physiology": "Elemental humanoids with recognizable humanoid forms composed of living elemental energy rather than ordinary flesh.",
+        "aspectIdentity": "Each Scion embodies one elemental force. Nature and Arcane have no Scion aspects."
+      },
+      "aspects": [
+        {
+          "name": "Fire",
+          "element": "Fire",
+          "bodyComposition": "Living fire elemental energy in humanoid form",
+          "attributes": null,
+          "movement": null,
+          "resistance": null,
+          "innateAbility": null,
+          "mechanicsStatus": "pending"
+        },
+        {
+          "name": "Water",
+          "element": "Water",
+          "bodyComposition": "Living water elemental energy in humanoid form",
+          "attributes": null,
+          "movement": null,
+          "resistance": null,
+          "innateAbility": null,
+          "mechanicsStatus": "pending"
+        },
+        {
+          "name": "Earth",
+          "element": "Earth",
+          "bodyComposition": "Living earth elemental energy in humanoid form",
+          "attributes": null,
+          "movement": null,
+          "resistance": null,
+          "innateAbility": null,
+          "mechanicsStatus": "pending"
+        },
+        {
+          "name": "Air",
+          "element": "Air",
+          "bodyComposition": "Living air elemental energy in humanoid form",
+          "attributes": null,
+          "movement": null,
+          "resistance": null,
+          "innateAbility": null,
+          "mechanicsStatus": "pending"
+        },
+        {
+          "name": "Light",
+          "element": "Light",
+          "bodyComposition": "Living light elemental energy in humanoid form",
+          "attributes": null,
+          "movement": null,
+          "resistance": null,
+          "innateAbility": null,
+          "mechanicsStatus": "pending"
+        },
+        {
+          "name": "Shadow",
+          "element": "Shadow",
+          "bodyComposition": "Living shadow elemental energy in humanoid form",
+          "attributes": null,
+          "movement": null,
+          "resistance": null,
+          "innateAbility": null,
+          "mechanicsStatus": "pending"
+        },
+        {
+          "name": "Lightning",
+          "element": "Lightning",
+          "bodyComposition": "Living lightning elemental energy in humanoid form",
+          "attributes": null,
+          "movement": null,
+          "resistance": null,
+          "innateAbility": null,
+          "mechanicsStatus": "pending"
+        },
+        {
+          "name": "Ice",
+          "element": "Ice",
+          "bodyComposition": "Living ice elemental energy in humanoid form",
+          "attributes": null,
+          "movement": null,
+          "resistance": null,
+          "innateAbility": null,
+          "mechanicsStatus": "pending"
+        }
+      ],
+      "sharedRacialAbilities": [
+        {
+          "id": "elemental-bolt",
+          "name": "Elemental Bolt",
+          "type": "innate-racial",
+          "targeting": "single target",
+          "usesPerDay": 1,
+          "manaCost": 0,
+          "damagePerSuccess": 4,
+          "damageType": "matching Scion Aspect",
+          "availability": "Quartz (Rank 1)",
+          "governingAttributeOrSkill": "pending",
+          "range": "pending",
+          "actionCost": "pending",
+          "description": "Once per day a Scion can unleash a single-target bolt of its own element, dealing 4 damage per success without Mana cost."
+        }
+      ]
     },
     {
       "id": "anthozoans",
