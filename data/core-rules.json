@@ -197,7 +197,17 @@
       "Health",
       "Wounds"
     ],
-    "damagePerSuccess": "weapon or ability specific; values pending"
+    "damagePerSuccess": "weapon or ability specific; values pending",
+    "resistanceCalculation": {
+      "formula": "min(incomingMatchingDamage, max(1, floor(incomingMatchingDamage * resistancePercent / 100)))",
+      "appliesWhen": "matching damage > 0 and resistancePercent > 0",
+      "rounding": "floor",
+      "minimumReduction": 1,
+      "maximumReduction": "matching incoming damage",
+      "damageTypeHandling": "apply only to matching damage type; mixed-type hits have their portions calculated separately",
+      "fractionalCarryover": false,
+      "notes": "At 5% resistance, 1 incoming matching damage is fully prevented; balance impact on small attacks should be playtested."
+    }
   },
   "wounds": {
     "quartzBaseCapacity": 3,
