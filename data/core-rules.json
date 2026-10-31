@@ -483,7 +483,17 @@
       ],
       "shieldPools": "Each target uses only their own active magical shield mitigation pool; no shared mitigation across targets",
       "damageTypeRules": "Apply established damage type resistance, magical shield priority, and armor coverage separately for each target",
-      "attackAndSaveMechanics": "Whether area attacks use one attack roll or separate rolls and how unavoidable effects or saves work remains pending"
+      "attackAndSaveMechanics": "One attack roll against all affected targets is approved; any saving-throw alternatives or ability-specific exceptions remain to be defined.",
+      "attackRoll": {
+        "status": "approved",
+        "rollsPerAbility": 1,
+        "rule": "Make one d100 attack roll for the AoE ability and compare that same roll separately with each affected target's final attack target after subtracting their applicable defenses.",
+        "perTargetTargetFormula": "modified ability accuracy percentage - sum(target's applicable defense percentages)",
+        "perTargetHit": "Apply approved natural 01-05 automatic hit and natural 96-100 automatic miss rules, otherwise roll <= target's final attack target",
+        "successes": "Each successfully hit target computes its own number of successes from its own final attack target and the shared roll, including existing critical roll handling.",
+        "damageAndMitigation": "Resolve damage, resistances, shield, armor, Health and Wounds independently per target",
+        "exceptions": "Ability-specific unavoidable effects and other expressly different targeting mechanics to be specified during ability design"
+      }
     }
   },
   "wounds": {
