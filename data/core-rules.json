@@ -212,7 +212,7 @@
       "status": "approved",
       "rule": "For attacks with multiple damage types, divide incoming damage by damage type and resolve applicable resistance on each component separately, using the approved floor with minimum 1 prevention for positive matching resistance and damage.",
       "perTypeFormula": "min(componentDamage, max(1, floor(componentDamage * applicableResistancePercent / 100))) when both componentDamage and applicableResistancePercent are positive; otherwise zero",
-      "order": "Apply resistance separately by damage type, then pass remaining damage through magical shield mitigation from abilities, armor mitigation, Health, and Wounds. Equipped shields affect Block during hit resolution, not this damage pipeline.",
+      "order": "Apply resistance separately to matching damage types; resolve magical shield mitigation according to shield ability's applicable types (pending specification), then armor mitigation only against types covered by armor, followed by Health and Wounds.",
       "shieldArmorHandling": "How subsequent shield and armor mitigation is allocated among remaining damage types is pending."
     },
     "shieldTypes": {
@@ -273,6 +273,24 @@
         "workshopDurabilityRestoration": "pending workshop repair rules",
         "interactionWithMagicalRegeneration": "pending",
         "maximumDurabilityStatus": "explicitly deferred by user"
+      },
+      "damageTypeProtection": {
+        "status": "approved",
+        "ordinaryArmor": {
+          "absorbs": [
+            "Physical"
+          ],
+          "doesNotAbsorb": "All non-Physical damage types unless explicitly given protection by a special property"
+        },
+        "magicalArmor": {
+          "absorbs": [
+            "Physical"
+          ],
+          "additionalDamageTypes": "Only damage types explicitly specified by the individual magical armor's properties"
+        },
+        "mixedDamageHandling": "Keep type-specific components distinct through armor mitigation. Apply armor's mitigation pool only to components whose damage type that armor protects against; other components bypass armor and proceed to Health/Wounds.",
+        "magicalShieldDamageTypeHandling": "not yet specified; pending next design decision",
+        "physicalSubtypes": "slash/pierce/bludgeon count as Physical"
       }
     },
     "physicalDefenseByAttackType": {
