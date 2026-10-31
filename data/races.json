@@ -577,7 +577,7 @@
             {
               "name": "Chelonian",
               "creatures": "Turtles, tortoises",
-              "mechanicsStatus": "approved; action economy and ability activation details pending",
+              "mechanicsStatus": "approved; Shell Defense remains stationary and action economy pending",
               "attributes": {
                 "bonuses": [
                   {
@@ -613,7 +613,17 @@
                 ],
                 "rounding": "pending general damage resistance rules"
               },
-              "resistanceStatus": "approved"
+              "resistanceStatus": "approved",
+              "additionalInnateAbilities": [
+                {
+                  "name": "Iron Shell",
+                  "type": "innate-tribal",
+                  "description": "Stable, sturdy body grants +5 percentage points to defensive checks against being knocked down, shoved, or forcibly moved while standing on solid ground.",
+                  "bonusPercentagePoints": 5,
+                  "condition": "Defensive checks against knockdown, shoves, or forced movement while standing on solid ground",
+                  "manaCost": 0
+                }
+              ]
             }
           ]
         },
