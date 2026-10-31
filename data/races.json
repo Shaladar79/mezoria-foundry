@@ -1059,11 +1059,34 @@
         {
           "name": "Desert",
           "terrain": "Deserts and badlands",
-          "attributes": null,
-          "movement": null,
-          "resistance": null,
-          "innateAbility": null,
-          "mechanicsStatus": "pending"
+          "attributes": {
+            "bonuses": [
+              {
+                "attribute": "Endurance",
+                "percentagePoints": 3
+              },
+              {
+                "attribute": "Prowess",
+                "percentagePoints": 3
+              }
+            ]
+          },
+          "movement": {
+            "ground": 5
+          },
+          "resistance": {
+            "type": "Fire",
+            "valuePercent": 5,
+            "calculation": "pending general resistance mechanics"
+          },
+          "innateAbility": {
+            "name": "Desert Survivor",
+            "type": "innate-clan",
+            "skill": "Survival",
+            "bonusPercentagePoints": 10,
+            "condition": "Navigating deserts, locating water or shelter, or enduring harsh arid conditions"
+          },
+          "mechanicsStatus": "approved"
         },
         {
           "name": "Forest",
