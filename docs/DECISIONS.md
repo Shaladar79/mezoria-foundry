@@ -170,3 +170,9 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Recasting an existing magical shield creates a new offered mitigation pool rather than adding protection to the active pool.
 - The recipient may accept the new shield and replace the current one, or keep the current shield.
 - Example: an Arcane Barrier at 8/20, recast for 20, becomes 20/20 if accepted, not 28.
+
+## Magical shield duration and expiration (approved)
+- Every magical shield ability defines **its own duration**; there is no universal duration for all shields.
+- A shield **ends immediately** when either its duration expires or its remaining mitigation pool reaches **zero**, whichever happens first.
+- When the recipient accepts a replacement or recast shield, the old shield ends; the new shield uses its own duration and mitigation pool.
+- Exact durations are deferred until individual abilities are designed.
