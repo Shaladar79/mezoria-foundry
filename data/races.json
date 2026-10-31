@@ -536,12 +536,43 @@
             {
               "name": "Chelonian",
               "creatures": "Turtles, tortoises",
-              "mechanicsStatus": "pending",
-              "attributes": null,
-              "movement": null,
-              "innateAbility": null,
-              "resistance": null,
-              "resistanceStatus": "undecided; optional"
+              "mechanicsStatus": "approved; action economy and ability activation details pending",
+              "attributes": {
+                "bonuses": [
+                  {
+                    "attribute": "Endurance",
+                    "percentagePoints": 3
+                  },
+                  {
+                    "attribute": "Intellect",
+                    "percentagePoints": 3
+                  }
+                ]
+              },
+              "movement": {
+                "ground": 3,
+                "swim": 4
+              },
+              "innateAbility": {
+                "name": "Shell Defense",
+                "type": "innate-tribal",
+                "description": "Withdraw into the shell to gain additional physical damage resistance.",
+                "additionalPhysicalResistancePercent": 10,
+                "totalPhysicalResistanceWhileWithdrawnPercent": 15,
+                "movementWhileWithdrawn": 0,
+                "otherActionsWhileWithdrawn": "pending combat rules"
+              },
+              "resistance": {
+                "type": "Physical",
+                "valuePercent": 5,
+                "appliesTo": [
+                  "Slashing",
+                  "Piercing",
+                  "Bludgeoning"
+                ],
+                "rounding": "pending general damage resistance rules"
+              },
+              "resistanceStatus": "approved"
             }
           ]
         },
