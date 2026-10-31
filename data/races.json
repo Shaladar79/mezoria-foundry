@@ -582,12 +582,37 @@
             {
               "name": "Aquiline",
               "creatures": "Eagles, hawks",
-              "mechanicsStatus": "pending",
+              "mechanicsStatus": "Gliding instead of powered flight approved; other traits remain proposed",
               "attributes": null,
-              "movement": null,
+              "movement": {
+                "ground": null,
+                "glide": true,
+                "poweredFlight": false,
+                "glideMechanics": "pending"
+              },
               "innateAbility": null,
               "resistance": null,
-              "resistanceStatus": "undecided; optional"
+              "resistanceStatus": "undecided; optional",
+              "proposals": {
+                "attributes": [
+                  {
+                    "attribute": "Prowess",
+                    "percentagePoints": 3
+                  },
+                  {
+                    "attribute": "Intellect",
+                    "percentagePoints": 3
+                  }
+                ],
+                "groundMovement": 4,
+                "resistance": null,
+                "innateAbility": {
+                  "name": "Eagle Eyes",
+                  "skill": "Perception",
+                  "bonusPercentagePoints": 10,
+                  "condition": "Spotting distant creatures, objects or movement"
+                }
+              }
             },
             {
               "name": "Corvine",
@@ -708,7 +733,8 @@
         "innateAbility": "Each tribe has a distinct innate racial ability.",
         "resistance": "Optional, determined by tribe; do not grant one by default.",
         "sharedBonuses": "No universal Mythrain mechanical bonuses have been established.",
-        "status": "structure approved; values undecided"
+        "status": "structure approved; values undecided",
+        "startingAvianFlight": "No unrestricted powered flight at starting Rank 1; gliding permitted, with progression-based flight powers later"
       }
     },
     {
