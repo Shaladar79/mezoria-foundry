@@ -195,3 +195,10 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Magical shield pools are **individual to their owners**, not shared or pooled across creatures; each target still has at most one active magical shield.
 - Keep damage-type distinctions and the established Physical-first magical shield allocation for each target separately.
 - Exact area-attack targeting, attack roll, and saving throw procedures remain to be designed.
+
+## Area-of-effect attack rolls (approved)
+- Roll **one d100 attack roll per AoE ability**, rather than rolling separately for every affected creature.
+- Compare the **same rolled value** against each target's own final hit target: modified spell/ability accuracy minus that target's applicable defenses.
+- Each target is independently hit or missed. Apply the established **natural 01–05 automatic hit** and **96–100 automatic miss** rules to the shared attack roll for each target.
+- Each hit target calculates its own successes from its own final hit target and the shared roll, then separately resolves damage resistance, magical shields, applicable armor, Health, and Wounds.
+- Any exceptional unavoidable AoE or saving-throw-based abilities will be detailed during ability design.
