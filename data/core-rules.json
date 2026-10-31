@@ -327,6 +327,16 @@
         "parryApplies": false
       },
       "note": "Special shield properties can enable Block against magic, but ordinary equipment shields cannot. Exact accuracy and defense resolution remain pending."
+    },
+    "attackVsDefense": {
+      "status": "approved",
+      "formula": "modifiedAttackSkillPercentage - sum(applicableDefensePercentages)",
+      "hitCondition": "d100 <= final attack target",
+      "successes": "1 + floor((final attack target - d100 roll) / 10) on success",
+      "applicableDefense": "Use melee/ranged and magic-defense restrictions already established",
+      "minimumAndMaximumTargets": "pending",
+      "criticalInteraction": "Natural 01-05 adds +3 successes only on a successful check under existing general resolution rule; special treatment at nonpositive targets pending",
+      "notes": "Defense subtraction modifies both chance to hit and number of successes; account for applicable situational attack modifiers as part of modified attack skill"
     }
   },
   "wounds": {
