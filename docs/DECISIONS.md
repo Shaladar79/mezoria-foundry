@@ -132,3 +132,10 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - **Magical armor** may explicitly protect against additional damage types, determined by that armor's individual properties. Magical status alone does not automatically confer protection against every damage type.
 - For mixed-damage attacks, track damage-type components separately through armor mitigation. Only armor-covered components spend the armor pool; uncovered components bypass armor and continue to Health/Wounds after earlier applicable mitigation.
 - Which damage types ability-created magical shields absorb is not yet defined and will be addressed separately.
+
+## Magical shield damage-type coverage (approved)
+- Magical shield **mitigation pools granted by abilities** absorb damage of **all types by default** (Physical and elemental/other types).
+- An individual ability may expressly restrict its shield to certain damage types (for example, Fire only).
+- Eligible damage is absorbed by the shield pool after applicable resistance and before armor mitigation, up to the shield's remaining capacity.
+- This does not change equipment shield Block rules: ordinary equipped shields cannot Block magic unless they have an explicit relevant property.
+- Still pending: how limited shield capacity is allocated among damage components when a mixed-type attack exceeds the remaining magical shield pool.
