@@ -68,3 +68,9 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Ordinary armor requires repairs to restore its mitigation pool.
 - Some magical armor has item-specific regeneration of its mitigation pool over time, without ordinary repair; rates and conditions are defined by the item.
 - Armor mitigation capacity, repair methods/costs, and magical regeneration intervals are deferred to equipment design.
+
+## Field versus workshop armor repairs (approved)
+- Minor repairs may be performed in the field by a character with the appropriate Crafting skill for the armor.
+- Field repairs may restore up to **25% of the armor's maximum mitigation pool**; exact rounding and handling of repeat field repairs remain to be decided.
+- Full repairs, restoring the complete mitigation pool, require an appropriate workshop and Crafting skill.
+- Tool/material requirements, repair time and roll difficulty will be defined with the Crafting and equipment systems.
