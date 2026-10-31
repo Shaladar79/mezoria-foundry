@@ -442,6 +442,17 @@
           "rule": "Recasting an active shield generates a new pool. The target may accept it to replace the existing shield or keep the existing shield. Pools do not add together.",
           "example": "An 8/20 barrier recast for 20 becomes 20/20 if accepted."
         }
+      },
+      "duration": {
+        "status": "approved",
+        "duration": "Determined individually by the ability creating the magical shield",
+        "endConditions": [
+          "The ability-specific duration expires",
+          "The remaining shield mitigation pool reaches zero"
+        ],
+        "rule": "The magical shield ends immediately when either condition occurs",
+        "specificDurations": "Deferred to ability design",
+        "recasting": "An accepted replacement shield uses the new casting's duration and mitigation, rather than extending the old shield"
       }
     }
   },
