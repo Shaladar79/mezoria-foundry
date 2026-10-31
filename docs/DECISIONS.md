@@ -93,3 +93,10 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - **Block:** may apply against both melee and ranged attacks.
 - Thus melee defense draws on applicable **Parry + Block**, and ranged defense draws on applicable **Dodge + Block**, rather than universally combining all three.
 - Exact chance-to-hit resolution and interaction with avoidable spell attacks remain to be determined. This replaces earlier shorthand stating physical defense is always Dodge + Block + Parry.
+
+## Spell defenses and shield blocking (approved)
+- Magical projectile attacks count as ranged: **Dodge + Spell Resistance**. They receive Block **only if the equipped shield explicitly permits blocking magical attacks**.
+- Melee spell attacks count as melee: **Parry + Spell Resistance**. They receive Block **only if the equipped shield explicitly permits blocking magical attacks**.
+- **Ordinary equipped shields cannot Block magic by default**. Special item properties may allow it; exact shield enchantments are part of equipment design.
+- Unavoidable spells use **Spell Resistance only**; Dodge, Parry, and equipment Block do not apply.
+- Detailed attack-versus-defense math remains to be designed.
