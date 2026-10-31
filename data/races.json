@@ -901,12 +901,42 @@
             {
               "name": "Anuran",
               "creatures": "Frogs, toads",
-              "mechanicsStatus": "pending",
-              "attributes": null,
-              "movement": null,
-              "innateAbility": null,
-              "resistance": null,
-              "resistanceStatus": "undecided; optional"
+              "mechanicsStatus": "approved; numerical leap distance pending",
+              "attributes": {
+                "bonuses": [
+                  {
+                    "attribute": "Prowess",
+                    "percentagePoints": 3
+                  },
+                  {
+                    "attribute": "Endurance",
+                    "percentagePoints": 3
+                  }
+                ]
+              },
+              "movement": {
+                "land": 5,
+                "swim": 5
+              },
+              "innateAbility": {
+                "name": "Powerful Leap",
+                "type": "innate-tribal",
+                "skill": "Athletics",
+                "bonusPercentagePoints": 10,
+                "condition": "Checks involving jumping",
+                "additionalBenefit": "Increased jumping distance",
+                "jumpDistanceMechanics": "pending movement rules"
+              },
+              "resistance": {
+                "type": "Poison",
+                "valuePercent": 5,
+                "calculation": "pending general resistance system"
+              },
+              "resistanceStatus": "approved",
+              "breathing": {
+                "air": true,
+                "water": true
+              }
             },
             {
               "name": "Crustacean",
