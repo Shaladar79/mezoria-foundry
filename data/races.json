@@ -1441,11 +1441,40 @@
           "name": "Air",
           "element": "Air",
           "bodyComposition": "Living air elemental energy in humanoid form",
-          "attributes": null,
-          "movement": null,
-          "resistance": null,
-          "innateAbility": null,
-          "mechanicsStatus": "pending"
+          "attributes": {
+            "bonuses": [
+              {
+                "attribute": "Prowess",
+                "percentagePoints": 3
+              },
+              {
+                "attribute": "Presence",
+                "percentagePoints": 3
+              }
+            ]
+          },
+          "movement": {
+            "ground": 6,
+            "glide": {
+              "formula": "base ground movement",
+              "scalesWithMovement": true,
+              "startingValue": 6
+            }
+          },
+          "resistance": {
+            "type": "Air",
+            "valuePercent": 5,
+            "calculation": "pending general resistance rules"
+          },
+          "innateAbility": {
+            "name": "Windborne",
+            "type": "innate-aspect",
+            "description": "Glide horizontally through the air while gradually descending. Cannot gain altitude from gliding alone.",
+            "manaCost": 0,
+            "movementFormula": "base ground movement",
+            "glideDescentRate": "pending general gliding rules"
+          },
+          "mechanicsStatus": "approved"
         },
         {
           "name": "Light",
