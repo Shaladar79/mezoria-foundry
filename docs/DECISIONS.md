@@ -176,3 +176,9 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - A shield **ends immediately** when either its duration expires or its remaining mitigation pool reaches **zero**, whichever happens first.
 - When the recipient accepts a replacement or recast shield, the old shield ends; the new shield uses its own duration and mitigation pool.
 - Exact durations are deferred until individual abilities are designed.
+
+## Magical shield maintenance (approved)
+- Ability-created magical shields require **no concentration** and **no ongoing Mana expenditure by default** once successfully cast.
+- Shields remain active until the ability-defined duration expires, their mitigation pool is depleted, or another established replacement/end condition occurs.
+- An individual shield ability may explicitly require concentration, recurring Mana, or other upkeep; these are exceptions, not the baseline.
+- Initial casting costs are established by each ability and are unaffected by this maintenance rule.
