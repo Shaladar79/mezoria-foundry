@@ -1203,11 +1203,34 @@
         {
           "name": "Tundra",
           "terrain": "Frozen plains and snowy regions",
-          "attributes": null,
-          "movement": null,
-          "resistance": null,
-          "innateAbility": null,
-          "mechanicsStatus": "pending",
+          "attributes": {
+            "bonuses": [
+              {
+                "attribute": "Endurance",
+                "percentagePoints": 3
+              },
+              {
+                "attribute": "Might",
+                "percentagePoints": 3
+              }
+            ]
+          },
+          "movement": {
+            "ground": 4
+          },
+          "resistance": {
+            "type": "Ice",
+            "valuePercent": 5,
+            "calculation": "pending general resistance rules"
+          },
+          "innateAbility": {
+            "name": "Frostborn",
+            "type": "innate-clan",
+            "skill": "Survival",
+            "bonusPercentagePoints": 10,
+            "condition": "Surviving extreme cold, navigating snowy terrain, crossing ice safely, or finding shelter during blizzards"
+          },
+          "mechanicsStatus": "approved",
           "breathElement": "Ice",
           "breathElementStatus": "approved"
         },
