@@ -1673,9 +1673,31 @@
           "name": "Amphibious Breathing",
           "type": "innate-racial",
           "description": "Can naturally breathe both air and water."
+        },
+        {
+          "id": "reinforced-coral",
+          "name": "Reinforced Coral",
+          "type": "innate-racial",
+          "description": "A protective coral structure reinforces the Anthozoan's body, providing natural defense.",
+          "protectionType": "physical resistance",
+          "valuePercent": null,
+          "mechanicsStatus": "approved concept; numerical resistance pending"
+        },
+        {
+          "id": "chest-of-the-deep",
+          "name": "Chest of the Deep",
+          "type": "innate-racial",
+          "description": "Summon a magical storage space that the Anthozoan can access to store and retrieve belongings.",
+          "storageType": "magical extradimensional",
+          "summonable": true,
+          "capacity": "pending",
+          "manaCost": "pending",
+          "summoningAction": "pending",
+          "accessAndSecurityRules": "pending",
+          "mechanicsStatus": "approved concept; storage details pending"
         }
       ],
-      "notes": "Approved coral-colony aquatic humanoid, +3 percentage points Endurance and Presence, 5% Water Resistance, air and water breathing, land movement 4, swim movement 6.",
+      "notes": "Approved coral-colony aquatic humanoid, +3 percentage points Endurance and Presence, 5% Water Resistance, air and water breathing, land movement 4, swim movement 6. Balance audit: Reinforced Coral natural protection and Chest of the Deep summonable magical storage approved as concepts; exact mechanics pending. Existing racial traits retained.",
       "lore": {
         "origin": "Born from the reefs of Mezoria",
         "appearance": "Aquatic humanoid formed from coral",
