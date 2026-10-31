@@ -55,3 +55,9 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Calculate applicable resistance separately for each component using floor, minimum 1 prevented damage when both matching damage and resistance are positive; prevention never exceeds that component's damage.
 - Combine remaining damage after resistance and proceed through shield mitigation, armor mitigation, Health, and Wounds in the approved order.
 - Rules for assigning remaining damage types to shield and armor mitigation pools still require design.
+
+## Shield categories (approved clarification)
+- **Equipment shields** grant a Block percentage, contributing to physical defense and reducing an attack's chance to hit. They do **not** provide the magical shield damage-mitigation pool.
+- **Magical shields** granted by abilities provide a damage-mitigation pool. That pool absorbs post-resistance damage before armor mitigation.
+- Combat damage order: applicable resistance → magical shield mitigation pool (if active) → armor mitigation pool → Health → Wounds.
+- Exact equipment Block percentages, magical shield capacity, lifetime, and recharge rules remain pending.
