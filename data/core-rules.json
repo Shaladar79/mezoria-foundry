@@ -331,13 +331,14 @@
     "attackVsDefense": {
       "status": "approved",
       "formula": "modifiedAttackSkillPercentage - sum(applicableDefensePercentages)",
-      "hitCondition": "Attack hits if d100 <= final attack target OR natural roll is 01-05 (automatic hit even if final target is zero or negative).",
+      "hitCondition": "On attack d100: natural 96-100 always misses; otherwise natural 01-05 always hits; otherwise hit only if roll <= final attack target.",
       "successes": "Normal hit: 1 + floor((final attack target - roll)/10). For automatic hits when roll exceeds final target and final target <= 5, assign 1 normal success.",
       "applicableDefense": "Use melee/ranged and magic-defense restrictions already established",
       "minimumAndMaximumTargets": "The raw final target may be zero or negative; natural 01-05 always hits. Upper target cap remains pending.",
       "criticalInteraction": "When final attack target is 5 or less, natural 01-05 is an automatic normal hit with 1 success and no +3 critical successes. When final attack target is greater than 5, a natural 01-05 hit gains the existing +3 critical successes.",
       "notes": "Defense subtraction modifies both chance to hit and number of successes; account for applicable situational attack modifiers as part of modified attack skill",
-      "minimumHitChancePercent": 5
+      "minimumHitChancePercent": 5,
+      "maximumEffectiveHitChancePercent": 95
     },
     "attackRollEdgeCases": {
       "automaticHitRange": [
@@ -354,7 +355,14 @@
         "successFormula": "1 + floor((target-roll)/10)",
         "criticalExtraSuccesses": 3
       },
-      "scope": "Attack rolls; general non-attack skill critical rules unchanged"
+      "scope": "Attack rolls; general non-attack skill critical rules unchanged",
+      "automaticMissRange": [
+        96,
+        100
+      ],
+      "automaticMissRegardlessOfAccuracy": true,
+      "automaticMissPenalty": "Ordinary miss; no additional critical-failure penalty by default",
+      "maximumEffectiveHitChancePercent": 95
     }
   },
   "wounds": {
