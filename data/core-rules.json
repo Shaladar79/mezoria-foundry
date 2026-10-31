@@ -436,7 +436,12 @@
         "strongerShieldRule": "A stronger newly offered shield does not automatically replace the existing shield; target chooses.",
         "weakerOrEqualShieldRule": "The target may accept a weaker or equal-pool new shield to gain more useful damage-type coverage or other properties.",
         "scope": "Ability-created magical shield mitigation pools; equipment Block shields remain separate",
-        "example": "Fire shield with 22 remaining versus new Arcane Barrier with 20 offered: target may accept Arcane Barrier to gain all-type protection or keep Fire shield."
+        "example": "Fire shield with 22 remaining versus new Arcane Barrier with 20 offered: target may accept Arcane Barrier to gain all-type protection or keep Fire shield.",
+        "sameShieldRecast": {
+          "status": "approved",
+          "rule": "Recasting an active shield generates a new pool. The target may accept it to replace the existing shield or keep the existing shield. Pools do not add together.",
+          "example": "An 8/20 barrier recast for 20 becomes 20/20 if accepted."
+        }
       }
     }
   },
