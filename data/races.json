@@ -1091,11 +1091,34 @@
         {
           "name": "Forest",
           "terrain": "Forests and woodlands",
-          "attributes": null,
-          "movement": null,
-          "resistance": null,
-          "innateAbility": null,
-          "mechanicsStatus": "pending"
+          "attributes": {
+            "bonuses": [
+              {
+                "attribute": "Prowess",
+                "percentagePoints": 3
+              },
+              {
+                "attribute": "Intellect",
+                "percentagePoints": 3
+              }
+            ]
+          },
+          "movement": {
+            "ground": 5
+          },
+          "resistance": {
+            "type": "Nature",
+            "valuePercent": 5,
+            "calculation": "pending general resistance mechanics"
+          },
+          "innateAbility": {
+            "name": "Woodland Camouflage",
+            "type": "innate-clan",
+            "skill": "Stealth",
+            "bonusPercentagePoints": 10,
+            "condition": "Hiding among natural forest vegetation such as trees, bushes, or dense foliage"
+          },
+          "mechanicsStatus": "approved"
         },
         {
           "name": "Swamp",
