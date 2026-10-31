@@ -86,3 +86,10 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 ## Deferred to equipment design: armor Durability values
 - Do not select starting/maximum Durability by armor category or by material yet. Revisit both options when designing equipment rules.
 - Preserve the already-approved mitigation depletion, Durability loss at zero mitigation, field repair ceiling, and workshop requirements.
+
+## Physical defenses by attack type (approved)
+- **Parry:** applies to melee attacks only; not ranged attacks.
+- **Dodge:** applies to ranged attacks only; not melee attacks.
+- **Block:** may apply against both melee and ranged attacks.
+- Thus melee defense draws on applicable **Parry + Block**, and ranged defense draws on applicable **Dodge + Block**, rather than universally combining all three.
+- Exact chance-to-hit resolution and interaction with avoidable spell attacks remain to be determined. This replaces earlier shorthand stating physical defense is always Dodge + Block + Parry.
