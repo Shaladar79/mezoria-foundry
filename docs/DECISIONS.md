@@ -44,3 +44,8 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 3. Final role-specific starting skill selections and background list (after races).
 4. Attribute point allocation and skill governing attributes.
 5. Rank 1 abilities, action economy, combat implementation.
+
+## Resistance rounding (approved)
+- On a hit dealing positive damage of a type with positive applicable resistance, prevent `min(matching damage, max(1, floor(matching damage × resistancePercent / 100)))` damage.
+- No fractional carryover. Each damage type in a mixed hit is resolved separately. Do not reduce damage below zero.
+- This means a 5% resistance prevents all of a 1-point matching hit; playtest small-hit balance before considering any changes.
