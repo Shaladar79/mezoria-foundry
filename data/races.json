@@ -257,7 +257,7 @@
       "attributes": null,
       "traits": [],
       "abilities": [],
-      "notes": "Twenty tribe names and creature associations approved; racial and tribal mechanics pending. Arachnids grouped with Insectoid for roster purposes.",
+      "notes": "Twenty approved tribes; each receives individual attribute modifiers, movement, and innate ability; resistance if thematically appropriate. No shared mechanical package established.",
       "lore": {
         "identity": "Beastfolk of Mezoria, divided into tribes inspired by mammals, reptiles, avians, insectoids and aquatic creatures."
       },
@@ -268,27 +268,52 @@
             {
               "name": "Lupine",
               "creatures": "Wolves",
-              "mechanicsStatus": "pending"
+              "mechanicsStatus": "pending",
+              "attributes": null,
+              "movement": null,
+              "innateAbility": null,
+              "resistance": null,
+              "resistanceStatus": "undecided; optional"
             },
             {
               "name": "Feline",
               "creatures": "Cats, lions, tigers, panthers",
-              "mechanicsStatus": "pending"
+              "mechanicsStatus": "pending",
+              "attributes": null,
+              "movement": null,
+              "innateAbility": null,
+              "resistance": null,
+              "resistanceStatus": "undecided; optional"
             },
             {
               "name": "Ursine",
               "creatures": "Bears",
-              "mechanicsStatus": "pending"
+              "mechanicsStatus": "pending",
+              "attributes": null,
+              "movement": null,
+              "innateAbility": null,
+              "resistance": null,
+              "resistanceStatus": "undecided; optional"
             },
             {
               "name": "Cervine",
               "creatures": "Deer, elk",
-              "mechanicsStatus": "pending"
+              "mechanicsStatus": "pending",
+              "attributes": null,
+              "movement": null,
+              "innateAbility": null,
+              "resistance": null,
+              "resistanceStatus": "undecided; optional"
             },
             {
               "name": "Vulpine",
               "creatures": "Foxes",
-              "mechanicsStatus": "pending"
+              "mechanicsStatus": "pending",
+              "attributes": null,
+              "movement": null,
+              "innateAbility": null,
+              "resistance": null,
+              "resistanceStatus": "undecided; optional"
             }
           ]
         },
@@ -298,22 +323,42 @@
             {
               "name": "Saurian",
               "creatures": "Lizards",
-              "mechanicsStatus": "pending"
+              "mechanicsStatus": "pending",
+              "attributes": null,
+              "movement": null,
+              "innateAbility": null,
+              "resistance": null,
+              "resistanceStatus": "undecided; optional"
             },
             {
               "name": "Serpentine",
               "creatures": "Snakes",
-              "mechanicsStatus": "pending"
+              "mechanicsStatus": "pending",
+              "attributes": null,
+              "movement": null,
+              "innateAbility": null,
+              "resistance": null,
+              "resistanceStatus": "undecided; optional"
             },
             {
               "name": "Crocodilian",
               "creatures": "Crocodiles, alligators",
-              "mechanicsStatus": "pending"
+              "mechanicsStatus": "pending",
+              "attributes": null,
+              "movement": null,
+              "innateAbility": null,
+              "resistance": null,
+              "resistanceStatus": "undecided; optional"
             },
             {
               "name": "Chelonian",
               "creatures": "Turtles, tortoises",
-              "mechanicsStatus": "pending"
+              "mechanicsStatus": "pending",
+              "attributes": null,
+              "movement": null,
+              "innateAbility": null,
+              "resistance": null,
+              "resistanceStatus": "undecided; optional"
             }
           ]
         },
@@ -323,17 +368,32 @@
             {
               "name": "Aquiline",
               "creatures": "Eagles, hawks",
-              "mechanicsStatus": "pending"
+              "mechanicsStatus": "pending",
+              "attributes": null,
+              "movement": null,
+              "innateAbility": null,
+              "resistance": null,
+              "resistanceStatus": "undecided; optional"
             },
             {
               "name": "Corvine",
               "creatures": "Ravens, crows",
-              "mechanicsStatus": "pending"
+              "mechanicsStatus": "pending",
+              "attributes": null,
+              "movement": null,
+              "innateAbility": null,
+              "resistance": null,
+              "resistanceStatus": "undecided; optional"
             },
             {
               "name": "Strigine",
               "creatures": "Owls",
-              "mechanicsStatus": "pending"
+              "mechanicsStatus": "pending",
+              "attributes": null,
+              "movement": null,
+              "innateAbility": null,
+              "resistance": null,
+              "resistanceStatus": "undecided; optional"
             }
           ]
         },
@@ -343,22 +403,42 @@
             {
               "name": "Mantid",
               "creatures": "Praying mantises",
-              "mechanicsStatus": "pending"
+              "mechanicsStatus": "pending",
+              "attributes": null,
+              "movement": null,
+              "innateAbility": null,
+              "resistance": null,
+              "resistanceStatus": "undecided; optional"
             },
             {
               "name": "Formicine",
               "creatures": "Ants",
-              "mechanicsStatus": "pending"
+              "mechanicsStatus": "pending",
+              "attributes": null,
+              "movement": null,
+              "innateAbility": null,
+              "resistance": null,
+              "resistanceStatus": "undecided; optional"
             },
             {
               "name": "Scarabine",
               "creatures": "Beetles",
-              "mechanicsStatus": "pending"
+              "mechanicsStatus": "pending",
+              "attributes": null,
+              "movement": null,
+              "innateAbility": null,
+              "resistance": null,
+              "resistanceStatus": "undecided; optional"
             },
             {
               "name": "Arachnid",
               "creatures": "Spiders, scorpions",
-              "mechanicsStatus": "pending"
+              "mechanicsStatus": "pending",
+              "attributes": null,
+              "movement": null,
+              "innateAbility": null,
+              "resistance": null,
+              "resistanceStatus": "undecided; optional"
             }
           ]
         },
@@ -368,26 +448,54 @@
             {
               "name": "Selachian",
               "creatures": "Sharks",
-              "mechanicsStatus": "pending"
+              "mechanicsStatus": "pending",
+              "attributes": null,
+              "movement": null,
+              "innateAbility": null,
+              "resistance": null,
+              "resistanceStatus": "undecided; optional"
             },
             {
               "name": "Cephalid",
               "creatures": "Octopuses, cuttlefish",
-              "mechanicsStatus": "pending"
+              "mechanicsStatus": "pending",
+              "attributes": null,
+              "movement": null,
+              "innateAbility": null,
+              "resistance": null,
+              "resistanceStatus": "undecided; optional"
             },
             {
               "name": "Anuran",
               "creatures": "Frogs, toads",
-              "mechanicsStatus": "pending"
+              "mechanicsStatus": "pending",
+              "attributes": null,
+              "movement": null,
+              "innateAbility": null,
+              "resistance": null,
+              "resistanceStatus": "undecided; optional"
             },
             {
               "name": "Crustacean",
               "creatures": "Crabs, lobsters",
-              "mechanicsStatus": "pending"
+              "mechanicsStatus": "pending",
+              "attributes": null,
+              "movement": null,
+              "innateAbility": null,
+              "resistance": null,
+              "resistanceStatus": "undecided; optional"
             }
           ]
         }
-      ]
+      ],
+      "tribeDesignPolicy": {
+        "attributes": "Each tribe receives its own attribute adjustments in percentage points.",
+        "movement": "Each tribe has its own movement speeds and movement types as appropriate.",
+        "innateAbility": "Each tribe has a distinct innate racial ability.",
+        "resistance": "Optional, determined by tribe; do not grant one by default.",
+        "sharedBonuses": "No universal Mythrain mechanical bonuses have been established.",
+        "status": "structure approved; values undecided"
+      }
     },
     {
       "id": "draconian",
