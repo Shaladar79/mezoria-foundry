@@ -496,12 +496,42 @@
             {
               "name": "Crocodilian",
               "creatures": "Crocodiles, alligators",
-              "mechanicsStatus": "pending",
-              "attributes": null,
-              "movement": null,
-              "innateAbility": null,
-              "resistance": null,
-              "resistanceStatus": "undecided; optional"
+              "mechanicsStatus": "approved; bite damage and grapple mechanics pending",
+              "attributes": {
+                "bonuses": [
+                  {
+                    "attribute": "Might",
+                    "percentagePoints": 3
+                  },
+                  {
+                    "attribute": "Endurance",
+                    "percentagePoints": 3
+                  }
+                ]
+              },
+              "movement": {
+                "ground": 4,
+                "swim": 5
+              },
+              "innateAbility": {
+                "name": "Crushing Jaws",
+                "type": "innate-tribal",
+                "description": "Natural bite attack designed to grapple, hold, and restrain enemies.",
+                "damage": "pending combat design",
+                "grappleEffect": "pending grappling rules"
+              },
+              "resistance": {
+                "type": "Physical",
+                "valuePercent": 5,
+                "appliesTo": [
+                  "Slashing",
+                  "Piercing",
+                  "Bludgeoning"
+                ],
+                "timing": "Before shield and armor mitigation pools",
+                "rounding": "pending general damage resistance rules"
+              },
+              "resistanceStatus": "approved"
             },
             {
               "name": "Chelonian",
