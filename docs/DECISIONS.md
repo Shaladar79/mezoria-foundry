@@ -151,3 +151,9 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - When a mixed attack includes multiple eligible **non-Physical damage types** and shield capacity is insufficient, the **attacker chooses their resolution order when declaring the attack**.
 - This priority must be declared **before the defender's damage resistances and mitigation are calculated** and cannot be changed after seeing the result.
 - Remaining magical shield pool absorbs non-Physical components in the declared order. Only damage types eligible under the shield ability can be absorbed.
+
+## Magical shield stacking and replacement (approved)
+- A target may have **only one active ability-created magical shield mitigation pool at a time**. These pools never stack.
+- Applying a **stronger magical shield replaces the existing shield**, including the old shield's remaining mitigation pool and the types of damage it protects against. The two pools do not combine.
+- Equipment shields that grant Block are a distinct mechanic and do not occupy the magical shield slot.
+- How to measure shield strength and what happens when an equal-strength or weaker shield is cast remain pending.
