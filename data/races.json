@@ -236,7 +236,7 @@
         "Lupine",
         "Feline",
         "Ursine",
-        "Cervine",
+        "Caprine",
         "Vulpine",
         "Saurian",
         "Serpentine",
@@ -358,14 +358,32 @@
               "resistanceStatus": "No innate resistance"
             },
             {
-              "name": "Cervine",
-              "creatures": "Deer, elk",
-              "mechanicsStatus": "pending",
+              "name": "Caprine",
+              "creatures": "Goats",
+              "mechanicsStatus": "Tribe replacement approved; specific mechanics pending",
               "attributes": null,
               "movement": null,
-              "innateAbility": null,
+              "innateAbility": {
+                "name": "Surefooted",
+                "status": "proposed",
+                "description": "Natural balance and footing on steep, narrow, rocky, or uneven terrain; suggested +10 percentage points to relevant Acrobatics checks."
+              },
               "resistance": null,
-              "resistanceStatus": "undecided; optional"
+              "resistanceStatus": "undecided; optional",
+              "proposals": {
+                "attributes": [
+                  {
+                    "attribute": "Prowess",
+                    "percentagePoints": 3
+                  },
+                  {
+                    "attribute": "Presence",
+                    "percentagePoints": 3
+                  }
+                ],
+                "groundMovement": 6,
+                "resistance": null
+              }
             },
             {
               "name": "Vulpine",
