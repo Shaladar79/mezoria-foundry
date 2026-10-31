@@ -390,12 +390,32 @@
             {
               "name": "Vulpine",
               "creatures": "Foxes",
-              "mechanicsStatus": "pending",
-              "attributes": null,
-              "movement": null,
-              "innateAbility": null,
+              "mechanicsStatus": "approved",
+              "attributes": {
+                "bonuses": [
+                  {
+                    "attribute": "Intellect",
+                    "percentagePoints": 3
+                  },
+                  {
+                    "attribute": "Presence",
+                    "percentagePoints": 3
+                  }
+                ]
+              },
+              "movement": {
+                "ground": 5
+              },
+              "innateAbility": {
+                "name": "Fox's Cunning",
+                "type": "innate-tribal",
+                "description": "Use guile and misdirection to deceive others.",
+                "skill": "Deception",
+                "condition": "Misleading others, creating distractions, or concealing intentions",
+                "bonusPercentagePoints": 10
+              },
               "resistance": null,
-              "resistanceStatus": "undecided; optional"
+              "resistanceStatus": "No innate resistance"
             }
           ]
         },
