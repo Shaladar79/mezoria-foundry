@@ -1678,10 +1678,15 @@
           "id": "reinforced-coral",
           "name": "Reinforced Coral",
           "type": "innate-racial",
-          "description": "A protective coral structure reinforces the Anthozoan's body, providing natural defense.",
-          "protectionType": "physical resistance",
-          "valuePercent": null,
-          "mechanicsStatus": "approved concept; numerical resistance pending"
+          "description": "The Anthozoan's living coral body provides 5% Physical Resistance in addition to its existing 5% Water Resistance.",
+          "protectionType": "Physical Resistance",
+          "valuePercent": 5,
+          "mechanicsStatus": "approved; resistance rounding pending shared rules",
+          "appliesTo": [
+            "Slashing",
+            "Piercing",
+            "Bludgeoning"
+          ]
         },
         {
           "id": "chest-of-the-deep",
