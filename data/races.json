@@ -784,12 +784,36 @@
             {
               "name": "Arachnid",
               "creatures": "Spiders, scorpions",
-              "mechanicsStatus": "pending",
-              "attributes": null,
-              "movement": null,
-              "innateAbility": null,
-              "resistance": null,
-              "resistanceStatus": "undecided; optional"
+              "mechanicsStatus": "approved; specialized climbing rules pending",
+              "attributes": {
+                "bonuses": [
+                  {
+                    "attribute": "Prowess",
+                    "percentagePoints": 3
+                  },
+                  {
+                    "attribute": "Intellect",
+                    "percentagePoints": 3
+                  }
+                ]
+              },
+              "movement": {
+                "ground": 5,
+                "climb": 5,
+                "climbRestrictions": "Natural vertical surfaces under ordinary conditions; exact climbing rules pending"
+              },
+              "innateAbility": {
+                "name": "Wall Crawler",
+                "type": "innate-tribal",
+                "description": "Climb vertical natural surfaces at normal movement speed without an Athletics check under ordinary conditions.",
+                "exception": "Unusual, hazardous, or magically altered surfaces may require checks; details pending."
+              },
+              "resistance": {
+                "type": "Poison",
+                "valuePercent": 5,
+                "calculation": "Pending general resistance system"
+              },
+              "resistanceStatus": "approved"
             }
           ]
         },
