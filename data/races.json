@@ -1400,11 +1400,42 @@
           "name": "Earth",
           "element": "Earth",
           "bodyComposition": "Living earth elemental energy in humanoid form",
-          "attributes": null,
-          "movement": null,
-          "resistance": null,
-          "innateAbility": null,
-          "mechanicsStatus": "pending"
+          "attributes": {
+            "bonuses": [
+              {
+                "attribute": "Might",
+                "percentagePoints": 3
+              },
+              {
+                "attribute": "Endurance",
+                "percentagePoints": 3
+              }
+            ]
+          },
+          "movement": {
+            "ground": 4,
+            "burrow": {
+              "formula": "base ground movement / 2",
+              "scalesWithMovement": true,
+              "startingValue": 2,
+              "rounding": "pending movement rules"
+            }
+          },
+          "resistance": {
+            "type": "Physical",
+            "valuePercent": 5,
+            "calculation": "pending general resistance rules"
+          },
+          "innateAbility": {
+            "name": "Burrow",
+            "type": "innate-aspect",
+            "manaCost": 0,
+            "description": "Move through natural soil, sand, and loose earth at half the Scion's current base ground movement; increases when base movement increases. Earth closes behind the Scion without leaving usable tunnels.",
+            "restrictions": "Cannot penetrate solid bedrock or magically reinforced surfaces; burrowing does not automatically negate attacks when entering or emerging.",
+            "movementFormula": "base ground movement / 2",
+            "movementRounding": "pending movement rules"
+          },
+          "mechanicsStatus": "approved"
         },
         {
           "name": "Air",
