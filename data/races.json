@@ -298,18 +298,9 @@
             {
               "name": "Feline",
               "creatures": "Cats, lions, tigers, panthers",
-              "mechanicsStatus": "stealth focus approved; precise mechanical bonus and stats awaiting confirmation",
-              "attributes": null,
-              "movement": null,
-              "innateAbility": {
-                "name": "Silent Stalker",
-                "focus": "Stealth and ambush",
-                "mechanicsStatus": "Proposed +10 percentage points to Stealth when stalking, approaching enemies or setting ambushes; not yet confirmed"
-              },
-              "resistance": null,
-              "resistanceStatus": "undecided; optional",
-              "proposals": {
-                "attributes": [
+              "mechanicsStatus": "approved",
+              "attributes": {
+                "bonuses": [
                   {
                     "attribute": "Prowess",
                     "percentagePoints": 3
@@ -318,10 +309,22 @@
                     "attribute": "Intellect",
                     "percentagePoints": 3
                   }
-                ],
-                "groundMovement": 6,
-                "resistance": null
-              }
+                ]
+              },
+              "movement": {
+                "ground": 6
+              },
+              "innateAbility": {
+                "name": "Silent Stalker",
+                "type": "innate-tribal",
+                "description": "Exceptional stealth when stalking prey, approaching enemies unnoticed, or positioning for an ambush.",
+                "skill": "Stealth",
+                "condition": "Stalking prey, sneaking up on enemies, or positioning for an ambush",
+                "bonusPercentagePoints": 10,
+                "limitations": "Does not apply to unrelated Stealth checks."
+              },
+              "resistance": null,
+              "resistanceStatus": "No innate resistance"
             },
             {
               "name": "Ursine",
