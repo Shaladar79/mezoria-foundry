@@ -757,8 +757,10 @@
                 "name": "Predatory Reflexes",
                 "bonusPercentagePoints": 5,
                 "skill": "Melee Combat",
-                "condition": "Target has not acted in current combat",
-                "status": "approved"
+                "condition": "Attacking a target that has not acted yet in the current combat, or a target that is surprised or unaware of the Mantid",
+                "status": "approved",
+                "description": "Gain +5 percentage points to Melee Combat attacks against enemies who have not acted yet, or who are surprised or unaware of the Mantid. These conditions do not stack.",
+                "stacking": "Qualifying conditions do not increase the bonus beyond +5 percentage points"
               },
               "resistance": null,
               "resistanceStatus": "No innate resistance"
