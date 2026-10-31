@@ -331,12 +331,30 @@
     "attackVsDefense": {
       "status": "approved",
       "formula": "modifiedAttackSkillPercentage - sum(applicableDefensePercentages)",
-      "hitCondition": "d100 <= final attack target",
-      "successes": "1 + floor((final attack target - d100 roll) / 10) on success",
+      "hitCondition": "Attack hits if d100 <= final attack target OR natural roll is 01-05 (automatic hit even if final target is zero or negative).",
+      "successes": "Normal hit: 1 + floor((final attack target - roll)/10). For automatic hits when roll exceeds final target and final target <= 5, assign 1 normal success.",
       "applicableDefense": "Use melee/ranged and magic-defense restrictions already established",
-      "minimumAndMaximumTargets": "pending",
-      "criticalInteraction": "Natural 01-05 adds +3 successes only on a successful check under existing general resolution rule; special treatment at nonpositive targets pending",
-      "notes": "Defense subtraction modifies both chance to hit and number of successes; account for applicable situational attack modifiers as part of modified attack skill"
+      "minimumAndMaximumTargets": "The raw final target may be zero or negative; natural 01-05 always hits. Upper target cap remains pending.",
+      "criticalInteraction": "When final attack target is 5 or less, natural 01-05 is an automatic normal hit with 1 success and no +3 critical successes. When final attack target is greater than 5, a natural 01-05 hit gains the existing +3 critical successes.",
+      "notes": "Defense subtraction modifies both chance to hit and number of successes; account for applicable situational attack modifiers as part of modified attack skill",
+      "minimumHitChancePercent": 5
+    },
+    "attackRollEdgeCases": {
+      "automaticHitRange": [
+        1,
+        5
+      ],
+      "automaticHitRegardlessOfDefense": true,
+      "lowTargetThreshold": 5,
+      "lowTargetNaturalHit": {
+        "successes": 1,
+        "criticalExtraSuccesses": 0
+      },
+      "higherTargetNaturalHit": {
+        "successFormula": "1 + floor((target-roll)/10)",
+        "criticalExtraSuccesses": 3
+      },
+      "scope": "Attack rolls; general non-attack skill critical rules unchanged"
     }
   },
   "wounds": {
