@@ -1360,11 +1360,41 @@
           "name": "Water",
           "element": "Water",
           "bodyComposition": "Living water elemental energy in humanoid form",
-          "attributes": null,
-          "movement": null,
-          "resistance": null,
-          "innateAbility": null,
-          "mechanicsStatus": "pending"
+          "attributes": {
+            "bonuses": [
+              {
+                "attribute": "Prowess",
+                "percentagePoints": 3
+              },
+              {
+                "attribute": "Endurance",
+                "percentagePoints": 3
+              }
+            ]
+          },
+          "movement": {
+            "ground": 5,
+            "swim": 6
+          },
+          "resistance": {
+            "type": "Water",
+            "valuePercent": 5,
+            "calculation": "pending general resistance rules"
+          },
+          "innateAbility": {
+            "name": "Fluid Form",
+            "type": "innate-aspect",
+            "description": "Temporarily reshape watery body to pass through narrow openings provided the entire body's volume can pass. Does not grant intangibility.",
+            "manaCost": 0,
+            "activation": "at will",
+            "limitations": "Opening must accommodate total body volume; cannot phase through solid barriers",
+            "minimumOpeningSize": "pending"
+          },
+          "mechanicsStatus": "approved",
+          "breathing": {
+            "requiresAir": false,
+            "underwaterFunctionality": true
+          }
         },
         {
           "name": "Earth",
