@@ -182,3 +182,9 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Shields remain active until the ability-defined duration expires, their mitigation pool is depleted, or another established replacement/end condition occurs.
 - An individual shield ability may explicitly require concentration, recurring Mana, or other upkeep; these are exceptions, not the baseline.
 - Initial casting costs are established by each ability and are unaffected by this maintenance rule.
+
+## Dispelling magical shields (approved)
+- Active ability-created magical shields **can be targeted and removed by dispelling magic**, provided the dispelling effect is strong enough to overcome the shield.
+- A successful dispel ends the shield immediately, removing its remaining mitigation pool and damage-type coverage.
+- Dispelling is an alternative to depleting the shield by damage or waiting for its duration to expire.
+- The precise dispel contest, strength calculation, targeting, and thresholds are deferred until the magic ability system is developed.
