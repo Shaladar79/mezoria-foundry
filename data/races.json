@@ -1403,13 +1403,17 @@
           "innateAbility": {
             "name": "Living Flame",
             "type": "innate-aspect",
-            "description": "Produce light from the Scion's own fiery body at will. The light may be suppressed or restored voluntarily.",
+            "description": "The Fire Scion can illuminate its surroundings at will and generate warmth from its living flames. Gain +10 percentage points to Survival checks involving generating warmth, maintaining fires, or protecting self and companions against ordinary cold environments.",
             "manaCost": 0,
             "activation": "at will",
             "additionalDamage": 0,
-            "lightRadius": "pending illumination rules"
+            "lightRadius": "pending illumination rules",
+            "skill": "Survival",
+            "bonusPercentagePoints": 10,
+            "condition": "Generating warmth, maintaining fires, or protecting self and companions against ordinary environmental cold",
+            "limitations": "Does not grant Ice Resistance, negate magical cold damage, or provide additional attack damage."
           },
-          "mechanicsStatus": "approved"
+          "mechanicsStatus": "approved; illumination radius pending"
         },
         {
           "name": "Water",
