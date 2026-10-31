@@ -61,3 +61,10 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - **Magical shields** granted by abilities provide a damage-mitigation pool. That pool absorbs post-resistance damage before armor mitigation.
 - Combat damage order: applicable resistance → magical shield mitigation pool (if active) → armor mitigation pool → Health → Wounds.
 - Exact equipment Block percentages, magical shield capacity, lifetime, and recharge rules remain pending.
+
+## Armor mitigation durability and repair (approved)
+- Armor provides an equipment mitigation pool which depletes as it absorbs damage after applicable resistances and magical shields.
+- Depletion persists across combat encounters; armor does **not** automatically regain mitigation when combat ends.
+- Ordinary armor requires repairs to restore its mitigation pool.
+- Some magical armor has item-specific regeneration of its mitigation pool over time, without ordinary repair; rates and conditions are defined by the item.
+- Armor mitigation capacity, repair methods/costs, and magical regeneration intervals are deferred to equipment design.
