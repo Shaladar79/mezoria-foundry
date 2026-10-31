@@ -212,7 +212,7 @@
       "status": "approved",
       "rule": "For attacks with multiple damage types, divide incoming damage by damage type and resolve applicable resistance on each component separately, using the approved floor with minimum 1 prevention for positive matching resistance and damage.",
       "perTypeFormula": "min(componentDamage, max(1, floor(componentDamage * applicableResistancePercent / 100))) when both componentDamage and applicableResistancePercent are positive; otherwise zero",
-      "order": "Apply resistance separately to matching damage types; resolve magical shield mitigation according to shield ability's applicable types (pending specification), then armor mitigation only against types covered by armor, followed by Health and Wounds.",
+      "order": "After per-type resistance, magical shield pools absorb eligible damage types (all by default unless ability restrictions); remaining type-specific components pass to armor only where armor protects those types, then to Health and Wounds.",
       "shieldArmorHandling": "How subsequent shield and armor mitigation is allocated among remaining damage types is pending."
     },
     "shieldTypes": {
@@ -289,7 +289,7 @@
           "additionalDamageTypes": "Only damage types explicitly specified by the individual magical armor's properties"
         },
         "mixedDamageHandling": "Keep type-specific components distinct through armor mitigation. Apply armor's mitigation pool only to components whose damage type that armor protects against; other components bypass armor and proceed to Health/Wounds.",
-        "magicalShieldDamageTypeHandling": "not yet specified; pending next design decision",
+        "magicalShieldDamageTypeHandling": "Ability-created magical shield pools absorb all damage types by default, unless the ability specifies restricted coverage; allocation for mixed attacks when pool is insufficient remains pending.",
         "physicalSubtypes": "slash/pierce/bludgeon count as Physical"
       }
     },
@@ -390,6 +390,16 @@
       "specialModifiers": "Apply explicitly defined additional damage and typed effects per their individual rules; interaction/order pending item and ability design",
       "values": "Weapon and ability damage-per-success values pending equipment and ability design",
       "example": "3 damage per success with 4 successes deals 12 damage before resistances and mitigation"
+    },
+    "magicalShieldMitigation": {
+      "status": "approved",
+      "source": "Abilities, not equipped physical shields",
+      "defaultDamageTypeCoverage": "All incoming damage types, including Physical and elemental damage",
+      "exceptions": "Individual abilities may explicitly limit shield coverage to specified damage types",
+      "damageOrder": "After applicable damage resistance and before armor mitigation",
+      "poolBehavior": "Absorbs eligible incoming damage up to remaining magical shield mitigation pool capacity",
+      "allocationAcrossMixedDamage": "Pending: if available pool is insufficient for a mixed-type attack, determine which damage type is absorbed first",
+      "capacityDurationRecharge": "Pending per-ability design"
     }
   },
   "wounds": {
