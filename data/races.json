@@ -1588,11 +1588,38 @@
           "name": "Ice",
           "element": "Ice",
           "bodyComposition": "Living ice elemental energy in humanoid form",
-          "attributes": null,
-          "movement": null,
-          "resistance": null,
-          "innateAbility": null,
-          "mechanicsStatus": "pending"
+          "attributes": {
+            "bonuses": [
+              {
+                "attribute": "Endurance",
+                "percentagePoints": 3
+              },
+              {
+                "attribute": "Intellect",
+                "percentagePoints": 3
+              }
+            ]
+          },
+          "movement": {
+            "ground": 4
+          },
+          "resistance": {
+            "type": "Ice",
+            "valuePercent": 5,
+            "calculation": "pending general resistance rules"
+          },
+          "innateAbility": {
+            "name": "Frostwalk",
+            "type": "innate-aspect",
+            "manaCost": 0,
+            "description": "Ignore ordinary movement penalties from natural snow and ice, and gain +10 percentage points to Acrobatics checks to maintain balance on slippery or frozen surfaces.",
+            "skill": "Acrobatics",
+            "bonusPercentagePoints": 10,
+            "condition": "Maintaining balance on slippery or frozen surfaces",
+            "movementBenefit": "Ignore ordinary movement penalties from natural snow and ice",
+            "limitations": "Does not negate magical immobilization or movement restrictions"
+          },
+          "mechanicsStatus": "approved"
         }
       ],
       "sharedRacialAbilities": [
