@@ -100,3 +100,9 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - **Ordinary equipped shields cannot Block magic by default**. Special item properties may allow it; exact shield enchantments are part of equipment design.
 - Unavoidable spells use **Spell Resistance only**; Dodge, Parry, and equipment Block do not apply.
 - Detailed attack-versus-defense math remains to be designed.
+
+## Attack versus defense (approved)
+- **Final attack target = modified attacker skill percentage − sum of applicable defender defense percentages**, as determined by attack type and shield-magic restrictions.
+- Roll d100. An attack succeeds when the roll is at most the **final attack target**.
+- Successful attack's successes use **1 + floor((final attack target − roll) / 10)**, so defense can reduce both accuracy and success count.
+- Existing successful natural 01–05 critical bonus of 3 successes remains unchanged; target floors/ceilings and edge cases will be reviewed separately.
