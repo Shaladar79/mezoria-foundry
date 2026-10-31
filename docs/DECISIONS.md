@@ -165,3 +165,8 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - If accepted, the new shield completely replaces the old shield's remaining pool, damage-type protection, and other shield properties. If refused, the existing shield stays unchanged.
 - Example: an existing Fire-only shield with **22 remaining** may be replaced voluntarily with an all-type Arcane Barrier providing **20**; the recipient may instead keep the Fire shield.
 - Equipment shields granting Block remain separate from this magical shield slot.
+
+## Same-shield recasting (approved)
+- Recasting an existing magical shield creates a new offered mitigation pool rather than adding protection to the active pool.
+- The recipient may accept the new shield and replace the current one, or keep the current shield.
+- Example: an Arcane Barrier at 8/20, recast for 20, becomes 20/20 if accepted, not 28.
