@@ -49,3 +49,9 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - On a hit dealing positive damage of a type with positive applicable resistance, prevent `min(matching damage, max(1, floor(matching damage × resistancePercent / 100)))` damage.
 - No fractional carryover. Each damage type in a mixed hit is resolved separately. Do not reduce damage below zero.
 - This means a 5% resistance prevents all of a 1-point matching hit; playtest small-hit balance before considering any changes.
+
+## Mixed-type damage resistance (approved)
+- Split a mixed-damage attack into its damage-type components before resistance.
+- Calculate applicable resistance separately for each component using floor, minimum 1 prevented damage when both matching damage and resistance are positive; prevention never exceeds that component's damage.
+- Combine remaining damage after resistance and proceed through shield mitigation, armor mitigation, Health, and Wounds in the approved order.
+- Rules for assigning remaining damage types to shield and armor mitigation pools still require design.
