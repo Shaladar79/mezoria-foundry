@@ -74,3 +74,11 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Field repairs may restore up to **25% of the armor's maximum mitigation pool**; exact rounding and handling of repeat field repairs remain to be decided.
 - Full repairs, restoring the complete mitigation pool, require an appropriate workshop and Crafting skill.
 - Tool/material requirements, repair time and roll difficulty will be defined with the Crafting and equipment systems.
+
+## Armor field-repair ceiling and Durability (approved revision)
+- Field repair is **not** a total cumulative 25% repair allowance. It may be repeated, but may never raise the armor's current mitigation pool above **25% of the original maximum mitigation pool**. Example: maximum 40, field-repair ceiling 10; with pool 0 it can be brought to 10, with pool 7 it can be brought to 10.
+- Armor has a separate **Durability** score, analogous to wounds. Each time a positive armor mitigation pool is depleted to zero, armor loses **1 Durability**. While the pool remains at zero, further hits do not repeatedly subtract Durability; repairing and depleting again triggers another loss.
+- At **0 Durability**, armor cannot be repaired in the field until it is repaired in an appropriate workshop. Workshop repair is required to restore field-repair eligibility.
+- Full mitigation-pool repair requires an appropriate workshop. The appropriate Crafting skill is required for field repairs and workshop repairs.
+- Starting/max Durability, amount restored by workshop repair, 25% ceiling rounding, tools/materials, and interaction with magical self-repair will be defined later.
+- This replaces the earlier interpretation of field repairs as a cumulative 25%-of-maximum restoration allowance.
