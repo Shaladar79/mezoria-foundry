@@ -1480,11 +1480,38 @@
           "name": "Light",
           "element": "Light",
           "bodyComposition": "Living light elemental energy in humanoid form",
-          "attributes": null,
-          "movement": null,
-          "resistance": null,
-          "innateAbility": null,
-          "mechanicsStatus": "pending"
+          "attributes": {
+            "bonuses": [
+              {
+                "attribute": "Intellect",
+                "percentagePoints": 3
+              },
+              {
+                "attribute": "Presence",
+                "percentagePoints": 3
+              }
+            ]
+          },
+          "movement": {
+            "ground": 5
+          },
+          "resistance": {
+            "type": "Light",
+            "valuePercent": 5,
+            "calculation": "pending general resistance rules"
+          },
+          "innateAbility": {
+            "name": "Revealing Radiance",
+            "type": "innate-aspect",
+            "manaCost": 0,
+            "activation": "at will",
+            "description": "Radiate bright light from the body, revealing ordinarily concealed creatures and objects within the illuminated area. Does not automatically expose invisible creatures or dispel magical concealment.",
+            "skill": "Perception",
+            "bonusPercentagePoints": 10,
+            "condition": "Searching for hidden creatures or objects in darkness within the area illuminated by the Scion",
+            "lightRadius": "pending illumination rules"
+          },
+          "mechanicsStatus": "approved"
         },
         {
           "name": "Shadow",
