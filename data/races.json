@@ -861,12 +861,42 @@
             {
               "name": "Cephalid",
               "creatures": "Octopuses, cuttlefish",
-              "mechanicsStatus": "pending",
-              "attributes": null,
-              "movement": null,
-              "innateAbility": null,
-              "resistance": null,
-              "resistanceStatus": "undecided; optional"
+              "mechanicsStatus": "approved",
+              "attributes": {
+                "bonuses": [
+                  {
+                    "attribute": "Prowess",
+                    "percentagePoints": 3
+                  },
+                  {
+                    "attribute": "Intellect",
+                    "percentagePoints": 3
+                  }
+                ]
+              },
+              "movement": {
+                "land": 3,
+                "swim": 6
+              },
+              "innateAbility": {
+                "name": "Chromatic Camouflage",
+                "type": "innate-tribal",
+                "description": "Alter skin coloration and patterns to blend into surroundings while remaining stationary.",
+                "skill": "Stealth",
+                "bonusPercentagePoints": 10,
+                "condition": "Remaining stationary and blending into surroundings",
+                "limitations": "Does not grant invisibility or conceal the character while moving"
+              },
+              "resistance": {
+                "type": "Water",
+                "valuePercent": 5,
+                "calculation": "pending general resistance system"
+              },
+              "resistanceStatus": "approved",
+              "breathing": {
+                "air": true,
+                "water": true
+              }
             },
             {
               "name": "Anuran",
