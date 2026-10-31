@@ -242,21 +242,34 @@
       "poolSize": "pending equipment design",
       "status": "approved foundation",
       "fieldRepairs": {
-        "status": "approved foundation",
-        "location": "field; no full workshop required",
-        "skillRequirement": "Appropriate Crafting skill for armor material and type",
-        "skillCheck": "appropriate Crafting check; difficulty pending",
-        "restorationLimitPercentOfMaximumPool": 25,
-        "restorationLimitInterpretation": "Field repair can restore at most 25% of the armor's maximum mitigation pool; whether this cap resets after repeat attempts or is cumulative until workshop repair remains pending",
-        "materialsAndTools": "exact requirements pending",
-        "rounding": "pending shared rounding decision"
+        "status": "approved",
+        "location": "field without workshop",
+        "skillRequirement": "appropriate Crafting skill for armor material and type",
+        "skillCheck": "difficulty pending",
+        "maximumRestoredPoolPercent": 25,
+        "capInterpretation": "Field repairs may be repeated, but armor's current mitigation pool cannot be raised above 25% of its original maximum mitigation pool by field repairs",
+        "availability": "Only if armor durability is greater than zero",
+        "materialsAndTools": "pending",
+        "rounding": "pending"
       },
       "fullRepairs": {
-        "location": "appropriate workshop for armor type",
+        "location": "appropriate workshop",
         "skillRequirement": "Appropriate Crafting skill",
         "materialsAndTools": "pending",
         "canRestoreFullPool": true,
-        "checkAndTime": "pending"
+        "checkAndTime": "pending",
+        "zeroDurabilityRepair": "workshop required before field repairs become available again",
+        "durabilityRestorationAmount": "pending"
+      },
+      "durability": {
+        "status": "approved concept and depletion rule",
+        "description": "Armor has Durability points analogous to wounds; each event in which its mitigation pool is depleted to zero costs one Durability point.",
+        "onPoolDepleted": "Lose 1 Durability when the mitigation pool transitions from positive to zero; further damage at zero does not deduct additional Durability until it has been restored and depleted again",
+        "minimumDurability": 0,
+        "atZero": "No field repairs possible until repaired at an appropriate workshop",
+        "maximumDurability": "pending armor design",
+        "workshopDurabilityRestoration": "pending workshop repair rules",
+        "interactionWithMagicalRegeneration": "pending"
       }
     }
   },
