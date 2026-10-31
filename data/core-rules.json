@@ -197,7 +197,7 @@
       "Health",
       "Wounds"
     ],
-    "damagePerSuccess": "weapon or ability specific; values pending",
+    "damagePerSuccess": "Damage from damaging weapons and abilities scales directly with the number of attack successes; each weapon or ability defines its own damage per success.",
     "resistanceCalculation": {
       "formula": "min(incomingMatchingDamage, max(1, floor(incomingMatchingDamage * resistancePercent / 100)))",
       "appliesWhen": "matching damage > 0 and resistancePercent > 0",
@@ -363,6 +363,15 @@
       "automaticMissRegardlessOfAccuracy": true,
       "automaticMissPenalty": "Ordinary miss; no additional critical-failure penalty by default",
       "maximumEffectiveHitChancePercent": 95
+    },
+    "damageScaling": {
+      "status": "approved",
+      "formula": "baseDamage = successes * weaponOrAbilityDamagePerSuccess",
+      "damagePerSuccessSource": "Defined individually by the weapon or ability",
+      "application": "On successful damaging attacks or abilities, including bonus successes from critical rolls",
+      "specialModifiers": "Apply explicitly defined additional damage and typed effects per their individual rules; interaction/order pending item and ability design",
+      "values": "Weapon and ability damage-per-success values pending equipment and ability design",
+      "example": "3 damage per success with 4 successes deals 12 damage before resistances and mitigation"
     }
   },
   "wounds": {
