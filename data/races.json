@@ -268,19 +268,9 @@
             {
               "name": "Lupine",
               "creatures": "Wolves",
-              "mechanicsStatus": "tracking ability identity approved; attributes and movement proposed but not confirmed",
-              "attributes": null,
-              "movement": null,
-              "innateAbility": {
-                "name": "Keen Smell",
-                "focus": "Tracking and hunting",
-                "description": "Lupines can follow scent trails and use their keen sense of smell for tracking.",
-                "mechanicalBonus": "pending"
-              },
-              "resistance": null,
-              "resistanceStatus": "undecided; optional",
-              "proposals": {
-                "attributes": [
+              "mechanicsStatus": "approved",
+              "attributes": {
+                "bonuses": [
                   {
                     "attribute": "Prowess",
                     "percentagePoints": 3
@@ -289,10 +279,21 @@
                     "attribute": "Presence",
                     "percentagePoints": 3
                   }
-                ],
-                "groundMovement": 5,
-                "resistance": null
-              }
+                ]
+              },
+              "movement": {
+                "ground": 5
+              },
+              "innateAbility": {
+                "name": "Keen Smell",
+                "type": "innate-tribal",
+                "description": "Track creatures using scent trails.",
+                "skill": "Survival",
+                "condition": "Checks made specifically to track by scent",
+                "bonusPercentagePoints": 10
+              },
+              "resistance": null,
+              "resistanceStatus": "No innate resistance"
             },
             {
               "name": "Feline",
