@@ -126,3 +126,9 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Successful attack critical bonus successes count toward damage scaling.
 - Example: 4 successes from an attack with 3 damage per success produces **12 damage** before applicable resistance, magical shields, armor, Health, and Wounds.
 - Explicit additional damage effects (including type-specific bonuses) apply according to their own rules; exact modifier handling may be detailed with abilities and equipment.
+
+## Armor protection by damage type (approved)
+- **Ordinary physical armor** absorbs **Physical damage only** (including slash, pierce, and bludgeon), through its armor mitigation pool. It does not absorb elemental or other non-Physical damage.
+- **Magical armor** may explicitly protect against additional damage types, determined by that armor's individual properties. Magical status alone does not automatically confer protection against every damage type.
+- For mixed-damage attacks, track damage-type components separately through armor mitigation. Only armor-covered components spend the armor pool; uncovered components bypass armor and continue to Health/Wounds after earlier applicable mitigation.
+- Which damage types ability-created magical shields absorb is not yet defined and will be addressed separately.
