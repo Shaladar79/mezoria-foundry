@@ -1517,11 +1517,37 @@
           "name": "Shadow",
           "element": "Shadow",
           "bodyComposition": "Living shadow elemental energy in humanoid form",
-          "attributes": null,
-          "movement": null,
-          "resistance": null,
-          "innateAbility": null,
-          "mechanicsStatus": "pending"
+          "attributes": {
+            "bonuses": [
+              {
+                "attribute": "Prowess",
+                "percentagePoints": 3
+              },
+              {
+                "attribute": "Presence",
+                "percentagePoints": 3
+              }
+            ]
+          },
+          "movement": {
+            "ground": 5
+          },
+          "resistance": {
+            "type": "Shadow",
+            "valuePercent": 5,
+            "calculation": "pending general resistance rules"
+          },
+          "innateAbility": {
+            "name": "Shadowmeld",
+            "type": "innate-aspect",
+            "manaCost": 0,
+            "description": "Blend into existing shadows, gaining a Stealth bonus while hiding in dim light or darkness. Does not grant invisibility or create magical darkness.",
+            "skill": "Stealth",
+            "bonusPercentagePoints": 10,
+            "condition": "Hiding in dim light or darkness",
+            "limitations": "Bright illumination removes the bonus"
+          },
+          "mechanicsStatus": "approved"
         },
         {
           "name": "Lightning",
