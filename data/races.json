@@ -1055,8 +1055,8 @@
             "condition": "Climbing cliffs, rocky slopes, or steep mountainous terrain"
           },
           "mechanicsStatus": "approved",
-          "breathElement": null,
-          "breathElementStatus": "pending terrain mapping"
+          "breathElement": "Earth",
+          "breathElementStatus": "approved"
         },
         {
           "name": "Desert",
@@ -1089,8 +1089,8 @@
             "condition": "Navigating deserts, locating water or shelter, or enduring harsh arid conditions"
           },
           "mechanicsStatus": "approved",
-          "breathElement": null,
-          "breathElementStatus": "pending terrain mapping"
+          "breathElement": "Fire",
+          "breathElementStatus": "approved"
         },
         {
           "name": "Forest",
@@ -1123,8 +1123,8 @@
             "condition": "Hiding among natural forest vegetation such as trees, bushes, or dense foliage"
           },
           "mechanicsStatus": "approved",
-          "breathElement": null,
-          "breathElementStatus": "pending terrain mapping"
+          "breathElement": "Nature",
+          "breathElementStatus": "approved"
         },
         {
           "name": "Swamp",
@@ -1134,8 +1134,8 @@
           "resistance": null,
           "innateAbility": null,
           "mechanicsStatus": "pending",
-          "breathElement": null,
-          "breathElementStatus": "pending terrain mapping"
+          "breathElement": "Poison",
+          "breathElementStatus": "approved"
         },
         {
           "name": "Coastal",
@@ -1145,8 +1145,8 @@
           "resistance": null,
           "innateAbility": null,
           "mechanicsStatus": "pending",
-          "breathElement": null,
-          "breathElementStatus": "pending terrain mapping"
+          "breathElement": "Water",
+          "breathElementStatus": "approved"
         },
         {
           "name": "Tundra",
@@ -1156,8 +1156,8 @@
           "resistance": null,
           "innateAbility": null,
           "mechanicsStatus": "pending",
-          "breathElement": null,
-          "breathElementStatus": "pending terrain mapping"
+          "breathElement": "Ice",
+          "breathElementStatus": "approved"
         },
         {
           "name": "Plains",
@@ -1167,8 +1167,8 @@
           "resistance": null,
           "innateAbility": null,
           "mechanicsStatus": "pending",
-          "breathElement": null,
-          "breathElementStatus": "pending terrain mapping"
+          "breathElement": "Lightning",
+          "breathElementStatus": "approved"
         }
       ],
       "sharedRacialAbilities": [
@@ -1180,13 +1180,22 @@
           "manaCost": 0,
           "damagePerSuccess": 2,
           "damageType": "determined by terrain-based clan",
-          "damageTypeMappingStatus": "pending approval",
+          "damageTypeMappingStatus": "approved",
           "targeting": "Cone area attack; exact cone dimensions and target resolution pending",
           "rollAttributeOrSkill": "pending",
           "rangeAndArea": "pending",
           "actionCost": "pending",
           "description": "Every Draconian can use a terrain-aligned cone breath attack once per day. Each success deals 2 damage at no Mana cost.",
-          "attackShape": "cone"
+          "attackShape": "cone",
+          "damageTypeByClan": {
+            "Mountain": "Earth",
+            "Desert": "Fire",
+            "Forest": "Nature",
+            "Swamp": "Poison",
+            "Coastal": "Water",
+            "Tundra": "Ice",
+            "Plains": "Lightning"
+          }
         }
       ]
     },
