@@ -360,7 +360,7 @@
             {
               "name": "Ursine",
               "creatures": "Bears",
-              "mechanicsStatus": "approved",
+              "mechanicsStatus": "approved; carrying capacity formula and defensive check mechanics pending",
               "attributes": {
                 "bonuses": [
                   {
@@ -386,7 +386,17 @@
                 "additionalBenefit": "Can carry heavier loads; exact carrying capacity mechanics pending"
               },
               "resistance": null,
-              "resistanceStatus": "No innate resistance"
+              "resistanceStatus": "No innate resistance",
+              "additionalInnateAbilities": [
+                {
+                  "name": "Unyielding Strength",
+                  "type": "innate-tribal",
+                  "description": "Exceptional physical stability grants a bonus to defensive checks resisting grapples, shoves, knockdowns, or other forced movement.",
+                  "bonusPercentagePoints": 5,
+                  "condition": "Defensive checks to resist being grappled, shoved, knocked down, or forcibly moved",
+                  "manaCost": 0
+                }
+              ]
             },
             {
               "name": "Caprine",
