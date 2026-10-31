@@ -329,12 +329,33 @@
             {
               "name": "Ursine",
               "creatures": "Bears",
-              "mechanicsStatus": "pending",
-              "attributes": null,
-              "movement": null,
-              "innateAbility": null,
+              "mechanicsStatus": "approved",
+              "attributes": {
+                "bonuses": [
+                  {
+                    "attribute": "Might",
+                    "percentagePoints": 3
+                  },
+                  {
+                    "attribute": "Endurance",
+                    "percentagePoints": 3
+                  }
+                ]
+              },
+              "movement": {
+                "ground": 4
+              },
+              "innateAbility": {
+                "name": "Powerful Build",
+                "type": "innate-tribal",
+                "description": "Can handle heavy loads and exert exceptional physical force.",
+                "skill": "Athletics",
+                "condition": "Lifting, pushing, or moving heavy objects",
+                "bonusPercentagePoints": 10,
+                "additionalBenefit": "Can carry heavier loads; exact carrying capacity mechanics pending"
+              },
               "resistance": null,
-              "resistanceStatus": "undecided; optional"
+              "resistanceStatus": "No innate resistance"
             },
             {
               "name": "Cervine",
