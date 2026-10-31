@@ -145,3 +145,9 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Shield mitigation is limited by its current remaining pool and the types the ability can absorb.
 - Example: a standard barrier with 15 mitigation takes 12 Physical + 8 Fire after resistance; it absorbs 12 Physical and 3 Fire, leaving 5 Fire. Ordinary armor cannot absorb the remaining Fire.
 - Ordering when an attack includes **multiple non-Physical damage types** remains pending.
+
+## Multiple non-Physical damage types: attacker-declared ordering (approved)
+- Magical shields continue to absorb eligible **Physical damage first**.
+- When a mixed attack includes multiple eligible **non-Physical damage types** and shield capacity is insufficient, the **attacker chooses their resolution order when declaring the attack**.
+- This priority must be declared **before the defender's damage resistances and mitigation are calculated** and cannot be changed after seeing the result.
+- Remaining magical shield pool absorbs non-Physical components in the declared order. Only damage types eligible under the shield ability can be absorbed.
