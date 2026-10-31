@@ -188,3 +188,10 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - A successful dispel ends the shield immediately, removing its remaining mitigation pool and damage-type coverage.
 - Dispelling is an alternative to depleting the shield by damage or waiting for its duration to expire.
 - The precise dispel contest, strength calculation, targeting, and thresholds are deferred until the magic ability system is developed.
+
+## Area-of-effect damage: independent target mitigation (approved)
+- For an area-effect attack hitting multiple creatures, resolve **each affected target's damage and defenses independently**.
+- Each target applies their own applicable **damage resistances → active magical shield mitigation pool → eligible armor mitigation pool → Health → Wounds**.
+- Magical shield pools are **individual to their owners**, not shared or pooled across creatures; each target still has at most one active magical shield.
+- Keep damage-type distinctions and the established Physical-first magical shield allocation for each target separately.
+- Exact area-attack targeting, attack roll, and saving throw procedures remain to be designed.
