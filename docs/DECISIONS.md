@@ -119,3 +119,10 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - These are **ordinary misses**, not automatic critical failures and do not inherently apply extra penalties.
 - Together with natural 01–05 automatic hits, effective attack hit chance is bounded between **5% and 95%**, even if the calculated target lies outside that range.
 - Attack resolution precedence: natural 96–100 misses; natural 01–05 hits (normal 1 success if final target <=5); otherwise compare the roll to the unmodified-by-these-exceptions final target.
+
+## Damage scaling by successes (approved)
+- The standard damage formula for damaging weapons and abilities is **damage = successes × that weapon or ability's damage per success**.
+- Each weapon or ability supplies its own damage-per-success value; values will be assigned in the equipment/ability design phase.
+- Successful attack critical bonus successes count toward damage scaling.
+- Example: 4 successes from an attack with 3 damage per success produces **12 damage** before applicable resistance, magical shields, armor, Health, and Wounds.
+- Explicit additional damage effects (including type-specific bonuses) apply according to their own rules; exact modifier handling may be detailed with abilities and equipment.
