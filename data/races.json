@@ -1054,7 +1054,9 @@
             "bonusPercentagePoints": 10,
             "condition": "Climbing cliffs, rocky slopes, or steep mountainous terrain"
           },
-          "mechanicsStatus": "approved"
+          "mechanicsStatus": "approved",
+          "breathElement": null,
+          "breathElementStatus": "pending terrain mapping"
         },
         {
           "name": "Desert",
@@ -1086,7 +1088,9 @@
             "bonusPercentagePoints": 10,
             "condition": "Navigating deserts, locating water or shelter, or enduring harsh arid conditions"
           },
-          "mechanicsStatus": "approved"
+          "mechanicsStatus": "approved",
+          "breathElement": null,
+          "breathElementStatus": "pending terrain mapping"
         },
         {
           "name": "Forest",
@@ -1118,7 +1122,9 @@
             "bonusPercentagePoints": 10,
             "condition": "Hiding among natural forest vegetation such as trees, bushes, or dense foliage"
           },
-          "mechanicsStatus": "approved"
+          "mechanicsStatus": "approved",
+          "breathElement": null,
+          "breathElementStatus": "pending terrain mapping"
         },
         {
           "name": "Swamp",
@@ -1127,7 +1133,9 @@
           "movement": null,
           "resistance": null,
           "innateAbility": null,
-          "mechanicsStatus": "pending"
+          "mechanicsStatus": "pending",
+          "breathElement": null,
+          "breathElementStatus": "pending terrain mapping"
         },
         {
           "name": "Coastal",
@@ -1136,7 +1144,9 @@
           "movement": null,
           "resistance": null,
           "innateAbility": null,
-          "mechanicsStatus": "pending"
+          "mechanicsStatus": "pending",
+          "breathElement": null,
+          "breathElementStatus": "pending terrain mapping"
         },
         {
           "name": "Tundra",
@@ -1145,7 +1155,9 @@
           "movement": null,
           "resistance": null,
           "innateAbility": null,
-          "mechanicsStatus": "pending"
+          "mechanicsStatus": "pending",
+          "breathElement": null,
+          "breathElementStatus": "pending terrain mapping"
         },
         {
           "name": "Plains",
@@ -1154,7 +1166,26 @@
           "movement": null,
           "resistance": null,
           "innateAbility": null,
-          "mechanicsStatus": "pending"
+          "mechanicsStatus": "pending",
+          "breathElement": null,
+          "breathElementStatus": "pending terrain mapping"
+        }
+      ],
+      "sharedRacialAbilities": [
+        {
+          "id": "dragons-breath",
+          "name": "Dragon's Breath",
+          "type": "innate-racial",
+          "usesPerDay": 1,
+          "manaCost": 0,
+          "damagePerSuccess": 3,
+          "damageType": "determined by terrain-based clan",
+          "damageTypeMappingStatus": "pending approval",
+          "targeting": "pending",
+          "rollAttributeOrSkill": "pending",
+          "rangeAndArea": "pending",
+          "actionCost": "pending",
+          "description": "Every Draconian can use a terrain-aligned breath ability once per day. Each success deals 3 damage at no Mana cost."
         }
       ]
     },
