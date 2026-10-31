@@ -1553,11 +1553,36 @@
           "name": "Lightning",
           "element": "Lightning",
           "bodyComposition": "Living lightning elemental energy in humanoid form",
-          "attributes": null,
-          "movement": null,
-          "resistance": null,
-          "innateAbility": null,
-          "mechanicsStatus": "pending"
+          "attributes": {
+            "bonuses": [
+              {
+                "attribute": "Prowess",
+                "percentagePoints": 3
+              },
+              {
+                "attribute": "Intellect",
+                "percentagePoints": 3
+              }
+            ]
+          },
+          "movement": {
+            "ground": 6
+          },
+          "resistance": {
+            "type": "Lightning",
+            "valuePercent": 5,
+            "calculation": "pending general resistance rules"
+          },
+          "innateAbility": {
+            "name": "Lightning Reflexes",
+            "type": "innate-aspect",
+            "description": "Gain a +5 percentage point bonus to Dodge against attacks the Scion can perceive.",
+            "defense": "Dodge",
+            "bonusPercentagePoints": 5,
+            "condition": "Against attacks the Scion can perceive",
+            "manaCost": 0
+          },
+          "mechanicsStatus": "approved"
         },
         {
           "name": "Ice",
