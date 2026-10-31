@@ -1178,14 +1178,15 @@
           "type": "innate-racial",
           "usesPerDay": 1,
           "manaCost": 0,
-          "damagePerSuccess": 3,
+          "damagePerSuccess": 2,
           "damageType": "determined by terrain-based clan",
           "damageTypeMappingStatus": "pending approval",
-          "targeting": "pending",
+          "targeting": "Cone area attack; exact cone dimensions and target resolution pending",
           "rollAttributeOrSkill": "pending",
           "rangeAndArea": "pending",
           "actionCost": "pending",
-          "description": "Every Draconian can use a terrain-aligned breath ability once per day. Each success deals 3 damage at no Mana cost."
+          "description": "Every Draconian can use a terrain-aligned cone breath attack once per day. Each success deals 2 damage at no Mana cost.",
+          "attackShape": "cone"
         }
       ]
     },
