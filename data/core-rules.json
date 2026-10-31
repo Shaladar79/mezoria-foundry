@@ -186,7 +186,7 @@
     "finalPoolScaling": "pending"
   },
   "combat": {
-    "physicalDefense": "Dodge + Block + Parry; equipped shields grant Block percentage that reduces the chance an attack hits",
+    "physicalDefense": "Attack-type-dependent: melee uses Parry + applicable Block; ranged uses Dodge + applicable Block. Dodge does not defend melee; Parry does not defend ranged.",
     "baseDodge": "floor(Prowess/10)",
     "avoidableSpellDefense": "Dodge + Spell Resistance",
     "unavoidableSpellDefense": "Spell Resistance",
@@ -272,7 +272,29 @@
         "interactionWithMagicalRegeneration": "pending",
         "maximumDurabilityStatus": "explicitly deferred by user"
       }
-    }
+    },
+    "physicalDefenseByAttackType": {
+      "melee": {
+        "applicable": [
+          "Parry",
+          "Block"
+        ],
+        "excluded": [
+          "Dodge"
+        ]
+      },
+      "ranged": {
+        "applicable": [
+          "Dodge",
+          "Block"
+        ],
+        "excluded": [
+          "Parry"
+        ]
+      },
+      "notes": "Block may apply to either melee or ranged when the defender has applicable Block. The interaction of these values with attack rolls and their exact calculations remain pending."
+    },
+    "spellDefenseInteractionStatus": "Pending: how melee/ranged restrictions apply to avoidable spells, including whether spell attacks count as ranged for Dodge"
   },
   "wounds": {
     "quartzBaseCapacity": 3,
