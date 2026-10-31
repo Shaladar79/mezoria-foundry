@@ -744,12 +744,42 @@
             {
               "name": "Scarabine",
               "creatures": "Beetles",
-              "mechanicsStatus": "pending",
-              "attributes": null,
-              "movement": null,
-              "innateAbility": null,
-              "resistance": null,
-              "resistanceStatus": "undecided; optional"
+              "mechanicsStatus": "approved; stationary timing rules pending",
+              "attributes": {
+                "bonuses": [
+                  {
+                    "attribute": "Might",
+                    "percentagePoints": 3
+                  },
+                  {
+                    "attribute": "Endurance",
+                    "percentagePoints": 3
+                  }
+                ]
+              },
+              "movement": {
+                "ground": 4
+              },
+              "innateAbility": {
+                "name": "Reinforced Carapace",
+                "type": "innate-tribal",
+                "description": "While stationary, gain an additional 5% Physical Resistance, bringing total racial Physical Resistance to 10%.",
+                "additionalPhysicalResistancePercent": 5,
+                "totalPhysicalResistanceWhileStationaryPercent": 10,
+                "condition": "Remains stationary",
+                "detailsPending": "Interpretation of stationary during combat to be finalized"
+              },
+              "resistance": {
+                "type": "Physical",
+                "valuePercent": 5,
+                "appliesTo": [
+                  "Slashing",
+                  "Piercing",
+                  "Bludgeoning"
+                ],
+                "rounding": "pending general resistance rules"
+              },
+              "resistanceStatus": "approved"
             },
             {
               "name": "Arachnid",
