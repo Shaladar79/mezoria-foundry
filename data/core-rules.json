@@ -429,10 +429,14 @@
         "status": "approved",
         "maximumSimultaneousActiveShieldsPerTarget": 1,
         "stackingAllowed": false,
-        "strongerShieldRule": "Casting/applying a stronger magical shield replaces the existing magical shield entirely, including its damage-type coverage and remaining mitigation pool; pools never add together.",
-        "comparativeStrengthMethod": "pending",
-        "weakerOrEqualShieldRule": "pending",
-        "scope": "Ability-created magical shield mitigation pools; equipment Block shields remain separate"
+        "comparison": "Compare the current shield's remaining mitigation points against the newly offered shield's mitigation points (not the old shield's original maximum).",
+        "replacementChoice": "The shield's recipient/target may choose to keep the existing shield or accept the new shield regardless of which has more mitigation points.",
+        "onAcceptNew": "New shield replaces the old shield entirely; use new shield's full offered pool, coverage, and other properties. Pools never combine.",
+        "onKeepOld": "Newly offered shield does not replace the old one; retain existing pool, coverage, and properties.",
+        "strongerShieldRule": "A stronger newly offered shield does not automatically replace the existing shield; target chooses.",
+        "weakerOrEqualShieldRule": "The target may accept a weaker or equal-pool new shield to gain more useful damage-type coverage or other properties.",
+        "scope": "Ability-created magical shield mitigation pools; equipment Block shields remain separate",
+        "example": "Fire shield with 22 remaining versus new Arcane Barrier with 20 offered: target may accept Arcane Barrier to gain all-type protection or keep Fire shield."
       }
     }
   },
