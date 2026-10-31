@@ -157,3 +157,11 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Applying a **stronger magical shield replaces the existing shield**, including the old shield's remaining mitigation pool and the types of damage it protects against. The two pools do not combine.
 - Equipment shields that grant Block are a distinct mechanic and do not occupy the magical shield slot.
 - How to measure shield strength and what happens when an equal-strength or weaker shield is cast remain pending.
+
+## Magical shield replacement: target choice and remaining pool (approved correction)
+- **Supersedes the prior stronger-shield automatic replacement rule.** There is still only **one active magical shield** per target; pools never stack.
+- When a new shield is offered, compare **the existing shield's current remaining mitigation** with **the new shield's offered mitigation**. Do not use the existing shield's original maximum in that comparison.
+- **The recipient chooses** whether to retain their current shield or accept the new shield, regardless of which has more mitigation remaining. Type coverage and other shield properties can matter more than raw pool size.
+- If accepted, the new shield completely replaces the old shield's remaining pool, damage-type protection, and other shield properties. If refused, the existing shield stays unchanged.
+- Example: an existing Fire-only shield with **22 remaining** may be replaced voluntarily with an all-type Arcane Barrier providing **20**; the recipient may instead keep the Fire shield.
+- Equipment shields granting Block remain separate from this magical shield slot.
