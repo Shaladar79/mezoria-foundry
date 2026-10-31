@@ -360,30 +360,32 @@
             {
               "name": "Caprine",
               "creatures": "Goats",
-              "mechanicsStatus": "Tribe replacement approved; specific mechanics pending",
-              "attributes": null,
-              "movement": null,
-              "innateAbility": {
-                "name": "Surefooted",
-                "status": "proposed",
-                "description": "Natural balance and footing on steep, narrow, rocky, or uneven terrain; suggested +10 percentage points to relevant Acrobatics checks."
-              },
-              "resistance": null,
-              "resistanceStatus": "undecided; optional",
-              "proposals": {
-                "attributes": [
+              "mechanicsStatus": "approved",
+              "attributes": {
+                "bonuses": [
                   {
                     "attribute": "Prowess",
                     "percentagePoints": 3
                   },
                   {
-                    "attribute": "Might",
+                    "attribute": "Endurance",
                     "percentagePoints": 3
                   }
-                ],
-                "groundMovement": 6,
-                "resistance": null
-              }
+                ]
+              },
+              "movement": {
+                "ground": 6
+              },
+              "innateAbility": {
+                "name": "Surefooted",
+                "type": "innate-tribal",
+                "description": "Exceptional balance and footing on steep, narrow, rocky, or uneven terrain.",
+                "skill": "Acrobatics",
+                "condition": "Maintaining footing, balancing on narrow ledges, or traversing steep rocky terrain",
+                "bonusPercentagePoints": 10
+              },
+              "resistance": null,
+              "resistanceStatus": "No innate resistance"
             },
             {
               "name": "Vulpine",
