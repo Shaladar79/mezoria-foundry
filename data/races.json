@@ -1237,11 +1237,34 @@
         {
           "name": "Plains",
           "terrain": "Grasslands and open country",
-          "attributes": null,
-          "movement": null,
-          "resistance": null,
-          "innateAbility": null,
-          "mechanicsStatus": "pending",
+          "attributes": {
+            "bonuses": [
+              {
+                "attribute": "Prowess",
+                "percentagePoints": 3
+              },
+              {
+                "attribute": "Endurance",
+                "percentagePoints": 3
+              }
+            ]
+          },
+          "movement": {
+            "ground": 6
+          },
+          "resistance": {
+            "type": "Lightning",
+            "valuePercent": 5,
+            "calculation": "pending general resistance rules"
+          },
+          "innateAbility": {
+            "name": "Fleetfoot",
+            "type": "innate-clan",
+            "skill": "Athletics",
+            "bonusPercentagePoints": 10,
+            "condition": "Sustained running, long-distance travel on foot, or maintaining speed across open terrain"
+          },
+          "mechanicsStatus": "approved",
           "breathElement": "Lightning",
           "breathElementStatus": "approved"
         }
