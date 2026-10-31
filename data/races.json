@@ -138,14 +138,14 @@
           "type": "innate-racial",
           "damageType": "Fire",
           "additionalDamagePerSuccess": 1,
-          "appliesTo": "Melee weapon attacks",
+          "appliesTo": "Melee weapon attacks and unarmed strikes",
           "manaCost": 0,
           "activation": "passive",
-          "description": "Embergiest melee weapon attacks deal an additional 1 Fire damage per success on the attack.",
-          "limitations": "Does not apply to ranged or unarmed attacks unless otherwise established."
+          "description": "Embergiest melee weapon attacks and unarmed strikes deal an additional 1 Fire damage per success on the attack.",
+          "limitations": "Does not apply to ranged attacks unless otherwise established."
         }
       ],
-      "notes": "Approved: volcanic origin, stone skin with magma glow, expert smiths, +3 percentage points Might and Endurance, movement 4, bare-handed forging, 5% Fire Resistance. Crafting and resistance calculations pending. Balance audit approved: +10% metalworking Crafting and passive +1 Fire damage per success on melee weapon attacks.",
+      "notes": "Approved: volcanic origin, stone skin with magma glow, expert smiths, +3 percentage points Might and Endurance, movement 4, bare-handed forging, 5% Fire Resistance. Crafting and resistance calculations pending. Balance audit approved: +10% metalworking Crafting and passive +1 Fire damage per success on melee weapon attacks and unarmed strikes.",
       "lore": {
         "origin": "Children of the volcanoes, born from flows of magma",
         "appearance": "Skin of stone with the heat of magma glowing from within",
