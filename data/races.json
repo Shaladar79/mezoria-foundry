@@ -1002,11 +1002,87 @@
       "name": "Draconian",
       "designOrder": "last",
       "subgroupType": "clans",
-      "subgroups": [],
+      "subgroups": [
+        "Mountain",
+        "Desert",
+        "Forest",
+        "Swamp",
+        "Coastal",
+        "Tundra",
+        "Plains"
+      ],
       "attributes": null,
       "traits": [],
       "abilities": [],
-      "notes": "Mechanics and lore not yet specified"
+      "notes": "Seven terrain-based clans approved. Removed Volcanic, Jungle and Cavern proposals. No clan mechanics approved yet.",
+      "lore": {
+        "identity": "Draconian clans are based on terrain and the homelands to which they are adapted."
+      },
+      "clans": [
+        {
+          "name": "Mountain",
+          "terrain": "Mountains and highlands",
+          "attributes": null,
+          "movement": null,
+          "resistance": null,
+          "innateAbility": null,
+          "mechanicsStatus": "pending"
+        },
+        {
+          "name": "Desert",
+          "terrain": "Deserts and badlands",
+          "attributes": null,
+          "movement": null,
+          "resistance": null,
+          "innateAbility": null,
+          "mechanicsStatus": "pending"
+        },
+        {
+          "name": "Forest",
+          "terrain": "Forests and woodlands",
+          "attributes": null,
+          "movement": null,
+          "resistance": null,
+          "innateAbility": null,
+          "mechanicsStatus": "pending"
+        },
+        {
+          "name": "Swamp",
+          "terrain": "Marshes and wetlands",
+          "attributes": null,
+          "movement": null,
+          "resistance": null,
+          "innateAbility": null,
+          "mechanicsStatus": "pending"
+        },
+        {
+          "name": "Coastal",
+          "terrain": "Shores and coastal cliffs",
+          "attributes": null,
+          "movement": null,
+          "resistance": null,
+          "innateAbility": null,
+          "mechanicsStatus": "pending"
+        },
+        {
+          "name": "Tundra",
+          "terrain": "Frozen plains and snowy regions",
+          "attributes": null,
+          "movement": null,
+          "resistance": null,
+          "innateAbility": null,
+          "mechanicsStatus": "pending"
+        },
+        {
+          "name": "Plains",
+          "terrain": "Grasslands and open country",
+          "attributes": null,
+          "movement": null,
+          "resistance": null,
+          "innateAbility": null,
+          "mechanicsStatus": "pending"
+        }
+      ]
     },
     {
       "id": "sion",
