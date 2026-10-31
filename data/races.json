@@ -1164,13 +1164,41 @@
         {
           "name": "Coastal",
           "terrain": "Shores and coastal cliffs",
-          "attributes": null,
-          "movement": null,
-          "resistance": null,
-          "innateAbility": null,
-          "mechanicsStatus": "pending",
+          "attributes": {
+            "bonuses": [
+              {
+                "attribute": "Prowess",
+                "percentagePoints": 3
+              },
+              {
+                "attribute": "Endurance",
+                "percentagePoints": 3
+              }
+            ]
+          },
+          "movement": {
+            "ground": 5,
+            "swim": 6
+          },
+          "resistance": {
+            "type": "Water",
+            "valuePercent": 5,
+            "calculation": "pending general resistance rules"
+          },
+          "innateAbility": {
+            "name": "Deep Diver",
+            "type": "innate-clan",
+            "skill": "Athletics",
+            "bonusPercentagePoints": 10,
+            "condition": "Underwater swimming or diving"
+          },
+          "mechanicsStatus": "approved",
           "breathElement": "Water",
-          "breathElementStatus": "approved"
+          "breathElementStatus": "approved",
+          "breathing": {
+            "air": true,
+            "water": true
+          }
         },
         {
           "name": "Tundra",
