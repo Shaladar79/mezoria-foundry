@@ -1129,11 +1129,35 @@
         {
           "name": "Swamp",
           "terrain": "Marshes and wetlands",
-          "attributes": null,
-          "movement": null,
-          "resistance": null,
-          "innateAbility": null,
-          "mechanicsStatus": "pending",
+          "attributes": {
+            "bonuses": [
+              {
+                "attribute": "Endurance",
+                "percentagePoints": 3
+              },
+              {
+                "attribute": "Presence",
+                "percentagePoints": 3
+              }
+            ]
+          },
+          "movement": {
+            "ground": 4,
+            "swim": 5
+          },
+          "resistance": {
+            "type": "Poison",
+            "valuePercent": 5,
+            "calculation": "pending general resistance rules"
+          },
+          "innateAbility": {
+            "name": "Marsh Walker",
+            "type": "innate-clan",
+            "skill": "Survival",
+            "bonusPercentagePoints": 10,
+            "condition": "Navigating swamps, identifying safe paths through bogs, or avoiding natural marsh hazards"
+          },
+          "mechanicsStatus": "approved",
           "breathElement": "Poison",
           "breathElementStatus": "approved"
         },
