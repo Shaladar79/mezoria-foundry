@@ -1022,11 +1022,39 @@
         {
           "name": "Mountain",
           "terrain": "Mountains and highlands",
-          "attributes": null,
-          "movement": null,
-          "resistance": null,
-          "innateAbility": null,
-          "mechanicsStatus": "pending"
+          "attributes": {
+            "bonuses": [
+              {
+                "attribute": "Might",
+                "percentagePoints": 3
+              },
+              {
+                "attribute": "Endurance",
+                "percentagePoints": 3
+              }
+            ]
+          },
+          "movement": {
+            "ground": 4
+          },
+          "resistance": {
+            "type": "Physical",
+            "valuePercent": 5,
+            "appliesTo": [
+              "Slashing",
+              "Piercing",
+              "Bludgeoning"
+            ],
+            "calculation": "pending general resistance rules"
+          },
+          "innateAbility": {
+            "name": "Mountain Climber",
+            "type": "innate-clan",
+            "skill": "Athletics",
+            "bonusPercentagePoints": 10,
+            "condition": "Climbing cliffs, rocky slopes, or steep mountainous terrain"
+          },
+          "mechanicsStatus": "approved"
         },
         {
           "name": "Desert",
