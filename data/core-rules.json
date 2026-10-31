@@ -398,7 +398,7 @@
       "exceptions": "Individual abilities may explicitly limit shield coverage to specified damage types",
       "damageOrder": "After applicable damage resistance and before armor mitigation",
       "poolBehavior": "Absorbs eligible incoming damage up to remaining magical shield mitigation pool capacity",
-      "allocationAcrossMixedDamage": "Approved: after per-type resistance, allocate available magical shield mitigation to eligible Physical damage first, then to eligible non-Physical damage. For multiple non-Physical types, tie-breaking priority remains pending.",
+      "allocationAcrossMixedDamage": "Approved: allocate eligible Physical damage first. For two or more eligible non-Physical damage types, attacker chooses their order when declaring the attack, before defender resistance and mitigation are resolved. Then allocate the remaining shield pool in that declared order.",
       "capacityDurationRecharge": "Pending per-ability design",
       "physicalFirst": true,
       "allocationExample": {
@@ -416,6 +416,14 @@
           "Fire": 5
         },
         "note": "Example assumes shield protects both types; leftover Fire bypasses ordinary armor."
+      },
+      "nonPhysicalDamagePriority": {
+        "status": "approved",
+        "determinedBy": "attacker",
+        "declaredWhen": "attack is declared, before defender resistances and mitigation calculations",
+        "appliesTo": "multiple eligible non-Physical damage types in a mixed-damage attack",
+        "physicalPriority": "Physical always precedes non-Physical damage regardless of attacker preference",
+        "lockedAfterDeclaration": true
       }
     }
   },
