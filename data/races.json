@@ -686,12 +686,26 @@
             {
               "name": "Mantid",
               "creatures": "Praying mantises",
-              "mechanicsStatus": "pending",
+              "mechanicsStatus": "Bonus approved, other traits proposed",
               "attributes": null,
               "movement": null,
-              "innateAbility": null,
+              "innateAbility": {
+                "name": "Predatory Reflexes",
+                "bonusPercentagePoints": 5,
+                "skill": "Melee Combat",
+                "condition": "Target has not acted in current combat",
+                "status": "approved"
+              },
               "resistance": null,
-              "resistanceStatus": "undecided; optional"
+              "resistanceStatus": "undecided; optional",
+              "proposals": {
+                "attributes": [
+                  "Prowess +3",
+                  "Might +3"
+                ],
+                "groundMovement": 5,
+                "resistance": null
+              }
             },
             {
               "name": "Formicine",
