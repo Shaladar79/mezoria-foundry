@@ -767,7 +767,9 @@
                 "type": "innate-tribal",
                 "skill": "Athletics",
                 "bonusPercentagePoints": 10,
-                "condition": "Working with at least one ally to lift, push, pull, or move heavy objects"
+                "condition": "Actively coordinating a physical Athletics task with at least one ally, including moving heavy objects, cooperative climbing, overcoming physical obstacles, and difficult construction tasks",
+                "description": "Cooperative instincts grant an Athletics bonus when actively coordinating physical tasks with at least one ally.",
+                "limitations": "No bonus when working alone or on tasks without meaningful physical cooperation"
               },
               "resistance": null,
               "resistanceStatus": "No innate resistance"
