@@ -122,9 +122,30 @@
           "type": "innate-racial",
           "description": "Can forge metal using their bare hands, without requiring ordinary external heating tools.",
           "mechanicsStatus": "Limits, crafting checks, and interaction with Crafting talent to be determined"
+        },
+        {
+          "id": "master-of-the-forge",
+          "name": "Master of the Forge",
+          "type": "innate-racial",
+          "skill": "Crafting",
+          "bonusPercentagePoints": 10,
+          "condition": "Crafting checks involving metalworking, including weapons, armor, and tools",
+          "description": "Gain +10 percentage points to Crafting checks involving metalworking, complementing the Embergiest's existing bare-handed forging ability."
+        },
+        {
+          "id": "burning-strikes",
+          "name": "Burning Strikes",
+          "type": "innate-racial",
+          "damageType": "Fire",
+          "additionalDamagePerSuccess": 1,
+          "appliesTo": "Melee weapon attacks",
+          "manaCost": 0,
+          "activation": "passive",
+          "description": "Embergiest melee weapon attacks deal an additional 1 Fire damage per success on the attack.",
+          "limitations": "Does not apply to ranged or unarmed attacks unless otherwise established."
         }
       ],
-      "notes": "Approved: volcanic origin, stone skin with magma glow, expert smiths, +3 percentage points Might and Endurance, movement 4, bare-handed forging, 5% Fire Resistance. Crafting and resistance calculations pending.",
+      "notes": "Approved: volcanic origin, stone skin with magma glow, expert smiths, +3 percentage points Might and Endurance, movement 4, bare-handed forging, 5% Fire Resistance. Crafting and resistance calculations pending. Balance audit approved: +10% metalworking Crafting and passive +1 Fire damage per success on melee weapon attacks.",
       "lore": {
         "origin": "Children of the volcanoes, born from flows of magma",
         "appearance": "Skin of stone with the heat of magma glowing from within",
