@@ -463,12 +463,35 @@
             {
               "name": "Serpentine",
               "creatures": "Snakes",
-              "mechanicsStatus": "pending",
-              "attributes": null,
-              "movement": null,
-              "innateAbility": null,
-              "resistance": null,
-              "resistanceStatus": "undecided; optional"
+              "mechanicsStatus": "approved; bite damage and poison effects pending",
+              "attributes": {
+                "bonuses": [
+                  {
+                    "attribute": "Prowess",
+                    "percentagePoints": 3
+                  },
+                  {
+                    "attribute": "Presence",
+                    "percentagePoints": 3
+                  }
+                ]
+              },
+              "movement": {
+                "ground": 5
+              },
+              "innateAbility": {
+                "name": "Venomous Bite",
+                "type": "innate-tribal",
+                "description": "Natural unarmed bite attack capable of inflicting poison.",
+                "damage": "pending combat design",
+                "poisonEffect": "pending poison design"
+              },
+              "resistance": {
+                "type": "Poison",
+                "valuePercent": 5,
+                "calculation": "pending full resistance system"
+              },
+              "resistanceStatus": "approved"
             },
             {
               "name": "Crocodilian",
