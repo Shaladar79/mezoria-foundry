@@ -425,12 +425,40 @@
             {
               "name": "Saurian",
               "creatures": "Lizards",
-              "mechanicsStatus": "pending",
-              "attributes": null,
-              "movement": null,
-              "innateAbility": null,
-              "resistance": null,
-              "resistanceStatus": "undecided; optional"
+              "mechanicsStatus": "approved",
+              "attributes": {
+                "bonuses": [
+                  {
+                    "attribute": "Prowess",
+                    "percentagePoints": 3
+                  },
+                  {
+                    "attribute": "Endurance",
+                    "percentagePoints": 3
+                  }
+                ]
+              },
+              "movement": {
+                "ground": 5
+              },
+              "innateAbility": {
+                "name": "Natural Scales",
+                "type": "innate-tribal",
+                "description": "Scaled skin reduces incoming physical damage by 5%.",
+                "resistanceGranted": "Physical 5%"
+              },
+              "resistance": {
+                "type": "Physical",
+                "valuePercent": 5,
+                "appliesTo": [
+                  "Slashing",
+                  "Piercing",
+                  "Bludgeoning"
+                ],
+                "timing": "Before shield and armor mitigation pools",
+                "rounding": "pending general damage resistance rules"
+              },
+              "resistanceStatus": "approved"
             },
             {
               "name": "Serpentine",
