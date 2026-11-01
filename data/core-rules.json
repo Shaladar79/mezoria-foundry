@@ -439,6 +439,26 @@
             "additionalEffect": "Recognizes common waystations, messenger markings, and delivery procedures",
             "combatEffect": false
           }
+        },
+        "Sailor": {
+          "status": "approved",
+          "category": "Common",
+          "attributeBonus": {
+            "Might": 2,
+            "Prowess": 2
+          },
+          "skillTalent": {
+            "name": "Seamanship",
+            "tier": "Talent",
+            "bonusPercentagePoints": 5
+          },
+          "nonCombatAbility": {
+            "name": "Sea Legs",
+            "conditionalBonusPercentagePoints": 10,
+            "appliesTo": "Non-combat checks involving maintaining balance aboard moving vessels, handling sails and rigging, securing cargo, and recognizing signs of approaching dangerous weather at sea",
+            "additionalEffect": "Understands basic shipboard routines and nautical terminology",
+            "combatEffect": false
+          }
         }
       }
     }
@@ -508,6 +528,11 @@
         "name": "Navigation",
         "governingAttribute": "pending",
         "notes": "Courier background Skill Talent"
+      },
+      {
+        "name": "Seamanship",
+        "governingAttribute": "pending",
+        "notes": "Sailor background Skill Talent"
       }
     ]
   },
