@@ -270,3 +270,9 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - If scores tie, the combatant with the **higher full Prowess percentage** acts first (not merely the tens-digit bonus).
 - If Prowess also ties, use a **d20 roll-off**; the higher result acts first. Reroll any continuing roll-off ties.
 - Reevaluate ordering as Action Scores change after actions.
+
+## Movement Action Score cost (approved)
+- A movement action costs **2 Action Score** to move **up to the character's full movement pace**.
+- This replaces the proposed cost of 1 Action Score per movement space.
+- Example: a character with ground movement 5 may move up to 5 spaces as a 2-point movement action.
+- Further decisions pending: whether moving less than full pace still costs 2, whether multiple movement actions are permitted during the same round, and special terrain or movement-mode rules.
