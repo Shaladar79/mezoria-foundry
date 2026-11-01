@@ -284,6 +284,26 @@
             "appliesTo": "Non-combat Survival checks involving tracking wild game, recognizing animal trails, identifying signs of nearby wildlife, and locating suitable hunting grounds",
             "combatEffect": false
           }
+        },
+        "Forager": {
+          "status": "approved",
+          "category": "Common",
+          "attributeBonus": {
+            "Intellect": 2,
+            "Endurance": 2
+          },
+          "skillTalent": {
+            "name": "Survival",
+            "tier": "Talent",
+            "bonusPercentagePoints": 5
+          },
+          "nonCombatAbility": {
+            "name": "Nature's Bounty",
+            "conditionalBonusPercentagePoints": 10,
+            "appliesTo": "Non-combat Survival checks involving finding edible plants, berries, roots, mushrooms, and useful wild herbs",
+            "additionalEffect": "Recognize common poisonous plants and identify seasonal gathering locations",
+            "combatEffect": false
+          }
         }
       }
     }
