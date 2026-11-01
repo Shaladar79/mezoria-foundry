@@ -609,9 +609,11 @@
         "distance": "Up to the character's full movement pace for one movement action",
         "costModel": "Flat 2 Action Score per movement action for any positive distance up to full movement pace, not a per-space cost.",
         "partialMovementCost": "Approved: flat 2 Action Score for moving any positive distance up to the character's full movement pace; no reduction for fewer spaces.",
-        "multipleMovementActions": "pending",
+        "multipleMovementActions": "Approved: characters may take multiple movement actions in the same round; each costs 2 Action Score and moves any positive distance up to full pace.",
         "movementModes": "Use applicable character movement speed; detailed terrain/flight/swimming costs pending",
-        "notes": "The player rejected per-space costs in favor of 2 Action Score to move full pace."
+        "notes": "The player rejected per-space costs in favor of 2 Action Score to move full pace.",
+        "turnOrder": "After each movement action, subtract 2 Action Score and recalculate who has the highest remaining score before the next action.",
+        "actionEligibility": "Uses established Action Score rules, including a final action that can take positive remaining score negative."
       }
     }
   },
