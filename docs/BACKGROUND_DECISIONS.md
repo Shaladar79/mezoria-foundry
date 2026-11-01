@@ -181,3 +181,9 @@
 - Granted Skill Talent: **Leatherworking** (+5 percentage points); add Leatherworking to the planned skill roster, with governing attribute pending skill design.
 - Non-combat ability **Hidecraft**: +10 percentage points on non-combat Leatherworking checks involving tanning hides, assessing leather quality, crafting leather goods, and repairing leather equipment. Can identify hides, recognize poor stitching or tanning, and assess leather suitability for armor, clothing, and other equipment.
 - Standard crafting and repair requirements still apply.
+
+## Tailor Tradesman Background (approved)
+- Attributes: **+2 percentage points Prowess** and **+2 percentage points Intellect**.
+- Granted Skill Talent: **Tailoring** (+5 percentage points); add Tailoring to the planned skill roster, with governing attribute pending skill design.
+- Non-combat ability **Master Stitcher**: +10 percentage points to non-combat Tailoring checks involving sewing garments, altering clothing, assessing fabric quality, and repairing cloth-based equipment. Can identify fabrics, recognize high-quality stitching, and estimate the materials needed to make or repair a garment.
+- Standard crafting and equipment repair requirements still apply.
