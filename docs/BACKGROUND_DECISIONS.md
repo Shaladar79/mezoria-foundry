@@ -170,3 +170,8 @@
 - Attributes: **+2 percentage points Prowess** and **+2 percentage points Intellect**.
 - Granted Skill Talent: **Carpentry** (+5 percentage points); add Carpentry to the skill roster, governing attribute pending skill design.
 - Non-combat ability **Woodworker's Eye**: +10 percentage points on non-combat Carpentry checks involving constructing wooden objects, evaluating timber quality, identifying structural weaknesses, and repairing wooden buildings, furniture, or equipment. Can identify woodworking techniques and recognize signs of poor construction.
+
+## Mason Tradesman Background (approved)
+- Attributes: **+2 percentage points Might** and **+2 percentage points Intellect**.
+- Granted Skill Talent: **Masonry** (+5 percentage points); add Masonry to planned skill roster, governing attribute pending skill design.
+- Non-combat ability **Stoneworker's Eye**: +10 percentage points on non-combat Masonry checks involving shaping and fitting stone, assessing stonework quality, identifying structural weaknesses in masonry, and repairing stone buildings or fortifications. Can identify common stone construction techniques and recognize weakened mortar, settling foundations, or poor workmanship.
