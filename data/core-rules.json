@@ -419,6 +419,26 @@
             "additionalEffect": "Recognizes signs of fatigue, poor health, or improper equipment fitting in mounts",
             "combatEffect": false
           }
+        },
+        "Courier": {
+          "status": "approved",
+          "category": "Common",
+          "attributeBonus": {
+            "Prowess": 2,
+            "Endurance": 2
+          },
+          "skillTalent": {
+            "name": "Navigation",
+            "tier": "Talent",
+            "bonusPercentagePoints": 5
+          },
+          "nonCombatAbility": {
+            "name": "Reliable Messenger",
+            "conditionalBonusPercentagePoints": 10,
+            "appliesTo": "Non-combat checks involving finding efficient delivery routes, locating recipients, remembering directions, and navigating established roads or delivery networks",
+            "additionalEffect": "Recognizes common waystations, messenger markings, and delivery procedures",
+            "combatEffect": false
+          }
         }
       }
     }
@@ -483,6 +503,11 @@
         "name": "Etiquette",
         "governingAttribute": "pending",
         "notes": "Servant background Skill Talent"
+      },
+      {
+        "name": "Navigation",
+        "governingAttribute": "pending",
+        "notes": "Courier background Skill Talent"
       }
     ]
   },
