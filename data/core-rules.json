@@ -200,6 +200,38 @@
           "Military Engineer"
         ],
         "note": "Miner and Lumberjack destination categories not approved; do not auto-assign. Individual background benefits still pending."
+      },
+      "definitions": {
+        "Farmer": {
+          "status": "Skill Talent and non-combat ability approved; attribute allocation pending",
+          "skillTalent": {
+            "name": "Agriculture",
+            "tier": "Talent",
+            "bonusPercentagePoints": 5
+          },
+          "skillAddition": {
+            "name": "Agriculture",
+            "status": "approved addition to skill roster",
+            "governingAttribute": "pending skill system design"
+          },
+          "nonCombatAbility": {
+            "name": "Bountiful Harvest",
+            "description": "Identify soil quality, assess crop health, recognize when plants are ready to harvest",
+            "conditionalBonusPercentagePoints": 10,
+            "appliesTo": "Checks involving cultivation, crop care, and assessing farmland suitability",
+            "combatEffect": false
+          },
+          "attributeBonusProposal": [
+            {
+              "Endurance": 4
+            },
+            {
+              "Might": 2,
+              "Endurance": 2
+            }
+          ],
+          "attributeBonusStatus": "proposed only; awaiting user approval"
+        }
       }
     }
   },
@@ -227,7 +259,14 @@
     ],
     "someSkillsRequireTraining": true,
     "trainingGatesStatus": "skill roster and restrictions pending",
-    "spellcastingAndArcana": "proposed distinct talents, awaiting final confirmation"
+    "spellcastingAndArcana": "proposed distinct talents, awaiting final confirmation",
+    "approvedAdditions": [
+      {
+        "name": "Agriculture",
+        "governingAttribute": "pending",
+        "notes": "Added as Farmer background Skill Talent"
+      }
+    ]
   },
   "rolls": {
     "dice": "1d100",
