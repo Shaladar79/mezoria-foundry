@@ -980,6 +980,26 @@
         "combatEffect": false
       },
       "notes": "Does not grant combat stealth bonuses or automatically bypass locks or traps."
+    },
+    "Con Artist": {
+      "status": "approved",
+      "category": "Criminal",
+      "attributeBonus": {
+        "Presence": 4
+      },
+      "skillTalent": {
+        "name": "Deception",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Silver Tongue",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Deception checks involving convincing someone of a fabricated story, establishing a false identity through conversation, gaining another person's confidence, and maintaining a convincing lie under questioning",
+        "additionalEffect": "Recognizes common confidence schemes and when someone may be receptive to flattery, promises, or appeals to authority",
+        "combatEffect": false
+      },
+      "notes": "Does not automatically cause belief in obvious falsehoods or override free will."
     }
   },
   "notes": [
