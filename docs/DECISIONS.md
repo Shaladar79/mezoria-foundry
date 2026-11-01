@@ -250,3 +250,10 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Movement, basic attacks, abilities, and other paid action types each have their own Action Score cost, to be specified separately.
 - The round ends when participants are out of enough score to perform permitted paid actions; pass/end-round details remain to be specified.
 - **Deferred:** specific costs, tied-score ordering, free actions, unaffordable-action handling, and whether earlier HWFWM carryover/negative-score rules also apply in Mezoria.
+
+## Action Score carryover between rounds (approved)
+- **Remaining Action Score carries forward between rounds**, including positive, zero, and negative balances. It is not reset to zero at the round boundary.
+- **New round Action Score = previous remaining Action Score + 1d20 + floor(Prowess / 10) + applicable modifiers.**
+- Example: previous score -6, d20 roll 11, Prowess 47 (+4), no other modifiers results in 9 Action Score for the new round.
+- Negative score can persist across rounds if not overcome by the next roll and bonuses.
+- **Still pending:** whether actions may voluntarily overspend Action Score, precise pass/end-round behavior, action costs and ties. Negative-score carryover does not by itself decide overspending.
