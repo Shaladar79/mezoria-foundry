@@ -771,6 +771,26 @@
         "combatEffect": false
       },
       "notes": "Healing values, antidote effects, and potion mechanics are deferred."
+    },
+    "Scribe": {
+      "status": "approved",
+      "category": "Tradesman",
+      "attributeBonus": {
+        "Intellect": 4
+      },
+      "skillTalent": {
+        "name": "Scribing",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Keeper of Records",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Scribing checks involving copying documents, deciphering difficult handwriting, identifying alterations or forgeries in written records, and organizing written information",
+        "additionalEffect": "Recognizes common record-keeping conventions, official document formats, and manuscript preparation techniques",
+        "combatEffect": false
+      },
+      "notes": "Does not automatically grant knowledge of unfamiliar languages or magical scripts."
     }
   },
   "notes": [
