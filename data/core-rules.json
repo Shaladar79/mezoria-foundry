@@ -246,6 +246,25 @@
             "additionalEffect": "Can recognize signs of illness or distress in farm animals",
             "combatEffect": false
           }
+        },
+        "Fisher": {
+          "status": "approved",
+          "category": "Common",
+          "attributeBonus": {
+            "Prowess": 2,
+            "Endurance": 2
+          },
+          "skillTalent": {
+            "name": "Fishing",
+            "tier": "Talent",
+            "bonusPercentagePoints": 5
+          },
+          "nonCombatAbility": {
+            "name": "Waterwise",
+            "conditionalBonusPercentagePoints": 10,
+            "appliesTo": "Non-combat checks involving locating productive fishing grounds, identifying fish behavior, interpreting currents and tides, and recognizing dangerous water conditions",
+            "combatEffect": false
+          }
         }
       }
     }
@@ -285,6 +304,11 @@
         "name": "Animal Handling",
         "governingAttribute": "pending",
         "notes": "Rancher background Skill Talent"
+      },
+      {
+        "name": "Fishing",
+        "governingAttribute": "pending",
+        "notes": "Fisher background Skill Talent"
       }
     ]
   },
