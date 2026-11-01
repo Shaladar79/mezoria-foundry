@@ -499,6 +499,26 @@
             "additionalEffect": "Recognizes signs that a campsite has recently been occupied",
             "combatEffect": false
           }
+        },
+        "Refugee": {
+          "status": "approved",
+          "category": "Common",
+          "attributeBonus": {
+            "Endurance": 2,
+            "Presence": 2
+          },
+          "skillTalent": {
+            "name": "Persuasion",
+            "tier": "Talent",
+            "bonusPercentagePoints": 5
+          },
+          "nonCombatAbility": {
+            "name": "Shared Hardship",
+            "conditionalBonusPercentagePoints": 10,
+            "appliesTo": "Non-combat social checks involving gaining the trust of displaced people, seeking temporary shelter from sympathetic communities, finding mutual-aid networks, and negotiating basic necessities during periods of hardship",
+            "additionalEffect": "Recognizes common signs of displacement and humanitarian need",
+            "combatEffect": false
+          }
         }
       }
     }
