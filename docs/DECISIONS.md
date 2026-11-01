@@ -337,3 +337,8 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Attributes: **+2 percentage points Intellect** and **+2 percentage points Endurance**.
 - Granted Skill Talent: **Survival** (+5 percentage points), using the existing skill.
 - Non-combat ability **Nature's Bounty**: +10 percentage points on non-combat Survival checks to locate edible plants, berries, roots, mushrooms, and useful wild herbs; recognizes common poisonous plants and seasonal gathering areas.
+
+## Homesteader Common Background (approved)
+- Attributes: **+2 percentage points Might** and **+2 percentage points Intellect**.
+- Granted Skill Talent: **Survival** (+5 percentage points), using the existing skill.
+- Non-combat ability **Self-Sufficient**: +10 percentage points on non-combat checks involving improvising basic shelters, maintaining a remote household, making practical repairs with limited supplies, and organizing resources for extended self-sufficient living.
