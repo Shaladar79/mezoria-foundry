@@ -137,3 +137,10 @@
 - Rename the proposed **Military Engineer** background to **Sapper**.
 - Sapper represents military field engineering, fortifications, siege works, and similar technical duties.
 - This is a **name change to a candidate**, not approval of the full Tradesman roster or Sapper's individual benefits.
+
+## Final Tradesman Background roster (approved)
+- Approved **22 Tradesman backgrounds**: Miner, Lumberjack, Prospector, Blacksmith, Carpenter, Mason, Leatherworker, Tailor, Jeweler, Potter, Tinker, Cook, Brewer, Alchemist, Herbalist, Scribe, Cartographer, Engineer, Sapper, Shipwright, Merchant, Innkeeper.
+- **Military Engineer** in the roster selection refers to **Sapper**, following the separately approved renaming decision; do not add a separate Military Engineer entry.
+- Rejected from this Tradesman roster: Quarryman, Armorer, Weaponsmith, Weaver, Baker, Butcher, Miller, Apothecary.
+- **Miner** and **Lumberjack** remain approved under Tradesman, not Common.
+- No new additions requested. Individual Tradesman attribute bonuses, Skill Talents, and non-combat abilities remain **undecided**; develop each separately, beginning with Miner.
