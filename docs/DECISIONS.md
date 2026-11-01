@@ -332,3 +332,8 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Attributes: **+2 percentage points Prowess** and **+2 percentage points Endurance**.
 - Granted Skill Talent: **Survival** (+5 percentage points), using the existing Survival skill.
 - Non-combat ability **Gamekeeper**: +10 percentage points to non-combat Survival checks involving tracking wild game, recognizing animal trails, identifying signs of nearby wildlife, and locating suitable hunting grounds.
+
+## Forager Common Background (approved)
+- Attributes: **+2 percentage points Intellect** and **+2 percentage points Endurance**.
+- Granted Skill Talent: **Survival** (+5 percentage points), using the existing skill.
+- Non-combat ability **Nature's Bounty**: +10 percentage points on non-combat Survival checks to locate edible plants, berries, roots, mushrooms, and useful wild herbs; recognizes common poisonous plants and seasonal gathering areas.
