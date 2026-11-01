@@ -1000,6 +1000,27 @@
         "combatEffect": false
       },
       "notes": "Does not automatically cause belief in obvious falsehoods or override free will."
+    },
+    "Forger": {
+      "status": "approved",
+      "category": "Criminal",
+      "attributeBonus": {
+        "Prowess": 2,
+        "Intellect": 2
+      },
+      "skillTalent": {
+        "name": "Forgery",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Master Imitator",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Forgery checks involving reproducing handwriting, copying signatures, creating convincing false documents, and identifying inconsistencies in official records or written credentials",
+        "additionalEffect": "Recognizes common authentication marks, document materials, and signs of tampering",
+        "combatEffect": false
+      },
+      "notes": "Does not automatically grant knowledge of secret codes, unfamiliar languages, or magical seals."
     }
   },
   "notes": [
