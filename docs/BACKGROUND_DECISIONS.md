@@ -210,3 +210,9 @@
 - Granted Skill Talent: **Cooking** (+5 percentage points); add Cooking to the planned skill roster, with governing attribute pending skill design.
 - Non-combat ability **Seasoned Chef**: +10 percentage points on non-combat Cooking checks involving preparing meals, identifying quality ingredients, preserving food, and making nutritious dishes from limited supplies. Recognizes spoiled ingredients, common culinary herbs and spices, and estimates food quantities needed to feed a group.
 - Does not automatically grant healing or combat buffs; any such effects would require separate design approval.
+
+## Brewer Tradesman Background (approved)
+- Attributes: **+2 percentage points Intellect** and **+2 percentage points Endurance**.
+- Granted Skill Talent: **Brewing** (+5 percentage points); add Brewing to planned skill roster, governing attribute pending skill design.
+- Non-combat ability **Master Brewer**: +10 percentage points on non-combat Brewing checks involving preparing fermented beverages, controlling fermentation, assessing ingredient quality, and identifying brewing problems or contamination. Recognizes common brewing ingredients, estimates fermentation readiness, and identifies spoiled beverages.
+- Does not automatically grant magical effects or consumable buffs.
