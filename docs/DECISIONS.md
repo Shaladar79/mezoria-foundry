@@ -367,3 +367,8 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Attributes: **+2 percentage points Prowess**, **+2 percentage points Endurance**.
 - Skill Talent: **Animal Handling** (+5 percentage points), using the existing approved skill.
 - Non-combat ability **Stablemaster**: +10 percentage points to non-combat Animal Handling checks involving grooming, feeding, calming, and caring for horses and other riding or draft animals. Recognizes signs of fatigue, poor health, or improper equipment fitting in mounts.
+
+## Courier Common Background (approved)
+- Attributes: **+2 percentage points Prowess** and **+2 percentage points Endurance**.
+- Skill Talent: **Navigation** (+5 percentage points); include Navigation in the skill roster with governing attribute to be decided during skill design.
+- Non-combat ability **Reliable Messenger**: +10 percentage points on non-combat checks involving finding efficient delivery routes, locating recipients, remembering directions, and navigating established roads or delivery networks. Recognizes common waystations, messenger markings, and delivery procedures.
