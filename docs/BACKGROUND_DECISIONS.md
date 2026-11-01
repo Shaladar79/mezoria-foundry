@@ -165,3 +165,8 @@
 - Granted Skill Talent: **Blacksmithing** (+5 percentage points); add Blacksmithing to the skill roster, governing attribute pending skill design.
 - Non-combat ability **Master of the Forge**: +10 percentage points to non-combat Blacksmithing checks involving forging metal objects, evaluating metal quality, identifying defects in forged equipment, and performing metalworking repairs. Can identify common metals, forging techniques, and signs of poor craftsmanship.
 - Does not automatically improve equipment or bypass existing crafting and armor repair rules.
+
+## Carpenter Tradesman Background (approved)
+- Attributes: **+2 percentage points Prowess** and **+2 percentage points Intellect**.
+- Granted Skill Talent: **Carpentry** (+5 percentage points); add Carpentry to the skill roster, governing attribute pending skill design.
+- Non-combat ability **Woodworker's Eye**: +10 percentage points on non-combat Carpentry checks involving constructing wooden objects, evaluating timber quality, identifying structural weaknesses, and repairing wooden buildings, furniture, or equipment. Can identify woodworking techniques and recognize signs of poor construction.
