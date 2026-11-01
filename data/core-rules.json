@@ -399,6 +399,26 @@
             "appliesTo": "Non-combat checks involving blending in among household staff, learning information through everyday household activities, recognizing household routines, and navigating employers' social expectations",
             "combatEffect": false
           }
+        },
+        "Stablehand": {
+          "status": "approved",
+          "category": "Common",
+          "attributeBonus": {
+            "Prowess": 2,
+            "Endurance": 2
+          },
+          "skillTalent": {
+            "name": "Animal Handling",
+            "tier": "Talent",
+            "bonusPercentagePoints": 5
+          },
+          "nonCombatAbility": {
+            "name": "Stablemaster",
+            "conditionalBonusPercentagePoints": 10,
+            "appliesTo": "Non-combat Animal Handling checks involving grooming, feeding, calming, and caring for horses and other riding or draft animals",
+            "additionalEffect": "Recognizes signs of fatigue, poor health, or improper equipment fitting in mounts",
+            "combatEffect": false
+          }
         }
       }
     }
