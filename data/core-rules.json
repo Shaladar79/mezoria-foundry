@@ -238,6 +238,11 @@
         "name": "Woodcutting",
         "governingAttribute": "pending",
         "notes": "Lumberjack Tradesman background Skill Talent; detailed definition pending"
+      },
+      {
+        "name": "Prospecting",
+        "governingAttribute": "pending",
+        "notes": "Prospector Tradesman background Skill Talent; governing attribute and details pending"
       }
     ]
   },
