@@ -226,6 +226,26 @@
             "Might": 2,
             "Endurance": 2
           }
+        },
+        "Rancher": {
+          "status": "approved",
+          "category": "Common",
+          "attributeBonus": {
+            "Endurance": 2,
+            "Presence": 2
+          },
+          "skillTalent": {
+            "name": "Animal Handling",
+            "tier": "Talent",
+            "bonusPercentagePoints": 5
+          },
+          "nonCombatAbility": {
+            "name": "Herdmaster",
+            "conditionalBonusPercentagePoints": 10,
+            "appliesTo": "Checks involving calming, feeding, raising, and managing domesticated livestock",
+            "additionalEffect": "Can recognize signs of illness or distress in farm animals",
+            "combatEffect": false
+          }
         }
       }
     }
@@ -260,6 +280,11 @@
         "name": "Agriculture",
         "governingAttribute": "pending",
         "notes": "Added as Farmer background Skill Talent"
+      },
+      {
+        "name": "Animal Handling",
+        "governingAttribute": "pending",
+        "notes": "Rancher background Skill Talent"
       }
     ]
   },
