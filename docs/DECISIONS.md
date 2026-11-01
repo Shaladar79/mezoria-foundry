@@ -407,3 +407,9 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Attributes: **+2 percentage points Might** and **+2 percentage points Endurance**.
 - Granted Skill Talent: **Athletics** (+5 percentage points).
 - Non-combat ability **Military Bearing**: +10 percentage points to non-combat checks involving recognizing military ranks and insignia, understanding military protocols, navigating military camps, and interpreting army organization and supply procedures. Can identify common military formations and camp arrangements.
+
+## Town Guard Common Background (approved; completes Common category)
+- Attributes: **+2 percentage points Prowess** and **+2 percentage points Presence**.
+- Granted Skill Talent: **Investigation** (+5 percentage points); include Investigation in the skill roster, with governing attribute pending skill design.
+- Non-combat ability **Keeper of the Peace**: +10 percentage points to non-combat checks involving recognizing suspicious activity, investigating disturbances, identifying signs of unlawful entry, and understanding local security procedures. Recognizes common guard patrol patterns, watch schedules, and settlement security arrangements.
+- **All 20 approved Common Backgrounds are now individually defined.** Next background category can be designed separately; Miner and Lumberjack remain pending category reassignment.
