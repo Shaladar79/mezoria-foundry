@@ -830,6 +830,26 @@
         "additionalEffect": "Recognizes construction methods, mechanical principles, and signs of potential structural failure",
         "combatEffect": false
       }
+    },
+    "Shipwright": {
+      "status": "approved",
+      "category": "Tradesman",
+      "attributeBonus": {
+        "Might": 2,
+        "Intellect": 2
+      },
+      "skillTalent": {
+        "name": "Shipbuilding",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Hullwright's Eye",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Shipbuilding checks involving constructing or repairing boats and ships, evaluating hull integrity, identifying weaknesses in ship construction, and selecting suitable materials for marine vessels",
+        "additionalEffect": "Can identify common shipbuilding techniques and recognize signs of water damage, hull fatigue, or poor workmanship",
+        "combatEffect": false
+      }
     }
   },
   "notes": [
