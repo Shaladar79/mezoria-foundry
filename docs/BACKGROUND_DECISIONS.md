@@ -175,3 +175,9 @@
 - Attributes: **+2 percentage points Might** and **+2 percentage points Intellect**.
 - Granted Skill Talent: **Masonry** (+5 percentage points); add Masonry to planned skill roster, governing attribute pending skill design.
 - Non-combat ability **Stoneworker's Eye**: +10 percentage points on non-combat Masonry checks involving shaping and fitting stone, assessing stonework quality, identifying structural weaknesses in masonry, and repairing stone buildings or fortifications. Can identify common stone construction techniques and recognize weakened mortar, settling foundations, or poor workmanship.
+
+## Leatherworker Tradesman Background (approved)
+- Attributes: **+2 percentage points Prowess** and **+2 percentage points Intellect**.
+- Granted Skill Talent: **Leatherworking** (+5 percentage points); add Leatherworking to the planned skill roster, with governing attribute pending skill design.
+- Non-combat ability **Hidecraft**: +10 percentage points on non-combat Leatherworking checks involving tanning hides, assessing leather quality, crafting leather goods, and repairing leather equipment. Can identify hides, recognize poor stitching or tanning, and assess leather suitability for armor, clothing, and other equipment.
+- Standard crafting and repair requirements still apply.
