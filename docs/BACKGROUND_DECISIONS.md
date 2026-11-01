@@ -198,3 +198,9 @@
 - The current approved Tradesman roster contains **21 backgrounds**; **9** have approved individual definitions so far.
 - No Pottery Skill Talent, Kilnmaster ability, or Potter attributes were approved; the proposed Potter mechanics are not part of the system.
 - Continue individual background design with **Tinker**.
+
+## Tinker Tradesman Background (approved)
+- Attributes: **+2 percentage points Prowess** and **+2 percentage points Intellect**.
+- Granted Skill Talent: **Tinkering** (+5 percentage points); add Tinkering to the planned skill roster, governing attribute pending skill design.
+- Non-combat ability **Mechanical Insight**: +10 percentage points to non-combat Tinkering checks involving examining mechanical devices, identifying malfunctioning components, repairing small mechanisms, and improvising simple mechanical tools using available materials. Can recognize how basic gears, springs, locks, and other mechanical assemblies work.
+- Does not automatically repair equipment or bypass existing crafting rules.
