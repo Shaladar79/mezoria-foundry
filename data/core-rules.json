@@ -165,38 +165,41 @@
       "individualBackgrounds": "To be designed by category",
       "abilityBalance": "No individual abilities or skill choices approved yet",
       "roster": {
-        "status": "proposed roster under review",
-        "proposedCommon": [
+        "status": "Common roster approved",
+        "common": [
           "Farmer",
           "Rancher",
           "Fisher",
           "Hunter",
           "Forager",
-          "Lumberjack",
-          "Miner",
-          "Laborer",
-          "Sailor",
-          "Traveler",
-          "Wanderer",
           "Homesteader",
+          "Laborer",
           "Villager",
           "City Dweller",
           "Servant",
           "Stablehand",
           "Courier",
+          "Sailor",
+          "Traveler",
+          "Wanderer",
           "Refugee",
           "Orphan",
-          "Hermit"
-        ],
-        "approvedCommonAdditions": [
+          "Hermit",
           "Soldier",
-          "Town Guard",
+          "Town Guard"
+        ],
+        "commonCount": 20,
+        "pendingReassignment": [
+          "Miner",
+          "Lumberjack"
+        ],
+        "removed": [
           "Mercenary"
         ],
-        "proposedTradesman": [
+        "tradesmanCandidates": [
           "Military Engineer"
         ],
-        "note": "Three military-service Common backgrounds approved; previously suggested 20 Common backgrounds still awaiting full roster approval. No background-specific talents, attribute allocations, or abilities finalized."
+        "note": "Miner and Lumberjack destination categories not approved; do not auto-assign. Individual background benefits still pending."
       }
     }
   },
