@@ -265,6 +265,25 @@
             "appliesTo": "Non-combat checks involving locating productive fishing grounds, identifying fish behavior, interpreting currents and tides, and recognizing dangerous water conditions",
             "combatEffect": false
           }
+        },
+        "Hunter": {
+          "status": "approved",
+          "category": "Common",
+          "attributeBonus": {
+            "Prowess": 2,
+            "Endurance": 2
+          },
+          "skillTalent": {
+            "name": "Survival",
+            "tier": "Talent",
+            "bonusPercentagePoints": 5
+          },
+          "nonCombatAbility": {
+            "name": "Gamekeeper",
+            "conditionalBonusPercentagePoints": 10,
+            "appliesTo": "Non-combat Survival checks involving tracking wild game, recognizing animal trails, identifying signs of nearby wildlife, and locating suitable hunting grounds",
+            "combatEffect": false
+          }
         }
       }
     }
