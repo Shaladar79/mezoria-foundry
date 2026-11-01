@@ -263,6 +263,11 @@
         "name": "Leatherworking",
         "governingAttribute": "pending",
         "notes": "Leatherworker Tradesman background Skill Talent"
+      },
+      {
+        "name": "Tailoring",
+        "governingAttribute": "pending",
+        "notes": "Tailor Tradesman background Skill Talent"
       }
     ]
   },
