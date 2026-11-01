@@ -159,3 +159,9 @@
 - Attributes: **+2 percentage points Intellect** and **+2 percentage points Endurance**.
 - Granted Skill Talent: **Prospecting** (+5 percentage points); add Prospecting to the skill roster, governing attribute pending skill design.
 - Non-combat ability **Mineral Eye**: +10 percentage points to non-combat Prospecting checks involving identifying promising mineral deposits, examining exposed rock formations, recognizing signs of precious metals or gemstones, and choosing areas worth further exploration. Can recognize common geological indicators of mineral-rich terrain.
+
+## Blacksmith Tradesman Background (approved)
+- Attributes: **+2 percentage points Might** and **+2 percentage points Intellect**.
+- Granted Skill Talent: **Blacksmithing** (+5 percentage points); add Blacksmithing to the skill roster, governing attribute pending skill design.
+- Non-combat ability **Master of the Forge**: +10 percentage points to non-combat Blacksmithing checks involving forging metal objects, evaluating metal quality, identifying defects in forged equipment, and performing metalworking repairs. Can identify common metals, forging techniques, and signs of poor craftsmanship.
+- Does not automatically improve equipment or bypass existing crafting and armor repair rules.
