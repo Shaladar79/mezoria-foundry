@@ -547,6 +547,26 @@
         "additionalEffect": "Recognizes common geological indicators of mineral-rich terrain",
         "combatEffect": false
       }
+    },
+    "Blacksmith": {
+      "status": "approved",
+      "category": "Tradesman",
+      "attributeBonus": {
+        "Might": 2,
+        "Intellect": 2
+      },
+      "skillTalent": {
+        "name": "Blacksmithing",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Master of the Forge",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Blacksmithing checks involving forging metal objects, evaluating metal quality, identifying defects in forged equipment, and performing metalworking repairs",
+        "additionalEffect": "Can identify common metals, forging techniques, and signs of poor craftsmanship",
+        "combatEffect": false
+      }
     }
   },
   "notes": [
