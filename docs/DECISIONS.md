@@ -317,3 +317,8 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Farmer grants **+2 percentage points Might and +2 percentage points Endurance**.
 - With the previously approved Agriculture Skill Talent (+5) and Bountiful Harvest non-combat ability (+10 on qualifying agriculture checks), the Farmer Common Background is fully defined.
 - The previously proposed +4 Endurance alternative for Farmer is **not selected**.
+
+## Rancher Common Background (approved)
+- Attributes: **+2 percentage points Endurance** and **+2 percentage points Presence**.
+- Granted Skill Talent: **Animal Handling** (+5 percentage points); add Animal Handling to the skill roster, with governing attribute to be decided during skill design.
+- Non-combat ability **Herdmaster**: +10 percentage points on checks for calming, feeding, raising, and managing domesticated livestock. The Rancher can also recognize indications of illness or distress in farm animals.
