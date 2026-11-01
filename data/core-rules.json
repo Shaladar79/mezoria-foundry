@@ -342,6 +342,25 @@
             "appliesTo": "Non-combat checks involving hauling heavy supplies, moving construction materials, clearing debris, and performing prolonged manual labor",
             "combatEffect": false
           }
+        },
+        "Villager": {
+          "status": "approved",
+          "category": "Common",
+          "attributeBonus": {
+            "Presence": 2,
+            "Endurance": 2
+          },
+          "skillTalent": {
+            "name": "Persuasion",
+            "tier": "Talent",
+            "bonusPercentagePoints": 5
+          },
+          "nonCombatAbility": {
+            "name": "Community Ties",
+            "conditionalBonusPercentagePoints": 10,
+            "appliesTo": "Non-combat social checks involving gaining the trust of ordinary villagers, requesting modest assistance, participating in community activities, and gathering local information in small settlements",
+            "combatEffect": false
+          }
         }
       }
     }
@@ -391,6 +410,11 @@
         "name": "Athletics",
         "governingAttribute": "pending",
         "notes": "Laborer background Skill Talent; confirm existing skill roster placement later"
+      },
+      {
+        "name": "Persuasion",
+        "governingAttribute": "pending",
+        "notes": "Villager background Skill Talent; confirm skill roster placement later"
       }
     ]
   },
