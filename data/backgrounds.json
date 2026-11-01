@@ -567,6 +567,26 @@
         "additionalEffect": "Can identify common metals, forging techniques, and signs of poor craftsmanship",
         "combatEffect": false
       }
+    },
+    "Carpenter": {
+      "status": "approved",
+      "category": "Tradesman",
+      "attributeBonus": {
+        "Prowess": 2,
+        "Intellect": 2
+      },
+      "skillTalent": {
+        "name": "Carpentry",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Woodworker's Eye",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Carpentry checks involving constructing wooden objects, evaluating timber quality, identifying structural weaknesses, and repairing wooden buildings, furniture, or equipment",
+        "additionalEffect": "Can identify woodworking techniques and recognize signs of poor construction",
+        "combatEffect": false
+      }
     }
   },
   "notes": [
