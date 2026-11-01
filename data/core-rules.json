@@ -380,6 +380,25 @@
             "appliesTo": "Non-combat checks involving navigating unfamiliar cities, finding local services, recognizing unsafe neighborhoods, and locating useful information in crowded urban environments",
             "combatEffect": false
           }
+        },
+        "Servant": {
+          "status": "approved",
+          "category": "Common",
+          "attributeBonus": {
+            "Prowess": 2,
+            "Presence": 2
+          },
+          "skillTalent": {
+            "name": "Etiquette",
+            "tier": "Talent",
+            "bonusPercentagePoints": 5
+          },
+          "nonCombatAbility": {
+            "name": "Unassuming Presence",
+            "conditionalBonusPercentagePoints": 10,
+            "appliesTo": "Non-combat checks involving blending in among household staff, learning information through everyday household activities, recognizing household routines, and navigating employers' social expectations",
+            "combatEffect": false
+          }
         }
       }
     }
@@ -439,6 +458,11 @@
         "name": "Streetwise",
         "governingAttribute": "pending",
         "notes": "City Dweller background Skill Talent"
+      },
+      {
+        "name": "Etiquette",
+        "governingAttribute": "pending",
+        "notes": "Servant background Skill Talent"
       }
     ]
   },
