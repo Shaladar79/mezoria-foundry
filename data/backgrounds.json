@@ -730,6 +730,26 @@
         "combatEffect": false
       },
       "notes": "Does not automatically provide magical effects or consumable buffs."
+    },
+    "Alchemist": {
+      "status": "approved",
+      "category": "Tradesman",
+      "attributeBonus": {
+        "Intellect": 4
+      },
+      "skillTalent": {
+        "name": "Alchemy",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Alchemical Insight",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Alchemy checks involving identifying alchemical ingredients, analyzing unknown mixtures, recognizing contamination or unstable reactions, and determining the purpose of common alchemical preparations",
+        "additionalEffect": "Can recognize standard alchemical apparatus and common preparation methods",
+        "combatEffect": false
+      },
+      "notes": "Potion effects, crafting requirements, and magical formulas remain subject to future alchemy system design."
     }
   },
   "notes": [
