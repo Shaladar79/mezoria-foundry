@@ -811,6 +811,25 @@
         "additionalEffect": "Can estimate distances from map scales, identify common map symbols, and recognize signs a map is outdated or inaccurate",
         "combatEffect": false
       }
+    },
+    "Engineer": {
+      "status": "approved",
+      "category": "Tradesman",
+      "attributeBonus": {
+        "Intellect": 4
+      },
+      "skillTalent": {
+        "name": "Engineering",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Structural Insight",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Engineering checks involving evaluating bridges, buildings, machinery, and mechanical systems; identifying structural weaknesses; and designing practical solutions to engineering problems",
+        "additionalEffect": "Recognizes construction methods, mechanical principles, and signs of potential structural failure",
+        "combatEffect": false
+      }
     }
   },
   "notes": [
