@@ -576,8 +576,18 @@
       "roundEnd": "The round ends once no combatant has Action Score available to take a permitted paid action; precise stop/pass rules pending",
       "actionCosts": "Pending individual action-type design",
       "tieBreaking": "Pending",
-      "newRoundGeneration": "Pending confirmation whether HWFWM carryover, including negative score, transfers into Mezoria",
-      "notes": "Replaces prior proposed Prowess roll-under initiative by successes; initiative is current Action Score, not a separate initiative check."
+      "newRoundGeneration": "Approved: new round Action Score = prior round remaining Action Score (positive, zero, or negative) + 1d20 + floor(Prowess / 10) + applicable modifiers",
+      "notes": "Replaces prior proposed Prowess roll-under initiative by successes; initiative is current Action Score, not a separate initiative check.",
+      "carryover": {
+        "status": "approved",
+        "positiveBalancesCarryForward": true,
+        "negativeBalancesCarryForward": true,
+        "zeroBalancesCarryForward": true,
+        "resetToZeroBetweenRounds": false,
+        "formula": "newRoundScore = previousRemainingScore + d20 + floor(Prowess / 10) + applicableModifiers",
+        "negativeExample": "Previous balance -6; roll 11; Prowess 47 yields +4; no other modifiers: new score = -6+11+4 = 9",
+        "notes": "Overspending and precise round end timing still require separate approval; do not infer that negative carryover itself allows voluntary overspending."
+      }
     }
   },
   "wounds": {
