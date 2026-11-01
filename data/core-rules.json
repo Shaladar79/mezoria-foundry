@@ -559,6 +559,26 @@
             "additionalEffect": "Can identify signs that someone recently passed through an otherwise isolated area",
             "combatEffect": false
           }
+        },
+        "Soldier": {
+          "status": "approved",
+          "category": "Common",
+          "attributeBonus": {
+            "Might": 2,
+            "Endurance": 2
+          },
+          "skillTalent": {
+            "name": "Athletics",
+            "tier": "Talent",
+            "bonusPercentagePoints": 5
+          },
+          "nonCombatAbility": {
+            "name": "Military Bearing",
+            "conditionalBonusPercentagePoints": 10,
+            "appliesTo": "Non-combat checks involving recognizing military ranks and insignia, understanding military protocols, navigating military camps, and interpreting army organization and supply procedures",
+            "additionalEffect": "Can identify common military formations and camp arrangements",
+            "combatEffect": false
+          }
         }
       }
     }
