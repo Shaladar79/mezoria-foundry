@@ -312,3 +312,8 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - **Approved:** Agriculture becomes a skill in the roster, with its governing attribute still to be defined. Farmer grants the **Agriculture Skill Talent (+5 percentage points)**.
 - **Approved:** **Bountiful Harvest** (non-combat): identify soil quality, assess crop health, and recognize harvest readiness; gain **+10 percentage points** on checks involving cultivation, crop care, and suitability of farmland.
 - **Attribute choices proposed, not yet approved:** +4 percentage points to **Endurance**, or +2 to **Might** and +2 to **Endurance**. Confirm whether each background restricts its attribute choices to thematic options.
+
+## Farmer attribute bonus (approved)
+- Farmer grants **+2 percentage points Might and +2 percentage points Endurance**.
+- With the previously approved Agriculture Skill Talent (+5) and Bountiful Harvest non-combat ability (+10 on qualifying agriculture checks), the Farmer Common Background is fully defined.
+- The previously proposed +4 Endurance alternative for Farmer is **not selected**.
