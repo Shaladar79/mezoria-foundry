@@ -86,7 +86,7 @@
       "Potter",
       "Sapper"
     ],
-    "tradesmanDefinitionsStatus": "Roster approved; individual attributes, talents, and non-combat abilities pending"
+    "tradesmanDefinitionsStatus": "All 20 approved Tradesman backgrounds individually defined"
   },
   "definitions": {
     "Farmer": {
@@ -868,6 +868,26 @@
         "conditionalBonusPercentagePoints": 10,
         "appliesTo": "Non-combat Commerce checks involving appraising ordinary goods, negotiating purchases and sales, estimating fair market values, and identifying profitable trading opportunities",
         "additionalEffect": "Recognizes common trade practices, merchant markings, and signs of counterfeit or misrepresented merchandise",
+        "combatEffect": false
+      }
+    },
+    "Innkeeper": {
+      "status": "approved",
+      "category": "Tradesman",
+      "attributeBonus": {
+        "Presence": 2,
+        "Intellect": 2
+      },
+      "skillTalent": {
+        "name": "Hospitality",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "A Welcoming Hearth",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Hospitality checks involving accommodating travelers, managing lodging, resolving guest complaints, and organizing food, supplies, and staff for an inn or tavern",
+        "additionalEffect": "Can recognize common lodging customs, assess a guest's basic needs, and identify reputable inns or taverns when traveling",
         "combatEffect": false
       }
     }
