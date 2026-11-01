@@ -323,6 +323,11 @@
         "name": "Commerce",
         "governingAttribute": "pending",
         "notes": "Merchant Tradesman background Skill Talent"
+      },
+      {
+        "name": "Hospitality",
+        "governingAttribute": "pending",
+        "notes": "Innkeeper Tradesman background Skill Talent"
       }
     ]
   },
