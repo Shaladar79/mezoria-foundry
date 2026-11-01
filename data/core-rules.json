@@ -338,6 +338,11 @@
         "name": "Stealth",
         "governingAttribute": "pending",
         "notes": "Cat Burglar Criminal background Skill Talent"
+      },
+      {
+        "name": "Deception",
+        "governingAttribute": "pending",
+        "notes": "Con Artist Criminal background Skill Talent"
       }
     ]
   },
