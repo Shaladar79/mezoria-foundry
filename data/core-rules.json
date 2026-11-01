@@ -343,6 +343,11 @@
         "name": "Deception",
         "governingAttribute": "pending",
         "notes": "Con Artist Criminal background Skill Talent"
+      },
+      {
+        "name": "Forgery",
+        "governingAttribute": "pending",
+        "notes": "Forger Criminal background Skill Talent"
       }
     ]
   },
