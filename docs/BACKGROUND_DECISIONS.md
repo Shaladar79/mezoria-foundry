@@ -204,3 +204,9 @@
 - Granted Skill Talent: **Tinkering** (+5 percentage points); add Tinkering to the planned skill roster, governing attribute pending skill design.
 - Non-combat ability **Mechanical Insight**: +10 percentage points to non-combat Tinkering checks involving examining mechanical devices, identifying malfunctioning components, repairing small mechanisms, and improvising simple mechanical tools using available materials. Can recognize how basic gears, springs, locks, and other mechanical assemblies work.
 - Does not automatically repair equipment or bypass existing crafting rules.
+
+## Cook Tradesman Background (approved)
+- Attributes: **+2 percentage points Prowess** and **+2 percentage points Intellect**.
+- Granted Skill Talent: **Cooking** (+5 percentage points); add Cooking to the planned skill roster, with governing attribute pending skill design.
+- Non-combat ability **Seasoned Chef**: +10 percentage points on non-combat Cooking checks involving preparing meals, identifying quality ingredients, preserving food, and making nutritious dishes from limited supplies. Recognizes spoiled ingredients, common culinary herbs and spices, and estimates food quantities needed to feed a group.
+- Does not automatically grant healing or combat buffs; any such effects would require separate design approval.
