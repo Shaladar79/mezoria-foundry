@@ -298,3 +298,9 @@
 - Granted Skill Talent: **Deception** (+5 percentage points), governing attribute pending skill design.
 - Non-combat ability **Silver Tongue**: +10 percentage points to non-combat Deception checks involving convincing someone of a fabricated story, establishing a false identity through conversation, gaining another person's confidence, and maintaining a convincing lie under questioning. Recognizes common confidence schemes and situations where someone is receptive to flattery, promises, or appeals to authority.
 - Does not automatically make someone believe obvious falsehoods or override their free will. Distinct from Forger's document-focused deception.
+
+## Forger Criminal Background (approved)
+- Attributes: **+2 percentage points Prowess** and **+2 percentage points Intellect**.
+- Granted Skill Talent: **Forgery** (+5 percentage points), with governing attribute pending skill design.
+- Non-combat ability **Master Imitator**: +10 percentage points on non-combat Forgery checks involving reproducing handwriting, copying signatures, creating convincing false documents, and identifying inconsistencies in official records or written credentials. Recognizes common authentication marks, document materials, and signs of tampering.
+- Does not automatically grant knowledge of secret codes, unfamiliar languages, or magical seals. Distinct from Scribe's legitimate record-keeping.
