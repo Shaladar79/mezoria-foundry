@@ -387,3 +387,8 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Attributes: **+2 percentage points Endurance** and **+2 percentage points Prowess**.
 - Granted Skill Talent: **Survival** (+5 percentage points).
 - Non-combat ability **Roadside Refuge**: +10 percentage points to non-combat Survival checks involving secluded resting places, temporary shelter, safe campsites, and using natural surroundings while traveling without reliable supplies. The Wanderer can recognize signs that a campsite was recently occupied.
+
+## Refugee Common Background (approved)
+- Attributes: **+2 percentage points Endurance** and **+2 percentage points Presence**.
+- Granted Skill Talent: **Persuasion** (+5 percentage points).
+- Non-combat ability **Shared Hardship**: +10 percentage points to non-combat social checks involving gaining the trust of displaced people, seeking temporary shelter from sympathetic communities, finding mutual-aid networks, and negotiating basic necessities during periods of hardship. The character can also recognize common signs of displacement and humanitarian need.
