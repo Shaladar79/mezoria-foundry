@@ -216,3 +216,9 @@
 - Granted Skill Talent: **Brewing** (+5 percentage points); add Brewing to planned skill roster, governing attribute pending skill design.
 - Non-combat ability **Master Brewer**: +10 percentage points on non-combat Brewing checks involving preparing fermented beverages, controlling fermentation, assessing ingredient quality, and identifying brewing problems or contamination. Recognizes common brewing ingredients, estimates fermentation readiness, and identifies spoiled beverages.
 - Does not automatically grant magical effects or consumable buffs.
+
+## Alchemist Tradesman Background (approved)
+- Attributes: **+4 percentage points Intellect**.
+- Granted Skill Talent: **Alchemy** (+5 percentage points); add Alchemy to planned skill roster, with governing attribute pending skill design.
+- Non-combat ability **Alchemical Insight**: +10 percentage points to non-combat Alchemy checks involving identifying alchemical ingredients, analyzing unknown mixtures, recognizing contamination or unstable reactions, and determining the purpose of common alchemical preparations. Recognizes standard alchemical apparatus and common preparation methods.
+- Potion effects, crafting requirements, and magical formulas remain to be designed with the alchemy system.
