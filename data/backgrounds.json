@@ -587,6 +587,26 @@
         "additionalEffect": "Can identify woodworking techniques and recognize signs of poor construction",
         "combatEffect": false
       }
+    },
+    "Mason": {
+      "status": "approved",
+      "category": "Tradesman",
+      "attributeBonus": {
+        "Might": 2,
+        "Intellect": 2
+      },
+      "skillTalent": {
+        "name": "Masonry",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Stoneworker's Eye",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Masonry checks involving shaping and fitting stone, assessing stonework quality, identifying structural weaknesses in masonry, and repairing stone buildings or fortifications",
+        "additionalEffect": "Can identify common stone construction techniques and recognize weakened mortar, settling foundations, or poor workmanship",
+        "combatEffect": false
+      }
     }
   },
   "notes": [
