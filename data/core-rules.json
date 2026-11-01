@@ -519,6 +519,26 @@
             "additionalEffect": "Recognizes common signs of displacement and humanitarian need",
             "combatEffect": false
           }
+        },
+        "Orphan": {
+          "status": "approved",
+          "category": "Common",
+          "attributeBonus": {
+            "Prowess": 2,
+            "Intellect": 2
+          },
+          "skillTalent": {
+            "name": "Streetwise",
+            "tier": "Talent",
+            "bonusPercentagePoints": 5
+          },
+          "nonCombatAbility": {
+            "name": "Resourceful Survivor",
+            "conditionalBonusPercentagePoints": 10,
+            "appliesTo": "Non-combat checks involving finding basic necessities with limited resources, identifying charitable organizations or shelters, recognizing opportunities for informal work, and navigating unfamiliar communities without established support",
+            "additionalEffect": "Recognizes common signs of exploitation and dishonest offers of assistance",
+            "combatEffect": false
+          }
         }
       }
     }
