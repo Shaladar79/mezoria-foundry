@@ -328,6 +328,11 @@
         "name": "Hospitality",
         "governingAttribute": "pending",
         "notes": "Innkeeper Tradesman background Skill Talent"
+      },
+      {
+        "name": "Thievery",
+        "governingAttribute": "pending",
+        "notes": "Thief Criminal background Skill Talent"
       }
     ]
   },
