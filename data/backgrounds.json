@@ -46,15 +46,16 @@
       "Soldier",
       "Town Guard"
     ],
-    "pendingReassignment": [
-      "Miner",
-      "Lumberjack"
-    ],
+    "pendingReassignment": [],
     "removed": [
       "Mercenary"
     ],
     "tradesmanCandidates": [
       "Military Engineer"
+    ],
+    "tradesman": [
+      "Miner",
+      "Lumberjack"
     ]
   },
   "definitions": {
@@ -462,7 +463,7 @@
     "These 20 Common background definitions are approved.",
     "Attribute bonuses and skill talent percentages are percentage-point adjustments.",
     "Skill governing attributes and other unapproved skill-system mechanics remain pending.",
-    "Miner and Lumberjack are not in Common; their new category is undecided.",
-    "Military Engineer is a Tradesman candidate only; Mercenary was removed."
+    "Military Engineer is a Tradesman candidate only; Mercenary was removed.",
+    "Miner and Lumberjack approved as Tradesman backgrounds; individual bonuses, talents and abilities not yet designed."
   ]
 }
