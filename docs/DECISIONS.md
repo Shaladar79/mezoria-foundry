@@ -209,3 +209,9 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - The approved natural 01–05 auto-hit/critical rules and 96–100 auto-miss rules apply to each target's resolution of the shared roll.
 - Each target separately applies their damage-type resistances, magical shield, eligible armor, Health, and Wounds.
 - Example: a 4 Fire damage-per-success AoE yields 12 Fire damage at 3 successes, 4 Fire damage at 1 success, and 0 on a miss, before mitigation.
+
+## Area-of-effect friendly fire (approved)
+- **Friendly fire is enabled by default:** area-of-effect damaging abilities affect valid creatures in their area whether they are allies or enemies (including the caster if inside the affected area).
+- Individual abilities may explicitly exempt allies, the caster, or other creatures.
+- Apply the approved single shared AoE attack roll against each affected target separately; compute that target's successes, damage and mitigation independently.
+- Exact area shapes, sizes and target-placement mechanics are deferred to individual ability design.
