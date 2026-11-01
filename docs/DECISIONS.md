@@ -287,3 +287,10 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - After each movement action, subtract its cost and recalculate action priority by remaining Action Score; other combatants may act between movement actions.
 - The approved final-action overspending rule applies: a combatant with positive Action Score may take a movement action that leaves the balance negative, then cannot take further normal paid actions that round.
 - Example: movement pace 5 and two movement actions cost 4 Action Score total, allowing up to 10 spaces in two separate actions.
+
+## Character backgrounds (approved framework)
+- Defer remaining Action Score costs until after further character-creation work. The approved movement cost of 2 Action Score remains unchanged; no basic attack cost has been approved.
+- Each character chooses **one Background** during character creation, from the categories **Common, Tradesman, Criminal, Social**.
+- A Background grants an attribute allocation choice: **+4 percentage points to one attribute**, **or +2 percentage points to each of two distinct attributes**.
+- Each Background grants **one Skill Talent** (the background selection already included in the initial Skill Talent allocation) and **one non-combat background ability**.
+- Specific backgrounds within categories, their granted skill talents, non-combat abilities, and any other requirements remain to be designed individually.
