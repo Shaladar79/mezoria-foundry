@@ -487,6 +487,26 @@
         "additionalEffect": "Recognizes common guard patrol patterns, watch schedules, and settlement security arrangements",
         "combatEffect": false
       }
+    },
+    "Miner": {
+      "status": "approved",
+      "category": "Tradesman",
+      "attributeBonus": {
+        "Might": 2,
+        "Endurance": 2
+      },
+      "skillTalent": {
+        "name": "Mining",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Stone Sense",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Mining checks involving recognizing valuable ore seams, assessing excavation stability, identifying signs of cave-ins, and locating workable deposits",
+        "additionalEffect": "Recognizes common mining tools, support structures, and signs of recent excavation",
+        "combatEffect": false
+      }
     }
   },
   "notes": [
