@@ -538,7 +538,20 @@
       },
       "application": "Physical attacks and applicable magical attacks, including AoE where cover lies between the target and effect origin",
       "calculation": "Cover is an applicable defense bonus deducted from the attacker's modified attack target",
-      "geometryAndDurability": "Exact criteria for classifying partial versus heavy cover, object durability, penetration, and destruction pending"
+      "geometryAndDurability": "Exact criteria for classifying partial versus heavy cover, object durability, penetration, and destruction pending",
+      "destructibleCover": {
+        "status": "approved foundation",
+        "rule": "Destructible cover objects have their own mitigation pool and durability score, separate from creatures' armor and shields.",
+        "interaction": "Attacks that can damage an obstruction may deplete its mitigation and affect its durability; exact breakage/penetration rules pending objects and terrain design.",
+        "values": "Set by material, construction and object type during objects/terrain design; no numerical defaults approved yet.",
+        "foundrySheet": {
+          "planned": true,
+          "type": "dedicated destructible-cover sheet",
+          "implementation": "deferred until objects/terrain design",
+          "fields": "To be designed; anticipated mitigation and durability at minimum",
+          "status": "not yet implemented"
+        }
+      }
     }
   },
   "wounds": {
