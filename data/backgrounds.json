@@ -688,6 +688,27 @@
         "combatEffect": false
       },
       "notes": "Does not bypass established crafting or repair requirements."
+    },
+    "Cook": {
+      "status": "approved",
+      "category": "Tradesman",
+      "attributeBonus": {
+        "Prowess": 2,
+        "Intellect": 2
+      },
+      "skillTalent": {
+        "name": "Cooking",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Seasoned Chef",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Cooking checks involving preparing meals, identifying quality ingredients, preserving food, and making nutritious dishes from limited supplies",
+        "additionalEffect": "Recognizes spoiled ingredients, identifies common culinary herbs and spices, and estimates quantities needed to feed a group",
+        "combatEffect": false
+      },
+      "notes": "Does not automatically grant healing or combat buffs."
     }
   },
   "notes": [
