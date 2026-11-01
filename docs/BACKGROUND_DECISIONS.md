@@ -144,3 +144,8 @@
 - Rejected from this Tradesman roster: Quarryman, Armorer, Weaponsmith, Weaver, Baker, Butcher, Miller, Apothecary.
 - **Miner** and **Lumberjack** remain approved under Tradesman, not Common.
 - No new additions requested. Individual Tradesman attribute bonuses, Skill Talents, and non-combat abilities remain **undecided**; develop each separately, beginning with Miner.
+
+## Miner Tradesman Background (approved)
+- Attributes: **+2 percentage points Might**, **+2 percentage points Endurance**.
+- Granted Skill Talent: **Mining** (+5 percentage points). Add Mining to the skill roster; governing attribute remains to be established with skill rules.
+- Non-combat ability **Stone Sense**: +10 percentage points to non-combat Mining checks involving recognizing valuable ore seams, assessing excavation stability, identifying signs of cave-ins, and locating workable deposits. Can recognize common mining tools, support structures, and signs of recent excavation.
