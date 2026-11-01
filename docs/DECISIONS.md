@@ -377,3 +377,8 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Attributes: **+2 percentage points Might** and **+2 percentage points Prowess**.
 - Skill Talent: **Seamanship** (+5 percentage points); add Seamanship to the skill roster, with governing attribute to be determined during skill design.
 - Non-combat ability **Sea Legs**: +10 percentage points to non-combat checks involving maintaining balance aboard moving vessels, handling sails and rigging, securing cargo, and recognizing signs of approaching dangerous weather at sea. The Sailor also understands basic shipboard routines and nautical terminology.
+
+## Traveler Common Background (approved)
+- Attributes: **+2 percentage points Endurance** and **+2 percentage points Intellect**.
+- Granted Skill Talent: **Navigation** (+5 percentage points), using the previously approved Navigation skill.
+- Non-combat ability **Well-Traveled**: +10 percentage points to non-combat checks involving recognizing regional customs, identifying useful travel routes, finding inns or safe lodging, and locating established trade roads. Traveler also recognizes common travel signs and road markers.
