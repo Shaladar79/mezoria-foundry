@@ -959,6 +959,27 @@
         "additionalEffect": "Recognizes situations where crowds, distractions, or clothing make valuables easier to steal",
         "combatEffect": false
       }
+    },
+    "Cat Burglar": {
+      "status": "approved",
+      "category": "Criminal",
+      "attributeBonus": {
+        "Prowess": 2,
+        "Endurance": 2
+      },
+      "skillTalent": {
+        "name": "Stealth",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Silent Entry",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Stealth checks involving infiltrating buildings, moving unnoticed through guarded properties, using shadows and cover, and avoiding detection while entering or leaving restricted locations",
+        "additionalEffect": "Recognizes potential entry routes, climbing opportunities, and places where guards or observers have limited visibility",
+        "combatEffect": false
+      },
+      "notes": "Does not grant combat stealth bonuses or automatically bypass locks or traps."
     }
   },
   "notes": [
