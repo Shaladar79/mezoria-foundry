@@ -256,3 +256,8 @@
 - Attributes: **+2 percentage points Might** and **+2 percentage points Intellect**.
 - Granted Skill Talent: **Shipbuilding** (+5 percentage points); include Shipbuilding in the planned skill roster, governing attribute pending skill design.
 - Non-combat ability **Hullwright's Eye**: +10 percentage points to non-combat Shipbuilding checks involving constructing or repairing boats and ships, evaluating hull integrity, identifying weaknesses in ship construction, and selecting suitable materials for marine vessels. Can identify common shipbuilding techniques and recognize signs of water damage, hull fatigue, or poor workmanship.
+
+## Merchant Tradesman Background (approved)
+- Attributes: **+2 percentage points Intellect** and **+2 percentage points Presence**.
+- Granted Skill Talent: **Commerce** (+5 percentage points); add Commerce to the planned skill roster, with governing attribute to be determined during skill design.
+- Non-combat ability **Eye for Trade**: +10 percentage points on non-combat Commerce checks involving appraising ordinary goods, negotiating purchases and sales, estimating fair market values, and identifying profitable trading opportunities. The Merchant also recognizes common trade practices, merchant markings, and signs of counterfeit or misrepresented merchandise.
