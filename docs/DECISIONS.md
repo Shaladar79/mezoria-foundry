@@ -352,3 +352,8 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Attributes: **+2 percentage points Presence**, **+2 percentage points Endurance**.
 - Skill Talent: **Persuasion** (+5 percentage points). Ensure Persuasion is included in the skill roster; governing attribute still to be reviewed with skills.
 - Non-combat ability **Community Ties**: +10 percentage points on non-combat social checks involving gaining trust of ordinary villagers, requesting modest assistance, taking part in community activities, and gathering local information in small settlements.
+
+## City Dweller Common Background (approved)
+- Attributes: **+2 percentage points Prowess**, **+2 percentage points Presence**.
+- Skill Talent: **Streetwise** (+5 percentage points). Include Streetwise in the skill roster; governing attribute to be defined later.
+- Non-combat ability **Urban Instincts**: +10 percentage points on non-combat checks involving navigating unfamiliar cities, finding local services, recognizing unsafe neighborhoods, and locating useful information in crowded urban environments.
