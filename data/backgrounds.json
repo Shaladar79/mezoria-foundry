@@ -920,6 +920,26 @@
         "additionalEffect": "Can recognize common lodging customs, assess a guest's basic needs, and identify reputable inns or taverns when traveling",
         "combatEffect": false
       }
+    },
+    "Thief": {
+      "status": "approved",
+      "category": "Criminal",
+      "attributeBonus": {
+        "Prowess": 2,
+        "Intellect": 2
+      },
+      "skillTalent": {
+        "name": "Thievery",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Opportunist's Eye",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Thievery checks involving identifying poorly secured valuables, recognizing opportunities for theft, assessing basic security measures, and determining which possessions are most vulnerable to being stolen",
+        "additionalEffect": "Recognizes common hiding places for valuables and signs that an area has recently been searched or robbed",
+        "combatEffect": false
+      }
     }
   },
   "notes": [
