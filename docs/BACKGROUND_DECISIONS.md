@@ -222,3 +222,9 @@
 - Granted Skill Talent: **Alchemy** (+5 percentage points); add Alchemy to planned skill roster, with governing attribute pending skill design.
 - Non-combat ability **Alchemical Insight**: +10 percentage points to non-combat Alchemy checks involving identifying alchemical ingredients, analyzing unknown mixtures, recognizing contamination or unstable reactions, and determining the purpose of common alchemical preparations. Recognizes standard alchemical apparatus and common preparation methods.
 - Potion effects, crafting requirements, and magical formulas remain to be designed with the alchemy system.
+
+## Herbalist Tradesman Background (approved)
+- Attributes: **+2 percentage points Intellect** and **+2 percentage points Endurance**.
+- Granted Skill Talent: **Herbalism** (+5 percentage points); add Herbalism to planned skill roster, with governing attribute pending skill design.
+- Non-combat ability **Herbal Lore**: +10 percentage points to non-combat Herbalism checks involving identifying medicinal plants, assessing useful properties, recognizing harmful or poisonous herbs, and preparing basic nonmagical herbal remedies. Recognizes growing conditions and harvesting seasons for common medicinal plants.
+- Healing values, antidote effects, and potion mechanics remain to be designed.
