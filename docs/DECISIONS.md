@@ -357,3 +357,8 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Attributes: **+2 percentage points Prowess**, **+2 percentage points Presence**.
 - Skill Talent: **Streetwise** (+5 percentage points). Include Streetwise in the skill roster; governing attribute to be defined later.
 - Non-combat ability **Urban Instincts**: +10 percentage points on non-combat checks involving navigating unfamiliar cities, finding local services, recognizing unsafe neighborhoods, and locating useful information in crowded urban environments.
+
+## Servant Common Background (approved)
+- Attributes: **+2 percentage points Prowess** and **+2 percentage points Presence**.
+- Skill Talent: **Etiquette** (+5 percentage points); add Etiquette to the skill roster, governing attribute to be determined later.
+- Non-combat ability **Unassuming Presence**: +10 percentage points to non-combat checks involving blending in among household staff, learning information through everyday household activities, recognizing household routines, and navigating the social expectations of employers.
