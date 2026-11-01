@@ -292,3 +292,9 @@
 - Granted Skill Talent: **Stealth** (+5 percentage points), with governing attribute pending skill design.
 - Non-combat ability **Silent Entry**: +10 percentage points to non-combat Stealth checks involving infiltrating buildings, moving unnoticed through guarded properties, using shadows and cover, and avoiding detection while entering or leaving restricted locations. Recognizes potential entry routes, climbing opportunities, and positions with limited guard or observer visibility.
 - No combat stealth bonus; does not automatically bypass locks or traps.
+
+## Con Artist Criminal Background (approved)
+- Attributes: **+4 percentage points Presence**.
+- Granted Skill Talent: **Deception** (+5 percentage points), governing attribute pending skill design.
+- Non-combat ability **Silver Tongue**: +10 percentage points to non-combat Deception checks involving convincing someone of a fabricated story, establishing a false identity through conversation, gaining another person's confidence, and maintaining a convincing lie under questioning. Recognizes common confidence schemes and situations where someone is receptive to flattery, promises, or appeals to authority.
+- Does not automatically make someone believe obvious falsehoods or override their free will. Distinct from Forger's document-focused deception.
