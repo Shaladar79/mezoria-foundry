@@ -228,3 +228,9 @@
 - Granted Skill Talent: **Herbalism** (+5 percentage points); add Herbalism to planned skill roster, with governing attribute pending skill design.
 - Non-combat ability **Herbal Lore**: +10 percentage points to non-combat Herbalism checks involving identifying medicinal plants, assessing useful properties, recognizing harmful or poisonous herbs, and preparing basic nonmagical herbal remedies. Recognizes growing conditions and harvesting seasons for common medicinal plants.
 - Healing values, antidote effects, and potion mechanics remain to be designed.
+
+## Scribe Tradesman Background (approved)
+- Attributes: **+4 percentage points Intellect**.
+- Granted Skill Talent: **Scribing** (+5 percentage points); add Scribing to the planned skill roster, with governing attribute pending skill design.
+- Non-combat ability **Keeper of Records**: +10 percentage points to non-combat Scribing checks involving copying documents, deciphering difficult handwriting, identifying alterations or forgeries in written records, and organizing written information. Recognizes common record-keeping conventions, official document formats, and manuscript preparation techniques.
+- Does not automatically grant knowledge of unfamiliar languages or magical scripts.
