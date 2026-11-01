@@ -203,7 +203,7 @@
       },
       "definitions": {
         "Farmer": {
-          "status": "Skill Talent and non-combat ability approved; attribute allocation pending",
+          "status": "approved",
           "skillTalent": {
             "name": "Agriculture",
             "tier": "Talent",
@@ -221,16 +221,11 @@
             "appliesTo": "Checks involving cultivation, crop care, and assessing farmland suitability",
             "combatEffect": false
           },
-          "attributeBonusProposal": [
-            {
-              "Endurance": 4
-            },
-            {
-              "Might": 2,
-              "Endurance": 2
-            }
-          ],
-          "attributeBonusStatus": "proposed only; awaiting user approval"
+          "attributeBonusStatus": "approved",
+          "attributeBonus": {
+            "Might": 2,
+            "Endurance": 2
+          }
         }
       }
     }
