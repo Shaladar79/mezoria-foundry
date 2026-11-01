@@ -276,3 +276,8 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - This replaces the proposed cost of 1 Action Score per movement space.
 - Example: a character with ground movement 5 may move up to 5 spaces as a 2-point movement action.
 - Further decisions pending: whether moving less than full pace still costs 2, whether multiple movement actions are permitted during the same round, and special terrain or movement-mode rules.
+
+## Partial movement cost (approved)
+- Moving **any positive distance up to the character's full movement pace costs 2 Action Score**, regardless of how many spaces are actually traversed.
+- No discount applies for moving only part of the character's pace. Example: with movement speed 5, moving 1, 3, or 5 spaces each costs 2 Action Score.
+- Further decisions on repeated movement actions and special movement/terrain costs remain pending.
