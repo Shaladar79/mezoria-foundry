@@ -507,6 +507,26 @@
         "additionalEffect": "Recognizes common mining tools, support structures, and signs of recent excavation",
         "combatEffect": false
       }
+    },
+    "Lumberjack": {
+      "status": "approved",
+      "category": "Tradesman",
+      "attributeBonus": {
+        "Might": 2,
+        "Endurance": 2
+      },
+      "skillTalent": {
+        "name": "Woodcutting",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Timberwise",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Woodcutting checks involving identifying useful timber, assessing tree health and stability, selecting safe felling directions, and recognizing dangerous or weakened branches",
+        "additionalEffect": "Can identify common wood types and estimate timber suitability for construction or crafting",
+        "combatEffect": false
+      }
     }
   },
   "notes": [
