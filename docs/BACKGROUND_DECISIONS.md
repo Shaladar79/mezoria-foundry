@@ -274,3 +274,9 @@
 - No additional backgrounds requested.
 - This approves only the **roster**, not any individual attribute bonuses, Skill Talents, or non-combat abilities. Design each individually, beginning with Thief.
 - Common (20) and Tradesman (20) background definitions remain unchanged.
+
+## Thief Criminal Background (approved)
+- Attributes: **+2 percentage points Prowess** and **+2 percentage points Intellect**.
+- Granted Skill Talent: **Thievery** (+5 percentage points); add Thievery to planned skill roster, governing attribute pending skill design.
+- Non-combat ability **Opportunist's Eye**: +10 percentage points on non-combat Thievery checks involving identifying poorly secured valuables, recognizing opportunities for theft, assessing basic security measures, and determining which possessions are most vulnerable to theft. Also recognizes common hiding places for valuables and signs that an area was recently searched or robbed.
+- Distinct from Cutpurse (street theft) and Cat Burglar (infiltration and difficult entry).
