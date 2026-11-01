@@ -347,3 +347,8 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Attributes: **+2 percentage points Might**, **+2 percentage points Endurance**.
 - Skill Talent: **Athletics** (+5 percentage points). Include Athletics in the skill roster; governing attribute still subject to skill design.
 - Non-combat ability **Day's Work**: +10 percentage points to non-combat checks involving hauling heavy supplies, moving construction materials, clearing debris, and performing prolonged manual labor.
+
+## Villager Common Background (approved)
+- Attributes: **+2 percentage points Presence**, **+2 percentage points Endurance**.
+- Skill Talent: **Persuasion** (+5 percentage points). Ensure Persuasion is included in the skill roster; governing attribute still to be reviewed with skills.
+- Non-combat ability **Community Ties**: +10 percentage points on non-combat social checks involving gaining trust of ordinary villagers, requesting modest assistance, taking part in community activities, and gathering local information in small settlements.
