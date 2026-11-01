@@ -187,3 +187,8 @@
 - Granted Skill Talent: **Tailoring** (+5 percentage points); add Tailoring to the planned skill roster, with governing attribute pending skill design.
 - Non-combat ability **Master Stitcher**: +10 percentage points to non-combat Tailoring checks involving sewing garments, altering clothing, assessing fabric quality, and repairing cloth-based equipment. Can identify fabrics, recognize high-quality stitching, and estimate the materials needed to make or repair a garment.
 - Standard crafting and equipment repair requirements still apply.
+
+## Jeweler Tradesman Background (approved)
+- Attributes: **+2 percentage points Prowess** and **+2 percentage points Intellect**.
+- Granted Skill Talent: **Jewelcrafting** (+5 percentage points); add Jewelcrafting to the skill roster, governing attribute pending skill design.
+- Non-combat ability **Gemcutter's Eye**: +10 percentage points to non-combat Jewelcrafting checks involving identifying gemstones, evaluating gem quality, detecting flaws or counterfeit jewelry, and cutting or setting precious stones. Recognizes common gemstone varieties, jewelry-making techniques, and signs of poor craftsmanship.
