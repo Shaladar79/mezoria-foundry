@@ -61,7 +61,6 @@
       "Leatherworker",
       "Tailor",
       "Jeweler",
-      "Potter",
       "Tinker",
       "Cook",
       "Brewer",
@@ -75,7 +74,7 @@
       "Merchant",
       "Innkeeper"
     ],
-    "tradesmanCount": 22,
+    "tradesmanCount": 21,
     "excludedTradesmanCandidates": [
       "Quarryman",
       "Armorer",
@@ -84,7 +83,8 @@
       "Baker",
       "Butcher",
       "Miller",
-      "Apothecary"
+      "Apothecary",
+      "Potter"
     ],
     "tradesmanDefinitionsStatus": "Roster approved; individual attributes, talents, and non-combat abilities pending"
   },
@@ -673,6 +673,7 @@
     "These 20 Common background definitions are approved.",
     "Attribute bonuses and skill talent percentages are percentage-point adjustments.",
     "Skill governing attributes and other unapproved skill-system mechanics remain pending.",
-    "The approved Tradesman roster has 22 entries, including Sapper (the approved replacement name for Military Engineer). No individual Tradesman mechanics are yet approved."
+    "The approved Tradesman roster has 21 entries, including Sapper (the approved replacement name for Military Engineer). No individual Tradesman mechanics are yet approved.",
+    "Potter removed from the approved Tradesman roster by user decision; no Potter mechanics approved."
   ]
 }
