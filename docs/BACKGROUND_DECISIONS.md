@@ -127,3 +127,8 @@
 - Granted Skill Talent: **Investigation** (+5 percentage points); include Investigation in the skill roster, with governing attribute pending skill design.
 - Non-combat ability **Keeper of the Peace**: +10 percentage points to non-combat checks involving recognizing suspicious activity, investigating disturbances, identifying signs of unlawful entry, and understanding local security procedures. Recognizes common guard patrol patterns, watch schedules, and settlement security arrangements.
 - **All 20 approved Common Backgrounds are now individually defined.** Next background category can be designed separately; Miner and Lumberjack remain pending category reassignment.
+
+## Tradesman roster: first approvals
+- **Miner** and **Lumberjack** are reassigned from pending to the **Tradesman** background category.
+- Their attribute bonuses, Skill Talents, and non-combat abilities remain undesigned.
+- Other Tradesman professions will be proposed for approval before inclusion in the roster.
