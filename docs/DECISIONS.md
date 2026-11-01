@@ -236,3 +236,9 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Cover may be damaged or destroyed; exact interaction between pool depletion, durability loss, attacks penetrating objects, and material-dependent values will be defined during **objects and terrain** design.
 - **Implementation task deferred:** Build a dedicated **Destructible Cover sheet** in Foundry VTT later, during the objects/terrain phase. It must represent mitigation and durability; additional sheet fields and workflows will be established then.
 - Do not invent cover statistics or implement the sheet during this combat-rule phase.
+
+## Damage carry-through on destroyed cover (approved)
+- When an attack **destroys intervening cover** and **can penetrate the obstruction**, any damage remaining after the cover absorbs its share **continues toward creatures behind it**.
+- If the attack cannot penetrate the material/obstruction, damage does **not** carry through to a creature behind it, even if the cover is damaged.
+- Example: a qualifying attack deals 20 damage; cover absorbs 12 before destruction, and the remaining 8 may reach a target behind it, subject to that target's applicable mitigation and any attack-resolution requirements.
+- Precise penetration eligibility, cover mitigation and durability interactions, and how a target behind the obstruction is hit are deferred to the **objects/terrain** rules and future Destructible Cover sheet.
