@@ -273,6 +273,11 @@
         "name": "Jewelcrafting",
         "governingAttribute": "pending",
         "notes": "Jeweler Tradesman background Skill Talent"
+      },
+      {
+        "name": "Tinkering",
+        "governingAttribute": "pending",
+        "notes": "Tinker Tradesman background Skill Talent"
       }
     ]
   },
