@@ -286,3 +286,9 @@
 - Granted Skill Talent: **Thievery** (+5 percentage points), using the existing planned Thievery skill; governing attribute pending skill design.
 - Non-combat ability **Light Fingers**: +10 percentage points on non-combat Thievery checks involving discreetly taking small objects from people, concealing stolen items, and performing sleight-of-hand theft in crowded locations. Recognizes situations where crowds, distractions, or clothing make valuables easier to steal.
 - Distinct from Thief's general opportunistic theft: Cutpurse specializes in quick close-range theft without being noticed.
+
+## Cat Burglar Criminal Background (approved)
+- Attributes: **+2 percentage points Prowess** and **+2 percentage points Endurance**.
+- Granted Skill Talent: **Stealth** (+5 percentage points), with governing attribute pending skill design.
+- Non-combat ability **Silent Entry**: +10 percentage points to non-combat Stealth checks involving infiltrating buildings, moving unnoticed through guarded properties, using shadows and cover, and avoiding detection while entering or leaving restricted locations. Recognizes potential entry routes, climbing opportunities, and positions with limited guard or observer visibility.
+- No combat stealth bonus; does not automatically bypass locks or traps.
