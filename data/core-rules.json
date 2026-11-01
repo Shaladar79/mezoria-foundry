@@ -509,6 +509,15 @@
         "exceptions": "An individual ability may explicitly exclude allies, the caster, or designated creatures.",
         "targetResolution": "Apply the established single shared d100 attack roll separately against each affected creature's defenses, with per-target successes, damage and mitigation.",
         "targetingAndGeometry": "Exact area dimensions, targeting rules and placement restrictions pending ability design."
+      },
+      "cover": {
+        "status": "approved",
+        "rule": "A target receives cover-based defensive protection against an area-effect attack when cover genuinely protects that target and lies between the target and the effect's point of origin.",
+        "direction": "Assess cover relative to the AoE effect's origin rather than simply the caster's position.",
+        "noProtection": "Cover not interposed between the effect origin and target provides no cover bonus against that effect.",
+        "effectSpecificExceptions": "Effects that bypass, originate within, or otherwise circumvent cover may negate it according to their ability rules.",
+        "specificCoverBonuses": "Pending terrain and combat cover design",
+        "coverMaterialAndDestruction": "Pending terrain and object rules"
       }
     }
   },
