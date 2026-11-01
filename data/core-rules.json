@@ -539,6 +539,26 @@
             "additionalEffect": "Recognizes common signs of exploitation and dishonest offers of assistance",
             "combatEffect": false
           }
+        },
+        "Hermit": {
+          "status": "approved",
+          "category": "Common",
+          "attributeBonus": {
+            "Intellect": 2,
+            "Endurance": 2
+          },
+          "skillTalent": {
+            "name": "Survival",
+            "tier": "Talent",
+            "bonusPercentagePoints": 5
+          },
+          "nonCombatAbility": {
+            "name": "Solitary Wisdom",
+            "conditionalBonusPercentagePoints": 10,
+            "appliesTo": "Non-combat Survival checks involving establishing isolated living areas, finding secluded sources of food and water, maintaining a remote shelter, and recognizing disturbances in their surroundings",
+            "additionalEffect": "Can identify signs that someone recently passed through an otherwise isolated area",
+            "combatEffect": false
+          }
         }
       }
     }
