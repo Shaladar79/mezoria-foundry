@@ -304,6 +304,25 @@
             "additionalEffect": "Recognize common poisonous plants and identify seasonal gathering locations",
             "combatEffect": false
           }
+        },
+        "Homesteader": {
+          "status": "approved",
+          "category": "Common",
+          "attributeBonus": {
+            "Might": 2,
+            "Intellect": 2
+          },
+          "skillTalent": {
+            "name": "Survival",
+            "tier": "Talent",
+            "bonusPercentagePoints": 5
+          },
+          "nonCombatAbility": {
+            "name": "Self-Sufficient",
+            "conditionalBonusPercentagePoints": 10,
+            "appliesTo": "Non-combat checks involving improvising basic shelters, maintaining a remote household, making practical repairs with limited supplies, and organizing resources for extended self-sufficient living",
+            "combatEffect": false
+          }
         }
       }
     }
