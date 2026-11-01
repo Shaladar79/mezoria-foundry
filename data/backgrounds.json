@@ -667,6 +667,27 @@
         "additionalEffect": "Can recognize common gemstone varieties, jewelry-making techniques, and signs of poor craftsmanship",
         "combatEffect": false
       }
+    },
+    "Tinker": {
+      "status": "approved",
+      "category": "Tradesman",
+      "attributeBonus": {
+        "Prowess": 2,
+        "Intellect": 2
+      },
+      "skillTalent": {
+        "name": "Tinkering",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Mechanical Insight",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Tinkering checks involving examining mechanical devices, identifying malfunctioning components, repairing small mechanisms, and improvising simple mechanical tools using available materials",
+        "additionalEffect": "Can recognize how basic gears, springs, locks, and other mechanical assemblies function",
+        "combatEffect": false
+      },
+      "notes": "Does not bypass established crafting or repair requirements."
     }
   },
   "notes": [
