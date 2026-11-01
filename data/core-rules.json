@@ -228,6 +228,11 @@
         "name": "Investigation",
         "governingAttribute": "pending",
         "notes": "Town Guard background Skill Talent"
+      },
+      {
+        "name": "Mining",
+        "governingAttribute": "pending",
+        "notes": "Miner Tradesman background Skill Talent; full definition pending skill design"
       }
     ]
   },
