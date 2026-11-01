@@ -293,6 +293,11 @@
         "name": "Alchemy",
         "governingAttribute": "pending",
         "notes": "Alchemist Tradesman background Skill Talent"
+      },
+      {
+        "name": "Herbalism",
+        "governingAttribute": "pending",
+        "notes": "Herbalist Tradesman background Skill Talent"
       }
     ]
   },
