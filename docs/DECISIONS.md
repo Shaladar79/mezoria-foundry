@@ -242,3 +242,11 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - If the attack cannot penetrate the material/obstruction, damage does **not** carry through to a creature behind it, even if the cover is damaged.
 - Example: a qualifying attack deals 20 damage; cover absorbs 12 before destruction, and the remaining 8 may reach a target behind it, subject to that target's applicable mitigation and any attack-resolution requirements.
 - Precise penetration eligibility, cover mitigation and durability interactions, and how a target behind the obstruction is hit are deferred to the **objects/terrain** rules and future Destructible Cover sheet.
+
+## Initiative and action economy: Action Score system (approved foundation)
+- **Supersedes the proposed d100 Prowess initiative by successes.** Combat uses the user's HWFWM-style **Action Score**.
+- **Starting Action Score = 1d20 + floor(Prowess / 10) + applicable modifiers.** The Prowess contribution is its tens digit (e.g., Prowess 37 contributes +3).
+- The combatant with the **highest currently remaining Action Score acts next**. Performing actions spends Action Score, so turn priority changes dynamically as scores change.
+- Movement, basic attacks, abilities, and other paid action types each have their own Action Score cost, to be specified separately.
+- The round ends when participants are out of enough score to perform permitted paid actions; pass/end-round details remain to be specified.
+- **Deferred:** specific costs, tied-score ordering, free actions, unaffordable-action handling, and whether earlier HWFWM carryover/negative-score rules also apply in Mezoria.
