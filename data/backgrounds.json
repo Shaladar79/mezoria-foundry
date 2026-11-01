@@ -627,6 +627,26 @@
         "additionalEffect": "Can identify different types of hides, recognize poor stitching or tanning, and assess suitability for armor, clothing, or other equipment",
         "combatEffect": false
       }
+    },
+    "Tailor": {
+      "status": "approved",
+      "category": "Tradesman",
+      "attributeBonus": {
+        "Prowess": 2,
+        "Intellect": 2
+      },
+      "skillTalent": {
+        "name": "Tailoring",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Master Stitcher",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Tailoring checks involving sewing garments, altering clothing, assessing fabric quality, and repairing cloth-based equipment",
+        "additionalEffect": "Can identify fabrics, recognize high-quality stitching, and estimate materials required to produce or repair a garment",
+        "combatEffect": false
+      }
     }
   },
   "notes": [
