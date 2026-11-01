@@ -361,6 +361,25 @@
             "appliesTo": "Non-combat social checks involving gaining the trust of ordinary villagers, requesting modest assistance, participating in community activities, and gathering local information in small settlements",
             "combatEffect": false
           }
+        },
+        "City Dweller": {
+          "status": "approved",
+          "category": "Common",
+          "attributeBonus": {
+            "Prowess": 2,
+            "Presence": 2
+          },
+          "skillTalent": {
+            "name": "Streetwise",
+            "tier": "Talent",
+            "bonusPercentagePoints": 5
+          },
+          "nonCombatAbility": {
+            "name": "Urban Instincts",
+            "conditionalBonusPercentagePoints": 10,
+            "appliesTo": "Non-combat checks involving navigating unfamiliar cities, finding local services, recognizing unsafe neighborhoods, and locating useful information in crowded urban environments",
+            "combatEffect": false
+          }
         }
       }
     }
@@ -415,6 +434,11 @@
         "name": "Persuasion",
         "governingAttribute": "pending",
         "notes": "Villager background Skill Talent; confirm skill roster placement later"
+      },
+      {
+        "name": "Streetwise",
+        "governingAttribute": "pending",
+        "notes": "City Dweller background Skill Talent"
       }
     ]
   },
