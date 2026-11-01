@@ -280,3 +280,9 @@
 - Granted Skill Talent: **Thievery** (+5 percentage points); add Thievery to planned skill roster, governing attribute pending skill design.
 - Non-combat ability **Opportunist's Eye**: +10 percentage points on non-combat Thievery checks involving identifying poorly secured valuables, recognizing opportunities for theft, assessing basic security measures, and determining which possessions are most vulnerable to theft. Also recognizes common hiding places for valuables and signs that an area was recently searched or robbed.
 - Distinct from Cutpurse (street theft) and Cat Burglar (infiltration and difficult entry).
+
+## Cutpurse Criminal Background (approved)
+- Attributes: **+4 percentage points Prowess**.
+- Granted Skill Talent: **Thievery** (+5 percentage points), using the existing planned Thievery skill; governing attribute pending skill design.
+- Non-combat ability **Light Fingers**: +10 percentage points on non-combat Thievery checks involving discreetly taking small objects from people, concealing stolen items, and performing sleight-of-hand theft in crowded locations. Recognizes situations where crowds, distractions, or clothing make valuables easier to steal.
+- Distinct from Thief's general opportunistic theft: Cutpurse specializes in quick close-range theft without being noticed.
