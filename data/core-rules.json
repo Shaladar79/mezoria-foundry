@@ -516,9 +516,29 @@
         "direction": "Assess cover relative to the AoE effect's origin rather than simply the caster's position.",
         "noProtection": "Cover not interposed between the effect origin and target provides no cover bonus against that effect.",
         "effectSpecificExceptions": "Effects that bypass, originate within, or otherwise circumvent cover may negate it according to their ability rules.",
-        "specificCoverBonuses": "Pending terrain and combat cover design",
+        "specificCoverBonuses": "Partial cover +10 percentage points defense; heavy cover +20 percentage points; full cover prevents direct targeting through obstruction unless bypassed, penetrated, or destroyed.",
         "coverMaterialAndDestruction": "Pending terrain and object rules"
       }
+    },
+    "cover": {
+      "status": "approved",
+      "levels": {
+        "partial": {
+          "defenseBonusPercent": 10,
+          "rule": "Add 10 percentage points to applicable defense against an attack when cover protects the target"
+        },
+        "heavy": {
+          "defenseBonusPercent": 20,
+          "rule": "Add 20 percentage points to applicable defense against an attack when cover protects the target"
+        },
+        "full": {
+          "defenseBonusPercent": null,
+          "rule": "Cannot be directly targeted through the obstruction; an attack that penetrates or destroys the obstruction or otherwise bypasses it may affect the target"
+        }
+      },
+      "application": "Physical attacks and applicable magical attacks, including AoE where cover lies between the target and effect origin",
+      "calculation": "Cover is an applicable defense bonus deducted from the attacker's modified attack target",
+      "geometryAndDurability": "Exact criteria for classifying partial versus heavy cover, object durability, penetration, and destruction pending"
     }
   },
   "wounds": {
