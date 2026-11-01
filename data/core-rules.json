@@ -288,6 +288,11 @@
         "name": "Brewing",
         "governingAttribute": "pending",
         "notes": "Brewer Tradesman background Skill Talent"
+      },
+      {
+        "name": "Alchemy",
+        "governingAttribute": "pending",
+        "notes": "Alchemist Tradesman background Skill Talent"
       }
     ]
   },
