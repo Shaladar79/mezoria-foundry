@@ -791,6 +791,26 @@
         "combatEffect": false
       },
       "notes": "Does not automatically grant knowledge of unfamiliar languages or magical scripts."
+    },
+    "Cartographer": {
+      "status": "approved",
+      "category": "Tradesman",
+      "attributeBonus": {
+        "Intellect": 2,
+        "Prowess": 2
+      },
+      "skillTalent": {
+        "name": "Cartography",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Mapmaker's Eye",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Cartography checks involving drawing accurate maps, interpreting existing maps, identifying topographical features, and recognizing discrepancies between maps and actual terrain",
+        "additionalEffect": "Can estimate distances from map scales, identify common map symbols, and recognize signs a map is outdated or inaccurate",
+        "combatEffect": false
+      }
     }
   },
   "notes": [
