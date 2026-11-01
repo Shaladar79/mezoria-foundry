@@ -850,6 +850,26 @@
         "additionalEffect": "Can identify common shipbuilding techniques and recognize signs of water damage, hull fatigue, or poor workmanship",
         "combatEffect": false
       }
+    },
+    "Merchant": {
+      "status": "approved",
+      "category": "Tradesman",
+      "attributeBonus": {
+        "Intellect": 2,
+        "Presence": 2
+      },
+      "skillTalent": {
+        "name": "Commerce",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Eye for Trade",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Commerce checks involving appraising ordinary goods, negotiating purchases and sales, estimating fair market values, and identifying profitable trading opportunities",
+        "additionalEffect": "Recognizes common trade practices, merchant markings, and signs of counterfeit or misrepresented merchandise",
+        "combatEffect": false
+      }
     }
   },
   "notes": [
