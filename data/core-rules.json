@@ -248,6 +248,11 @@
         "name": "Blacksmithing",
         "governingAttribute": "pending",
         "notes": "Blacksmith Tradesman background Skill Talent"
+      },
+      {
+        "name": "Carpentry",
+        "governingAttribute": "pending",
+        "notes": "Carpenter Tradesman background Skill Talent"
       }
     ]
   },
