@@ -493,6 +493,15 @@
         "successes": "Each successfully hit target computes its own number of successes from its own final attack target and the shared roll, including existing critical roll handling.",
         "damageAndMitigation": "Resolve damage, resistances, shield, armor, Health and Wounds independently per target",
         "exceptions": "Ability-specific unavoidable effects and other expressly different targeting mechanics to be specified during ability design"
+      },
+      "damageScaling": {
+        "status": "approved",
+        "attackRoll": "One shared d100 roll per area-of-effect attack",
+        "perTargetSuccesses": "Calculate success count separately for each affected target, based on the shared roll and that target's final hit target after applicable defense",
+        "perTargetDamageFormula": "If the attack hits target: targetDamage = targetSuccesses * abilityDamagePerSuccess; otherwise 0",
+        "criticalRolls": "Existing natural 01-05 critical/automatic-hit rules apply individually based on each target's final attack target",
+        "perTargetMitigation": "Resolve each target's resistance, active magical shield, applicable armor, Health, and Wounds independently",
+        "exceptions": "Abilities with expressly different effects are specified during ability design"
       }
     }
   },
