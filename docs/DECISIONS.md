@@ -300,3 +300,10 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Reserve **Military Engineer** as a **Tradesman** Background candidate, not as one of these Common additions.
 - The earlier 20 Common Background names remain a **proposed roster under review**. These three additions bring the working candidate list to 23, but do not approve all 20 previous candidates automatically.
 - Individual skill talents, attribute-benefit selection, and non-combat abilities for these backgrounds are not yet defined.
+
+## Final Common Background roster (approved; supersedes proposed roster)
+- The **20 approved Common backgrounds** are: Farmer, Rancher, Fisher, Hunter, Forager, Homesteader, Laborer, Villager, City Dweller, Servant, Stablehand, Courier, Sailor, Traveler, Wanderer, Refugee, Orphan, Hermit, Soldier, Town Guard.
+- **Miner** and **Lumberjack** are removed from Common and await a decision on which other category to assign them to; do not automatically move either into Tradesman.
+- **Mercenary** is removed from the proposed background roster.
+- **Military Engineer** remains only a potential Tradesman background, not an approved selectable one.
+- No additions requested. Next: flesh out each approved Common background individually with an assigned Skill Talent and a non-combat ability, while retaining the established character-selectable +4% to one attribute or +2% to two distinct attributes.
