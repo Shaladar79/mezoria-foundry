@@ -264,3 +264,9 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Negative Action Score carries into the next round as previously approved.
 - Example: 3 remaining points and an action costing 5 leaves -2.
 - Special actions while at non-positive score require separate rules.
+
+## Action Score tie-breaking (approved)
+- The combatant with the **highest current remaining Action Score** acts next.
+- If scores tie, the combatant with the **higher full Prowess percentage** acts first (not merely the tens-digit bonus).
+- If Prowess also ties, use a **d20 roll-off**; the higher result acts first. Reroll any continuing roll-off ties.
+- Reevaluate ordering as Action Scores change after actions.
