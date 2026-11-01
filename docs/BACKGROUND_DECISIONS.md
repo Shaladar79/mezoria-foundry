@@ -267,3 +267,10 @@
 - Granted Skill Talent: **Hospitality** (+5 percentage points); add Hospitality to the planned skill roster, with governing attribute pending skill design.
 - Non-combat ability **A Welcoming Hearth**: +10 percentage points to non-combat Hospitality checks involving accommodating travelers, managing lodging, resolving guest complaints, and organizing food, supplies, and staff for an inn or tavern. Recognizes common lodging customs, can assess guests' basic needs, and can identify reputable inns or taverns when traveling.
 - **All 20 current Tradesman backgrounds are now individually defined.**
+
+## Criminal Background roster (approved)
+- Approved **16 Criminal backgrounds**: Thief, Cutpurse, Cat Burglar, Con Artist, Forger, Smuggler, Fence, Poacher, Counterfeiter, Enforcer, Racketeer, Bandit, Pirate, Grave Robber, Spy, Prisoner.
+- Excluded **8 proposed backgrounds**: Burglar, Pickpocket, Charlatan, Impersonator, Black Marketeer, Gang Member, Crime Syndicate Agent, Assassin.
+- No additional backgrounds requested.
+- This approves only the **roster**, not any individual attribute bonuses, Skill Talents, or non-combat abilities. Design each individually, beginning with Thief.
+- Common (20) and Tradesman (20) background definitions remain unchanged.
