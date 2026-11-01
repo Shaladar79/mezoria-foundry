@@ -307,3 +307,8 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - **Mercenary** is removed from the proposed background roster.
 - **Military Engineer** remains only a potential Tradesman background, not an approved selectable one.
 - No additions requested. Next: flesh out each approved Common background individually with an assigned Skill Talent and a non-combat ability, while retaining the established character-selectable +4% to one attribute or +2% to two distinct attributes.
+
+## Farmer Common Background (partial approval)
+- **Approved:** Agriculture becomes a skill in the roster, with its governing attribute still to be defined. Farmer grants the **Agriculture Skill Talent (+5 percentage points)**.
+- **Approved:** **Bountiful Harvest** (non-combat): identify soil quality, assess crop health, and recognize harvest readiness; gain **+10 percentage points** on checks involving cultivation, crop care, and suitability of farmland.
+- **Attribute choices proposed, not yet approved:** +4 percentage points to **Endurance**, or +2 to **Might** and +2 to **Endurance**. Confirm whether each background restricts its attribute choices to thematic options.
