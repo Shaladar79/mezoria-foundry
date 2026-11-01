@@ -479,6 +479,26 @@
             "additionalEffect": "Recognizes common travel signs and road markers",
             "combatEffect": false
           }
+        },
+        "Wanderer": {
+          "status": "approved",
+          "category": "Common",
+          "attributeBonus": {
+            "Endurance": 2,
+            "Prowess": 2
+          },
+          "skillTalent": {
+            "name": "Survival",
+            "tier": "Talent",
+            "bonusPercentagePoints": 5
+          },
+          "nonCombatAbility": {
+            "name": "Roadside Refuge",
+            "conditionalBonusPercentagePoints": 10,
+            "appliesTo": "Non-combat Survival checks involving finding secluded resting places, locating temporary shelter, identifying safe campsites, and using natural surroundings when traveling without reliable supplies",
+            "additionalEffect": "Recognizes signs that a campsite has recently been occupied",
+            "combatEffect": false
+          }
         }
       }
     }
