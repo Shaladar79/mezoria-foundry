@@ -607,6 +607,26 @@
         "additionalEffect": "Can identify common stone construction techniques and recognize weakened mortar, settling foundations, or poor workmanship",
         "combatEffect": false
       }
+    },
+    "Leatherworker": {
+      "status": "approved",
+      "category": "Tradesman",
+      "attributeBonus": {
+        "Prowess": 2,
+        "Intellect": 2
+      },
+      "skillTalent": {
+        "name": "Leatherworking",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Hidecraft",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Leatherworking checks involving tanning hides, assessing leather quality, crafting leather goods, and repairing leather equipment",
+        "additionalEffect": "Can identify different types of hides, recognize poor stitching or tanning, and assess suitability for armor, clothing, or other equipment",
+        "combatEffect": false
+      }
     }
   },
   "notes": [
