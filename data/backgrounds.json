@@ -709,6 +709,27 @@
         "combatEffect": false
       },
       "notes": "Does not automatically grant healing or combat buffs."
+    },
+    "Brewer": {
+      "status": "approved",
+      "category": "Tradesman",
+      "attributeBonus": {
+        "Intellect": 2,
+        "Endurance": 2
+      },
+      "skillTalent": {
+        "name": "Brewing",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Master Brewer",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Brewing checks involving preparing fermented beverages, controlling fermentation, assessing ingredient quality, and identifying brewing problems or contamination",
+        "additionalEffect": "Recognizes common brewing ingredients, estimates fermentation readiness, and identifies spoiled beverages",
+        "combatEffect": false
+      },
+      "notes": "Does not automatically provide magical effects or consumable buffs."
     }
   },
   "notes": [
