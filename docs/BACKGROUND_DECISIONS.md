@@ -239,3 +239,9 @@
 - Attributes: **+2 percentage points Intellect** and **+2 percentage points Prowess**.
 - Granted Skill Talent: **Cartography** (+5 percentage points); add Cartography to planned skill roster, with governing attribute pending skill design.
 - Non-combat ability **Mapmaker's Eye**: +10 percentage points on non-combat Cartography checks involving drawing accurate maps, interpreting existing maps, identifying topographical features, and recognizing discrepancies between maps and actual terrain. Can estimate distances from map scales, identify common map symbols, and recognize signs that a map is outdated or inaccurate.
+
+## Engineer Tradesman Background (approved)
+- Attributes: **+4 percentage points Intellect**.
+- Skill Talent: **Engineering** (+5 percentage points); include Engineering in the planned skill roster, governing attribute pending skill design.
+- Non-combat ability **Structural Insight**: +10 percentage points to non-combat Engineering checks for evaluating bridges, buildings, machinery, and mechanical systems; identifying structural weaknesses; and designing practical engineering solutions. Recognizes construction methods, mechanical principles, and signs of potential structural failure.
+- Distinct from Tinker (small devices) and Sapper (military field engineering).
