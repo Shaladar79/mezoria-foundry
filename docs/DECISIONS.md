@@ -281,3 +281,9 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Moving **any positive distance up to the character's full movement pace costs 2 Action Score**, regardless of how many spaces are actually traversed.
 - No discount applies for moving only part of the character's pace. Example: with movement speed 5, moving 1, 3, or 5 spaces each costs 2 Action Score.
 - Further decisions on repeated movement actions and special movement/terrain costs remain pending.
+
+## Multiple movement actions per round (approved)
+- A character may take **multiple movement actions in one round**, each costing **2 Action Score** and allowing movement of any positive distance up to full movement pace.
+- After each movement action, subtract its cost and recalculate action priority by remaining Action Score; other combatants may act between movement actions.
+- The approved final-action overspending rule applies: a combatant with positive Action Score may take a movement action that leaves the balance negative, then cannot take further normal paid actions that round.
+- Example: movement pace 5 and two movement actions cost 4 Action Score total, allowing up to 10 spaces in two separate actions.
