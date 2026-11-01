@@ -251,3 +251,8 @@
 - The approved Tradesman roster now has **20 backgrounds**, **17** of which have finalized individual definitions.
 - Sapper's proposed attributes, Engineering Talent, and Siegecraft ability were never approved; no Sapper mechanics have been added.
 - Continue with Shipwright.
+
+## Shipwright Tradesman Background (approved)
+- Attributes: **+2 percentage points Might** and **+2 percentage points Intellect**.
+- Granted Skill Talent: **Shipbuilding** (+5 percentage points); include Shipbuilding in the planned skill roster, governing attribute pending skill design.
+- Non-combat ability **Hullwright's Eye**: +10 percentage points to non-combat Shipbuilding checks involving constructing or repairing boats and ships, evaluating hull integrity, identifying weaknesses in ship construction, and selecting suitable materials for marine vessels. Can identify common shipbuilding techniques and recognize signs of water damage, hull fatigue, or poor workmanship.
