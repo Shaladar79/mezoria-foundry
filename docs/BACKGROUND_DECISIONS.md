@@ -245,3 +245,9 @@
 - Skill Talent: **Engineering** (+5 percentage points); include Engineering in the planned skill roster, governing attribute pending skill design.
 - Non-combat ability **Structural Insight**: +10 percentage points to non-combat Engineering checks for evaluating bridges, buildings, machinery, and mechanical systems; identifying structural weaknesses; and designing practical engineering solutions. Recognizes construction methods, mechanical principles, and signs of potential structural failure.
 - Distinct from Tinker (small devices) and Sapper (military field engineering).
+
+## Tradesman roster revision: Sapper removed (approved)
+- **Sapper** is removed from the Tradesman roster by user decision. This also excludes its former name, **Military Engineer**; neither name is an active selectable background.
+- The approved Tradesman roster now has **20 backgrounds**, **17** of which have finalized individual definitions.
+- Sapper's proposed attributes, Engineering Talent, and Siegecraft ability were never approved; no Sapper mechanics have been added.
+- Continue with Shipwright.
