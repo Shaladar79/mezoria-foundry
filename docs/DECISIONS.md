@@ -215,3 +215,10 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Individual abilities may explicitly exempt allies, the caster, or other creatures.
 - Apply the approved single shared AoE attack roll against each affected target separately; compute that target's successes, damage and mitigation independently.
 - Exact area shapes, sizes and target-placement mechanics are deferred to individual ability design.
+
+## Area-of-effect cover and effect origin (approved)
+- Creatures receive cover-based defensive protection against an AoE attack **when the cover actually protects them and lies between them and the effect's point of origin**.
+- Determine the relevant direction **from the AoE's origin**, not merely from the caster's location.
+- Cover that does not intervene between the target and the effect's origin does not protect against that effect.
+- Abilities that bypass or circumvent cover can define exceptions.
+- Exact cover-defense bonuses, partial versus full cover, and obstacle durability are deferred to terrain/combat cover design.
