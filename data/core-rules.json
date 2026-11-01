@@ -587,6 +587,14 @@
         "formula": "newRoundScore = previousRemainingScore + d20 + floor(Prowess / 10) + applicableModifiers",
         "negativeExample": "Previous balance -6; roll 11; Prowess 47 yields +4; no other modifiers: new score = -6+11+4 = 9",
         "notes": "Overspending and precise round end timing still require separate approval; do not infer that negative carryover itself allows voluntary overspending."
+      },
+      "overspending": {
+        "status": "approved",
+        "rule": "If remaining Action Score is positive, a combatant may perform a paid action even when its cost is greater than remaining score, potentially making the balance negative.",
+        "afterAction": "At zero or negative score, no further normal paid actions that round.",
+        "carryover": "Negative balances carry forward to the next round.",
+        "example": "3 score minus 5 cost equals -2.",
+        "specialExceptions": "Not established"
       }
     }
   },
