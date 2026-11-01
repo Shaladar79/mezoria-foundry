@@ -261,3 +261,9 @@
 - Attributes: **+2 percentage points Intellect** and **+2 percentage points Presence**.
 - Granted Skill Talent: **Commerce** (+5 percentage points); add Commerce to the planned skill roster, with governing attribute to be determined during skill design.
 - Non-combat ability **Eye for Trade**: +10 percentage points on non-combat Commerce checks involving appraising ordinary goods, negotiating purchases and sales, estimating fair market values, and identifying profitable trading opportunities. The Merchant also recognizes common trade practices, merchant markings, and signs of counterfeit or misrepresented merchandise.
+
+## Innkeeper Tradesman Background (approved; completes Tradesman category)
+- Attributes: **+2 percentage points Presence** and **+2 percentage points Intellect**.
+- Granted Skill Talent: **Hospitality** (+5 percentage points); add Hospitality to the planned skill roster, with governing attribute pending skill design.
+- Non-combat ability **A Welcoming Hearth**: +10 percentage points to non-combat Hospitality checks involving accommodating travelers, managing lodging, resolving guest complaints, and organizing food, supplies, and staff for an inn or tavern. Recognizes common lodging customs, can assess guests' basic needs, and can identify reputable inns or taverns when traveling.
+- **All 20 current Tradesman backgrounds are now individually defined.**
