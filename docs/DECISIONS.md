@@ -327,3 +327,8 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Attributes: **+2 percentage points Prowess** and **+2 percentage points Endurance**.
 - Granted Skill Talent: **Fishing** (+5 percentage points); add Fishing to the skill roster, with governing attribute to be determined during skill design.
 - Non-combat ability **Waterwise**: +10 percentage points to non-combat checks involving locating productive fishing grounds, identifying fish behavior, interpreting currents and tides, and recognizing dangerous water conditions.
+
+## Hunter Common Background (approved)
+- Attributes: **+2 percentage points Prowess** and **+2 percentage points Endurance**.
+- Granted Skill Talent: **Survival** (+5 percentage points), using the existing Survival skill.
+- Non-combat ability **Gamekeeper**: +10 percentage points to non-combat Survival checks involving tracking wild game, recognizing animal trails, identifying signs of nearby wildlife, and locating suitable hunting grounds.
