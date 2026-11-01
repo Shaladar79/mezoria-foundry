@@ -199,7 +199,8 @@
         "tradesmanCandidates": [
           "Military Engineer"
         ],
-        "note": "Miner and Lumberjack destination categories not approved; do not auto-assign. Individual background benefits still pending."
+        "note": "Miner and Lumberjack destination categories not approved; do not auto-assign. Individual background benefits still pending.",
+        "commonDefinitionsStatus": "All 20 Common backgrounds individually approved"
       },
       "definitions": {
         "Farmer": {
@@ -579,6 +580,26 @@
             "additionalEffect": "Can identify common military formations and camp arrangements",
             "combatEffect": false
           }
+        },
+        "Town Guard": {
+          "status": "approved",
+          "category": "Common",
+          "attributeBonus": {
+            "Prowess": 2,
+            "Presence": 2
+          },
+          "skillTalent": {
+            "name": "Investigation",
+            "tier": "Talent",
+            "bonusPercentagePoints": 5
+          },
+          "nonCombatAbility": {
+            "name": "Keeper of the Peace",
+            "conditionalBonusPercentagePoints": 10,
+            "appliesTo": "Non-combat checks involving recognizing suspicious activity, investigating disturbances, identifying signs of unlawful entry, and understanding local security procedures",
+            "additionalEffect": "Recognizes common guard patrol patterns, watch schedules, and settlement security arrangements",
+            "combatEffect": false
+          }
         }
       }
     }
@@ -653,6 +674,11 @@
         "name": "Seamanship",
         "governingAttribute": "pending",
         "notes": "Sailor background Skill Talent"
+      },
+      {
+        "name": "Investigation",
+        "governingAttribute": "pending",
+        "notes": "Town Guard background Skill Talent"
       }
     ]
   },
