@@ -604,11 +604,11 @@
         "specialExceptions": "Not established"
       },
       "movementAction": {
-        "status": "approved baseline",
+        "status": "approved",
         "costActionScore": 2,
         "distance": "Up to the character's full movement pace for one movement action",
-        "costModel": "Flat 2 Action Score per full-pace movement action, not 1 per space",
-        "partialMovementCost": "pending",
+        "costModel": "Flat 2 Action Score per movement action for any positive distance up to full movement pace, not a per-space cost.",
+        "partialMovementCost": "Approved: flat 2 Action Score for moving any positive distance up to the character's full movement pace; no reduction for fewer spaces.",
         "multipleMovementActions": "pending",
         "movementModes": "Use applicable character movement speed; detailed terrain/flight/swimming costs pending",
         "notes": "The player rejected per-space costs in favor of 2 Action Score to move full pace."
