@@ -294,3 +294,9 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - A Background grants an attribute allocation choice: **+4 percentage points to one attribute**, **or +2 percentage points to each of two distinct attributes**.
 - Each Background grants **one Skill Talent** (the background selection already included in the initial Skill Talent allocation) and **one non-combat background ability**.
 - Specific backgrounds within categories, their granted skill talents, non-combat abilities, and any other requirements remain to be designed individually.
+
+## Military-background roster additions (approved)
+- Add **Soldier**, **Town Guard**, and **Mercenary** to the **Common** Background category.
+- Reserve **Military Engineer** as a **Tradesman** Background candidate, not as one of these Common additions.
+- The earlier 20 Common Background names remain a **proposed roster under review**. These three additions bring the working candidate list to 23, but do not approve all 20 previous candidates automatically.
+- Individual skill talents, attribute-benefit selection, and non-combat abilities for these backgrounds are not yet defined.
