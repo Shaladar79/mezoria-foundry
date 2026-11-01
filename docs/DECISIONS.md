@@ -382,3 +382,8 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Attributes: **+2 percentage points Endurance** and **+2 percentage points Intellect**.
 - Granted Skill Talent: **Navigation** (+5 percentage points), using the previously approved Navigation skill.
 - Non-combat ability **Well-Traveled**: +10 percentage points to non-combat checks involving recognizing regional customs, identifying useful travel routes, finding inns or safe lodging, and locating established trade roads. Traveler also recognizes common travel signs and road markers.
+
+## Wanderer Common Background (approved)
+- Attributes: **+2 percentage points Endurance** and **+2 percentage points Prowess**.
+- Granted Skill Talent: **Survival** (+5 percentage points).
+- Non-combat ability **Roadside Refuge**: +10 percentage points to non-combat Survival checks involving secluded resting places, temporary shelter, safe campsites, and using natural surroundings while traveling without reliable supplies. The Wanderer can recognize signs that a campsite was recently occupied.
