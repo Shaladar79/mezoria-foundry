@@ -303,6 +303,11 @@
         "name": "Scribing",
         "governingAttribute": "pending",
         "notes": "Scribe Tradesman background Skill Talent"
+      },
+      {
+        "name": "Cartography",
+        "governingAttribute": "pending",
+        "notes": "Cartographer Tradesman background Skill Talent"
       }
     ]
   },
