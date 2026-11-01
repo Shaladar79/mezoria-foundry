@@ -233,6 +233,11 @@
         "name": "Mining",
         "governingAttribute": "pending",
         "notes": "Miner Tradesman background Skill Talent; full definition pending skill design"
+      },
+      {
+        "name": "Woodcutting",
+        "governingAttribute": "pending",
+        "notes": "Lumberjack Tradesman background Skill Talent; detailed definition pending"
       }
     ]
   },
