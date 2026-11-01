@@ -243,6 +243,11 @@
         "name": "Prospecting",
         "governingAttribute": "pending",
         "notes": "Prospector Tradesman background Skill Talent; governing attribute and details pending"
+      },
+      {
+        "name": "Blacksmithing",
+        "governingAttribute": "pending",
+        "notes": "Blacksmith Tradesman background Skill Talent"
       }
     ]
   },
