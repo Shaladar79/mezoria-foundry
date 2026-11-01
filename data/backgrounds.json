@@ -750,6 +750,27 @@
         "combatEffect": false
       },
       "notes": "Potion effects, crafting requirements, and magical formulas remain subject to future alchemy system design."
+    },
+    "Herbalist": {
+      "status": "approved",
+      "category": "Tradesman",
+      "attributeBonus": {
+        "Intellect": 2,
+        "Endurance": 2
+      },
+      "skillTalent": {
+        "name": "Herbalism",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Herbal Lore",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Herbalism checks involving identifying medicinal plants, determining their useful properties, recognizing harmful or poisonous herbs, and preparing basic nonmagical herbal remedies",
+        "additionalEffect": "Recognizes appropriate growing conditions and harvesting seasons for common medicinal plants",
+        "combatEffect": false
+      },
+      "notes": "Healing values, antidote effects, and potion mechanics are deferred."
     }
   },
   "notes": [
