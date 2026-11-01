@@ -133,10 +133,37 @@
       "markGrantCountStatus": "provisional: user phrasing previously also mentioned three; using latest clarified working allocation",
       "playerChoiceCount": 3,
       "backgroundGrantCount": 1,
-      "backgroundOptionsStatus": "deferred until after races",
+      "backgroundOptionsStatus": "Background category framework approved; individual backgrounds and talents pending",
       "markSkillListsStatus": "not yet assigned",
       "raceOptionsStatus": "not yet designed",
       "skillSelectionsStatus": "not yet finalized"
+    },
+    "backgrounds": {
+      "status": "approved foundation",
+      "selection": "Each character chooses one Background during character creation",
+      "categories": [
+        "Common",
+        "Tradesman",
+        "Criminal",
+        "Social"
+      ],
+      "attributeBenefit": {
+        "chooseOneOf": [
+          {
+            "attributeCount": 1,
+            "bonusPerAttributePercentagePoints": 4
+          },
+          {
+            "attributeCount": 2,
+            "bonusPerAttributePercentagePoints": 2
+          }
+        ],
+        "twoAttributeOption": "Two distinct attributes; exact allocation mechanics confirmed later if needed"
+      },
+      "skillTalentBenefit": "Grants one Skill Talent as already budgeted in backgroundGrantCount",
+      "nonCombatAbilityBenefit": "Grants one background-specific non-combat ability",
+      "individualBackgrounds": "To be designed by category",
+      "abilityBalance": "No individual abilities or skill choices approved yet"
     }
   },
   "skills": {
@@ -574,7 +601,7 @@
       "actionSpending": "Every non-free action category (movement, basic attacks, abilities, etc.) has an Action Score cost deducted when performed",
       "affordability": "Specific minimum cost, free actions and handling of unaffordable actions pending detailed action economy",
       "roundEnd": "The round ends once no combatant has Action Score available to take a permitted paid action; precise stop/pass rules pending",
-      "actionCosts": "Pending individual action-type design",
+      "actionCosts": "Deferred at user's request until returning to action economy; movement remains 2 Action Score as approved; basic attacks and other costs not approved",
       "tieBreaking": {
         "status": "approved",
         "first": "Highest current remaining Action Score acts first",
