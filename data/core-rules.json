@@ -258,6 +258,11 @@
         "name": "Masonry",
         "governingAttribute": "pending",
         "notes": "Mason Tradesman background Skill Talent"
+      },
+      {
+        "name": "Leatherworking",
+        "governingAttribute": "pending",
+        "notes": "Leatherworker Tradesman background Skill Talent"
       }
     ]
   },
