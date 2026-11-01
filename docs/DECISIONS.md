@@ -222,3 +222,11 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Cover that does not intervene between the target and the effect's origin does not protect against that effect.
 - Abilities that bypass or circumvent cover can define exceptions.
 - Exact cover-defense bonuses, partial versus full cover, and obstacle durability are deferred to terrain/combat cover design.
+
+## Cover levels and defense effects (approved)
+- **Partial cover:** +10 percentage points of applicable defense against an attack.
+- **Heavy cover:** +20 percentage points of applicable defense against an attack.
+- **Full cover:** Target cannot be directly targeted through the obstruction; attacks capable of penetrating, destroying, or explicitly bypassing it may still affect the target under their rules.
+- Cover bonuses apply to relevant physical and magical attacks, including area effects where cover intervenes between target and **effect origin**.
+- When applicable, the cover bonus is included with the defender's other defense percentages subtracted from the attacker's modified accuracy.
+- Exact criteria for cover categories, object durability, attack penetration, and obstruction destruction remain for terrain/equipment rules.
