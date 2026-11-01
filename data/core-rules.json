@@ -333,6 +333,11 @@
         "name": "Thievery",
         "governingAttribute": "pending",
         "notes": "Thief Criminal background Skill Talent"
+      },
+      {
+        "name": "Stealth",
+        "governingAttribute": "pending",
+        "notes": "Cat Burglar Criminal background Skill Talent"
       }
     ]
   },
