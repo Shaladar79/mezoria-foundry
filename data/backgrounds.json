@@ -647,6 +647,26 @@
         "additionalEffect": "Can identify fabrics, recognize high-quality stitching, and estimate materials required to produce or repair a garment",
         "combatEffect": false
       }
+    },
+    "Jeweler": {
+      "status": "approved",
+      "category": "Tradesman",
+      "attributeBonus": {
+        "Prowess": 2,
+        "Intellect": 2
+      },
+      "skillTalent": {
+        "name": "Jewelcrafting",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Gemcutter's Eye",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Jewelcrafting checks involving identifying gemstones, evaluating gem quality, detecting flaws or counterfeit jewelry, and cutting or setting precious stones",
+        "additionalEffect": "Can recognize common gemstone varieties, jewelry-making techniques, and signs of poor craftsmanship",
+        "combatEffect": false
+      }
     }
   },
   "notes": [
