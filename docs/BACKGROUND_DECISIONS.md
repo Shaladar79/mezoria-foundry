@@ -132,3 +132,8 @@
 - **Miner** and **Lumberjack** are reassigned from pending to the **Tradesman** background category.
 - Their attribute bonuses, Skill Talents, and non-combat abilities remain undesigned.
 - Other Tradesman professions will be proposed for approval before inclusion in the roster.
+
+## Tradesman candidate naming (approved)
+- Rename the proposed **Military Engineer** background to **Sapper**.
+- Sapper represents military field engineering, fortifications, siege works, and similar technical duties.
+- This is a **name change to a candidate**, not approval of the full Tradesman roster or Sapper's individual benefits.
