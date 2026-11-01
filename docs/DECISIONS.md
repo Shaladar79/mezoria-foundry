@@ -230,3 +230,9 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Cover bonuses apply to relevant physical and magical attacks, including area effects where cover intervenes between target and **effect origin**.
 - When applicable, the cover bonus is included with the defender's other defense percentages subtracted from the attacker's modified accuracy.
 - Exact criteria for cover categories, object durability, attack penetration, and obstruction destruction remain for terrain/equipment rules.
+
+## Destructible cover objects and future Foundry sheet (approved)
+- Destructible cover has **its own mitigation pool and durability score**, separate from a character's armor, equipment Block, or magical shield.
+- Cover may be damaged or destroyed; exact interaction between pool depletion, durability loss, attacks penetrating objects, and material-dependent values will be defined during **objects and terrain** design.
+- **Implementation task deferred:** Build a dedicated **Destructible Cover sheet** in Foundry VTT later, during the objects/terrain phase. It must represent mitigation and durability; additional sheet fields and workflows will be established then.
+- Do not invent cover statistics or implement the sheet during this combat-rule phase.
