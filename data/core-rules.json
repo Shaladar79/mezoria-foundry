@@ -308,6 +308,11 @@
         "name": "Cartography",
         "governingAttribute": "pending",
         "notes": "Cartographer Tradesman background Skill Talent"
+      },
+      {
+        "name": "Engineering",
+        "governingAttribute": "pending",
+        "notes": "Engineer Tradesman background Skill Talent"
       }
     ]
   },
