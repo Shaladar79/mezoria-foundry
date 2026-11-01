@@ -149,3 +149,8 @@
 - Attributes: **+2 percentage points Might**, **+2 percentage points Endurance**.
 - Granted Skill Talent: **Mining** (+5 percentage points). Add Mining to the skill roster; governing attribute remains to be established with skill rules.
 - Non-combat ability **Stone Sense**: +10 percentage points to non-combat Mining checks involving recognizing valuable ore seams, assessing excavation stability, identifying signs of cave-ins, and locating workable deposits. Can recognize common mining tools, support structures, and signs of recent excavation.
+
+## Lumberjack Tradesman Background (approved)
+- Attributes: **+2 percentage points Might** and **+2 percentage points Endurance**.
+- Granted Skill Talent: **Woodcutting** (+5 percentage points); add Woodcutting to the skill roster, with governing attribute pending skill design.
+- Non-combat ability **Timberwise**: +10 percentage points to non-combat Woodcutting checks involving identifying useful timber, assessing tree health and stability, selecting safe felling directions, and recognizing dangerous or weakened branches. Can identify common wood types and estimate whether timber is suitable for construction or crafting.
