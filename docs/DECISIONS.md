@@ -202,3 +202,10 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Each target is independently hit or missed. Apply the established **natural 01–05 automatic hit** and **96–100 automatic miss** rules to the shared attack roll for each target.
 - Each hit target calculates its own successes from its own final hit target and the shared roll, then separately resolves damage resistance, magical shields, applicable armor, Health, and Wounds.
 - Any exceptional unavoidable AoE or saving-throw-based abilities will be detailed during ability design.
+
+## Area-of-effect damage per target (approved)
+- Area-of-effect attacks use **one shared attack roll**, but each target independently determines whether it is hit and how many successes the attack achieves against that target.
+- **Damage dealt to each hit target = successes against that target × the ability's damage per success.** Missed targets receive no damage from that attack.
+- The approved natural 01–05 auto-hit/critical rules and 96–100 auto-miss rules apply to each target's resolution of the shared roll.
+- Each target separately applies their damage-type resistances, magical shield, eligible armor, Health, and Wounds.
+- Example: a 4 Fire damage-per-success AoE yields 12 Fire damage at 3 successes, 4 Fire damage at 1 success, and 0 on a miss, before mitigation.
