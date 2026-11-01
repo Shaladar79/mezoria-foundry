@@ -257,3 +257,10 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Example: previous score -6, d20 roll 11, Prowess 47 (+4), no other modifiers results in 9 Action Score for the new round.
 - Negative score can persist across rounds if not overcome by the next roll and bonuses.
 - **Still pending:** whether actions may voluntarily overspend Action Score, precise pass/end-round behavior, action costs and ties. Negative-score carryover does not by itself decide overspending.
+
+## Action Score final-action overspending (approved)
+- With a positive Action Score, a combatant may take an action that costs more points than remain and go into negative score.
+- The full action cost is deducted. At zero or negative score, the character cannot take another normal paid action that round.
+- Negative Action Score carries into the next round as previously approved.
+- Example: 3 remaining points and an action costing 5 leaves -2.
+- Special actions while at non-positive score require separate rules.
