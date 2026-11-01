@@ -392,3 +392,8 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Attributes: **+2 percentage points Endurance** and **+2 percentage points Presence**.
 - Granted Skill Talent: **Persuasion** (+5 percentage points).
 - Non-combat ability **Shared Hardship**: +10 percentage points to non-combat social checks involving gaining the trust of displaced people, seeking temporary shelter from sympathetic communities, finding mutual-aid networks, and negotiating basic necessities during periods of hardship. The character can also recognize common signs of displacement and humanitarian need.
+
+## Orphan Common Background (approved)
+- Attributes: **+2 percentage points Prowess** and **+2 percentage points Intellect**.
+- Granted Skill Talent: **Streetwise** (+5 percentage points).
+- Non-combat ability **Resourceful Survivor**: +10 percentage points to non-combat checks involving finding basic necessities with limited resources, identifying charitable organizations or shelters, recognizing opportunities for informal work, and navigating unfamiliar communities without established support. Recognizes common signs of exploitation and dishonest offers of assistance.
