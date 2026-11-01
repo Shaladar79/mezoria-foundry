@@ -502,6 +502,13 @@
         "criticalRolls": "Existing natural 01-05 critical/automatic-hit rules apply individually based on each target's final attack target",
         "perTargetMitigation": "Resolve each target's resistance, active magical shield, applicable armor, Health, and Wounds independently",
         "exceptions": "Abilities with expressly different effects are specified during ability design"
+      },
+      "friendlyFire": {
+        "status": "approved",
+        "defaultRule": "Area-of-effect attacks affect all valid creatures inside the affected area, including allies, enemies, and the caster if inside the area.",
+        "exceptions": "An individual ability may explicitly exclude allies, the caster, or designated creatures.",
+        "targetResolution": "Apply the established single shared d100 attack roll separately against each affected creature's defenses, with per-target successes, damage and mitigation.",
+        "targetingAndGeometry": "Exact area dimensions, targeting rules and placement restrictions pending ability design."
       }
     }
   },
