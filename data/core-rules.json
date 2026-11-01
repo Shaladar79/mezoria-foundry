@@ -550,6 +550,18 @@
           "implementation": "deferred until objects/terrain design",
           "fields": "To be designed; anticipated mitigation and durability at minimum",
           "status": "not yet implemented"
+        },
+        "damageCarryThrough": {
+          "status": "approved",
+          "rule": "When an attack destroys intervening cover and is capable of penetrating that obstruction, unabsorbed damage continues through toward a creature behind the cover.",
+          "calculation": "Remaining damage after resolving damage absorbed by the cover carries through to the target; then apply target-specific applicable defenses/mitigation as relevant under rules still to be defined.",
+          "conditions": [
+            "Attack destroys the obstruction",
+            "Attack can penetrate the obstruction"
+          ],
+          "nonPenetrating": "If attack cannot penetrate the cover, it cannot deal carry-through damage to the creature behind it.",
+          "detailedResolution": "How attack accuracy, cover mitigation, durability, and target hit resolution work during penetration deferred until objects/terrain design.",
+          "example": "An attack deals 20 damage and a penetrable barricade absorbs 12 before destruction; remaining 8 may reach a creature behind it."
         }
       }
     }
