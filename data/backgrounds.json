@@ -86,7 +86,37 @@
       "Potter",
       "Sapper"
     ],
-    "tradesmanDefinitionsStatus": "All 20 approved Tradesman backgrounds individually defined"
+    "tradesmanDefinitionsStatus": "All 20 approved Tradesman backgrounds individually defined",
+    "criminal": [
+      "Thief",
+      "Cutpurse",
+      "Cat Burglar",
+      "Con Artist",
+      "Forger",
+      "Smuggler",
+      "Fence",
+      "Poacher",
+      "Counterfeiter",
+      "Enforcer",
+      "Racketeer",
+      "Bandit",
+      "Pirate",
+      "Grave Robber",
+      "Spy",
+      "Prisoner"
+    ],
+    "criminalCount": 16,
+    "excludedCriminalCandidates": [
+      "Burglar",
+      "Pickpocket",
+      "Charlatan",
+      "Impersonator",
+      "Black Marketeer",
+      "Gang Member",
+      "Crime Syndicate Agent",
+      "Assassin"
+    ],
+    "criminalDefinitionsStatus": "Roster approved; individual attributes, Skill Talents, and non-combat abilities not yet designed"
   },
   "definitions": {
     "Farmer": {
@@ -898,6 +928,7 @@
     "Skill governing attributes and other unapproved skill-system mechanics remain pending.",
     "The approved Tradesman roster has 20 entries. No individual Tradesman mechanics are yet approved.",
     "Potter removed from the approved Tradesman roster by user decision; no Potter mechanics approved.",
-    "Sapper removed from approved Tradesman roster; formerly named Military Engineer, and no individual Sapper mechanics approved."
+    "Sapper removed from approved Tradesman roster; formerly named Military Engineer, and no individual Sapper mechanics approved.",
+    "Criminal roster approved with 16 selections and 8 excluded proposals; individual background mechanics remain pending."
   ]
 }
