@@ -192,3 +192,9 @@
 - Attributes: **+2 percentage points Prowess** and **+2 percentage points Intellect**.
 - Granted Skill Talent: **Jewelcrafting** (+5 percentage points); add Jewelcrafting to the skill roster, governing attribute pending skill design.
 - Non-combat ability **Gemcutter's Eye**: +10 percentage points to non-combat Jewelcrafting checks involving identifying gemstones, evaluating gem quality, detecting flaws or counterfeit jewelry, and cutting or setting precious stones. Recognizes common gemstone varieties, jewelry-making techniques, and signs of poor craftsmanship.
+
+## Tradesman roster revision: Potter removed (approved)
+- **Potter** has been removed from the approved Tradesman background roster by user decision, superseding its inclusion in the earlier 22-background roster.
+- The current approved Tradesman roster contains **21 backgrounds**; **9** have approved individual definitions so far.
+- No Pottery Skill Talent, Kilnmaster ability, or Potter attributes were approved; the proposed Potter mechanics are not part of the system.
+- Continue individual background design with **Tinker**.
