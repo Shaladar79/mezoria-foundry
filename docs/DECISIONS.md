@@ -322,3 +322,8 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - Attributes: **+2 percentage points Endurance** and **+2 percentage points Presence**.
 - Granted Skill Talent: **Animal Handling** (+5 percentage points); add Animal Handling to the skill roster, with governing attribute to be decided during skill design.
 - Non-combat ability **Herdmaster**: +10 percentage points on checks for calming, feeding, raising, and managing domesticated livestock. The Rancher can also recognize indications of illness or distress in farm animals.
+
+## Fisher Common Background (approved)
+- Attributes: **+2 percentage points Prowess** and **+2 percentage points Endurance**.
+- Granted Skill Talent: **Fishing** (+5 percentage points); add Fishing to the skill roster, with governing attribute to be determined during skill design.
+- Non-combat ability **Waterwise**: +10 percentage points to non-combat checks involving locating productive fishing grounds, identifying fish behavior, interpreting currents and tides, and recognizing dangerous water conditions.
