@@ -278,6 +278,11 @@
         "name": "Tinkering",
         "governingAttribute": "pending",
         "notes": "Tinker Tradesman background Skill Talent"
+      },
+      {
+        "name": "Cooking",
+        "governingAttribute": "pending",
+        "notes": "Cook Tradesman background Skill Talent"
       }
     ]
   },
