@@ -69,12 +69,11 @@
       "Scribe",
       "Cartographer",
       "Engineer",
-      "Sapper",
       "Shipwright",
       "Merchant",
       "Innkeeper"
     ],
-    "tradesmanCount": 21,
+    "tradesmanCount": 20,
     "excludedTradesmanCandidates": [
       "Quarryman",
       "Armorer",
@@ -84,7 +83,8 @@
       "Butcher",
       "Miller",
       "Apothecary",
-      "Potter"
+      "Potter",
+      "Sapper"
     ],
     "tradesmanDefinitionsStatus": "Roster approved; individual attributes, talents, and non-combat abilities pending"
   },
@@ -836,7 +836,8 @@
     "These 20 Common background definitions are approved.",
     "Attribute bonuses and skill talent percentages are percentage-point adjustments.",
     "Skill governing attributes and other unapproved skill-system mechanics remain pending.",
-    "The approved Tradesman roster has 21 entries, including Sapper (the approved replacement name for Military Engineer). No individual Tradesman mechanics are yet approved.",
-    "Potter removed from the approved Tradesman roster by user decision; no Potter mechanics approved."
+    "The approved Tradesman roster has 20 entries. No individual Tradesman mechanics are yet approved.",
+    "Potter removed from the approved Tradesman roster by user decision; no Potter mechanics approved.",
+    "Sapper removed from approved Tradesman roster; formerly named Military Engineer, and no individual Sapper mechanics approved."
   ]
 }
