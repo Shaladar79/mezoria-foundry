@@ -318,6 +318,11 @@
         "name": "Shipbuilding",
         "governingAttribute": "pending",
         "notes": "Shipwright Tradesman background Skill Talent"
+      },
+      {
+        "name": "Commerce",
+        "governingAttribute": "pending",
+        "notes": "Merchant Tradesman background Skill Talent"
       }
     ]
   },
