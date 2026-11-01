@@ -459,6 +459,26 @@
             "additionalEffect": "Understands basic shipboard routines and nautical terminology",
             "combatEffect": false
           }
+        },
+        "Traveler": {
+          "status": "approved",
+          "category": "Common",
+          "attributeBonus": {
+            "Endurance": 2,
+            "Intellect": 2
+          },
+          "skillTalent": {
+            "name": "Navigation",
+            "tier": "Talent",
+            "bonusPercentagePoints": 5
+          },
+          "nonCombatAbility": {
+            "name": "Well-Traveled",
+            "conditionalBonusPercentagePoints": 10,
+            "appliesTo": "Non-combat checks involving recognizing regional customs, identifying useful travel routes, finding inns or safe lodging, and locating established trade roads",
+            "additionalEffect": "Recognizes common travel signs and road markers",
+            "combatEffect": false
+          }
         }
       }
     }
