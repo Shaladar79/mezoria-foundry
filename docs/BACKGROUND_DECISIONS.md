@@ -234,3 +234,8 @@
 - Granted Skill Talent: **Scribing** (+5 percentage points); add Scribing to the planned skill roster, with governing attribute pending skill design.
 - Non-combat ability **Keeper of Records**: +10 percentage points to non-combat Scribing checks involving copying documents, deciphering difficult handwriting, identifying alterations or forgeries in written records, and organizing written information. Recognizes common record-keeping conventions, official document formats, and manuscript preparation techniques.
 - Does not automatically grant knowledge of unfamiliar languages or magical scripts.
+
+## Cartographer Tradesman Background (approved)
+- Attributes: **+2 percentage points Intellect** and **+2 percentage points Prowess**.
+- Granted Skill Talent: **Cartography** (+5 percentage points); add Cartography to planned skill roster, with governing attribute pending skill design.
+- Non-combat ability **Mapmaker's Eye**: +10 percentage points on non-combat Cartography checks involving drawing accurate maps, interpreting existing maps, identifying topographical features, and recognizing discrepancies between maps and actual terrain. Can estimate distances from map scales, identify common map symbols, and recognize signs that a map is outdated or inaccurate.
