@@ -16,7 +16,7 @@
    <label>Race <input type="text" value="{{headerRace}}" readonly></label>
    {{#if showSubgroup}}<label>{{subgroupType}} <input type="text" value="{{headerSubgroup}}" readonly></label>{{/if}}
    <label>Background <input type="text" value="{{headerBackground}}" readonly></label>
-   <label>Mark <input type="text" value="{{headerMark}}" readonly></label>
+   <label>Mark of Purpose <input type="text" value="{{headerMark}}" readonly></label>
   </div>
   <div class="mezoria-header-operations" aria-label="Character resources and actions">
    <div class="mezoria-header-essence">
@@ -66,8 +66,8 @@
    <p>Background attributes and features are applied to the sheet automatically.</p>
   {{/if}}
   {{#if stepMark}}
-   <h3>3 · Select Mark of Power</h3>
-   <label>Mark <select data-field="mark">{{#each markOptions}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+   <h3>3 · Select Mark of Purpose</h3>
+   <label>Mark of Purpose <select data-field="mark">{{#each markOptions}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
    <p>Choose two distinct Mark Talents. The Background's fixed Skill Talent takes priority on overlap.</p>{{#unless markChosen}}<p class="mezoria-selection-hint">Select a Mark of Power to reveal its available Skill Talents.</p>{{/unless}}
    {{#if markChosen}}{{#each markChoices}}<label>Mark Talent {{number}}
      <select data-talent-kind="mark" data-index="{{index}}" aria-label="Select Mark Talent">{{#each options}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select>
