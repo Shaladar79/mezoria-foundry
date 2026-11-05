@@ -1387,6 +1387,27 @@
         "combatEffect": false
       },
       "notes": "Does not guarantee peaceful resolutions, enforce agreements, or automatically grant diplomatic immunity."
+    },
+    "Acolyte": {
+      "status": "approved",
+      "category": "Social",
+      "attributeBonus": {
+        "Intellect": 2,
+        "Presence": 2
+      },
+      "skillTalent": {
+        "name": "Religion",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Temple Initiate",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Religion checks involving identifying religious symbols, understanding ceremonial practices, recognizing religious traditions, and assisting with common rites and observances",
+        "additionalEffect": "Recognizes common temple hierarchies, religious garments, and expected conduct within places of worship",
+        "combatEffect": false
+      },
+      "notes": "Does not grant divine spells, supernatural blessings, religious authority, or automatic acceptance by a religious organization."
     }
   },
   "notes": [
