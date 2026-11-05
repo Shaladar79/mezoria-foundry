@@ -364,3 +364,10 @@
 - Granted Skill Talent: **Investigation** (+5 percentage points), reusing the previously registered skill; governing attribute pending skill design.
 - Non-combat ability **Eyes and Ears**: +10 percentage points to non-combat Investigation checks involving discreetly gathering information, identifying inconsistencies in cover stories, observing suspicious behavior, and piecing together clues from conversations and everyday activity. Recognizes common espionage signals, surveillance patterns, and methods of covert communication.
 - Does not automatically reveal secrets, identify all disguised individuals, or grant combat stealth bonuses. Distinct from Con Artist's social deception focus.
+
+## Prisoner Criminal Background (approved; completes Criminal category)
+- Attributes: **+2 percentage points Endurance** and **+2 percentage points Presence**.
+- Granted Skill Talent: **Insight** (+5 percentage points), governing attribute pending skill design.
+- Non-combat ability **Hard Time**: +10 percentage points to non-combat Insight checks involving reading the intentions of hostile individuals, identifying informal hierarchies, recognizing intimidation tactics, and determining when someone is attempting to manipulate or exploit them. Recognizes common prison customs, signs of organized inmate groups, and methods used to conceal prohibited possessions.
+- Does not grant combat resistance, damage reduction, or immunity to intimidation. Distinct from Enforcer's intimidation focus.
+- **All 16 approved Criminal backgrounds are now individually defined.**
