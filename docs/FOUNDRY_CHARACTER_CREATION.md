@@ -64,3 +64,13 @@ Computed final attributes, talent list, and validation messages are **derived** 
 3. Expand racial traits and powers to Actor data and add explanatory tooltips.
 4. Add inventory and equipment after that design section.
 5. Add Rank Advancement and Essence XP when approved; preserve existing Talent uniqueness during creation.
+
+## Character Actor sheet launch flow — 2026-11-05
+
+- **New Character Actors open the basic Character Sheet**, not the creator wizard. A prominent **+** button in the sheet header opens the creator at **Race**.
+- The creator follows **Race → Background → Mark of Power → Three Free Talents → Attribute Allocation / Review** and updates the same Actor as choices change.
+- **Back to Sheet** returns to the basic sheet without marking character creation complete. The + button remains available.
+- On the Review step, **Finish Character Creation** appears only when character validation passes. Clicking it persists `system.creationComplete = true` and returns to the character sheet.
+- The + button remains accessible after completion for later edits (its accessible label becomes Edit character creation). This does not change Rank progression or Essence rules.
+- Pending or incomplete characters show a notice and their recorded selections on the basic sheet.
+- This implementation is pending a live Foundry VTT v13 test.
