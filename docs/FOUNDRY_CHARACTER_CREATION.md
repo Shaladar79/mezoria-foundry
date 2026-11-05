@@ -115,3 +115,9 @@ Roll buttons submit Foundry chat messages indicating TN, result, success/failure
 - Race and Background dropdown option labels list their attribute bonuses. Races whose bonus is subgroup-specific indicate this, and the current race/subgroup and background bonuses are listed beneath each selection as separate positive percentage-point adjustments. Humans continue to choose three +2% attributes.
 - Mark Talent controls only appear once a Mark has been selected; after selection, the Mark's eight eligible skill options populate both Talent dropdowns. This prevents the preselected-Mark issue reported during testing.
 - Existing Character Actors retain their previous selections. Blank defaults only apply to new Actors, not stored data.
+
+## Starting attribute baseline revision — 2026-11-05
+
+- **Supersedes previous 25% starting base:** All five attributes (Might, Prowess, Endurance, Intellect, Presence) now begin at **35%** before any point allocation or racial/background modifiers.
+- Players still distribute **35 percentage points** among the five attributes. The **+15 point maximum per individual attribute** remains unchanged, making the updated pre-racial/background maximum **50%** (35% base +15%). No maximum after bonuses has been approved.
+- Character creator, attribute save TNs, skill TNs, and displayed sheet values must all use the new 35% base; the rest of the rules remain unchanged.
