@@ -1345,6 +1345,27 @@
         "combatEffect": false
       },
       "notes": "Does not grant automatic political influence, secret information, or guaranteed access to rulers."
+    },
+    "Heir": {
+      "status": "approved",
+      "category": "Social",
+      "attributeBonus": {
+        "Intellect": 2,
+        "Presence": 2
+      },
+      "skillTalent": {
+        "name": "Leadership",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Born to Inherit",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Leadership checks involving organizing household affairs, coordinating servants and retainers, handling succession-related responsibilities, and presenting oneself as a legitimate successor to a position of authority",
+        "additionalEffect": "Recognizes common inheritance customs, succession protocols, and responsibilities associated with managing estates or noble households",
+        "combatEffect": false
+      },
+      "notes": "Does not automatically grant an estate, wealth, loyal retainers, or political authority."
     }
   },
   "notes": [
