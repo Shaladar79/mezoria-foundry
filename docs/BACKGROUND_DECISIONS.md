@@ -426,3 +426,9 @@
 - Granted Skill Talent: **Religion** (+5 percentage points), reusing the skill established for Acolyte; governing attribute pending skill design.
 - Non-combat ability **Sacred Journey**: +10 percentage points to non-combat Religion checks involving identifying sacred sites, understanding pilgrimage traditions, observing appropriate customs at religious destinations, and recognizing religious landmarks along established pilgrimage routes. Recognizes common pilgrim symbols, traditional pilgrimage routes, and customs associated with sheltering religious travelers.
 - Does not grant supernatural protection, divine favors, free lodging, or immunity to travel hazards. Distinct from Acolyte's religious service and Monk's spiritual discipline.
+
+## Cultist Social Background (approved)
+- Attributes: **+2 percentage points Intellect** and **+2 percentage points Presence**.
+- Granted Skill Talent: **Religion** (+5 percentage points), reusing the existing skill; governing attribute pending skill design.
+- Non-combat ability **Forbidden Doctrine**: +10 percentage points to non-combat Religion checks involving identifying obscure religious symbols, interpreting secretive ceremonial practices, recognizing hidden religious references, and understanding the customs of clandestine religious groups. Recognizes common cult hierarchies, initiation traditions, and signs that an organization is concealing its religious affiliations.
+- Does not grant forbidden magic, supernatural powers, secret knowledge of every cult, or automatic membership in a clandestine organization. Distinct from Acolyte's established religious institutions.
