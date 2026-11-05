@@ -29,7 +29,7 @@ export function raceSubgroups(r){
 }
 export function deriveCharacter(s,rulebook=cache){
  if(!rulebook)return null;
- const r=rulebook.races.find(x=>x.name===s.race),b=rulebook.backgrounds[s.background],m=rulebook.marks.find(x=>x.id===s.mark);
+ const r=rulebook.races.find(x=>x.name===s.race),b=rulebook.backgrounds[s.background],m=rulebook.marks.find(x=>x.id===String(s.mark??"").toLowerCase());
  const sub=raceSubgroups(r).find(x=>x.name===s.subgroup);
  const rb=attributeBonus(sub?.attributes??r?.attributes),bb=attributeBonus(b?.attributeBonus);
  if(s.race==="Human")for(const a of s.humanAttributes||[])if(a in rb)rb[a]+=2;
