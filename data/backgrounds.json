@@ -1063,6 +1063,27 @@
         "combatEffect": false
       },
       "notes": "Does not automatically establish criminal contacts or guarantee a buyer for stolen merchandise."
+    },
+    "Poacher": {
+      "status": "approved",
+      "category": "Criminal",
+      "attributeBonus": {
+        "Prowess": 2,
+        "Endurance": 2
+      },
+      "skillTalent": {
+        "name": "Tracking",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Hidden Trails",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Tracking checks involving locating animal trails, identifying signs of recent wildlife activity, finding concealed game paths, and avoiding leaving obvious signs of one's own passage through wilderness terrain",
+        "additionalEffect": "Recognizes common animal feeding grounds, watering locations, and seasonal migration patterns",
+        "combatEffect": false
+      },
+      "notes": "Does not grant bonuses to combat attacks or damage against animals."
     }
   },
   "notes": [
