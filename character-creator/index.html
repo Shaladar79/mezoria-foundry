@@ -18,7 +18,7 @@
 <div class="panel"><h2>4 · Three Free Skill Talents</h2><p>Choose any three different approved skills without repeating racial, background, or Mark awards.</p>
 <div class="two"><div><label for="free1">Free Talent 1</label><select id="free1"></select></div><div><label for="free2">Free Talent 2</label><select id="free2"></select></div></div><label for="free3">Free Talent 3</label><select id="free3"></select></div>
 <div class="panel"><div class="section-head"><h2>5 · Allocate Attributes</h2><span id="remaining" class="tag"></span></div>
-<p>Begin at 25% each; distribute exactly 35 points, no more than +15 per attribute before bonuses. Racial and background bonuses are included in final percentages.</p><div id="attributes"></div></div>
+<p>Begin at 35% each; distribute exactly 35 points, no more than +15 per attribute before bonuses. Racial and background bonuses are included in final percentages.</p><div id="attributes"></div></div>
 <div class="panel"><h2>6 · Character Name, Validate and Save</h2><p>Choose your character name here, as the final creator step.</p><label for="name">Character Name</label><input id="name" placeholder="Enter character name"><ul id="warnings"></ul><div class="row actions" style="justify-content:flex-start;flex-wrap:wrap">
 <button id="export">Export JSON</button><button id="print" class="secondary">Print character sheet</button><button id="load" class="secondary">Import JSON</button><input id="import" type="file" accept=".json,application/json" style="display:none"></div>
 <p class="foot">Standalone prototype; the Foundry VTT sheet follows this same order. Export the completed character as JSON for local safekeeping.</p></div>
@@ -63,10 +63,10 @@ return err}
 function render(){const {race,bg}=bonuses(),r=currentRace(),b=currentBackground(),sg=currentSubgroup(),pool=attrs.reduce((n,a)=>n+Number(state.alloc[a]||0),0);
 $("remaining").textContent=(35-pool)+" unspent";
 $("remaining").className="tag "+(pool===35?"good":"bad");
-for(const a of attrs){const total=25+Number(state.alloc[a]||0)+race[a]+bg[a];const el=$("total-"+a);if(el)el.textContent=total+"%"}
+for(const a of attrs){const total=35+Number(state.alloc[a]||0)+race[a]+bg[a];const el=$("total-"+a);if(el)el.textContent=total+"%"}
 $("sheetName").textContent=state.name.trim()||"Unnamed Hero";
 $("sheetIdentity").textContent=state.race+(sg?" · "+sg.name:"")+" · "+b.name+" · "+state.mark;
-$("sheetAttributes").innerHTML=attrs.map(a=>'<div class="row summary"><span>'+esc(a)+'</span><strong>'+(25+Number(state.alloc[a]||0)+race[a]+bg[a])+'%</strong></div>').join("");
+$("sheetAttributes").innerHTML=attrs.map(a=>'<div class="row summary"><span>'+esc(a)+'</span><strong>'+(35+Number(state.alloc[a]||0)+race[a]+bg[a])+'%</strong></div>').join("");
 const all=[["Background",b.skill],["Mark",state.markSkills[0]],["Mark",state.markSkills[1]],["Free",state.freeSkills[0]],["Free",state.freeSkills[1]],["Free",state.freeSkills[2]],...(state.race==="Human"?[["Racial",state.humanTalent]]:[])];
 $("sheetSkills").innerHTML=all.map(([src,name])=>'<div class="row summary"><span>'+esc(name||"Not selected")+'</span><small>'+esc(src)+'</small></div>').join("");
 const abilities=[...(r.traits||[]).map(x=>x.name),...(r.abilities||[]).map(x=>x.name),...(sg?.innateAbility?[sg.innateAbility.name]:[])];let speed=sg?.movement?.ground??r.baseMovement??"pending";
