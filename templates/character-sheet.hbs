@@ -136,7 +136,7 @@
      <input type="number" min="0" step="1" data-status-field="woundsTaken" value="{{status.woundsTaken}}">
     </label>
     {{#if status.bleedingToDeath}}<p class="mezoria-warning">Bleeding to Death — wound capacity reached.</p>{{/if}}
-    <p class="mezoria-note">Overflow creates one Wound per threshold, rounded up; damage application is not yet automated.</p>
+    <p class="mezoria-note">Overflow creates one Wound per threshold, rounded up. An 8-hour full rest recovers 1 Wound; a 4-hour light rest recovers none. Higher-rank healing abilities may also restore Wounds.</p>
    </section>
    <section class="mezoria-status-panel">
     <h4>LifeForce and Mana</h4>
@@ -160,10 +160,10 @@
     <div class="mezoria-lifeforce-actions">
      <button type="button" data-resource-recovery="turn" title="Quartz: regenerate 1 LifeForce and 1 Mana">+1 Each / Turn</button>
      <button type="button" data-resource-recovery="light" title="After 4 hours, restore 50% of each maximum, rounded up">Light Rest · 4h</button>
-     <button type="button" data-resource-recovery="full" title="After 8 hours, restore both pools to maximum">Full Rest · 8h</button>
+     <button type="button" data-resource-recovery="full" title="After 8 hours, restore both pools to maximum and heal 1 Wound">Full Rest · 8h</button>
     </div>
     {{/if}}
-    <p class="mezoria-note">Quartz: regenerate 1 LifeForce and 1 Mana per turn. A 4-hour light rest restores 50% of each maximum (rounded up); an 8-hour full rest restores both pools completely. Values cannot exceed their maximum; Wounds recover separately. Higher-rank bonuses and talent adjustments remain pending.</p>
+    <p class="mezoria-note">Quartz: regenerate 1 LifeForce and 1 Mana per turn. A 4-hour light rest restores 50% of each maximum (rounded up); an 8-hour full rest restores both pools completely and heals 1 Wound. Values cannot exceed their maximum. Higher-rank bonuses and talent adjustments remain pending.</p>
     <h4>Defense and Protection</h4>
     <p class="mezoria-note">Parry, equipment Block, Spell Resistance, shields and armor depend on later equipment and ability rules. Dodge only applies to ranged and eligible magical projectiles.</p>
    </section>
