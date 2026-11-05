@@ -381,3 +381,11 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - At Rank 1 **Quartz**, **maximum LifeForce = 3 × (floor(Might / 10) + floor(Endurance / 10))** and **maximum Mana = 3 × (floor(Intellect / 10) + floor(Presence / 10))**, using final attribute scores including allocation and racial/background adjustments.
 - The multiplier ×3 applies specifically to Quartz; scaling at higher ranks is not yet approved. Resource spending, current-value trackers, regeneration, healing and recovery are separate decisions still pending.
 - Damage order terminology uses **LifeForce** in place of Health; protection and Wound rules are otherwise unchanged.
+
+## LifeForce regeneration and rest — approved Quartz baseline (2026-11-05)
+
+- LifeForce recovers through natural regeneration, rest, and received healing; talents may modify recovery, but their exact bonuses are not yet defined.
+- At Quartz Rank (Rank 1), natural regeneration is **1 LifeForce per turn**.
+- A **light rest restores 50% of maximum LifeForce** (rounded up to the next whole point, capped at the maximum). A **full rest restores LifeForce to 100% of maximum**. Neither rest action inherently removes Wounds under this LifeForce-only recovery rule.
+- Rest durations, higher-rank regeneration, talent modifiers, healing ability amounts, and Mana recovery are pending.
+- The Foundry sheet has a current-LifeForce tracker plus explicit buttons for +1/Turn, Light Rest (+50%), and Full Rest. It does not automatically tick every turn or trigger rests; the player activates the relevant button.
