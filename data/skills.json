@@ -126,7 +126,10 @@
       "status": "pending",
       "skills": [],
       "notes": [
-        "Concentration reserved for Intellect skill review; not yet approved."
+        "Concentration reserved for Intellect skill review; not yet approved.",
+        "Arcana renamed to Magic Theory for Intellect roster review.",
+        "Ritual Magic and Use Magic Device are proposed Intellect skills.",
+        "Individual crafting disciplines are under review; the split into separate skills is approved."
       ]
     },
     "Presence": {
@@ -148,5 +151,16 @@
     "Expertise": 5,
     "Mastery": 5,
     "unit": "percentage points per tier"
+  },
+  "craftingPolicy": {
+    "status": "approved",
+    "model": "separate specialized skills",
+    "generalCraftingSkill": false,
+    "individualSkillRosterStatus": "under review",
+    "notes": [
+      "Use separate Talent, Expertise, and Mastery progression for each approved craft.",
+      "Preserve existing background-granted skill names when reviewing craft roster.",
+      "Do not treat background trades as automatically approved Intellect assignments."
+    ]
   }
 }
