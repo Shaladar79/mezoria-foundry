@@ -181,27 +181,29 @@ export class MezoriaCharacterSheet extends ActorSheet {
    }
    await this.actor.update({["system."+key]:num});
   });
-  html.find("[data-lifeforce-recovery]").on("click",async event=>{
+  html.find("[data-resource-recovery]").on("click",async event=>{
    event.preventDefault();
-   const kind=event.currentTarget.dataset.lifeforceRecovery;
+   const kind=event.currentTarget.dataset.resourceRecovery;
    if(!["turn","light","full"].includes(kind))return;
    const data=deriveCharacter(this.actor.system,await loadCreationRules());
-   const max=data.status.lifeForce;
-   if(max===null){ui.notifications.warn("LifeForce recovery scaling for this Rank is pending.");return;}
-   const current=data.status.currentLifeForce;
-   const gain=kind==="turn"?1:kind==="light"?Math.ceil(max/2):max;
-   const next=Math.min(max,current+gain);
-   await this.actor.update({"system.currentLifeForce":next});
+   const lifeMax=data.status.lifeForce, manaMax=data.status.mana;
+   if(lifeMax===null||manaMax===null){ui.notifications.warn("Resource recovery at this Rank is pending.");return;}
+   const gain=max=>kind==="turn"?1:kind==="light"?Math.ceil(max/2):max;
+   const lifeNext=Math.min(lifeMax,data.status.currentLifeForce+gain(lifeMax));
+   const manaNext=Math.min(manaMax,data.status.currentMana+gain(manaMax));
+   await this.actor.update({"system.currentLifeForce":lifeNext,"system.currentMana":manaNext});
   });
-  html.find("[data-current-lifeforce]").on("change",async event=>{
+  html.find("[data-current-resource]").on("change",async event=>{
+   const resource=event.currentTarget.dataset.currentResource;
+   if(!["LifeForce","Mana"].includes(resource))return;
    const data=deriveCharacter(this.actor.system,await loadCreationRules());
-   const max=data.status.lifeForce;
+   const max=resource==="LifeForce"?data.status.lifeForce:data.status.mana;
    const value=Number(event.currentTarget.value);
-   if(max===null||!Number.isInteger(value)||value<0||value>max){
-    ui.notifications.warn("LifeForce must be a whole number from 0 to the current maximum.");
+   if(max===null||event.currentTarget.value.trim()===""||!Number.isInteger(value)||value<0||value>max){
+    ui.notifications.warn(resource+" must be a whole number from 0 to its maximum.");
     this.render(false);return;
    }
-   await this.actor.update({"system.currentLifeForce":value});
+   await this.actor.update({["system.current"+resource]:value});
   });
   html.find("[data-roll-action-score]").on("click",async event=>{
    event.preventDefault();
