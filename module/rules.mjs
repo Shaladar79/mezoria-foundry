@@ -33,7 +33,7 @@ export function deriveCharacter(s,rulebook=cache){
  const sub=raceSubgroups(r).find(x=>x.name===s.subgroup);
  const rb=attributeBonus(sub?.attributes??r?.attributes),bb=attributeBonus(b?.attributeBonus);
  if(s.race==="Human")for(const a of s.humanAttributes||[])if(a in rb)rb[a]+=2;
- const scores=names.map(name=>({name,base:25,allocated:Number(s.allocation?.[name]||0),racial:rb[name],background:bb[name],total:25+Number(s.allocation?.[name]||0)+rb[name]+bb[name]}));
+ const scores=names.map(name=>({name,base:35,allocated:Number(s.allocation?.[name]||0),racial:rb[name],background:bb[name],total:35+Number(s.allocation?.[name]||0)+rb[name]+bb[name]}));
  const markTalents=Array.from({length:2},(_,i)=>s.markTalents?.[i]||"");
  const freeTalents=Array.from({length:3},(_,i)=>s.freeTalents?.[i]||"");
  const racialTalent=s.race==="Human"?s.racialTalent:"";
