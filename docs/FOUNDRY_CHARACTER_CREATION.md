@@ -74,3 +74,37 @@ Computed final attributes, talent list, and validation messages are **derived** 
 - The + button remains accessible after completion for later edits (its accessible label becomes Edit character creation). This does not change Rank progression or Essence rules.
 - Pending or incomplete characters show a notice and their recorded selections on the basic sheet.
 - This implementation is pending a live Foundry VTT v13 test.
+
+## Character sheet v0.2 — 2026-11-05 (latest rules)
+
+**This section supersedes previous 25-point allocations and creator order descriptions above.** Starting characters allocate **35 whole percentage points** across five base-25% attributes, subject to **+15 maximum per attribute before race/background bonuses** (40% pre-bonus cap). Racial and background adjustments apply afterward.
+
+### Creator sequence
+
+1. Race, including subgroup/tribe/clan/aspect and Human racial Talent where appropriate.
+2. Background, automatically applying its attribute bonuses, fixed Talent and ability.
+3. Mark of Power and two eligible Mark Talent selections.
+4. Three unrestricted (nonduplicating) free Talents.
+5. Allocate exactly 35 attribute points, then review scores.
+6. **Character name is always the final creator step**; Finish only when the selection and allocation checks pass.
+
+### Character sheet
+
+The Character Actor opens on the basic sheet, with a **+** button to launch the creator. Its header contains read-only fields for **Name, Race, conditional Tribe (Mythrain) / Clan (Draconian) / Aspect (Scion), Background, and Mark**; edit character-creation choices through the wizard.
+
+The sheet has two tabs:
+
+- **Attributes and Status:** Five attribute TNs with individual d100 roll buttons. Status shows existing movement, Rank and placeholders for Health, Mana, Wounds and Defenses until calculations are approved.
+- **Skills:** Trained skills are displayed first (Talent grants +5 to the associated attribute score). All skills allowing untrained checks are then shown; unlearned trained-only skills are excluded. Each visible skill has its current TN and a d100 roll action.
+
+Roll buttons submit Foundry chat messages indicating TN, result, success/failure, and critical outcome. Foundry v13 uses the v13-supported Roll API; the system has still **not been tested inside a live Foundry installation**. Skill bonuses beyond currently implemented Talent and any special situation modifiers remain future work.
+
+### Testing checklist
+
+- Create a new Character Actor; confirm its sheet opens first and the **+** button launches at Race.
+- Select Mythrain, Draconian, and Scion in turn; verify the Tribe/Clan/Aspect header field, then switch to Human to test Adaptability and racial Talent.
+- Choose Background and Mark, ensuring duplicate Talent selections are flagged.
+- Pick three free Talents and distribute all 35 attribute points within the +15 per-attribute cap.
+- Enter a name on the **last** creator step and finish; confirm the header and both tabs persist after closing and reopening.
+- Verify trained skills appear first; untrained-available skills appear next; untrained trained-only skills are hidden.
+- Roll an attribute save and a trained/untrained skill; confirm TN, chat result, and roll-under behavior.
