@@ -329,3 +329,11 @@ At Quartz Rank, choose two distinct Skill Talents from the eight eligible skills
 - **Adept:** Tinkering, Engineering, Navigation, Investigation, Research, Use Magic Device, Sleight of Hand, Persuasion.
 
 All 48 entries reference approved skills (some skills are shared across Marks). These are starting eligibility lists, not exclusive restrictions on future free selections or Essence progression. Each selection grants the Talent tier, including skills otherwise trained-only. Advancing Talent tiers remains deferred to Rank Advancement and Essence (XP).
+
+## Astral origin of magic and skill-list revision — 2026-11-05
+
+- **Supersedes earlier Magical Lore roster:** **Lore: Concept Magic** is removed as a separate approved skill. This does not remove Concept Marks or Concept powers.
+- **Cosmology:** Magic originates from the Astral in its pure form. **Lore: Astral Magic** is the foundational magical Lore specialization. **Magic Theory** remains a distinct skill.
+- Magical Lore now has **6** skills; total Lore skills **20**; total approved skills **90** (51 trained-only and 39 untrained-allowed).
+- The Arcanist Mark's eight starting options now include **Herbalism** in place of Lore: Concept Magic: Magic Theory, Ritual Magic, Use Magic Device, Concentration, Research, Lore: Elemental Magic, Herbalism, Lore: Astral Magic.
+- Historic entries above reflect past approval states and are superseded by this amendment.
