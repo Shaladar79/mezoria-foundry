@@ -43,3 +43,7 @@ A standalone Quartz character creator and live basic sheet are available at [`ch
 The repository root contains `system.json`, the minimal Foundry VTT system manifest. The `module/` folder contains a character Actor data model, rule loader and sheet controller; `templates/character-sheet.hbs` contains the character sheet, and `styles/mezoria.css` supplies styling. This initial build targets the Foundry v13 APIs but has **not yet been run and tested in Foundry**. The [creation implementation notes](docs/FOUNDRY_CHARACTER_CREATION.md) explain current limitations and how to test it.
 
 The creator now proceeds **Race → Background → Mark → Three Free Talents → Attribute Allocation and Review**. Human racial Talent is selected during the Race stage. This workflow also applies to the standalone creator.
+
+## Character sheet v0.2: testing target
+
+Character Actor sheet now shows identity fields (name, race, conditional tribe/clan/aspect, background, Mark) and opens the creator through its **+** button. The creator asks for a name **last** and uses **35 distributable attribute points** (40% pre-bonus cap). Two tabs are available: **Attributes and Status** (attribute saves and current TN) and **Skills** (trained skills first, other untrained-allowed skills afterward; each has a current TN and d100 roll button). See [Foundry test checklist](docs/FOUNDRY_CHARACTER_CREATION.md). This version has not yet been verified in a live Foundry environment.
