@@ -164,3 +164,10 @@ The Attributes and Status tab now has four compact panels: (1) an attribute savi
 - **Higher-rank healing abilities** can recover Wounds. The eligible abilities, required ranks, recovery amounts, and Mana costs are pending later ability design.
 - Routine per-turn LifeForce/Mana regeneration does not remove Wounds.
 - The Foundry full-rest control updates all three stored values together; no automatic rest timer is implied.
+
+## Header rest, Action Score and Essence controls — v0.2.11
+
+- The character sheet header has **Light Rest (4h)**, **Full Rest (8h)** and **Roll Action Score** buttons, available on the character sheet after creation. These reuse the approved recovery and Action Score operations, which remain manually triggered; their duplicate controls are removed from the status panels.
+- Light Rest restores half of maximum LifeForce and Mana (rounded up, capped); Full Rest restores both pools completely and reduces Wounds by 1 (minimum zero). +1 LifeForce/+1 Mana per turn remains in the resource panel.
+- **Current Essence** and **Spent Essence** are separate editable nonnegative whole-number fields in the header, stored on the Actor with initial values 0. They do not yet imply an Essence grant/spend rule, and manual edits do not automatically redistribute Essence between fields.
+- **Spend Essence (Soon)** is visibly disabled until the approved spending menu and its behavior are implemented. No Essence is deducted.
