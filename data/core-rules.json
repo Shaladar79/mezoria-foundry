@@ -176,13 +176,14 @@
       }
     ],
     "someSkillsRequireTraining": true,
-    "trainingGatesStatus": "Lore (21), crafting (14), Group 1 (9), Group 2 (7) trained-only; Group 2 (3) approved untrained; remaining skill review pending",
+    "trainingGatesStatus": "complete; all 91 approved skills explicitly classified",
     "spellcastingAndArcana": "Magic Theory, Ritual Magic, and Use Magic Device are separate approved Intellect skills; casting mechanics remain separate",
     "approvedAdditions": [
       {
         "name": "Agriculture",
         "governingAttribute": "Intellect",
-        "notes": "Added as Farmer background Skill Talent"
+        "notes": "Added as Farmer background Skill Talent",
+        "trainedOnly": false
       },
       {
         "name": "Animal Handling",
@@ -193,27 +194,32 @@
       {
         "name": "Fishing",
         "governingAttribute": "Prowess",
-        "notes": "Fisher background Skill Talent"
+        "notes": "Fisher background Skill Talent",
+        "trainedOnly": false
       },
       {
         "name": "Athletics",
         "governingAttribute": "Might",
-        "notes": "Laborer background Skill Talent; confirm existing skill roster placement later"
+        "notes": "Laborer background Skill Talent; confirm existing skill roster placement later",
+        "trainedOnly": false
       },
       {
         "name": "Persuasion",
         "governingAttribute": "Presence",
-        "notes": "Villager background Skill Talent; confirm skill roster placement later"
+        "notes": "Villager background Skill Talent; confirm skill roster placement later",
+        "trainedOnly": false
       },
       {
         "name": "Streetwise",
         "governingAttribute": "Presence",
-        "notes": "City Dweller background Skill Talent"
+        "notes": "City Dweller background Skill Talent",
+        "trainedOnly": false
       },
       {
         "name": "Etiquette",
         "governingAttribute": "Presence",
-        "notes": "Servant background Skill Talent"
+        "notes": "Servant background Skill Talent",
+        "trainedOnly": false
       },
       {
         "name": "Navigation",
@@ -232,17 +238,20 @@
       {
         "name": "Investigation",
         "governingAttribute": "Intellect",
-        "notes": "Town Guard background Skill Talent"
+        "notes": "Town Guard background Skill Talent",
+        "trainedOnly": false
       },
       {
         "name": "Mining",
         "governingAttribute": "Might",
-        "notes": "Miner Tradesman background Skill Talent; full definition pending skill design"
+        "notes": "Miner Tradesman background Skill Talent; full definition pending skill design",
+        "trainedOnly": false
       },
       {
         "name": "Woodcutting",
         "governingAttribute": "Might",
-        "notes": "Lumberjack Tradesman background Skill Talent; detailed definition pending"
+        "notes": "Lumberjack Tradesman background Skill Talent; detailed definition pending",
+        "trainedOnly": false
       },
       {
         "name": "Prospecting",
@@ -254,62 +263,86 @@
       {
         "name": "Blacksmithing",
         "governingAttribute": "Might",
-        "notes": "Blacksmith Tradesman background Skill Talent"
+        "notes": "Blacksmith Tradesman background Skill Talent",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Carpentry",
         "governingAttribute": "Prowess",
-        "notes": "Carpenter Tradesman background Skill Talent"
+        "notes": "Carpenter Tradesman background Skill Talent",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Masonry",
         "governingAttribute": "Might",
-        "notes": "Mason Tradesman background Skill Talent"
+        "notes": "Mason Tradesman background Skill Talent",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Leatherworking",
         "governingAttribute": "Prowess",
-        "notes": "Leatherworker Tradesman background Skill Talent"
+        "notes": "Leatherworker Tradesman background Skill Talent",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Tailoring",
         "governingAttribute": "Prowess",
-        "notes": "Tailor Tradesman background Skill Talent"
+        "notes": "Tailor Tradesman background Skill Talent",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Jewelcrafting",
         "governingAttribute": "Prowess",
-        "notes": "Jeweler Tradesman background Skill Talent"
+        "notes": "Jeweler Tradesman background Skill Talent",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Tinkering",
         "governingAttribute": "Intellect",
-        "notes": "Tinker Tradesman background Skill Talent"
+        "notes": "Tinker Tradesman background Skill Talent",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Cooking",
         "governingAttribute": "Intellect",
-        "notes": "Cook Tradesman background Skill Talent"
+        "notes": "Cook Tradesman background Skill Talent",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Brewing",
         "governingAttribute": "Intellect",
-        "notes": "Brewer Tradesman background Skill Talent"
+        "notes": "Brewer Tradesman background Skill Talent",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Alchemy",
         "governingAttribute": "Intellect",
-        "notes": "Alchemist Tradesman background Skill Talent"
+        "notes": "Alchemist Tradesman background Skill Talent",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Herbalism",
         "governingAttribute": "Intellect",
-        "notes": "Herbalist Tradesman background Skill Talent"
+        "notes": "Herbalist Tradesman background Skill Talent",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Scribing",
         "governingAttribute": "Prowess",
-        "notes": "Scribe Tradesman background Skill Talent"
+        "notes": "Scribe Tradesman background Skill Talent",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Cartography",
@@ -321,22 +354,28 @@
       {
         "name": "Engineering",
         "governingAttribute": "Intellect",
-        "notes": "Engineer Tradesman background Skill Talent"
+        "notes": "Engineer Tradesman background Skill Talent",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Shipbuilding",
         "governingAttribute": "Intellect",
-        "notes": "Shipwright Tradesman background Skill Talent"
+        "notes": "Shipwright Tradesman background Skill Talent",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Commerce",
         "governingAttribute": "Presence",
-        "notes": "Merchant Tradesman background Skill Talent"
+        "notes": "Merchant Tradesman background Skill Talent",
+        "trainedOnly": false
       },
       {
         "name": "Hospitality",
         "governingAttribute": "Presence",
-        "notes": "Innkeeper Tradesman background Skill Talent"
+        "notes": "Innkeeper Tradesman background Skill Talent",
+        "trainedOnly": false
       },
       {
         "name": "Thievery",
@@ -348,12 +387,14 @@
       {
         "name": "Stealth",
         "governingAttribute": "Prowess",
-        "notes": "Cat Burglar Criminal background Skill Talent"
+        "notes": "Cat Burglar Criminal background Skill Talent",
+        "trainedOnly": false
       },
       {
         "name": "Deception",
         "governingAttribute": "Presence",
-        "notes": "Con Artist Criminal background Skill Talent"
+        "notes": "Con Artist Criminal background Skill Talent",
+        "trainedOnly": false
       },
       {
         "name": "Forgery",
@@ -379,27 +420,32 @@
       {
         "name": "Intimidation",
         "governingAttribute": "Might",
-        "notes": "Enforcer Criminal background Skill Talent"
+        "notes": "Enforcer Criminal background Skill Talent",
+        "trainedOnly": false
       },
       {
         "name": "Survival",
         "governingAttribute": "Endurance",
-        "notes": "Bandit Criminal background Skill Talent"
+        "notes": "Bandit Criminal background Skill Talent",
+        "trainedOnly": false
       },
       {
         "name": "Insight",
         "governingAttribute": "Presence",
-        "notes": "Prisoner Criminal background Skill Talent"
+        "notes": "Prisoner Criminal background Skill Talent",
+        "trainedOnly": false
       },
       {
         "name": "Leadership",
         "governingAttribute": "Presence",
-        "notes": "Heir Social background Skill Talent"
+        "notes": "Heir Social background Skill Talent",
+        "trainedOnly": false
       },
       {
         "name": "Diplomacy",
         "governingAttribute": "Presence",
-        "notes": "Diplomat Social background Skill Talent"
+        "notes": "Diplomat Social background Skill Talent",
+        "trainedOnly": false
       },
       {
         "name": "Religion",
@@ -410,42 +456,51 @@
       {
         "name": "Discipline",
         "governingAttribute": "Presence",
-        "notes": "Monk Social background Skill Talent"
+        "notes": "Monk Social background Skill Talent",
+        "trainedOnly": false
       },
       {
         "name": "Research",
         "governingAttribute": "Intellect",
-        "notes": "Scholar Social background Skill Talent"
+        "notes": "Scholar Social background Skill Talent",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Performance",
         "governingAttribute": "Presence",
-        "notes": "Entertainer Social background Skill Talent"
+        "notes": "Entertainer Social background Skill Talent",
+        "trainedOnly": false
       },
       {
         "name": "Law",
         "governingAttribute": "Intellect",
-        "notes": "Magistrate Social background Skill Talent"
+        "notes": "Magistrate Social background Skill Talent",
+        "trainedOnly": false
       },
       {
         "name": "Brawn",
         "governingAttribute": "Might",
-        "notes": "Raw strength checks: lifting, carrying, pushing, pulling, breaking objects"
+        "notes": "Raw strength checks: lifting, carrying, pushing, pulling, breaking objects",
+        "trainedOnly": false
       },
       {
         "name": "Grappling",
         "governingAttribute": "Might",
-        "notes": "Wrestling, holds, and restraint; detailed combat resolution pending"
+        "notes": "Wrestling, holds, and restraint; detailed combat resolution pending",
+        "trainedOnly": false
       },
       {
         "name": "Unarmed Combat",
         "governingAttribute": "Might",
-        "notes": "Unarmed strikes and fighting; detailed combat resolution pending"
+        "notes": "Unarmed strikes and fighting; detailed combat resolution pending",
+        "trainedOnly": false
       },
       {
         "name": "Heavy Weapons",
         "governingAttribute": "Might",
-        "notes": "Strength-intensive melee weapons; weapon groups and combat resolution pending"
+        "notes": "Strength-intensive melee weapons; weapon groups and combat resolution pending",
+        "trainedOnly": false
       },
       {
         "name": "Pickpocketing",
@@ -457,107 +512,149 @@
       {
         "name": "Lore: Beasts",
         "governingAttribute": "Intellect",
-        "notes": "Creature Lore; trained only (Talent minimum)"
+        "notes": "Creature Lore; trained only (Talent minimum)",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Lore: Dragons",
         "governingAttribute": "Intellect",
-        "notes": "Creature Lore; trained only (Talent minimum)"
+        "notes": "Creature Lore; trained only (Talent minimum)",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Lore: Legends",
         "governingAttribute": "Intellect",
-        "notes": "Creature Lore; trained only (Talent minimum)"
+        "notes": "Creature Lore; trained only (Talent minimum)",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Lore: Monstrosities",
         "governingAttribute": "Intellect",
-        "notes": "Creature Lore; trained only (Talent minimum)"
+        "notes": "Creature Lore; trained only (Talent minimum)",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Lore: Undead",
         "governingAttribute": "Intellect",
-        "notes": "Creature Lore; trained only (Talent minimum)"
+        "notes": "Creature Lore; trained only (Talent minimum)",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Lore: Constructs",
         "governingAttribute": "Intellect",
-        "notes": "Creature Lore; trained only (Talent minimum)"
+        "notes": "Creature Lore; trained only (Talent minimum)",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Lore: Plants",
         "governingAttribute": "Intellect",
-        "notes": "Creature Lore; trained only (Talent minimum)"
+        "notes": "Creature Lore; trained only (Talent minimum)",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Lore: Shapeshifters",
         "governingAttribute": "Intellect",
-        "notes": "Creature Lore; trained only (Talent minimum)"
+        "notes": "Creature Lore; trained only (Talent minimum)",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Lore: Elementals",
         "governingAttribute": "Intellect",
-        "notes": "Supernatural Lore; trained only (Talent minimum)"
+        "notes": "Supernatural Lore; trained only (Talent minimum)",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Lore: Spirits",
         "governingAttribute": "Intellect",
-        "notes": "Supernatural Lore; trained only (Talent minimum)"
+        "notes": "Supernatural Lore; trained only (Talent minimum)",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Lore: Eldritch",
         "governingAttribute": "Intellect",
-        "notes": "Supernatural Lore; trained only (Talent minimum)"
+        "notes": "Supernatural Lore; trained only (Talent minimum)",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Lore: Astral",
         "governingAttribute": "Intellect",
-        "notes": "Supernatural Lore; trained only (Talent minimum)"
+        "notes": "Supernatural Lore; trained only (Talent minimum)",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Lore: Eternals",
         "governingAttribute": "Intellect",
-        "notes": "Supernatural Lore; trained only (Talent minimum)"
+        "notes": "Supernatural Lore; trained only (Talent minimum)",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Lore: Fae",
         "governingAttribute": "Intellect",
-        "notes": "Supernatural Lore; trained only (Talent minimum)"
+        "notes": "Supernatural Lore; trained only (Talent minimum)",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Lore: Elemental Magic",
         "governingAttribute": "Intellect",
-        "notes": "Magical Lore; trained only (Talent minimum)"
+        "notes": "Magical Lore; trained only (Talent minimum)",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Lore: Concept Magic",
         "governingAttribute": "Intellect",
-        "notes": "Magical Lore; trained only (Talent minimum)"
+        "notes": "Magical Lore; trained only (Talent minimum)",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Lore: Eldritch Magic",
         "governingAttribute": "Intellect",
-        "notes": "Magical Lore; trained only (Talent minimum)"
+        "notes": "Magical Lore; trained only (Talent minimum)",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Lore: Astral Magic",
         "governingAttribute": "Intellect",
-        "notes": "Magical Lore; trained only (Talent minimum)"
+        "notes": "Magical Lore; trained only (Talent minimum)",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Lore: Spirit Magic",
         "governingAttribute": "Intellect",
-        "notes": "Magical Lore; trained only (Talent minimum)"
+        "notes": "Magical Lore; trained only (Talent minimum)",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Lore: Soul Magic",
         "governingAttribute": "Intellect",
-        "notes": "Magical Lore; trained only (Talent minimum)"
+        "notes": "Magical Lore; trained only (Talent minimum)",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Lore: Ancient Magic",
         "governingAttribute": "Intellect",
-        "notes": "Magical Lore; trained only (Talent minimum)"
+        "notes": "Magical Lore; trained only (Talent minimum)",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       }
     ],
     "governingAttributeReview": {
@@ -725,6 +822,55 @@
         "Animal Handling",
         "Religion"
       ]
+    },
+    "finalTrainingAudit": {
+      "status": "approved",
+      "trainedOnly": [
+        "Research"
+      ],
+      "untrainedAllowed": [
+        "Mining",
+        "Woodcutting",
+        "Riding",
+        "Fishing",
+        "Escape Artist",
+        "History",
+        "Law",
+        "Agriculture",
+        "Diplomacy",
+        "Athletics",
+        "Brawn",
+        "Grappling",
+        "Unarmed Combat",
+        "Heavy Weapons",
+        "Intimidation",
+        "Acrobatics",
+        "Stealth",
+        "Melee Weapons",
+        "Ranged Weapons",
+        "Throwing Weapons",
+        "Survival",
+        "Breath Control",
+        "Resilience",
+        "Concentration",
+        "Investigation",
+        "Nature",
+        "Persuasion",
+        "Deception",
+        "Etiquette",
+        "Insight",
+        "Streetwise",
+        "Leadership",
+        "Performance",
+        "Commerce",
+        "Hospitality",
+        "Discipline"
+      ]
+    },
+    "trainingSummary": {
+      "totalSkills": 91,
+      "trainedOnly": 52,
+      "untrainedAllowed": 39
     }
   },
   "rolls": {
