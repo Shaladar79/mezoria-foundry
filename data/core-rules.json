@@ -353,6 +353,11 @@
         "name": "Smuggling",
         "governingAttribute": "pending",
         "notes": "Smuggler Criminal background Skill Talent"
+      },
+      {
+        "name": "Tracking",
+        "governingAttribute": "pending",
+        "notes": "Poacher Criminal background Skill Talent"
       }
     ]
   },
