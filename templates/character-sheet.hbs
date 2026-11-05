@@ -18,6 +18,20 @@
    <label>Background <input type="text" value="{{headerBackground}}" readonly></label>
    <label>Mark <input type="text" value="{{headerMark}}" readonly></label>
   </div>
+  <div class="mezoria-header-operations" aria-label="Character resources and actions">
+   <div class="mezoria-header-essence">
+    <label>Current Essence <input type="number" min="0" step="1" data-essence-field="currentEssence" value="{{currentEssence}}"></label>
+    <label>Spent Essence <input type="number" min="0" step="1" data-essence-field="spentEssence" value="{{spentEssence}}"></label>
+   </div>
+   {{#unless creatorOpen}}
+   <div class="mezoria-header-actions">
+    <button type="button" data-resource-recovery="light" {{#unless creationComplete}}disabled title="Finish character creation before resting"{{else}}title="4-hour light rest: restore 50% of maximum LifeForce and Mana"{{/unless}}>Light Rest · 4h</button>
+    <button type="button" data-resource-recovery="full" {{#unless creationComplete}}disabled title="Finish character creation before resting"{{else}}title="8-hour full rest: fully restore LifeForce and Mana and recover 1 Wound"{{/unless}}>Full Rest · 8h</button>
+    <button type="button" data-roll-action-score {{#unless creationComplete}}disabled title="Finish character creation to roll Action Score"{{else}}title="Add d20 and Prowess tens to current Action Score"{{/unless}}>Roll Action Score</button>
+    <button type="button" disabled title="Essence spending menu is planned for a later update">Spend Essence (Soon)</button>
+   </div>
+   {{/unless}}
+  </div>
  </header>
 
  {{#if creatorOpen}}
@@ -122,7 +136,7 @@
     </div>
     <div class="mezoria-status-control">
      <label>Current Action Score <input type="number" step="1" data-status-field="actionScore" value="{{status.actionScore}}"></label>
-     <button type="button" data-roll-action-score title="New round: carry over current score and add d20 plus Prowess tens">Roll New Round</button>
+     
     </div>
     <p class="mezoria-note">New round = current Action Score + d20 + Prowess tens. Action costs and spending are handled separately.</p>
    </section>
@@ -159,11 +173,10 @@
     </div>
     <div class="mezoria-lifeforce-actions">
      <button type="button" data-resource-recovery="turn" title="Quartz: regenerate 1 LifeForce and 1 Mana">+1 Each / Turn</button>
-     <button type="button" data-resource-recovery="light" title="After 4 hours, restore 50% of each maximum, rounded up">Light Rest · 4h</button>
-     <button type="button" data-resource-recovery="full" title="After 8 hours, restore both pools to maximum and heal 1 Wound">Full Rest · 8h</button>
+
     </div>
     {{/if}}
-    <p class="mezoria-note">Quartz: regenerate 1 LifeForce and 1 Mana per turn. A 4-hour light rest restores 50% of each maximum (rounded up); an 8-hour full rest restores both pools completely and heals 1 Wound. Values cannot exceed their maximum. Higher-rank bonuses and talent adjustments remain pending.</p>
+    <p class="mezoria-note">Use the header buttons for rests and Action Score. Quartz: regenerate 1 LifeForce and 1 Mana per turn. A 4-hour light rest restores 50% of each maximum (rounded up); an 8-hour full rest restores both pools completely and heals 1 Wound. Values cannot exceed their maximum. Higher-rank bonuses and talent adjustments remain pending.</p>
     <h4>Defense and Protection</h4>
     <p class="mezoria-note">Parry, equipment Block, Spell Resistance, shields and armor depend on later equipment and ability rules. Dodge only applies to ranged and eligible magical projectiles.</p>
    </section>
