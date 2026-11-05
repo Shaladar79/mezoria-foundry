@@ -396,3 +396,9 @@
 - Granted Skill Talent: **Etiquette** (+5 percentage points), reusing the existing skill; governing attribute pending skill design.
 - Non-combat ability **Courtly Intrigue**: +10 percentage points to non-combat Etiquette checks involving navigating political gatherings, recognizing subtle social maneuvering, identifying rivalries between influential individuals, and maintaining appropriate behavior during sensitive diplomatic conversations. Recognizes common court protocols, political alliances, and signs of shifting influence within noble households.
 - Does not grant automatic political influence, secret information, or guaranteed access to rulers. Distinct from Noble's aristocratic upbringing.
+
+## Heir Social Background (approved)
+- Attributes: **+2 percentage points Intellect** and **+2 percentage points Presence**.
+- Granted Skill Talent: **Leadership** (+5 percentage points); governing attribute pending skill design.
+- Non-combat ability **Born to Inherit**: +10 percentage points to non-combat Leadership checks involving organizing household affairs, coordinating servants and retainers, handling succession-related responsibilities, and presenting oneself as a legitimate successor to a position of authority. Recognizes common inheritance customs, succession protocols, and the responsibilities of managing estates or noble households.
+- Does not automatically grant an estate, wealth, loyal retainers, or political authority. Distinct from Noble's aristocratic upbringing.
