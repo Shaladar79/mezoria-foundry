@@ -466,3 +466,9 @@
 - Granted Skill Talent: **Persuasion** (+5 percentage points), governing attribute pending skill design.
 - Non-combat ability **Political Savvy**: +10 percentage points to non-combat Persuasion checks involving building support for proposals, presenting arguments to civic leaders, negotiating political compromises, and addressing public concerns during political discussions. Recognizes common political factions, signs of shifting public opinion, and informal alliances influencing local government.
 - Does not automatically grant public office, political authority, loyal supporters, or control over government decisions. Distinct from Diplomat's intergroup or international negotiations.
+
+## Magistrate Social Background (approved)
+- Attributes: **+4 percentage points Intellect**.
+- Granted Skill Talent: **Law** (+5 percentage points), with governing attribute pending skill design.
+- Non-combat ability **Letter of the Law**: +10 percentage points to non-combat Law checks involving interpreting civic regulations, evaluating legal disputes, reviewing official proceedings, and identifying procedural errors in legal documents or judgments. Recognizes common legal terminology, court procedures, and responsibilities of local judicial officials.
+- Does not automatically grant judicial authority, power to issue binding rulings, or immunity from prosecution. Distinct from Politician's public persuasion and political support.
