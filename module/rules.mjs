@@ -64,8 +64,12 @@ export function deriveCharacter(s,rulebook=cache){
  const woundsTaken=Math.max(0,Number(s.woundsTaken)||0);
  const failures=Math.max(0,Math.min(3,Number(s.deathSaveFailures)||0));
  const deathState=s.deathState==="dead"?"dead":s.deathState==="stabilized"?"stabilized":"none";
+ const currentLifeForce=rank===1?Math.min(3*(Math.floor(score("Might")/10)+enduranceTens),s.currentLifeForce??3*(Math.floor(score("Might")/10)+enduranceTens)):null;
+ const unconscious=(deathState==="stabilized"&&currentLifeForce===0)||(woundCapacity!==null&&woundsTaken>=woundCapacity&&deathState==="none");
+ const unableToEvade=Boolean(s.unableToEvade);
+ const dodgeSuppressed=deathState==="dead"||unconscious||unableToEvade;
  const status={
-  dodge:prowessTens,initiativeBonus:prowessTens,
+  baseDodge:prowessTens,dodge:dodgeSuppressed?0:prowessTens,dodgeSuppressed,unableToEvade,initiativeBonus:prowessTens,
   woundThreshold,woundCapacity,woundsTaken,
   bleedingToDeath:woundCapacity!==null&&woundsTaken>=woundCapacity&&deathState==="none",
   deathSaveFailures:failures,deathState,
@@ -76,7 +80,7 @@ export function deriveCharacter(s,rulebook=cache){
   isConscious:deathState==="stabilized"&&((s.currentLifeForce??(rank===1?3*(Math.floor(score("Might")/10)+enduranceTens):0))>0),
   lifeForce:rank===1?3*(Math.floor(score("Might")/10)+enduranceTens):null,
   mana:rank===1?3*(Math.floor(score("Intellect")/10)+Math.floor(score("Presence")/10)):null,
-  currentLifeForce:rank===1?Math.min(3*(Math.floor(score("Might")/10)+enduranceTens),s.currentLifeForce??3*(Math.floor(score("Might")/10)+enduranceTens)):null,
+  currentLifeForce,
   currentMana:rank===1?Math.min(3*(Math.floor(score("Intellect")/10)+Math.floor(score("Presence")/10)),s.currentMana??3*(Math.floor(score("Intellect")/10)+Math.floor(score("Presence")/10))):null,
   lifeForceRegen:rank===1?1:null,
   manaRegen:rank===1?1:null,
