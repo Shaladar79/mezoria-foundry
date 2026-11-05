@@ -78,6 +78,7 @@ export class MezoriaCharacterSheet extends ActorSheet {
   const human=system.race==="Human";
   return {
    ...base,system,derived,creatorOpen,creationComplete:system.creationComplete,
+   currentEssence:system.currentEssence??0,spentEssence:system.spentEssence??0,
    headerName:this.actor.name,headerRace:system.race||"None Selected",headerBackground:system.background||"None Selected",
    headerMark:system.mark?(mark?.id?.charAt(0).toUpperCase()+mark?.id?.slice(1)||system.mark):"None Selected",headerSubgroup:system.subgroup,showSubgroup:!!subgroupType,subgroupType,
    sheetAttributes:this.sheetTab==="attributes",sheetSkills:this.sheetTab==="skills",
@@ -172,6 +173,15 @@ export class MezoriaCharacterSheet extends ActorSheet {
    await this.actor.update({["system."+path]:list,"system.creationComplete":false});
   });
 
+  html.find("[data-essence-field]").on("change",async event=>{
+   const field=event.currentTarget.dataset.essenceField;
+   if(!["currentEssence","spentEssence"].includes(field))return;
+   const raw=event.currentTarget.value.trim(),value=Number(raw);
+   if(raw===""||!Number.isSafeInteger(value)||value<0){
+    ui.notifications.warn("Essence must be a non-negative whole number.");this.render(false);return;
+   }
+   await this.actor.update({["system."+field]:value});
+  });
   html.find("[data-status-field]").on("change",async event=>{
    const key=event.currentTarget.dataset.statusField;
    if(!["woundsTaken","actionScore"].includes(key))return;
