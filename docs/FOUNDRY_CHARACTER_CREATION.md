@@ -125,3 +125,7 @@ Roll buttons submit Foundry chat messages indicating TN, result, success/failure
 ## Skills tab organization — development v0.2.4
 
 The **Skills** sheet tab now shows a permanent **Trained Skills** section at the top (all granted Skill Talents, alphabetized; current TN and Roll action). Below it, **Skills Usable Untrained** provides five attribute sub-tabs: Might, Prowess, Endurance, Intellect, and Presence. Each sub-tab shows only approved untrained-usable skills governed by that attribute, excluding skills already listed as trained, with live TN and Roll actions. Unlearned trained-only skills remain hidden. The selected attribute sub-tab persists while the Actor sheet instance stays open. No skill mechanics have changed.
+
+## Compact two-column skill layout — v0.2.5
+
+The approved Skills UI uses two side-by-side panels of approximately equal width: **Trained Skills** (left), then **Untrained Skills** with five attribute-filter tabs (right). Each panel has an independent, fixed-height scroll area. Every skill is a single compact row: **Skill name | Attribute abbreviation | Bonus (Talent +5 or —) | TN % | Roll**. Font sizes are approximately two points smaller than before, and skill names use ellipsis with a full-name tooltip if panel space is limited. Both panels retain the current d100 rolls and bonus calculations. Narrow windows stack panels vertically to maintain usability. No skill rules were changed.
