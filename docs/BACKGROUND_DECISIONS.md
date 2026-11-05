@@ -378,3 +378,9 @@
 - No additional Social background candidates requested.
 - This approval covers **roster membership only**. Individual attribute bonuses, Skill Talents, and non-combat abilities have **not** been approved; design them one at a time, starting with Noble.
 - Common (20), Tradesman (20), and Criminal (16) remain fully defined, for **56 completed background definitions** preceding Social design.
+
+## Noble Social Background (approved)
+- Attributes: **+2 percentage points Presence** and **+2 percentage points Intellect**.
+- Granted Skill Talent: **Etiquette** (+5 percentage points), governing attribute pending skill design.
+- Non-combat ability **Noble Bearing**: +10 percentage points to non-combat Etiquette checks involving interacting with aristocrats, observing courtly customs, addressing titled individuals appropriately, and navigating formal social gatherings. Recognizes noble titles, common heraldic symbols, and established social hierarchies.
+- Does not automatically grant wealth, political authority, property, or guaranteed cooperation from other nobles. Distinct from Disgraced Noble, Courtier, and Heir.
