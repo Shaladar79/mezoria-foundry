@@ -345,3 +345,10 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - A skill already granted through the selected Mark of Power or the background cannot be chosen as a free selection; duplicate starting Skill Talent awards are not permitted.
 - The starting Skill Talent allocation remains two Mark choices + three free choices + one background grant (six, before possible racial traits).
 - Tier improvement and Essence (XP) spending are reserved for advancement design.
+
+## Background and Mark Skill Talent overlap — approved 2026-11-05
+
+- Background-granted Skill Talent takes priority and remains unchanged.
+- If either of the two selected Mark of Power skills matches the Background skill, **reselect that Mark Talent from another eligible skill on the same Mark's list**.
+- Background grants are **not** converted to a free choice on overlap. No duplicated starting Talent awards.
+- The previous recommendation to replace the Background award with an unrestricted free Skill Talent is rejected.
