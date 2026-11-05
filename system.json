@@ -1,0 +1,35 @@
+{
+  "id": "mezoria-foundry",
+  "title": "Mezoria Foundry v2",
+  "description": "Mezoria percentile RPG — Quartz Rank character creation and basic character sheet prototype.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "Mezoria Foundry project"
+    }
+  ],
+  "esmodules": [
+    "module/main.mjs"
+  ],
+  "styles": [
+    "styles/mezoria.css"
+  ],
+  "documentTypes": {
+    "Actor": {
+      "character": {},
+      "npc": {}
+    }
+  },
+  "initiative": "1d20",
+  "grid": {
+    "distance": 1,
+    "units": "space"
+  },
+  "primaryTokenAttribute": "",
+  "secondaryTokenAttribute": "",
+  "socket": false
+}
