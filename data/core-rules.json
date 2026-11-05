@@ -348,6 +348,11 @@
         "name": "Forgery",
         "governingAttribute": "pending",
         "notes": "Forger Criminal background Skill Talent"
+      },
+      {
+        "name": "Smuggling",
+        "governingAttribute": "pending",
+        "notes": "Smuggler Criminal background Skill Talent"
       }
     ]
   },
