@@ -16,6 +16,7 @@ export class MezoriaCharacterData extends foundry.abstract.TypeDataModel {
    freeTalents:new F.ArrayField(new F.StringField(),{initial:["","",""]}),
    racialTalent:new F.StringField({required:true,initial:""}),
    currentLifeForce:new F.NumberField({required:false,nullable:true,integer:true,min:0,initial:null}),
+   currentMana:new F.NumberField({required:false,nullable:true,integer:true,min:0,initial:null}),
    woundsTaken:new F.NumberField({required:true,integer:true,initial:0,min:0}),
    actionScore:new F.NumberField({required:true,integer:true,initial:0}),
    notes:new F.StringField({required:true,initial:""})
