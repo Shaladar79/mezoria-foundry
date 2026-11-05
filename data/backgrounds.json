@@ -128,7 +128,6 @@
       "Pilgrim",
       "Cultist",
       "Scholar",
-      "Apprentice",
       "Entertainer",
       "Socialite",
       "Politician",
@@ -136,7 +135,7 @@
       "Envoy",
       "Revolutionary"
     ],
-    "socialCount": 17,
+    "socialCount": 16,
     "excludedSocialCandidates": [
       "Priest",
       "Tutor",
@@ -144,7 +143,8 @@
       "Noble Servant",
       "Community Leader",
       "Guild Member",
-      "Academic"
+      "Academic",
+      "Apprentice"
     ],
     "socialDefinitionsStatus": "Roster approved; individual attributes, Skill Talents, and non-combat abilities not yet designed"
   },
@@ -1502,6 +1502,7 @@
     "Sapper removed from approved Tradesman roster; formerly named Military Engineer, and no individual Sapper mechanics approved.",
     "Criminal roster approved with 16 selections and 8 excluded proposals; individual background mechanics remain pending.",
     "Social roster approved: 18 backgrounds selected, 6 candidates excluded; individual Social mechanics pending.",
-    "Academic removed from Social background roster by user decision; no individual Academic mechanics were approved."
+    "Academic removed from Social background roster by user decision; no individual Academic mechanics were approved.",
+    "Apprentice removed from Social background roster by user decision; no individual Apprentice mechanics approved."
   ]
 }
