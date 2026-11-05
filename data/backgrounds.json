@@ -1366,6 +1366,27 @@
         "combatEffect": false
       },
       "notes": "Does not automatically grant an estate, wealth, loyal retainers, or political authority."
+    },
+    "Diplomat": {
+      "status": "approved",
+      "category": "Social",
+      "attributeBonus": {
+        "Intellect": 2,
+        "Presence": 2
+      },
+      "skillTalent": {
+        "name": "Diplomacy",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Silver Accord",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Diplomacy checks involving negotiating agreements between opposing parties, mediating disputes, resolving misunderstandings between cultures, and presenting mutually beneficial compromises",
+        "additionalEffect": "Recognizes common diplomatic protocols, signs of strained negotiations, and cultural customs that may influence formal agreements",
+        "combatEffect": false
+      },
+      "notes": "Does not guarantee peaceful resolutions, enforce agreements, or automatically grant diplomatic immunity."
     }
   },
   "notes": [
