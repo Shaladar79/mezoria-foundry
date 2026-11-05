@@ -398,6 +398,11 @@
         "name": "Research",
         "governingAttribute": "pending",
         "notes": "Scholar Social background Skill Talent"
+      },
+      {
+        "name": "Performance",
+        "governingAttribute": "pending",
+        "notes": "Entertainer Social background Skill Talent"
       }
     ]
   },
