@@ -371,3 +371,10 @@
 - Non-combat ability **Hard Time**: +10 percentage points to non-combat Insight checks involving reading the intentions of hostile individuals, identifying informal hierarchies, recognizing intimidation tactics, and determining when someone is attempting to manipulate or exploit them. Recognizes common prison customs, signs of organized inmate groups, and methods used to conceal prohibited possessions.
 - Does not grant combat resistance, damage reduction, or immunity to intimidation. Distinct from Enforcer's intimidation focus.
 - **All 16 approved Criminal backgrounds are now individually defined.**
+
+## Social Background roster (approved)
+- Approved **18 Social backgrounds**, in order: Noble, Disgraced Noble, Courtier, Heir, Diplomat, Acolyte, Monk, Pilgrim, Cultist, Scholar, Academic, Apprentice, Entertainer, Socialite, Politician, Magistrate, Envoy, Revolutionary.
+- Excluded **6 candidate backgrounds**: Priest, Tutor, Historian, Noble Servant, Community Leader, Guild Member.
+- No additional Social background candidates requested.
+- This approval covers **roster membership only**. Individual attribute bonuses, Skill Talents, and non-combat abilities have **not** been approved; design them one at a time, starting with Noble.
+- Common (20), Tradesman (20), and Criminal (16) remain fully defined, for **56 completed background definitions** preceding Social design.
