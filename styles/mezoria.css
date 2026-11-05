@@ -63,3 +63,16 @@
 .mezoria.sheet .mezoria-bonus-panel ul{margin:4px 0;padding-left:21px}
 .mezoria.sheet .mezoria-bonus-panel li{color:#111!important}
 .mezoria.sheet .mezoria-selection-hint{color:#303030!important;font-style:italic}
+
+/* v0.2.4 skill section / attribute sub-tabs */
+.mezoria.sheet .mezoria-skill-section-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-top:12px;border-bottom:1px solid #a89f8b}
+.mezoria.sheet .mezoria-skill-section-heading h4{margin:0 0 8px;color:#111!important;font-size:17px}
+.mezoria.sheet .mezoria-skill-section-heading span{font-size:12px;color:#333!important}
+.mezoria.sheet .mezoria-trained-skills{margin-bottom:26px}
+.mezoria.sheet .mezoria-skill-attribute-tabs{display:flex;flex-wrap:wrap;gap:6px;margin:13px 0}
+.mezoria.sheet .mezoria-skill-attribute-tabs button{flex:1 1 120px;min-height:37px;background:#fff!important;color:#111!important;border:1px solid #888!important;border-radius:5px;padding:7px 9px;cursor:pointer;font-weight:600}
+.mezoria.sheet .mezoria-skill-attribute-tabs button.active{background:#afd8c9!important;color:#111!important;border:2px solid #245a4d!important}
+.mezoria.sheet .mezoria-skill-attribute-tabs button:hover{border-color:#245a4d!important}
+.mezoria.sheet .mezoria-skill-count{font-weight:400;color:#333!important}
+.mezoria.sheet .mezoria-untrained-skills h5{font-size:14px;margin:10px 0;color:#111!important}
+.mezoria.sheet .mezoria-empty-skills{font-size:13px;font-style:italic;color:#333!important;padding:10px 0}
