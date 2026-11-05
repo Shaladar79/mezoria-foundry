@@ -438,3 +438,8 @@
 - Granted Skill Talent: **Research** (+5 percentage points), governing attribute pending skill design.
 - Non-combat ability **Learned Mind**: +10 percentage points to non-combat Research checks involving locating information in written sources, comparing historical accounts, evaluating scholarly references, and identifying useful information within unfamiliar academic materials. Recognizes common scholarly conventions, reference systems, and methods used to organize libraries and collections of knowledge.
 - Does not automatically reveal unknown information, grant expertise in every field, or provide magical knowledge. Distinct from Academic's formal educational and institutional focus.
+
+## Social roster revision: Academic removed (approved)
+- **Academic** removed from Social roster by user decision; it is now excluded.
+- Its proposed attributes, Research Talent, and Academic Authority were never approved, and no Academic mechanics were finalized.
+- Social roster now contains **17 approved backgrounds**, **10** individually defined. Continue with **Apprentice**.
