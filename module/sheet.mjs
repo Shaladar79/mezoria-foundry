@@ -1,6 +1,7 @@
 import {loadCreationRules,deriveCharacter,raceSubgroups} from "./rules.mjs";
 
 const ATTRS=["Might","Prowess","Endurance","Intellect","Presence"];
+const ATTR_ABBR={Might:"MGT",Prowess:"PRW",Endurance:"END",Intellect:"INT",Presence:"PRE"};
 const NAME_DEFAULTS=new Set(["","New Actor","New Character","New Hero"]);
 const NONE_OPTION={value:"",label:"— None Selected —",selected:true};
 function withNone(options,selected){
@@ -56,15 +57,16 @@ export class MezoriaCharacterSheet extends ActorSheet {
   const skillRows=rules.skills.filter(skill=>selected.has(skill.name)||skill.trainedOnly===false).map(skill=>{
    const trained=selected.has(skill.name);
    const target=derived.scores.find(a=>a.name===skill.governingAttribute)?.total??0;
-   return {name:skill.name,attr:skill.governingAttribute,trained,tn:target+(trained?5:0),
-     bonus:trained?5:0,trainedLabel:trained?"Talent (+5)":"Untrained"};
+   return {name:skill.name,attr:skill.governingAttribute,attrAbbr:ATTR_ABBR[skill.governingAttribute]||skill.governingAttribute,
+     trained,tn:target+(trained?5:0),bonus:trained?5:0,bonusLabel:trained?"Talent +5":"—",
+     trainedLabel:trained?"Talent (+5)":"Untrained"};
   }).sort((a,b)=>Number(b.trained)-Number(a.trained)||a.name.localeCompare(b.name));
   // Trained skills remain in one permanent section; only untrained-usable skills
   // are filtered by the currently selected governing attribute sub-tab.
   const trainedSkills=skillRows.filter(row=>row.trained);
   const untrainedSkillRows=skillRows.filter(row=>!row.trained);
   const skillAttributeTabs=ATTRS.map(name=>({
-   name,active:this.skillAttributeTab===name,
+   name,abbreviation:ATTR_ABBR[name],active:this.skillAttributeTab===name,
    count:untrainedSkillRows.filter(row=>row.attr===name).length
   }));
   const attributeSkills=untrainedSkillRows.filter(row=>row.attr===this.skillAttributeTab);
