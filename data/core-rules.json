@@ -393,6 +393,11 @@
         "name": "Discipline",
         "governingAttribute": "pending",
         "notes": "Monk Social background Skill Talent"
+      },
+      {
+        "name": "Research",
+        "governingAttribute": "pending",
+        "notes": "Scholar Social background Skill Talent"
       }
     ]
   },
