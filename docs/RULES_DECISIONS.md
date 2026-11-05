@@ -316,3 +316,16 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - The individual eligible skill lists for Defender, Striker, Skirmisher, Warden, Arcanist, and Adept remain **under review** and are not yet locked in.
 - The working additional allocation remains three free Skill Talents and one background-granted Skill Talent; review remaining skill-selection mechanics separately.
 - Skill improvement and Essence (XP) spending remain deferred to rank advancement design.
+
+## Mark of Power starting Skill Talent lists — approved 2026-11-05
+
+At Quartz Rank, choose two distinct Skill Talents from the eight eligible skills associated with the chosen Mark of Power. The user approved all six lists, replacing **Lore: Eldritch Magic** in Arcanist with **Lore: Astral Magic**.
+
+- **Defender:** Athletics, Grappling, Heavy Weapons, Melee Weapons, Tactics, Resilience, Discipline, Leadership.
+- **Striker:** Heavy Weapons, Melee Weapons, Ranged Weapons, Throwing Weapons, Unarmed Combat, Athletics, Tactics, Intimidation.
+- **Skirmisher:** Acrobatics, Stealth, Melee Weapons, Ranged Weapons, Throwing Weapons, Tracking, Riding, Escape Artist.
+- **Warden:** Medicine, Nature, Survival, Animal Handling, Insight, Concentration, Magic Theory, Herbalism.
+- **Arcanist:** Magic Theory, Ritual Magic, Use Magic Device, Concentration, Research, Lore: Elemental Magic, Lore: Concept Magic, Lore: Astral Magic.
+- **Adept:** Tinkering, Engineering, Navigation, Investigation, Research, Use Magic Device, Sleight of Hand, Persuasion.
+
+All 48 entries reference approved skills (some skills are shared across Marks). These are starting eligibility lists, not exclusive restrictions on future free selections or Essence progression. Each selection grants the Talent tier, including skills otherwise trained-only. Advancing Talent tiers remains deferred to Rank Advancement and Essence (XP).
