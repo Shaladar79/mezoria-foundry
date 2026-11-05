@@ -1147,6 +1147,27 @@
         "combatEffect": false
       },
       "notes": "Does not automatically provide an established criminal organization, loyal followers, or income from protection payments."
+    },
+    "Bandit": {
+      "status": "approved",
+      "category": "Criminal",
+      "attributeBonus": {
+        "Might": 2,
+        "Endurance": 2
+      },
+      "skillTalent": {
+        "name": "Survival",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Outlaw's Instinct",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Survival checks involving identifying suitable wilderness camps, locating concealed approaches to roads and trails, recognizing signs of recent travel, and finding escape routes through rough terrain",
+        "additionalEffect": "Recognizes common signs of outlaw encampments, heavily traveled merchant routes, and locations where travelers typically stop to rest",
+        "combatEffect": false
+      },
+      "notes": "Does not grant combat ambush bonuses, additional damage, or automatic surprise."
     }
   },
   "notes": [
