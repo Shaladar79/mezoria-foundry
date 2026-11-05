@@ -1408,6 +1408,27 @@
         "combatEffect": false
       },
       "notes": "Does not grant divine spells, supernatural blessings, religious authority, or automatic acceptance by a religious organization."
+    },
+    "Monk": {
+      "status": "approved",
+      "category": "Social",
+      "attributeBonus": {
+        "Endurance": 2,
+        "Intellect": 2
+      },
+      "skillTalent": {
+        "name": "Discipline",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Monastic Training",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Discipline checks involving maintaining focus during long periods of study or meditation, following demanding daily routines, resisting ordinary distractions, and performing tasks requiring sustained patience and concentration",
+        "additionalEffect": "Recognizes common monastic customs, meditation practices, and organizational structures of spiritual orders",
+        "combatEffect": false
+      },
+      "notes": "Does not grant supernatural abilities, combat bonuses, damage resistance, or immunity to mental effects."
     }
   },
   "notes": [
