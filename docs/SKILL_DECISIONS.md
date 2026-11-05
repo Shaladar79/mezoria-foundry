@@ -191,3 +191,18 @@ All eight Creature Lore specializations are approved as separate **Intellect** s
 - **Lore: Beasts** replaces the proposed **Lore: Animals** name and resolves the earlier deferred **Animal Lore** candidate. Neither older name is a separate skill.
 - **Lore: Dragons** and **Lore: Legends** replace the broad proposed **Lore: Mythical Creatures** category; Legends concerns one-off individual creatures.
 - Creature Lore is finalized. Supernatural and magical Lore lists remain under review, including the previously named Eternals and Spirit Magic entries.
+
+## Supernatural Lore roster finalized — 2026-11-05
+
+All six Supernatural Lore specializations are **approved** as distinct Intellect skills. Each is **trained-only** (Talent minimum), with independent Talent / Expertise / Mastery progression.
+
+- **Lore: Elementals:** Knowledge of elemental beings, elemental affinities, behavior, strengths, and weaknesses.
+- **Lore: Spirits:** Knowledge of Spirits including deity-like entities, identities, histories, and spiritual hierarchies.
+- **Lore: Eldritch:** Knowledge of eldritch entities, alien origins, and incomprehensible beings.
+- **Lore: Astral:** Knowledge of astral entities, their realms, inhabitants, and properties.
+- **Lore: Eternals:** Knowledge of Eternals, including both opposing manifestations of their shared supernatural origin.
+- **Lore: Fae:** Knowledge of fae beings, courts, supernatural bargains, customs, and traits.
+
+- **Lore: Eternals** replaces the proposed separate Celestial and Demon Lore; neither is a standalone skill.
+- **Lore: Spirits** covers deity-like spiritual entities, distinct from Eternals and from the proposed magical specialization Lore: Spirit Magic.
+- Creature Lore and Supernatural Lore are finalized. Magical Lore remains under review.
