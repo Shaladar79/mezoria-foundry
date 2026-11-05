@@ -116,7 +116,7 @@
       "Crime Syndicate Agent",
       "Assassin"
     ],
-    "criminalDefinitionsStatus": "Roster approved; individual attributes, Skill Talents, and non-combat abilities not yet designed"
+    "criminalDefinitionsStatus": "All 16 approved Criminal backgrounds individually defined"
   },
   "definitions": {
     "Farmer": {
@@ -1231,6 +1231,27 @@
         "combatEffect": false
       },
       "notes": "Does not automatically reveal secrets, identify all disguised individuals, or grant bonuses to combat stealth."
+    },
+    "Prisoner": {
+      "status": "approved",
+      "category": "Criminal",
+      "attributeBonus": {
+        "Endurance": 2,
+        "Presence": 2
+      },
+      "skillTalent": {
+        "name": "Insight",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Hard Time",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Insight checks involving reading the intentions of hostile individuals, identifying informal hierarchies, recognizing intimidation tactics, and determining when someone is attempting to manipulate or exploit them",
+        "additionalEffect": "Recognizes common prison customs, signs of organized inmate groups, and methods used to conceal prohibited possessions",
+        "combatEffect": false
+      },
+      "notes": "Does not grant combat resistance, damage reduction, or immunity to intimidation."
     }
   },
   "notes": [
