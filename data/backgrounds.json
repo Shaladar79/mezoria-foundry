@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "Common backgrounds completed; other background categories in design",
+  "status": "All four approved background categories individually defined; pending skill-system finalization and Foundry implementation",
   "selection": "Each character chooses one Background during character creation",
   "categories": [
     "Common",
@@ -1624,9 +1624,8 @@
     "The approved Tradesman roster has 20 entries. No individual Tradesman mechanics are yet approved.",
     "Potter removed from the approved Tradesman roster by user decision; no Potter mechanics approved.",
     "Sapper removed from approved Tradesman roster; formerly named Military Engineer, and no individual Sapper mechanics approved.",
-    "Criminal roster approved with 16 selections and 8 excluded proposals; individual background mechanics remain pending.",
-    "Social roster approved: 18 backgrounds selected, 6 candidates excluded; individual Social mechanics pending.",
     "Academic removed from Social background roster by user decision; no individual Academic mechanics were approved.",
-    "Apprentice removed from Social background roster by user decision; no individual Apprentice mechanics approved."
+    "Apprentice removed from Social background roster by user decision; no individual Apprentice mechanics approved.",
+    "Background structural audit (2026-11-05): 72/72 current roster entries approved; +4 total attribute percentage points, one +5 Talent and one non-combat ability per entry; 46 unique granted skills registered without duplicate approvedAdditions. Farmer and Rancher benefit scopes should be explicitly labeled non-combat in a future text-normalization pass; intended framework already specifies non-combat."
   ]
 }
