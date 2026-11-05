@@ -374,3 +374,10 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - **Supersedes previous 25% starting base:** All five attributes (Might, Prowess, Endurance, Intellect, Presence) now begin at **35%** before any point allocation or racial/background modifiers.
 - Players still distribute **35 percentage points** among the five attributes. The **+15 point maximum per individual attribute** remains unchanged, making the updated pre-racial/background maximum **50%** (35% base +15%). No maximum after bonuses has been approved.
 - Character creator, attribute save TNs, skill TNs, and displayed sheet values must all use the new 35% base; the rest of the rules remain unchanged.
+
+## Approved resource naming and Quartz scaling — 2026-11-05
+
+- Rename the Health resource to **LifeForce**. The spellcasting resource is simply **Mana**, not Mana Foundation.
+- At Rank 1 **Quartz**, **maximum LifeForce = 3 × (floor(Might / 10) + floor(Endurance / 10))** and **maximum Mana = 3 × (floor(Intellect / 10) + floor(Presence / 10))**, using final attribute scores including allocation and racial/background adjustments.
+- The multiplier ×3 applies specifically to Quartz; scaling at higher ranks is not yet approved. Resource spending, current-value trackers, regeneration, healing and recovery are separate decisions still pending.
+- Damage order terminology uses **LifeForce** in place of Health; protection and Wound rules are otherwise unchanged.
