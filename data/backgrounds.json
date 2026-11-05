@@ -146,7 +146,7 @@
       "Academic",
       "Apprentice"
     ],
-    "socialDefinitionsStatus": "Roster approved; individual attributes, Skill Talents, and non-combat abilities not yet designed"
+    "socialDefinitionsStatus": "All 16 approved Social backgrounds individually defined"
   },
   "definitions": {
     "Farmer": {
@@ -1594,6 +1594,27 @@
         "combatEffect": false
       },
       "notes": "Does not automatically grant diplomatic immunity, unrestricted access to authorities, or power to make binding agreements."
+    },
+    "Revolutionary": {
+      "status": "approved",
+      "category": "Social",
+      "attributeBonus": {
+        "Presence": 2,
+        "Endurance": 2
+      },
+      "skillTalent": {
+        "name": "Persuasion",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Voice of Change",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Persuasion checks involving rallying support for social or political reform, explaining revolutionary ideals, organizing peaceful demonstrations, and convincing sympathetic individuals to support a shared cause",
+        "additionalEffect": "Recognizes signs of political unrest, common grievances among communities, and symbols associated with resistance movements",
+        "combatEffect": false
+      },
+      "notes": "Does not automatically grant followers, political influence, combat bonuses, or guaranteed support for revolutionary causes."
     }
   },
   "notes": [
