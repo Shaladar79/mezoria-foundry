@@ -460,3 +460,9 @@
 - Granted Skill Talent: **Etiquette** (+5 percentage points), reusing the existing skill; governing attribute pending skill design.
 - Non-combat ability **Social Butterfly**: +10 percentage points to non-combat Etiquette checks involving making favorable first impressions, navigating fashionable gatherings, engaging in polite conversation, and building rapport within influential social circles. Recognizes prominent social customs, current fashions, and informal relationships connecting influential members of society.
 - Does not automatically grant wealth, fame, influential contacts, or guaranteed invitations to exclusive events. Distinct from Noble's aristocratic upbringing and Courtier's political maneuvering.
+
+## Politician Social Background (approved)
+- Attributes: **+2 percentage points Intellect** and **+2 percentage points Presence**.
+- Granted Skill Talent: **Persuasion** (+5 percentage points), governing attribute pending skill design.
+- Non-combat ability **Political Savvy**: +10 percentage points to non-combat Persuasion checks involving building support for proposals, presenting arguments to civic leaders, negotiating political compromises, and addressing public concerns during political discussions. Recognizes common political factions, signs of shifting public opinion, and informal alliances influencing local government.
+- Does not automatically grant public office, political authority, loyal supporters, or control over government decisions. Distinct from Diplomat's intergroup or international negotiations.
