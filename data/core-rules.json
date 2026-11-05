@@ -363,6 +363,11 @@
         "name": "Intimidation",
         "governingAttribute": "pending",
         "notes": "Enforcer Criminal background Skill Talent"
+      },
+      {
+        "name": "Survival",
+        "governingAttribute": "pending",
+        "notes": "Bandit Criminal background Skill Talent"
       }
     ]
   },
