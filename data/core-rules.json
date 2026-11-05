@@ -373,6 +373,11 @@
         "name": "Insight",
         "governingAttribute": "pending",
         "notes": "Prisoner Criminal background Skill Talent"
+      },
+      {
+        "name": "Leadership",
+        "governingAttribute": "pending",
+        "notes": "Heir Social background Skill Talent"
       }
     ]
   },
