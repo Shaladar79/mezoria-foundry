@@ -307,3 +307,12 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - No separate post-bonus starting cap has been approved; do not silently impose one.
 - Example: an Embergiest Soldier allocating +15 to Might starts with 25 + 15 + 3 racial + 2 background = **45% Might**.
 - Skill-tier advancement, Rank advancement, and Essence spending remain deferred to their later section.
+
+## Starting Mark of Power Skill Talent selection — approved 2026-11-05
+
+- At character creation, a Rank 1 (Quartz) character chooses **two distinct Skill Talents from the eligible skill list of their selected Mark of Power**.
+- The Mark does not automatically award two fixed, predetermined skills; the player chooses from that Mark's list.
+- The **two-Mark-Talent allocation** is now approved (previous ambiguity over two versus three resolved).
+- The individual eligible skill lists for Defender, Striker, Skirmisher, Warden, Arcanist, and Adept remain **under review** and are not yet locked in.
+- The working additional allocation remains three free Skill Talents and one background-granted Skill Talent; review remaining skill-selection mechanics separately.
+- Skill improvement and Essence (XP) spending remain deferred to rank advancement design.
