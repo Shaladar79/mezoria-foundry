@@ -82,7 +82,7 @@ export class MezoriaCharacterSheet extends ActorSheet {
    headerMark:system.mark?(mark?.id?.charAt(0).toUpperCase()+mark?.id?.slice(1)||system.mark):"None Selected",headerSubgroup:system.subgroup,showSubgroup:!!subgroupType,subgroupType,
    sheetAttributes:this.sheetTab==="attributes",sheetSkills:this.sheetTab==="skills",
    attrTabActive:this.sheetTab==="attributes",skillsTabActive:this.sheetTab==="skills",
-   attributes:derived.scores,trainedSkills,skillAttributeTabs,attributeSkills,
+   attributes:derived.scores,status:derived.status,trainedSkills,skillAttributeTabs,attributeSkills,
    selectedSkillAttribute:this.skillAttributeTab,
    trainedCount:trainedSkills.length,untrainedCount:untrainedSkillRows.length, 
    raceTraits,
@@ -170,6 +170,30 @@ export class MezoriaCharacterSheet extends ActorSheet {
    if(index<0||index>=list.length)return;
    list[index]=el.value;
    await this.actor.update({["system."+path]:list,"system.creationComplete":false});
+  });
+
+  html.find("[data-status-field]").on("change",async event=>{
+   const key=event.currentTarget.dataset.statusField;
+   if(!["woundsTaken","actionScore"].includes(key))return;
+   const num=Number(event.currentTarget.value);
+   if(!Number.isInteger(num)||!Number.isFinite(num)||(key==="woundsTaken"&&num<0)){
+    ui.notifications.warn("Enter a valid whole-number status value.");this.render(false);return;
+   }
+   await this.actor.update({["system."+key]:num});
+  });
+  html.find("[data-roll-action-score]").on("click",async event=>{
+   event.preventDefault();
+   const data=deriveCharacter(this.actor.system,await loadCreationRules());
+   const before=Number(this.actor.system.actionScore)||0;
+   const modifier=data.status.initiativeBonus;
+   const roll=await(new Roll("1d20")).evaluate();
+   const newScore=before+roll.total+modifier;
+   await this.actor.update({"system.actionScore":newScore});
+   await roll.toMessage({
+    speaker:ChatMessage.getSpeaker({actor:this.actor}),
+    flavor:"New round Action Score: "+before+" carryover + "+roll.total+
+     " (d20) + "+modifier+" (Prowess tens) = <strong>"+newScore+"</strong>"
+   });
   });
   html.find("[data-roll-attr], [data-roll-skill]").on("click",async event=>{
    event.preventDefault();
