@@ -1324,6 +1324,27 @@
         "combatEffect": false
       },
       "notes": "Does not restore lost titles, wealth, or political influence."
+    },
+    "Courtier": {
+      "status": "approved",
+      "category": "Social",
+      "attributeBonus": {
+        "Intellect": 2,
+        "Presence": 2
+      },
+      "skillTalent": {
+        "name": "Etiquette",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Courtly Intrigue",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Etiquette checks involving navigating political gatherings, recognizing subtle social maneuvering, identifying rivalries between influential individuals, and maintaining appropriate behavior during sensitive diplomatic conversations",
+        "additionalEffect": "Recognizes common court protocols, political alliances, and signs of shifting influence within noble households",
+        "combatEffect": false
+      },
+      "notes": "Does not grant automatic political influence, secret information, or guaranteed access to rulers."
     }
   },
   "notes": [
