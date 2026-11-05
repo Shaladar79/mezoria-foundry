@@ -2,7 +2,7 @@
   "id": "mezoria-foundry",
   "title": "Mezoria Foundry v2",
   "description": "Mezoria Foundry v2 development system — character creator and rollable sheet (pre-playtest).",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "compatibility": {
     "minimum": "13"
   },
