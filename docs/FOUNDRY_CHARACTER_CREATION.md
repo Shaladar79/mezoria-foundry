@@ -121,3 +121,7 @@ Roll buttons submit Foundry chat messages indicating TN, result, success/failure
 - **Supersedes previous 25% starting base:** All five attributes (Might, Prowess, Endurance, Intellect, Presence) now begin at **35%** before any point allocation or racial/background modifiers.
 - Players still distribute **35 percentage points** among the five attributes. The **+15 point maximum per individual attribute** remains unchanged, making the updated pre-racial/background maximum **50%** (35% base +15%). No maximum after bonuses has been approved.
 - Character creator, attribute save TNs, skill TNs, and displayed sheet values must all use the new 35% base; the rest of the rules remain unchanged.
+
+## Skills tab organization — development v0.2.4
+
+The **Skills** sheet tab now shows a permanent **Trained Skills** section at the top (all granted Skill Talents, alphabetized; current TN and Roll action). Below it, **Skills Usable Untrained** provides five attribute sub-tabs: Might, Prowess, Endurance, Intellect, and Presence. Each sub-tab shows only approved untrained-usable skills governed by that attribute, excluding skills already listed as trained, with live TN and Roll actions. Unlearned trained-only skills remain hidden. The selected attribute sub-tab persists while the Actor sheet instance stays open. No skill mechanics have changed.
