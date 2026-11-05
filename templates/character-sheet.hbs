@@ -31,6 +31,7 @@
    {{#if showSubgroup}}
     <label>{{subgroupType}} <select data-field="subgroup"><option value="">Choose…</option>{{#each subgroupOptions}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
    {{/if}}
+   {{#if raceBonusPending}}<p class="mezoria-selection-hint">Choose a race to apply its attribute adjustments.</p>{{else}}<div class="mezoria-bonus-panel"><strong>Racial attribute adjustments</strong>{{#if raceBonusRows.length}}<ul>{{#each raceBonusRows}}<li>{{name}} +{{points}}%</li>{{/each}}</ul>{{else}}<p>Choose the racial bonus attributes below or select a tribe, clan, or aspect.</p>{{/if}}</div>{{/if}}
    {{#if human}}
     <h4>Human Adaptability — choose exactly three different attributes (+2% each)</h4>
     <div class="mezoria-check-grid">
@@ -46,17 +47,17 @@
   {{#if stepBackground}}
    <h3>2 · Select Background</h3>
    <label>Background <select data-field="background">{{#each backgroundOptions}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
-   <p>Granted Skill Talent: <strong>{{backgroundTalent}}</strong></p>
+   {{#if backgroundBonusPending}}<p class="mezoria-selection-hint">Choose a background to apply its bonuses.</p>{{else}}<div class="mezoria-bonus-panel"><strong>Background attribute adjustments</strong><ul>{{#each backgroundBonusRows}}<li>{{name}} +{{points}}%</li>{{/each}}</ul></div><p>Granted Skill Talent: <strong>{{backgroundTalent}}</strong></p>{{/if}}
    {{#if backgroundAbility}}<p><strong>{{backgroundAbility.name}}</strong> — {{backgroundAbility.description}} {{backgroundAbility.appliesTo}}</p>{{/if}}
    <p>Background attributes and features are applied to the sheet automatically.</p>
   {{/if}}
   {{#if stepMark}}
    <h3>3 · Select Mark of Power</h3>
    <label>Mark <select data-field="mark">{{#each markOptions}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
-   <p>Choose two distinct Mark Talents. The Background's fixed Skill Talent takes priority on overlap.</p>
-   {{#each markChoices}}<label>Mark Talent {{number}}
+   <p>Choose two distinct Mark Talents. The Background's fixed Skill Talent takes priority on overlap.</p>{{#unless markChosen}}<p class="mezoria-selection-hint">Select a Mark of Power to reveal its available Skill Talents.</p>{{/unless}}
+   {{#if markChosen}}{{#each markChoices}}<label>Mark Talent {{number}}
      <select data-talent-kind="mark" data-index="{{index}}" aria-label="Select Mark Talent">{{#each options}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select>
-   </label>{{/each}}
+   </label>{{/each}}{{/if}}
   {{/if}}
   {{#if stepFree}}
    <h3>4 · Choose Three Free Skill Talents</h3>
