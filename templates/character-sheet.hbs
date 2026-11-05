@@ -139,12 +139,12 @@
     <p class="mezoria-note">Overflow creates one Wound per threshold, rounded up; damage application is not yet automated.</p>
    </section>
    <section class="mezoria-status-panel">
-    <h4>Health and Mana</h4>
+    <h4>LifeForce and Mana</h4>
     <div class="mezoria-status-summary">
-     <div><span>Health Foundation</span><strong>{{status.healthFoundation}}</strong></div>
-     <div><span>Mana Foundation</span><strong>{{status.manaFoundation}}</strong></div>
+     <div><span>LifeForce · Maximum</span><strong>{{#if status.lifeForce}}{{status.lifeForce}}{{else}}Pending{{/if}}</strong></div>
+     <div><span>Mana · Maximum</span><strong>{{#if status.mana}}{{status.mana}}{{else}}Pending{{/if}}</strong></div>
     </div>
-    <p class="mezoria-note">Health foundation = Might tens + Endurance tens. Mana foundation = Intellect tens + Presence tens. Final pools are pending their scaling rule.</p>
+    <p class="mezoria-note">At Quartz Rank, LifeForce = (Might tens + Endurance tens) × 3; Mana = (Intellect tens + Presence tens) × 3. Higher-rank scaling and resource recovery remain to be defined.</p>
     <h4>Defense and Protection</h4>
     <p class="mezoria-note">Parry, equipment Block, Spell Resistance, shields and armor depend on later equipment and ability rules. Dodge only applies to ranged and eligible magical projectiles.</p>
    </section>
