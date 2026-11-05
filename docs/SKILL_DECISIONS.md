@@ -58,3 +58,13 @@ Talent +5 percentage points, Expertise +5 additional, Mastery +5 additional.
 - Stamina and Pain Tolerance were removed from the proposed Endurance roster.
 - Concentration was reassigned as a candidate for Intellect review; it is not yet an approved skill.
 - Resilience must not grant automatic additional Health, Wounds, or passive resistance; such mechanics require separate approval.
+
+## Crafting skill structure (approved; individual roster under review)
+
+- Crafting is divided into separate specialized skills; there is no universal Crafting skill.
+- Each approved discipline has its own Talent, Expertise, and Mastery progression.
+- Retain exact background-granted skill names where possible to avoid breaking compatibility with `data/backgrounds.json`.
+- **Individual crafting roster proposed, not yet approved:** Blacksmithing, Carpentry, Masonry, Leatherworking, Tailoring, Jewelcrafting, Tinkering, Alchemy, Cooking, Brewing, Scribing, Engineering, Shipbuilding, Herbalism.
+- Do not automatically assign every trade skill to Intellect; review its governing attribute during Intellect development.
+- Distinguish Engineering from Tinkering, Herbalism from Alchemy, and Scribing from magical inscription work.
+- Magic Theory is the proposed replacement name for Arcana; Ritual Magic and Use Magic Device are additional Intellect candidates pending roster approval.
