@@ -66,8 +66,8 @@ export function deriveCharacter(s,rulebook=cache){
   dodge:prowessTens,initiativeBonus:prowessTens,
   woundThreshold,woundCapacity,woundsTaken,
   bleedingToDeath:woundCapacity!==null&&woundsTaken>=woundCapacity,
-  healthFoundation:Math.floor(score("Might")/10)+enduranceTens,
-  manaFoundation:Math.floor(score("Intellect")/10)+Math.floor(score("Presence")/10),
+  lifeForce:rank===1?3*(Math.floor(score("Might")/10)+enduranceTens):null,
+  mana:rank===1?3*(Math.floor(score("Intellect")/10)+Math.floor(score("Presence")/10)):null,
   actionScore:Number(s.actionScore)||0,
   movement:sub?.movement?.ground??r?.baseMovement??null
  };
