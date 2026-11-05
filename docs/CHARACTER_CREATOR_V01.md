@@ -48,3 +48,7 @@ Download the HTML file and open it in a browser. Create a character, review the 
 The original section above describing the initial order is **superseded** by the following approved workflow: **(1) Race** (including optional Human racial Talent and racial adjustments) → **(2) Background** (apply attributes, fixed Skill Talent, noncombat feature) → **(3) Mark** (apply any currently defined Mark adjustments and choose two Mark Skill Talents) → **(4) Three Free Skill Talents** → **(5) Attribute allocation and sheet validation**. The +25 allocation pool remains unchanged, with a 40% pre-bonus cap. Mark-specific attribute adjustments have not been approved and are not invented.
 
 A Foundry Actor data model and editable character sheet prototype are now checked in at the repository root. See `docs/FOUNDRY_CHARACTER_CREATION.md`. The Foundry interface has not yet been tested inside a running Foundry instance.
+
+## v0.2 superseding update — 2026-11-05
+
+The most current implementation flow and rules are in [Foundry character creation documentation](FOUNDRY_CHARACTER_CREATION.md). The pool is now **35** (not 25), with +15 maximum into any single attribute before bonuses. Creator order is Race → Background → Mark → Three Free Talents → Attribute Allocation → Character Name last. The Character Actor sheet has a + creator launch button and two tabs (Attributes and Status; Skills with trained-first lists and d100 rolling).
