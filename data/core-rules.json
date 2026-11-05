@@ -383,6 +383,11 @@
         "name": "Diplomacy",
         "governingAttribute": "pending",
         "notes": "Diplomat Social background Skill Talent"
+      },
+      {
+        "name": "Religion",
+        "governingAttribute": "pending",
+        "notes": "Acolyte Social background Skill Talent"
       }
     ]
   },
