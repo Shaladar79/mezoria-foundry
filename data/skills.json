@@ -129,7 +129,9 @@
         "Concentration reserved for Intellect skill review; not yet approved.",
         "Arcana renamed to Magic Theory for Intellect roster review.",
         "Ritual Magic and Use Magic Device are proposed Intellect skills.",
-        "Individual crafting disciplines are under review; the split into separate skills is approved."
+        "Individual crafting disciplines are under review; the split into separate skills is approved.",
+        "The 14 crafting disciplines are approved as individual skills, but their governing attributes remain subject to review.",
+        "Magical Inscription is reserved for future design and not an approved skill."
       ]
     },
     "Presence": {
@@ -156,11 +158,90 @@
     "status": "approved",
     "model": "separate specialized skills",
     "generalCraftingSkill": false,
-    "individualSkillRosterStatus": "under review",
+    "individualSkillRosterStatus": "approved",
     "notes": [
       "Use separate Talent, Expertise, and Mastery progression for each approved craft.",
       "Preserve existing background-granted skill names when reviewing craft roster.",
       "Do not treat background trades as automatically approved Intellect assignments."
+    ],
+    "skills": [
+      {
+        "name": "Blacksmithing",
+        "description": "Forging metal weapons, armor, tools, and hardware",
+        "governingAttribute": "pending attribute assignment"
+      },
+      {
+        "name": "Carpentry",
+        "description": "Working wood into furniture, structures, and equipment",
+        "governingAttribute": "pending attribute assignment"
+      },
+      {
+        "name": "Masonry",
+        "description": "Cutting, shaping, and constructing with stone",
+        "governingAttribute": "pending attribute assignment"
+      },
+      {
+        "name": "Leatherworking",
+        "description": "Producing leather armor, saddles, bags, and other leather goods",
+        "governingAttribute": "pending attribute assignment"
+      },
+      {
+        "name": "Tailoring",
+        "description": "Sewing clothing and textile goods",
+        "governingAttribute": "pending attribute assignment"
+      },
+      {
+        "name": "Jewelcrafting",
+        "description": "Cutting gems and creating jewelry and ornamentation",
+        "governingAttribute": "pending attribute assignment"
+      },
+      {
+        "name": "Tinkering",
+        "description": "Creating and repairing small mechanisms and intricate devices",
+        "governingAttribute": "pending attribute assignment"
+      },
+      {
+        "name": "Alchemy",
+        "description": "Formulating potions, reagents, and alchemical substances",
+        "governingAttribute": "pending attribute assignment"
+      },
+      {
+        "name": "Cooking",
+        "description": "Preparing meals, preserved foods, and other dishes",
+        "governingAttribute": "pending attribute assignment"
+      },
+      {
+        "name": "Brewing",
+        "description": "Making fermented drinks and other brewed beverages",
+        "governingAttribute": "pending attribute assignment"
+      },
+      {
+        "name": "Scribing",
+        "description": "Producing manuscripts, records, and ordinary scrolls",
+        "governingAttribute": "pending attribute assignment"
+      },
+      {
+        "name": "Engineering",
+        "description": "Designing and constructing complex machines and systems",
+        "governingAttribute": "pending attribute assignment"
+      },
+      {
+        "name": "Shipbuilding",
+        "description": "Constructing and repairing boats and other watercraft",
+        "governingAttribute": "pending attribute assignment"
+      },
+      {
+        "name": "Herbalism",
+        "description": "Identifying, harvesting, and preparing useful herbs",
+        "governingAttribute": "pending attribute assignment"
+      }
+    ],
+    "reservedForLater": [
+      {
+        "name": "Inscription",
+        "status": "reserved, not approved",
+        "description": "Magical inscriptions, enchanted scrolls, and runic items"
+      }
     ]
   }
 }
