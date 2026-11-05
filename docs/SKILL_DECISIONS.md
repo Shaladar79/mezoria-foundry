@@ -242,3 +242,10 @@ The following nine skills are **trained-only**, requiring at least **Talent** to
 - No Group 1 skills remain open to untrained specialized checks.
 - Lore (21) and crafting (14) remain trained-only as previously approved.
 - Group 2 and remaining ordinary skill training rules are pending review.
+
+## Group 2 training requirements approved — 2026-11-05
+
+- **Trained-only (Talent minimum):** Magic Theory, Pickpocketing, Seamanship, Thievery, Tracking, Tactics, Appraisal.
+- **Untrained checks allowed:** Sleight of Hand, Animal Handling, Religion.
+- Trained-only count is now **51**: Lore 21 + crafting 14 + Group 1 nine + Group 2 seven. Three additional Group 2 skills have explicitly approved untrained access.
+- All remaining non-Lore, non-crafting skill training access requires the final audit.
