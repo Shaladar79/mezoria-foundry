@@ -384,3 +384,9 @@
 - Granted Skill Talent: **Etiquette** (+5 percentage points), governing attribute pending skill design.
 - Non-combat ability **Noble Bearing**: +10 percentage points to non-combat Etiquette checks involving interacting with aristocrats, observing courtly customs, addressing titled individuals appropriately, and navigating formal social gatherings. Recognizes noble titles, common heraldic symbols, and established social hierarchies.
 - Does not automatically grant wealth, political authority, property, or guaranteed cooperation from other nobles. Distinct from Disgraced Noble, Courtier, and Heir.
+
+## Disgraced Noble Social Background (approved)
+- Attributes: **+2 percentage points Presence** and **+2 percentage points Endurance**.
+- Granted Skill Talent: **Etiquette** (+5 percentage points), reusing the skill established for Noble; governing attribute pending skill design.
+- Non-combat ability **Fallen From Grace**: +10 percentage points to non-combat Etiquette checks involving navigating hostile aristocratic gatherings, recognizing subtle insults or social exclusion, concealing a loss of status, and negotiating with nobles who may distrust or look down upon them. Recognizes signs of declining noble influence, political disgrace, and informal social networks of aristocratic society.
+- Does not restore lost titles, wealth, or political influence. Distinct from Noble's familiarity with privileges and accepted high-society status.
