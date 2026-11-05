@@ -1512,6 +1512,26 @@
         "combatEffect": false
       },
       "notes": "Covers musicians, actors, dancers, storytellers, comedians and other performers. Does not grant magical performances, combat bonuses, automatic fame, or guaranteed audience approval."
+    },
+    "Socialite": {
+      "status": "approved",
+      "category": "Social",
+      "attributeBonus": {
+        "Presence": 4
+      },
+      "skillTalent": {
+        "name": "Etiquette",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Social Butterfly",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Etiquette checks involving making favorable first impressions, navigating fashionable gatherings, engaging in polite conversation, and building rapport within influential social circles",
+        "additionalEffect": "Recognizes prominent social customs, current fashions, and informal relationships connecting influential members of society",
+        "combatEffect": false
+      },
+      "notes": "Does not automatically grant wealth, fame, influential contacts, or guaranteed invitations to exclusive events."
     }
   },
   "notes": [
