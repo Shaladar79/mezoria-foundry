@@ -379,6 +379,54 @@
           "trainedOnly": true,
           "minimumTier": "Talent",
           "category": "Creature Lore"
+        },
+        {
+          "name": "Lore: Elementals",
+          "description": "Knowledge of elemental beings, elemental affinities, behavior, strengths, and weaknesses",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent",
+          "category": "Supernatural Lore"
+        },
+        {
+          "name": "Lore: Spirits",
+          "description": "Knowledge of Spirits including deity-like entities, identities, histories, and spiritual hierarchies",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent",
+          "category": "Supernatural Lore"
+        },
+        {
+          "name": "Lore: Eldritch",
+          "description": "Knowledge of eldritch entities, alien origins, and incomprehensible beings",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent",
+          "category": "Supernatural Lore"
+        },
+        {
+          "name": "Lore: Astral",
+          "description": "Knowledge of astral entities, their realms, inhabitants, and properties",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent",
+          "category": "Supernatural Lore"
+        },
+        {
+          "name": "Lore: Eternals",
+          "description": "Knowledge of Eternals, including both opposing manifestations of their shared supernatural origin",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent",
+          "category": "Supernatural Lore"
+        },
+        {
+          "name": "Lore: Fae",
+          "description": "Knowledge of fae beings, courts, supernatural bargains, customs, and traits",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent",
+          "category": "Supernatural Lore"
         }
       ],
       "notes": [
@@ -571,7 +619,7 @@
   },
   "deferredSkillCandidates": [],
   "lorePolicy": {
-    "status": "creature Lore roster approved; supernatural and magical Lore rosters under review",
+    "status": "Creature and supernatural Lore rosters approved; magical Lore under review",
     "governingAttribute": "Intellect",
     "trainingRequired": true,
     "minimumTrainingTier": "Talent",
@@ -597,7 +645,7 @@
         "scope": "Beasts, common animals and wildlife"
       }
     ],
-    "rosterStatus": "Creature Lore finalized (8 skills); supernatural and magical Lore pending",
+    "rosterStatus": "Creature Lore (8) and Supernatural Lore (6) approved; Magical Lore pending",
     "magicLoreNamingDecisions": [
       {
         "name": "Lore: Spirit Magic",
@@ -667,6 +715,54 @@
         }
       ],
       "count": 8
+    },
+    "supernaturalLore": {
+      "status": "approved",
+      "count": 6,
+      "skills": [
+        {
+          "name": "Lore: Elementals",
+          "description": "Knowledge of elemental beings, elemental affinities, behavior, strengths, and weaknesses",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
+        },
+        {
+          "name": "Lore: Spirits",
+          "description": "Knowledge of Spirits including deity-like entities, identities, histories, and spiritual hierarchies",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
+        },
+        {
+          "name": "Lore: Eldritch",
+          "description": "Knowledge of eldritch entities, alien origins, and incomprehensible beings",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
+        },
+        {
+          "name": "Lore: Astral",
+          "description": "Knowledge of astral entities, their realms, inhabitants, and properties",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
+        },
+        {
+          "name": "Lore: Eternals",
+          "description": "Knowledge of Eternals, including both opposing manifestations of their shared supernatural origin",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
+        },
+        {
+          "name": "Lore: Fae",
+          "description": "Knowledge of fae beings, courts, supernatural bargains, customs, and traits",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
+        }
+      ]
     }
   }
 }
