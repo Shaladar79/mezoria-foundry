@@ -4,7 +4,7 @@
  {{else}}
  <header class="mezoria-header">
   <div class="mezoria-headline">
-   <div><h2>MEZORIA · Character</h2><p>Rank 1 · Quartz</p></div>
+   <div><h2>MEZORIA · Character</h2></div>
    {{#if creatorOpen}}
     <button type="button" class="mezoria-back-button" data-close-creator>Back to Sheet</button>
    {{else}}
@@ -13,6 +13,7 @@
   </div>
   <div class="mezoria-identity">
    <label>Name <input type="text" value="{{headerName}}" readonly></label>
+   <label>Rank <input type="text" value="1 · Quartz" readonly></label>
    <label>Race <input type="text" value="{{headerRace}}" readonly></label>
    {{#if showSubgroup}}<label>{{subgroupType}} <input type="text" value="{{headerSubgroup}}" readonly></label>{{/if}}
    <label>Background <input type="text" value="{{headerBackground}}" readonly></label>
@@ -130,7 +131,7 @@
    <section class="mezoria-status-panel">
     <h4>Combat Status</h4>
     <div class="mezoria-status-summary">
-     <div><span>Rank</span><strong>Quartz · 1</strong></div>
+
      <div><span>Movement</span><strong>{{#if status.movement}}{{status.movement}} spaces{{else}}Pending{{/if}}</strong></div>
      <div><span>Dodge</span><strong>{{status.dodge}}%</strong></div>
      <div><span>Action Score Bonus</span><strong>+{{status.initiativeBonus}}</strong></div>
