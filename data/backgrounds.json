@@ -1450,6 +1450,27 @@
         "combatEffect": false
       },
       "notes": "Does not grant supernatural protection, divine favors, free lodging, or immunity to travel hazards."
+    },
+    "Cultist": {
+      "status": "approved",
+      "category": "Social",
+      "attributeBonus": {
+        "Intellect": 2,
+        "Presence": 2
+      },
+      "skillTalent": {
+        "name": "Religion",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Forbidden Doctrine",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Religion checks involving identifying obscure religious symbols, interpreting secretive ceremonial practices, recognizing hidden religious references, and understanding the customs of clandestine religious groups",
+        "additionalEffect": "Recognizes common cult hierarchies, initiation traditions, and signs that an organization is concealing its religious affiliations",
+        "combatEffect": false
+      },
+      "notes": "Does not grant forbidden magic, supernatural powers, secret knowledge of every cult, or automatic membership in a clandestine organization."
     }
   },
   "notes": [
