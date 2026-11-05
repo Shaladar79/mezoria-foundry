@@ -133,9 +133,15 @@
     <div class="mezoria-status-summary">
 
      <div><span>Movement</span><strong>{{#if status.movement}}{{status.movement}} spaces{{else}}Pending{{/if}}</strong></div>
-     <div><span>Dodge</span><strong>{{status.dodge}}%</strong></div>
+     <div><span>Dodge · Effective</span><strong>{{status.dodge}}%</strong></div>
+     <div><span>Dodge · Base</span><strong>{{status.baseDodge}}%</strong></div>
      <div><span>Action Score Bonus</span><strong>+{{status.initiativeBonus}}</strong></div>
     </div>
+    <label class="mezoria-dodge-condition">
+     <input type="checkbox" data-unable-to-evade {{#if status.unableToEvade}}checked{{/if}}>
+     Unable to evade (immobilized or otherwise physically incapable)
+    </label>
+    {{#if status.dodgeSuppressed}}<p class="mezoria-note">Dodge is 0 while unable to evade, unconscious, or dead. Base Dodge remains {{status.baseDodge}}%.</p>{{/if}}
     <div class="mezoria-status-control">
      <label>Current Action Score <input type="number" step="1" data-status-field="actionScore" value="{{status.actionScore}}"></label>
      
