@@ -168,3 +168,9 @@ The 16 non-crafting Intellect skills below are approved, in addition to the seve
 - **Lore: Eternals** is the unified name for the two previously proposed Celestial and Demon creature categories. Celestials and Demons are not standalone Lore skills.
 - All other suggested Lore categories remain under review; no full Lore roster has been finalized.
 - Normal skill tier bonuses remain Talent +5, Expertise +10 total, Mastery +15 total.
+
+## Lore magic terminology — 2026-11-05
+
+- **Lore: Spirit Magic** replaces the proposed name **Lore: Divine Magic**.
+- It covers magic associated with Spirits (deity-like entities), their manifestations, and related spiritual workings.
+- This approves the naming change, not the complete magical Lore roster. Lore remains Intellect-based and trained-only.
