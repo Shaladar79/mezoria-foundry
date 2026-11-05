@@ -74,7 +74,21 @@
       "Presence"
     ],
     "preAllocationBase": 25,
-    "startingAllocationPool": null
+    "startingAllocationPool": 25,
+    "preBonusMaximum": 40,
+    "allocationRules": {
+      "status": "approved",
+      "poolPercentagePoints": 25,
+      "minimumPerAttributeBeforeBonuses": 25,
+      "maximumPerAttributeBeforeBonuses": 40,
+      "pointsMustBeFullyAllocated": true,
+      "allocationBefore": [
+        "race",
+        "background"
+      ],
+      "raceAndBackgroundBonusesApplyAfterAllocation": true,
+      "postBonusMaximumStatus": "not yet defined"
+    }
   },
   "marksOfPower": [
     {
