@@ -77,12 +77,15 @@
         {
           "name": "Sleight of Hand",
           "description": "Palming, concealing, and precisely manipulating objects; not pickpocketing",
-          "governingAttribute": "Prowess"
+          "governingAttribute": "Prowess",
+          "trainedOnly": false
         },
         {
           "name": "Pickpocketing",
           "description": "Stealing carried or worn items directly from people",
-          "governingAttribute": "Prowess"
+          "governingAttribute": "Prowess",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Lockpicking",
@@ -159,12 +162,16 @@
         {
           "name": "Seamanship",
           "description": "Handling sails, rigging, and routine vessel operations",
-          "governingAttribute": "Prowess"
+          "governingAttribute": "Prowess",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Thievery",
           "description": "Assessing security and stealing unattended valuables",
-          "governingAttribute": "Prowess"
+          "governingAttribute": "Prowess",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         }
       ],
       "notes": [
@@ -192,7 +199,9 @@
         {
           "name": "Tracking",
           "description": "Following tracks, trails, and physical signs of passage",
-          "governingAttribute": "Endurance"
+          "governingAttribute": "Endurance",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         }
       ],
       "notes": [
@@ -254,7 +263,9 @@
         {
           "name": "Magic Theory",
           "description": "Understanding magical energies, spell structures, enchantments, and magical phenomena",
-          "governingAttribute": "Intellect"
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Ritual Magic",
@@ -312,12 +323,15 @@
         {
           "name": "Appraisal",
           "description": "Assessing item quality, authenticity, and approximate value",
-          "governingAttribute": "Intellect"
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Religion",
           "description": "Knowledge of faiths, deities, sacred traditions, and theology",
-          "governingAttribute": "Intellect"
+          "governingAttribute": "Intellect",
+          "trainedOnly": false
         },
         {
           "name": "Law",
@@ -341,7 +355,9 @@
         {
           "name": "Tactics",
           "description": "Understanding battlefield formations, positioning, and strategic planning",
-          "governingAttribute": "Intellect"
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Agriculture",
@@ -587,7 +603,8 @@
         {
           "name": "Animal Handling",
           "description": "Training, calming, and guiding animal behavior",
-          "governingAttribute": "Presence"
+          "governingAttribute": "Presence",
+          "trainedOnly": false
         },
         {
           "name": "Commerce",
@@ -970,6 +987,24 @@
       ],
       "minimumTier": "Talent",
       "untrainedChecksAllowed": false
+    },
+    "group2": {
+      "status": "approved",
+      "minimumTier": "Talent",
+      "trainedOnly": [
+        "Magic Theory",
+        "Pickpocketing",
+        "Seamanship",
+        "Thievery",
+        "Tracking",
+        "Tactics",
+        "Appraisal"
+      ],
+      "untrainedAllowed": [
+        "Sleight of Hand",
+        "Animal Handling",
+        "Religion"
+      ]
     }
   }
 }
