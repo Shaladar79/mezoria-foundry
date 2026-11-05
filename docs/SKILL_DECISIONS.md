@@ -160,3 +160,11 @@ The 16 non-crafting Intellect skills below are approved, in addition to the seve
 - All 72 background skill talents match approved skills.
 - Skill totals: Might 10, Prowess 18, Endurance 4, Intellect 26, Presence 12; total 70.
 - Synchronized `data/core-rules.json` governing skill index.
+
+## Lore specialization decisions — 2026-11-05 (partial approval)
+
+- Lore skills are **Intellect-based** and **trained-only**. No untrained Lore checks; each specialization requires at least its own **Talent** to attempt a Lore skill check.
+- **Lore: Mythical Creatures** is replaced by **Lore: Dragons** (dragon-kind) and **Lore: Legends** (unique, one-off creatures). These two specializations are distinct.
+- **Lore: Eternals** is the unified name for the two previously proposed Celestial and Demon creature categories. Celestials and Demons are not standalone Lore skills.
+- All other suggested Lore categories remain under review; no full Lore roster has been finalized.
+- Normal skill tier bonuses remain Talent +5, Expertise +10 total, Mastery +15 total.
