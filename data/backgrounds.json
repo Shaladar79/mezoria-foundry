@@ -1303,6 +1303,27 @@
         "combatEffect": false
       },
       "notes": "Does not automatically grant wealth, political authority, property, or guaranteed cooperation from other nobles."
+    },
+    "Disgraced Noble": {
+      "status": "approved",
+      "category": "Social",
+      "attributeBonus": {
+        "Presence": 2,
+        "Endurance": 2
+      },
+      "skillTalent": {
+        "name": "Etiquette",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Fallen From Grace",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Etiquette checks involving navigating hostile aristocratic gatherings, recognizing subtle insults or social exclusion, concealing a loss of status, and negotiating with nobles who may distrust or look down upon them",
+        "additionalEffect": "Recognizes signs of declining noble influence, political disgrace, and informal social networks of aristocratic society",
+        "combatEffect": false
+      },
+      "notes": "Does not restore lost titles, wealth, or political influence."
     }
   },
   "notes": [
