@@ -76,3 +76,43 @@
 .mezoria.sheet .mezoria-skill-count{font-weight:400;color:#333!important}
 .mezoria.sheet .mezoria-untrained-skills h5{font-size:14px;margin:10px 0;color:#111!important}
 .mezoria.sheet .mezoria-empty-skills{font-size:13px;font-style:italic;color:#333!important;padding:10px 0}
+
+/* v0.2.5 — side-by-side compact Skills panel layout */
+.mezoria.sheet .mezoria-skills-panel{max-width:none!important;padding:12px 14px!important}
+.mezoria.sheet .mezoria-skill-panels{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;align-items:start}
+.mezoria.sheet .mezoria-skill-panel{min-width:0;background:#faf8f2;border:1px solid #a49d91;border-radius:7px;overflow:hidden}
+.mezoria.sheet .mezoria-skill-panel-title{display:flex;align-items:center;justify-content:space-between;gap:4px;padding:8px 9px 6px;background:#e4ddce;border-bottom:1px solid #a59d8d}
+.mezoria.sheet .mezoria-skill-panel-title h4{margin:0;font-size:13px;color:#111!important;line-height:1.3}
+.mezoria.sheet .mezoria-skill-panel-title span{font-size:10px;color:#333!important}
+.mezoria.sheet .mezoria-compact-columns,.mezoria.sheet .mezoria-compact-row{
+ display:grid;grid-template-columns:minmax(0,1fr) 33px 62px 48px 38px;
+ gap:3px;align-items:center;min-width:0
+}
+.mezoria.sheet .mezoria-compact-columns{padding:5px 7px;background:#f1eadc;border-bottom:1px solid #b8afa1;font-size:10px;font-weight:700}
+.mezoria.sheet .mezoria-compact-row{padding:3px 7px;min-height:27px;border-bottom:1px solid #dfd8cb;font-size:11px;line-height:1.2;color:#111!important}
+.mezoria.sheet .mezoria-compact-row:nth-child(even){background:#eee9df}
+.mezoria.sheet .mezoria-compact-row:last-child{border-bottom:0}
+.mezoria.sheet .mezoria-compact-row span{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#111!important}
+.mezoria.sheet .mezoria-compact-name{font-weight:600}
+.mezoria.sheet .mezoria-compact-tn{font-variant-numeric:tabular-nums}
+.mezoria.sheet .mezoria-compact-row button{
+ display:inline-flex;align-items:center;justify-content:center;
+ width:38px!important;min-width:38px!important;height:22px!important;min-height:22px!important;
+ padding:1px!important;margin:0!important;line-height:1!important;font-size:10px!important;
+ color:#111!important;background:#b8ded2!important;border:1px solid #356354!important;border-radius:4px!important;cursor:pointer
+}
+.mezoria.sheet .mezoria-skill-scroll{height:300px;max-height:300px;overflow-y:auto;overflow-x:hidden;scrollbar-width:thin;scrollbar-color:#8c978f #eee7dc}
+.mezoria.sheet .mezoria-skill-scroll::-webkit-scrollbar{width:9px}
+.mezoria.sheet .mezoria-skill-scroll::-webkit-scrollbar-thumb{background:#8c978f;border-radius:4px}
+.mezoria.sheet .mezoria-skill-attribute-tabs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:3px;padding:6px;margin:0!important;background:#f4efe5}
+.mezoria.sheet .mezoria-skill-attribute-tabs button{
+ min-width:0!important;min-height:25px!important;height:25px!important;padding:2px 0!important;
+ font-size:10px!important;flex:none!important;text-align:center;line-height:1!important;
+ background:#fff!important;color:#111!important;border:1px solid #8c8c8c!important;border-radius:4px!important
+}
+.mezoria.sheet .mezoria-skill-attribute-tabs button.active{background:#afd8c9!important;border:2px solid #245a4d!important}
+.mezoria.sheet .mezoria-skill-panel .mezoria-empty-skills{margin:9px}
+@media(max-width:690px){
+ .mezoria.sheet .mezoria-skill-panels{grid-template-columns:1fr}
+ .mezoria.sheet .mezoria-skill-scroll{height:210px;max-height:210px}
+}
