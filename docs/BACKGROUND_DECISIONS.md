@@ -443,3 +443,8 @@
 - **Academic** removed from Social roster by user decision; it is now excluded.
 - Its proposed attributes, Research Talent, and Academic Authority were never approved, and no Academic mechanics were finalized.
 - Social roster now contains **17 approved backgrounds**, **10** individually defined. Continue with **Apprentice**.
+
+## Social roster revision: Apprentice removed (approved)
+- **Apprentice** removed from Social background roster by user decision; it is now excluded.
+- Proposed +2 Prowess/+2 Intellect, Learning Talent, and Eager Student were never approved; no individual Apprentice rules were finalized.
+- Social roster now contains **16 approved backgrounds**, **10** individually defined. Continue with **Entertainer**.
