@@ -346,3 +346,9 @@
 - Granted Skill Talent: **Survival** (+5 percentage points), with governing attribute pending skill design.
 - Non-combat ability **Outlaw's Instinct**: +10 percentage points to non-combat Survival checks involving identifying suitable wilderness camps, locating concealed approaches to roads and trails, recognizing signs of recent travel, and finding escape routes through rough terrain. Recognizes common signs of outlaw encampments, heavily traveled merchant routes, and locations where travelers typically stop to rest.
 - Does not grant combat ambush bonuses, additional damage, or automatic surprise. Distinct from Enforcer's intimidation specialization.
+
+## Pirate Criminal Background (approved)
+- Attributes: **+2 percentage points Prowess** and **+2 percentage points Presence**.
+- Granted Skill Talent: **Seamanship** (+5 percentage points), with governing attribute pending skill design.
+- Non-combat ability **Freebooter's Instinct**: +10 percentage points on non-combat Seamanship checks involving identifying suitable landing locations, navigating coastal waters, recognizing opportunities for discreet boarding, and evaluating unfamiliar vessels from a sailor's perspective. Recognizes common pirate signals, maritime outlaw customs, and signs a vessel was recently raided or abandoned.
+- Does not grant combat boarding bonuses, additional damage, or automatic surprise. Distinct from Sailor's ordinary maritime work.
