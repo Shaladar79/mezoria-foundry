@@ -249,3 +249,12 @@ The following nine skills are **trained-only**, requiring at least **Talent** to
 - **Untrained checks allowed:** Sleight of Hand, Animal Handling, Religion.
 - Trained-only count is now **51**: Lore 21 + crafting 14 + Group 1 nine + Group 2 seven. Three additional Group 2 skills have explicitly approved untrained access.
 - All remaining non-Lore, non-crafting skill training access requires the final audit.
+
+## Final training audit complete — 2026-11-05
+
+- **Research** is trained-only (Talent minimum).
+- **Nine other review candidates allow untrained checks:** Mining, Woodcutting, Riding, Fishing, Escape Artist, History, Law, Agriculture, Diplomacy.
+- **Final 27 remaining skills allow untrained checks:** Athletics, Brawn, Grappling, Unarmed Combat, Heavy Weapons, Intimidation, Acrobatics, Stealth, Melee Weapons, Ranged Weapons, Throwing Weapons, Survival, Breath Control, Resilience, Concentration, Investigation, Nature, Persuasion, Deception, Etiquette, Insight, Streetwise, Leadership, Performance, Commerce, Hospitality, Discipline.
+- Total: **91 approved skills**, **52 trained-only**, **39 available untrained**. Every skill is now explicitly classified.
+- Untrained characters roll the governing attribute with no training bonus when a check is required. This does not grant specialized techniques or eliminate existing limitations.
+- Existing trained-only restrictions for all 21 Lore skills, all 14 crafts, Group 1 nine, and Group 2 seven remain unchanged.
