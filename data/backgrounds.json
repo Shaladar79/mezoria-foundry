@@ -1126,6 +1126,27 @@
         "combatEffect": false
       },
       "notes": "Does not grant combat damage bonuses or automatically compel compliance."
+    },
+    "Racketeer": {
+      "status": "approved",
+      "category": "Criminal",
+      "attributeBonus": {
+        "Intellect": 2,
+        "Presence": 2
+      },
+      "skillTalent": {
+        "name": "Intimidation",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Protection Racket",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Intimidation checks involving establishing protection arrangements, extracting payments through threats, negotiating with reluctant business owners, and maintaining influence over illicit operations",
+        "additionalEffect": "Recognizes common extortion schemes, signs of criminal control over local businesses, and informal power structures of organized crime",
+        "combatEffect": false
+      },
+      "notes": "Does not automatically provide an established criminal organization, loyal followers, or income from protection payments."
     }
   },
   "notes": [
