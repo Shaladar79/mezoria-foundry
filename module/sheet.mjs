@@ -189,7 +189,29 @@ export class MezoriaCharacterSheet extends ActorSheet {
    if(!Number.isInteger(num)||!Number.isFinite(num)||(key==="woundsTaken"&&num<0)){
     ui.notifications.warn("Enter a valid whole-number status value.");this.render(false);return;
    }
+   if(key==="woundsTaken"&&this.actor.system.deathState!=="dead"){
+    const cap=deriveCharacter(this.actor.system,await loadCreationRules()).status.woundCapacity;
+    if(cap!==null&&num<cap){
+     await this.actor.update({"system.woundsTaken":num,"system.deathSaveFailures":0,"system.deathState":"none"});
+     return;
+    }
+   }
    await this.actor.update({["system."+key]:num});
+  });
+  html.find("[data-death-save]").on("click",async event=>{
+   event.preventDefault();
+   const data=deriveCharacter(this.actor.system,await loadCreationRules());
+   if(!data.status.bleedingToDeath){ui.notifications.warn("Death saves are available only while Bleeding to Death.");return;}
+   const target=data.status.deathSaveTN;
+   const roll=await(new Roll("1d100")).evaluate();
+   const success=roll.total<=target||roll.total<=5;
+   const failures=success?data.status.deathSaveFailures:Math.min(3,data.status.deathSaveFailures+1);
+   const nextState=success?"stabilized":failures>=3?"dead":"none";
+   await this.actor.update({"system.deathSaveFailures":failures,"system.deathState":nextState});
+   const label=success?"Stabilized":nextState==="dead"?"Death — third failed save":"Failed death save ("+failures+"/3)";
+   await roll.toMessage({speaker:ChatMessage.getSpeaker({actor:this.actor}),
+    flavor:"Endurance Death Save — TN "+target+"% — <strong>"+label+"</strong>"+
+    (success?(data.status.currentLifeForce>0?" · Conscious":" · Unconscious at 0 LifeForce"):" · Next TN penalty: -"+(failures*5)+"%")});
   });
   html.find("[data-resource-recovery]").on("click",async event=>{
    event.preventDefault();
@@ -202,7 +224,13 @@ export class MezoriaCharacterSheet extends ActorSheet {
    const lifeNext=Math.min(lifeMax,data.status.currentLifeForce+gain(lifeMax));
    const manaNext=Math.min(manaMax,data.status.currentMana+gain(manaMax));
    const updates={"system.currentLifeForce":lifeNext,"system.currentMana":manaNext};
-   if(kind==="full")updates["system.woundsTaken"]=Math.max(0,data.status.woundsTaken-1);
+   if(kind==="full"){
+    const afterWounds=Math.max(0,data.status.woundsTaken-1);
+    updates["system.woundsTaken"]=afterWounds;
+    if(this.actor.system.deathState!=="dead"&&data.status.woundCapacity!==null&&afterWounds<data.status.woundCapacity){
+     updates["system.deathSaveFailures"]=0;updates["system.deathState"]="none";
+    }
+   }
    await this.actor.update(updates);
   });
   html.find("[data-current-resource]").on("change",async event=>{
