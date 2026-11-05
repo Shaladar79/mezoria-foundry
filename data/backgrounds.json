@@ -1471,6 +1471,26 @@
         "combatEffect": false
       },
       "notes": "Does not grant forbidden magic, supernatural powers, secret knowledge of every cult, or automatic membership in a clandestine organization."
+    },
+    "Scholar": {
+      "status": "approved",
+      "category": "Social",
+      "attributeBonus": {
+        "Intellect": 4
+      },
+      "skillTalent": {
+        "name": "Research",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Learned Mind",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Research checks involving locating information in written sources, comparing historical accounts, evaluating scholarly references, and identifying useful information within unfamiliar academic materials",
+        "additionalEffect": "Recognizes common scholarly conventions, reference systems, and methods used to organize libraries and collections of knowledge",
+        "combatEffect": false
+      },
+      "notes": "Does not automatically reveal unknown information, grant expertise in every field, or provide magical knowledge."
     }
   },
   "notes": [
