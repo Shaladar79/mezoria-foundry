@@ -97,7 +97,19 @@
         "guardian",
         "bulwark",
         "vanguard"
-      ]
+      ],
+      "startingSkillOptions": [
+        "Athletics",
+        "Grappling",
+        "Heavy Weapons",
+        "Melee Weapons",
+        "Tactics",
+        "Resilience",
+        "Discipline",
+        "Leadership"
+      ],
+      "startingSkillSelectionCount": 2,
+      "startingSkillOptionsStatus": "approved"
     },
     {
       "id": "striker",
@@ -105,7 +117,19 @@
         "ravager",
         "reaver",
         "marksman"
-      ]
+      ],
+      "startingSkillOptions": [
+        "Heavy Weapons",
+        "Melee Weapons",
+        "Ranged Weapons",
+        "Throwing Weapons",
+        "Unarmed Combat",
+        "Athletics",
+        "Tactics",
+        "Intimidation"
+      ],
+      "startingSkillSelectionCount": 2,
+      "startingSkillOptionsStatus": "approved"
     },
     {
       "id": "skirmisher",
@@ -113,7 +137,19 @@
         "stalker",
         "duelist",
         "ranger"
-      ]
+      ],
+      "startingSkillOptions": [
+        "Acrobatics",
+        "Stealth",
+        "Melee Weapons",
+        "Ranged Weapons",
+        "Throwing Weapons",
+        "Tracking",
+        "Riding",
+        "Escape Artist"
+      ],
+      "startingSkillSelectionCount": 2,
+      "startingSkillOptionsStatus": "approved"
     },
     {
       "id": "warden",
@@ -121,7 +157,19 @@
         "restoration",
         "lifebinder",
         "preserver"
-      ]
+      ],
+      "startingSkillOptions": [
+        "Medicine",
+        "Nature",
+        "Survival",
+        "Animal Handling",
+        "Insight",
+        "Concentration",
+        "Magic Theory",
+        "Herbalism"
+      ],
+      "startingSkillSelectionCount": 2,
+      "startingSkillOptionsStatus": "approved"
     },
     {
       "id": "arcanist",
@@ -129,7 +177,19 @@
         "evoker",
         "enchanter",
         "conjurer"
-      ]
+      ],
+      "startingSkillOptions": [
+        "Magic Theory",
+        "Ritual Magic",
+        "Use Magic Device",
+        "Concentration",
+        "Research",
+        "Lore: Elemental Magic",
+        "Lore: Concept Magic",
+        "Lore: Astral Magic"
+      ],
+      "startingSkillSelectionCount": 2,
+      "startingSkillOptionsStatus": "approved"
     },
     {
       "id": "adept",
@@ -137,7 +197,19 @@
         "traveler",
         "herald",
         "artificer"
-      ]
+      ],
+      "startingSkillOptions": [
+        "Tinkering",
+        "Engineering",
+        "Navigation",
+        "Investigation",
+        "Research",
+        "Use Magic Device",
+        "Sleight of Hand",
+        "Persuasion"
+      ],
+      "startingSkillSelectionCount": 2,
+      "startingSkillOptionsStatus": "approved"
     }
   ],
   "characterCreation": {
@@ -148,7 +220,7 @@
       "playerChoiceCount": 3,
       "backgroundGrantCount": 1,
       "backgroundOptionsStatus": "All four background categories and 72 definitions finalized in data/backgrounds.json",
-      "markSkillListsStatus": "under review; must define an eligible list for each of six Marks",
+      "markSkillListsStatus": "approved; eight eligible skills for each of six Marks",
       "raceOptionsStatus": "Race roster and racial definitions recorded in data/races.json; outstanding mechanics noted there",
       "skillSelectionsStatus": "not yet finalized",
       "advancementDesignStatus": "deferred until Rank advancement and Essence (XP) spending section",
@@ -156,7 +228,7 @@
         "status": "approved",
         "count": 2,
         "selectionMethod": "Choose two distinct Skill Talents from the selected Mark of Power's own eligible skill list",
-        "eligibleMarkListsStatus": "proposed lists under review; not yet finalized",
+        "eligibleMarkListsStatus": "approved",
         "startingTier": "Talent",
         "duplicateSelectionsAllowed": false
       }
