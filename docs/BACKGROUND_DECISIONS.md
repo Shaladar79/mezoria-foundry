@@ -495,3 +495,8 @@
 - **Text consistency finding:** Farmer's Bountiful Harvest and Rancher's ability describe qualifying 'Checks' rather than explicitly specifying 'Non-combat checks'; the overarching rule and `combatEffect: false` already restrict them to non-combat use. Clarify descriptions during future editing, without changing gameplay.
 - **Implementation work still pending:** governing attributes for added skills and any other unapproved skill-system details remain unresolved; detailed Foundry VTT implementation and automated tests are not complete.
 - Updated stale `data/backgrounds.json` completion status/notes during this audit; no background attributes, talents, abilities, or combat rules were changed. Prior historical roster proposals remain recorded above but are superseded by later decisions.
+
+## Cutpurse correction — 2026-11-05 (approved)
+
+- Cutpurse now grants **Pickpocketing Talent (+5)** instead of Thievery; its **Light Fingers** bonus applies to qualifying non-combat Pickpocketing checks (+10).
+- Thief retains Thievery. Cutpurse's attribute bonus and other feature effects remain unchanged.
