@@ -531,6 +531,13 @@
           "Discipline"
         ]
       }
+    },
+    "loreTraining": {
+      "status": "approved",
+      "governingAttribute": "Intellect",
+      "trainedOnly": true,
+      "minimumTier": "talent",
+      "scope": "All Lore specializations, including future additions"
     }
   },
   "rolls": {
