@@ -145,3 +145,18 @@ The 16 non-crafting Intellect skills below are approved, in addition to the seve
 - Tactics does not automatically grant attacks, damage, or Action Score.
 - Forgery defaults to Intellect for designing convincing documents; the GM may use Prowess for precision execution with the same skill proficiency.
 - **Presence** remains the next attribute roster to review.
+
+## Approved background-skill alignment — 2026-11-05
+
+- **Prowess:** Fishing, Seamanship, Thievery.
+- **Endurance:** Tracking.
+- **Intellect:** Agriculture, Prospecting, Smuggling.
+- **Presence:** Persuasion, Deception, Diplomacy, Etiquette, Insight, Streetwise, Leadership, Performance, Animal Handling, Commerce, Hospitality, Discipline.
+
+- Cutpurse grants Pickpocketing, not Thievery; Thief retains Thievery.
+- Discipline (Presence) covers self-control; Concentration (Intellect) covers task focus.
+- Interrogation and Teaching are not approved independent skills.
+- Animal Lore is deferred for Lore review; magical Inscription remains reserved.
+- All 72 background skill talents match approved skills.
+- Skill totals: Might 10, Prowess 18, Endurance 4, Intellect 26, Presence 12; total 70.
+- Synchronized `data/core-rules.json` governing skill index.
