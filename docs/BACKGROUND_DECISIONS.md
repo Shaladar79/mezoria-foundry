@@ -316,3 +316,9 @@
 - Granted Skill Talent: **Commerce** (+5 percentage points), reusing the skill established by Merchant; governing attribute pending skill design.
 - Non-combat ability **Underworld Appraiser**: +10 percentage points to non-combat Commerce checks involving appraising stolen merchandise, negotiating illicit purchases or sales, identifying altered or disguised valuables, and estimating resale value in underground markets. Recognizes common signs of stolen goods, suspicious ownership claims, and types of merchandise sought by illicit buyers.
 - Does not automatically establish criminal contacts or guarantee a buyer for stolen merchandise. Distinct from Merchant's legitimate trade focus.
+
+## Poacher Criminal Background (approved)
+- Attributes: **+2 percentage points Prowess** and **+2 percentage points Endurance**.
+- Granted Skill Talent: **Tracking** (+5 percentage points), governing attribute pending skill design.
+- Non-combat ability **Hidden Trails**: +10 percentage points on non-combat Tracking checks involving locating animal trails, identifying signs of recent wildlife activity, finding concealed game paths, and avoiding leaving obvious signs of one's own passage through wilderness terrain. Recognizes common feeding grounds, watering locations, and seasonal migration patterns.
+- Does not grant bonuses to combat attacks or damage against animals. Distinct from Hunter's food gathering and wilderness survival focus.
