@@ -1210,6 +1210,27 @@
         "combatEffect": false
       },
       "notes": "Does not automatically detect magical traps, disarm hazards, or protect against undead."
+    },
+    "Spy": {
+      "status": "approved",
+      "category": "Criminal",
+      "attributeBonus": {
+        "Intellect": 2,
+        "Presence": 2
+      },
+      "skillTalent": {
+        "name": "Investigation",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Eyes and Ears",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Investigation checks involving discreetly gathering information, identifying inconsistencies in cover stories, observing suspicious behavior, and piecing together clues from conversations and everyday activity",
+        "additionalEffect": "Recognizes common espionage signals, surveillance patterns, and methods of covert communication",
+        "combatEffect": false
+      },
+      "notes": "Does not automatically reveal secrets, identify all disguised individuals, or grant bonuses to combat stealth."
     }
   },
   "notes": [
