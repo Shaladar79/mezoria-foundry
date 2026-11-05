@@ -368,3 +368,9 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - Character sheet header has name, race, conditional Mythrain tribe / Draconian clan / Scion aspect, background, and Mark fields.
 - Two sheet tabs: Attributes and Status, Skills. Show attribute saving rolls at current attribute TN. Skills tab shows all untrained-available skills plus trained skills, with trained skills first, and TN plus roll action; trained-only skills not trained remain hidden.
 - Keep Health, Mana, other unfinished stats as placeholders pending rules approval. Normal percentile rolls use the system's d100 roll-under convention.
+
+## Starting attribute baseline revision — 2026-11-05
+
+- **Supersedes previous 25% starting base:** All five attributes (Might, Prowess, Endurance, Intellect, Presence) now begin at **35%** before any point allocation or racial/background modifiers.
+- Players still distribute **35 percentage points** among the five attributes. The **+15 point maximum per individual attribute** remains unchanged, making the updated pre-racial/background maximum **50%** (35% base +15%). No maximum after bonuses has been approved.
+- Character creator, attribute save TNs, skill TNs, and displayed sheet values must all use the new 35% base; the rest of the rules remain unchanged.
