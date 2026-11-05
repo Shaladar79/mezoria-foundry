@@ -978,14 +978,14 @@
         "Prowess": 4
       },
       "skillTalent": {
-        "name": "Thievery",
+        "name": "Pickpocketing",
         "tier": "Talent",
         "bonusPercentagePoints": 5
       },
       "nonCombatAbility": {
         "name": "Light Fingers",
         "conditionalBonusPercentagePoints": 10,
-        "appliesTo": "Non-combat Thievery checks involving discreetly taking small objects from people, concealing stolen items, and performing sleight-of-hand theft in crowded locations",
+        "appliesTo": "Non-combat Pickpocketing checks involving discreetly removing small objects from people, concealing stolen items, and exploiting crowded distractions",
         "additionalEffect": "Recognizes situations where crowds, distractions, or clothing make valuables easier to steal",
         "combatEffect": false
       }
