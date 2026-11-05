@@ -1094,11 +1094,32 @@
         "healing (mechanics pending)"
       ],
       "roundingForFractionalRestoration": "round up to the next whole LifeForce point",
-      "restDurations": "pending",
+      "restDurations": "Light rest 4 hours; full rest 8 hours",
       "otherRanks": "pending",
       "talentScaling": "pending",
       "healingActions": "pending",
-      "woundInteraction": "Rest and LifeForce regeneration do not automatically remove Wounds; Wound healing requires its own rules"
+      "woundInteraction": "Rest and LifeForce regeneration do not automatically remove Wounds; Wound healing requires its own rules",
+      "lightRestHours": 4,
+      "fullRestHours": 8
+    },
+    "manaRecovery": {
+      "status": "approved Quartz baseline",
+      "quartzRegenerationPerTurn": 1,
+      "lightRestHours": 4,
+      "fullRestHours": 8,
+      "lightRestRestoreFractionOfMaximum": 0.5,
+      "fullRestRestoreFractionOfMaximum": 1,
+      "roundingForFractionalRestoration": "round up to the next whole Mana point",
+      "maximumCap": "Mana cannot be restored above its maximum",
+      "otherRanks": "pending",
+      "talentScaling": "pending"
+    },
+    "restRule": {
+      "lightRestHours": 4,
+      "fullRestHours": 8,
+      "lightRest": "Restore 50% of maximum LifeForce and Mana (round up to whole points), capped at maximum",
+      "fullRest": "Restore both LifeForce and Mana to full maximum",
+      "wounds": "No Wound removal is implied by resource restoration"
     }
   },
   "combat": {
