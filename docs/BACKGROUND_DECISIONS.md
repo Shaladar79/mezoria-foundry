@@ -485,3 +485,13 @@
 - Non-combat ability **Voice of Change**: +10 percentage points on non-combat Persuasion checks involving rallying support for social or political reform, explaining revolutionary ideals, organizing peaceful demonstrations, and convincing sympathetic individuals to support a shared cause. Recognizes signs of political unrest, common grievances among communities, and symbols associated with resistance movements.
 - Does not automatically grant followers, political influence, combat bonuses, or guaranteed support for revolutionary causes. Distinct from Politician's work within established institutions.
 - **All 16 approved Social backgrounds are now individually defined.**
+
+## Background system audit — 2026-11-05 (structural review)
+- **72/72** rostered backgrounds have approved definitions: Common 20, Tradesman 20, Criminal 16, Social 16. No missing, extra, or category-mismatched definitions.
+- **72/72** award exactly +4 percentage points of attributes via +4 to one attribute or +2 each to two distinct approved attributes.
+- **72/72** grant exactly one Skill Talent at **+5 percentage points**.
+- **72/72** define one non-combat background ability, flagged `combatEffect: false`, each with a **+10 percentage-point conditional bonus**.
+- **46 unique granted skills** are represented in `data/core-rules.json` `skills.approvedAdditions` without duplicate skill records. Reuse of Survival, Etiquette, Persuasion, Investigation, and Religion by different backgrounds is intentional and does not stack talents.
+- **Text consistency finding:** Farmer's Bountiful Harvest and Rancher's ability describe qualifying 'Checks' rather than explicitly specifying 'Non-combat checks'; the overarching rule and `combatEffect: false` already restrict them to non-combat use. Clarify descriptions during future editing, without changing gameplay.
+- **Implementation work still pending:** governing attributes for added skills and any other unapproved skill-system details remain unresolved; detailed Foundry VTT implementation and automated tests are not complete.
+- Updated stale `data/backgrounds.json` completion status/notes during this audit; no background attributes, talents, abilities, or combat rules were changed. Prior historical roster proposals remain recorded above but are superseded by later decisions.
