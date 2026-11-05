@@ -16,7 +16,7 @@ export class MezoriaCharacterSheet extends ActorSheet {
   const s=this.actor.system, d=deriveCharacter(s,data);
   const race=d.race, bg=d.background,subgroups=raceSubgroups(race), mark=d.mark;
   const steps=["race","background","mark","free","review"];
-  return {...base,step:this.creationStep,
+  return {...base,system:s,step:this.creationStep,
    steps:steps.map((key,i)=>({key,title:(i+1)+". "+({race:"Race",background:"Background",mark:"Mark",free:"Free Talents",review:"Sheet"}[key]),active:key===this.creationStep})),
    stepRace:this.creationStep==="race",stepBackground:this.creationStep==="background",stepMark:this.creationStep==="mark",
    stepFree:this.creationStep==="free",stepReview:this.creationStep==="review",
