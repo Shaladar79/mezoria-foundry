@@ -334,3 +334,9 @@
 - Granted Skill Talent: **Intimidation** (+5 percentage points), governing attribute pending skill design.
 - Non-combat ability **Menacing Reputation**: +10 percentage points to non-combat Intimidation checks involving collecting debts, discouraging unwanted interference, pressuring reluctant individuals, and establishing authority through an imposing presence. Recognizes signs of fear, hesitation, and submission during tense social encounters.
 - Does not grant combat damage bonuses or automatically compel compliance. Distinct from Racketeer's organized extortion and protection schemes.
+
+## Racketeer Criminal Background (approved)
+- Attributes: **+2 percentage points Intellect** and **+2 percentage points Presence**.
+- Granted Skill Talent: **Intimidation** (+5 percentage points), reusing the skill introduced by Enforcer; governing attribute pending skill design.
+- Non-combat ability **Protection Racket**: +10 percentage points to non-combat Intimidation checks involving establishing protection arrangements, extracting payments through threats, negotiating with reluctant business owners, and maintaining influence over illicit operations. Recognizes common extortion schemes, signs of criminal control over local businesses, and informal power structures of organized crime.
+- Does not automatically provide an established criminal organization, loyal followers, or income from protection payments. Distinct from Enforcer's direct intimidation focus.
