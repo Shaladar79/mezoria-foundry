@@ -108,3 +108,10 @@ Roll buttons submit Foundry chat messages indicating TN, result, success/failure
 - Enter a name on the **last** creator step and finish; confirm the header and both tabs persist after closing and reopening.
 - Verify trained skills appear first; untrained-available skills appear next; untrained trained-only skills are hidden.
 - Roll an attribute save and a trained/untrained skill; confirm TN, chat result, and roll-under behavior.
+
+## Selection defaults and visible bonuses — 2026-11-05
+
+- Newly created Character Actors start with **Race, Background, and Mark unset**. Every corresponding dropdown displays **None Selected** until the player explicitly chooses one; creation validation requires each choice.
+- Race and Background dropdown option labels list their attribute bonuses. Races whose bonus is subgroup-specific indicate this, and the current race/subgroup and background bonuses are listed beneath each selection as separate positive percentage-point adjustments. Humans continue to choose three +2% attributes.
+- Mark Talent controls only appear once a Mark has been selected; after selection, the Mark's eight eligible skill options populate both Talent dropdowns. This prevents the preselected-Mark issue reported during testing.
+- Existing Character Actors retain their previous selections. Blank defaults only apply to new Actors, not stored data.
