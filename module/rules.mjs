@@ -40,7 +40,7 @@ export function deriveCharacter(s,rulebook=cache){
  const selected=[b?.skillTalent?.name,...markTalents,...freeTalents,...(s.race==="Human"?[racialTalent]:[])];
  const errors=[];
  const spent=scores.reduce((sum,a)=>sum+a.allocated,0);
- if(spent!==25)errors.push("Allocate exactly 25 points (currently "+spent+").");
+ if(spent!==35)errors.push("Allocate exactly 35 points (currently "+spent+").");
  if(scores.some(a=>!Number.isInteger(a.allocated)||a.allocated<0||a.allocated>15))errors.push("Each attribute allocation must be 0–15 whole points.");
  if(!r)errors.push("Choose a valid race.");
  if(!b)errors.push("Choose a valid background.");
@@ -55,5 +55,5 @@ export function deriveCharacter(s,rulebook=cache){
  const bonuses={race:rb,background:bb};
  const skillIndex=new Map(rulebook.skills.map(x=>[x.name,x]));
  const talents=[{name:b?.skillTalent?.name,source:"Background"},...markTalents.map(name=>({name,source:"Mark"})),...freeTalents.map(name=>({name,source:"Free"})),...(s.race==="Human"?[{name:racialTalent,source:"Racial"}]:[])].filter(x=>x.name).map(x=>({...x,attribute:skillIndex.get(x.name)?.governingAttribute||"",bonus:5}));
- return {race:r,subgroup:sub,background:b,mark:m,scores,bonuses,spent,remaining:25-spent,talents,errors,movement:sub?.movement?.ground??r?.baseMovement??null};
+ return {race:r,subgroup:sub,background:b,mark:m,scores,bonuses,spent,remaining:35-spent,talents,errors,movement:sub?.movement?.ground??r?.baseMovement??null};
 }
