@@ -1168,6 +1168,27 @@
         "combatEffect": false
       },
       "notes": "Does not grant combat ambush bonuses, additional damage, or automatic surprise."
+    },
+    "Pirate": {
+      "status": "approved",
+      "category": "Criminal",
+      "attributeBonus": {
+        "Prowess": 2,
+        "Presence": 2
+      },
+      "skillTalent": {
+        "name": "Seamanship",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Freebooter's Instinct",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Seamanship checks involving identifying suitable landing locations, navigating coastal waters, recognizing opportunities for discreet boarding, and evaluating unfamiliar vessels from a sailor's perspective",
+        "additionalEffect": "Recognizes common pirate signals, maritime outlaw customs, and signs that a vessel has been recently raided or abandoned",
+        "combatEffect": false
+      },
+      "notes": "Does not grant combat boarding bonuses, additional damage, or automatic surprise."
     }
   },
   "notes": [
