@@ -1080,6 +1080,25 @@
     "quartzFormula": {
       "LifeForce": "3 * (floor(Might/10) + floor(Endurance/10))",
       "Mana": "3 * (floor(Intellect/10) + floor(Presence/10))"
+    },
+    "lifeForceRecovery": {
+      "status": "approved Quartz baseline",
+      "quartzRegenerationPerTurn": 1,
+      "lightRestRestoreFractionOfMaximum": 0.5,
+      "fullRestRestoreFractionOfMaximum": 1,
+      "maximumCap": "LifeForce cannot be restored above its calculated maximum",
+      "sources": [
+        "natural rank-based regeneration",
+        "talent modifiers (details pending)",
+        "rest",
+        "healing (mechanics pending)"
+      ],
+      "roundingForFractionalRestoration": "round up to the next whole LifeForce point",
+      "restDurations": "pending",
+      "otherRanks": "pending",
+      "talentScaling": "pending",
+      "healingActions": "pending",
+      "woundInteraction": "Rest and LifeForce regeneration do not automatically remove Wounds; Wound healing requires its own rules"
     }
   },
   "combat": {
