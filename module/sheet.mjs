@@ -30,6 +30,7 @@ export class MezoriaCharacterSheet extends ActorSheet {
   super(...args);
   this.creationStep=null; // New Actors open on their sheet, not in the creator.
   this.sheetTab="attributes";
+  this.skillAttributeTab="Might";
  }
  static get defaultOptions(){
   return foundry.utils.mergeObject(super.defaultOptions,{
@@ -58,6 +59,15 @@ export class MezoriaCharacterSheet extends ActorSheet {
    return {name:skill.name,attr:skill.governingAttribute,trained,tn:target+(trained?5:0),
      bonus:trained?5:0,trainedLabel:trained?"Talent (+5)":"Untrained"};
   }).sort((a,b)=>Number(b.trained)-Number(a.trained)||a.name.localeCompare(b.name));
+  // Trained skills remain in one permanent section; only untrained-usable skills
+  // are filtered by the currently selected governing attribute sub-tab.
+  const trainedSkills=skillRows.filter(row=>row.trained);
+  const untrainedSkillRows=skillRows.filter(row=>!row.trained);
+  const skillAttributeTabs=ATTRS.map(name=>({
+   name,active:this.skillAttributeTab===name,
+   count:untrainedSkillRows.filter(row=>row.attr===name).length
+  }));
+  const attributeSkills=untrainedSkillRows.filter(row=>row.attr===this.skillAttributeTab);
   const raceTraits=[...(race?.traits||[]),...(race?.abilities||[]),
    ...(derived.subgroup?.innateAbility?[derived.subgroup.innateAbility]:[])].map(x=>({name:x.name,description:x.effect||x.description||x.condition||""}));
   const subgroupType=race?.subgroupType==="tribes"?"Tribe":race?.subgroupType==="clans"?"Clan":race?.subgroupType==="aspects"?"Aspect":"";
@@ -70,8 +80,9 @@ export class MezoriaCharacterSheet extends ActorSheet {
    headerMark:system.mark?(mark?.id?.charAt(0).toUpperCase()+mark?.id?.slice(1)||system.mark):"None Selected",headerSubgroup:system.subgroup,showSubgroup:!!subgroupType,subgroupType,
    sheetAttributes:this.sheetTab==="attributes",sheetSkills:this.sheetTab==="skills",
    attrTabActive:this.sheetTab==="attributes",skillsTabActive:this.sheetTab==="skills",
-   attributes:derived.scores,skillRows,trainedCount:skillRows.filter(s=>s.trained).length,
-   untrainedCount:skillRows.filter(s=>!s.trained).length, 
+   attributes:derived.scores,trainedSkills,skillAttributeTabs,attributeSkills,
+   selectedSkillAttribute:this.skillAttributeTab,
+   trainedCount:trainedSkills.length,untrainedCount:untrainedSkillRows.length, 
    raceTraits,
    steps:stepKeys.map((key,i)=>({key,title:(i+1)+". "+({
     race:"Race",background:"Background",mark:"Mark",free:"Free Talents",
@@ -104,6 +115,7 @@ export class MezoriaCharacterSheet extends ActorSheet {
   html.find("[data-close-creator]").on("click",event=>{event.preventDefault();this.creationStep=null;this.render(false);});
   html.find("[data-step]").on("click",event=>{event.preventDefault();this.creationStep=event.currentTarget.dataset.step;this.render(false);});
   html.find("[data-tab]").on("click",event=>{event.preventDefault();this.sheetTab=event.currentTarget.dataset.tab;this.render(false);});
+  html.find("[data-skill-attribute]").on("click",event=>{event.preventDefault();const attribute=event.currentTarget.dataset.skillAttribute;if(!ATTRS.includes(attribute))return;this.skillAttributeTab=attribute;this.render(false);});
   html.find("[data-finish-creator]").on("click",async event=>{
    event.preventDefault();
    const result=deriveCharacter(this.actor.system,await loadCreationRules());
