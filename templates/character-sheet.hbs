@@ -135,8 +135,14 @@
      <div><span>Movement</span><strong>{{#if status.movement}}{{status.movement}} spaces{{else}}Pending{{/if}}</strong></div>
      <div><span>Dodge · Effective</span><strong>{{status.dodge}}%</strong></div>
      <div><span>Dodge · Base</span><strong>{{status.baseDodge}}%</strong></div>
+     <div><span>Parry · Total</span><strong>{{status.parry}}%</strong></div>
+     <div><span>Parry · Might Base</span><strong>{{status.baseParry}}%</strong></div>
      <div><span>Action Score Bonus</span><strong>+{{status.initiativeBonus}}</strong></div>
     </div>
+    <label class="mezoria-wounds-control">Equipped Melee Weapon · Parry Rating
+     <input type="number" min="0" step="1" data-weapon-parry-rating value="{{status.weaponParryRating}}">
+    </label>
+    <p class="mezoria-note">Parry = Might tens + equipped melee weapon rating. Enter the weapon rating manually until equipment items are added; multiple-weapon and incapacitation rules are pending.</p>
     <label class="mezoria-dodge-condition">
      <input type="checkbox" data-unable-to-evade {{#if status.unableToEvade}}checked{{/if}}>
      Unable to evade (immobilized or otherwise physically incapable)
