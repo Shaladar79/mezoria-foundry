@@ -39,10 +39,22 @@
 
 ## Pending
 
-- **Endurance:** review skills next; no names approved yet.
-- **Intellect and Presence:** pending review.
+- **Endurance:** finalized with Survival, Breath Control, and Resilience.
+- **Intellect and Presence:** pending review. Concentration is an Intellect candidate, not yet finalized.
 - Confirm the remaining background-granted skills' governing attributes in later passes; do not silently reassign them.
 
 ## Skill Talent progression
 
 Talent +5 percentage points, Expertise +5 additional, Mastery +5 additional.
+
+## Finalized Endurance skill roster (approved)
+
+- **Survival:** Finding food, water, shelter, and enduring wilderness conditions.
+- **Breath Control:** Holding and regulating breath during underwater activity or limited-oxygen conditions.
+- **Resilience:** Enduring environmental extremes, deprivation, and physical hardship.
+
+### Exclusions and boundary decisions
+
+- Stamina and Pain Tolerance were removed from the proposed Endurance roster.
+- Concentration was reassigned as a candidate for Intellect review; it is not yet an approved skill.
+- Resilience must not grant automatic additional Health, Wounds, or passive resistance; such mechanics require separate approval.
