@@ -390,3 +390,9 @@
 - Granted Skill Talent: **Etiquette** (+5 percentage points), reusing the skill established for Noble; governing attribute pending skill design.
 - Non-combat ability **Fallen From Grace**: +10 percentage points to non-combat Etiquette checks involving navigating hostile aristocratic gatherings, recognizing subtle insults or social exclusion, concealing a loss of status, and negotiating with nobles who may distrust or look down upon them. Recognizes signs of declining noble influence, political disgrace, and informal social networks of aristocratic society.
 - Does not restore lost titles, wealth, or political influence. Distinct from Noble's familiarity with privileges and accepted high-society status.
+
+## Courtier Social Background (approved)
+- Attributes: **+2 percentage points Intellect** and **+2 percentage points Presence**.
+- Granted Skill Talent: **Etiquette** (+5 percentage points), reusing the existing skill; governing attribute pending skill design.
+- Non-combat ability **Courtly Intrigue**: +10 percentage points to non-combat Etiquette checks involving navigating political gatherings, recognizing subtle social maneuvering, identifying rivalries between influential individuals, and maintaining appropriate behavior during sensitive diplomatic conversations. Recognizes common court protocols, political alliances, and signs of shifting influence within noble households.
+- Does not grant automatic political influence, secret information, or guaranteed access to rulers. Distinct from Noble's aristocratic upbringing.
