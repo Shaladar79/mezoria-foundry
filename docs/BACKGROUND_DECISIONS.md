@@ -432,3 +432,9 @@
 - Granted Skill Talent: **Religion** (+5 percentage points), reusing the existing skill; governing attribute pending skill design.
 - Non-combat ability **Forbidden Doctrine**: +10 percentage points to non-combat Religion checks involving identifying obscure religious symbols, interpreting secretive ceremonial practices, recognizing hidden religious references, and understanding the customs of clandestine religious groups. Recognizes common cult hierarchies, initiation traditions, and signs that an organization is concealing its religious affiliations.
 - Does not grant forbidden magic, supernatural powers, secret knowledge of every cult, or automatic membership in a clandestine organization. Distinct from Acolyte's established religious institutions.
+
+## Scholar Social Background (approved)
+- Attributes: **+4 percentage points Intellect**.
+- Granted Skill Talent: **Research** (+5 percentage points), governing attribute pending skill design.
+- Non-combat ability **Learned Mind**: +10 percentage points to non-combat Research checks involving locating information in written sources, comparing historical accounts, evaluating scholarly references, and identifying useful information within unfamiliar academic materials. Recognizes common scholarly conventions, reference systems, and methods used to organize libraries and collections of knowledge.
+- Does not automatically reveal unknown information, grant expertise in every field, or provide magical knowledge. Distinct from Academic's formal educational and institutional focus.
