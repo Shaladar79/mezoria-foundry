@@ -1,46 +1,59 @@
-
-/* v0.2: sheet identity header, creator steps, Attributes/Status and Skills tabs */
-.mezoria .window-content{padding:0;overflow:auto}
-.mezoria-creation{height:100%;overflow:auto}
-.mezoria-header{padding:14px 18px;background:#132832;border-bottom:1px solid #45646a}
-.mezoria-headline{display:flex;justify-content:space-between;align-items:center;gap:12px}
-.mezoria-headline h2{font-size:20px;margin:0;color:#d9fff4}
-.mezoria-headline p{margin:2px 0 10px;color:#b2d0d2}
-.mezoria-identity{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:8px 12px}
-.mezoria-identity label{font-size:12px;color:#b5cbd0;margin:0}
-.mezoria-identity input[readonly]{width:100%;background:#243a43;border:1px solid #49636c;border-radius:5px;padding:7px 9px;color:#f0f9fa;margin-top:4px;cursor:default}
-.mezoria-create-button{width:46px;height:46px;border-radius:50%;font-size:30px;font-weight:bold;line-height:38px;border:2px solid #8cf2d5;background:#256e62;color:white;cursor:pointer;flex:none}
-.mezoria-create-button:hover{background:#2f9885}
-.mezoria-back-button,.mezoria-finish-button{background:#256e62;color:white;border:1px solid #8cf2d5;border-radius:6px;padding:8px 14px;cursor:pointer}
-.mezoria-tabs{display:flex;gap:6px;flex-wrap:wrap;padding:12px 16px;border-bottom:1px solid #425862}
-.mezoria-tabs button{border:1px solid #557780;background:#263f47;color:#d9ebed;padding:9px 12px;border-radius:6px;cursor:pointer;min-height:35px;flex:1}
-.mezoria-tabs button.active{background:#237969;border-color:#80e3c8;color:#fff;font-weight:bold}
-.mezoria-wizard,.mezoria-tab-panel{padding:18px 22px;max-width:880px;margin:0 auto}
-.mezoria-wizard h3,.mezoria-tab-panel h3{color:#98edd7;margin:0 0 10px}
-.mezoria-wizard label{display:block;margin:12px 0;color:#e4f1f4}
-.mezoria-wizard input,.mezoria-wizard select{margin-top:5px;width:100%;border:1px solid #587a83;border-radius:5px;background:#1e333d;color:white;padding:9px}
-.mezoria-check-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:4px 12px}
-.mezoria-check{display:flex!important;gap:8px;align-items:center}
-.mezoria-check input{width:auto}
-.mezoria-attribute{display:grid!important;grid-template-columns:1fr 95px 70px;align-items:center;gap:12px;border-bottom:1px solid #42606a;padding:7px 0}
-.mezoria-attribute input{width:95px}
-.mezoria-attribute span{text-align:right;font-weight:bold}
-.mezoria-points{font-size:16px;color:#d8f5ed}
-.mezoria-roll-list{border:1px solid #405a64;border-radius:7px;overflow:hidden;margin:10px 0 22px}
-.mezoria-roll-row{display:grid;grid-template-columns:minmax(0,1fr) 100px 84px;align-items:center;gap:12px;padding:9px 12px;border-bottom:1px solid #37505b}
-.mezoria-roll-row:last-child{border-bottom:0}
-.mezoria-roll-row:nth-child(even){background:#213741}
-.mezoria-roll-row button{background:#236d61;border:1px solid #83e6cd;border-radius:6px;color:white;padding:7px 10px;cursor:pointer}
-.mezoria-roll-row button:hover{background:#2f8f80}
-.mezoria-target{font-weight:700;text-align:right;color:#bcf5dc;white-space:nowrap}
-.mezoria-skill-name small{display:block;color:#afc5ca;font-size:11px}
-.mezoria-trained{border-left:4px solid #6fdec0}
-.mezoria-status-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-.mezoria-status-grid div{border:1px solid #42616b;border-radius:5px;padding:10px}
-.mezoria-status-grid span{display:block;color:#aac7ce;font-size:12px}
-.mezoria-status-grid strong{display:block;margin-top:3px}
-.mezoria-note{font-size:12px;color:#b7cbd0}
-.mezoria-incomplete{margin:12px 20px}
-.mezoria-warning{color:#ffbd9e}
-.mezoria-success{color:#83e4c6}
-@media(max-width:650px){.mezoria-identity{grid-template-columns:repeat(2,minmax(0,1fr))}.mezoria-creation-tabs button{flex-basis:30%}.mezoria-roll-row{grid-template-columns:minmax(0,1fr) 78px 63px;gap:5px;padding:8px}.mezoria-status-grid{grid-template-columns:1fr}}
+/* Mezoria Foundry v2 — high contrast parchment sheet */
+.mezoria.sheet .window-content{padding:0;overflow:auto;background:#eee9db!important;color:#101010!important}
+.mezoria.sheet .mezoria-creation{color:#101010!important;background:#eee9db!important;height:100%;overflow:auto}
+.mezoria.sheet .mezoria-creation :is(h1,h2,h3,h4,h5,h6,p,label,strong,span,small,div){color:#101010}
+.mezoria.sheet .mezoria-header{padding:14px 18px;background:#e0dacb!important;border-bottom:2px solid #9a8c77}
+.mezoria.sheet .mezoria-headline{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.mezoria.sheet .mezoria-headline h2{margin:0;font-size:21px;color:#101010!important}
+.mezoria.sheet .mezoria-headline p{margin:2px 0 8px}
+.mezoria.sheet .mezoria-identity{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:8px 12px}
+.mezoria.sheet .mezoria-identity label{font-size:12px;font-weight:700;margin:0;color:#101010!important}
+.mezoria.sheet input,.mezoria.sheet select,.mezoria.sheet textarea{font:inherit!important;opacity:1!important;box-shadow:none}
+.mezoria.sheet .mezoria-creation input:not([type="checkbox"]),.mezoria.sheet .mezoria-creation select,.mezoria.sheet .mezoria-creation textarea{
+ box-sizing:border-box!important;display:block!important;min-height:35px!important;width:100%!important;
+ background-color:#fff!important;background-image:none!important;color:#111!important;-webkit-text-fill-color:#111!important;
+ border:1px solid #656565!important;border-radius:5px!important;padding:7px 10px!important;margin-top:5px!important;
+ text-shadow:none!important;filter:none!important
+}
+.mezoria.sheet .mezoria-creation select{appearance:auto!important;-webkit-appearance:menulist!important;color-scheme:light!important;cursor:pointer!important}
+.mezoria.sheet .mezoria-creation select option,.mezoria.sheet .mezoria-creation select optgroup{
+ color:#111!important;-webkit-text-fill-color:#111!important;background:#fff!important;font-weight:400!important
+}
+.mezoria.sheet .mezoria-identity input[readonly]{background-color:#faf9f5!important;color:#111!important;-webkit-text-fill-color:#111!important;cursor:default!important}
+.mezoria.sheet .mezoria-create-button{width:46px;height:46px;min-width:46px;border-radius:50%;font-size:30px;line-height:1;border:2px solid #244f47!important;background:#b8ded2!important;color:#101010!important;cursor:pointer}
+.mezoria.sheet .mezoria-back-button,.mezoria.sheet .mezoria-finish-button{background:#b8ded2!important;border:1px solid #356354!important;color:#101010!important;border-radius:6px;padding:9px 13px;cursor:pointer}
+.mezoria.sheet .mezoria-tabs{display:flex;gap:6px;flex-wrap:wrap;padding:12px 16px;border-bottom:1px solid #b3a994;background:#e5dfd2}
+.mezoria.sheet .mezoria-tabs button{border:1px solid #7b857e!important;background:#f8f8f5!important;color:#111!important;padding:8px 10px;border-radius:6px;cursor:pointer;min-height:40px;flex:1}
+.mezoria.sheet .mezoria-tabs button.active{background:#afd8c9!important;border:2px solid #245a4d!important;color:#111!important;font-weight:700}
+.mezoria.sheet .mezoria-wizard,.mezoria.sheet .mezoria-tab-panel{padding:20px 24px;max-width:880px;margin:auto}
+.mezoria.sheet .mezoria-wizard h3,.mezoria.sheet .mezoria-tab-panel h3{color:#111!important;border-bottom:1px solid #8a8074;padding-bottom:7px}
+.mezoria.sheet .mezoria-wizard label{display:block;margin:12px 0;color:#111!important;font-weight:650}
+.mezoria.sheet .mezoria-check-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:5px 12px}
+.mezoria.sheet .mezoria-check{display:flex!important;gap:8px;align-items:center}
+.mezoria.sheet .mezoria-check input[type="checkbox"]{width:auto!important;min-height:auto!important;accent-color:#207060}
+.mezoria.sheet .mezoria-attribute{display:grid!important;grid-template-columns:1fr 95px 70px;align-items:center;gap:12px;border-bottom:1px solid #c3b8a8;padding:7px 0}
+.mezoria.sheet .mezoria-attribute input[type="number"]{width:95px!important}
+.mezoria.sheet .mezoria-attribute span{text-align:right;font-weight:700}
+.mezoria.sheet .mezoria-points{font-size:16px}
+.mezoria.sheet .mezoria-roll-list{border:1px solid #b5aca0;border-radius:6px;overflow:hidden;margin:10px 0 22px}
+.mezoria.sheet .mezoria-roll-row{display:grid;grid-template-columns:minmax(0,1fr) 100px 84px;align-items:center;gap:12px;padding:10px 12px;border-bottom:1px solid #c6bcae;color:#111!important}
+.mezoria.sheet .mezoria-roll-row:nth-child(even){background:#e6dfd2!important}
+.mezoria.sheet .mezoria-roll-row:last-child{border-bottom:0}
+.mezoria.sheet .mezoria-roll-row button{background:#b8ded2!important;border:1px solid #356354!important;border-radius:5px;color:#111!important;padding:7px 10px;cursor:pointer}
+.mezoria.sheet .mezoria-target{font-weight:700;text-align:right;color:#111!important;white-space:nowrap}
+.mezoria.sheet .mezoria-skill-name small{display:block;font-size:11px;color:#303030!important}
+.mezoria.sheet .mezoria-trained{border-left:4px solid #226f5b}
+.mezoria.sheet .mezoria-status-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.mezoria.sheet .mezoria-status-grid div{border:1px solid #b9ad9d;border-radius:5px;padding:10px}
+.mezoria.sheet .mezoria-status-grid span{display:block;font-size:12px}
+.mezoria.sheet .mezoria-status-grid strong{display:block;margin-top:3px}
+.mezoria.sheet .mezoria-note{font-size:12px}
+.mezoria.sheet .mezoria-incomplete{margin:12px 20px}
+.mezoria.sheet .mezoria-warning{color:#8a231d!important;font-weight:600}
+.mezoria.sheet .mezoria-success{color:#175e3d!important;font-weight:600}
+@media(max-width:650px){
+ .mezoria.sheet .mezoria-identity{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .mezoria.sheet .mezoria-creation-tabs button{flex-basis:30%}
+ .mezoria.sheet .mezoria-roll-row{grid-template-columns:minmax(0,1fr) 78px 63px;gap:5px;padding:8px}
+ .mezoria.sheet .mezoria-status-grid{grid-template-columns:1fr}
+}
