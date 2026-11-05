@@ -405,3 +405,10 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - **Higher-rank healing abilities** can recover Wounds. The eligible abilities, required ranks, recovery amounts, and Mana costs are pending later ability design.
 - Routine per-turn LifeForce/Mana regeneration does not remove Wounds.
 - The Foundry full-rest control updates all three stored values together; no automatic rest timer is implied.
+
+## Bleeding to Death: Endurance save resolution — approved 2026-11-05
+
+- At maximum Wounds, the character is Bleeding to Death. Roll an **Endurance saving throw each turn**.
+- **One success stabilizes** the character. If their current LifeForce is 0, they stay unconscious; when stable with more than 0 LifeForce, they regain consciousness.
+- **Each failed save** adds a cumulative **−5 percentage-point penalty** to future Endurance death-save TNs. **Three failed saves cause death.** Natural 01–05 remains an automatic success under the existing d100 convention.
+- The sheet now tracks failed death saves, rolls from the Wounds panel, and displays stable/unconscious/conscious/dead states. It does not automatically roll at turn boundaries or assign external stabilization/extra-damage rules, which remain undecided.
