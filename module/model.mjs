@@ -5,6 +5,7 @@ export class MezoriaCharacterData extends foundry.abstract.TypeDataModel {
   const allocated=Object.fromEntries(attrs.map(a=>[a,new F.NumberField({required:true,nullable:false,integer:true,initial:0,min:0,max:15})]));
   return {
    rank:new F.NumberField({required:true,integer:true,initial:1,min:1}),
+   creationComplete:new F.BooleanField({required:true,initial:false}),
    race:new F.StringField({required:true,initial:"Human"}),
    subgroup:new F.StringField({required:true,initial:""}),
    background:new F.StringField({required:true,initial:"Farmer"}),
