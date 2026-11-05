@@ -155,3 +155,27 @@
 .mezoria.sheet .mezoria-lifeforce-maximum{font-size:14px;font-weight:700;color:#111!important;padding-bottom:6px}
 .mezoria.sheet .mezoria-lifeforce-actions{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0}
 .mezoria.sheet .mezoria-lifeforce-actions button{flex:1 1 85px;min-height:29px;background:#b8ded2!important;color:#111!important;border:1px solid #356354!important;border-radius:4px!important;padding:4px!important;font-size:11px!important;cursor:pointer}
+
+/* v0.2.11 Header controls and Essence tracking */
+.mezoria.sheet .mezoria-header-operations{display:flex;align-items:flex-end;flex-wrap:wrap;gap:10px 16px;border-top:1px solid #b6aa96;margin-top:12px;padding-top:10px}
+.mezoria.sheet .mezoria-header-essence{display:flex;flex:0 1 260px;gap:9px;min-width:0}
+.mezoria.sheet .mezoria-header-essence label{font-size:11px;color:#111!important;font-weight:700;min-width:0;flex:1}
+.mezoria.sheet .mezoria-header-essence input{
+ width:100%!important;min-height:30px!important;background:#fff!important;color:#111!important;
+ -webkit-text-fill-color:#111!important;border:1px solid #777!important;border-radius:4px!important;
+ margin-top:3px!important;padding:4px 7px!important
+}
+.mezoria.sheet .mezoria-header-actions{display:flex;flex:1 1 450px;align-items:center;flex-wrap:wrap;gap:6px}
+.mezoria.sheet .mezoria-header-actions button{
+ flex:1 1 auto;min-width:104px;min-height:32px;padding:5px 9px!important;
+ background:#b8ded2!important;color:#111!important;border:1px solid #356354!important;
+ border-radius:5px!important;font-size:11px!important;font-weight:650;cursor:pointer
+}
+.mezoria.sheet .mezoria-header-actions button:disabled{
+ opacity:.6!important;cursor:not-allowed!important;background:#dedbd4!important;border-color:#999!important
+}
+.mezoria.sheet .mezoria-status-control label{flex:1}
+@media(max-width:650px){
+ .mezoria.sheet .mezoria-header-essence{flex-basis:100%}
+ .mezoria.sheet .mezoria-header-actions{flex-basis:100%}
+}
