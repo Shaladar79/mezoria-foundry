@@ -503,6 +503,41 @@
         "name": "Lore: Fae",
         "governingAttribute": "Intellect",
         "notes": "Supernatural Lore; trained only (Talent minimum)"
+      },
+      {
+        "name": "Lore: Elemental Magic",
+        "governingAttribute": "Intellect",
+        "notes": "Magical Lore; trained only (Talent minimum)"
+      },
+      {
+        "name": "Lore: Concept Magic",
+        "governingAttribute": "Intellect",
+        "notes": "Magical Lore; trained only (Talent minimum)"
+      },
+      {
+        "name": "Lore: Eldritch Magic",
+        "governingAttribute": "Intellect",
+        "notes": "Magical Lore; trained only (Talent minimum)"
+      },
+      {
+        "name": "Lore: Astral Magic",
+        "governingAttribute": "Intellect",
+        "notes": "Magical Lore; trained only (Talent minimum)"
+      },
+      {
+        "name": "Lore: Spirit Magic",
+        "governingAttribute": "Intellect",
+        "notes": "Magical Lore; trained only (Talent minimum)"
+      },
+      {
+        "name": "Lore: Soul Magic",
+        "governingAttribute": "Intellect",
+        "notes": "Magical Lore; trained only (Talent minimum)"
+      },
+      {
+        "name": "Lore: Ancient Magic",
+        "governingAttribute": "Intellect",
+        "notes": "Magical Lore; trained only (Talent minimum)"
       }
     ],
     "governingAttributeReview": {
@@ -595,7 +630,14 @@
           "Lore: Eldritch",
           "Lore: Astral",
           "Lore: Eternals",
-          "Lore: Fae"
+          "Lore: Fae",
+          "Lore: Elemental Magic",
+          "Lore: Concept Magic",
+          "Lore: Eldritch Magic",
+          "Lore: Astral Magic",
+          "Lore: Spirit Magic",
+          "Lore: Soul Magic",
+          "Lore: Ancient Magic"
         ]
       },
       "Presence": {
@@ -621,7 +663,7 @@
       "governingAttribute": "Intellect",
       "trainedOnly": true,
       "minimumTier": "talent",
-      "scope": "All Lore specializations, including future additions"
+      "scope": "All 21 approved Lore specializations and future additions"
     }
   },
   "rolls": {
