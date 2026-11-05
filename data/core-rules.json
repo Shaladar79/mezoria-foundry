@@ -1585,6 +1585,19 @@
       "incapacitationInteraction": "Same as Dodge: effective Parry is 0 when unconscious, immobilized, dead, or otherwise physically unable to defend. Base Parry and weapon rating remain tracked.",
       "multipleWeapons": "How to select/combine ratings pending equipment rules.",
       "effectiveParry": "If incapacitated (same flag/conditions as Dodge), 0; otherwise floor(Might / 10) + equipped melee weapon Parry rating."
+    },
+    "block": {
+      "status": "approved foundation",
+      "requiresEquippedShield": true,
+      "formula": "equipped shield Block rating + floor(Endurance / 10) / 2",
+      "enduranceContribution": "floor(Endurance / 10) / 2; retain half-percentage-point results (do not round final division)",
+      "noEquippedShield": "Block 0; Endurance contribution applies only when a shield is equipped",
+      "applicability": "Equipment shields can Block melee and ranged physical attacks",
+      "magic": "Equipment shield cannot Block magic unless its item has an explicit magic-blocking property",
+      "attackInteraction": "Block subtracts from attack accuracy and can reduce successes per existing defense system",
+      "incapacitation": "pending explicit rule",
+      "itemRatings": "pending equipment design",
+      "sheetInterim": "Toggle equipped shield and enter its Block rating manually until equipment Items are implemented"
     }
   },
   "wounds": {
