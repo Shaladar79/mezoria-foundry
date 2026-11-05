@@ -25,6 +25,7 @@
    </div>
    {{#unless creatorOpen}}
    <div class="mezoria-header-actions">
+    <button type="button" data-resource-recovery="turn" {{#unless creationComplete}}disabled title="Finish character creation first"{{else}}title="End turn: restore 1 LifeForce and 1 Mana at Quartz rank"{{/unless}}>End Turn</button>
     <button type="button" data-resource-recovery="light" {{#unless creationComplete}}disabled title="Finish character creation before resting"{{else}}title="4-hour light rest: restore 50% of maximum LifeForce and Mana"{{/unless}}>Light Rest · 4h</button>
     <button type="button" data-resource-recovery="full" {{#unless creationComplete}}disabled title="Finish character creation before resting"{{else}}title="8-hour full rest: fully restore LifeForce and Mana and recover 1 Wound"{{/unless}}>Full Rest · 8h</button>
     <button type="button" data-roll-action-score {{#unless creationComplete}}disabled title="Finish character creation to roll Action Score"{{else}}title="Add d20 and Prowess tens to current Action Score"{{/unless}}>Roll Action Score</button>
@@ -171,12 +172,8 @@
      </label>
      <span class="mezoria-lifeforce-maximum">/ {{status.mana}}</span>
     </div>
-    <div class="mezoria-lifeforce-actions">
-     <button type="button" data-resource-recovery="turn" title="Quartz: regenerate 1 LifeForce and 1 Mana">+1 Each / Turn</button>
-
-    </div>
     {{/if}}
-    <p class="mezoria-note">Use the header buttons for rests and Action Score. Quartz: regenerate 1 LifeForce and 1 Mana per turn. A 4-hour light rest restores 50% of each maximum (rounded up); an 8-hour full rest restores both pools completely and heals 1 Wound. Values cannot exceed their maximum. Higher-rank bonuses and talent adjustments remain pending.</p>
+    <p class="mezoria-note">Use the header buttons for End Turn, rests, and Action Score. Quartz: regenerate 1 LifeForce and 1 Mana per turn. A 4-hour light rest restores 50% of each maximum (rounded up); an 8-hour full rest restores both pools completely and heals 1 Wound. Values cannot exceed their maximum. Higher-rank bonuses and talent adjustments remain pending.</p>
     <h4>Defense and Protection</h4>
     <p class="mezoria-note">Parry, equipment Block, Spell Resistance, shields and armor depend on later equipment and ability rules. Dodge only applies to ranged and eligible magical projectiles.</p>
    </section>
