@@ -206,3 +206,23 @@ All six Supernatural Lore specializations are **approved** as distinct Intellect
 - **Lore: Eternals** replaces the proposed separate Celestial and Demon Lore; neither is a standalone skill.
 - **Lore: Spirits** covers deity-like spiritual entities, distinct from Eternals and from the proposed magical specialization Lore: Spirit Magic.
 - Creature Lore and Supernatural Lore are finalized. Magical Lore remains under review.
+
+## Magical Lore roster finalized — 2026-11-05
+
+All seven Magical Lore specializations below are approved as separate, trained-only Intellect skills, each with independent Talent / Expertise / Mastery progression:
+
+- **Lore: Elemental Magic:** Knowledge of elemental magical energies, their interactions, and magical traditions.
+- **Lore: Concept Magic:** Knowledge of magical phenomena involving Time, Space, Gravity, Order, Life, Death, Dream, Spirit, Fate, Chaos, Void, and Balance.
+- **Lore: Eldritch Magic:** Knowledge of eldritch magical traditions, techniques, and manifestations.
+- **Lore: Astral Magic:** Knowledge of astral magical energies, phenomena, and workings.
+- **Lore: Spirit Magic:** Knowledge of magic associated with Spirits, deity-like beings, and related spiritual manifestations.
+- **Lore: Soul Magic:** Knowledge of soul-based magical phenomena and Soul Weapon workings.
+- **Lore: Ancient Magic:** Knowledge of lost magical traditions and forgotten magical techniques.
+
+- Lore: Spirit Magic is the approved name replacing proposed Lore: Divine Magic; it is distinct from Lore: Spirits.
+- Lore: Concept Magic is one skill for the overall Concept family rather than separate skills for each concept.
+- Magical Lore describes specialized magical knowledge, distinct from practical Magic Theory, Ritual Magic, or Use Magic Device.
+- All 21 Lore specializations are trained-only (Talent minimum; untrained Lore checks prohibited).
+- Lore categories completed: Creature Lore 8, Supernatural Lore 6, Magical Lore 7.
+- **Total approved skills: 91** (70 original core skills + 21 Lore skills); **Intellect: 47**.
+- Magical Inscription remains reserved for later development and is not part of the approved roster.
