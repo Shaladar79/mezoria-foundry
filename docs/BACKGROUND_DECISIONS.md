@@ -358,3 +358,9 @@
 - Granted Skill Talent: **Investigation** (+5 percentage points), with governing attribute pending skill design.
 - Non-combat ability **Tomb Delver**: +10 percentage points on non-combat Investigation checks involving searching burial chambers, identifying concealed compartments in tombs, locating valuable grave goods, and recognizing signs that a burial site has previously been disturbed. Recognizes common burial customs, funerary symbols, and construction features of crypts and mausoleums.
 - Does not automatically detect magical traps, disarm hazards, or protect against undead. Distinct from Cat Burglar's infiltration of occupied buildings.
+
+## Spy Criminal Background (approved)
+- Attributes: **+2 percentage points Intellect** and **+2 percentage points Presence**.
+- Granted Skill Talent: **Investigation** (+5 percentage points), reusing the previously registered skill; governing attribute pending skill design.
+- Non-combat ability **Eyes and Ears**: +10 percentage points to non-combat Investigation checks involving discreetly gathering information, identifying inconsistencies in cover stories, observing suspicious behavior, and piecing together clues from conversations and everyday activity. Recognizes common espionage signals, surveillance patterns, and methods of covert communication.
+- Does not automatically reveal secrets, identify all disguised individuals, or grant combat stealth bonuses. Distinct from Con Artist's social deception focus.
