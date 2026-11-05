@@ -478,3 +478,10 @@
 - Granted Skill Talent: **Diplomacy** (+5 percentage points), reusing the skill introduced by Diplomat; governing attribute pending skill design.
 - Non-combat ability **Trusted Emissary**: +10 percentage points to non-combat Diplomacy checks involving delivering official messages, representing another individual or organization, explaining instructions or agreements between parties, and maintaining appropriate conduct during formal exchanges. Recognizes common diplomatic credentials, official messenger protocols, and customs for receiving representatives.
 - Does not automatically grant diplomatic immunity, unrestricted access to authorities, or power to make binding agreements. Distinct from Diplomat's focus on negotiating agreements.
+
+## Revolutionary Social Background (approved; completes Social category)
+- Attributes: **+2 percentage points Presence** and **+2 percentage points Endurance**.
+- Granted Skill Talent: **Persuasion** (+5 percentage points), reusing the skill from Politician; governing attribute pending skill design.
+- Non-combat ability **Voice of Change**: +10 percentage points on non-combat Persuasion checks involving rallying support for social or political reform, explaining revolutionary ideals, organizing peaceful demonstrations, and convincing sympathetic individuals to support a shared cause. Recognizes signs of political unrest, common grievances among communities, and symbols associated with resistance movements.
+- Does not automatically grant followers, political influence, combat bonuses, or guaranteed support for revolutionary causes. Distinct from Politician's work within established institutions.
+- **All 16 approved Social backgrounds are now individually defined.**
