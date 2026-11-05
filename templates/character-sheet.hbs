@@ -3,7 +3,9 @@
  <header class="mezoria-header"><div class="mezoria-headline"><div><h2>{{actor.name}} — Quartz Rank</h2><p>{{#if isCreatorOpen}}Character Creator • Rank 1{{else}}Character Sheet • Rank 1{{/if}}</p></div>{{#unless isCreatorOpen}}<button type="button" class="mezoria-create-button" data-open-creator title="{{#if creationComplete}}Edit character creation{{else}}Start character creation{{/if}}" aria-label="{{#if creationComplete}}Edit character creation{{else}}Start character creation{{/if}}">+</button>{{else}}<button type="button" class="mezoria-back-button" data-close-creator>Back to Sheet</button>{{/unless}}</div></header>
  {{#if isCreatorOpen}}
  <nav class="mezoria-tabs">{{#each steps}}<button type="button" data-step="{{key}}" class="{{#if active}}active{{/if}}">{{title}}</button>{{/each}}</nav>
+ {{/if}}
  <div class="mezoria-columns {{#unless isCreatorOpen}}mezoria-sheet-only{{/unless}}">
+ {{#if isCreatorOpen}}
  <section class="mezoria-editor">
  {{#if stepRace}}
  <h3>1 · Choose Race</h3>
