@@ -310,3 +310,9 @@
 - Granted Skill Talent: **Smuggling** (+5 percentage points), governing attribute pending skill design.
 - Non-combat ability **Hidden Cargo**: +10 percentage points to non-combat Smuggling checks involving concealing illicit merchandise, assessing transport routes for detection risks, disguising shipments as legitimate cargo, and navigating inspections without drawing suspicion. Recognizes common smuggling routes, concealed cargo compartments, and signs a shipment has been searched or tampered with.
 - Does not automatically bypass security inspections or provide immunity from legal consequences. Distinct from Fence's specialization in buying and selling stolen goods.
+
+## Fence Criminal Background (approved)
+- Attributes: **+2 percentage points Intellect** and **+2 percentage points Presence**.
+- Granted Skill Talent: **Commerce** (+5 percentage points), reusing the skill established by Merchant; governing attribute pending skill design.
+- Non-combat ability **Underworld Appraiser**: +10 percentage points to non-combat Commerce checks involving appraising stolen merchandise, negotiating illicit purchases or sales, identifying altered or disguised valuables, and estimating resale value in underground markets. Recognizes common signs of stolen goods, suspicious ownership claims, and types of merchandise sought by illicit buyers.
+- Does not automatically establish criminal contacts or guarantee a buyer for stolen merchandise. Distinct from Merchant's legitimate trade focus.
