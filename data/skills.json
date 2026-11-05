@@ -535,6 +535,14 @@
         "scope": "Unified category replacing Celestials and Demons"
       }
     ],
-    "rosterStatus": "Remaining creature, planar, and magical Lore proposed for review"
+    "rosterStatus": "Remaining creature, planar, and magical Lore proposed for review",
+    "magicLoreNamingDecisions": [
+      {
+        "name": "Lore: Spirit Magic",
+        "replaces": "Lore: Divine Magic",
+        "scope": "Magic associated with Spirits, deity-like beings, religious powers, and their manifestations",
+        "status": "approved name; full Lore roster under review"
+      }
+    ]
   }
 }
