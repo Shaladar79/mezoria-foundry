@@ -116,7 +116,37 @@
       "Crime Syndicate Agent",
       "Assassin"
     ],
-    "criminalDefinitionsStatus": "All 16 approved Criminal backgrounds individually defined"
+    "criminalDefinitionsStatus": "All 16 approved Criminal backgrounds individually defined",
+    "social": [
+      "Noble",
+      "Disgraced Noble",
+      "Courtier",
+      "Heir",
+      "Diplomat",
+      "Acolyte",
+      "Monk",
+      "Pilgrim",
+      "Cultist",
+      "Scholar",
+      "Academic",
+      "Apprentice",
+      "Entertainer",
+      "Socialite",
+      "Politician",
+      "Magistrate",
+      "Envoy",
+      "Revolutionary"
+    ],
+    "socialCount": 18,
+    "excludedSocialCandidates": [
+      "Priest",
+      "Tutor",
+      "Historian",
+      "Noble Servant",
+      "Community Leader",
+      "Guild Member"
+    ],
+    "socialDefinitionsStatus": "Roster approved; individual attributes, Skill Talents, and non-combat abilities not yet designed"
   },
   "definitions": {
     "Farmer": {
@@ -1261,6 +1291,7 @@
     "The approved Tradesman roster has 20 entries. No individual Tradesman mechanics are yet approved.",
     "Potter removed from the approved Tradesman roster by user decision; no Potter mechanics approved.",
     "Sapper removed from approved Tradesman roster; formerly named Military Engineer, and no individual Sapper mechanics approved.",
-    "Criminal roster approved with 16 selections and 8 excluded proposals; individual background mechanics remain pending."
+    "Criminal roster approved with 16 selections and 8 excluded proposals; individual background mechanics remain pending.",
+    "Social roster approved: 18 backgrounds selected, 6 candidates excluded; individual Social mechanics pending."
   ]
 }
