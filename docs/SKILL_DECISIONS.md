@@ -114,3 +114,34 @@ Each crafting skill has one default attribute; the GM may substitute another att
 - **Distribution:** Might 2 crafts; Prowess 5 crafts; Intellect 7 crafts; Endurance and Presence zero crafts.
 - The base Might, Prowess, and Endurance rosters remain intact. Crafting skills are additional skills under their assigned attributes, not replacements.
 - General Intellect skills are still under review; Inscription remains reserved, not approved.
+
+## Finalized non-crafting Intellect skills (approved)
+
+The 16 non-crafting Intellect skills below are approved, in addition to the seven previously approved Intellect crafting skills:
+
+- **Magic Theory:** Understanding magical energies, spell structures, enchantments, and magical phenomena.
+- **Ritual Magic:** Preparing, conducting, and maintaining magical rituals.
+- **Use Magic Device:** Activating and operating enchanted items, artifacts, and magical equipment.
+- **Concentration:** Maintaining mental focus during distractions, disruptions, and spellcasting.
+- **Investigation:** Examining clues, evidence, and unexplained circumstances.
+- **History:** Knowledge of civilizations, historical events, and figures.
+- **Medicine:** Diagnosing illness, treating injuries, and administering care.
+- **Navigation:** Determining direction, plotting routes, and reading maps.
+- **Nature:** Knowledge of plants, animals, ecosystems, and natural environments.
+- **Research:** Locating, evaluating, and interpreting information.
+- **Appraisal:** Assessing item quality, authenticity, and approximate value.
+- **Religion:** Knowledge of faiths, deities, sacred traditions, and theology.
+- **Law:** Knowledge of laws, legal institutions, and legal procedures.
+- **Cartography:** Drawing maps and conducting geographic surveys.
+- **Forgery:** Creating convincing counterfeit documents, seals, and credentials.
+- **Tactics:** Understanding battlefield formations, positioning, and strategic planning.
+
+**Intellect total: 23 approved skills** (16 non-crafting, 7 crafts).
+
+### Deferred / boundaries
+- **Animal Lore** is held for the later dedicated Lore-skill review; do not approve or merge it into Nature yet.
+- **Inscription** remains reserved for later magical crafting design.
+- Concentration is distinct from spell potency and does not automatically grant Mana, damage, or accuracy.
+- Tactics does not automatically grant attacks, damage, or Action Score.
+- Forgery defaults to Intellect for designing convincing documents; the GM may use Prowess for precision execution with the same skill proficiency.
+- **Presence** remains the next attribute roster to review.
