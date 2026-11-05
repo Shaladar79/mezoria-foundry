@@ -512,5 +512,29 @@
       "reviewWith": "Lore skills",
       "note": "Do not merge into Nature or approve until lore skills are designed."
     }
-  ]
+  ],
+  "lorePolicy": {
+    "status": "partial approval; full roster under review",
+    "governingAttribute": "Intellect",
+    "trainingRequired": true,
+    "minimumTrainingTier": "Talent",
+    "untrainedChecksAllowed": false,
+    "skillProgression": "Each Lore specialization has independent Talent (+5), Expertise (+10 total), Mastery (+15 total)",
+    "approvedNamingDecisions": [
+      {
+        "name": "Lore: Dragons",
+        "replaces": "Lore: Mythical Creatures (partial scope)",
+        "scope": "Dragons and related draconic beings"
+      },
+      {
+        "name": "Lore: Legends",
+        "scope": "Unique, one-off legendary creatures; not all mythical creature species"
+      },
+      {
+        "name": "Lore: Eternals",
+        "scope": "Unified category replacing Celestials and Demons"
+      }
+    ],
+    "rosterStatus": "Remaining creature, planar, and magical Lore proposed for review"
+  }
 }
