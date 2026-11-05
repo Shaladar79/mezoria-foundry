@@ -91,3 +91,26 @@ The separate crafting-skill model and all **14** disciplines below are approved 
 - **Inscription** is reserved for later magical crafting design and is **not** currently an approved skill.
 - Ordinary **Scribing** and magical **Inscription** remain distinct.
 - Background-granted skill names are preserved exactly; no background records are modified by this approval.
+
+## Crafting governing attributes finalized (approved)
+
+Each crafting skill has one default attribute; the GM may substitute another attribute when a specific task calls for a different aptitude, without changing the craft's Skill Talent or granting extra proficiency.
+
+- **Blacksmithing:** Might.
+- **Carpentry:** Prowess.
+- **Masonry:** Might.
+- **Leatherworking:** Prowess.
+- **Tailoring:** Prowess.
+- **Jewelcrafting:** Prowess.
+- **Tinkering:** Intellect.
+- **Alchemy:** Intellect.
+- **Cooking:** Intellect.
+- **Brewing:** Intellect.
+- **Scribing:** Prowess.
+- **Engineering:** Intellect.
+- **Shipbuilding:** Intellect.
+- **Herbalism:** Intellect.
+
+- **Distribution:** Might 2 crafts; Prowess 5 crafts; Intellect 7 crafts; Endurance and Presence zero crafts.
+- The base Might, Prowess, and Endurance rosters remain intact. Crafting skills are additional skills under their assigned attributes, not replacements.
+- General Intellect skills are still under review; Inscription remains reserved, not approved.
