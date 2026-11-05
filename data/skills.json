@@ -87,7 +87,9 @@
         {
           "name": "Lockpicking",
           "description": "Opening mechanical locks without keys",
-          "governingAttribute": "Prowess"
+          "governingAttribute": "Prowess",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Escape Artist",
@@ -257,12 +259,16 @@
         {
           "name": "Ritual Magic",
           "description": "Preparing, conducting, and maintaining magical rituals",
-          "governingAttribute": "Intellect"
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Use Magic Device",
           "description": "Activating and operating enchanted items, artifacts, and magical equipment",
-          "governingAttribute": "Intellect"
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Concentration",
@@ -282,12 +288,16 @@
         {
           "name": "Medicine",
           "description": "Diagnosing illness, treating injuries, and administering care",
-          "governingAttribute": "Intellect"
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Navigation",
           "description": "Determining direction, plotting routes, and reading maps",
-          "governingAttribute": "Intellect"
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Nature",
@@ -317,12 +327,16 @@
         {
           "name": "Cartography",
           "description": "Drawing maps and conducting geographic surveys",
-          "governingAttribute": "Intellect"
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Forgery",
           "description": "Creating convincing counterfeit documents, seals, and credentials",
-          "governingAttribute": "Intellect"
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Tactics",
@@ -337,12 +351,16 @@
         {
           "name": "Prospecting",
           "description": "Surveying terrain and recognizing mineral deposits",
-          "governingAttribute": "Intellect"
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Smuggling",
           "description": "Planning concealed shipments and evading inspections",
-          "governingAttribute": "Intellect"
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Lore: Beasts",
@@ -934,6 +952,24 @@
           "minimumTier": "Talent"
         }
       ]
+    }
+  },
+  "trainingPolicy": {
+    "group1": {
+      "status": "approved",
+      "trainedOnly": [
+        "Ritual Magic",
+        "Use Magic Device",
+        "Lockpicking",
+        "Medicine",
+        "Forgery",
+        "Cartography",
+        "Navigation",
+        "Prospecting",
+        "Smuggling"
+      ],
+      "minimumTier": "Talent",
+      "untrainedChecksAllowed": false
     }
   }
 }
