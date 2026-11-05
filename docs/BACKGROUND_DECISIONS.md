@@ -340,3 +340,9 @@
 - Granted Skill Talent: **Intimidation** (+5 percentage points), reusing the skill introduced by Enforcer; governing attribute pending skill design.
 - Non-combat ability **Protection Racket**: +10 percentage points to non-combat Intimidation checks involving establishing protection arrangements, extracting payments through threats, negotiating with reluctant business owners, and maintaining influence over illicit operations. Recognizes common extortion schemes, signs of criminal control over local businesses, and informal power structures of organized crime.
 - Does not automatically provide an established criminal organization, loyal followers, or income from protection payments. Distinct from Enforcer's direct intimidation focus.
+
+## Bandit Criminal Background (approved)
+- Attributes: **+2 percentage points Might** and **+2 percentage points Endurance**.
+- Granted Skill Talent: **Survival** (+5 percentage points), with governing attribute pending skill design.
+- Non-combat ability **Outlaw's Instinct**: +10 percentage points to non-combat Survival checks involving identifying suitable wilderness camps, locating concealed approaches to roads and trails, recognizing signs of recent travel, and finding escape routes through rough terrain. Recognizes common signs of outlaw encampments, heavily traveled merchant routes, and locations where travelers typically stop to rest.
+- Does not grant combat ambush bonuses, additional damage, or automatic surprise. Distinct from Enforcer's intimidation specialization.
