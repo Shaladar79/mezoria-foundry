@@ -37,3 +37,9 @@ Use these separate decision files when assembling a future in-person tabletop ru
 ## Character creator prototype
 
 A standalone Quartz character creator and live basic sheet are available at [`character-creator/index.html`](character-creator/index.html). Download this HTML file and open it in a browser to create Rank 1 characters and export/import JSON saves. The current [character creation order and limitations](docs/CHARACTER_CREATOR_V01.md) are documented separately. This is a prototype rather than an installed Foundry VTT system.
+
+## Foundry VTT system scaffold (v0.1)
+
+The repository root contains `system.json`, the minimal Foundry VTT system manifest. The `module/` folder contains a character Actor data model, rule loader and sheet controller; `templates/character-sheet.hbs` contains the character sheet, and `styles/mezoria.css` supplies styling. This initial build targets the Foundry v13 APIs but has **not yet been run and tested in Foundry**. The [creation implementation notes](docs/FOUNDRY_CHARACTER_CREATION.md) explain current limitations and how to test it.
+
+The creator now proceeds **Race → Background → Mark → Three Free Talents → Attribute Allocation and Review**. Human racial Talent is selected during the Race stage. This workflow also applies to the standalone creator.
