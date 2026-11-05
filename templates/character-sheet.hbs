@@ -1,8 +1,9 @@
 <form class="mezoria-creation" autocomplete="off">
  {{#if error}}<p class="mezoria-warning">{{error}}</p>{{else}}
- <header class="mezoria-header"><h2>{{actor.name}} — Quartz Rank</h2><p>Character Creator • Rank 1</p></header>
+ <header class="mezoria-header"><div class="mezoria-headline"><div><h2>{{actor.name}} — Quartz Rank</h2><p>{{#if isCreatorOpen}}Character Creator • Rank 1{{else}}Character Sheet • Rank 1{{/if}}</p></div>{{#unless isCreatorOpen}}<button type="button" class="mezoria-create-button" data-open-creator title="{{#if creationComplete}}Edit character creation{{else}}Start character creation{{/if}}" aria-label="{{#if creationComplete}}Edit character creation{{else}}Start character creation{{/if}}">+</button>{{else}}<button type="button" class="mezoria-back-button" data-close-creator>Back to Sheet</button>{{/unless}}</div></header>
+ {{#if isCreatorOpen}}
  <nav class="mezoria-tabs">{{#each steps}}<button type="button" data-step="{{key}}" class="{{#if active}}active{{/if}}">{{title}}</button>{{/each}}</nav>
- <div class="mezoria-columns">
+ <div class="mezoria-columns {{#unless isCreatorOpen}}mezoria-sheet-only{{/unless}}">
  <section class="mezoria-editor">
  {{#if stepRace}}
  <h3>1 · Choose Race</h3>
@@ -40,11 +41,13 @@
  <p>Points remaining: <strong>{{remaining}}</strong></p>
  {{#each allocation}}<label class="mezoria-attribute">{{name}} <input data-allocation="{{name}}" type="number" min="0" max="15" step="1" value="{{allocated}}"><span>{{total}}%</span></label>{{/each}}
  <label>Notes <textarea data-field="notes">{{notes}}</textarea></label>
- {{#if valid}}<p class="mezoria-success">Character creation selections are valid.</p>{{else}}<h4>To finish your character:</h4>{{#each errors}}<p class="mezoria-warning">{{this}}</p>{{/each}}{{/if}}
+ {{#if valid}}<p class="mezoria-success">Character creation selections are valid.</p><button type="button" class="mezoria-finish-button" data-finish-creator>Finish Character Creation</button>{{else}}<h4>To finish your character:</h4>{{#each errors}}<p class="mezoria-warning">{{this}}</p>{{/each}}{{/if}}
  {{/if}}
  </section>
+ {{/if}}
  <aside class="mezoria-preview">
  <h3>Character Sheet</h3>
+ {{#unless isCreatorOpen}}{{#unless creationComplete}}<p class="mezoria-warning">Character creation is not complete. Select + above to begin.</p>{{/unless}}{{/unless}}
  <p><strong>{{raceName}}</strong> {{#if derived.subgroup}}— {{derived.subgroup.name}}{{/if}}</p>
  <p><strong>Background:</strong> {{system.background}} · <strong>Mark:</strong> {{system.mark}}</p>
  <h4>Attributes</h4>{{#each allocation}}<div class="mezoria-stat"><span>{{name}}</span><strong>{{total}}%</strong><small>25 + {{allocated}} + {{racial}} racial + {{background}} background</small></div>{{/each}}
