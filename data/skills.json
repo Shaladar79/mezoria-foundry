@@ -8,42 +8,50 @@
         {
           "name": "Athletics",
           "description": "Strength-based movement, jumping, hauling, swimming, and climbing",
-          "governingAttribute": "Might"
+          "governingAttribute": "Might",
+          "trainedOnly": false
         },
         {
           "name": "Mining",
           "description": "Excavating ore and rock with physical tools",
-          "governingAttribute": "Might"
+          "governingAttribute": "Might",
+          "trainedOnly": false
         },
         {
           "name": "Woodcutting",
           "description": "Felling trees and physically processing timber",
-          "governingAttribute": "Might"
+          "governingAttribute": "Might",
+          "trainedOnly": false
         },
         {
           "name": "Brawn",
           "description": "Feats of raw strength, lifting, pushing, and breaking obstacles",
-          "governingAttribute": "Might"
+          "governingAttribute": "Might",
+          "trainedOnly": false
         },
         {
           "name": "Grappling",
           "description": "Controlling, restraining, and wrestling opponents",
-          "governingAttribute": "Might"
+          "governingAttribute": "Might",
+          "trainedOnly": false
         },
         {
           "name": "Unarmed Combat",
           "description": "Attacks using fists, kicks, and body strikes",
-          "governingAttribute": "Might"
+          "governingAttribute": "Might",
+          "trainedOnly": false
         },
         {
           "name": "Heavy Weapons",
           "description": "Attacks with two-handed melee weapons",
-          "governingAttribute": "Might"
+          "governingAttribute": "Might",
+          "trainedOnly": false
         },
         {
           "name": "Intimidation",
           "description": "Coercion through imposing physical menace; social manipulation involving authority or rhetoric may instead use Presence",
-          "governingAttribute": "Might"
+          "governingAttribute": "Might",
+          "trainedOnly": false
         },
         {
           "name": "Blacksmithing",
@@ -67,12 +75,14 @@
         {
           "name": "Acrobatics",
           "description": "Balance, tumbling, rolls, and controlled falls",
-          "governingAttribute": "Prowess"
+          "governingAttribute": "Prowess",
+          "trainedOnly": false
         },
         {
           "name": "Stealth",
           "description": "Moving quietly and hiding from detection",
-          "governingAttribute": "Prowess"
+          "governingAttribute": "Prowess",
+          "trainedOnly": false
         },
         {
           "name": "Sleight of Hand",
@@ -97,27 +107,32 @@
         {
           "name": "Escape Artist",
           "description": "Escaping physical restraints, bindings, or tight confinement",
-          "governingAttribute": "Prowess"
+          "governingAttribute": "Prowess",
+          "trainedOnly": false
         },
         {
           "name": "Melee Weapons",
           "description": "Attacks with one-handed melee weapons, including light and finesse weapons",
-          "governingAttribute": "Prowess"
+          "governingAttribute": "Prowess",
+          "trainedOnly": false
         },
         {
           "name": "Ranged Weapons",
           "description": "Attacks with bows, crossbows, slings, and other non-thrown ranged weapons",
-          "governingAttribute": "Prowess"
+          "governingAttribute": "Prowess",
+          "trainedOnly": false
         },
         {
           "name": "Throwing Weapons",
           "description": "Attacks with thrown knives, axes, javelins, and similar weapons",
-          "governingAttribute": "Prowess"
+          "governingAttribute": "Prowess",
+          "trainedOnly": false
         },
         {
           "name": "Riding",
           "description": "Controlling mounts, difficult maneuvers, and mounted movement",
-          "governingAttribute": "Prowess"
+          "governingAttribute": "Prowess",
+          "trainedOnly": false
         },
         {
           "name": "Carpentry",
@@ -157,7 +172,8 @@
         {
           "name": "Fishing",
           "description": "Catching fish through casting, nets, tackle, and handling",
-          "governingAttribute": "Prowess"
+          "governingAttribute": "Prowess",
+          "trainedOnly": false
         },
         {
           "name": "Seamanship",
@@ -184,17 +200,20 @@
         {
           "name": "Survival",
           "description": "Finding food, water, and shelter and enduring wilderness conditions",
-          "governingAttribute": "Endurance"
+          "governingAttribute": "Endurance",
+          "trainedOnly": false
         },
         {
           "name": "Breath Control",
           "description": "Holding and regulating breath during underwater activity or limited-oxygen conditions",
-          "governingAttribute": "Endurance"
+          "governingAttribute": "Endurance",
+          "trainedOnly": false
         },
         {
           "name": "Resilience",
           "description": "Enduring environmental extremes, deprivation, and physical hardship",
-          "governingAttribute": "Endurance"
+          "governingAttribute": "Endurance",
+          "trainedOnly": false
         },
         {
           "name": "Tracking",
@@ -284,17 +303,20 @@
         {
           "name": "Concentration",
           "description": "Maintaining mental focus during distractions, disruptions, and spellcasting",
-          "governingAttribute": "Intellect"
+          "governingAttribute": "Intellect",
+          "trainedOnly": false
         },
         {
           "name": "Investigation",
           "description": "Examining clues, evidence, and unexplained circumstances",
-          "governingAttribute": "Intellect"
+          "governingAttribute": "Intellect",
+          "trainedOnly": false
         },
         {
           "name": "History",
           "description": "Knowledge of civilizations, historical events, and figures",
-          "governingAttribute": "Intellect"
+          "governingAttribute": "Intellect",
+          "trainedOnly": false
         },
         {
           "name": "Medicine",
@@ -313,12 +335,15 @@
         {
           "name": "Nature",
           "description": "Knowledge of plants, animals, ecosystems, and natural environments",
-          "governingAttribute": "Intellect"
+          "governingAttribute": "Intellect",
+          "trainedOnly": false
         },
         {
           "name": "Research",
           "description": "Locating, evaluating, and interpreting information",
-          "governingAttribute": "Intellect"
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Appraisal",
@@ -336,7 +361,8 @@
         {
           "name": "Law",
           "description": "Knowledge of laws, legal institutions, and legal procedures",
-          "governingAttribute": "Intellect"
+          "governingAttribute": "Intellect",
+          "trainedOnly": false
         },
         {
           "name": "Cartography",
@@ -362,7 +388,8 @@
         {
           "name": "Agriculture",
           "description": "Cultivating crops, assessing soil, and farming methods",
-          "governingAttribute": "Intellect"
+          "governingAttribute": "Intellect",
+          "trainedOnly": false
         },
         {
           "name": "Prospecting",
@@ -563,42 +590,50 @@
         {
           "name": "Persuasion",
           "description": "Influencing others with reason, charm, and negotiation",
-          "governingAttribute": "Presence"
+          "governingAttribute": "Presence",
+          "trainedOnly": false
         },
         {
           "name": "Deception",
           "description": "Misleading others through falsehoods and misdirection",
-          "governingAttribute": "Presence"
+          "governingAttribute": "Presence",
+          "trainedOnly": false
         },
         {
           "name": "Diplomacy",
           "description": "Negotiating agreements and resolving group disputes",
-          "governingAttribute": "Presence"
+          "governingAttribute": "Presence",
+          "trainedOnly": false
         },
         {
           "name": "Etiquette",
           "description": "Following social customs, manners, and formal protocols",
-          "governingAttribute": "Presence"
+          "governingAttribute": "Presence",
+          "trainedOnly": false
         },
         {
           "name": "Insight",
           "description": "Reading emotions and interpersonal intentions",
-          "governingAttribute": "Presence"
+          "governingAttribute": "Presence",
+          "trainedOnly": false
         },
         {
           "name": "Streetwise",
           "description": "Navigating urban networks and informal local contacts",
-          "governingAttribute": "Presence"
+          "governingAttribute": "Presence",
+          "trainedOnly": false
         },
         {
           "name": "Leadership",
           "description": "Inspiring, coordinating, and directing others",
-          "governingAttribute": "Presence"
+          "governingAttribute": "Presence",
+          "trainedOnly": false
         },
         {
           "name": "Performance",
           "description": "Entertaining through music, acting, and storytelling",
-          "governingAttribute": "Presence"
+          "governingAttribute": "Presence",
+          "trainedOnly": false
         },
         {
           "name": "Animal Handling",
@@ -609,17 +644,20 @@
         {
           "name": "Commerce",
           "description": "Negotiating trade and commercial relationships",
-          "governingAttribute": "Presence"
+          "governingAttribute": "Presence",
+          "trainedOnly": false
         },
         {
           "name": "Hospitality",
           "description": "Hosting guests and running service establishments",
-          "governingAttribute": "Presence"
+          "governingAttribute": "Presence",
+          "trainedOnly": false
         },
         {
           "name": "Discipline",
           "description": "Self-control, patience, composure, and adherence to routines",
-          "governingAttribute": "Presence"
+          "governingAttribute": "Presence",
+          "trainedOnly": false
         }
       ],
       "notes": [
@@ -1005,6 +1043,57 @@
         "Animal Handling",
         "Religion"
       ]
+    },
+    "finalAudit": {
+      "status": "approved",
+      "trainedOnly": [
+        "Research"
+      ],
+      "untrainedAllowed": [
+        "Mining",
+        "Woodcutting",
+        "Riding",
+        "Fishing",
+        "Escape Artist",
+        "History",
+        "Law",
+        "Agriculture",
+        "Diplomacy",
+        "Athletics",
+        "Brawn",
+        "Grappling",
+        "Unarmed Combat",
+        "Heavy Weapons",
+        "Intimidation",
+        "Acrobatics",
+        "Stealth",
+        "Melee Weapons",
+        "Ranged Weapons",
+        "Throwing Weapons",
+        "Survival",
+        "Breath Control",
+        "Resilience",
+        "Concentration",
+        "Investigation",
+        "Nature",
+        "Persuasion",
+        "Deception",
+        "Etiquette",
+        "Insight",
+        "Streetwise",
+        "Leadership",
+        "Performance",
+        "Commerce",
+        "Hospitality",
+        "Discipline"
+      ],
+      "trainingReviewComplete": true
+    },
+    "status": "approved; complete",
+    "summary": {
+      "totalSkills": 91,
+      "trainedOnly": 52,
+      "untrainedAllowed": 39
     }
   }
 }
