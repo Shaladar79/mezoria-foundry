@@ -184,3 +184,11 @@ The Attributes and Status tab now has four compact panels: (1) an attribute savi
 - **One success stabilizes** the character. If their current LifeForce is 0, they stay unconscious; when stable with more than 0 LifeForce, they regain consciousness.
 - **Each failed save** adds a cumulative **−5 percentage-point penalty** to future Endurance death-save TNs. **Three failed saves cause death.** Natural 01–05 remains an automatic success under the existing d100 convention.
 - The sheet now tracks failed death saves, rolls from the Wounds panel, and displays stable/unconscious/conscious/dead states. It does not automatically roll at turn boundaries or assign external stabilization/extra-damage rules, which remain undecided.
+
+## Dodge defense — approved 2026-11-05
+
+- All characters receive passive Dodge equal to **floor(Prowess / 10)** percent, without spending Action Score, Mana, or making a separate Dodge roll.
+- Dodge applies to ranged physical attacks and magical projectiles, not to physical melee attacks, melee spell attacks or unavoidable spells.
+- Dodge subtracts from the attacker's target percentage and can thereby reduce hit probability and successes.
+- Effective Dodge is **0 while unconscious, immobilized, dead or otherwise physically unable to evade**. A manual Unable to evade toggle models immobilization or other physical incapacity; unconscious or dead states from existing wound/death mechanics suppress Dodge automatically.
+- The character sheet shows base Dodge and effective Dodge separately. Future talents, equipment and ability modifiers remain to be defined.
