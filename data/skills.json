@@ -526,14 +526,6 @@
           "category": "Magical Lore"
         },
         {
-          "name": "Lore: Concept Magic",
-          "description": "Knowledge of magical phenomena involving Time, Space, Gravity, Order, Life, Death, Dream, Spirit, Fate, Chaos, Void, and Balance",
-          "governingAttribute": "Intellect",
-          "trainedOnly": true,
-          "minimumTier": "Talent",
-          "category": "Magical Lore"
-        },
-        {
           "name": "Lore: Eldritch Magic",
           "description": "Knowledge of eldritch magical traditions, techniques, and manifestations",
           "governingAttribute": "Intellect",
@@ -834,7 +826,7 @@
         "scope": "Beasts, common animals and wildlife"
       }
     ],
-    "rosterStatus": "Creature Lore (8), Supernatural Lore (6), and Magical Lore (7) finalized",
+    "rosterStatus": "Creature Lore (8), Supernatural Lore (6), Magical Lore (6) approved; Concept Magic removed",
     "magicLoreNamingDecisions": [
       {
         "name": "Lore: Spirit Magic",
@@ -955,18 +947,11 @@
     },
     "magicalLore": {
       "status": "approved",
-      "count": 7,
+      "count": 6,
       "skills": [
         {
           "name": "Lore: Elemental Magic",
           "description": "Knowledge of elemental magical energies, their interactions, and magical traditions",
-          "governingAttribute": "Intellect",
-          "trainedOnly": true,
-          "minimumTier": "Talent"
-        },
-        {
-          "name": "Lore: Concept Magic",
-          "description": "Knowledge of magical phenomena involving Time, Space, Gravity, Order, Life, Death, Dream, Spirit, Fate, Chaos, Void, and Balance",
           "governingAttribute": "Intellect",
           "trainedOnly": true,
           "minimumTier": "Talent"
@@ -1007,6 +992,12 @@
           "minimumTier": "Talent"
         }
       ]
+    },
+    "astralMagicOrigin": {
+      "status": "approved",
+      "principle": "All magic originates from the Astral in its pure form",
+      "foundationalMagicalLore": "Lore: Astral Magic",
+      "notes": "Lore: Concept Magic removed as independent skill; Concept Marks and powers remain part of the setting."
     }
   },
   "trainingPolicy": {
@@ -1091,8 +1082,8 @@
     },
     "status": "approved; complete",
     "summary": {
-      "totalSkills": 91,
-      "trainedOnly": 52,
+      "totalSkills": 90,
+      "trainedOnly": 51,
       "untrainedAllowed": 39
     }
   }
