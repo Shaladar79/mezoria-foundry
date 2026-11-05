@@ -48,12 +48,16 @@
         {
           "name": "Blacksmithing",
           "description": "Forging metal weapons, armor, tools, and hardware",
-          "governingAttribute": "Might"
+          "governingAttribute": "Might",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Masonry",
           "description": "Cutting, shaping, and constructing with stone",
-          "governingAttribute": "Might"
+          "governingAttribute": "Might",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         }
       ]
     },
@@ -113,27 +117,37 @@
         {
           "name": "Carpentry",
           "description": "Working wood into furniture, structures, and equipment",
-          "governingAttribute": "Prowess"
+          "governingAttribute": "Prowess",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Leatherworking",
           "description": "Producing leather armor, saddles, bags, and other leather goods",
-          "governingAttribute": "Prowess"
+          "governingAttribute": "Prowess",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Tailoring",
           "description": "Sewing clothing and textile goods",
-          "governingAttribute": "Prowess"
+          "governingAttribute": "Prowess",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Jewelcrafting",
           "description": "Cutting gems and creating jewelry and ornamentation",
-          "governingAttribute": "Prowess"
+          "governingAttribute": "Prowess",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Scribing",
           "description": "Producing manuscripts, records, and ordinary scrolls",
-          "governingAttribute": "Prowess"
+          "governingAttribute": "Prowess",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Fishing",
@@ -189,37 +203,51 @@
         {
           "name": "Tinkering",
           "description": "Creating and repairing small mechanisms and intricate devices",
-          "governingAttribute": "Intellect"
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Alchemy",
           "description": "Formulating potions, reagents, and alchemical substances",
-          "governingAttribute": "Intellect"
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Cooking",
           "description": "Preparing meals, preserved foods, and other dishes",
-          "governingAttribute": "Intellect"
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Brewing",
           "description": "Making fermented drinks and other brewed beverages",
-          "governingAttribute": "Intellect"
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Engineering",
           "description": "Designing and constructing complex machines and systems",
-          "governingAttribute": "Intellect"
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Shipbuilding",
           "description": "Constructing and repairing boats and other watercraft",
-          "governingAttribute": "Intellect"
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Herbalism",
           "description": "Identifying, harvesting, and preparing useful herbs",
-          "governingAttribute": "Intellect"
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
         },
         {
           "name": "Magic Theory",
@@ -595,72 +623,100 @@
       {
         "name": "Blacksmithing",
         "description": "Forging metal weapons, armor, tools, and hardware",
-        "governingAttribute": "Might"
+        "governingAttribute": "Might",
+        "trainedOnly": true,
+        "minimumTier": "Talent"
       },
       {
         "name": "Carpentry",
         "description": "Working wood into furniture, structures, and equipment",
-        "governingAttribute": "Prowess"
+        "governingAttribute": "Prowess",
+        "trainedOnly": true,
+        "minimumTier": "Talent"
       },
       {
         "name": "Masonry",
         "description": "Cutting, shaping, and constructing with stone",
-        "governingAttribute": "Might"
+        "governingAttribute": "Might",
+        "trainedOnly": true,
+        "minimumTier": "Talent"
       },
       {
         "name": "Leatherworking",
         "description": "Producing leather armor, saddles, bags, and other leather goods",
-        "governingAttribute": "Prowess"
+        "governingAttribute": "Prowess",
+        "trainedOnly": true,
+        "minimumTier": "Talent"
       },
       {
         "name": "Tailoring",
         "description": "Sewing clothing and textile goods",
-        "governingAttribute": "Prowess"
+        "governingAttribute": "Prowess",
+        "trainedOnly": true,
+        "minimumTier": "Talent"
       },
       {
         "name": "Jewelcrafting",
         "description": "Cutting gems and creating jewelry and ornamentation",
-        "governingAttribute": "Prowess"
+        "governingAttribute": "Prowess",
+        "trainedOnly": true,
+        "minimumTier": "Talent"
       },
       {
         "name": "Tinkering",
         "description": "Creating and repairing small mechanisms and intricate devices",
-        "governingAttribute": "Intellect"
+        "governingAttribute": "Intellect",
+        "trainedOnly": true,
+        "minimumTier": "Talent"
       },
       {
         "name": "Alchemy",
         "description": "Formulating potions, reagents, and alchemical substances",
-        "governingAttribute": "Intellect"
+        "governingAttribute": "Intellect",
+        "trainedOnly": true,
+        "minimumTier": "Talent"
       },
       {
         "name": "Cooking",
         "description": "Preparing meals, preserved foods, and other dishes",
-        "governingAttribute": "Intellect"
+        "governingAttribute": "Intellect",
+        "trainedOnly": true,
+        "minimumTier": "Talent"
       },
       {
         "name": "Brewing",
         "description": "Making fermented drinks and other brewed beverages",
-        "governingAttribute": "Intellect"
+        "governingAttribute": "Intellect",
+        "trainedOnly": true,
+        "minimumTier": "Talent"
       },
       {
         "name": "Scribing",
         "description": "Producing manuscripts, records, and ordinary scrolls",
-        "governingAttribute": "Prowess"
+        "governingAttribute": "Prowess",
+        "trainedOnly": true,
+        "minimumTier": "Talent"
       },
       {
         "name": "Engineering",
         "description": "Designing and constructing complex machines and systems",
-        "governingAttribute": "Intellect"
+        "governingAttribute": "Intellect",
+        "trainedOnly": true,
+        "minimumTier": "Talent"
       },
       {
         "name": "Shipbuilding",
         "description": "Constructing and repairing boats and other watercraft",
-        "governingAttribute": "Intellect"
+        "governingAttribute": "Intellect",
+        "trainedOnly": true,
+        "minimumTier": "Talent"
       },
       {
         "name": "Herbalism",
         "description": "Identifying, harvesting, and preparing useful herbs",
-        "governingAttribute": "Intellect"
+        "governingAttribute": "Intellect",
+        "trainedOnly": true,
+        "minimumTier": "Talent"
       }
     ],
     "reservedForLater": [
@@ -671,7 +727,11 @@
       }
     ],
     "attributeAssignmentsStatus": "approved",
-    "attributeUseRule": "Each craft has one default governing attribute. The GM may substitute a different attribute for a specific unusual task while retaining the same skill proficiency."
+    "attributeUseRule": "Each craft has one default governing attribute. The GM may substitute a different attribute for a specific unusual task while retaining the same skill proficiency.",
+    "trainingRequired": true,
+    "minimumTrainingTier": "Talent",
+    "untrainedChecksAllowed": false,
+    "trainingStatus": "approved"
   },
   "deferredSkillCandidates": [],
   "lorePolicy": {
