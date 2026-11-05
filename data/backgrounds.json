@@ -1573,6 +1573,27 @@
         "combatEffect": false
       },
       "notes": "Does not automatically grant judicial authority, power to issue binding rulings, or immunity from prosecution."
+    },
+    "Envoy": {
+      "status": "approved",
+      "category": "Social",
+      "attributeBonus": {
+        "Presence": 2,
+        "Endurance": 2
+      },
+      "skillTalent": {
+        "name": "Diplomacy",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Trusted Emissary",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Diplomacy checks involving delivering official messages, representing another individual or organization, explaining instructions or agreements between parties, and maintaining appropriate conduct during formal exchanges",
+        "additionalEffect": "Recognizes common diplomatic credentials, official messenger protocols, and customs for receiving representatives",
+        "combatEffect": false
+      },
+      "notes": "Does not automatically grant diplomatic immunity, unrestricted access to authorities, or power to make binding agreements."
     }
   },
   "notes": [
