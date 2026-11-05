@@ -57,3 +57,9 @@
  .mezoria.sheet .mezoria-roll-row{grid-template-columns:minmax(0,1fr) 78px 63px;gap:5px;padding:8px}
  .mezoria.sheet .mezoria-status-grid{grid-template-columns:1fr}
 }
+
+.mezoria.sheet .mezoria-bonus-panel{background:#faf8f1;border:1px solid #a59b87;border-radius:6px;padding:10px 14px;margin:12px 0;color:#111}
+.mezoria.sheet .mezoria-bonus-panel strong{color:#111!important}
+.mezoria.sheet .mezoria-bonus-panel ul{margin:4px 0;padding-left:21px}
+.mezoria.sheet .mezoria-bonus-panel li{color:#111!important}
+.mezoria.sheet .mezoria-selection-hint{color:#303030!important;font-style:italic}
