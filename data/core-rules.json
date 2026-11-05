@@ -177,21 +177,21 @@
     ],
     "someSkillsRequireTraining": true,
     "trainingGatesStatus": "skill roster and restrictions pending",
-    "spellcastingAndArcana": "proposed distinct talents, awaiting final confirmation",
+    "spellcastingAndArcana": "Magic Theory, Ritual Magic, and Use Magic Device are separate approved Intellect skills; casting mechanics remain separate",
     "approvedAdditions": [
       {
         "name": "Agriculture",
-        "governingAttribute": "pending",
+        "governingAttribute": "Intellect",
         "notes": "Added as Farmer background Skill Talent"
       },
       {
         "name": "Animal Handling",
-        "governingAttribute": "pending",
+        "governingAttribute": "Presence",
         "notes": "Rancher background Skill Talent"
       },
       {
         "name": "Fishing",
-        "governingAttribute": "pending",
+        "governingAttribute": "Prowess",
         "notes": "Fisher background Skill Talent"
       },
       {
@@ -201,32 +201,32 @@
       },
       {
         "name": "Persuasion",
-        "governingAttribute": "pending",
+        "governingAttribute": "Presence",
         "notes": "Villager background Skill Talent; confirm skill roster placement later"
       },
       {
         "name": "Streetwise",
-        "governingAttribute": "pending",
+        "governingAttribute": "Presence",
         "notes": "City Dweller background Skill Talent"
       },
       {
         "name": "Etiquette",
-        "governingAttribute": "pending",
+        "governingAttribute": "Presence",
         "notes": "Servant background Skill Talent"
       },
       {
         "name": "Navigation",
-        "governingAttribute": "pending",
+        "governingAttribute": "Intellect",
         "notes": "Courier background Skill Talent"
       },
       {
         "name": "Seamanship",
-        "governingAttribute": "pending",
+        "governingAttribute": "Prowess",
         "notes": "Sailor background Skill Talent"
       },
       {
         "name": "Investigation",
-        "governingAttribute": "pending",
+        "governingAttribute": "Intellect",
         "notes": "Town Guard background Skill Talent"
       },
       {
@@ -241,122 +241,122 @@
       },
       {
         "name": "Prospecting",
-        "governingAttribute": "pending",
+        "governingAttribute": "Intellect",
         "notes": "Prospector Tradesman background Skill Talent; governing attribute and details pending"
       },
       {
         "name": "Blacksmithing",
-        "governingAttribute": "pending",
+        "governingAttribute": "Might",
         "notes": "Blacksmith Tradesman background Skill Talent"
       },
       {
         "name": "Carpentry",
-        "governingAttribute": "pending",
+        "governingAttribute": "Prowess",
         "notes": "Carpenter Tradesman background Skill Talent"
       },
       {
         "name": "Masonry",
-        "governingAttribute": "pending",
+        "governingAttribute": "Might",
         "notes": "Mason Tradesman background Skill Talent"
       },
       {
         "name": "Leatherworking",
-        "governingAttribute": "pending",
+        "governingAttribute": "Prowess",
         "notes": "Leatherworker Tradesman background Skill Talent"
       },
       {
         "name": "Tailoring",
-        "governingAttribute": "pending",
+        "governingAttribute": "Prowess",
         "notes": "Tailor Tradesman background Skill Talent"
       },
       {
         "name": "Jewelcrafting",
-        "governingAttribute": "pending",
+        "governingAttribute": "Prowess",
         "notes": "Jeweler Tradesman background Skill Talent"
       },
       {
         "name": "Tinkering",
-        "governingAttribute": "pending",
+        "governingAttribute": "Intellect",
         "notes": "Tinker Tradesman background Skill Talent"
       },
       {
         "name": "Cooking",
-        "governingAttribute": "pending",
+        "governingAttribute": "Intellect",
         "notes": "Cook Tradesman background Skill Talent"
       },
       {
         "name": "Brewing",
-        "governingAttribute": "pending",
+        "governingAttribute": "Intellect",
         "notes": "Brewer Tradesman background Skill Talent"
       },
       {
         "name": "Alchemy",
-        "governingAttribute": "pending",
+        "governingAttribute": "Intellect",
         "notes": "Alchemist Tradesman background Skill Talent"
       },
       {
         "name": "Herbalism",
-        "governingAttribute": "pending",
+        "governingAttribute": "Intellect",
         "notes": "Herbalist Tradesman background Skill Talent"
       },
       {
         "name": "Scribing",
-        "governingAttribute": "pending",
+        "governingAttribute": "Prowess",
         "notes": "Scribe Tradesman background Skill Talent"
       },
       {
         "name": "Cartography",
-        "governingAttribute": "pending",
+        "governingAttribute": "Intellect",
         "notes": "Cartographer Tradesman background Skill Talent"
       },
       {
         "name": "Engineering",
-        "governingAttribute": "pending",
+        "governingAttribute": "Intellect",
         "notes": "Engineer Tradesman background Skill Talent"
       },
       {
         "name": "Shipbuilding",
-        "governingAttribute": "pending",
+        "governingAttribute": "Intellect",
         "notes": "Shipwright Tradesman background Skill Talent"
       },
       {
         "name": "Commerce",
-        "governingAttribute": "pending",
+        "governingAttribute": "Presence",
         "notes": "Merchant Tradesman background Skill Talent"
       },
       {
         "name": "Hospitality",
-        "governingAttribute": "pending",
+        "governingAttribute": "Presence",
         "notes": "Innkeeper Tradesman background Skill Talent"
       },
       {
         "name": "Thievery",
-        "governingAttribute": "pending",
+        "governingAttribute": "Prowess",
         "notes": "Thief Criminal background Skill Talent"
       },
       {
         "name": "Stealth",
-        "governingAttribute": "pending",
+        "governingAttribute": "Prowess",
         "notes": "Cat Burglar Criminal background Skill Talent"
       },
       {
         "name": "Deception",
-        "governingAttribute": "pending",
+        "governingAttribute": "Presence",
         "notes": "Con Artist Criminal background Skill Talent"
       },
       {
         "name": "Forgery",
-        "governingAttribute": "pending",
+        "governingAttribute": "Intellect",
         "notes": "Forger Criminal background Skill Talent"
       },
       {
         "name": "Smuggling",
-        "governingAttribute": "pending",
+        "governingAttribute": "Intellect",
         "notes": "Smuggler Criminal background Skill Talent"
       },
       {
         "name": "Tracking",
-        "governingAttribute": "pending",
+        "governingAttribute": "Endurance",
         "notes": "Poacher Criminal background Skill Talent"
       },
       {
@@ -366,47 +366,47 @@
       },
       {
         "name": "Survival",
-        "governingAttribute": "pending",
+        "governingAttribute": "Endurance",
         "notes": "Bandit Criminal background Skill Talent"
       },
       {
         "name": "Insight",
-        "governingAttribute": "pending",
+        "governingAttribute": "Presence",
         "notes": "Prisoner Criminal background Skill Talent"
       },
       {
         "name": "Leadership",
-        "governingAttribute": "pending",
+        "governingAttribute": "Presence",
         "notes": "Heir Social background Skill Talent"
       },
       {
         "name": "Diplomacy",
-        "governingAttribute": "pending",
+        "governingAttribute": "Presence",
         "notes": "Diplomat Social background Skill Talent"
       },
       {
         "name": "Religion",
-        "governingAttribute": "pending",
+        "governingAttribute": "Intellect",
         "notes": "Acolyte Social background Skill Talent"
       },
       {
         "name": "Discipline",
-        "governingAttribute": "pending",
+        "governingAttribute": "Presence",
         "notes": "Monk Social background Skill Talent"
       },
       {
         "name": "Research",
-        "governingAttribute": "pending",
+        "governingAttribute": "Intellect",
         "notes": "Scholar Social background Skill Talent"
       },
       {
         "name": "Performance",
-        "governingAttribute": "pending",
+        "governingAttribute": "Presence",
         "notes": "Entertainer Social background Skill Talent"
       },
       {
         "name": "Law",
-        "governingAttribute": "pending",
+        "governingAttribute": "Intellect",
         "notes": "Magistrate Social background Skill Talent"
       },
       {
@@ -428,6 +428,11 @@
         "name": "Heavy Weapons",
         "governingAttribute": "Might",
         "notes": "Strength-intensive melee weapons; weapon groups and combat resolution pending"
+      },
+      {
+        "name": "Pickpocketing",
+        "governingAttribute": "Prowess",
+        "notes": "Cutpurse background talent, separate from Thievery"
       }
     ],
     "governingAttributeReview": {
@@ -441,9 +446,90 @@
           "Grappling",
           "Unarmed Combat",
           "Heavy Weapons",
-          "Intimidation"
-        ],
-        "notes": "Intimidation uses Might even for social coercion; Enforcer and Racketeer retain their background attribute bonuses and Talent. Grappling, Unarmed Combat, and Heavy Weapons are registered with combat mechanics deferred. Athletics is strength-based physical movement; Brawn is raw force."
+          "Intimidation",
+          "Blacksmithing",
+          "Masonry"
+        ]
+      },
+      "Prowess": {
+        "status": "approved",
+        "skills": [
+          "Acrobatics",
+          "Stealth",
+          "Sleight of Hand",
+          "Pickpocketing",
+          "Lockpicking",
+          "Escape Artist",
+          "Melee Weapons",
+          "Ranged Weapons",
+          "Throwing Weapons",
+          "Riding",
+          "Carpentry",
+          "Leatherworking",
+          "Tailoring",
+          "Jewelcrafting",
+          "Scribing",
+          "Fishing",
+          "Seamanship",
+          "Thievery"
+        ]
+      },
+      "Endurance": {
+        "status": "approved",
+        "skills": [
+          "Survival",
+          "Breath Control",
+          "Resilience",
+          "Tracking"
+        ]
+      },
+      "Intellect": {
+        "status": "approved",
+        "skills": [
+          "Tinkering",
+          "Alchemy",
+          "Cooking",
+          "Brewing",
+          "Engineering",
+          "Shipbuilding",
+          "Herbalism",
+          "Magic Theory",
+          "Ritual Magic",
+          "Use Magic Device",
+          "Concentration",
+          "Investigation",
+          "History",
+          "Medicine",
+          "Navigation",
+          "Nature",
+          "Research",
+          "Appraisal",
+          "Religion",
+          "Law",
+          "Cartography",
+          "Forgery",
+          "Tactics",
+          "Agriculture",
+          "Prospecting",
+          "Smuggling"
+        ]
+      },
+      "Presence": {
+        "status": "approved",
+        "skills": [
+          "Persuasion",
+          "Deception",
+          "Diplomacy",
+          "Etiquette",
+          "Insight",
+          "Streetwise",
+          "Leadership",
+          "Performance",
+          "Animal Handling",
+          "Commerce",
+          "Hospitality",
+          "Discipline"
+        ]
       }
     }
   },
