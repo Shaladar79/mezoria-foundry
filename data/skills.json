@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "Might, Prowess, Endurance and fourteen crafting skills have approved default attribute assignments; general Intellect and Presence lists remain under review",
+  "status": "Might, Prowess, Endurance, Intellect approved; Presence pending review",
   "attributes": {
     "Might": {
       "status": "approved",
@@ -158,7 +158,7 @@
       ]
     },
     "Intellect": {
-      "status": "under review; seven approved crafting skills assigned",
+      "status": "approved",
       "skills": [
         {
           "name": "Tinkering",
@@ -194,14 +194,95 @@
           "name": "Herbalism",
           "description": "Identifying, harvesting, and preparing useful herbs",
           "governingAttribute": "Intellect"
+        },
+        {
+          "name": "Magic Theory",
+          "description": "Understanding magical energies, spell structures, enchantments, and magical phenomena",
+          "governingAttribute": "Intellect"
+        },
+        {
+          "name": "Ritual Magic",
+          "description": "Preparing, conducting, and maintaining magical rituals",
+          "governingAttribute": "Intellect"
+        },
+        {
+          "name": "Use Magic Device",
+          "description": "Activating and operating enchanted items, artifacts, and magical equipment",
+          "governingAttribute": "Intellect"
+        },
+        {
+          "name": "Concentration",
+          "description": "Maintaining mental focus during distractions, disruptions, and spellcasting",
+          "governingAttribute": "Intellect"
+        },
+        {
+          "name": "Investigation",
+          "description": "Examining clues, evidence, and unexplained circumstances",
+          "governingAttribute": "Intellect"
+        },
+        {
+          "name": "History",
+          "description": "Knowledge of civilizations, historical events, and figures",
+          "governingAttribute": "Intellect"
+        },
+        {
+          "name": "Medicine",
+          "description": "Diagnosing illness, treating injuries, and administering care",
+          "governingAttribute": "Intellect"
+        },
+        {
+          "name": "Navigation",
+          "description": "Determining direction, plotting routes, and reading maps",
+          "governingAttribute": "Intellect"
+        },
+        {
+          "name": "Nature",
+          "description": "Knowledge of plants, animals, ecosystems, and natural environments",
+          "governingAttribute": "Intellect"
+        },
+        {
+          "name": "Research",
+          "description": "Locating, evaluating, and interpreting information",
+          "governingAttribute": "Intellect"
+        },
+        {
+          "name": "Appraisal",
+          "description": "Assessing item quality, authenticity, and approximate value",
+          "governingAttribute": "Intellect"
+        },
+        {
+          "name": "Religion",
+          "description": "Knowledge of faiths, deities, sacred traditions, and theology",
+          "governingAttribute": "Intellect"
+        },
+        {
+          "name": "Law",
+          "description": "Knowledge of laws, legal institutions, and legal procedures",
+          "governingAttribute": "Intellect"
+        },
+        {
+          "name": "Cartography",
+          "description": "Drawing maps and conducting geographic surveys",
+          "governingAttribute": "Intellect"
+        },
+        {
+          "name": "Forgery",
+          "description": "Creating convincing counterfeit documents, seals, and credentials",
+          "governingAttribute": "Intellect"
+        },
+        {
+          "name": "Tactics",
+          "description": "Understanding battlefield formations, positioning, and strategic planning",
+          "governingAttribute": "Intellect"
         }
       ],
       "notes": [
-        "Concentration reserved for Intellect skill review; not yet approved.",
-        "Arcana renamed to Magic Theory for Intellect roster review.",
-        "Ritual Magic and Use Magic Device are proposed Intellect skills.",
-        "Individual crafting disciplines are under review; the split into separate skills is approved.",
-        "Magical Inscription is reserved for future design and not an approved skill."
+        "Twenty-three approved Intellect skills: seven crafts and sixteen non-crafting skills.",
+        "Animal Lore deferred for later lore-system review; not approved or assigned.",
+        "Magical Inscription reserved for later design; not approved.",
+        "Concentration does not inherently enhance damage, Mana, or accuracy.",
+        "Tactics does not inherently grant extra attacks, damage, or Action Score.",
+        "Forging a document normally uses Intellect (Forgery), but specialized manual execution may permit an alternate attribute at GM discretion."
       ]
     },
     "Presence": {
@@ -315,5 +396,13 @@
     ],
     "attributeAssignmentsStatus": "approved",
     "attributeUseRule": "Each craft has one default governing attribute. The GM may substitute a different attribute for a specific unusual task while retaining the same skill proficiency."
-  }
+  },
+  "deferredSkillCandidates": [
+    {
+      "name": "Animal Lore",
+      "status": "deferred",
+      "reviewWith": "Lore skills",
+      "note": "Do not merge into Nature or approve until lore skills are designed."
+    }
+  ]
 }
