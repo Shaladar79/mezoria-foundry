@@ -434,3 +434,11 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - Parry uses the same incapacitation conditions as Dodge: unconscious, immobilized, dead, or physically unable to defend => **effective Parry 0%**.
 - A single Status tab condition checkbox applies to both defenses. Base Might contribution and the equipped weapon's Parry rating remain saved and are not erased by incapacitation.
 - This does not alter the approved formula for normal Parry, and leaves weapon rating values and multiple-weapon rules for equipment design.
+
+## Equipped shield Block defense — approved 2026-11-05
+
+- **Block (%) = equipped shield's Block rating + floor(Endurance / 10) / 2.** The specified formula does not round down after halving; half percentage-point values are retained (e.g. Endurance 35 gives +1.5%).
+- An equipped shield is required for its Block defense. Without a shield, effective Block is 0 and the Endurance contribution does not apply.
+- Equipment shields Block applicable physical melee and ranged attacks. Magic cannot be Blocked without a specific magic-blocking property; magical shield mitigation pools are a separate mechanic.
+- Until Item/equipment support exists, Status has a shield-equipped toggle and manually editable integer shield Block rating; base Endurance contribution and total Block derive automatically. Numeric shield ratings remain pending equipment design.
+- Whether incapacitation removes Block and how multiple shields interact remain pending explicit decisions.
