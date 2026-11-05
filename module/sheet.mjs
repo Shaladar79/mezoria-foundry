@@ -4,7 +4,7 @@ function optionList(values,selected,getValue=x=>x,getLabel=x=>x){
  return values.map(x=>({value:getValue(x),label:getLabel(x),selected:getValue(x)===selected}));
 }
 export class MezoriaCharacterSheet extends ActorSheet {
- constructor(...args){super(...args);this.creationStep="race";}
+ constructor(...args){super(...args);this.creationStep=null;}
  static get defaultOptions(){return foundry.utils.mergeObject(super.defaultOptions,{
   classes:["mezoria","sheet","actor","character"],width:850,height:750,resizable:true,
   template:"systems/mezoria-foundry/templates/character-sheet.hbs",submitOnChange:false
@@ -12,11 +12,11 @@ export class MezoriaCharacterSheet extends ActorSheet {
  get title(){return this.actor.name+" — Mezoria Character";}
  async getData(options={}){
   const base=await super.getData(options);
-  let data;try{data=await loadCreationRules();}catch(e){return {...base,error:e.message,step:this.creationStep};}
+  let data;try{data=await loadCreationRules();}catch(e){return {...base,error:e.message,step:this.creationStep,isCreatorOpen:!!this.creationStep};}
   const s=this.actor.system, d=deriveCharacter(s,data);
   const race=d.race, bg=d.background,subgroups=raceSubgroups(race), mark=d.mark;
   const steps=["race","background","mark","free","review"];
-  return {...base,system:s,step:this.creationStep,
+  return {...base,system:s,step:this.creationStep,isCreatorOpen:!!this.creationStep,creationComplete:s.creationComplete,
    steps:steps.map((key,i)=>({key,title:(i+1)+". "+({race:"Race",background:"Background",mark:"Mark",free:"Free Talents",review:"Sheet"}[key]),active:key===this.creationStep})),
    stepRace:this.creationStep==="race",stepBackground:this.creationStep==="background",stepMark:this.creationStep==="mark",
    stepFree:this.creationStep==="free",stepReview:this.creationStep==="review",
@@ -36,6 +36,9 @@ export class MezoriaCharacterSheet extends ActorSheet {
  }
  activateListeners(html){
   super.activateListeners(html);if(!this.isEditable)return;
+  html.find("[data-open-creator]").on("click",event=>{event.preventDefault();this.creationStep="race";this.render(false);});
+  html.find("[data-close-creator]").on("click",event=>{event.preventDefault();this.creationStep=null;this.render(false);});
+  html.find("[data-finish-creator]").on("click",async event=>{event.preventDefault();const rules=await loadCreationRules();const result=deriveCharacter(this.actor.system,rules);if(result.errors.length){ui.notifications.warn("Resolve character creation validation issues before finishing.");this.creationStep="review";this.render(false);return;}await this.actor.update({"system.creationComplete":true});this.creationStep=null;this.render(false);});
   html.find("[data-step]").on("click",event=>{event.preventDefault();this.creationStep=event.currentTarget.dataset.step;this.render(false);});
   html.find("[data-field]").on("change",async event=>{
    const el=event.currentTarget,path=el.dataset.field;let value=el.value;
