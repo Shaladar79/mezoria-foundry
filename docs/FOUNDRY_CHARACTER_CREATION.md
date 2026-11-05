@@ -192,3 +192,11 @@ The Attributes and Status tab now has four compact panels: (1) an attribute savi
 - Dodge subtracts from the attacker's target percentage and can thereby reduce hit probability and successes.
 - Effective Dodge is **0 while unconscious, immobilized, dead or otherwise physically unable to evade**. A manual Unable to evade toggle models immobilization or other physical incapacity; unconscious or dead states from existing wound/death mechanics suppress Dodge automatically.
 - The character sheet shows base Dodge and effective Dodge separately. Future talents, equipment and ability modifiers remain to be defined.
+
+## Parry defense — approved 2026-11-05
+
+- Every melee weapon has a Parry rating. **Total Parry (%) = floor(Might / 10) + equipped melee weapon Parry rating**.
+- Parry applies against melee attacks, including melee spell attacks under established defense categories; it does not apply against ranged attacks.
+- Under the approved attack-vs-defense formula, applicable Parry reduces the attacker's hit target and can reduce successes.
+- Until the Equipment/Item system is developed, the Status tab has a manually editable, nonnegative whole-number **Equipped Melee Weapon Parry Rating** field, default 0, and calculates base and total Parry automatically. Weapon-specific ratings are not yet defined.
+- Whether a character can Parry while unconscious/immobilized, and how multiple melee weapons affect Parry, are **pending**, not inferred from Dodge.
