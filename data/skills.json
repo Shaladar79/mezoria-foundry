@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "Might and Prowess rosters finalized; Endurance, Intellect, Presence pending review",
+  "status": "Might, Prowess, and Endurance rosters finalized; Intellect and Presence pending review",
   "attributes": {
     "Might": {
       "status": "approved",
@@ -103,12 +103,31 @@
       ]
     },
     "Endurance": {
-      "status": "pending",
-      "skills": []
+      "status": "approved",
+      "skills": [
+        {
+          "name": "Survival",
+          "description": "Finding food, water, and shelter and enduring wilderness conditions",
+          "governingAttribute": "Endurance"
+        },
+        {
+          "name": "Breath Control",
+          "description": "Holding and regulating breath during underwater activity or limited-oxygen conditions",
+          "governingAttribute": "Endurance"
+        },
+        {
+          "name": "Resilience",
+          "description": "Enduring environmental extremes, deprivation, and physical hardship",
+          "governingAttribute": "Endurance"
+        }
+      ]
     },
     "Intellect": {
       "status": "pending",
-      "skills": []
+      "skills": [],
+      "notes": [
+        "Concentration reserved for Intellect skill review; not yet approved."
+      ]
     },
     "Presence": {
       "status": "pending",
