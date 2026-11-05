@@ -315,6 +315,70 @@
           "name": "Smuggling",
           "description": "Planning concealed shipments and evading inspections",
           "governingAttribute": "Intellect"
+        },
+        {
+          "name": "Lore: Beasts",
+          "description": "Knowledge of ordinary and extraordinary non-draconic beasts, wildlife, predators, and domesticated animals",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent",
+          "category": "Creature Lore"
+        },
+        {
+          "name": "Lore: Dragons",
+          "description": "Knowledge of dragons, draconic varieties, behavior, abilities, and weaknesses",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent",
+          "category": "Creature Lore"
+        },
+        {
+          "name": "Lore: Legends",
+          "description": "Knowledge of unique, one-of-a-kind legendary creatures and their individual histories and powers",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent",
+          "category": "Creature Lore"
+        },
+        {
+          "name": "Lore: Monstrosities",
+          "description": "Knowledge of unnatural monsters, hybrids, and aberrant creatures",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent",
+          "category": "Creature Lore"
+        },
+        {
+          "name": "Lore: Undead",
+          "description": "Knowledge of reanimated creatures, vampires, liches, and other undead",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent",
+          "category": "Creature Lore"
+        },
+        {
+          "name": "Lore: Constructs",
+          "description": "Knowledge of golems, animated armor, and artificially created beings",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent",
+          "category": "Creature Lore"
+        },
+        {
+          "name": "Lore: Plants",
+          "description": "Knowledge of sentient plants, carnivorous flora, and plant-based creatures",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent",
+          "category": "Creature Lore"
+        },
+        {
+          "name": "Lore: Shapeshifters",
+          "description": "Knowledge of werecreatures, mimics, and transforming beings",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent",
+          "category": "Creature Lore"
         }
       ],
       "notes": [
@@ -505,16 +569,9 @@
     "attributeAssignmentsStatus": "approved",
     "attributeUseRule": "Each craft has one default governing attribute. The GM may substitute a different attribute for a specific unusual task while retaining the same skill proficiency."
   },
-  "deferredSkillCandidates": [
-    {
-      "name": "Animal Lore",
-      "status": "deferred",
-      "reviewWith": "Lore skills",
-      "note": "Do not merge into Nature or approve until lore skills are designed."
-    }
-  ],
+  "deferredSkillCandidates": [],
   "lorePolicy": {
-    "status": "partial approval; full roster under review",
+    "status": "creature Lore roster approved; supernatural and magical Lore rosters under review",
     "governingAttribute": "Intellect",
     "trainingRequired": true,
     "minimumTrainingTier": "Talent",
@@ -533,9 +590,14 @@
       {
         "name": "Lore: Eternals",
         "scope": "Unified category replacing Celestials and Demons"
+      },
+      {
+        "name": "Lore: Beasts",
+        "replaces": "Lore: Animals and deferred Animal Lore",
+        "scope": "Beasts, common animals and wildlife"
       }
     ],
-    "rosterStatus": "Remaining creature, planar, and magical Lore proposed for review",
+    "rosterStatus": "Creature Lore finalized (8 skills); supernatural and magical Lore pending",
     "magicLoreNamingDecisions": [
       {
         "name": "Lore: Spirit Magic",
@@ -543,6 +605,68 @@
         "scope": "Magic associated with Spirits, deity-like beings, religious powers, and their manifestations",
         "status": "approved name; full Lore roster under review"
       }
-    ]
+    ],
+    "creatureLore": {
+      "status": "approved",
+      "skills": [
+        {
+          "name": "Lore: Beasts",
+          "description": "Knowledge of ordinary and extraordinary non-draconic beasts, wildlife, predators, and domesticated animals",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
+        },
+        {
+          "name": "Lore: Dragons",
+          "description": "Knowledge of dragons, draconic varieties, behavior, abilities, and weaknesses",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
+        },
+        {
+          "name": "Lore: Legends",
+          "description": "Knowledge of unique, one-of-a-kind legendary creatures and their individual histories and powers",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
+        },
+        {
+          "name": "Lore: Monstrosities",
+          "description": "Knowledge of unnatural monsters, hybrids, and aberrant creatures",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
+        },
+        {
+          "name": "Lore: Undead",
+          "description": "Knowledge of reanimated creatures, vampires, liches, and other undead",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
+        },
+        {
+          "name": "Lore: Constructs",
+          "description": "Knowledge of golems, animated armor, and artificially created beings",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
+        },
+        {
+          "name": "Lore: Plants",
+          "description": "Knowledge of sentient plants, carnivorous flora, and plant-based creatures",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
+        },
+        {
+          "name": "Lore: Shapeshifters",
+          "description": "Knowledge of werecreatures, mimics, and transforming beings",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
+        }
+      ],
+      "count": 8
+    }
   }
 }
