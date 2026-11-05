@@ -1105,6 +1105,27 @@
         "combatEffect": false
       },
       "notes": "Does not automatically provide the tools or materials required to produce counterfeit goods."
+    },
+    "Enforcer": {
+      "status": "approved",
+      "category": "Criminal",
+      "attributeBonus": {
+        "Might": 2,
+        "Presence": 2
+      },
+      "skillTalent": {
+        "name": "Intimidation",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Menacing Reputation",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Intimidation checks involving collecting debts, discouraging unwanted interference, pressuring reluctant individuals, and establishing authority through an imposing presence",
+        "additionalEffect": "Recognizes signs of fear, hesitation, and submission during tense social encounters",
+        "combatEffect": false
+      },
+      "notes": "Does not grant combat damage bonuses or automatically compel compliance."
     }
   },
   "notes": [
