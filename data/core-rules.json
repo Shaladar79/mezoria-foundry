@@ -473,6 +473,36 @@
         "name": "Lore: Shapeshifters",
         "governingAttribute": "Intellect",
         "notes": "Creature Lore; trained only (Talent minimum)"
+      },
+      {
+        "name": "Lore: Elementals",
+        "governingAttribute": "Intellect",
+        "notes": "Supernatural Lore; trained only (Talent minimum)"
+      },
+      {
+        "name": "Lore: Spirits",
+        "governingAttribute": "Intellect",
+        "notes": "Supernatural Lore; trained only (Talent minimum)"
+      },
+      {
+        "name": "Lore: Eldritch",
+        "governingAttribute": "Intellect",
+        "notes": "Supernatural Lore; trained only (Talent minimum)"
+      },
+      {
+        "name": "Lore: Astral",
+        "governingAttribute": "Intellect",
+        "notes": "Supernatural Lore; trained only (Talent minimum)"
+      },
+      {
+        "name": "Lore: Eternals",
+        "governingAttribute": "Intellect",
+        "notes": "Supernatural Lore; trained only (Talent minimum)"
+      },
+      {
+        "name": "Lore: Fae",
+        "governingAttribute": "Intellect",
+        "notes": "Supernatural Lore; trained only (Talent minimum)"
       }
     ],
     "governingAttributeReview": {
@@ -559,7 +589,13 @@
           "Lore: Undead",
           "Lore: Constructs",
           "Lore: Plants",
-          "Lore: Shapeshifters"
+          "Lore: Shapeshifters",
+          "Lore: Elementals",
+          "Lore: Spirits",
+          "Lore: Eldritch",
+          "Lore: Astral",
+          "Lore: Eternals",
+          "Lore: Fae"
         ]
       },
       "Presence": {
