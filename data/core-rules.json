@@ -176,7 +176,7 @@
       }
     ],
     "someSkillsRequireTraining": true,
-    "trainingGatesStatus": "Lore (21) and crafting (14) restrictions approved; other skills pending review",
+    "trainingGatesStatus": "Lore (21), crafting (14), and Group 1 (9) trained-only; other non-Lore, non-crafting skills pending review",
     "spellcastingAndArcana": "Magic Theory, Ritual Magic, and Use Magic Device are separate approved Intellect skills; casting mechanics remain separate",
     "approvedAdditions": [
       {
@@ -217,7 +217,9 @@
       {
         "name": "Navigation",
         "governingAttribute": "Intellect",
-        "notes": "Courier background Skill Talent"
+        "notes": "Courier background Skill Talent",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Seamanship",
@@ -242,7 +244,9 @@
       {
         "name": "Prospecting",
         "governingAttribute": "Intellect",
-        "notes": "Prospector Tradesman background Skill Talent; governing attribute and details pending"
+        "notes": "Prospector Tradesman background Skill Talent; governing attribute and details pending",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Blacksmithing",
@@ -307,7 +311,9 @@
       {
         "name": "Cartography",
         "governingAttribute": "Intellect",
-        "notes": "Cartographer Tradesman background Skill Talent"
+        "notes": "Cartographer Tradesman background Skill Talent",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Engineering",
@@ -347,12 +353,16 @@
       {
         "name": "Forgery",
         "governingAttribute": "Intellect",
-        "notes": "Forger Criminal background Skill Talent"
+        "notes": "Forger Criminal background Skill Talent",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Smuggling",
         "governingAttribute": "Intellect",
-        "notes": "Smuggler Criminal background Skill Talent"
+        "notes": "Smuggler Criminal background Skill Talent",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Tracking",
@@ -670,6 +680,22 @@
       "trainedOnly": true,
       "minimumTier": "talent",
       "scope": "All 14 approved crafting skills",
+      "untrainedChecksAllowed": false
+    },
+    "group1Training": {
+      "status": "approved",
+      "trainedOnly": [
+        "Ritual Magic",
+        "Use Magic Device",
+        "Lockpicking",
+        "Medicine",
+        "Forgery",
+        "Cartography",
+        "Navigation",
+        "Prospecting",
+        "Smuggling"
+      ],
+      "minimumTier": "talent",
       "untrainedChecksAllowed": false
     }
   },
