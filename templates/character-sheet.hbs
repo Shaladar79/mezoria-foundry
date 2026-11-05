@@ -147,17 +147,23 @@
     {{#if status.lifeForce}}
     <div class="mezoria-lifeforce-tracker">
      <label>Current LifeForce
-      <input type="number" data-current-lifeforce min="0" max="{{status.lifeForce}}" step="1" value="{{status.currentLifeForce}}">
+      <input type="number" data-current-resource="LifeForce" min="0" max="{{status.lifeForce}}" step="1" value="{{status.currentLifeForce}}">
      </label>
      <span class="mezoria-lifeforce-maximum">/ {{status.lifeForce}}</span>
     </div>
+    <div class="mezoria-lifeforce-tracker">
+     <label>Current Mana
+      <input type="number" data-current-resource="Mana" min="0" max="{{status.mana}}" step="1" value="{{status.currentMana}}">
+     </label>
+     <span class="mezoria-lifeforce-maximum">/ {{status.mana}}</span>
+    </div>
     <div class="mezoria-lifeforce-actions">
-     <button type="button" data-lifeforce-recovery="turn" title="Quartz: regain 1 LifeForce, not exceeding maximum">+1 / Turn</button>
-     <button type="button" data-lifeforce-recovery="light" title="Restore half maximum LifeForce, rounded up, capped at maximum">Light Rest +50%</button>
-     <button type="button" data-lifeforce-recovery="full" title="Restore LifeForce to maximum">Full Rest 100%</button>
+     <button type="button" data-resource-recovery="turn" title="Quartz: regenerate 1 LifeForce and 1 Mana">+1 Each / Turn</button>
+     <button type="button" data-resource-recovery="light" title="After 4 hours, restore 50% of each maximum, rounded up">Light Rest · 4h</button>
+     <button type="button" data-resource-recovery="full" title="After 8 hours, restore both pools to maximum">Full Rest · 8h</button>
     </div>
     {{/if}}
-    <p class="mezoria-note">Quartz: regenerate 1 LifeForce per turn; light rest restores 50% of maximum (rounded up); full rest restores to maximum. Restoration cannot exceed maximum. Wounds recover separately. Mana recovery, higher-rank regeneration, talent modifiers, and rest duration remain pending.</p>
+    <p class="mezoria-note">Quartz: regenerate 1 LifeForce and 1 Mana per turn. A 4-hour light rest restores 50% of each maximum (rounded up); an 8-hour full rest restores both pools completely. Values cannot exceed their maximum; Wounds recover separately. Higher-rank bonuses and talent adjustments remain pending.</p>
     <h4>Defense and Protection</h4>
     <p class="mezoria-note">Parry, equipment Block, Spell Resistance, shields and armor depend on later equipment and ability rules. Dodge only applies to ranged and eligible magical projectiles.</p>
    </section>
