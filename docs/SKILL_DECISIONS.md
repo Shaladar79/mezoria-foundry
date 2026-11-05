@@ -226,3 +226,11 @@ All seven Magical Lore specializations below are approved as separate, trained-o
 - Lore categories completed: Creature Lore 8, Supernatural Lore 6, Magical Lore 7.
 - **Total approved skills: 91** (70 original core skills + 21 Lore skills); **Intellect: 47**.
 - Magical Inscription remains reserved for later development and is not part of the approved roster.
+
+## Crafting training gate — 2026-11-05 (approved)
+
+- All **14 approved crafting skills require training**, with a minimum of **Talent** to attempt a check using that crafting skill.
+- Characters with no training in a particular craft cannot attempt checks under that specialized skill. Training in one craft does not grant training in another.
+- This rule applies to Blacksmithing, Carpentry, Masonry, Leatherworking, Tailoring, Jewelcrafting, Tinkering, Alchemy, Cooking, Brewing, Scribing, Engineering, Shipbuilding, and Herbalism.
+- This is a training restriction for **skill checks**; routine everyday actions not requiring checks are not automatically prohibited.
+- Other non-Lore, non-crafting training restrictions are still under review.
