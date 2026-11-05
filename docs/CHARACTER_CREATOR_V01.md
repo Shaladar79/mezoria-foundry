@@ -42,3 +42,9 @@ Download the HTML file and open it in a browser. Create a character, review the 
 - [x] All 90 approved skills are available in free-selection controls
 - [x] Background Talents all resolve to current approved skills
 - [ ] Browser interaction / Foundry VTT integration tested in a running deployment
+
+## Updated order and Foundry integration — 2026-11-05
+
+The original section above describing the initial order is **superseded** by the following approved workflow: **(1) Race** (including optional Human racial Talent and racial adjustments) → **(2) Background** (apply attributes, fixed Skill Talent, noncombat feature) → **(3) Mark** (apply any currently defined Mark adjustments and choose two Mark Skill Talents) → **(4) Three Free Skill Talents** → **(5) Attribute allocation and sheet validation**. The +25 allocation pool remains unchanged, with a 40% pre-bonus cap. Mark-specific attribute adjustments have not been approved and are not invented.
+
+A Foundry Actor data model and editable character sheet prototype are now checked in at the repository root. See `docs/FOUNDRY_CHARACTER_CREATION.md`. The Foundry interface has not yet been tested inside a running Foundry instance.
