@@ -21,7 +21,7 @@ export class MezoriaCharacterSheet extends ActorSheet {
    stepRace:this.creationStep==="race",stepBackground:this.creationStep==="background",stepMark:this.creationStep==="mark",
    stepFree:this.creationStep==="free",stepReview:this.creationStep==="review",
    raceOptions:optionList(data.races,s.race,x=>x.name,x=>x.name),
-   raceName:s.race,raceTraits:[...(race?.traits||[]),...(race?.abilities||[])].map(x=>({name:x.name,description:x.effect||x.description||""})),
+   raceName:s.race,raceTraits:[...(race?.traits||[]),...(race?.abilities||[]),...(d.subgroup?.innateAbility?[d.subgroup.innateAbility]:[])].map(x=>({name:x.name,description:x.effect||x.description||x.condition||""})),
    subgroupLabel:race?.subgroupType||"Subgroup",hasSubgroups:subgroups.length>0,
    subgroupOptions:optionList(subgroups,s.subgroup,x=>x.name,x=>x.name),
    human:s.race==="Human",humanAttributes:attributes.map(name=>({name,checked:(s.humanAttributes||[]).includes(name)})),
