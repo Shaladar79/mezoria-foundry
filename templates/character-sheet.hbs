@@ -54,14 +54,14 @@
    <h3>3 · Select Mark of Power</h3>
    <label>Mark <select data-field="mark">{{#each markOptions}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
    <p>Choose two distinct Mark Talents. The Background's fixed Skill Talent takes priority on overlap.</p>
-   {{#each markChoices}}<label>Mark Talent {{index}}
+   {{#each markChoices}}<label>Mark Talent {{number}}
      <select data-talent-kind="mark" data-index="{{index}}" aria-label="Select Mark Talent">{{#each options}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select>
    </label>{{/each}}
   {{/if}}
   {{#if stepFree}}
    <h3>4 · Choose Three Free Skill Talents</h3>
    <p>Choose any three distinct approved skills, without duplicating a Mark, Background or racial Skill Talent.</p>
-   {{#each freeChoices}}<label>Free Talent
+   {{#each freeChoices}}<label>Free Talent {{number}}
     <select data-talent-kind="free" data-index="{{index}}" aria-label="Select Free Talent">{{#each options}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select>
    </label>{{/each}}
   {{/if}}
