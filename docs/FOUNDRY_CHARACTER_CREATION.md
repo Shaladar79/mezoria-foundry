@@ -177,3 +177,10 @@ The Attributes and Status tab now has four compact panels: (1) an attribute savi
 - The five header actions are shown in one left-to-right horizontal row: **End Turn**, **Light Rest (4h)**, **Full Rest (8h)**, **Roll Action Score**, and disabled **Spend Essence**. Each uses a compact height and smaller font. The Current/Spent Essence fields are placed directly above the toolbar.
 - **End Turn** reuses the pre-existing manual Quartz per-turn recovery action, regenerating +1 LifeForce and +1 Mana (both capped at maximum), and replaces the redundant resource-panel +1 per turn button. No other turn-advancement, Action Score deduction, combat turn-order mutation, or timer behavior is implied or implemented.
 - Narrow windows horizontally scroll the toolbar rather than stacking its actions vertically.
+
+## Bleeding to Death: Endurance save resolution — approved 2026-11-05
+
+- At maximum Wounds, the character is Bleeding to Death. Roll an **Endurance saving throw each turn**.
+- **One success stabilizes** the character. If their current LifeForce is 0, they stay unconscious; when stable with more than 0 LifeForce, they regain consciousness.
+- **Each failed save** adds a cumulative **−5 percentage-point penalty** to future Endurance death-save TNs. **Three failed saves cause death.** Natural 01–05 remains an automatic success under the existing d100 convention.
+- The sheet now tracks failed death saves, rolls from the Wounds panel, and displays stable/unconscious/conscious/dead states. It does not automatically roll at turn boundaries or assign external stabilization/extra-damage rules, which remain undecided.
