@@ -222,7 +222,7 @@
       "backgroundOptionsStatus": "All four background categories and 72 definitions finalized in data/backgrounds.json",
       "markSkillListsStatus": "approved; eight eligible skills for each of six Marks",
       "raceOptionsStatus": "Race roster and racial definitions recorded in data/races.json; outstanding mechanics noted there",
-      "skillSelectionsStatus": "Mark selections and free selections approved; review background overlap and racial extras during character creation",
+      "skillSelectionsStatus": "Mark, free and background overlap rules approved; racial extra Skill Talent interactions pending",
       "advancementDesignStatus": "deferred until Rank advancement and Essence (XP) spending section",
       "markSelectionRule": {
         "status": "approved",
@@ -240,6 +240,14 @@
         "duplicateWithMarkOrBackgroundForbidden": true,
         "startingTier": "Talent",
         "advancementDeferred": true
+      },
+      "backgroundMarkOverlap": {
+        "status": "approved",
+        "priority": "Background granted Skill Talent is fixed",
+        "resolution": "When a Mark-selected skill duplicates the Background grant, reselect the duplicated Mark Talent from another eligible skill on that same Mark's list",
+        "replacementFromMarkListRequired": true,
+        "backgroundReplacementAllowed": false,
+        "duplicateStartingAwardAllowed": false
       }
     },
     "backgrounds": {
