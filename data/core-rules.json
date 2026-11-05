@@ -176,7 +176,7 @@
       }
     ],
     "someSkillsRequireTraining": true,
-    "trainingGatesStatus": "Lore (21), crafting (14), and Group 1 (9) trained-only; other non-Lore, non-crafting skills pending review",
+    "trainingGatesStatus": "Lore (21), crafting (14), Group 1 (9), Group 2 (7) trained-only; Group 2 (3) approved untrained; remaining skill review pending",
     "spellcastingAndArcana": "Magic Theory, Ritual Magic, and Use Magic Device are separate approved Intellect skills; casting mechanics remain separate",
     "approvedAdditions": [
       {
@@ -187,7 +187,8 @@
       {
         "name": "Animal Handling",
         "governingAttribute": "Presence",
-        "notes": "Rancher background Skill Talent"
+        "notes": "Rancher background Skill Talent",
+        "trainedOnly": false
       },
       {
         "name": "Fishing",
@@ -224,7 +225,9 @@
       {
         "name": "Seamanship",
         "governingAttribute": "Prowess",
-        "notes": "Sailor background Skill Talent"
+        "notes": "Sailor background Skill Talent",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Investigation",
@@ -338,7 +341,9 @@
       {
         "name": "Thievery",
         "governingAttribute": "Prowess",
-        "notes": "Thief Criminal background Skill Talent"
+        "notes": "Thief Criminal background Skill Talent",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Stealth",
@@ -367,7 +372,9 @@
       {
         "name": "Tracking",
         "governingAttribute": "Endurance",
-        "notes": "Poacher Criminal background Skill Talent"
+        "notes": "Poacher Criminal background Skill Talent",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Intimidation",
@@ -397,7 +404,8 @@
       {
         "name": "Religion",
         "governingAttribute": "Intellect",
-        "notes": "Acolyte Social background Skill Talent"
+        "notes": "Acolyte Social background Skill Talent",
+        "trainedOnly": false
       },
       {
         "name": "Discipline",
@@ -442,7 +450,9 @@
       {
         "name": "Pickpocketing",
         "governingAttribute": "Prowess",
-        "notes": "Cutpurse background talent, separate from Thievery"
+        "notes": "Cutpurse background talent, separate from Thievery",
+        "trainedOnly": true,
+        "minimumTier": "talent"
       },
       {
         "name": "Lore: Beasts",
@@ -697,6 +707,24 @@
       ],
       "minimumTier": "talent",
       "untrainedChecksAllowed": false
+    },
+    "group2Training": {
+      "status": "approved",
+      "minimumTier": "talent",
+      "trainedOnly": [
+        "Magic Theory",
+        "Pickpocketing",
+        "Seamanship",
+        "Thievery",
+        "Tracking",
+        "Tactics",
+        "Appraisal"
+      ],
+      "untrainedAllowed": [
+        "Sleight of Hand",
+        "Animal Handling",
+        "Religion"
+      ]
     }
   },
   "rolls": {
