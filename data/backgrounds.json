@@ -1189,6 +1189,27 @@
         "combatEffect": false
       },
       "notes": "Does not grant combat boarding bonuses, additional damage, or automatic surprise."
+    },
+    "Grave Robber": {
+      "status": "approved",
+      "category": "Criminal",
+      "attributeBonus": {
+        "Prowess": 2,
+        "Intellect": 2
+      },
+      "skillTalent": {
+        "name": "Investigation",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Tomb Delver",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Investigation checks involving searching burial chambers, identifying concealed compartments in tombs, locating valuable grave goods, and recognizing signs that a burial site has previously been disturbed",
+        "additionalEffect": "Recognizes common burial customs, funerary symbols, and construction features of crypts and mausoleums",
+        "combatEffect": false
+      },
+      "notes": "Does not automatically detect magical traps, disarm hazards, or protect against undead."
     }
   },
   "notes": [
