@@ -1042,6 +1042,27 @@
         "combatEffect": false
       },
       "notes": "Does not automatically bypass security inspections or provide immunity from legal consequences."
+    },
+    "Fence": {
+      "status": "approved",
+      "category": "Criminal",
+      "attributeBonus": {
+        "Intellect": 2,
+        "Presence": 2
+      },
+      "skillTalent": {
+        "name": "Commerce",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Underworld Appraiser",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Commerce checks involving appraising stolen merchandise, negotiating illicit purchases or sales, identifying altered or disguised valuables, and estimating an item's resale value in underground markets",
+        "additionalEffect": "Recognizes common signs of stolen goods, suspicious ownership claims, and types of merchandise sought by illicit buyers",
+        "combatEffect": false
+      },
+      "notes": "Does not automatically establish criminal contacts or guarantee a buyer for stolen merchandise."
     }
   },
   "notes": [
