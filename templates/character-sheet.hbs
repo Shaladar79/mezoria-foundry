@@ -144,7 +144,20 @@
      <div><span>LifeForce · Maximum</span><strong>{{#if status.lifeForce}}{{status.lifeForce}}{{else}}Pending{{/if}}</strong></div>
      <div><span>Mana · Maximum</span><strong>{{#if status.mana}}{{status.mana}}{{else}}Pending{{/if}}</strong></div>
     </div>
-    <p class="mezoria-note">At Quartz Rank, LifeForce = (Might tens + Endurance tens) × 3; Mana = (Intellect tens + Presence tens) × 3. Higher-rank scaling and resource recovery remain to be defined.</p>
+    {{#if status.lifeForce}}
+    <div class="mezoria-lifeforce-tracker">
+     <label>Current LifeForce
+      <input type="number" data-current-lifeforce min="0" max="{{status.lifeForce}}" step="1" value="{{status.currentLifeForce}}">
+     </label>
+     <span class="mezoria-lifeforce-maximum">/ {{status.lifeForce}}</span>
+    </div>
+    <div class="mezoria-lifeforce-actions">
+     <button type="button" data-lifeforce-recovery="turn" title="Quartz: regain 1 LifeForce, not exceeding maximum">+1 / Turn</button>
+     <button type="button" data-lifeforce-recovery="light" title="Restore half maximum LifeForce, rounded up, capped at maximum">Light Rest +50%</button>
+     <button type="button" data-lifeforce-recovery="full" title="Restore LifeForce to maximum">Full Rest 100%</button>
+    </div>
+    {{/if}}
+    <p class="mezoria-note">Quartz: regenerate 1 LifeForce per turn; light rest restores 50% of maximum (rounded up); full rest restores to maximum. Restoration cannot exceed maximum. Wounds recover separately. Mana recovery, higher-rank regeneration, talent modifiers, and rest duration remain pending.</p>
     <h4>Defense and Protection</h4>
     <p class="mezoria-note">Parry, equipment Block, Spell Resistance, shields and armor depend on later equipment and ability rules. Dodge only applies to ranged and eligible magical projectiles.</p>
    </section>
