@@ -1282,6 +1282,27 @@
         "combatEffect": false
       },
       "notes": "Does not grant combat resistance, damage reduction, or immunity to intimidation."
+    },
+    "Noble": {
+      "status": "approved",
+      "category": "Social",
+      "attributeBonus": {
+        "Presence": 2,
+        "Intellect": 2
+      },
+      "skillTalent": {
+        "name": "Etiquette",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Noble Bearing",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Etiquette checks involving interacting with aristocrats, observing courtly customs, addressing titled individuals appropriately, and navigating formal social gatherings",
+        "additionalEffect": "Recognizes noble titles, common heraldic symbols, and established social hierarchies",
+        "combatEffect": false
+      },
+      "notes": "Does not automatically grant wealth, political authority, property, or guaranteed cooperation from other nobles."
     }
   },
   "notes": [
