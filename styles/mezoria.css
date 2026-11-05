@@ -179,3 +179,32 @@
  .mezoria.sheet .mezoria-header-essence{flex-basis:100%}
  .mezoria.sheet .mezoria-header-actions{flex-basis:100%}
 }
+
+/* v0.2.13: header controls are a compact five-button horizontal toolbar */
+.mezoria.sheet .mezoria-header-operations{
+ display:flex!important;flex-direction:column!important;align-items:stretch!important;
+ gap:8px!important
+}
+.mezoria.sheet .mezoria-header-essence{
+ display:flex!important;flex:none!important;width:min(280px,100%)!important;max-width:100%!important
+}
+.mezoria.sheet .mezoria-header-actions{
+ display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;
+ align-items:stretch!important;gap:6px!important;flex:none!important;
+ width:100%!important;min-width:0!important;margin:0!important
+}
+.mezoria.sheet .mezoria-header-actions button{
+ display:flex!important;align-items:center!important;justify-content:center!important;
+ box-sizing:border-box!important;width:100%!important;min-width:0!important;max-width:none!important;
+ height:29px!important;min-height:29px!important;max-height:29px!important;
+ padding:3px 5px!important;margin:0!important;
+ font-size:10px!important;line-height:1.1!important;
+ white-space:nowrap!important;flex:none!important
+}
+@media(max-width:650px){
+ .mezoria.sheet .mezoria-header-actions{
+  display:flex!important;flex-wrap:nowrap!important;overflow-x:auto!important;
+  scrollbar-width:thin;gap:5px!important;padding-bottom:4px!important
+ }
+ .mezoria.sheet .mezoria-header-actions button{flex:0 0 115px!important;width:115px!important}
+}
