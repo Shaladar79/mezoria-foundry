@@ -388,6 +388,11 @@
         "name": "Religion",
         "governingAttribute": "pending",
         "notes": "Acolyte Social background Skill Talent"
+      },
+      {
+        "name": "Discipline",
+        "governingAttribute": "pending",
+        "notes": "Monk Social background Skill Talent"
       }
     ]
   },
