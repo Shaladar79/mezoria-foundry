@@ -69,7 +69,9 @@ export function deriveCharacter(s,rulebook=cache){
   lifeForce:rank===1?3*(Math.floor(score("Might")/10)+enduranceTens):null,
   mana:rank===1?3*(Math.floor(score("Intellect")/10)+Math.floor(score("Presence")/10)):null,
   currentLifeForce:rank===1?Math.min(3*(Math.floor(score("Might")/10)+enduranceTens),s.currentLifeForce??3*(Math.floor(score("Might")/10)+enduranceTens)):null,
+  currentMana:rank===1?Math.min(3*(Math.floor(score("Intellect")/10)+Math.floor(score("Presence")/10)),s.currentMana??3*(Math.floor(score("Intellect")/10)+Math.floor(score("Presence")/10))):null,
   lifeForceRegen:rank===1?1:null,
+  manaRegen:rank===1?1:null,
   actionScore:Number(s.actionScore)||0,
   movement:sub?.movement?.ground??r?.baseMovement??null
  };
