@@ -71,7 +71,8 @@ export function deriveCharacter(s,rulebook=cache){
  const status={
   baseDodge:prowessTens,dodge:dodgeSuppressed?0:prowessTens,dodgeSuppressed,unableToEvade,initiativeBonus:prowessTens,
   baseParry:Math.floor(score("Might")/10),weaponParryRating:Math.max(0,Number(s.equippedMeleeParryRating)||0),
-  parry:Math.floor(score("Might")/10)+Math.max(0,Number(s.equippedMeleeParryRating)||0),
+  parry:dodgeSuppressed?0:Math.floor(score("Might")/10)+Math.max(0,Number(s.equippedMeleeParryRating)||0),
+  parrySuppressed:dodgeSuppressed,
   woundThreshold,woundCapacity,woundsTaken,
   bleedingToDeath:woundCapacity!==null&&woundsTaken>=woundCapacity&&deathState==="none",
   deathSaveFailures:failures,deathState,
