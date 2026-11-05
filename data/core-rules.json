@@ -1552,6 +1552,26 @@
         "turnOrder": "After each movement action, subtract 2 Action Score and recalculate who has the highest remaining score before the next action.",
         "actionEligibility": "Uses established Action Score rules, including a final action that can take positive remaining score negative."
       }
+    },
+    "dodge": {
+      "status": "approved",
+      "universal": true,
+      "baseFormula": "floor(Prowess / 10)",
+      "passive": true,
+      "actionScoreCost": 0,
+      "manaCost": 0,
+      "appliesAgainst": [
+        "physical ranged attacks",
+        "magical projectiles"
+      ],
+      "doesNotApplyAgainst": [
+        "physical melee attacks",
+        "melee spell attacks",
+        "unavoidable spells"
+      ],
+      "cannotEvade": "Dodge becomes 0 while unconscious, immobilized, dead, or otherwise physically unable to evade.",
+      "attackInteraction": "Subtract applicable Dodge percentage from modified attack accuracy; affects hit target and success count.",
+      "specialBonuses": "Equipment, talent and ability modifiers deferred."
     }
   },
   "wounds": {
