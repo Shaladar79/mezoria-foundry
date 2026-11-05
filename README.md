@@ -33,3 +33,7 @@ Use these separate decision files when assembling a future in-person tabletop ru
 ## Important
 
 **Not yet a playable Foundry package.** No Foundry manifest, sheet, or automation is claimed to be ready. Rules tagged `pending` or `provisional` must not be treated as finalized.
+
+## Character creator prototype
+
+A standalone Quartz character creator and live basic sheet are available at [`character-creator/index.html`](character-creator/index.html). Download this HTML file and open it in a browser to create Rank 1 characters and export/import JSON saves. The current [character creation order and limitations](docs/CHARACTER_CREATOR_V01.md) are documented separately. This is a prototype rather than an installed Foundry VTT system.
