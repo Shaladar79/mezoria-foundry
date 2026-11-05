@@ -1572,6 +1572,18 @@
       "cannotEvade": "Dodge becomes 0 while unconscious, immobilized, dead, or otherwise physically unable to evade.",
       "attackInteraction": "Subtract applicable Dodge percentage from modified attack accuracy; affects hit target and success count.",
       "specialBonuses": "Equipment, talent and ability modifiers deferred."
+    },
+    "parry": {
+      "status": "approved foundation",
+      "formula": "floor(Might / 10) + equipped melee weapon Parry rating",
+      "baseParry": "floor(Might / 10)",
+      "weaponContribution": "Each melee weapon has a Parry rating, defined when equipment is designed.",
+      "applicability": "Melee attacks, including melee spell attacks under existing spell-defense rules; no Parry against ranged attacks.",
+      "accuracyEffect": "Subtract Parry from attacker's modified accuracy when applicable; impacts hit chance and successes.",
+      "sheetInterim": "Until equipment items are implemented, an editable equipped-melee-weapon Parry rating models its contribution.",
+      "unarmedOrNoWeapon": "No weapon contribution unless an applicable equipment/rule grants one; equipment rules pending",
+      "incapacitationInteraction": "Pending decision; do not extrapolate Dodge conditions to Parry yet.",
+      "multipleWeapons": "How to select/combine ratings pending equipment rules."
     }
   },
   "wounds": {
