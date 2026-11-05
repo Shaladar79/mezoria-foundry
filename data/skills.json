@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "Might, Prowess, and Endurance rosters finalized; Intellect and Presence pending review",
+  "status": "Might, Prowess, Endurance and fourteen crafting skills have approved default attribute assignments; general Intellect and Presence lists remain under review",
   "attributes": {
     "Might": {
       "status": "approved",
@@ -43,6 +43,16 @@
         {
           "name": "Intimidation",
           "description": "Coercion through imposing physical menace; social manipulation involving authority or rhetoric may instead use Presence",
+          "governingAttribute": "Might"
+        },
+        {
+          "name": "Blacksmithing",
+          "description": "Forging metal weapons, armor, tools, and hardware",
+          "governingAttribute": "Might"
+        },
+        {
+          "name": "Masonry",
+          "description": "Cutting, shaping, and constructing with stone",
           "governingAttribute": "Might"
         }
       ]
@@ -99,6 +109,31 @@
           "name": "Riding",
           "description": "Controlling mounts, difficult maneuvers, and mounted movement",
           "governingAttribute": "Prowess"
+        },
+        {
+          "name": "Carpentry",
+          "description": "Working wood into furniture, structures, and equipment",
+          "governingAttribute": "Prowess"
+        },
+        {
+          "name": "Leatherworking",
+          "description": "Producing leather armor, saddles, bags, and other leather goods",
+          "governingAttribute": "Prowess"
+        },
+        {
+          "name": "Tailoring",
+          "description": "Sewing clothing and textile goods",
+          "governingAttribute": "Prowess"
+        },
+        {
+          "name": "Jewelcrafting",
+          "description": "Cutting gems and creating jewelry and ornamentation",
+          "governingAttribute": "Prowess"
+        },
+        {
+          "name": "Scribing",
+          "description": "Producing manuscripts, records, and ordinary scrolls",
+          "governingAttribute": "Prowess"
         }
       ]
     },
@@ -123,14 +158,49 @@
       ]
     },
     "Intellect": {
-      "status": "pending",
-      "skills": [],
+      "status": "under review; seven approved crafting skills assigned",
+      "skills": [
+        {
+          "name": "Tinkering",
+          "description": "Creating and repairing small mechanisms and intricate devices",
+          "governingAttribute": "Intellect"
+        },
+        {
+          "name": "Alchemy",
+          "description": "Formulating potions, reagents, and alchemical substances",
+          "governingAttribute": "Intellect"
+        },
+        {
+          "name": "Cooking",
+          "description": "Preparing meals, preserved foods, and other dishes",
+          "governingAttribute": "Intellect"
+        },
+        {
+          "name": "Brewing",
+          "description": "Making fermented drinks and other brewed beverages",
+          "governingAttribute": "Intellect"
+        },
+        {
+          "name": "Engineering",
+          "description": "Designing and constructing complex machines and systems",
+          "governingAttribute": "Intellect"
+        },
+        {
+          "name": "Shipbuilding",
+          "description": "Constructing and repairing boats and other watercraft",
+          "governingAttribute": "Intellect"
+        },
+        {
+          "name": "Herbalism",
+          "description": "Identifying, harvesting, and preparing useful herbs",
+          "governingAttribute": "Intellect"
+        }
+      ],
       "notes": [
         "Concentration reserved for Intellect skill review; not yet approved.",
         "Arcana renamed to Magic Theory for Intellect roster review.",
         "Ritual Magic and Use Magic Device are proposed Intellect skills.",
         "Individual crafting disciplines are under review; the split into separate skills is approved.",
-        "The 14 crafting disciplines are approved as individual skills, but their governing attributes remain subject to review.",
         "Magical Inscription is reserved for future design and not an approved skill."
       ]
     },
@@ -168,72 +238,72 @@
       {
         "name": "Blacksmithing",
         "description": "Forging metal weapons, armor, tools, and hardware",
-        "governingAttribute": "pending attribute assignment"
+        "governingAttribute": "Might"
       },
       {
         "name": "Carpentry",
         "description": "Working wood into furniture, structures, and equipment",
-        "governingAttribute": "pending attribute assignment"
+        "governingAttribute": "Prowess"
       },
       {
         "name": "Masonry",
         "description": "Cutting, shaping, and constructing with stone",
-        "governingAttribute": "pending attribute assignment"
+        "governingAttribute": "Might"
       },
       {
         "name": "Leatherworking",
         "description": "Producing leather armor, saddles, bags, and other leather goods",
-        "governingAttribute": "pending attribute assignment"
+        "governingAttribute": "Prowess"
       },
       {
         "name": "Tailoring",
         "description": "Sewing clothing and textile goods",
-        "governingAttribute": "pending attribute assignment"
+        "governingAttribute": "Prowess"
       },
       {
         "name": "Jewelcrafting",
         "description": "Cutting gems and creating jewelry and ornamentation",
-        "governingAttribute": "pending attribute assignment"
+        "governingAttribute": "Prowess"
       },
       {
         "name": "Tinkering",
         "description": "Creating and repairing small mechanisms and intricate devices",
-        "governingAttribute": "pending attribute assignment"
+        "governingAttribute": "Intellect"
       },
       {
         "name": "Alchemy",
         "description": "Formulating potions, reagents, and alchemical substances",
-        "governingAttribute": "pending attribute assignment"
+        "governingAttribute": "Intellect"
       },
       {
         "name": "Cooking",
         "description": "Preparing meals, preserved foods, and other dishes",
-        "governingAttribute": "pending attribute assignment"
+        "governingAttribute": "Intellect"
       },
       {
         "name": "Brewing",
         "description": "Making fermented drinks and other brewed beverages",
-        "governingAttribute": "pending attribute assignment"
+        "governingAttribute": "Intellect"
       },
       {
         "name": "Scribing",
         "description": "Producing manuscripts, records, and ordinary scrolls",
-        "governingAttribute": "pending attribute assignment"
+        "governingAttribute": "Prowess"
       },
       {
         "name": "Engineering",
         "description": "Designing and constructing complex machines and systems",
-        "governingAttribute": "pending attribute assignment"
+        "governingAttribute": "Intellect"
       },
       {
         "name": "Shipbuilding",
         "description": "Constructing and repairing boats and other watercraft",
-        "governingAttribute": "pending attribute assignment"
+        "governingAttribute": "Intellect"
       },
       {
         "name": "Herbalism",
         "description": "Identifying, harvesting, and preparing useful herbs",
-        "governingAttribute": "pending attribute assignment"
+        "governingAttribute": "Intellect"
       }
     ],
     "reservedForLater": [
@@ -242,6 +312,8 @@
         "status": "reserved, not approved",
         "description": "Magical inscriptions, enchanted scrolls, and runic items"
       }
-    ]
+    ],
+    "attributeAssignmentsStatus": "approved",
+    "attributeUseRule": "Each craft has one default governing attribute. The GM may substitute a different attribute for a specific unusual task while retaining the same skill proficiency."
   }
 }
