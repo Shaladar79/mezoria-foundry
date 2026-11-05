@@ -144,14 +144,22 @@
     "startingRank": 1,
     "skillTalents": {
       "markGrantCount": 2,
-      "markGrantCountStatus": "provisional: user phrasing previously also mentioned three; using latest clarified working allocation",
+      "markGrantCountStatus": "approved",
       "playerChoiceCount": 3,
       "backgroundGrantCount": 1,
       "backgroundOptionsStatus": "All four background categories and 72 definitions finalized in data/backgrounds.json",
-      "markSkillListsStatus": "not yet assigned",
+      "markSkillListsStatus": "under review; must define an eligible list for each of six Marks",
       "raceOptionsStatus": "Race roster and racial definitions recorded in data/races.json; outstanding mechanics noted there",
       "skillSelectionsStatus": "not yet finalized",
-      "advancementDesignStatus": "deferred until Rank advancement and Essence (XP) spending section"
+      "advancementDesignStatus": "deferred until Rank advancement and Essence (XP) spending section",
+      "markSelectionRule": {
+        "status": "approved",
+        "count": 2,
+        "selectionMethod": "Choose two distinct Skill Talents from the selected Mark of Power's own eligible skill list",
+        "eligibleMarkListsStatus": "proposed lists under review; not yet finalized",
+        "startingTier": "Talent",
+        "duplicateSelectionsAllowed": false
+      }
     },
     "backgrounds": {
       "status": "All four categories and 72 background definitions finalized",
