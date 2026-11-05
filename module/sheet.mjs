@@ -182,6 +182,9 @@ export class MezoriaCharacterSheet extends ActorSheet {
    }
    await this.actor.update({["system."+field]:value});
   });
+  html.find("[data-unable-to-evade]").on("change",async event=>{
+   await this.actor.update({"system.unableToEvade":Boolean(event.currentTarget.checked)});
+  });
   html.find("[data-status-field]").on("change",async event=>{
    const key=event.currentTarget.dataset.statusField;
    if(!["woundsTaken","actionScore"].includes(key))return;
