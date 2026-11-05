@@ -96,30 +96,62 @@
  </nav>
  {{#unless creationComplete}}<p class="mezoria-warning mezoria-incomplete">Character creation is not finished. Click the + button above to continue.</p>{{/unless}}
  {{#if sheetAttributes}}
- <section class="mezoria-tab-panel">
+ <section class="mezoria-tab-panel mezoria-attributes-panel">
   <h3>Attributes and Status</h3>
-  <p>Attribute saves roll d100 against the attribute's current percentage.</p>
-  <div class="mezoria-roll-list">
-   {{#each attributes}}
-   <div class="mezoria-roll-row">
-    <strong>{{name}}</strong><span class="mezoria-target" title="Current attribute save target number">TN {{total}}%</span>
-    <button type="button" data-roll-attr="{{name}}" aria-label="Roll {{name}} save">Roll</button>
-   </div>
-   {{/each}}
+  <div class="mezoria-attributes-status-grid">
+   <section class="mezoria-status-panel">
+    <h4>Attributes · Saving Rolls</h4>
+    <p class="mezoria-note">Base 35% + allocated points + racial and background bonuses.</p>
+    <div class="mezoria-attribute-table">
+     <div class="mezoria-attribute-table-head"><span>Attribute</span><span>Base</span><span>Alloc.</span><span>Race</span><span>Bg.</span><span>TN</span><span></span></div>
+     {{#each attributes}}
+     <div class="mezoria-attribute-save-row">
+      <strong>{{name}}</strong><span>{{base}}</span><span>+{{allocated}}</span><span>+{{racial}}</span><span>+{{background}}</span><strong>{{total}}%</strong>
+      <button type="button" data-roll-attr="{{name}}" aria-label="Roll {{name}} save">Roll</button>
+     </div>
+     {{/each}}
+    </div>
+   </section>
+   <section class="mezoria-status-panel">
+    <h4>Combat Status</h4>
+    <div class="mezoria-status-summary">
+     <div><span>Rank</span><strong>Quartz · 1</strong></div>
+     <div><span>Movement</span><strong>{{#if status.movement}}{{status.movement}} spaces{{else}}Pending{{/if}}</strong></div>
+     <div><span>Dodge</span><strong>{{status.dodge}}%</strong></div>
+     <div><span>Action Score Bonus</span><strong>+{{status.initiativeBonus}}</strong></div>
+    </div>
+    <div class="mezoria-status-control">
+     <label>Current Action Score <input type="number" step="1" data-status-field="actionScore" value="{{status.actionScore}}"></label>
+     <button type="button" data-roll-action-score title="New round: carry over current score and add d20 plus Prowess tens">Roll New Round</button>
+    </div>
+    <p class="mezoria-note">New round = current Action Score + d20 + Prowess tens. Action costs and spending are handled separately.</p>
+   </section>
+   <section class="mezoria-status-panel">
+    <h4>Wounds</h4>
+    <div class="mezoria-status-summary">
+     <div><span>Quartz Capacity</span><strong>{{status.woundCapacity}}</strong></div>
+     <div><span>Damage per Wound Threshold</span><strong>{{status.woundThreshold}}</strong></div>
+    </div>
+    <label class="mezoria-wounds-control">Current Wounds
+     <input type="number" min="0" step="1" data-status-field="woundsTaken" value="{{status.woundsTaken}}">
+    </label>
+    {{#if status.bleedingToDeath}}<p class="mezoria-warning">Bleeding to Death — wound capacity reached.</p>{{/if}}
+    <p class="mezoria-note">Overflow creates one Wound per threshold, rounded up; damage application is not yet automated.</p>
+   </section>
+   <section class="mezoria-status-panel">
+    <h4>Health and Mana</h4>
+    <div class="mezoria-status-summary">
+     <div><span>Health Foundation</span><strong>{{status.healthFoundation}}</strong></div>
+     <div><span>Mana Foundation</span><strong>{{status.manaFoundation}}</strong></div>
+    </div>
+    <p class="mezoria-note">Health foundation = Might tens + Endurance tens. Mana foundation = Intellect tens + Presence tens. Final pools are pending their scaling rule.</p>
+    <h4>Defense and Protection</h4>
+    <p class="mezoria-note">Parry, equipment Block, Spell Resistance, shields and armor depend on later equipment and ability rules. Dodge only applies to ranged and eligible magical projectiles.</p>
+   </section>
   </div>
-  <h3>Status</h3>
-  <div class="mezoria-status-grid">
-   <div><span>Health</span><strong>Pending</strong></div>
-   <div><span>Mana</span><strong>Pending</strong></div>
-   <div><span>Wounds</span><strong>Pending</strong></div>
-   <div><span>Defenses</span><strong>Pending</strong></div>
-   <div><span>Movement</span><strong>{{#if derived.movement}}{{derived.movement}} spaces{{else}}Pending{{/if}}</strong></div>
-   <div><span>Rank</span><strong>1 · Quartz</strong></div>
-  </div>
-  <p class="mezoria-note">Health, Mana, Wounds, and Defense formulas will be connected when their rules are finalized.</p>
  </section>
  {{/if}}
- {{#if sheetSkills}}
+  {{#if sheetSkills}}
  <section class="mezoria-tab-panel mezoria-skills-panel">
   <h3>Skills</h3>
   <div class="mezoria-skill-panels">
