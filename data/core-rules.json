@@ -433,6 +433,46 @@
         "name": "Pickpocketing",
         "governingAttribute": "Prowess",
         "notes": "Cutpurse background talent, separate from Thievery"
+      },
+      {
+        "name": "Lore: Beasts",
+        "governingAttribute": "Intellect",
+        "notes": "Creature Lore; trained only (Talent minimum)"
+      },
+      {
+        "name": "Lore: Dragons",
+        "governingAttribute": "Intellect",
+        "notes": "Creature Lore; trained only (Talent minimum)"
+      },
+      {
+        "name": "Lore: Legends",
+        "governingAttribute": "Intellect",
+        "notes": "Creature Lore; trained only (Talent minimum)"
+      },
+      {
+        "name": "Lore: Monstrosities",
+        "governingAttribute": "Intellect",
+        "notes": "Creature Lore; trained only (Talent minimum)"
+      },
+      {
+        "name": "Lore: Undead",
+        "governingAttribute": "Intellect",
+        "notes": "Creature Lore; trained only (Talent minimum)"
+      },
+      {
+        "name": "Lore: Constructs",
+        "governingAttribute": "Intellect",
+        "notes": "Creature Lore; trained only (Talent minimum)"
+      },
+      {
+        "name": "Lore: Plants",
+        "governingAttribute": "Intellect",
+        "notes": "Creature Lore; trained only (Talent minimum)"
+      },
+      {
+        "name": "Lore: Shapeshifters",
+        "governingAttribute": "Intellect",
+        "notes": "Creature Lore; trained only (Talent minimum)"
       }
     ],
     "governingAttributeReview": {
@@ -511,7 +551,15 @@
           "Tactics",
           "Agriculture",
           "Prospecting",
-          "Smuggling"
+          "Smuggling",
+          "Lore: Beasts",
+          "Lore: Dragons",
+          "Lore: Legends",
+          "Lore: Monstrosities",
+          "Lore: Undead",
+          "Lore: Constructs",
+          "Lore: Plants",
+          "Lore: Shapeshifters"
         ]
       },
       "Presence": {
