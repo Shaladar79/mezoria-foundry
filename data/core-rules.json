@@ -176,7 +176,7 @@
       }
     ],
     "someSkillsRequireTraining": true,
-    "trainingGatesStatus": "skill roster and restrictions pending",
+    "trainingGatesStatus": "Lore (21) and crafting (14) restrictions approved; other skills pending review",
     "spellcastingAndArcana": "Magic Theory, Ritual Magic, and Use Magic Device are separate approved Intellect skills; casting mechanics remain separate",
     "approvedAdditions": [
       {
@@ -664,6 +664,13 @@
       "trainedOnly": true,
       "minimumTier": "talent",
       "scope": "All 21 approved Lore specializations and future additions"
+    },
+    "craftingTraining": {
+      "status": "approved",
+      "trainedOnly": true,
+      "minimumTier": "talent",
+      "scope": "All 14 approved crafting skills",
+      "untrainedChecksAllowed": false
     }
   },
   "rolls": {
