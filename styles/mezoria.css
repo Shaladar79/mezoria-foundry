@@ -1,2 +1,46 @@
-.mezoria.sheet{min-width:650px}.mezoria .window-content{background:#17242e;color:#e9f3f4}.mezoria-creation{height:100%;overflow:auto}.mezoria-header{padding:8px 12px;border-bottom:1px solid #4d666b}.mezoria-header h2{margin:0}.mezoria-tabs{display:flex;flex-wrap:wrap;gap:4px;padding:8px}.mezoria-tabs button{flex:1;padding:7px;background:#263c44;border:1px solid #546f78;color:#eef4f6;cursor:pointer}.mezoria-tabs button.active{background:#256e62;color:white}.mezoria-columns{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:10px}.mezoria-editor,.mezoria-preview{border:1px solid #526971;border-radius:8px;padding:12px;min-width:0}.mezoria-creation label{display:block;margin:10px 0}.mezoria-creation input,.mezoria-creation select,.mezoria-creation textarea{box-sizing:border-box;display:block;width:100%;background:#21353d;color:#eef4f6;border:1px solid #687d87;border-radius:4px;padding:5px;margin-top:3px}.mezoria-creation .mezoria-check{display:flex;align-items:center;gap:8px}.mezoria-check input{width:auto}.mezoria-stat,.mezoria-talent{border-bottom:1px solid #40555d;padding:5px 0}.mezoria-stat strong,.mezoria-talent small{float:right}.mezoria-stat small{display:block;color:#a5b8bf}.mezoria-warning{color:#ffbb9e}.mezoria-success{color:#77e6c9}.mezoria-attribute{display:flex!important;align-items:center;gap:10px}.mezoria-attribute input{width:75px!important}.mezoria-attribute span{margin-left:auto}@media(max-width:720px){.mezoria-columns{grid-template-columns:1fr}}
-.mezoria-headline{display:flex;align-items:center;justify-content:space-between;gap:12px}.mezoria-headline p{margin:2px 0}.mezoria-create-button{width:44px;height:44px;flex:none;border-radius:50%;font-size:30px;line-height:1;background:#256e62;color:#fff;border:2px solid #8cf2d5;cursor:pointer}.mezoria-create-button:hover,.mezoria-create-button:focus{background:#318f80;outline:2px solid #8cf2d5}.mezoria-back-button,.mezoria-finish-button{background:#256e62;border:1px solid #8cf2d5;color:#fff;border-radius:6px;padding:8px 12px;cursor:pointer}.mezoria-finish-button{margin-top:10px;width:100%}.mezoria-sheet-only{display:block;max-width:750px;margin:auto}.mezoria-sheet-only .mezoria-preview{min-height:390px}
+
+/* v0.2: sheet identity header, creator steps, Attributes/Status and Skills tabs */
+.mezoria .window-content{padding:0;overflow:auto}
+.mezoria-creation{height:100%;overflow:auto}
+.mezoria-header{padding:14px 18px;background:#132832;border-bottom:1px solid #45646a}
+.mezoria-headline{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.mezoria-headline h2{font-size:20px;margin:0;color:#d9fff4}
+.mezoria-headline p{margin:2px 0 10px;color:#b2d0d2}
+.mezoria-identity{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:8px 12px}
+.mezoria-identity label{font-size:12px;color:#b5cbd0;margin:0}
+.mezoria-identity input[readonly]{width:100%;background:#243a43;border:1px solid #49636c;border-radius:5px;padding:7px 9px;color:#f0f9fa;margin-top:4px;cursor:default}
+.mezoria-create-button{width:46px;height:46px;border-radius:50%;font-size:30px;font-weight:bold;line-height:38px;border:2px solid #8cf2d5;background:#256e62;color:white;cursor:pointer;flex:none}
+.mezoria-create-button:hover{background:#2f9885}
+.mezoria-back-button,.mezoria-finish-button{background:#256e62;color:white;border:1px solid #8cf2d5;border-radius:6px;padding:8px 14px;cursor:pointer}
+.mezoria-tabs{display:flex;gap:6px;flex-wrap:wrap;padding:12px 16px;border-bottom:1px solid #425862}
+.mezoria-tabs button{border:1px solid #557780;background:#263f47;color:#d9ebed;padding:9px 12px;border-radius:6px;cursor:pointer;min-height:35px;flex:1}
+.mezoria-tabs button.active{background:#237969;border-color:#80e3c8;color:#fff;font-weight:bold}
+.mezoria-wizard,.mezoria-tab-panel{padding:18px 22px;max-width:880px;margin:0 auto}
+.mezoria-wizard h3,.mezoria-tab-panel h3{color:#98edd7;margin:0 0 10px}
+.mezoria-wizard label{display:block;margin:12px 0;color:#e4f1f4}
+.mezoria-wizard input,.mezoria-wizard select{margin-top:5px;width:100%;border:1px solid #587a83;border-radius:5px;background:#1e333d;color:white;padding:9px}
+.mezoria-check-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:4px 12px}
+.mezoria-check{display:flex!important;gap:8px;align-items:center}
+.mezoria-check input{width:auto}
+.mezoria-attribute{display:grid!important;grid-template-columns:1fr 95px 70px;align-items:center;gap:12px;border-bottom:1px solid #42606a;padding:7px 0}
+.mezoria-attribute input{width:95px}
+.mezoria-attribute span{text-align:right;font-weight:bold}
+.mezoria-points{font-size:16px;color:#d8f5ed}
+.mezoria-roll-list{border:1px solid #405a64;border-radius:7px;overflow:hidden;margin:10px 0 22px}
+.mezoria-roll-row{display:grid;grid-template-columns:minmax(0,1fr) 100px 84px;align-items:center;gap:12px;padding:9px 12px;border-bottom:1px solid #37505b}
+.mezoria-roll-row:last-child{border-bottom:0}
+.mezoria-roll-row:nth-child(even){background:#213741}
+.mezoria-roll-row button{background:#236d61;border:1px solid #83e6cd;border-radius:6px;color:white;padding:7px 10px;cursor:pointer}
+.mezoria-roll-row button:hover{background:#2f8f80}
+.mezoria-target{font-weight:700;text-align:right;color:#bcf5dc;white-space:nowrap}
+.mezoria-skill-name small{display:block;color:#afc5ca;font-size:11px}
+.mezoria-trained{border-left:4px solid #6fdec0}
+.mezoria-status-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.mezoria-status-grid div{border:1px solid #42616b;border-radius:5px;padding:10px}
+.mezoria-status-grid span{display:block;color:#aac7ce;font-size:12px}
+.mezoria-status-grid strong{display:block;margin-top:3px}
+.mezoria-note{font-size:12px;color:#b7cbd0}
+.mezoria-incomplete{margin:12px 20px}
+.mezoria-warning{color:#ffbd9e}
+.mezoria-success{color:#83e4c6}
+@media(max-width:650px){.mezoria-identity{grid-template-columns:repeat(2,minmax(0,1fr))}.mezoria-creation-tabs button{flex-basis:30%}.mezoria-roll-row{grid-template-columns:minmax(0,1fr) 78px 63px;gap:5px;padding:8px}.mezoria-status-grid{grid-template-columns:1fr}}
