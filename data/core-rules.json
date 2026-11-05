@@ -1582,8 +1582,9 @@
       "accuracyEffect": "Subtract Parry from attacker's modified accuracy when applicable; impacts hit chance and successes.",
       "sheetInterim": "Until equipment items are implemented, an editable equipped-melee-weapon Parry rating models its contribution.",
       "unarmedOrNoWeapon": "No weapon contribution unless an applicable equipment/rule grants one; equipment rules pending",
-      "incapacitationInteraction": "Pending decision; do not extrapolate Dodge conditions to Parry yet.",
-      "multipleWeapons": "How to select/combine ratings pending equipment rules."
+      "incapacitationInteraction": "Same as Dodge: effective Parry is 0 when unconscious, immobilized, dead, or otherwise physically unable to defend. Base Parry and weapon rating remain tracked.",
+      "multipleWeapons": "How to select/combine ratings pending equipment rules.",
+      "effectiveParry": "If incapacitated (same flag/conditions as Dodge), 0; otherwise floor(Might / 10) + equipped melee weapon Parry rating."
     }
   },
   "wounds": {
