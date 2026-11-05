@@ -133,3 +133,10 @@ The approved Skills UI uses two side-by-side panels of approximately equal width
 ## Attributes and Status tab — v0.2.6
 
 The Attributes and Status tab now has four compact panels: (1) an attribute saving-roll table displaying base 35, allocation, racial bonus, background bonus, final TN and a d100 Roll button; (2) Combat Status showing Rank, racial movement, approved base Dodge = floor(Prowess/10), and Action Score bonus, with an editable **current Action Score** and **Roll New Round** button that adds d20 + floor(Prowess/10) to the prior saved score per the approved carryover rule; (3) Wounds showing Quartz capacity 3, threshold = Rank + floor(floor(Endurance/10)/2), editable current Wounds and a Bleeding to Death alert at capacity; and (4) the approved Health/Mana tens-digit **foundations**, clearly labeled as foundations pending final pool scaling. Unapproved Parry, Block, Spell Resistance, shield, and armor statistics remain explicitly pending. The tracker does not automate action spending, damage, or healing.
+
+## Approved resource naming and Quartz scaling — 2026-11-05
+
+- Rename the Health resource to **LifeForce**. The spellcasting resource is simply **Mana**, not Mana Foundation.
+- At Rank 1 **Quartz**, **maximum LifeForce = 3 × (floor(Might / 10) + floor(Endurance / 10))** and **maximum Mana = 3 × (floor(Intellect / 10) + floor(Presence / 10))**, using final attribute scores including allocation and racial/background adjustments.
+- The multiplier ×3 applies specifically to Quartz; scaling at higher ranks is not yet approved. Resource spending, current-value trackers, regeneration, healing and recovery are separate decisions still pending.
+- Damage order terminology uses **LifeForce** in place of Health; protection and Wound rules are otherwise unchanged.
