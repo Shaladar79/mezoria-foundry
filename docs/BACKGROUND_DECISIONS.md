@@ -328,3 +328,9 @@
 - Granted Skill Talent: **Forgery** (+5 percentage points), reusing the skill introduced by Forger; governing attribute pending skill design.
 - Non-combat ability **False Mint**: +10 percentage points to non-combat Forgery checks involving reproducing currency, imitation trade goods, fraudulent merchant markings, and identifying counterfeit coins or manufactured merchandise. Recognizes common minting techniques, authenticity marks, and inconsistencies in coins and trade goods.
 - Does not automatically provide tools or materials needed to produce counterfeit goods. Distinct from Forger's focus on documents and signatures.
+
+## Enforcer Criminal Background (approved)
+- Attributes: **+2 percentage points Might** and **+2 percentage points Presence**.
+- Granted Skill Talent: **Intimidation** (+5 percentage points), governing attribute pending skill design.
+- Non-combat ability **Menacing Reputation**: +10 percentage points to non-combat Intimidation checks involving collecting debts, discouraging unwanted interference, pressuring reluctant individuals, and establishing authority through an imposing presence. Recognizes signs of fear, hesitation, and submission during tense social encounters.
+- Does not grant combat damage bonuses or automatically compel compliance. Distinct from Racketeer's organized extortion and protection schemes.
