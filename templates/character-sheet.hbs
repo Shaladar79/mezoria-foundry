@@ -151,8 +151,19 @@
     <label class="mezoria-wounds-control">Current Wounds
      <input type="number" min="0" step="1" data-status-field="woundsTaken" value="{{status.woundsTaken}}">
     </label>
-    {{#if status.bleedingToDeath}}<p class="mezoria-warning">Bleeding to Death — wound capacity reached.</p>{{/if}}
-    <p class="mezoria-note">Overflow creates one Wound per threshold, rounded up. An 8-hour full rest recovers 1 Wound; a 4-hour light rest recovers none. Higher-rank healing abilities may also restore Wounds.</p>
+    {{#if status.bleedingToDeath}}
+     <p class="mezoria-warning">Bleeding to Death — wound capacity reached.</p>
+     <div class="mezoria-death-save">
+      <span>Failed saves: {{status.deathSaveFailures}} / 3</span>
+      <span>Next Endurance save: TN {{status.deathSaveTN}}%</span>
+      <button type="button" data-death-save>Roll Endurance Save</button>
+     </div>
+    {{/if}}
+    {{#if status.isStabilized}}
+     <p class="mezoria-success">Stabilized — {{#if status.isConscious}}Conscious (LifeForce above 0){{else}}Unconscious (LifeForce 0){{/if}}</p>
+    {{/if}}
+    {{#if status.isDead}}<p class="mezoria-warning">Dead — three failed Endurance saves.</p>{{/if}}
+    <p class="mezoria-note">Overflow creates one Wound per threshold, rounded up. An 8-hour full rest recovers 1 Wound; a 4-hour light rest recovers none. While bleeding, one successful Endurance save stabilizes; each failure gives -5% to subsequent saves, and three failures cause death. Higher-rank healing abilities may also restore Wounds.</p>
    </section>
    <section class="mezoria-status-panel">
     <h4>LifeForce and Mana</h4>
