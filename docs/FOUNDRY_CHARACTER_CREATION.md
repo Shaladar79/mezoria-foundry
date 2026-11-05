@@ -200,3 +200,9 @@ The Attributes and Status tab now has four compact panels: (1) an attribute savi
 - Under the approved attack-vs-defense formula, applicable Parry reduces the attacker's hit target and can reduce successes.
 - Until the Equipment/Item system is developed, the Status tab has a manually editable, nonnegative whole-number **Equipped Melee Weapon Parry Rating** field, default 0, and calculates base and total Parry automatically. Weapon-specific ratings are not yet defined.
 - Whether a character can Parry while unconscious/immobilized, and how multiple melee weapons affect Parry, are **pending**, not inferred from Dodge.
+
+## Parry incapacitation — approved 2026-11-05
+
+- Parry uses the same incapacitation conditions as Dodge: unconscious, immobilized, dead, or physically unable to defend => **effective Parry 0%**.
+- A single Status tab condition checkbox applies to both defenses. Base Might contribution and the equipped weapon's Parry rating remain saved and are not erased by incapacitation.
+- This does not alter the approved formula for normal Parry, and leaves weapon rating values and multiple-weapon rules for equipment design.
