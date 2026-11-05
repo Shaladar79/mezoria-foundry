@@ -1098,7 +1098,7 @@
       "otherRanks": "pending",
       "talentScaling": "pending",
       "healingActions": "pending",
-      "woundInteraction": "Rest and LifeForce regeneration do not automatically remove Wounds; Wound healing requires its own rules",
+      "woundInteraction": "LifeForce regeneration does not remove Wounds; full rest separately recovers 1 Wound",
       "lightRestHours": 4,
       "fullRestHours": 8
     },
@@ -1118,8 +1118,8 @@
       "lightRestHours": 4,
       "fullRestHours": 8,
       "lightRest": "Restore 50% of maximum LifeForce and Mana (round up to whole points), capped at maximum",
-      "fullRest": "Restore both LifeForce and Mana to full maximum",
-      "wounds": "No Wound removal is implied by resource restoration"
+      "fullRest": "Restore both LifeForce and Mana to full maximum and recover 1 Wound (minimum remaining Wounds 0)",
+      "wounds": "A full 8-hour rest recovers 1 Wound; a 4-hour light rest restores no Wounds"
     }
   },
   "combat": {
@@ -1559,7 +1559,15 @@
     "threshold": "Rank + floor(floor(Endurance/10)/2)",
     "positiveOverflowWounds": "ceil(overflow / threshold)",
     "fullWoundState": "Bleeding to Death",
-    "rankZeroZeroThresholdHandling": "pending"
+    "rankZeroZeroThresholdHandling": "pending",
+    "recovery": {
+      "fullRestHours": 8,
+      "fullRestWoundsRecovered": 1,
+      "lightRestWoundsRecovered": 0,
+      "higherRankHealingAbilities": "May restore Wounds; exact abilities and quantities pending",
+      "lowerBound": 0,
+      "eligibilityAndInterruption": "pending"
+    }
   },
   "soulWeapon": {
     "awakeningRank": 3,
