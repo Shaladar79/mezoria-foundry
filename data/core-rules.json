@@ -271,6 +271,70 @@
       "commonApprovedCount": 20,
       "note": "Background definitions, bonuses, roster, and abilities have moved to data/backgrounds.json. Treat that file as the single source of truth.",
       "approvedCount": 72
+    },
+    "orderOfOperations": {
+      "status": "approved",
+      "steps": [
+        {
+          "id": "race",
+          "title": "Race",
+          "actions": [
+            "Choose race and applicable tribe/clan/aspect",
+            "Apply racial ability and attribute adjustments",
+            "If Human, choose three distinct +2% attributes and one distinct racial Skill Talent"
+          ]
+        },
+        {
+          "id": "background",
+          "title": "Background",
+          "actions": [
+            "Choose approved background",
+            "Apply fixed background attributes, Talent and noncombat ability"
+          ]
+        },
+        {
+          "id": "mark",
+          "title": "Mark of Power",
+          "actions": [
+            "Choose Mark of Power",
+            "Apply any approved Mark adjustments (none currently specified)",
+            "Choose two distinct skills from Mark list, excluding the Background award"
+          ]
+        },
+        {
+          "id": "freeTalents",
+          "title": "Three Free Skill Talents",
+          "actions": [
+            "Choose three distinct approved skills",
+            "No duplication of racial, Background or Mark grants"
+          ]
+        },
+        {
+          "id": "finalize",
+          "title": "Attribute Allocation and Review",
+          "actions": [
+            "Distribute 25 points across five base-25% attributes, max 40% before bonuses",
+            "Review combined race/background bonuses and resulting character sheet",
+            "Validate choices and save"
+          ]
+        }
+      ]
+    },
+    "foundryIntegration": {
+      "status": "initial scaffolding; not tested in Foundry",
+      "manifest": "system.json",
+      "actorDataModel": "module/model.mjs",
+      "characterSheet": "templates/character-sheet.hbs",
+      "sheetController": "module/sheet.mjs",
+      "rules": "module/rules.mjs",
+      "standaloneCreator": "character-creator/index.html",
+      "limitations": [
+        "No official live Foundry runtime test yet",
+        "Derived Health/Mana/Wounds/defenses deferred",
+        "Equipment and Essence deferred",
+        "Racial ability automation partial",
+        "Mark attribute adjustments are not defined by approved rules"
+      ]
     }
   },
   "skills": {
