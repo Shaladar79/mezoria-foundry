@@ -74,11 +74,11 @@
       "Presence"
     ],
     "preAllocationBase": 25,
-    "startingAllocationPool": 25,
+    "startingAllocationPool": 35,
     "preBonusMaximum": 40,
     "allocationRules": {
-      "status": "approved",
-      "poolPercentagePoints": 25,
+      "status": "approved; updated to 35 points on 2026-11-05",
+      "poolPercentagePoints": 35,
       "minimumPerAttributeBeforeBonuses": 25,
       "maximumPerAttributeBeforeBonuses": 40,
       "pointsMustBeFullyAllocated": true,
@@ -279,43 +279,47 @@
           "id": "race",
           "title": "Race",
           "actions": [
-            "Choose race and applicable tribe/clan/aspect",
-            "Apply racial ability and attribute adjustments",
-            "If Human, choose three distinct +2% attributes and one distinct racial Skill Talent"
+            "Choose race and subgroup",
+            "Apply racial attributes and abilities",
+            "For Humans choose three +2 attributes and one racial Talent"
           ]
         },
         {
           "id": "background",
           "title": "Background",
           "actions": [
-            "Choose approved background",
-            "Apply fixed background attributes, Talent and noncombat ability"
+            "Choose background",
+            "Apply attributes, fixed Talent and noncombat benefit"
           ]
         },
         {
           "id": "mark",
           "title": "Mark of Power",
           "actions": [
-            "Choose Mark of Power",
-            "Apply any approved Mark adjustments (none currently specified)",
-            "Choose two distinct skills from Mark list, excluding the Background award"
+            "Choose Mark",
+            "Choose two eligible Mark Talents; no duplicates"
           ]
         },
         {
           "id": "freeTalents",
           "title": "Three Free Skill Talents",
           "actions": [
-            "Choose three distinct approved skills",
-            "No duplication of racial, Background or Mark grants"
+            "Choose three distinct Talents from approved roster"
           ]
         },
         {
-          "id": "finalize",
-          "title": "Attribute Allocation and Review",
+          "id": "attributes",
+          "title": "Attribute Allocation",
           "actions": [
-            "Distribute 25 points across five base-25% attributes, max 40% before bonuses",
-            "Review combined race/background bonuses and resulting character sheet",
-            "Validate choices and save"
+            "Allocate exactly 35 points among five base-25% attributes; +15 per attribute maximum before race/background bonuses"
+          ]
+        },
+        {
+          "id": "name",
+          "title": "Character Name and Finish",
+          "actions": [
+            "Enter character name as the last creator step",
+            "Validate and finish"
           ]
         }
       ]
@@ -334,6 +338,10 @@
         "Equipment and Essence deferred",
         "Racial ability automation partial",
         "Mark attribute adjustments are not defined by approved rules"
+      ],
+      "sheetTabs": [
+        "Attributes and Status",
+        "Skills"
       ]
     }
   },
