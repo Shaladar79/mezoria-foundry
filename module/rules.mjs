@@ -55,5 +55,21 @@ export function deriveCharacter(s,rulebook=cache){
  const bonuses={race:rb,background:bb};
  const skillIndex=new Map(rulebook.skills.map(x=>[x.name,x]));
  const talents=[{name:b?.skillTalent?.name,source:"Background"},...markTalents.map(name=>({name,source:"Mark"})),...freeTalents.map(name=>({name,source:"Free"})),...(s.race==="Human"?[{name:racialTalent,source:"Racial"}]:[])].filter(x=>x.name).map(x=>({...x,attribute:skillIndex.get(x.name)?.governingAttribute||"",bonus:5}));
- return {race:r,subgroup:sub,background:b,mark:m,scores,bonuses,spent,remaining:35-spent,talents,errors,movement:sub?.movement?.ground??r?.baseMovement??null};
+ const score=name=>scores.find(item=>item.name===name)?.total??35;
+ const prowessTens=Math.floor(score("Prowess")/10);
+ const enduranceTens=Math.floor(score("Endurance")/10);
+ const rank=s.rank||1;
+ const woundThreshold=rank+Math.floor(enduranceTens/2);
+ const woundCapacity=rank===1?3:null; // Quartz capacity approved; no other Rank capacities defined.
+ const woundsTaken=Math.max(0,Number(s.woundsTaken)||0);
+ const status={
+  dodge:prowessTens,initiativeBonus:prowessTens,
+  woundThreshold,woundCapacity,woundsTaken,
+  bleedingToDeath:woundCapacity!==null&&woundsTaken>=woundCapacity,
+  healthFoundation:Math.floor(score("Might")/10)+enduranceTens,
+  manaFoundation:Math.floor(score("Intellect")/10)+Math.floor(score("Presence")/10),
+  actionScore:Number(s.actionScore)||0,
+  movement:sub?.movement?.ground??r?.baseMovement??null
+ };
+ return {race:r,subgroup:sub,background:b,mark:m,scores,bonuses,spent,remaining:35-spent,talents,errors,movement:status.movement,status};
 }
