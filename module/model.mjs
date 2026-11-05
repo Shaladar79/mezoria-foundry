@@ -6,10 +6,10 @@ export class MezoriaCharacterData extends foundry.abstract.TypeDataModel {
   return {
    rank:new F.NumberField({required:true,integer:true,initial:1,min:1}),
    creationComplete:new F.BooleanField({required:true,initial:false}),
-   race:new F.StringField({required:true,initial:"Human"}),
+   race:new F.StringField({required:true,initial:""}),
    subgroup:new F.StringField({required:true,initial:""}),
-   background:new F.StringField({required:true,initial:"Farmer"}),
-   mark:new F.StringField({required:true,initial:"Defender"}),
+   background:new F.StringField({required:true,initial:""}),
+   mark:new F.StringField({required:true,initial:""}),
    allocation:new F.SchemaField(allocated),
    humanAttributes:new F.ArrayField(new F.StringField(),{initial:[]}),
    markTalents:new F.ArrayField(new F.StringField(),{initial:["",""]}),
