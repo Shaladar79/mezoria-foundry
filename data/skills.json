@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "Might, Prowess, Endurance, Intellect approved; Presence pending review",
+  "status": "All five core attribute skill rosters approved; Lore and Inscription reserved for later review",
   "attributes": {
     "Might": {
       "status": "approved",
@@ -134,7 +134,25 @@
           "name": "Scribing",
           "description": "Producing manuscripts, records, and ordinary scrolls",
           "governingAttribute": "Prowess"
+        },
+        {
+          "name": "Fishing",
+          "description": "Catching fish through casting, nets, tackle, and handling",
+          "governingAttribute": "Prowess"
+        },
+        {
+          "name": "Seamanship",
+          "description": "Handling sails, rigging, and routine vessel operations",
+          "governingAttribute": "Prowess"
+        },
+        {
+          "name": "Thievery",
+          "description": "Assessing security and stealing unattended valuables",
+          "governingAttribute": "Prowess"
         }
+      ],
+      "notes": [
+        "Thievery covers unattended valuables and theft opportunities; Pickpocketing covers theft directly from another person."
       ]
     },
     "Endurance": {
@@ -154,7 +172,15 @@
           "name": "Resilience",
           "description": "Enduring environmental extremes, deprivation, and physical hardship",
           "governingAttribute": "Endurance"
+        },
+        {
+          "name": "Tracking",
+          "description": "Following tracks, trails, and physical signs of passage",
+          "governingAttribute": "Endurance"
         }
+      ],
+      "notes": [
+        "Tracking is distinct from Survival."
       ]
     },
     "Intellect": {
@@ -274,20 +300,102 @@
           "name": "Tactics",
           "description": "Understanding battlefield formations, positioning, and strategic planning",
           "governingAttribute": "Intellect"
+        },
+        {
+          "name": "Agriculture",
+          "description": "Cultivating crops, assessing soil, and farming methods",
+          "governingAttribute": "Intellect"
+        },
+        {
+          "name": "Prospecting",
+          "description": "Surveying terrain and recognizing mineral deposits",
+          "governingAttribute": "Intellect"
+        },
+        {
+          "name": "Smuggling",
+          "description": "Planning concealed shipments and evading inspections",
+          "governingAttribute": "Intellect"
         }
       ],
       "notes": [
-        "Twenty-three approved Intellect skills: seven crafts and sixteen non-crafting skills.",
         "Animal Lore deferred for later lore-system review; not approved or assigned.",
         "Magical Inscription reserved for later design; not approved.",
         "Concentration does not inherently enhance damage, Mana, or accuracy.",
         "Tactics does not inherently grant extra attacks, damage, or Action Score.",
-        "Forging a document normally uses Intellect (Forgery), but specialized manual execution may permit an alternate attribute at GM discretion."
+        "Forging a document normally uses Intellect (Forgery), but specialized manual execution may permit an alternate attribute at GM discretion.",
+        "26 approved Intellect skills.",
+        "Animal Lore deferred to later Lore skill design."
       ]
     },
     "Presence": {
-      "status": "pending",
-      "skills": []
+      "status": "approved",
+      "skills": [
+        {
+          "name": "Persuasion",
+          "description": "Influencing others with reason, charm, and negotiation",
+          "governingAttribute": "Presence"
+        },
+        {
+          "name": "Deception",
+          "description": "Misleading others through falsehoods and misdirection",
+          "governingAttribute": "Presence"
+        },
+        {
+          "name": "Diplomacy",
+          "description": "Negotiating agreements and resolving group disputes",
+          "governingAttribute": "Presence"
+        },
+        {
+          "name": "Etiquette",
+          "description": "Following social customs, manners, and formal protocols",
+          "governingAttribute": "Presence"
+        },
+        {
+          "name": "Insight",
+          "description": "Reading emotions and interpersonal intentions",
+          "governingAttribute": "Presence"
+        },
+        {
+          "name": "Streetwise",
+          "description": "Navigating urban networks and informal local contacts",
+          "governingAttribute": "Presence"
+        },
+        {
+          "name": "Leadership",
+          "description": "Inspiring, coordinating, and directing others",
+          "governingAttribute": "Presence"
+        },
+        {
+          "name": "Performance",
+          "description": "Entertaining through music, acting, and storytelling",
+          "governingAttribute": "Presence"
+        },
+        {
+          "name": "Animal Handling",
+          "description": "Training, calming, and guiding animal behavior",
+          "governingAttribute": "Presence"
+        },
+        {
+          "name": "Commerce",
+          "description": "Negotiating trade and commercial relationships",
+          "governingAttribute": "Presence"
+        },
+        {
+          "name": "Hospitality",
+          "description": "Hosting guests and running service establishments",
+          "governingAttribute": "Presence"
+        },
+        {
+          "name": "Discipline",
+          "description": "Self-control, patience, composure, and adherence to routines",
+          "governingAttribute": "Presence"
+        }
+      ],
+      "notes": [
+        "Discipline governs emotional self-control, patience, and routines; Concentration (Intellect) governs maintaining focus on a specific task.",
+        "Intimidation remains a Might skill.",
+        "Interrogation and Teaching not approved as separate skills."
+      ]
     }
   },
   "combatNotes": [
