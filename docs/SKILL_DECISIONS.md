@@ -234,3 +234,11 @@ All seven Magical Lore specializations below are approved as separate, trained-o
 - This rule applies to Blacksmithing, Carpentry, Masonry, Leatherworking, Tailoring, Jewelcrafting, Tinkering, Alchemy, Cooking, Brewing, Scribing, Engineering, Shipbuilding, and Herbalism.
 - This is a training restriction for **skill checks**; routine everyday actions not requiring checks are not automatically prohibited.
 - Other non-Lore, non-crafting training restrictions are still under review.
+
+## Group 1 training restrictions finalized — 2026-11-05
+
+The following nine skills are **trained-only**, requiring at least **Talent** to attempt a specialized skill check: Ritual Magic, Use Magic Device, Lockpicking, Medicine, Forgery, Cartography, Navigation, Prospecting, Smuggling.
+
+- No Group 1 skills remain open to untrained specialized checks.
+- Lore (21) and crafting (14) remain trained-only as previously approved.
+- Group 2 and remaining ordinary skill training rules are pending review.
