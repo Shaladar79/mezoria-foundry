@@ -70,6 +70,8 @@ export function deriveCharacter(s,rulebook=cache){
  const dodgeSuppressed=deathState==="dead"||unconscious||unableToEvade;
  const status={
   baseDodge:prowessTens,dodge:dodgeSuppressed?0:prowessTens,dodgeSuppressed,unableToEvade,initiativeBonus:prowessTens,
+  baseParry:Math.floor(score("Might")/10),weaponParryRating:Math.max(0,Number(s.equippedMeleeParryRating)||0),
+  parry:Math.floor(score("Might")/10)+Math.max(0,Number(s.equippedMeleeParryRating)||0),
   woundThreshold,woundCapacity,woundsTaken,
   bleedingToDeath:woundCapacity!==null&&woundsTaken>=woundCapacity&&deathState==="none",
   deathSaveFailures:failures,deathState,
