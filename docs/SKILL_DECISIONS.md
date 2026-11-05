@@ -68,3 +68,26 @@ Talent +5 percentage points, Expertise +5 additional, Mastery +5 additional.
 - Do not automatically assign every trade skill to Intellect; review its governing attribute during Intellect development.
 - Distinguish Engineering from Tinkering, Herbalism from Alchemy, and Scribing from magical inscription work.
 - Magic Theory is the proposed replacement name for Arcana; Ritual Magic and Use Magic Device are additional Intellect candidates pending roster approval.
+
+## Crafting discipline roster finalized (approved)
+
+The separate crafting-skill model and all **14** disciplines below are approved as individual skills with independent Talent / Expertise / Mastery progression. Governing attributes remain pending review; this decision does not finalize the Intellect roster.
+
+- **Blacksmithing:** Forging metal weapons, armor, tools, and hardware.
+- **Carpentry:** Working wood into furniture, structures, and equipment.
+- **Masonry:** Cutting, shaping, and constructing with stone.
+- **Leatherworking:** Producing leather armor, saddles, bags, and other leather goods.
+- **Tailoring:** Sewing clothing and textile goods.
+- **Jewelcrafting:** Cutting gems and creating jewelry and ornamentation.
+- **Tinkering:** Creating and repairing small mechanisms and intricate devices.
+- **Alchemy:** Formulating potions, reagents, and alchemical substances.
+- **Cooking:** Preparing meals, preserved foods, and other dishes.
+- **Brewing:** Making fermented drinks and other brewed beverages.
+- **Scribing:** Producing manuscripts, records, and ordinary scrolls.
+- **Engineering:** Designing and constructing complex machines and systems.
+- **Shipbuilding:** Constructing and repairing boats and other watercraft.
+- **Herbalism:** Identifying, harvesting, and preparing useful herbs.
+
+- **Inscription** is reserved for later magical crafting design and is **not** currently an approved skill.
+- Ordinary **Scribing** and magical **Inscription** remain distinct.
+- Background-granted skill names are preserved exactly; no background records are modified by this approval.
