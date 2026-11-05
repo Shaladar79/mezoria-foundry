@@ -358,6 +358,11 @@
         "name": "Tracking",
         "governingAttribute": "pending",
         "notes": "Poacher Criminal background Skill Talent"
+      },
+      {
+        "name": "Intimidation",
+        "governingAttribute": "pending",
+        "notes": "Enforcer Criminal background Skill Talent"
       }
     ]
   },
