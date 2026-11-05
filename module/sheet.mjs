@@ -182,6 +182,13 @@ export class MezoriaCharacterSheet extends ActorSheet {
    }
    await this.actor.update({["system."+field]:value});
   });
+  html.find("[data-weapon-parry-rating]").on("change",async event=>{
+   const raw=event.currentTarget.value.trim(),value=Number(raw);
+   if(raw===""||!Number.isSafeInteger(value)||value<0){
+    ui.notifications.warn("Weapon Parry rating must be a nonnegative whole number.");this.render(false);return;
+   }
+   await this.actor.update({"system.equippedMeleeParryRating":value});
+  });
   html.find("[data-unable-to-evade]").on("change",async event=>{
    await this.actor.update({"system.unableToEvade":Boolean(event.currentTarget.checked)});
   });
