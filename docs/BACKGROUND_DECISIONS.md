@@ -352,3 +352,9 @@
 - Granted Skill Talent: **Seamanship** (+5 percentage points), with governing attribute pending skill design.
 - Non-combat ability **Freebooter's Instinct**: +10 percentage points on non-combat Seamanship checks involving identifying suitable landing locations, navigating coastal waters, recognizing opportunities for discreet boarding, and evaluating unfamiliar vessels from a sailor's perspective. Recognizes common pirate signals, maritime outlaw customs, and signs a vessel was recently raided or abandoned.
 - Does not grant combat boarding bonuses, additional damage, or automatic surprise. Distinct from Sailor's ordinary maritime work.
+
+## Grave Robber Criminal Background (approved)
+- Attributes: **+2 percentage points Prowess** and **+2 percentage points Intellect**.
+- Granted Skill Talent: **Investigation** (+5 percentage points), with governing attribute pending skill design.
+- Non-combat ability **Tomb Delver**: +10 percentage points on non-combat Investigation checks involving searching burial chambers, identifying concealed compartments in tombs, locating valuable grave goods, and recognizing signs that a burial site has previously been disturbed. Recognizes common burial customs, funerary symbols, and construction features of crypts and mausoleums.
+- Does not automatically detect magical traps, disarm hazards, or protect against undead. Distinct from Cat Burglar's infiltration of occupied buildings.
