@@ -23,6 +23,8 @@ export class MezoriaCharacterData extends foundry.abstract.TypeDataModel {
    actionScore:new F.NumberField({required:true,integer:true,initial:0}),
    unableToEvade:new F.BooleanField({required:true,initial:false}),
    equippedMeleeParryRating:new F.NumberField({required:true,integer:true,initial:0,min:0}),
+   shieldEquipped:new F.BooleanField({required:true,initial:false}),
+   equippedShieldBlockRating:new F.NumberField({required:true,integer:true,initial:0,min:0}),
    currentEssence:new F.NumberField({required:true,integer:true,initial:0,min:0}),
    spentEssence:new F.NumberField({required:true,integer:true,initial:0,min:0}),
    notes:new F.StringField({required:true,initial:""})
