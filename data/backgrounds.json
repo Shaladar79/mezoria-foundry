@@ -1491,6 +1491,27 @@
         "combatEffect": false
       },
       "notes": "Does not automatically reveal unknown information, grant expertise in every field, or provide magical knowledge."
+    },
+    "Entertainer": {
+      "status": "approved",
+      "category": "Social",
+      "attributeBonus": {
+        "Prowess": 2,
+        "Presence": 2
+      },
+      "skillTalent": {
+        "name": "Performance",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Crowd Pleaser",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Performance checks involving entertaining audiences, holding a crowd's attention, adapting performances to different audiences, and recovering gracefully from mistakes during a performance",
+        "additionalEffect": "Recognizes audience preferences, common performance traditions, and signs that a crowd is becoming bored or restless",
+        "combatEffect": false
+      },
+      "notes": "Covers musicians, actors, dancers, storytellers, comedians and other performers. Does not grant magical performances, combat bonuses, automatic fame, or guaranteed audience approval."
     }
   },
   "notes": [
