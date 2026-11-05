@@ -122,46 +122,59 @@
  {{#if sheetSkills}}
  <section class="mezoria-tab-panel mezoria-skills-panel">
   <h3>Skills</h3>
-  <section class="mezoria-trained-skills" aria-label="Trained skills">
-   <div class="mezoria-skill-section-heading">
-    <h4>Trained Skills</h4><span>{{trainedCount}} trained</span>
-   </div>
-   {{#if trainedCount}}
-   <div class="mezoria-roll-list">
-    {{#each trainedSkills}}
-    <div class="mezoria-roll-row mezoria-skill-row mezoria-trained">
-     <div class="mezoria-skill-name"><strong>{{name}}</strong><small>{{attr}} · {{trainedLabel}}</small></div>
-     <span class="mezoria-target" title="Skill target number, including training bonus">TN {{tn}}%</span>
-     <button type="button" data-roll-skill="{{name}}" aria-label="Roll {{name}}">Roll</button>
+  <div class="mezoria-skill-panels">
+   <section class="mezoria-skill-panel mezoria-trained-skills" aria-label="Trained Skills">
+    <header class="mezoria-skill-panel-title">
+     <h4>Trained Skills</h4><span>{{trainedCount}} trained</span>
+    </header>
+    <div class="mezoria-compact-columns" aria-hidden="true">
+     <span>Skill</span><span>Attr</span><span>Bonus</span><span>TN</span><span></span>
     </div>
-    {{/each}}
-   </div>
-   {{else}}<p class="mezoria-empty-skills">No trained skills selected yet. Complete character creation to add them.</p>{{/if}}
-  </section>
-  <section class="mezoria-untrained-skills" aria-label="Skills usable untrained">
-   <div class="mezoria-skill-section-heading">
-    <h4>Skills Usable Untrained</h4><span>{{untrainedCount}} available</span>
-   </div>
-   <nav class="mezoria-skill-attribute-tabs" aria-label="Skill governing attribute">
-    {{#each skillAttributeTabs}}
-     <button type="button" data-skill-attribute="{{name}}" class="{{#if active}}active{{/if}}" aria-pressed="{{#if active}}true{{else}}false{{/if}}">
-      {{name}} <span class="mezoria-skill-count">({{count}})</span>
-     </button>
-    {{/each}}
-   </nav>
-   <h5>{{selectedSkillAttribute}} Skills</h5>
-   {{#if attributeSkills.length}}
-    <div class="mezoria-roll-list">
-     {{#each attributeSkills}}
-     <div class="mezoria-roll-row mezoria-skill-row">
-      <div class="mezoria-skill-name"><strong>{{name}}</strong><small>{{attr}} · {{trainedLabel}}</small></div>
-      <span class="mezoria-target" title="Untrained skill target number">TN {{tn}}%</span>
-      <button type="button" data-roll-skill="{{name}}" aria-label="Roll {{name}}">Roll</button>
-     </div>
+    <div class="mezoria-skill-scroll" role="region" aria-label="Trained skill list" tabindex="0">
+     {{#if trainedCount}}
+      {{#each trainedSkills}}
+       <div class="mezoria-compact-row mezoria-trained">
+        <span class="mezoria-compact-name" title="{{name}}">{{name}}</span>
+        <span title="{{attr}}">{{attrAbbr}}</span>
+        <span title="{{trainedLabel}}">{{bonusLabel}}</span>
+        <span class="mezoria-compact-tn">TN {{tn}}%</span>
+        <button type="button" data-roll-skill="{{name}}" aria-label="Roll {{name}}">Roll</button>
+       </div>
+      {{/each}}
+     {{else}}
+      <p class="mezoria-empty-skills">No trained skills selected yet.</p>
+     {{/if}}
+    </div>
+   </section>
+   <section class="mezoria-skill-panel mezoria-untrained-skills" aria-label="Untrained Skills">
+    <header class="mezoria-skill-panel-title">
+     <h4>Untrained Skills</h4><span>{{untrainedCount}} available</span>
+    </header>
+    <nav class="mezoria-skill-attribute-tabs" aria-label="Untrained skill attributes">
+     {{#each skillAttributeTabs}}
+      <button type="button" data-skill-attribute="{{name}}" title="{{name}}" class="{{#if active}}active{{/if}}" aria-pressed="{{#if active}}true{{else}}false{{/if}}">{{abbreviation}}</button>
      {{/each}}
+    </nav>
+    <div class="mezoria-compact-columns" aria-hidden="true">
+     <span>Skill</span><span>Attr</span><span>Bonus</span><span>TN</span><span></span>
     </div>
-   {{else}}<p class="mezoria-empty-skills">No untrained-usable skills under {{selectedSkillAttribute}}.</p>{{/if}}
-  </section>
+    <div class="mezoria-skill-scroll" role="region" aria-label="{{selectedSkillAttribute}} untrained skill list" tabindex="0">
+     {{#if attributeSkills.length}}
+      {{#each attributeSkills}}
+       <div class="mezoria-compact-row">
+        <span class="mezoria-compact-name" title="{{name}}">{{name}}</span>
+        <span title="{{attr}}">{{attrAbbr}}</span>
+        <span>{{bonusLabel}}</span>
+        <span class="mezoria-compact-tn">TN {{tn}}%</span>
+        <button type="button" data-roll-skill="{{name}}" aria-label="Roll {{name}}">Roll</button>
+       </div>
+      {{/each}}
+     {{else}}
+      <p class="mezoria-empty-skills">No untrained-usable skills for {{selectedSkillAttribute}}.</p>
+     {{/if}}
+    </div>
+   </section>
+  </div>
  </section>
  {{/if}}
  {{/if}}
