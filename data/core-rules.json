@@ -222,7 +222,7 @@
       "backgroundOptionsStatus": "All four background categories and 72 definitions finalized in data/backgrounds.json",
       "markSkillListsStatus": "approved; eight eligible skills for each of six Marks",
       "raceOptionsStatus": "Race roster and racial definitions recorded in data/races.json; outstanding mechanics noted there",
-      "skillSelectionsStatus": "not yet finalized",
+      "skillSelectionsStatus": "Mark selections and free selections approved; review background overlap and racial extras during character creation",
       "advancementDesignStatus": "deferred until Rank advancement and Essence (XP) spending section",
       "markSelectionRule": {
         "status": "approved",
@@ -231,6 +231,15 @@
         "eligibleMarkListsStatus": "approved",
         "startingTier": "Talent",
         "duplicateSelectionsAllowed": false
+      },
+      "freeSelectionRule": {
+        "status": "approved",
+        "count": 3,
+        "eligibleSkills": "Any of the 90 approved skills, regardless of Mark of Power",
+        "distinctSkillsRequired": true,
+        "duplicateWithMarkOrBackgroundForbidden": true,
+        "startingTier": "Talent",
+        "advancementDeferred": true
       }
     },
     "backgrounds": {
