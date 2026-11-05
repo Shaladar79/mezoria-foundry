@@ -360,3 +360,11 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - The Human Versatile racial trait grants one additional freely chosen distinct Skill Talent, giving a standard Human seven total starting Skill Talents (2 Mark, 3 free, 1 Background, 1 racial).
 - All racial skills selected under a free-choice trait may come from the approved skill roster; duplicate awards do not stack.
 - Skill improvement and Essence (XP) remain deferred to Rank Advancement.
+
+## Creator and sheet revision — 2026-11-05 (superseding prior allocation)
+
+- User changes distributable starting attribute pool **from 25 to 35 whole percentage points**. Base remains 25% in each of five attributes; pre-race/background allocation cap remains 40% (+15 max per attribute). All 35 points can be allocated within this cap.
+- Creator order: Race (Human racial Talent) → Background → Mark and two Talents → Three Free Talents → 35-point attribute allocation → **Character Name, always the final step**, then finish.
+- Character sheet header has name, race, conditional Mythrain tribe / Draconian clan / Scion aspect, background, and Mark fields.
+- Two sheet tabs: Attributes and Status, Skills. Show attribute saving rolls at current attribute TN. Skills tab shows all untrained-available skills plus trained skills, with trained skills first, and TN plus roll action; trained-only skills not trained remain hidden.
+- Keep Health, Mana, other unfinished stats as placeholders pending rules approval. Normal percentile rolls use the system's d100 roll-under convention.
