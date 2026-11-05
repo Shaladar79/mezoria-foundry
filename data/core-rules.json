@@ -73,14 +73,14 @@
       "Intellect",
       "Presence"
     ],
-    "preAllocationBase": 25,
+    "preAllocationBase": 35,
     "startingAllocationPool": 35,
-    "preBonusMaximum": 40,
+    "preBonusMaximum": 50,
     "allocationRules": {
-      "status": "approved; updated to 35 points on 2026-11-05",
+      "status": "approved; base 35%, 35 distributable points, +15 per-stat cap before race/background bonuses",
       "poolPercentagePoints": 35,
-      "minimumPerAttributeBeforeBonuses": 25,
-      "maximumPerAttributeBeforeBonuses": 40,
+      "minimumPerAttributeBeforeBonuses": 35,
+      "maximumPerAttributeBeforeBonuses": 50,
       "pointsMustBeFullyAllocated": true,
       "allocationBefore": [
         "race",
@@ -311,7 +311,7 @@
           "id": "attributes",
           "title": "Attribute Allocation",
           "actions": [
-            "Allocate exactly 35 points among five base-25% attributes; +15 per attribute maximum before race/background bonuses"
+            "Allocate exactly 35 points among five base-35% attributes; +15 maximum per attribute (50% pre-bonus cap)"
           ]
         },
         {
