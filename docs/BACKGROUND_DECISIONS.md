@@ -304,3 +304,9 @@
 - Granted Skill Talent: **Forgery** (+5 percentage points), with governing attribute pending skill design.
 - Non-combat ability **Master Imitator**: +10 percentage points on non-combat Forgery checks involving reproducing handwriting, copying signatures, creating convincing false documents, and identifying inconsistencies in official records or written credentials. Recognizes common authentication marks, document materials, and signs of tampering.
 - Does not automatically grant knowledge of secret codes, unfamiliar languages, or magical seals. Distinct from Scribe's legitimate record-keeping.
+
+## Smuggler Criminal Background (approved)
+- Attributes: **+2 percentage points Intellect** and **+2 percentage points Presence**.
+- Granted Skill Talent: **Smuggling** (+5 percentage points), governing attribute pending skill design.
+- Non-combat ability **Hidden Cargo**: +10 percentage points to non-combat Smuggling checks involving concealing illicit merchandise, assessing transport routes for detection risks, disguising shipments as legitimate cargo, and navigating inspections without drawing suspicion. Recognizes common smuggling routes, concealed cargo compartments, and signs a shipment has been searched or tampered with.
+- Does not automatically bypass security inspections or provide immunity from legal consequences. Distinct from Fence's specialization in buying and selling stolen goods.
