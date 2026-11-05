@@ -1553,6 +1553,26 @@
         "combatEffect": false
       },
       "notes": "Does not automatically grant public office, political authority, loyal supporters, or control over government decisions."
+    },
+    "Magistrate": {
+      "status": "approved",
+      "category": "Social",
+      "attributeBonus": {
+        "Intellect": 4
+      },
+      "skillTalent": {
+        "name": "Law",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Letter of the Law",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Law checks involving interpreting civic regulations, evaluating legal disputes, reviewing official proceedings, and identifying procedural errors in legal documents or judgments",
+        "additionalEffect": "Recognizes common legal terminology, court procedures, and responsibilities of local judicial officials",
+        "combatEffect": false
+      },
+      "notes": "Does not automatically grant judicial authority, power to issue binding rulings, or immunity from prosecution."
     }
   },
   "notes": [
