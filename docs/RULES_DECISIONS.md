@@ -297,3 +297,13 @@ Develop and test **Quartz (1), Garnet (2), Amethyst (3)**. Do not implement futu
 - **Intimidation** is governed by Might, including its non-combat applications. This does **not** change the approved bonuses or Talents of Enforcer and Racketeer; their existing Intimidation skill uses Might as its base.
 - **Grappling**, **Unarmed Combat**, and **Heavy Weapons** are distinct skills, but their detailed attack resolution, interactions, weapon classification, and other combat effects remain pending combat-skill design. No existing combat rules are overridden by this roster decision.
 - Other skills retain **pending** governing attributes until reviewed by attribute. Skill training restrictions remain unfinalized.
+
+## Starting attribute allocation — approved 2026-11-05
+
+- All five attributes (Might, Prowess, Endurance, Intellect, Presence) begin at **25%** before allocation.
+- Characters distribute exactly **25 additional percentage points** among the five attributes at Rank 1 (Quartz).
+- No attribute may exceed **40% before race and background bonuses**; this means at most +15 allocated points to one attribute.
+- Race and background bonuses apply **after** allocation and may bring a starting attribute above 40%.
+- No separate post-bonus starting cap has been approved; do not silently impose one.
+- Example: an Embergiest Soldier allocating +15 to Might starts with 25 + 15 + 3 racial + 2 background = **45% Might**.
+- Skill-tier advancement, Rank advancement, and Essence spending remain deferred to their later section.
