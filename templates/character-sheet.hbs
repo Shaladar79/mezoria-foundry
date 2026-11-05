@@ -1,62 +1,138 @@
 <form class="mezoria-creation" autocomplete="off">
- {{#if error}}<p class="mezoria-warning">{{error}}</p>{{else}}
- <header class="mezoria-header"><div class="mezoria-headline"><div><h2>{{actor.name}} — Quartz Rank</h2><p>{{#if isCreatorOpen}}Character Creator • Rank 1{{else}}Character Sheet • Rank 1{{/if}}</p></div>{{#unless isCreatorOpen}}<button type="button" class="mezoria-create-button" data-open-creator title="{{#if creationComplete}}Edit character creation{{else}}Start character creation{{/if}}" aria-label="{{#if creationComplete}}Edit character creation{{else}}Start character creation{{/if}}">+</button>{{else}}<button type="button" class="mezoria-back-button" data-close-creator>Back to Sheet</button>{{/unless}}</div></header>
- {{#if isCreatorOpen}}
- <nav class="mezoria-tabs">{{#each steps}}<button type="button" data-step="{{key}}" class="{{#if active}}active{{/if}}">{{title}}</button>{{/each}}</nav>
- {{/if}}
- <div class="mezoria-columns {{#unless isCreatorOpen}}mezoria-sheet-only{{/unless}}">
- {{#if isCreatorOpen}}
- <section class="mezoria-editor">
- {{#if stepRace}}
- <h3>1 · Choose Race</h3>
- <label>Character Name <input data-field="name" value="{{actor.name}}" type="text"></label>
- <label>Race <select data-field="race">{{#each raceOptions}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
- {{#if hasSubgroups}}<label>{{subgroupLabel}} <select data-field="subgroup"><option value="">Choose…</option>{{#each subgroupOptions}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>{{/if}}
- {{#if human}}
- <h4>Human Adaptability — choose three different attributes (+2% each)</h4>
- {{#each humanAttributes}}<label class="mezoria-check"><input type="checkbox" data-human-attribute="{{name}}" {{#if checked}}checked{{/if}}> {{name}}</label>{{/each}}
- <label>Human Versatility — one additional Skill Talent <select data-field="racialTalent">{{#each racialOptions}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
- {{/if}}
- <h4>Racial Features</h4>{{#each raceTraits}}<p><strong>{{name}}</strong> {{description}}</p>{{/each}}
- {{/if}}
- {{#if stepBackground}}
- <h3>2 · Choose Background</h3>
- <label>Background <select data-field="background">{{#each backgroundOptions}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
- <p>Fixed starting Talent: <strong>{{backgroundTalent}}</strong></p>
- {{#if backgroundAbility}}<p><strong>{{backgroundAbility.name}}</strong> — {{backgroundAbility.description}} {{backgroundAbility.appliesTo}}</p>{{/if}}
- <p>Background attribute adjustments are included in the live character sheet.</p>
- {{/if}}
- {{#if stepMark}}
- <h3>3 · Choose Mark of Power</h3>
- <label>Mark <select data-field="mark">{{#each markOptions}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
- <p>Choose two distinct Skill Talents from your Mark list. If the background has already granted a skill, choose a different Mark skill.</p>
- {{#each markChoices}}<label>Mark Talent <select data-talent-kind="mark" data-index="{{index}}">{{#each options}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>{{/each}}
- {{/if}}
- {{#if stepFree}}
- <h3>4 · Choose Three Free Skill Talents</h3>
- <p>Choose any three distinct skills, with no repeats of Background, Mark, or racial talents.</p>
- {{#each freeChoices}}<label>Free Talent <select data-talent-kind="free" data-index="{{index}}">{{#each options}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>{{/each}}
- {{/if}}
- {{#if stepReview}}
- <h3>5 · Finalize and Review</h3>
- <p>Allocate exactly 25 points. Each attribute begins at 25%. No more than 15 points may be allocated to an attribute before racial and background adjustments.</p>
- <p>Points remaining: <strong>{{remaining}}</strong></p>
- {{#each allocation}}<label class="mezoria-attribute">{{name}} <input data-allocation="{{name}}" type="number" min="0" max="15" step="1" value="{{allocated}}"><span>{{total}}%</span></label>{{/each}}
- <label>Notes <textarea data-field="notes">{{notes}}</textarea></label>
- {{#if valid}}<p class="mezoria-success">Character creation selections are valid.</p><button type="button" class="mezoria-finish-button" data-finish-creator>Finish Character Creation</button>{{else}}<h4>To finish your character:</h4>{{#each errors}}<p class="mezoria-warning">{{this}}</p>{{/each}}{{/if}}
- {{/if}}
+ {{#if error}}
+  <p class="mezoria-warning">{{error}}</p>
+ {{else}}
+ <header class="mezoria-header">
+  <div class="mezoria-headline">
+   <div><h2>MEZORIA · Character</h2><p>Rank 1 · Quartz</p></div>
+   {{#if creatorOpen}}
+    <button type="button" class="mezoria-back-button" data-close-creator>Back to Sheet</button>
+   {{else}}
+    <button type="button" class="mezoria-create-button" data-open-creator title="Open Character Creator" aria-label="Open Character Creator">+</button>
+   {{/if}}
+  </div>
+  <div class="mezoria-identity">
+   <label>Name <input type="text" value="{{headerName}}" readonly></label>
+   <label>Race <input type="text" value="{{headerRace}}" readonly></label>
+   {{#if showSubgroup}}<label>{{subgroupType}} <input type="text" value="{{headerSubgroup}}" readonly></label>{{/if}}
+   <label>Background <input type="text" value="{{headerBackground}}" readonly></label>
+   <label>Mark <input type="text" value="{{headerMark}}" readonly></label>
+  </div>
+ </header>
+
+ {{#if creatorOpen}}
+ <nav class="mezoria-tabs mezoria-creation-tabs" aria-label="Character creation steps">
+  {{#each steps}}<button type="button" data-step="{{key}}" class="{{#if active}}active{{/if}}">{{title}}</button>{{/each}}
+ </nav>
+ <section class="mezoria-wizard">
+  {{#if stepRace}}
+   <h3>1 · Select Race</h3>
+   <label>Race <select data-field="race">{{#each raceOptions}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+   {{#if showSubgroup}}
+    <label>{{subgroupType}} <select data-field="subgroup"><option value="">Choose…</option>{{#each subgroupOptions}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+   {{/if}}
+   {{#if human}}
+    <h4>Human Adaptability — choose exactly three different attributes (+2% each)</h4>
+    <div class="mezoria-check-grid">
+     {{#each humanAttributes}}<label class="mezoria-check"><input type="checkbox" data-human-attribute="{{name}}" {{#if checked}}checked{{/if}}> {{name}}</label>{{/each}}
+    </div>
+    <label>Human Versatility — one free racial Skill Talent
+     <select data-field="racialTalent">{{#each racialOptions}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select>
+    </label>
+   {{/if}}
+   <h4>Racial Traits and Abilities</h4>
+   {{#each raceTraits}}<p><strong>{{name}}</strong> — {{description}}</p>{{/each}}
+  {{/if}}
+  {{#if stepBackground}}
+   <h3>2 · Select Background</h3>
+   <label>Background <select data-field="background">{{#each backgroundOptions}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+   <p>Granted Skill Talent: <strong>{{backgroundTalent}}</strong></p>
+   {{#if backgroundAbility}}<p><strong>{{backgroundAbility.name}}</strong> — {{backgroundAbility.description}} {{backgroundAbility.appliesTo}}</p>{{/if}}
+   <p>Background attributes and features are applied to the sheet automatically.</p>
+  {{/if}}
+  {{#if stepMark}}
+   <h3>3 · Select Mark of Power</h3>
+   <label>Mark <select data-field="mark">{{#each markOptions}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+   <p>Choose two distinct Mark Talents. The Background's fixed Skill Talent takes priority on overlap.</p>
+   {{#each markChoices}}<label>Mark Talent {{index}}
+     <select data-talent-kind="mark" data-index="{{index}}">{{#each options}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select>
+   </label>{{/each}}
+  {{/if}}
+  {{#if stepFree}}
+   <h3>4 · Choose Three Free Skill Talents</h3>
+   <p>Choose any three distinct approved skills, without duplicating a Mark, Background or racial Skill Talent.</p>
+   {{#each freeChoices}}<label>Free Talent
+    <select data-talent-kind="free" data-index="{{index}}">{{#each options}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select>
+   </label>{{/each}}
+  {{/if}}
+  {{#if stepAttributes}}
+   <h3>5 · Distribute 35 Attribute Points</h3>
+   <p>Base 25% in every attribute. Spend exactly 35 points, with a maximum of +15 points (40%) in any attribute before racial and background bonuses.</p>
+   <p class="mezoria-points">Points remaining: <strong>{{remaining}}</strong></p>
+   {{#each attributes}}
+    <label class="mezoria-attribute">{{name}}
+     <input type="number" data-allocation="{{name}}" min="0" max="15" step="1" value="{{allocated}}">
+     <span>{{total}}%</span>
+    </label>
+   {{/each}}
+  {{/if}}
+  {{#if stepName}}
+   <h3>6 · Name Your Character</h3>
+   <p>After making all character choices, select your character's name. This is the final creator step.</p>
+   <label>Character name <input data-field="name" type="text" value="{{actor.name}}" placeholder="Enter character name"></label>
+   {{#if valid}}
+    <p class="mezoria-success">Your character is ready.</p>
+    <button type="button" data-finish-creator class="mezoria-finish-button">Finish Character Creation</button>
+   {{else}}
+    <h4>Before you finish:</h4>{{#each errors}}<p class="mezoria-warning">{{this}}</p>{{/each}}
+   {{/if}}
+  {{/if}}
+ </section>
+ {{else}}
+ <nav class="mezoria-tabs mezoria-sheet-tabs" aria-label="Character sheet tabs">
+  <button type="button" data-tab="attributes" class="{{#if attrTabActive}}active{{/if}}">Attributes and Status</button>
+  <button type="button" data-tab="skills" class="{{#if skillsTabActive}}active{{/if}}">Skills</button>
+ </nav>
+ {{#unless creationComplete}}<p class="mezoria-warning mezoria-incomplete">Character creation is not finished. Click the + button above to continue.</p>{{/unless}}
+ {{#if sheetAttributes}}
+ <section class="mezoria-tab-panel">
+  <h3>Attributes and Status</h3>
+  <p>Attribute saves roll d100 against the attribute's current percentage.</p>
+  <div class="mezoria-roll-list">
+   {{#each attributes}}
+   <div class="mezoria-roll-row">
+    <strong>{{name}}</strong><span class="mezoria-target" title="Current attribute save target number">TN {{total}}%</span>
+    <button type="button" data-roll-attr="{{name}}" aria-label="Roll {{name}} save">Roll</button>
+   </div>
+   {{/each}}
+  </div>
+  <h3>Status</h3>
+  <div class="mezoria-status-grid">
+   <div><span>Health</span><strong>Pending</strong></div>
+   <div><span>Mana</span><strong>Pending</strong></div>
+   <div><span>Wounds</span><strong>Pending</strong></div>
+   <div><span>Defenses</span><strong>Pending</strong></div>
+   <div><span>Movement</span><strong>{{#if derived.movement}}{{derived.movement}} spaces{{else}}Pending{{/if}}</strong></div>
+   <div><span>Rank</span><strong>1 · Quartz</strong></div>
+  </div>
+  <p class="mezoria-note">Health, Mana, Wounds, and Defense formulas will be connected when their rules are finalized.</p>
  </section>
  {{/if}}
- <aside class="mezoria-preview">
- <h3>Character Sheet</h3>
- {{#unless isCreatorOpen}}{{#unless creationComplete}}<p class="mezoria-warning">Character creation is not complete. Select + above to begin.</p>{{/unless}}{{/unless}}
- <p><strong>{{raceName}}</strong> {{#if derived.subgroup}}— {{derived.subgroup.name}}{{/if}}</p>
- <p><strong>Background:</strong> {{system.background}} · <strong>Mark:</strong> {{system.mark}}</p>
- <h4>Attributes</h4>{{#each allocation}}<div class="mezoria-stat"><span>{{name}}</span><strong>{{total}}%</strong><small>25 + {{allocated}} + {{racial}} racial + {{background}} background</small></div>{{/each}}
- <h4>Starting Talents (+5%)</h4>{{#each talents}}<div class="mezoria-talent">{{name}} <small>{{source}}</small></div>{{/each}}
- <h4>Movement</h4><p>{{#if derived.movement}}{{derived.movement}} spaces{{else}}Pending race rules{{/if}}</p>
- <h4>Derived Stats</h4><p>Health, Mana, Wounds and Defenses: pending rules integration</p>
- <h4>Equipment · Essence</h4><p>Deferred to their design sections.</p>
- </aside>
- </div>{{/if}}
+ {{#if sheetSkills}}
+ <section class="mezoria-tab-panel">
+  <h3>Skills</h3>
+  <p>{{trainedCount}} trained skills first · {{untrainedCount}} additional skills available untrained. Skills requiring training are hidden until Talent is acquired.</p>
+  <div class="mezoria-roll-list">
+   {{#each skillRows}}
+   <div class="mezoria-roll-row mezoria-skill-row {{#if trained}}mezoria-trained{{/if}}">
+    <div class="mezoria-skill-name"><strong>{{name}}</strong><small>{{attr}} · {{trainedLabel}}</small></div>
+    <span class="mezoria-target" title="Skill target number, including training bonus">TN {{tn}}%</span>
+    <button type="button" data-roll-skill="{{name}}" aria-label="Roll {{name}}">Roll</button>
+   </div>
+   {{/each}}
+  </div>
+ </section>
+ {{/if}}
+ {{/if}}
+ {{/if}}
 </form>
