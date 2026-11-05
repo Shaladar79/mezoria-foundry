@@ -352,3 +352,11 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - If either of the two selected Mark of Power skills matches the Background skill, **reselect that Mark Talent from another eligible skill on the same Mark's list**.
 - Background grants are **not** converted to a free choice on overlap. No duplicated starting Talent awards.
 - The previous recommendation to replace the Background award with an unrestricted free Skill Talent is rejected.
+
+## Racial Skill Talent uniqueness — approved 2026-11-05
+
+- Racial Skill Talents must be selected from skills not already granted by the character's Mark of Power, Background, or freely chosen starting talents.
+- A racial Skill Talent cannot duplicate any other racial starting Skill Talent.
+- The Human Versatile racial trait grants one additional freely chosen distinct Skill Talent, giving a standard Human seven total starting Skill Talents (2 Mark, 3 free, 1 Background, 1 racial).
+- All racial skills selected under a free-choice trait may come from the approved skill roster; duplicate awards do not stack.
+- Skill improvement and Essence (XP) remain deferred to Rank Advancement.
