@@ -174,3 +174,20 @@ The 16 non-crafting Intellect skills below are approved, in addition to the seve
 - **Lore: Spirit Magic** replaces the proposed name **Lore: Divine Magic**.
 - It covers magic associated with Spirits (deity-like entities), their manifestations, and related spiritual workings.
 - This approves the naming change, not the complete magical Lore roster. Lore remains Intellect-based and trained-only.
+
+## Creature Lore roster finalized — 2026-11-05
+
+All eight Creature Lore specializations are approved as separate **Intellect** skills requiring **Talent or higher** to attempt Lore checks. No untrained Lore checks are permitted.
+
+- **Lore: Beasts:** Knowledge of ordinary and extraordinary non-draconic beasts, wildlife, predators, and domesticated animals.
+- **Lore: Dragons:** Knowledge of dragons, draconic varieties, behavior, abilities, and weaknesses.
+- **Lore: Legends:** Knowledge of unique, one-of-a-kind legendary creatures and their individual histories and powers.
+- **Lore: Monstrosities:** Knowledge of unnatural monsters, hybrids, and aberrant creatures.
+- **Lore: Undead:** Knowledge of reanimated creatures, vampires, liches, and other undead.
+- **Lore: Constructs:** Knowledge of golems, animated armor, and artificially created beings.
+- **Lore: Plants:** Knowledge of sentient plants, carnivorous flora, and plant-based creatures.
+- **Lore: Shapeshifters:** Knowledge of werecreatures, mimics, and transforming beings.
+
+- **Lore: Beasts** replaces the proposed **Lore: Animals** name and resolves the earlier deferred **Animal Lore** candidate. Neither older name is a separate skill.
+- **Lore: Dragons** and **Lore: Legends** replace the broad proposed **Lore: Mythical Creatures** category; Legends concerns one-off individual creatures.
+- Creature Lore is finalized. Supernatural and magical Lore lists remain under review, including the previously named Eternals and Spirit Magic entries.
