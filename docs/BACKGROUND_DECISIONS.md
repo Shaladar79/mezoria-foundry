@@ -408,3 +408,9 @@
 - Granted Skill Talent: **Diplomacy** (+5 percentage points), with governing attribute pending skill design.
 - Non-combat ability **Silver Accord**: +10 percentage points to non-combat Diplomacy checks involving negotiating agreements between opposing parties, mediating disputes, resolving misunderstandings between cultures, and presenting mutually beneficial compromises. Recognizes common diplomatic protocols, signs of strained negotiations, and cultural customs that may influence formal agreements.
 - Does not guarantee peaceful resolutions, enforce agreements, or automatically grant diplomatic immunity. Distinct from Courtier's focus on internal court politics.
+
+## Acolyte Social Background (approved)
+- Attributes: **+2 percentage points Intellect** and **+2 percentage points Presence**.
+- Granted Skill Talent: **Religion** (+5 percentage points), with governing attribute pending skill design.
+- Non-combat ability **Temple Initiate**: +10 percentage points on non-combat Religion checks involving identifying religious symbols, understanding ceremonial practices, recognizing religious traditions, and assisting with common rites and observances. Recognizes common temple hierarchies, religious garments, and expected conduct within places of worship.
+- Does not grant divine spells, supernatural blessings, religious authority, or automatic acceptance by a religious organization. Distinct from Monk's disciplined spiritual practice and monastic life.
