@@ -397,3 +397,11 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - **Full rest lasts 8 hours**, restoring both LifeForce and Mana to **100% of their maximum pools**.
 - Rest actions do not themselves remove Wounds. Rest eligibility/interruption rules, talents, healing specifics and future Rank scaling are undecided.
 - The Foundry Attributes tab includes editable current LifeForce/Mana values and shared +1-per-turn, 4-hour light rest and 8-hour full rest buttons; these trigger on player input, not automatically after elapsed time.
+
+## Wound recovery — approved 2026-11-05
+
+- **Full rest (8 hours):** restore all LifeForce and Mana **and recover 1 Wound** (never reduce Wounds below 0).
+- **Light rest (4 hours):** restore 50% of maximum LifeForce and Mana; **does not recover Wounds**.
+- **Higher-rank healing abilities** can recover Wounds. The eligible abilities, required ranks, recovery amounts, and Mana costs are pending later ability design.
+- Routine per-turn LifeForce/Mana regeneration does not remove Wounds.
+- The Foundry full-rest control updates all three stored values together; no automatic rest timer is implied.
