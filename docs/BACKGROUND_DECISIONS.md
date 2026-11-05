@@ -454,3 +454,9 @@
 - Granted Skill Talent: **Performance** (+5 percentage points), with governing attribute pending skill design.
 - Non-combat ability **Crowd Pleaser**: +10 percentage points to non-combat Performance checks involving entertaining audiences, holding a crowd's attention, adapting performances to different audiences, and recovering gracefully from mistakes during a performance. Recognizes audience preferences, common performance traditions, and signs that a crowd is becoming bored or restless.
 - Covers musicians, actors, dancers, storytellers, comedians and other performers. Does not grant magical performances, combat bonuses, automatic fame, or guaranteed audience approval.
+
+## Socialite Social Background (approved)
+- Attributes: **+4 percentage points Presence**.
+- Granted Skill Talent: **Etiquette** (+5 percentage points), reusing the existing skill; governing attribute pending skill design.
+- Non-combat ability **Social Butterfly**: +10 percentage points to non-combat Etiquette checks involving making favorable first impressions, navigating fashionable gatherings, engaging in polite conversation, and building rapport within influential social circles. Recognizes prominent social customs, current fashions, and informal relationships connecting influential members of society.
+- Does not automatically grant wealth, fame, influential contacts, or guaranteed invitations to exclusive events. Distinct from Noble's aristocratic upbringing and Courtier's political maneuvering.
