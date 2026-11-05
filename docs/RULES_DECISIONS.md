@@ -337,3 +337,11 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - Magical Lore now has **6** skills; total Lore skills **20**; total approved skills **90** (51 trained-only and 39 untrained-allowed).
 - The Arcanist Mark's eight starting options now include **Herbalism** in place of Lore: Concept Magic: Magic Theory, Ritual Magic, Use Magic Device, Concentration, Research, Lore: Elemental Magic, Herbalism, Lore: Astral Magic.
 - Historic entries above reflect past approval states and are superseded by this amendment.
+
+## Three free starting Skill Talent selections — approved 2026-11-05
+
+- At Rank 1 (Quartz), select **three distinct free Skill Talents** from **any of the 90 approved skills**, without Mark of Power restrictions.
+- Each starting free selection grants the **Talent** tier.
+- A skill already granted through the selected Mark of Power or the background cannot be chosen as a free selection; duplicate starting Skill Talent awards are not permitted.
+- The starting Skill Talent allocation remains two Mark choices + three free choices + one background grant (six, before possible racial traits).
+- Tier improvement and Essence (XP) spending are reserved for advancement design.
