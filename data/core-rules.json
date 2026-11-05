@@ -133,13 +133,14 @@
       "markGrantCountStatus": "provisional: user phrasing previously also mentioned three; using latest clarified working allocation",
       "playerChoiceCount": 3,
       "backgroundGrantCount": 1,
-      "backgroundOptionsStatus": "Common background roster and definitions complete in data/backgrounds.json; Tradesman, Criminal, Social pending",
+      "backgroundOptionsStatus": "All four background categories and 72 definitions finalized in data/backgrounds.json",
       "markSkillListsStatus": "not yet assigned",
-      "raceOptionsStatus": "not yet designed",
-      "skillSelectionsStatus": "not yet finalized"
+      "raceOptionsStatus": "Race roster and racial definitions recorded in data/races.json; outstanding mechanics noted there",
+      "skillSelectionsStatus": "not yet finalized",
+      "advancementDesignStatus": "deferred until Rank advancement and Essence (XP) spending section"
     },
     "backgrounds": {
-      "status": "Common category completed; other categories pending",
+      "status": "All four categories and 72 background definitions finalized",
       "dataFile": "data/backgrounds.json",
       "decisionsFile": "docs/BACKGROUND_DECISIONS.md",
       "selection": "Each character chooses one Background during character creation",
@@ -150,7 +151,8 @@
         "Social"
       ],
       "commonApprovedCount": 20,
-      "note": "Background definitions, bonuses, roster, and abilities have moved to data/backgrounds.json. Treat that file as the single source of truth."
+      "note": "Background definitions, bonuses, roster, and abilities have moved to data/backgrounds.json. Treat that file as the single source of truth.",
+      "approvedCount": 72
     }
   },
   "skills": {
