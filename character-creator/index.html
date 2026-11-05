@@ -7,7 +7,6 @@
 </style></head><body><header><h1>MEZORIA <span style="color:var(--accent)">FOUNDRY</span></h1><p>Quartz Rank • Character Creator v0.1 • Rules-based prototype</p></header>
 <main><section class="editor">
 <div class="panel"><h2>1 · Race and Racial Adjustments</h2>
-<label for="name">Character Name</label><input id="name" placeholder="New hero">
 <div class="two"><div><label for="race">Race</label><select id="race"></select></div><div><label for="subgroup">Tribe / Clan / Aspect</label><select id="subgroup"></select></div></div>
 <div id="humanChoices" style="display:none"><h3>Human Adaptability: choose 3 attributes (+2 each)</h3><div id="humanChecks" class="checks"></div></div>
 <div id="humanSkill" style="display:none"><label for="humanTalent">Human Versatility: choose an extra starting Skill Talent</label><select id="humanTalent"></select></div>
@@ -18,9 +17,9 @@
 <div class="two"><div><label for="mark1">Mark Talent 1</label><select id="mark1"></select></div><div><label for="mark2">Mark Talent 2</label><select id="mark2"></select></div></div></div>
 <div class="panel"><h2>4 · Three Free Skill Talents</h2><p>Choose any three different approved skills without repeating racial, background, or Mark awards.</p>
 <div class="two"><div><label for="free1">Free Talent 1</label><select id="free1"></select></div><div><label for="free2">Free Talent 2</label><select id="free2"></select></div></div><label for="free3">Free Talent 3</label><select id="free3"></select></div>
-<div class="panel"><div class="section-head"><h2>5 · Allocate Attributes and Review</h2><span id="remaining" class="tag"></span></div>
-<p>Begin at 25% each; distribute exactly 25 points, no more than +15 per attribute before bonuses. Racial and background bonuses are included in final percentages.</p><div id="attributes"></div></div>
-<div class="panel"><h2>6 · Validate and Save</h2><ul id="warnings"></ul><div class="row actions" style="justify-content:flex-start;flex-wrap:wrap">
+<div class="panel"><div class="section-head"><h2>5 · Allocate Attributes</h2><span id="remaining" class="tag"></span></div>
+<p>Begin at 25% each; distribute exactly 35 points, no more than +15 per attribute before bonuses. Racial and background bonuses are included in final percentages.</p><div id="attributes"></div></div>
+<div class="panel"><h2>6 · Character Name, Validate and Save</h2><p>Choose your character name here, as the final creator step.</p><label for="name">Character Name</label><input id="name" placeholder="Enter character name"><ul id="warnings"></ul><div class="row actions" style="justify-content:flex-start;flex-wrap:wrap">
 <button id="export">Export JSON</button><button id="print" class="secondary">Print character sheet</button><button id="load" class="secondary">Import JSON</button><input id="import" type="file" accept=".json,application/json" style="display:none"></div>
 <p class="foot">Standalone prototype; the Foundry VTT sheet follows this same order. Export the completed character as JSON for local safekeeping.</p></div>
 </section>
@@ -52,8 +51,8 @@ $("humanChecks").innerHTML=attrs.map(a=>'<label class="check"><input type="check
 document.querySelectorAll("[data-human]").forEach(e=>e.addEventListener("change",()=>{const a=e.dataset.human;if(e.checked){if(state.humanAttrs.length>=3){e.checked=false;return}state.humanAttrs.push(a)}else state.humanAttrs=state.humanAttrs.filter(x=>x!==a);render()}));
 $("attributes").innerHTML=attrs.map(a=>'<div class="stat"><span>'+esc(a)+'</span><input type="number" min="0" max="15" step="1" data-alloc="'+esc(a)+'" value="'+(state.alloc[a]||0)+'"><strong id="total-'+esc(a)+'">25%</strong></div>').join("");
 document.querySelectorAll("[data-alloc]").forEach(e=>e.addEventListener("input",()=>{const val=e.value===""?0:Number(e.value);state.alloc[e.dataset.alloc]=val;render()}));render()}
-function validate(){const err=[],pool=attrs.reduce((n,a)=>n+Number(state.alloc[a]||0),0),race=currentRace();
-if(pool!==25)err.push("Allocate exactly 25 points (currently "+pool+").");
+function validate(){const err=[];if(!state.name.trim())err.push("Enter a character name on the final step.");const pool=attrs.reduce((n,a)=>n+Number(state.alloc[a]||0),0),race=currentRace();
+if(pool!==35)err.push("Allocate exactly 35 points (currently "+pool+").");
 for(const a of attrs)if(!Number.isInteger(Number(state.alloc[a]))||state.alloc[a]<0||state.alloc[a]>15)err.push(a+" allocation must be a whole number from 0 to 15.");
 if(race.subgroups.length&&!currentSubgroup())err.push("Choose a "+race.subgroupType.slice(0,-1)+".");
 if(state.race==="Human"&&state.humanAttrs.length!==3)err.push("Human Adaptability requires exactly three different attributes.");
@@ -62,8 +61,8 @@ if(pick.some(x=>!x))err.push("Select every starting Skill Talent.");
 const all=[currentBackground().skill,...pick].filter(Boolean);if(new Set(all).size!==all.length)err.push("Skill Talent selections must be distinct; on a Background / Mark conflict, change the Mark selection.");
 return err}
 function render(){const {race,bg}=bonuses(),r=currentRace(),b=currentBackground(),sg=currentSubgroup(),pool=attrs.reduce((n,a)=>n+Number(state.alloc[a]||0),0);
-$("remaining").textContent=(25-pool)+" unspent";
-$("remaining").className="tag "+(pool===25?"good":"bad");
+$("remaining").textContent=(35-pool)+" unspent";
+$("remaining").className="tag "+(pool===35?"good":"bad");
 for(const a of attrs){const total=25+Number(state.alloc[a]||0)+race[a]+bg[a];const el=$("total-"+a);if(el)el.textContent=total+"%"}
 $("sheetName").textContent=state.name.trim()||"Unnamed Hero";
 $("sheetIdentity").textContent=state.race+(sg?" · "+sg.name:"")+" · "+b.name+" · "+state.mark;
