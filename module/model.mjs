@@ -21,6 +21,7 @@ export class MezoriaCharacterData extends foundry.abstract.TypeDataModel {
    deathSaveFailures:new F.NumberField({required:true,integer:true,initial:0,min:0,max:3}),
    deathState:new F.StringField({required:true,initial:"none",choices:["none","stabilized","dead"]}),
    actionScore:new F.NumberField({required:true,integer:true,initial:0}),
+   unableToEvade:new F.BooleanField({required:true,initial:false}),
    currentEssence:new F.NumberField({required:true,integer:true,initial:0,min:0}),
    spentEssence:new F.NumberField({required:true,integer:true,initial:0,min:0}),
    notes:new F.StringField({required:true,initial:""})
