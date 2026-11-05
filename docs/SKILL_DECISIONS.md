@@ -258,3 +258,9 @@ The following nine skills are **trained-only**, requiring at least **Talent** to
 - Total: **91 approved skills**, **52 trained-only**, **39 available untrained**. Every skill is now explicitly classified.
 - Untrained characters roll the governing attribute with no training bonus when a check is required. This does not grant specialized techniques or eliminate existing limitations.
 - Existing trained-only restrictions for all 21 Lore skills, all 14 crafts, Group 1 nine, and Group 2 seven remain unchanged.
+
+## Advancement design deferred — 2026-11-05
+
+- At the user's direction, defer **how Skill Talents progress from Talent to Expertise and Mastery**, their advancement prerequisites, and spending **Essence (XP)** until the separate **Rank Advancement and Essence** section.
+- Previously approved skill-tier percentages and trained-only requirements remain unchanged.
+- Return to **character creation** now; immediate unresolved choices include the starting attribute allocation pool, Mark-granted skill lists and provisional skill-talent counts.
