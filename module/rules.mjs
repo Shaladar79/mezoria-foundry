@@ -54,6 +54,6 @@ export function deriveCharacter(s,rulebook=cache){
  if(new Set(nonEmpty).size!==nonEmpty.length)errors.push("Starting Skill Talents cannot be duplicated; background awards take priority.");
  const bonuses={race:rb,background:bb};
  const skillIndex=new Map(rulebook.skills.map(x=>[x.name,x]));
- const talents=nonEmpty.map((name,i)=>({name,attribute:skillIndex.get(name)?.governingAttribute||skillIndex.get(name)?.attr||"",bonus:5,source:i===0?"Background":i<=2?"Mark":i<=5?"Free":"Racial"}));
+ const talents=[{name:b?.skillTalent?.name,source:"Background"},...markTalents.map(name=>({name,source:"Mark"})),...freeTalents.map(name=>({name,source:"Free"})),...(s.race==="Human"?[{name:racialTalent,source:"Racial"}]:[])].filter(x=>x.name).map(x=>({...x,attribute:skillIndex.get(x.name)?.governingAttribute||"",bonus:5}));
  return {race:r,subgroup:sub,background:b,mark:m,scores,bonuses,spent,remaining:25-spent,talents,errors,movement:sub?.movement?.ground??r?.baseMovement??null};
 }
