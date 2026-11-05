@@ -389,3 +389,11 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - A **light rest restores 50% of maximum LifeForce** (rounded up to the next whole point, capped at the maximum). A **full rest restores LifeForce to 100% of maximum**. Neither rest action inherently removes Wounds under this LifeForce-only recovery rule.
 - Rest durations, higher-rank regeneration, talent modifiers, healing ability amounts, and Mana recovery are pending.
 - The Foundry sheet has a current-LifeForce tracker plus explicit buttons for +1/Turn, Light Rest (+50%), and Full Rest. It does not automatically tick every turn or trigger rests; the player activates the relevant button.
+
+## Approved Mana recovery and rest durations — 2026-11-05
+
+- **Mana recovery equals LifeForce recovery at Quartz:** regenerate **1 Mana per turn**, with the Quartz LifeForce rate remaining **1 per turn**.
+- **Light rest lasts 4 hours**, restoring **50% of each maximum** (LifeForce and Mana), rounded up to whole points and capped at maximum. This is an amount added to each currently depleted pool, not a reset to 50%.
+- **Full rest lasts 8 hours**, restoring both LifeForce and Mana to **100% of their maximum pools**.
+- Rest actions do not themselves remove Wounds. Rest eligibility/interruption rules, talents, healing specifics and future Rank scaling are undecided.
+- The Foundry Attributes tab includes editable current LifeForce/Mana values and shared +1-per-turn, 4-hour light rest and 8-hour full rest buttons; these trigger on player input, not automatically after elapsed time.
