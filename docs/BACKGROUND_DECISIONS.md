@@ -322,3 +322,9 @@
 - Granted Skill Talent: **Tracking** (+5 percentage points), governing attribute pending skill design.
 - Non-combat ability **Hidden Trails**: +10 percentage points on non-combat Tracking checks involving locating animal trails, identifying signs of recent wildlife activity, finding concealed game paths, and avoiding leaving obvious signs of one's own passage through wilderness terrain. Recognizes common feeding grounds, watering locations, and seasonal migration patterns.
 - Does not grant bonuses to combat attacks or damage against animals. Distinct from Hunter's food gathering and wilderness survival focus.
+
+## Counterfeiter Criminal Background (approved)
+- Attributes: **+2 percentage points Prowess** and **+2 percentage points Intellect**.
+- Granted Skill Talent: **Forgery** (+5 percentage points), reusing the skill introduced by Forger; governing attribute pending skill design.
+- Non-combat ability **False Mint**: +10 percentage points to non-combat Forgery checks involving reproducing currency, imitation trade goods, fraudulent merchant markings, and identifying counterfeit coins or manufactured merchandise. Recognizes common minting techniques, authenticity marks, and inconsistencies in coins and trade goods.
+- Does not automatically provide tools or materials needed to produce counterfeit goods. Distinct from Forger's focus on documents and signatures.
