@@ -448,3 +448,9 @@
 - **Apprentice** removed from Social background roster by user decision; it is now excluded.
 - Proposed +2 Prowess/+2 Intellect, Learning Talent, and Eager Student were never approved; no individual Apprentice rules were finalized.
 - Social roster now contains **16 approved backgrounds**, **10** individually defined. Continue with **Entertainer**.
+
+## Entertainer Social Background (approved)
+- Attributes: **+2 percentage points Prowess** and **+2 percentage points Presence**.
+- Granted Skill Talent: **Performance** (+5 percentage points), with governing attribute pending skill design.
+- Non-combat ability **Crowd Pleaser**: +10 percentage points to non-combat Performance checks involving entertaining audiences, holding a crowd's attention, adapting performances to different audiences, and recovering gracefully from mistakes during a performance. Recognizes audience preferences, common performance traditions, and signs that a crowd is becoming bored or restless.
+- Covers musicians, actors, dancers, storytellers, comedians and other performers. Does not grant magical performances, combat bonuses, automatic fame, or guaranteed audience approval.
