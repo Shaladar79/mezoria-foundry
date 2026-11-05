@@ -414,3 +414,9 @@
 - Granted Skill Talent: **Religion** (+5 percentage points), with governing attribute pending skill design.
 - Non-combat ability **Temple Initiate**: +10 percentage points on non-combat Religion checks involving identifying religious symbols, understanding ceremonial practices, recognizing religious traditions, and assisting with common rites and observances. Recognizes common temple hierarchies, religious garments, and expected conduct within places of worship.
 - Does not grant divine spells, supernatural blessings, religious authority, or automatic acceptance by a religious organization. Distinct from Monk's disciplined spiritual practice and monastic life.
+
+## Monk Social Background (approved)
+- Attributes: **+2 percentage points Endurance** and **+2 percentage points Intellect**.
+- Granted Skill Talent: **Discipline** (+5 percentage points), governing attribute pending skill design.
+- Non-combat ability **Monastic Training**: +10 percentage points to non-combat Discipline checks involving maintaining focus during long periods of study or meditation, following demanding daily routines, resisting ordinary distractions, and performing tasks requiring sustained patience and concentration. Recognizes common monastic customs, meditation practices, and organizational structures of spiritual orders.
+- Does not grant supernatural abilities, combat bonuses, damage resistance, or immunity to mental effects. Distinct from Acolyte's religious ceremonies and traditions.
