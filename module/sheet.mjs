@@ -191,7 +191,9 @@ export class MezoriaCharacterSheet extends ActorSheet {
    const gain=max=>kind==="turn"?1:kind==="light"?Math.ceil(max/2):max;
    const lifeNext=Math.min(lifeMax,data.status.currentLifeForce+gain(lifeMax));
    const manaNext=Math.min(manaMax,data.status.currentMana+gain(manaMax));
-   await this.actor.update({"system.currentLifeForce":lifeNext,"system.currentMana":manaNext});
+   const updates={"system.currentLifeForce":lifeNext,"system.currentMana":manaNext};
+   if(kind==="full")updates["system.woundsTaken"]=Math.max(0,data.status.woundsTaken-1);
+   await this.actor.update(updates);
   });
   html.find("[data-current-resource]").on("change",async event=>{
    const resource=event.currentTarget.dataset.currentResource;
