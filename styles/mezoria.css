@@ -213,3 +213,7 @@
 .mezoria.sheet .mezoria-death-save{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:8px 0;padding:8px;border:1px solid #b98f81;border-radius:5px;background:#f5ebe7;color:#111}
 .mezoria.sheet .mezoria-death-save span{font-size:11px;color:#111!important}
 .mezoria.sheet .mezoria-death-save button{border:1px solid #7b3e33!important;background:#f3d2c7!important;color:#111!important;font-size:11px!important;min-height:28px;padding:4px 8px;border-radius:4px;cursor:pointer}
+
+/* Dodge condition control */
+.mezoria.sheet .mezoria-dodge-condition{display:flex;align-items:center;gap:7px;margin:8px 0;color:#111!important;font-size:11px;font-weight:600}
+.mezoria.sheet .mezoria-dodge-condition input[type="checkbox"]{width:15px!important;height:15px!important;flex:0 0 15px;min-height:0!important;margin:0!important}
