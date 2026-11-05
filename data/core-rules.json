@@ -378,6 +378,11 @@
         "name": "Leadership",
         "governingAttribute": "pending",
         "notes": "Heir Social background Skill Talent"
+      },
+      {
+        "name": "Diplomacy",
+        "governingAttribute": "pending",
+        "notes": "Diplomat Social background Skill Talent"
       }
     ]
   },
