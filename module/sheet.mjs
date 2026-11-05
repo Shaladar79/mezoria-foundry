@@ -2,6 +2,24 @@ import {loadCreationRules,deriveCharacter,raceSubgroups} from "./rules.mjs";
 
 const ATTRS=["Might","Prowess","Endurance","Intellect","Presence"];
 const NAME_DEFAULTS=new Set(["","New Actor","New Character","New Hero"]);
+const NONE_OPTION={value:"",label:"— None Selected —",selected:true};
+function withNone(options,selected){
+ return [{...NONE_OPTION,selected:!selected},...options];
+}
+function bonusLabels(bonuses){
+ return ATTRS.filter(name=>Number(bonuses?.[name])>0).map(name=>({name,points:bonuses[name]}));
+}
+function formatBonuses(bonuses){
+ const values=bonusLabels(bonuses).map(({name,points})=>name+" +"+points+"%");
+ return values.length?values.join(", "):"";
+}
+function raceChoiceBonus(r){
+ if(r.name==="Human")return "choose three attributes (+2% each)";
+ const raw=r.attributes?.bonuses;
+ if(Array.isArray(raw))return raw.map(x=>x.attribute+" +"+x.percentagePoints+"%").join(", ");
+ if(r.subgroupType)return "bonuses vary by "+({tribes:"tribe",clans:"clan",aspects:"aspect"}[r.subgroupType]);
+ return "";
+}
 
 function choices(values,selected,getValue=x=>x,getLabel=x=>x){
  return values.map(x=>({value:getValue(x),label:getLabel(x),selected:getValue(x)===selected}));
@@ -48,8 +66,8 @@ export class MezoriaCharacterSheet extends ActorSheet {
   const human=system.race==="Human";
   return {
    ...base,system,derived,creatorOpen,creationComplete:system.creationComplete,
-   headerName:this.actor.name,headerRace:system.race,headerBackground:system.background,
-   headerMark:system.mark,headerSubgroup:system.subgroup,showSubgroup:!!subgroupType,subgroupType,
+   headerName:this.actor.name,headerRace:system.race||"None Selected",headerBackground:system.background||"None Selected",
+   headerMark:system.mark?(mark?.id?.charAt(0).toUpperCase()+mark?.id?.slice(1)||system.mark):"None Selected",headerSubgroup:system.subgroup,showSubgroup:!!subgroupType,subgroupType,
    sheetAttributes:this.sheetTab==="attributes",sheetSkills:this.sheetTab==="skills",
    attrTabActive:this.sheetTab==="attributes",skillsTabActive:this.sheetTab==="skills",
    attributes:derived.scores,skillRows,trainedCount:skillRows.filter(s=>s.trained).length,
@@ -61,15 +79,18 @@ export class MezoriaCharacterSheet extends ActorSheet {
    stepRace:this.creationStep==="race",stepBackground:this.creationStep==="background",
    stepMark:this.creationStep==="mark",stepFree:this.creationStep==="free",
    stepAttributes:this.creationStep==="attributes",stepName:this.creationStep==="name",
-   raceOptions:choices(rules.races,system.race,r=>r.name,r=>r.name),
+   raceOptions:withNone(choices(rules.races,system.race,r=>r.name,r=>r.name+" — "+raceChoiceBonus(r)),system.race),
+   raceBonusRows:bonusLabels(derived.bonuses.race),raceBonusPending:!race,
    subgroupOptions:choices(subgroups,system.subgroup,r=>r.name,r=>r.name),
    human,humanAttributes:ATTRS.map(name=>({name,checked:(system.humanAttributes||[]).includes(name)})),
    racialOptions:[{value:"",label:"— Choose a racial Skill Talent —",selected:!system.racialTalent},...choices(rules.skills.map(s=>s.name),system.racialTalent)],
-   backgroundOptions:choices(Object.entries(rules.backgrounds).filter(([,b])=>b.status==="approved").map(([name])=>name),system.background),
+   backgroundOptions:withNone(choices(Object.entries(rules.backgrounds).filter(([,b])=>b.status==="approved").map(([name])=>name),system.background,name=>name,name=>name+" — "+formatBonuses(rules.backgrounds[name]?.attributeBonus)),system.background),
+   backgroundBonusRows:bonusLabels(derived.bonuses.background),backgroundBonusPending:!background,
    backgroundTalent:background?.skillTalent?.name||"Pending",
    backgroundAbility:background?.nonCombatAbility||null,
-   markOptions:choices(rules.marks,system.mark,m=>m.id,m=>m.id.charAt(0).toUpperCase()+m.id.slice(1)),
-   markChoices:[0,1].map(index=>({index,number:index+1,options:[{value:"",label:"— Choose a Mark Talent —",selected:!(system.markTalents?.[index])},...choices(mark?.startingSkillOptions||[],system.markTalents?.[index]||"")]})),
+   markOptions:withNone(choices(rules.marks,system.mark,m=>m.id,m=>m.id.charAt(0).toUpperCase()+m.id.slice(1)),system.mark),
+   markChosen:!!mark,
+   markChoices:[0,1].map(index=>({index,number:index+1,options:[{value:"",label:mark?"— Choose a Mark Talent —":"— Select a Mark first —",selected:!(system.markTalents?.[index])},...choices(mark?.startingSkillOptions||[],system.markTalents?.[index]||"")]})),
    freeChoices:[0,1,2].map(index=>({index,number:index+1,options:[{value:"",label:"— Choose a free Skill Talent —",selected:!(system.freeTalents?.[index])},...choices(rules.skills.map(s=>s.name),system.freeTalents?.[index]||"")]})),
    spent:derived.spent,remaining:derived.remaining,
    errors,valid:!errors.length,
