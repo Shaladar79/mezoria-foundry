@@ -1532,6 +1532,27 @@
         "combatEffect": false
       },
       "notes": "Does not automatically grant wealth, fame, influential contacts, or guaranteed invitations to exclusive events."
+    },
+    "Politician": {
+      "status": "approved",
+      "category": "Social",
+      "attributeBonus": {
+        "Intellect": 2,
+        "Presence": 2
+      },
+      "skillTalent": {
+        "name": "Persuasion",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Political Savvy",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Persuasion checks involving building support for proposals, presenting arguments to civic leaders, negotiating political compromises, and addressing public concerns during political discussions",
+        "additionalEffect": "Recognizes common political factions, signs of shifting public opinion, and informal alliances influencing local government",
+        "combatEffect": false
+      },
+      "notes": "Does not automatically grant public office, political authority, loyal supporters, or control over government decisions."
     }
   },
   "notes": [
