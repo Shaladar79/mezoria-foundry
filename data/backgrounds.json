@@ -1429,6 +1429,27 @@
         "combatEffect": false
       },
       "notes": "Does not grant supernatural abilities, combat bonuses, damage resistance, or immunity to mental effects."
+    },
+    "Pilgrim": {
+      "status": "approved",
+      "category": "Social",
+      "attributeBonus": {
+        "Endurance": 2,
+        "Presence": 2
+      },
+      "skillTalent": {
+        "name": "Religion",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Sacred Journey",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Religion checks involving identifying sacred sites, understanding pilgrimage traditions, observing appropriate customs at religious destinations, and recognizing religious landmarks along established pilgrimage routes",
+        "additionalEffect": "Recognizes common pilgrim symbols, traditional pilgrimage routes, and customs associated with sheltering religious travelers",
+        "combatEffect": false
+      },
+      "notes": "Does not grant supernatural protection, divine favors, free lodging, or immunity to travel hazards."
     }
   },
   "notes": [
