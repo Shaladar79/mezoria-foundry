@@ -181,6 +181,28 @@ export class MezoriaCharacterSheet extends ActorSheet {
    }
    await this.actor.update({["system."+key]:num});
   });
+  html.find("[data-lifeforce-recovery]").on("click",async event=>{
+   event.preventDefault();
+   const kind=event.currentTarget.dataset.lifeforceRecovery;
+   if(!["turn","light","full"].includes(kind))return;
+   const data=deriveCharacter(this.actor.system,await loadCreationRules());
+   const max=data.status.lifeForce;
+   if(max===null){ui.notifications.warn("LifeForce recovery scaling for this Rank is pending.");return;}
+   const current=data.status.currentLifeForce;
+   const gain=kind==="turn"?1:kind==="light"?Math.ceil(max/2):max;
+   const next=Math.min(max,current+gain);
+   await this.actor.update({"system.currentLifeForce":next});
+  });
+  html.find("[data-current-lifeforce]").on("change",async event=>{
+   const data=deriveCharacter(this.actor.system,await loadCreationRules());
+   const max=data.status.lifeForce;
+   const value=Number(event.currentTarget.value);
+   if(max===null||!Number.isInteger(value)||value<0||value>max){
+    ui.notifications.warn("LifeForce must be a whole number from 0 to the current maximum.");
+    this.render(false);return;
+   }
+   await this.actor.update({"system.currentLifeForce":value});
+  });
   html.find("[data-roll-action-score]").on("click",async event=>{
    event.preventDefault();
    const data=deriveCharacter(this.actor.system,await loadCreationRules());
