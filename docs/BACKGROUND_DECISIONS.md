@@ -420,3 +420,9 @@
 - Granted Skill Talent: **Discipline** (+5 percentage points), governing attribute pending skill design.
 - Non-combat ability **Monastic Training**: +10 percentage points to non-combat Discipline checks involving maintaining focus during long periods of study or meditation, following demanding daily routines, resisting ordinary distractions, and performing tasks requiring sustained patience and concentration. Recognizes common monastic customs, meditation practices, and organizational structures of spiritual orders.
 - Does not grant supernatural abilities, combat bonuses, damage resistance, or immunity to mental effects. Distinct from Acolyte's religious ceremonies and traditions.
+
+## Pilgrim Social Background (approved)
+- Attributes: **+2 percentage points Endurance** and **+2 percentage points Presence**.
+- Granted Skill Talent: **Religion** (+5 percentage points), reusing the skill established for Acolyte; governing attribute pending skill design.
+- Non-combat ability **Sacred Journey**: +10 percentage points to non-combat Religion checks involving identifying sacred sites, understanding pilgrimage traditions, observing appropriate customs at religious destinations, and recognizing religious landmarks along established pilgrimage routes. Recognizes common pilgrim symbols, traditional pilgrimage routes, and customs associated with sheltering religious travelers.
+- Does not grant supernatural protection, divine favors, free lodging, or immunity to travel hazards. Distinct from Acolyte's religious service and Monk's spiritual discipline.
