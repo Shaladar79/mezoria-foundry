@@ -402,3 +402,9 @@
 - Granted Skill Talent: **Leadership** (+5 percentage points); governing attribute pending skill design.
 - Non-combat ability **Born to Inherit**: +10 percentage points to non-combat Leadership checks involving organizing household affairs, coordinating servants and retainers, handling succession-related responsibilities, and presenting oneself as a legitimate successor to a position of authority. Recognizes common inheritance customs, succession protocols, and the responsibilities of managing estates or noble households.
 - Does not automatically grant an estate, wealth, loyal retainers, or political authority. Distinct from Noble's aristocratic upbringing.
+
+## Diplomat Social Background (approved)
+- Attributes: **+2 percentage points Intellect** and **+2 percentage points Presence**.
+- Granted Skill Talent: **Diplomacy** (+5 percentage points), with governing attribute pending skill design.
+- Non-combat ability **Silver Accord**: +10 percentage points to non-combat Diplomacy checks involving negotiating agreements between opposing parties, mediating disputes, resolving misunderstandings between cultures, and presenting mutually beneficial compromises. Recognizes common diplomatic protocols, signs of strained negotiations, and cultural customs that may influence formal agreements.
+- Does not guarantee peaceful resolutions, enforce agreements, or automatically grant diplomatic immunity. Distinct from Courtier's focus on internal court politics.
