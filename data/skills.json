@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "status": "Might and Prowess rosters finalized; Endurance, Intellect, Presence pending review",
+  "attributes": {
+    "Might": {
+      "status": "approved",
+      "skills": [
+        {
+          "name": "Athletics",
+          "description": "Strength-based movement, jumping, hauling, swimming, and climbing",
+          "governingAttribute": "Might"
+        },
+        {
+          "name": "Mining",
+          "description": "Excavating ore and rock with physical tools",
+          "governingAttribute": "Might"
+        },
+        {
+          "name": "Woodcutting",
+          "description": "Felling trees and physically processing timber",
+          "governingAttribute": "Might"
+        },
+        {
+          "name": "Brawn",
+          "description": "Feats of raw strength, lifting, pushing, and breaking obstacles",
+          "governingAttribute": "Might"
+        },
+        {
+          "name": "Grappling",
+          "description": "Controlling, restraining, and wrestling opponents",
+          "governingAttribute": "Might"
+        },
+        {
+          "name": "Unarmed Combat",
+          "description": "Attacks using fists, kicks, and body strikes",
+          "governingAttribute": "Might"
+        },
+        {
+          "name": "Heavy Weapons",
+          "description": "Attacks with two-handed melee weapons",
+          "governingAttribute": "Might"
+        },
+        {
+          "name": "Intimidation",
+          "description": "Coercion through imposing physical menace; social manipulation involving authority or rhetoric may instead use Presence",
+          "governingAttribute": "Might"
+        }
+      ]
+    },
+    "Prowess": {
+      "status": "approved",
+      "skills": [
+        {
+          "name": "Acrobatics",
+          "description": "Balance, tumbling, rolls, and controlled falls",
+          "governingAttribute": "Prowess"
+        },
+        {
+          "name": "Stealth",
+          "description": "Moving quietly and hiding from detection",
+          "governingAttribute": "Prowess"
+        },
+        {
+          "name": "Sleight of Hand",
+          "description": "Palming, concealing, and precisely manipulating objects; not pickpocketing",
+          "governingAttribute": "Prowess"
+        },
+        {
+          "name": "Pickpocketing",
+          "description": "Stealing carried or worn items directly from people",
+          "governingAttribute": "Prowess"
+        },
+        {
+          "name": "Lockpicking",
+          "description": "Opening mechanical locks without keys",
+          "governingAttribute": "Prowess"
+        },
+        {
+          "name": "Escape Artist",
+          "description": "Escaping physical restraints, bindings, or tight confinement",
+          "governingAttribute": "Prowess"
+        },
+        {
+          "name": "Melee Weapons",
+          "description": "Attacks with one-handed melee weapons, including light and finesse weapons",
+          "governingAttribute": "Prowess"
+        },
+        {
+          "name": "Ranged Weapons",
+          "description": "Attacks with bows, crossbows, slings, and other non-thrown ranged weapons",
+          "governingAttribute": "Prowess"
+        },
+        {
+          "name": "Throwing Weapons",
+          "description": "Attacks with thrown knives, axes, javelins, and similar weapons",
+          "governingAttribute": "Prowess"
+        },
+        {
+          "name": "Riding",
+          "description": "Controlling mounts, difficult maneuvers, and mounted movement",
+          "governingAttribute": "Prowess"
+        }
+      ]
+    },
+    "Endurance": {
+      "status": "pending",
+      "skills": []
+    },
+    "Intellect": {
+      "status": "pending",
+      "skills": []
+    },
+    "Presence": {
+      "status": "pending",
+      "skills": []
+    }
+  },
+  "combatNotes": [
+    "Dual Wielding is a Style Talent, not a Skill Talent.",
+    "One-handed weapons use Melee Weapons (Prowess); two-handed melee weapons use Heavy Weapons (Might).",
+    "Grappling and Unarmed Combat remain distinct Might skills.",
+    "Climbing is covered by Athletics (Might), not a separate Prowess skill.",
+    "Pickpocketing and Sleight of Hand are separate Prowess skills.",
+    "Ranged Weapons remains a broad Prowess skill; Throwing Weapons is separate.",
+    "Prowess already contributes to Dodge and Action Score; skill choices do not inherently increase either derived statistic."
+  ],
+  "skillTalentProgression": {
+    "Talent": 5,
+    "Expertise": 5,
+    "Mastery": 5,
+    "unit": "percentage points per tier"
+  }
+}
