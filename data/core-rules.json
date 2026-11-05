@@ -196,7 +196,7 @@
       },
       {
         "name": "Athletics",
-        "governingAttribute": "pending",
+        "governingAttribute": "Might",
         "notes": "Laborer background Skill Talent; confirm existing skill roster placement later"
       },
       {
@@ -231,12 +231,12 @@
       },
       {
         "name": "Mining",
-        "governingAttribute": "pending",
+        "governingAttribute": "Might",
         "notes": "Miner Tradesman background Skill Talent; full definition pending skill design"
       },
       {
         "name": "Woodcutting",
-        "governingAttribute": "pending",
+        "governingAttribute": "Might",
         "notes": "Lumberjack Tradesman background Skill Talent; detailed definition pending"
       },
       {
@@ -361,7 +361,7 @@
       },
       {
         "name": "Intimidation",
-        "governingAttribute": "pending",
+        "governingAttribute": "Might",
         "notes": "Enforcer Criminal background Skill Talent"
       },
       {
@@ -408,8 +408,44 @@
         "name": "Law",
         "governingAttribute": "pending",
         "notes": "Magistrate Social background Skill Talent"
+      },
+      {
+        "name": "Brawn",
+        "governingAttribute": "Might",
+        "notes": "Raw strength checks: lifting, carrying, pushing, pulling, breaking objects"
+      },
+      {
+        "name": "Grappling",
+        "governingAttribute": "Might",
+        "notes": "Wrestling, holds, and restraint; detailed combat resolution pending"
+      },
+      {
+        "name": "Unarmed Combat",
+        "governingAttribute": "Might",
+        "notes": "Unarmed strikes and fighting; detailed combat resolution pending"
+      },
+      {
+        "name": "Heavy Weapons",
+        "governingAttribute": "Might",
+        "notes": "Strength-intensive melee weapons; weapon groups and combat resolution pending"
       }
-    ]
+    ],
+    "governingAttributeReview": {
+      "Might": {
+        "status": "approved",
+        "skills": [
+          "Athletics",
+          "Mining",
+          "Woodcutting",
+          "Brawn",
+          "Grappling",
+          "Unarmed Combat",
+          "Heavy Weapons",
+          "Intimidation"
+        ],
+        "notes": "Intimidation uses Might even for social coercion; Enforcer and Racketeer retain their background attribute bonuses and Talent. Grappling, Unarmed Combat, and Heavy Weapons are registered with combat mechanics deferred. Athletics is strength-based physical movement; Brawn is raw force."
+      }
+    }
   },
   "rolls": {
     "dice": "1d100",
