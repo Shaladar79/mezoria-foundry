@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "All five core attribute skill rosters approved; Lore and Inscription reserved for later review",
+  "status": "All five core attribute rosters and 21 Lore skills approved; Inscription reserved for later design",
   "attributes": {
     "Might": {
       "status": "approved",
@@ -427,6 +427,62 @@
           "trainedOnly": true,
           "minimumTier": "Talent",
           "category": "Supernatural Lore"
+        },
+        {
+          "name": "Lore: Elemental Magic",
+          "description": "Knowledge of elemental magical energies, their interactions, and magical traditions",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent",
+          "category": "Magical Lore"
+        },
+        {
+          "name": "Lore: Concept Magic",
+          "description": "Knowledge of magical phenomena involving Time, Space, Gravity, Order, Life, Death, Dream, Spirit, Fate, Chaos, Void, and Balance",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent",
+          "category": "Magical Lore"
+        },
+        {
+          "name": "Lore: Eldritch Magic",
+          "description": "Knowledge of eldritch magical traditions, techniques, and manifestations",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent",
+          "category": "Magical Lore"
+        },
+        {
+          "name": "Lore: Astral Magic",
+          "description": "Knowledge of astral magical energies, phenomena, and workings",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent",
+          "category": "Magical Lore"
+        },
+        {
+          "name": "Lore: Spirit Magic",
+          "description": "Knowledge of magic associated with Spirits, deity-like beings, and related spiritual manifestations",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent",
+          "category": "Magical Lore"
+        },
+        {
+          "name": "Lore: Soul Magic",
+          "description": "Knowledge of soul-based magical phenomena and Soul Weapon workings",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent",
+          "category": "Magical Lore"
+        },
+        {
+          "name": "Lore: Ancient Magic",
+          "description": "Knowledge of lost magical traditions and forgotten magical techniques",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent",
+          "category": "Magical Lore"
         }
       ],
       "notes": [
@@ -619,7 +675,7 @@
   },
   "deferredSkillCandidates": [],
   "lorePolicy": {
-    "status": "Creature and supernatural Lore rosters approved; magical Lore under review",
+    "status": "approved",
     "governingAttribute": "Intellect",
     "trainingRequired": true,
     "minimumTrainingTier": "Talent",
@@ -645,7 +701,7 @@
         "scope": "Beasts, common animals and wildlife"
       }
     ],
-    "rosterStatus": "Creature Lore (8) and Supernatural Lore (6) approved; Magical Lore pending",
+    "rosterStatus": "Creature Lore (8), Supernatural Lore (6), and Magical Lore (7) finalized",
     "magicLoreNamingDecisions": [
       {
         "name": "Lore: Spirit Magic",
@@ -758,6 +814,61 @@
         {
           "name": "Lore: Fae",
           "description": "Knowledge of fae beings, courts, supernatural bargains, customs, and traits",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
+        }
+      ]
+    },
+    "magicalLore": {
+      "status": "approved",
+      "count": 7,
+      "skills": [
+        {
+          "name": "Lore: Elemental Magic",
+          "description": "Knowledge of elemental magical energies, their interactions, and magical traditions",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
+        },
+        {
+          "name": "Lore: Concept Magic",
+          "description": "Knowledge of magical phenomena involving Time, Space, Gravity, Order, Life, Death, Dream, Spirit, Fate, Chaos, Void, and Balance",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
+        },
+        {
+          "name": "Lore: Eldritch Magic",
+          "description": "Knowledge of eldritch magical traditions, techniques, and manifestations",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
+        },
+        {
+          "name": "Lore: Astral Magic",
+          "description": "Knowledge of astral magical energies, phenomena, and workings",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
+        },
+        {
+          "name": "Lore: Spirit Magic",
+          "description": "Knowledge of magic associated with Spirits, deity-like beings, and related spiritual manifestations",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
+        },
+        {
+          "name": "Lore: Soul Magic",
+          "description": "Knowledge of soul-based magical phenomena and Soul Weapon workings",
+          "governingAttribute": "Intellect",
+          "trainedOnly": true,
+          "minimumTier": "Talent"
+        },
+        {
+          "name": "Lore: Ancient Magic",
+          "description": "Knowledge of lost magical traditions and forgotten magical techniques",
           "governingAttribute": "Intellect",
           "trainedOnly": true,
           "minimumTier": "Talent"
