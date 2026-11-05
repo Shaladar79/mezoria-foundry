@@ -264,3 +264,11 @@ The following nine skills are **trained-only**, requiring at least **Talent** to
 - At the user's direction, defer **how Skill Talents progress from Talent to Expertise and Mastery**, their advancement prerequisites, and spending **Essence (XP)** until the separate **Rank Advancement and Essence** section.
 - Previously approved skill-tier percentages and trained-only requirements remain unchanged.
 - Return to **character creation** now; immediate unresolved choices include the starting attribute allocation pool, Mark-granted skill lists and provisional skill-talent counts.
+
+## Astral origin of magic and skill-list revision — 2026-11-05
+
+- **Supersedes earlier Magical Lore roster:** **Lore: Concept Magic** is removed as a separate approved skill. This does not remove Concept Marks or Concept powers.
+- **Cosmology:** Magic originates from the Astral in its pure form. **Lore: Astral Magic** is the foundational magical Lore specialization. **Magic Theory** remains a distinct skill.
+- Magical Lore now has **6** skills; total Lore skills **20**; total approved skills **90** (51 trained-only and 39 untrained-allowed).
+- The Arcanist Mark's eight starting options now include **Herbalism** in place of Lore: Concept Magic: Magic Theory, Ritual Magic, Use Magic Device, Concentration, Research, Lore: Elemental Magic, Herbalism, Lore: Astral Magic.
+- Historic entries above reflect past approval states and are superseded by this amendment.
