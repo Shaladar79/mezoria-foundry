@@ -62,10 +62,18 @@ export function deriveCharacter(s,rulebook=cache){
  const woundThreshold=rank+Math.floor(enduranceTens/2);
  const woundCapacity=rank===1?3:null; // Quartz capacity approved; no other Rank capacities defined.
  const woundsTaken=Math.max(0,Number(s.woundsTaken)||0);
+ const failures=Math.max(0,Math.min(3,Number(s.deathSaveFailures)||0));
+ const deathState=s.deathState==="dead"?"dead":s.deathState==="stabilized"?"stabilized":"none";
  const status={
   dodge:prowessTens,initiativeBonus:prowessTens,
   woundThreshold,woundCapacity,woundsTaken,
-  bleedingToDeath:woundCapacity!==null&&woundsTaken>=woundCapacity,
+  bleedingToDeath:woundCapacity!==null&&woundsTaken>=woundCapacity&&deathState==="none",
+  deathSaveFailures:failures,deathState,
+  deathSaveTN:Math.max(0,score("Endurance")-5*failures),
+  isDead:deathState==="dead",
+  isStabilized:deathState==="stabilized",
+  isUnconscious:deathState==="stabilized"&&((s.currentLifeForce??(rank===1?3*(Math.floor(score("Might")/10)+enduranceTens):0))===0),
+  isConscious:deathState==="stabilized"&&((s.currentLifeForce??(rank===1?3*(Math.floor(score("Might")/10)+enduranceTens):0))>0),
   lifeForce:rank===1?3*(Math.floor(score("Might")/10)+enduranceTens):null,
   mana:rank===1?3*(Math.floor(score("Intellect")/10)+Math.floor(score("Presence")/10)):null,
   currentLifeForce:rank===1?Math.min(3*(Math.floor(score("Might")/10)+enduranceTens),s.currentLifeForce??3*(Math.floor(score("Might")/10)+enduranceTens)):null,
