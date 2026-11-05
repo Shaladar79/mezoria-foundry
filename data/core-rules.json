@@ -1567,6 +1567,19 @@
       "higherRankHealingAbilities": "May restore Wounds; exact abilities and quantities pending",
       "lowerBound": 0,
       "eligibilityAndInterruption": "pending"
+    },
+    "bleedingToDeath": {
+      "trigger": "At maximum Wounds",
+      "enduranceSave": "d100 roll-under current Endurance minus 5 percentage points per prior failed death save",
+      "saveFrequency": "each turn while Bleeding to Death; exact turn timing in Foundry combat automation pending",
+      "success": "One successful save stabilizes the character",
+      "failure": "Each failure increases failures by one and imposes -5 percentage points to the next save TN",
+      "death": "Third failed save results in death",
+      "stabilizedAtZeroLifeForce": "Remains unconscious",
+      "stabilizedAboveZeroLifeForce": "Regains consciousness",
+      "criticalAutoSuccess": "Natural 01–05 always succeeds per standard roll convention",
+      "furtherDamageAndReentry": "pending",
+      "medicalStabilization": "pending"
     }
   },
   "soulWeapon": {
