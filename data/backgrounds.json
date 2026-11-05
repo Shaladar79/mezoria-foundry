@@ -1084,6 +1084,27 @@
         "combatEffect": false
       },
       "notes": "Does not grant bonuses to combat attacks or damage against animals."
+    },
+    "Counterfeiter": {
+      "status": "approved",
+      "category": "Criminal",
+      "attributeBonus": {
+        "Prowess": 2,
+        "Intellect": 2
+      },
+      "skillTalent": {
+        "name": "Forgery",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "False Mint",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Forgery checks involving reproducing currency, imitation trade goods, fraudulent merchant markings, and identifying counterfeit coins or manufactured merchandise",
+        "additionalEffect": "Recognizes common minting techniques, authenticity marks, and inconsistencies in coins and trade goods",
+        "combatEffect": false
+      },
+      "notes": "Does not automatically provide the tools or materials required to produce counterfeit goods."
     }
   },
   "notes": [
