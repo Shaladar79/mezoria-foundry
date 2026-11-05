@@ -1021,6 +1021,27 @@
         "combatEffect": false
       },
       "notes": "Does not automatically grant knowledge of secret codes, unfamiliar languages, or magical seals."
+    },
+    "Smuggler": {
+      "status": "approved",
+      "category": "Criminal",
+      "attributeBonus": {
+        "Intellect": 2,
+        "Presence": 2
+      },
+      "skillTalent": {
+        "name": "Smuggling",
+        "tier": "Talent",
+        "bonusPercentagePoints": 5
+      },
+      "nonCombatAbility": {
+        "name": "Hidden Cargo",
+        "conditionalBonusPercentagePoints": 10,
+        "appliesTo": "Non-combat Smuggling checks involving concealing illicit merchandise, assessing transport routes for detection risks, disguising shipments as legitimate cargo, and navigating inspections without drawing suspicion",
+        "additionalEffect": "Recognizes common smuggling routes, concealed cargo compartments, and signs that a shipment has been searched or tampered with",
+        "combatEffect": false
+      },
+      "notes": "Does not automatically bypass security inspections or provide immunity from legal consequences."
     }
   },
   "notes": [
