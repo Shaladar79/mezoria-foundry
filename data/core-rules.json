@@ -368,6 +368,11 @@
         "name": "Survival",
         "governingAttribute": "pending",
         "notes": "Bandit Criminal background Skill Talent"
+      },
+      {
+        "name": "Insight",
+        "governingAttribute": "pending",
+        "notes": "Prisoner Criminal background Skill Talent"
       }
     ]
   },
