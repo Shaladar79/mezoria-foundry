@@ -1773,5 +1773,26 @@
     "foundationalMagicalLoreSkill": "Lore: Astral Magic",
     "conceptMagicSeparateLoreSkill": false,
     "status": "approved"
+  },
+  "markOfPurposeGrantedAbilities": {
+    "status": "approved starting allocation",
+    "rankGranted": 1,
+    "rankName": "Quartz",
+    "appliesTo": [
+      "defender",
+      "striker",
+      "skirmisher",
+      "warden",
+      "arcanist",
+      "adept"
+    ],
+    "grant": {
+      "activeAbilities": 1,
+      "passiveAbilities": 1
+    },
+    "delivery": "Automatically granted by the chosen Mark of Purpose",
+    "abilityDefinitions": "Specific active and passive effects pending individual Mark design, starting with Defender",
+    "additionalLearnedAbilities": "Separate ability creation and acquisition rules pending",
+    "activeCosts": "Defined when individual abilities are designed; activated powers use Mana under the existing resources rule"
   }
 }
