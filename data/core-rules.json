@@ -1178,7 +1178,7 @@
       "magicalArmorException": "Some magical armor restores its mitigation pool over time as specified by the armor's own properties",
       "repairCostAndRate": "pending equipment design",
       "magicalRepairRateAndConditions": "pending item design",
-      "poolSize": "Determined by armor category and equipment rank; numeric maximum mitigation values pending",
+      "poolSize": "At Rank 0: Light 5, Medium 10, Heavy 15 maximum mitigation points; values for higher ranks remain pending.",
       "status": "approved foundation",
       "fieldRepairs": {
         "status": "approved",
@@ -1242,7 +1242,7 @@
         "appliesTo": "all equipment"
       },
       "maximumMitigationByCategoryAndRank": {
-        "status": "approved structure; numerical values pending",
+        "status": "Rank 0 caps approved; Rank 1–10 scaling pending",
         "rule": "The maximum mitigation pool of an armor piece depends on its category (Light, Medium, or Heavy) and equipment rank (0–10)",
         "categories": [
           "Light",
@@ -1250,7 +1250,14 @@
           "Heavy"
         ],
         "ranks": "0 through 10 inclusive",
-        "capTable": "pending design; do not infer numeric values"
+        "capTable": "Rank 0: Light 5, Medium 10, Heavy 15; ranks 1–10 pending scaling decisions",
+        "approvedRankZero": {
+          "rank": 0,
+          "name": "Normal",
+          "Light": 5,
+          "Medium": 10,
+          "Heavy": 15
+        }
       }
     },
     "physicalDefenseByAttackType": {
