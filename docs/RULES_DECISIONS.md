@@ -492,3 +492,13 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 
 - Rank 3 marks the first major soul-strengthening power threshold and Soul Weapon manifestation. Rank 4–10 mitigation scaling remains intentionally deferred.
 - Character equipment remains limited to equipment of equal or lower Rank.
+
+## Individually defined armor mitigation and durability bases — approved 2026-11-06
+
+- **Armor type/item design determines its own base mitigation and base durability.** Light, Medium and Heavy armor types need not share identical statistics within a category.
+- **Rank scaling:** for Ranks 0–3, use the established armor multipliers x1, x1.5, x2, x3. Maximum mitigation = ceiling(item base mitigation × Rank multiplier); maximum durability = ceiling(item base durability × Rank multiplier). Both are whole-point pools, rounded **up**.
+- The approved category mitigation values (Rank 0 Light 5, Medium 10, Heavy 15 and scaled category caps at Ranks 1–3) are **ceilings**, not automatically assigned values. An item's Rank 0 base mitigation must not exceed its category's Rank 0 cap, and a scaled item must not exceed the category cap at its Rank.
+- Example: a Heavy armor design with base mitigation 12 gets 12/18/24/36 mitigation at Ranks 0/1/2/3, below the Heavy category caps 15/23/30/45.
+- **Durability base values are assigned per armor type** when designed; no universal durability numbers or category-wide durability caps have been approved.
+- Equipment can only be used by a character of equal or greater Rank. Rank 4–10 scaling remains deferred.
+- Existing mitigation depletion, durability loss and repair rules are unchanged. Equipment item sheet/validation are still pending.
