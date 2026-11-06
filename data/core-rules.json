@@ -1178,7 +1178,7 @@
       "magicalArmorException": "Some magical armor restores its mitigation pool over time as specified by the armor's own properties",
       "repairCostAndRate": "pending equipment design",
       "magicalRepairRateAndConditions": "pending item design",
-      "poolSize": "At Rank 0: Light 5, Medium 10, Heavy 15 maximum mitigation points; values for higher ranks remain pending.",
+      "poolSize": "Maximum mitigation equals ceiling of Rank 0 armor-category base multiplied by approved Rank multiplier (ranks 0-3 only)",
       "status": "approved foundation",
       "fieldRepairs": {
         "status": "approved",
@@ -1242,7 +1242,7 @@
         "appliesTo": "all equipment"
       },
       "maximumMitigationByCategoryAndRank": {
-        "status": "Rank 0 caps approved; Rank 1–10 scaling pending",
+        "status": "Approved maximum mitigation for ranks 0 through 3; ranks 4 through 10 pending",
         "rule": "The maximum mitigation pool of an armor piece depends on its category (Light, Medium, or Heavy) and equipment rank (0–10)",
         "categories": [
           "Light",
@@ -1250,14 +1250,44 @@
           "Heavy"
         ],
         "ranks": "0 through 10 inclusive",
-        "capTable": "Rank 0: Light 5, Medium 10, Heavy 15; ranks 1–10 pending scaling decisions",
+        "capTable": "Ranks 0-3 approved in approvedMaximums; ranks 4-10 pending",
         "approvedRankZero": {
           "rank": 0,
           "name": "Normal",
           "Light": 5,
           "Medium": 10,
           "Heavy": 15
-        }
+        },
+        "multipliers": {
+          "0": 1,
+          "1": 1.5,
+          "2": 2,
+          "3": 3
+        },
+        "rounding": "Round up to the nearest whole mitigation point using ceiling",
+        "approvedMaximums": {
+          "0": {
+            "Light": 5,
+            "Medium": 10,
+            "Heavy": 15
+          },
+          "1": {
+            "Light": 8,
+            "Medium": 15,
+            "Heavy": 23
+          },
+          "2": {
+            "Light": 10,
+            "Medium": 20,
+            "Heavy": 30
+          },
+          "3": {
+            "Light": 15,
+            "Medium": 30,
+            "Heavy": 45
+          }
+        },
+        "rankThreeMilestone": "Amethyst is the first major soul-strengthening power threshold and Soul Weapon manifestation"
       }
     },
     "physicalDefenseByAttackType": {
