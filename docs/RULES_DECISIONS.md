@@ -516,3 +516,11 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - Current mitigation of 0 means the shield is gone and clears Remaining Duration. Reapplication by an ability grants a new pool; shields do not regenerate simply because time passes.
 - Ability-specific durations are not standardized; the sheet uses a text duration field until power/effect tracking can provide units and expiration automation. When duration expires, the magical shield ends even if points remain; currently this expiration must be resolved manually by setting mitigation to 0.
 - One active magical shield maximum, existing replacement decision rules, damage ordering and dispelling remain unchanged.
+
+## Equipped armor Status tab tracking — 2026-11-06
+
+- Added provisional Actor fields and Attributes & Status controls for armor name, category (Light/Medium/Heavy), equipment Rank, individual base mitigation, current and calculated maximum mitigation, current durability, and fixed maximum durability.
+- Maximum mitigation derives from `ceil(base mitigation × approved equipment Rank multiplier)` for Ranks 0–3; category Rank 0 base caps are Light 5, Medium 10, Heavy 15. Editing is validated against base/category caps, character equipment Rank, and current-versus-maximum pools. New current pool values initialize at calculated maximum when unset.
+- Maximum durability is manually entered per armor type and does not scale with Rank; current durability defaults to that maximum when unset. Both track as whole-number points.
+- Equipment Items and item-driven synchronization are deferred until the Equipment section. Ranks 4–10 mitigation scaling is not invented.
+- Resistances belong on a separate future tab, conditions on the Combat tab. Next design priority: Rank 1 starting powers for each Mark of Purpose, followed by ability creation rules.
