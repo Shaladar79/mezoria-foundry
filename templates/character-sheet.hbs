@@ -219,7 +219,27 @@
      </label>
     </div>
     <p class="mezoria-note">{{#if status.magicalShieldActive}}Magical shield active.{{else}}No active magical shield.{{/if}} The shield ends at 0 mitigation or when its ability's duration expires. Only one magical shield may be active at a time; reapplication requires a new ability use. Duration tracking is manual until effects automation is developed.</p>
-    <p class="mezoria-note">Armor equipment and ability-specific shield effects will be added in their respective design sections.</p>
+    <h4>Equipped Armor</h4>
+    <div class="mezoria-armor-fields">
+     <label>Armor Name <input type="text" maxlength="80" data-armor-field="armorName" placeholder="No armor selected" value="{{status.armorName}}"></label>
+     <label>Category
+      <select data-armor-field="armorCategory">
+       <option value="none" {{#if armorNone}}selected{{/if}}>None</option>
+       <option value="Light" {{#if armorLight}}selected{{/if}}>Light</option>
+       <option value="Medium" {{#if armorMedium}}selected{{/if}}>Medium</option>
+       <option value="Heavy" {{#if armorHeavy}}selected{{/if}}>Heavy</option>
+      </select>
+     </label>
+     <label>Armor Rank <input type="number" min="0" max="10" step="1" data-armor-field="armorRank" value="{{status.armorRank}}"></label>
+     <label>Base Mitigation <input type="number" min="0" step="1" data-armor-field="armorBaseMitigation" value="{{status.armorBaseMitigation}}"></label>
+     <label>Current Mitigation <input type="number" min="0" step="1" data-armor-field="armorCurrentMitigation" value="{{status.armorCurrentMitigation}}"></label>
+     <label>Maximum Mitigation <input type="text" value="{{#if status.armorScalingKnown}}{{status.armorMaximumMitigation}}{{else}}Pending scaling{{/if}}" readonly></label>
+     <label>Current Durability <input type="number" min="0" step="1" data-armor-field="armorCurrentDurability" value="{{status.armorCurrentDurability}}"></label>
+     <label>Maximum Durability <input type="number" min="0" step="1" data-armor-field="armorMaximumDurability" value="{{status.armorMaximumDurability}}"></label>
+    </div>
+    <p class="mezoria-note">Mitigation maximum is calculated from armor's individual base, category cap and Rank (0–3 only). Durability is fixed per armor type and does not scale with Rank. Armor items and automatic equipment links come later.</p>
+    {{#unless status.armorRankPermitted}}<p class="mezoria-warning">Equipped armor exceeds character Rank.</p>{{/unless}}
+    {{#unless status.armorScalingKnown}}<p class="mezoria-warning">Mitigation scaling for this armor Rank has not been defined.</p>{{/unless}}
    </section>
   </div>
  </section>
