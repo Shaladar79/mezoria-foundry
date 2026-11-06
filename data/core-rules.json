@@ -1485,6 +1485,20 @@
         "onSuccess": "The active magical shield ends immediately, removing its remaining mitigation and protection",
         "exactMechanics": "Dispel contest, strength comparison, targeting, and success conditions pending magic ability design",
         "notes": "Dispelling is an alternative to depleting the mitigation pool or waiting for duration expiry"
+      },
+      "statusTab": {
+        "status": "approved",
+        "fields": [
+          "currentMitigation",
+          "remainingDuration"
+        ],
+        "maximumMitigationField": false,
+        "currentMitigation": "Nonnegative whole-number pool; 0 means no active shield",
+        "remainingDuration": "Determined by the ability creating the shield; editable text to support ability-specific duration units until power and effect automation",
+        "depletion": "Shield ends immediately when mitigation reaches 0; clear remaining duration",
+        "expiration": "Shield ends when ability duration expires, even if mitigation remains; manual removal for now",
+        "reapplication": "A newly applied magical shield replaces or is rejected according to existing one-active-shield rules; no stacking or automatic recharge",
+        "abilityAutomation": "Pending"
       }
     },
     "areaOfEffectDefense": {
