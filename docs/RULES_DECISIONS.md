@@ -442,3 +442,9 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - Equipment shields Block applicable physical melee and ranged attacks. Magic cannot be Blocked without a specific magic-blocking property; magical shield mitigation pools are a separate mechanic.
 - Until Item/equipment support exists, Status has a shield-equipped toggle and manually editable integer shield Block rating; base Endurance contribution and total Block derive automatically. Numeric shield ratings remain pending equipment design.
 - Whether incapacitation removes Block and how multiple shields interact remain pending explicit decisions.
+
+## Block rounding and incapacitation — approved 2026-11-05
+
+- Block is always a whole-number percentage: **Block = equipped shield rating + floor(floor(Endurance / 10) / 2)**. This explicitly rounds the Endurance-based half down, preventing fractional Block values (e.g., Endurance 35 adds +1%, not +1.5%).
+- Block requires an equipped shield; without one it is 0. While unconscious, immobilized, dead or unable to physically defend, **effective Block is 0**; the shield rating is retained.
+- The existing shared **Unable to Dodge / Parry / Block** condition toggle applies to all three defenses. Automatic incapacitation suppression also applies to each.
