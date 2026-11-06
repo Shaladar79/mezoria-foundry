@@ -78,6 +78,7 @@ export function deriveCharacter(s,rulebook=cache){
   baseBlock:Boolean(s.shieldEquipped)?Math.floor(enduranceTens/2):0,
   block:Boolean(s.shieldEquipped)&&!dodgeSuppressed?Math.max(0,Number(s.equippedShieldBlockRating)||0)+Math.floor(enduranceTens/2):0,
   blockSuppressed:dodgeSuppressed,
+  spellResistance:Math.floor(score("Intellect")/10),
   woundThreshold,woundCapacity,woundsTaken,
   bleedingToDeath:woundCapacity!==null&&woundsTaken>=woundCapacity&&deathState==="none",
   deathSaveFailures:failures,deathState,
