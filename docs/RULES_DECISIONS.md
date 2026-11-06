@@ -475,3 +475,20 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - **Normal (Rank 0) maximum armor mitigation pools:** Light **5**, Medium **10**, Heavy **15** mitigation points.
 - These are category maximums at Rank 0, not additional damage reduction percentages. Armor mitigation is a depleting pool under the previously approved damage order.
 - Rank 1–10 category-by-rank mitigation growth is **not yet approved**. Do not use provisional scaling figures as official rules.
+
+## Armor maximum mitigation by rank — approved 2026-11-06
+
+- Armor categories: Light, Medium, Heavy. Rank 0 base pools: 5, 10, 15 respectively.
+- Approved rank multipliers: Rank 0 Normal ×1; Rank 1 Quartz ×1.5; Rank 2 Garnet ×2; Rank 3 Amethyst ×3.
+- **Always round calculated armor mitigation maximums UP to the next whole point** (`Math.ceil`).
+- Approved maximum mitigation pools:
+
+| Rank | Light | Medium | Heavy |
+|---|---:|---:|---:|
+| 0 Normal | 5 | 10 | 15 |
+| 1 Quartz | 8 | 15 | 23 |
+| 2 Garnet | 10 | 20 | 30 |
+| 3 Amethyst | 15 | 30 | 45 |
+
+- Rank 3 marks the first major soul-strengthening power threshold and Soul Weapon manifestation. Rank 4–10 mitigation scaling remains intentionally deferred.
+- Character equipment remains limited to equipment of equal or lower Rank.
