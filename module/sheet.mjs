@@ -78,6 +78,8 @@ export class MezoriaCharacterSheet extends ActorSheet {
   const human=system.race==="Human";
   return {
    ...base,system,derived,creatorOpen,creationComplete:system.creationComplete,
+   armorNone:derived.status.armorCategory==="none",armorLight:derived.status.armorCategory==="Light",
+   armorMedium:derived.status.armorCategory==="Medium",armorHeavy:derived.status.armorCategory==="Heavy",
    currentEssence:system.currentEssence??0,spentEssence:system.spentEssence??0,
    headerName:this.actor.name,headerRace:system.race||"None Selected",headerBackground:system.background||"None Selected",
    headerMark:system.mark?(mark?.id?.charAt(0).toUpperCase()+mark?.id?.slice(1)||system.mark):"None Selected",headerSubgroup:system.subgroup,showSubgroup:!!subgroupType,subgroupType,
@@ -181,6 +183,44 @@ export class MezoriaCharacterSheet extends ActorSheet {
     ui.notifications.warn("Essence must be a non-negative whole number.");this.render(false);return;
    }
    await this.actor.update({["system."+field]:value});
+  });
+  html.find("[data-armor-field]").on("change",async event=>{
+   const field=event.currentTarget.dataset.armorField;
+   const raw=event.currentTarget.value.trim();
+   const numbers=["armorRank","armorBaseMitigation","armorCurrentMitigation","armorMaximumDurability","armorCurrentDurability"];
+   if(!["armorName","armorCategory",...numbers].includes(field))return;
+   let value=raw;
+   if(numbers.includes(field)){
+    value=Number(raw);
+    if(raw===""||!Number.isSafeInteger(value)||value<0||field==="armorRank"&&value>10){
+     ui.notifications.warn("Armor values must be valid nonnegative whole numbers.");this.render(false);return;
+    }
+   }
+   if(field==="armorName"&&raw.length>80){ui.notifications.warn("Armor name is too long.");this.render(false);return;}
+   if(field==="armorCategory"&&!["none","Light","Medium","Heavy"].includes(value))return;
+   const prospective={...this.actor.system,[field]:value};
+   if(prospective.armorRank>prospective.rank){
+    ui.notifications.warn("Armor cannot exceed the character's Rank.");this.render(false);return;
+   }
+   const caps={none:0,Light:5,Medium:10,Heavy:15};
+   const cap=caps[prospective.armorCategory]??0;
+   if(prospective.armorBaseMitigation>cap){
+    ui.notifications.warn("Armor base mitigation exceeds the selected category's cap ("+cap+").");this.render(false);return;
+   }
+   const mult=[1,1.5,2,3][prospective.armorRank];
+   const updates={["system."+field]:value};
+   const maxMit=mult===undefined?null:Math.ceil(prospective.armorBaseMitigation*mult);
+   if(maxMit!==null&&prospective.armorCurrentMitigation!==null&&prospective.armorCurrentMitigation>maxMit)
+    updates["system.armorCurrentMitigation"]=maxMit;
+   if(field==="armorCurrentMitigation"&&maxMit!==null&&value>maxMit){
+    ui.notifications.warn("Current mitigation cannot exceed the calculated armor maximum ("+maxMit+").");this.render(false);return;
+   }
+   if(field==="armorMaximumDurability"&&prospective.armorCurrentDurability!==null&&prospective.armorCurrentDurability>value)
+    updates["system.armorCurrentDurability"]=value;
+   if(field==="armorCurrentDurability"&&value>prospective.armorMaximumDurability){
+    ui.notifications.warn("Current durability cannot exceed the maximum.");this.render(false);return;
+   }
+   await this.actor.update(updates);
   });
   html.find("[data-magical-shield-mitigation]").on("change",async event=>{
    const raw=event.currentTarget.value.trim(),value=Number(raw);
