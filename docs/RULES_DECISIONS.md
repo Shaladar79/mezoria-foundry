@@ -502,3 +502,10 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - **Durability base values are assigned per armor type** when designed; no universal durability numbers or category-wide durability caps have been approved.
 - Equipment can only be used by a character of equal or greater Rank. Rank 4–10 scaling remains deferred.
 - Existing mitigation depletion, durability loss and repair rules are unchanged. Equipment item sheet/validation are still pending.
+
+## Durability Rank scaling revoked — approved 2026-11-06 (supersedes previous entry)
+
+- **Maximum armor Durability is a fixed whole-number statistic assigned to each armor type when designed. It does NOT scale with equipment Rank.** Rank 0 through Rank 10 versions of the same armor type retain the same maximum Durability unless a separately designed item explicitly has different base properties.
+- This supersedes the earlier proposal to multiply Durability by 1/1.5/2/3 and round up. Those prior Rank-scaled Durability examples are **not approved**.
+- **Mitigation still scales by Rank** using the approved multipliers (Rank 0 ×1, Rank 1 ×1.5, Rank 2 ×2, Rank 3 ×3), rounding mitigation up and applying its armor-category cap. Higher Rank multipliers remain pending.
+- Existing durability-loss and repair rules are unchanged. Individual armor types' durability numbers are yet to be designed.
