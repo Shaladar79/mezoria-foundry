@@ -469,3 +469,9 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - **An armor piece's maximum mitigation pool is determined jointly by its armor category and Rank**. The category-by-rank numerical caps remain **pending**; do not assign guessed mitigation points.
 - Prior approved damage handling, armor depletion, durability and repair rules remain unchanged.
 - Sheet inventory/equip validation and armor category/rank data fields are deferred until equipment design; this entry records the approved framework only.
+
+## Rank 0 armor mitigation caps — approved 2026-11-06
+
+- **Normal (Rank 0) maximum armor mitigation pools:** Light **5**, Medium **10**, Heavy **15** mitigation points.
+- These are category maximums at Rank 0, not additional damage reduction percentages. Armor mitigation is a depleting pool under the previously approved damage order.
+- Rank 1–10 category-by-rank mitigation growth is **not yet approved**. Do not use provisional scaling figures as official rules.
