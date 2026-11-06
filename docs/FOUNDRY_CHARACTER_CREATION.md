@@ -220,3 +220,9 @@ The Attributes and Status tab now has four compact panels: (1) an attribute savi
 - Block is always a whole-number percentage: **Block = equipped shield rating + floor(floor(Endurance / 10) / 2)**. This explicitly rounds the Endurance-based half down, preventing fractional Block values (e.g., Endurance 35 adds +1%, not +1.5%).
 - Block requires an equipped shield; without one it is 0. While unconscious, immobilized, dead or unable to physically defend, **effective Block is 0**; the shield rating is retained.
 - The existing shared **Unable to Dodge / Parry / Block** condition toggle applies to all three defenses. Automatic incapacitation suppression also applies to each.
+
+## Spell Resistance — approved 2026-11-05
+
+- Everyone's **Spell Resistance (%) = floor(Intellect / 10)**, rounded down to whole percentage points. It is derived in the Combat Status panel.
+- Existing approved spell-defense categories remain: magical projectile = Dodge + Spell Resistance (plus Block only for shields explicitly able to block magic); melee spell attack = Parry + Spell Resistance (plus conditional magical Block); unavoidable spell = Spell Resistance only.
+- The incapacitation interaction for Spell Resistance has **not** been decided; unlike Dodge/Parry/Block, the sheet does not currently set it to zero for incapacitation. Any equipment, talent, or spell modifiers remain for later design.
