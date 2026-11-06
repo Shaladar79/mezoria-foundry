@@ -210,7 +210,16 @@
     {{/if}}
     <p class="mezoria-note">Use the header buttons for End Turn, rests, and Action Score. Quartz: regenerate 1 LifeForce and 1 Mana per turn. A 4-hour light rest restores 50% of each maximum (rounded up); an 8-hour full rest restores both pools completely and heals 1 Wound. Values cannot exceed their maximum. Higher-rank bonuses and talent adjustments remain pending.</p>
     <h4>Defense and Protection</h4>
-    <p class="mezoria-note">Parry, equipment Block, Spell Resistance, shields and armor depend on later equipment and ability rules. Dodge only applies to ranged and eligible magical projectiles.</p>
+    <div class="mezoria-lifeforce-tracker">
+     <label>Magical Shield · Current Mitigation
+      <input type="number" data-magical-shield-mitigation min="0" step="1" value="{{status.currentMagicalShieldMitigation}}">
+     </label>
+     <label>Magical Shield · Remaining Duration
+      <input type="text" data-magical-shield-duration maxlength="80" placeholder="Set by ability" value="{{status.magicalShieldDuration}}" {{#unless status.magicalShieldActive}}disabled{{/unless}}>
+     </label>
+    </div>
+    <p class="mezoria-note">{{#if status.magicalShieldActive}}Magical shield active.{{else}}No active magical shield.{{/if}} The shield ends at 0 mitigation or when its ability's duration expires. Only one magical shield may be active at a time; reapplication requires a new ability use. Duration tracking is manual until effects automation is developed.</p>
+    <p class="mezoria-note">Armor equipment and ability-specific shield effects will be added in their respective design sections.</p>
    </section>
   </div>
  </section>
