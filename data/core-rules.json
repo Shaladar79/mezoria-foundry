@@ -1606,8 +1606,9 @@
       "defenseUnit": "whole percentage points",
       "application": "Subtract against spell attacks as determined by existing spell-defense categories, including magical projectiles, melee spell attacks, and unavoidable spells",
       "interactionWithOtherDefenses": "Stack applicable Dodge or Parry where the attack type permits; equipment Block applies to magic only with explicit magic-blocking property",
-      "incapacitation": "not yet decided; do not automatically suppress Spell Resistance under Dodge/Parry/Block incapacitation conditions",
-      "cost": "passive, no action or resource cost established"
+      "incapacitation": "Spell Resistance remains fully active when unconscious, immobilized, dead, or otherwise physically unable to defend. It is inherent rather than dependent on movement.",
+      "cost": "passive, no action or resource cost established",
+      "effectiveFormula": "floor(Intellect / 10), including while incapacitated; independent of Dodge/Parry/Block suppression"
     }
   },
   "wounds": {
