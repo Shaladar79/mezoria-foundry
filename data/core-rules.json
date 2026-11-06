@@ -1178,7 +1178,7 @@
       "magicalArmorException": "Some magical armor restores its mitigation pool over time as specified by the armor's own properties",
       "repairCostAndRate": "pending equipment design",
       "magicalRepairRateAndConditions": "pending item design",
-      "poolSize": "Maximum mitigation equals ceiling of Rank 0 armor-category base multiplied by approved Rank multiplier (ranks 0-3 only)",
+      "poolSize": "Each armor item has its own Rank 0 base mitigation, set when that armor type is created. Maximum item mitigation at an equipment Rank is ceil(item base mitigation × approved Rank multiplier), subject to the Light/Medium/Heavy category maximum at that Rank.",
       "status": "approved foundation",
       "fieldRepairs": {
         "status": "approved",
@@ -1206,10 +1206,25 @@
         "onPoolDepleted": "Lose 1 Durability when the mitigation pool transitions from positive to zero; further damage at zero does not deduct additional Durability until it has been restored and depleted again",
         "minimumDurability": 0,
         "atZero": "No field repairs possible until repaired at an appropriate workshop",
-        "maximumDurability": "deferred until equipment rules; decide armor-category versus material-based values then",
+        "maximumDurability": "Each armor type receives its own base durability when designed, then scales by equipment Rank; round fractional values up.",
         "workshopDurabilityRestoration": "pending workshop repair rules",
         "interactionWithMagicalRegeneration": "pending",
-        "maximumDurabilityStatus": "explicitly deferred by user"
+        "maximumDurabilityStatus": "Base durability amounts pending individual armor design; Rank 4–10 multipliers pending",
+        "rankScaling": {
+          "status": "approved principle",
+          "baseDurability": "Assigned individually for each armor type at Rank 0",
+          "formula": "ceil(item base durability × equipment Rank multiplier)",
+          "rounding": "Always round up to whole durability points",
+          "multipliersThroughRankThree": {
+            "0": 1,
+            "1": 1.5,
+            "2": 2,
+            "3": 3
+          },
+          "higherRanks": "deferred until Ranks 4–10 design",
+          "categoryDurabilityCaps": "Not established; category mitigation limits do not automatically impose a durability cap",
+          "examples": "An armor type with base durability 3 has durability 3/5/6/9 at Ranks 0/1/2/3"
+        }
       },
       "damageTypeProtection": {
         "status": "approved",
@@ -1243,7 +1258,7 @@
       },
       "maximumMitigationByCategoryAndRank": {
         "status": "Approved maximum mitigation for ranks 0 through 3; ranks 4 through 10 pending",
-        "rule": "The maximum mitigation pool of an armor piece depends on its category (Light, Medium, or Heavy) and equipment rank (0–10)",
+        "rule": "Category-by-rank values are upper caps for individually designed armor types, not automatic identical mitigation values for all armor in that category.",
         "categories": [
           "Light",
           "Medium",
@@ -1288,6 +1303,16 @@
           }
         },
         "rankThreeMilestone": "Amethyst is the first major soul-strengthening power threshold and Soul Weapon manifestation"
+      },
+      "itemBaseMitigation": {
+        "status": "approved",
+        "assignedWhen": "When an individual armor type is designed/created",
+        "value": "A nonnegative whole-point base mitigation specific to that armor type; not automatically identical for every armor in its category",
+        "categoryLimit": "At Rank 0 the armor item's base cannot exceed its category maximum: Light 5, Medium 10, Heavy 15",
+        "scaling": "ceil(item base mitigation × Rank multiplier)",
+        "rankMultipliers": "Ranks 0–3 use approved multipliers 1, 1.5, 2, 3; later ranks deferred",
+        "maximum": "Cannot exceed the category maximum mitigation at that equipment Rank",
+        "example": "Rank 0 Heavy armor with individual base mitigation 12 has Rank 1 mitigation ceil(12×1.5)=18; the category cap is 23."
       }
     },
     "physicalDefenseByAttackType": {
