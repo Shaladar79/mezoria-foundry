@@ -182,6 +182,23 @@ export class MezoriaCharacterSheet extends ActorSheet {
    }
    await this.actor.update({["system."+field]:value});
   });
+  html.find("[data-magical-shield-mitigation]").on("change",async event=>{
+   const raw=event.currentTarget.value.trim(),value=Number(raw);
+   if(raw===""||!Number.isSafeInteger(value)||value<0){
+    ui.notifications.warn("Magical shield mitigation must be a nonnegative whole number.");this.render(false);return;
+   }
+   const update={"system.currentMagicalShieldMitigation":value};
+   if(value===0)update["system.magicalShieldDuration"]="";
+   await this.actor.update(update);
+  });
+  html.find("[data-magical-shield-duration]").on("change",async event=>{
+   if((Number(this.actor.system.currentMagicalShieldMitigation)||0)<=0){
+    ui.notifications.warn("Apply a magical shield before entering its duration.");this.render(false);return;
+   }
+   const duration=event.currentTarget.value.trim();
+   if(duration.length>80){ui.notifications.warn("Shield duration must be 80 characters or fewer.");this.render(false);return;}
+   await this.actor.update({"system.magicalShieldDuration":duration});
+  });
   html.find("[data-shield-equipped]").on("change",async event=>{
    await this.actor.update({"system.shieldEquipped":Boolean(event.currentTarget.checked)});
   });
