@@ -1206,25 +1206,19 @@
         "onPoolDepleted": "Lose 1 Durability when the mitigation pool transitions from positive to zero; further damage at zero does not deduct additional Durability until it has been restored and depleted again",
         "minimumDurability": 0,
         "atZero": "No field repairs possible until repaired at an appropriate workshop",
-        "maximumDurability": "Each armor type receives its own base durability when designed, then scales by equipment Rank; round fractional values up.",
+        "maximumDurability": "Fixed whole-number value set when each armor type is designed; does not change with equipment Rank.",
         "workshopDurabilityRestoration": "pending workshop repair rules",
         "interactionWithMagicalRegeneration": "pending",
-        "maximumDurabilityStatus": "Base durability amounts pending individual armor design; Rank 4–10 multipliers pending",
+        "maximumDurabilityStatus": "Approved: armor-type-specific fixed maximum durability, independent of equipment Rank. Numeric values pending item design.",
         "rankScaling": {
-          "status": "approved principle",
-          "baseDurability": "Assigned individually for each armor type at Rank 0",
-          "formula": "ceil(item base durability × equipment Rank multiplier)",
-          "rounding": "Always round up to whole durability points",
-          "multipliersThroughRankThree": {
-            "0": 1,
-            "1": 1.5,
-            "2": 2,
-            "3": 3
-          },
-          "higherRanks": "deferred until Ranks 4–10 design",
-          "categoryDurabilityCaps": "Not established; category mitigation limits do not automatically impose a durability cap",
-          "examples": "An armor type with base durability 3 has durability 3/5/6/9 at Ranks 0/1/2/3"
-        }
+          "status": "superseded: durability does not scale by Rank",
+          "rule": "Each armor type has a fixed maximum durability assigned during item design; armor of any Rank retains that armor type's durability value.",
+          "formula": "maximumDurability = armorTypeDurability",
+          "rankMultiplierApplied": false,
+          "rounding": "Not applicable; durability is specified directly as a whole number",
+          "categoryDurabilityCaps": "Not established"
+        },
+        "fixedByArmorType": true
       },
       "damageTypeProtection": {
         "status": "approved",
