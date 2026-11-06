@@ -524,3 +524,9 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - Maximum durability is manually entered per armor type and does not scale with Rank; current durability defaults to that maximum when unset. Both track as whole-number points.
 - Equipment Items and item-driven synchronization are deferred until the Equipment section. Ranks 4–10 mitigation scaling is not invented.
 - Resistances belong on a separate future tab, conditions on the Combat tab. Next design priority: Rank 1 starting powers for each Mark of Purpose, followed by ability creation rules.
+
+## Mark of Purpose starting abilities — approved 2026-11-06
+
+- At Rank 1 (Quartz), every Mark of Purpose grants **one signature active ability** and **one passive ability** automatically on selection. Applies to Defender, Striker, Skirmisher, Warden, Arcanist and Adept.
+- Specific ability effects are not approved yet. Design each Mark's pair individually, beginning with Defender. Active ability cost and action mechanics will be specified per power under the existing Mana rule.
+- This starting allocation does not decide how many additional powers may be learned, their creation rules, or later-Rank grants.
