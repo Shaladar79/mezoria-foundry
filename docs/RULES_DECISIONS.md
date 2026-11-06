@@ -460,3 +460,12 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - **Spell Resistance remains active at its full calculated value** when unconscious, immobilized, dead, or otherwise physically unable to defend. Unlike Dodge, Parry, and Block, it does not depend on movement or an active defensive response.
 - Formula stays **floor(Intellect / 10)** whole percentage points, and is not suppressed by the Unable to Dodge / Parry / Block checkbox or by Wound/death status.
 - Spell Resistance still applies against magical projectiles, melee spell attacks, and unavoidable spells according to their existing attack-defense categories.
+
+## Armor categories, equipment ranks and mitigation caps — approved 2026-11-06
+
+- There are **three armor categories: Light, Medium, Heavy**.
+- **All equipment uses the same Rank scale as characters: Rank 0–10**, with Rank 0 Normal through Rank 10 Astralite.
+- **A character may not use or equip equipment higher than their own Rank**. Equal or lower Rank is permitted by this rank-gating rule; other item requirements are not yet specified.
+- **An armor piece's maximum mitigation pool is determined jointly by its armor category and Rank**. The category-by-rank numerical caps remain **pending**; do not assign guessed mitigation points.
+- Prior approved damage handling, armor depletion, durability and repair rules remain unchanged.
+- Sheet inventory/equip validation and armor category/rank data fields are deferred until equipment design; this entry records the approved framework only.
