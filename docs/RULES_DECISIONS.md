@@ -454,3 +454,9 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - Everyone's **Spell Resistance (%) = floor(Intellect / 10)**, rounded down to whole percentage points. It is derived in the Combat Status panel.
 - Existing approved spell-defense categories remain: magical projectile = Dodge + Spell Resistance (plus Block only for shields explicitly able to block magic); melee spell attack = Parry + Spell Resistance (plus conditional magical Block); unavoidable spell = Spell Resistance only.
 - The incapacitation interaction for Spell Resistance has **not** been decided; unlike Dodge/Parry/Block, the sheet does not currently set it to zero for incapacitation. Any equipment, talent, or spell modifiers remain for later design.
+
+## Spell Resistance while incapacitated — approved 2026-11-05
+
+- **Spell Resistance remains active at its full calculated value** when unconscious, immobilized, dead, or otherwise physically unable to defend. Unlike Dodge, Parry, and Block, it does not depend on movement or an active defensive response.
+- Formula stays **floor(Intellect / 10)** whole percentage points, and is not suppressed by the Unable to Dodge / Parry / Block checkbox or by Wound/death status.
+- Spell Resistance still applies against magical projectiles, melee spell attacks, and unavoidable spells according to their existing attack-defense categories.
