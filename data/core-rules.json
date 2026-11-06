@@ -1598,6 +1598,16 @@
       "incapacitation": "Same as Dodge and Parry: effective Block 0 when unconscious, immobilized, dead, or otherwise unable to physically defend; shield rating remains unchanged.",
       "itemRatings": "pending equipment design",
       "sheetInterim": "Toggle equipped shield and enter its Block rating manually until equipment Items are implemented"
+    },
+    "spellResistance": {
+      "status": "approved",
+      "formula": "floor(Intellect / 10)",
+      "universal": true,
+      "defenseUnit": "whole percentage points",
+      "application": "Subtract against spell attacks as determined by existing spell-defense categories, including magical projectiles, melee spell attacks, and unavoidable spells",
+      "interactionWithOtherDefenses": "Stack applicable Dodge or Parry where the attack type permits; equipment Block applies to magic only with explicit magic-blocking property",
+      "incapacitation": "not yet decided; do not automatically suppress Spell Resistance under Dodge/Parry/Block incapacitation conditions",
+      "cost": "passive, no action or resource cost established"
     }
   },
   "wounds": {
