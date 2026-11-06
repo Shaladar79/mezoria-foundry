@@ -68,6 +68,20 @@ export function deriveCharacter(s,rulebook=cache){
  const unconscious=(deathState==="stabilized"&&currentLifeForce===0)||(woundCapacity!==null&&woundsTaken>=woundCapacity&&deathState==="none");
  const unableToEvade=Boolean(s.unableToEvade);
  const dodgeSuppressed=deathState==="dead"||unconscious||unableToEvade;
+ const armorCategory=["Light","Medium","Heavy"].includes(s.armorCategory)?s.armorCategory:"none";
+ const armorCaps={Light:5,Medium:10,Heavy:15};
+ const armorMultipliers=[1,1.5,2,3];
+ const armorRank=Math.max(0,Math.min(10,Number(s.armorRank)||0));
+ const armorRankPermitted=armorRank<=rank;
+ const armorScalingKnown=armorRank<armorMultipliers.length;
+ const armorBaseMitigation=Math.max(0,Number(s.armorBaseMitigation)||0);
+ const armorCategoryBaseCap=armorCaps[armorCategory]??0;
+ const armorBaseValid=armorBaseMitigation<=armorCategoryBaseCap;
+ const armorMaximumMitigation=armorCategory!=="none"&&armorScalingKnown&&armorRankPermitted&&armorBaseValid
+  ?Math.ceil(armorBaseMitigation*armorMultipliers[armorRank]):null;
+ const armorCategoryMaximum=armorCategory!=="none"&&armorScalingKnown
+  ?Math.ceil(armorCategoryBaseCap*armorMultipliers[armorRank]):null;
+ const armorMaximumDurability=Math.max(0,Number(s.armorMaximumDurability)||0);
  const status={
   baseDodge:prowessTens,dodge:dodgeSuppressed?0:prowessTens,dodgeSuppressed,unableToEvade,initiativeBonus:prowessTens,
   baseParry:Math.floor(score("Might")/10),weaponParryRating:Math.max(0,Number(s.equippedMeleeParryRating)||0),
@@ -82,6 +96,12 @@ export function deriveCharacter(s,rulebook=cache){
   magicalShieldDuration:(Number(s.currentMagicalShieldMitigation)||0)>0?(s.magicalShieldDuration||""):"",
   magicalShieldActive:(Number(s.currentMagicalShieldMitigation)||0)>0,
   spellResistance:Math.floor(score("Intellect")/10),
+  armorName:s.armorName||"",armorCategory,armorRank,armorRankPermitted,armorScalingKnown,
+  armorBaseMitigation,armorBaseValid,armorCategoryBaseCap,armorCategoryMaximum,
+  armorMaximumMitigation,
+  armorCurrentMitigation:armorMaximumMitigation===null?null:Math.min(armorMaximumMitigation,s.armorCurrentMitigation??armorMaximumMitigation),
+  armorMaximumDurability,
+  armorCurrentDurability:Math.min(armorMaximumDurability,s.armorCurrentDurability??armorMaximumDurability),
   woundThreshold,woundCapacity,woundsTaken,
   bleedingToDeath:woundCapacity!==null&&woundsTaken>=woundCapacity&&deathState==="none",
   deathSaveFailures:failures,deathState,
