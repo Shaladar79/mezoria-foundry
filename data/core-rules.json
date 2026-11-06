@@ -1178,7 +1178,7 @@
       "magicalArmorException": "Some magical armor restores its mitigation pool over time as specified by the armor's own properties",
       "repairCostAndRate": "pending equipment design",
       "magicalRepairRateAndConditions": "pending item design",
-      "poolSize": "pending equipment design",
+      "poolSize": "Determined by armor category and equipment rank; numeric maximum mitigation values pending",
       "status": "approved foundation",
       "fieldRepairs": {
         "status": "approved",
@@ -1228,6 +1228,29 @@
         "mixedDamageHandling": "Keep type-specific components distinct through armor mitigation. Apply armor's mitigation pool only to components whose damage type that armor protects against; other components bypass armor and proceed to LifeForce/Wounds.",
         "magicalShieldDamageTypeHandling": "Ability-created magical shield pools absorb all damage types by default, unless the ability specifies restricted coverage; allocation for mixed attacks when pool is insufficient remains pending.",
         "physicalSubtypes": "slash/pierce/bludgeon count as Physical"
+      },
+      "categories": [
+        "Light",
+        "Medium",
+        "Heavy"
+      ],
+      "equipmentRanks": {
+        "minimum": 0,
+        "maximum": 10,
+        "rankNames": "Same names and rank scale as character ranks",
+        "equipRestriction": "A character cannot equip or use an item whose rank exceeds their character rank",
+        "appliesTo": "all equipment"
+      },
+      "maximumMitigationByCategoryAndRank": {
+        "status": "approved structure; numerical values pending",
+        "rule": "The maximum mitigation pool of an armor piece depends on its category (Light, Medium, or Heavy) and equipment rank (0–10)",
+        "categories": [
+          "Light",
+          "Medium",
+          "Heavy"
+        ],
+        "ranks": "0 through 10 inclusive",
+        "capTable": "pending design; do not infer numeric values"
       }
     },
     "physicalDefenseByAttackType": {
