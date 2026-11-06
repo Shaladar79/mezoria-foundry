@@ -1589,13 +1589,13 @@
     "block": {
       "status": "approved foundation",
       "requiresEquippedShield": true,
-      "formula": "equipped shield Block rating + floor(Endurance / 10) / 2",
-      "enduranceContribution": "floor(Endurance / 10) / 2; retain half-percentage-point results (do not round final division)",
+      "formula": "equipped shield Block rating + floor(floor(Endurance / 10) / 2)",
+      "enduranceContribution": "floor(floor(Endurance / 10) / 2); always whole percentage points, rounded down",
       "noEquippedShield": "Block 0; Endurance contribution applies only when a shield is equipped",
       "applicability": "Equipment shields can Block melee and ranged physical attacks",
       "magic": "Equipment shield cannot Block magic unless its item has an explicit magic-blocking property",
       "attackInteraction": "Block subtracts from attack accuracy and can reduce successes per existing defense system",
-      "incapacitation": "pending explicit rule",
+      "incapacitation": "Same as Dodge and Parry: effective Block 0 when unconscious, immobilized, dead, or otherwise unable to physically defend; shield rating remains unchanged.",
       "itemRatings": "pending equipment design",
       "sheetInterim": "Toggle equipped shield and enter its Block rating manually until equipment Items are implemented"
     }
