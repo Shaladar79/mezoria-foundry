@@ -137,7 +137,7 @@
      <div><span>Dodge · Base</span><strong>{{status.baseDodge}}%</strong></div>
      <div><span>Parry · Effective</span><strong>{{status.parry}}%</strong></div>
      <div><span>Parry · Might Base</span><strong>{{status.baseParry}}%</strong></div>
-     <div><span>Block · Total</span><strong>{{status.block}}%</strong></div>
+     <div><span>Block · Effective</span><strong>{{status.block}}%</strong></div>
      <div><span>Block · Endurance Base</span><strong>{{status.baseBlock}}%</strong></div>
      <div><span>Action Score Bonus</span><strong>+{{status.initiativeBonus}}</strong></div>
     </div>
@@ -152,12 +152,12 @@
     <label class="mezoria-wounds-control">Equipped Shield · Block Rating
      <input type="number" min="0" step="1" data-shield-block-rating value="{{status.shieldBlockRating}}">
     </label>
-    <p class="mezoria-note">Block = shield rating + half of Endurance tens (can include 0.5%). No shield equipped: Block 0. Shield item ratings and special magic-blocking properties are for equipment design.</p>
+    <p class="mezoria-note">Block = shield rating + floor(Endurance tens ÷ 2), always a whole percentage. No shield or unable to defend: Block 0. Shield item ratings and special magic-blocking properties are for equipment design.</p>
     <label class="mezoria-dodge-condition">
      <input type="checkbox" data-unable-to-evade {{#if status.unableToEvade}}checked{{/if}}>
-     Unable to Dodge / Parry (immobilized or otherwise physically incapable)
+     Unable to Dodge / Parry / Block (immobilized or otherwise physically incapable)
     </label>
-    {{#if status.dodgeSuppressed}}<p class="mezoria-note">Effective Dodge and Parry are 0 while unable to defend, unconscious, or dead. Base Dodge {{status.baseDodge}}% and Might-based Parry {{status.baseParry}}% remain tracked.</p>{{/if}}
+    {{#if status.dodgeSuppressed}}<p class="mezoria-note">Effective Dodge, Parry, and Block are 0 while unable to defend, unconscious, or dead. Base Dodge {{status.baseDodge}}% and Might-based Parry {{status.baseParry}}% remain tracked.</p>{{/if}}
     <div class="mezoria-status-control">
      <label>Current Action Score <input type="number" step="1" data-status-field="actionScore" value="{{status.actionScore}}"></label>
      
