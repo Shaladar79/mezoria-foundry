@@ -544,3 +544,10 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - All six starting Mark of Purpose aura passives have a **2-space radius** at Quartz Rank.
 - Allies within the aura receive bonuses to **all applicable defenses: Dodge, Parry, Block, and Spell Resistance**. Applicable means existing restrictions on which defense works against an attack still apply; the aura does not grant the ability to Dodge melee or Parry ranged attacks.
 - **Numerical bonuses are not yet approved**, and neither are aura stacking, bearer inclusion, duration/uptime, or higher-Rank progression. Review bonus magnitudes next.
+
+## Correction: distinct Mark of Purpose starting auras — approved 2026-11-09
+
+- The preceding rule that *all* six Marks provide a two-space bonus to every defense is **superseded**. All six Marks begin with **different** passive auras, creating party synergy, and each has one active granted ability.
+- **Defender only:** Unyielding Resolve grants nearby allies, within **2 spaces**, a small bonus to all applicable defenses (Dodge, Parry, Block, Spell Resistance). Numeric bonus remains undecided.
+- Other Marks will receive different aura effects; their radii and bonuses have not yet been determined. Aura stacking and self-inclusion are pending.
+- **Aura-Control** is a new Presence skill talent; exact uses await aura and ability creation rules.
