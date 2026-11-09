@@ -272,3 +272,8 @@ The following nine skills are **trained-only**, requiring at least **Talent** to
 - Magical Lore now has **6** skills; total Lore skills **20**; total approved skills **90** (51 trained-only and 39 untrained-allowed).
 - The Arcanist Mark's eight starting options now include **Herbalism** in place of Lore: Concept Magic: Magic Theory, Ritual Magic, Use Magic Device, Concentration, Research, Lore: Elemental Magic, Herbalism, Lore: Astral Magic.
 - Historic entries above reflect past approval states and are superseded by this amendment.
+
+## Aura-Control — Presence skill approved 2026-11-09
+
+- **Aura-Control** added as a Presence skill. It concerns controlling and shaping a character's Mark of Purpose aura. Exact skill checks, target selection, bonus modifiers, and range interactions remain pending.
+- Treated as untrained-usable pending more detailed design; Talent, Expertise and Mastery follow normal skill progression. Presence skill total is 13; total approved skills is 91.
