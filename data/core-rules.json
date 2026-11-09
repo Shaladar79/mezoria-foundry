@@ -1793,7 +1793,7 @@
       "passiveAbilities": 1
     },
     "delivery": "Automatically granted by the chosen Mark of Purpose",
-    "abilityDefinitions": "Defender: Guardian's Stand self +5 Parry and Unyielding Resolve allies +2 applicable defenses within 2 spaces. Striker: Battle Fury self +3 Physical damage per attack success, Aura of Ferocity allies +1 Physical damage per attack success within 2 spaces. Skirmisher: Evasive Footwork self +5 Dodge while active, Aura of Swiftness allies within 2 spaces +1 Action Score on the round's Action Score roll, once per round. Other Marks pending. Warden: Restorative Touch heals nearby creature LifeForce per success (amount pending); Aura of Renewal grants allies within 2 spaces +1 LifeForce regeneration per turn (not Wounds). Arcanist and Adept pending. Arcanist active Arcane Surge is a one-target ranged magical attack (6 spaces) dealing 3 Magical damage per attack success; Aura of Attunement grants allies within 2 spaces +1 Mana regeneration per turn. Adept pending.",
+    "abilityDefinitions": "Defender: Guardian's Stand self +5 Parry and Unyielding Resolve allies +2 applicable defenses within 2 spaces. Striker: Battle Fury self +3 Physical damage per attack success, Aura of Ferocity allies +1 Physical damage per attack success within 2 spaces. Skirmisher: Evasive Footwork self +5 Dodge while active, Aura of Swiftness allies within 2 spaces +1 Action Score on the round's Action Score roll, once per round. Other Marks pending. Warden: Restorative Touch heals nearby creature LifeForce per success (amount pending); Aura of Renewal grants allies within 2 spaces +1 LifeForce regeneration per turn (not Wounds). Arcanist and Adept pending. Arcanist active Arcane Surge is a one-target ranged magical attack (6 spaces) dealing 3 Magical damage per attack success; Aura of Attunement grants allies within 2 spaces +1 Mana regeneration per turn. Adept pending. Adept: Adaptive Insight temporarily improves a chosen skill (bonus and duration pending); Aura of Clarity improves allies' noncombat skill checks within 2 spaces (bonus pending).",
     "additionalLearnedAbilities": "Separate ability creation and acquisition rules pending",
     "activeCosts": "Defined when individual abilities are designed; activated powers use Mana under the existing resources rule",
     "startingPassiveFramework": {
@@ -1958,6 +1958,32 @@
       "maximumCap": "Cannot exceed normal maximum Mana",
       "stacking": "Pending",
       "applicationTiming": "Applied alongside the ally's normal Mana regeneration while benefiting from aura; exact range-check timing pending",
+      "progression": "Pending"
+    },
+    "adeptStartingActive": {
+      "name": "Adaptive Insight",
+      "type": "active",
+      "status": "Quartz concept approved; numerical bonus, timing, mana and Action Score costs pending",
+      "target": "Self",
+      "effect": "Temporarily enhances one of the Adept's skills to adapt to a difficult situation",
+      "selectedSkill": "One skill; eligibility and selection timing pending",
+      "skillBonus": "Pending",
+      "duration": "Pending",
+      "manaCost": "Pending",
+      "actionCost": "Pending",
+      "progression": "Pending"
+    },
+    "adeptStartingPassive": {
+      "name": "Aura of Clarity",
+      "type": "passive aura",
+      "status": "Quartz concept and radius approved; numerical skill bonus and scope pending",
+      "beneficiaries": "Allies within 2 spaces",
+      "effect": "Provides a small bonus to allies' noncombat skill checks while in range",
+      "radius": 2,
+      "radiusUnits": "spaces",
+      "skillBonus": "Pending",
+      "scope": "Noncombat skills; precise eligibility and timing pending",
+      "stacking": "Pending",
       "progression": "Pending"
     }
   }
