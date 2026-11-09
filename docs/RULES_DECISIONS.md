@@ -621,3 +621,9 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - **Arcane Surge (Arcanist active):** a direct raw-Astral-energy **Magical** attack against **one creature within 6 spaces**, dealing **3 Magical damage per attack success**.
 - Arcane Surge is not a self-buff and does not add damage to a separate weapon or spell attack.
 - The attack check/target number, specific magical damage resistance interaction, Mana cost, Action Score cost and progression are deferred until ability-creation mechanics are designed. Do not invent numerical costs.
+
+## Adept starting Quartz abilities — approved concepts 2026-11-09
+
+- **Adaptive Insight (active):** temporarily enhances one skill chosen by the Adept, supporting adaptable problem solving. Exact bonus, eligible skills, selection timing, Mana cost, Action Score cost, duration and progression pending.
+- **Aura of Clarity (passive):** provides a small bonus to **noncombat skill checks** for allies within a **2-space radius**. Exact percentage-point bonus, check timing and stacking pending; does not automatically increase combat skill checks.
+- This completes the **initial ability concept roster for all six Marks of Purpose**. Detailed mechanics and the common ability-creation rules will follow. Aura-Control remains separate from passive Mark aura bonuses.
