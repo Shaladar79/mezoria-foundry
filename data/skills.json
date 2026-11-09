@@ -653,9 +653,10 @@
         },
         {
           "name": "Aura-Control",
-          "description": "Control and shape a Mark of Purpose aura; specific uses and mechanical effects await aura and ability design",
+          "description": "Presence-based aura exertion and aura combat: projecting overwhelming presence to pressure, intimidate, or subdue others. Detailed contested checks and effects deferred; this skill does not enhance passive Mark aura radius, bonuses, or targeting.",
           "governingAttribute": "Presence",
-          "trainedOnly": false
+          "trainedOnly": false,
+          "mechanicsStatus": "Aura combat mechanics deferred; not a modifier to passive Mark aura features"
         }
       ],
       "notes": [
