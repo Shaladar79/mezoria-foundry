@@ -581,3 +581,8 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - **Aura of Ferocity** at Quartz: grants **allies within 2 spaces +1 Physical damage per attack success** on eligible physical attacks; magical damage does not benefit.
 - This approves the previously proposed numerical bonus and radius. The bonus does not modify hit chance, and it is not +1 per attack regardless of successes.
 - **Battle Fury** remains approved at +3 Physical damage per attack success for the Striker while active. Mana/action costs, duration, aura stacking and future progression still need design.
+
+## Skirmisher Quartz starting abilities — concepts approved 2026-11-09
+
+- **Evasive Footwork** (active): temporarily increases the Skirmisher's own Dodge; exact Quartz bonus, Mana/action cost, duration and progression remain pending.
+- **Aura of Swiftness** (passive): increases nearby allies' movement speed, distinct from Defender's defensive aura and Striker's physical damage aura. Exact movement bonus, radius, stacking and progression pending; no universal 2-space radius assumed until approved.
