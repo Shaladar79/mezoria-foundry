@@ -1793,7 +1793,7 @@
       "passiveAbilities": 1
     },
     "delivery": "Automatically granted by the chosen Mark of Purpose",
-    "abilityDefinitions": "Defender: Guardian's Stand self +5 Parry and Unyielding Resolve allies +2 applicable defenses within 2 spaces. Striker: Battle Fury self +3 Physical damage per attack success, Aura of Ferocity allies +1 Physical damage per attack success within 2 spaces. Skirmisher: Evasive Footwork self +5 Dodge while active, Aura of Swiftness allies within 2 spaces +1 Action Score on the round's Action Score roll, once per round. Other Marks pending. Warden: Restorative Touch heals nearby creature LifeForce per success (amount pending); Aura of Renewal grants allies within 2 spaces +1 LifeForce regeneration per turn (not Wounds). Arcanist and Adept pending. Arcanist active Arcane Surge approved as a standalone magical attack (not a self-damage buff); Aura of Attunement grants allies within 2 spaces +1 Mana regeneration per turn. Adept pending.",
+    "abilityDefinitions": "Defender: Guardian's Stand self +5 Parry and Unyielding Resolve allies +2 applicable defenses within 2 spaces. Striker: Battle Fury self +3 Physical damage per attack success, Aura of Ferocity allies +1 Physical damage per attack success within 2 spaces. Skirmisher: Evasive Footwork self +5 Dodge while active, Aura of Swiftness allies within 2 spaces +1 Action Score on the round's Action Score roll, once per round. Other Marks pending. Warden: Restorative Touch heals nearby creature LifeForce per success (amount pending); Aura of Renewal grants allies within 2 spaces +1 LifeForce regeneration per turn (not Wounds). Arcanist and Adept pending. Arcanist active Arcane Surge is a one-target ranged magical attack (6 spaces) dealing 3 Magical damage per attack success; Aura of Attunement grants allies within 2 spaces +1 Mana regeneration per turn. Adept pending.",
     "additionalLearnedAbilities": "Separate ability creation and acquisition rules pending",
     "activeCosts": "Defined when individual abilities are designed; activated powers use Mana under the existing resources rule",
     "startingPassiveFramework": {
@@ -1931,16 +1931,20 @@
     "arcanistStartingActive": {
       "name": "Arcane Surge",
       "type": "active magical attack",
-      "status": "Approved concept: direct magical attack, not an attack-enhancing self-buff; numbers pending",
-      "target": "Enemy target; exact range and targeting pending",
-      "effect": "The Arcanist directly attacks with Astral-derived magical energy and deals magical damage based on attack successes",
-      "damageType": "Magical; precise type/resistance interaction pending",
-      "damagePerSuccess": "Pending",
+      "status": "Quartz damage and range approved; attack check, Mana cost, Action Score cost, damage-type interactions and progression pending",
+      "target": "One creature within 6 spaces",
+      "effect": "A direct ranged magical attack of raw Astral energy, dealing 3 Magical damage per attack success to one target",
+      "damageType": "Magical; specific resistance mapping pending",
+      "damagePerSuccess": 3,
       "manaCost": "Pending",
       "actionCost": "Pending",
-      "range": "Pending",
-      "attackCheck": "Pending under ability creation rules",
-      "progression": "Pending"
+      "range": 6,
+      "attackCheck": "Pending under ability-creation rules",
+      "progression": "Pending",
+      "damagePerSuccessUnit": "Magical damage",
+      "rangeUnits": "spaces",
+      "numberOfTargets": 1,
+      "damageSource": "Raw Astral energy"
     },
     "arcanistStartingPassive": {
       "name": "Aura of Attunement",
