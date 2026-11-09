@@ -569,3 +569,9 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - **Battle Fury** increases **Physical damage only**, not magical damage.
 - **Aura of Ferocity** increases **Physical damage only** for affected allies, not magical damage.
 - Proposed Quartz magnitudes (+2 Physical damage per successful attack success for Battle Fury and +1 for Aura of Ferocity) remain **unapproved** pending numerical confirmation. The aura radius, duration, cost and other mechanics also remain undecided.
+
+## Battle Fury Quartz damage amount — approved 2026-11-09
+
+- Striker's **Battle Fury** active ability grants **+3 Physical damage per attack success** at Quartz Rank while active. It does **not** increase magical damage.
+- This replaces the earlier unapproved +2 damage per success suggestion. Mana cost, action cost, duration, and progression remain undecided.
+- **Aura of Ferocity** remains physical-only, but its proposed +1 Physical damage per success is not approved yet.
