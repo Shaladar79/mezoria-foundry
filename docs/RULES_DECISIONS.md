@@ -557,3 +557,9 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - **Guardian's Stand (active):** self only; grants **+5 percentage points to Parry** at Quartz Rank while active. Mana cost, action cost, duration and future Rank scaling remain undecided.
 - **Unyielding Resolve (passive aura):** provides allies within **2 spaces** **+2 percentage points** to all *applicable* defenses: Dodge, Parry, Block, and Spell Resistance. Existing applicability restrictions remain unchanged; aura bearer inclusion, aura stacking and later improvements remain undecided.
 - **Aura-Control** is a distinct Presence skill for **aura combat**, exerting aura pressure and attempting to subdue or overwhelm others through one's aura. It is primarily a roleplay/flavor-oriented capability; detailed contest mechanics come later. **It does not improve passive Mark aura bonuses, radius, targeting, or other passive aura properties by default.** This supersedes earlier speculative aura-shaping interpretations.
+
+## Striker granted starting powers — approved concepts 2026-11-09
+
+- **Battle Fury**, Striker signature active at Quartz: temporary self-only increase to offensive damage. Exact amount, damage calculation, action/Mana cost, duration and higher-rank progression pending.
+- **Aura of Ferocity**, Striker signature passive at Quartz: increases nearby allies' damage to create synergy with Defender's distinct defensive aura. Exact bonus, radius, relevant damage types, stacking and progression pending. Do not copy Defender's defense aura or presume the same 2-space radius without approval.
+- Approval covers ability concepts, not numerical values or special mechanics. Aura-Control remains separate from passive Mark auras.
