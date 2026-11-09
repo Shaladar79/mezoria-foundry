@@ -277,3 +277,8 @@ The following nine skills are **trained-only**, requiring at least **Talent** to
 
 - **Aura-Control** added as a Presence skill. It concerns controlling and shaping a character's Mark of Purpose aura. Exact skill checks, target selection, bonus modifiers, and range interactions remain pending.
 - Treated as untrained-usable pending more detailed design; Talent, Expertise and Mastery follow normal skill progression. Presence skill total is 13; total approved skills is 91.
+
+## Aura-Control clarification — approved 2026-11-09
+
+- **Aura-Control** governs projecting and exerting one's aura against others, potentially subduing or overwhelming them in **aura combat**. This is a Presence skill with a strong flavor/social role.
+- **Aura combat mechanics are deferred** for future design. Aura-Control **does not interact with or upgrade passive Mark of Purpose aura abilities** as a general rule. Its presence in the skill roster does not confer passive aura range, strength or targeting bonuses.
