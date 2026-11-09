@@ -650,6 +650,12 @@
           "description": "Self-control, patience, composure, and adherence to routines",
           "governingAttribute": "Presence",
           "trainedOnly": false
+        },
+        {
+          "name": "Aura-Control",
+          "description": "Control and shape a Mark of Purpose aura; specific uses and mechanical effects await aura and ability design",
+          "governingAttribute": "Presence",
+          "trainedOnly": false
         }
       ],
       "notes": [
@@ -1076,15 +1082,16 @@
         "Performance",
         "Commerce",
         "Hospitality",
-        "Discipline"
+        "Discipline",
+        "Aura-Control"
       ],
       "trainingReviewComplete": true
     },
     "status": "approved; complete",
     "summary": {
-      "totalSkills": 90,
+      "totalSkills": 91,
       "trainedOnly": 51,
-      "untrainedAllowed": 39
+      "untrainedAllowed": 40
     }
   }
 }
