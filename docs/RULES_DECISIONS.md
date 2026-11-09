@@ -604,3 +604,8 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - **Restorative Touch (active):** a Mana-powered heal that restores a nearby creature's **LifeForce**, with healing based on the number of ability successes. The per-success amount, check, range, Mana and action costs, and progression are not yet determined. This does not currently restore Wounds.
 - **Aura of Renewal (passive):** allies within **2 spaces** gain **+1 LifeForce regeneration per turn** while benefiting from the aura, subject to their normal maximum LifeForce. It adds to their existing regeneration; it does not heal Wounds.
 - Exact timing for measuring aura proximity, interactions between multiple Warden auras, and later-Rank advancement remain pending.
+
+## Arcanist Arcane Surge revised — approved concept 2026-11-09
+
+- **Arcane Surge** is the Arcanist's directly cast **magical attack**, not a self-buff that strengthens subsequent attacks. Its attack resolution, magical damage per success, range, Mana and Action Score costs, and progression remain undecided.
+- **Aura of Attunement** is a working name for a potential passive ally-support aura. Its effect is **not approved**: candidates for discussion include enhancing magical attack damage, magical accuracy, or Mana regeneration. Do not implement any of these before selection.
