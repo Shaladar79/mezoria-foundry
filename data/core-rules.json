@@ -1793,7 +1793,7 @@
       "passiveAbilities": 1
     },
     "delivery": "Automatically granted by the chosen Mark of Purpose",
-    "abilityDefinitions": "Defender: Guardian's Stand self +5 Parry and Unyielding Resolve allies +2 applicable defenses within 2 spaces. Striker: Battle Fury self +3 Physical damage per attack success, Aura of Ferocity allies +1 Physical damage per attack success within 2 spaces. Skirmisher: Evasive Footwork self +5 Dodge while active, Aura of Swiftness allies within 2 spaces +1 Action Score on the round's Action Score roll, once per round. Other Marks pending.",
+    "abilityDefinitions": "Defender: Guardian's Stand self +5 Parry and Unyielding Resolve allies +2 applicable defenses within 2 spaces. Striker: Battle Fury self +3 Physical damage per attack success, Aura of Ferocity allies +1 Physical damage per attack success within 2 spaces. Skirmisher: Evasive Footwork self +5 Dodge while active, Aura of Swiftness allies within 2 spaces +1 Action Score on the round's Action Score roll, once per round. Other Marks pending. Warden: Restorative Touch heals nearby creature LifeForce per success (amount pending); Aura of Renewal grants allies within 2 spaces +1 LifeForce regeneration per turn (not Wounds). Arcanist and Adept pending.",
     "additionalLearnedAbilities": "Separate ability creation and acquisition rules pending",
     "activeCosts": "Defined when individual abilities are designed; activated powers use Mana under the existing resources rule",
     "startingPassiveFramework": {
@@ -1898,6 +1898,35 @@
       "actionScoreBonusUnit": "Action Score point",
       "applicationTiming": "Apply +1 once when an affected ally rolls Action Score for the round, only if within 2 spaces at that roll; no repeated bonus on entering or leaving aura",
       "radiusUnits": "spaces"
+    },
+    "wardenStartingActive": {
+      "name": "Restorative Touch",
+      "type": "active",
+      "status": "Quartz concept approved; healing strength, Mana/action cost and range pending",
+      "effect": "Channels Mana to heal the LifeForce of a nearby creature; amount of LifeForce restored scales with successes on the ability's check",
+      "target": "Nearby creature; exact reach pending",
+      "healingResource": "LifeForce",
+      "healingPerSuccess": "Pending",
+      "manaCost": "Pending",
+      "actionCost": "Pending",
+      "range": "Pending",
+      "woundHealing": "Not approved; no Wound recovery implied",
+      "progression": "Pending"
+    },
+    "wardenStartingPassive": {
+      "name": "Aura of Renewal",
+      "type": "passive aura",
+      "status": "Quartz regeneration bonus and radius approved; stacking and progression pending",
+      "beneficiaries": "Allies within 2 spaces",
+      "effect": "Affected allies regain 1 additional LifeForce per turn, subject to their normal LifeForce maximum",
+      "lifeForceRegenerationBonusPerTurn": 1,
+      "radius": 2,
+      "radiusUnits": "spaces",
+      "maximumCap": "Cannot increase LifeForce above character maximum",
+      "stacking": "Pending",
+      "timing": "Apply to affected allies' normal per-turn regeneration; exact aura proximity check timing pending",
+      "progression": "Pending",
+      "woundHealing": false
     }
   }
 }
