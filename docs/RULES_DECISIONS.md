@@ -530,3 +530,11 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - At Rank 1 (Quartz), every Mark of Purpose grants **one signature active ability** and **one passive ability** automatically on selection. Applies to Defender, Striker, Skirmisher, Warden, Arcanist and Adept.
 - Specific ability effects are not approved yet. Design each Mark's pair individually, beginning with Defender. Active ability cost and action mechanics will be specified per power under the existing Mana rule.
 - This starting allocation does not decide how many additional powers may be learned, their creation rules, or later-Rank grants.
+
+## Guardian's Stand and starting Mark auras — approved direction 2026-11-09
+
+- Defender's Rank 1 **Guardian's Stand** is an active **self-only** defensive effect intended to help its user withstand attacks; at Quartz it gives a **small Parry bonus**. Bonus amount, Mana and action cost, duration, and progression remain to be designed. Do not treat it as an ally-interception or ally-targeted skill.
+- Defender's Rank 1 passive **Unyielding Resolve** becomes the beginning of Defender's **aura power**, rather than a self-only defensive passive.
+- **Every Mark of Purpose starts with a passive aura power at Quartz.** The aura gives **a small bonus to the defenses of allies within a small radius of the character** and forms the basis for later aura development.
+- Exact aura radius, defensive categories and amounts, whether the bearer is included, aura stacking, progression and distinctive Mark-specific differences are undecided. No numerical effects are approved yet.
+- This revises the earlier illustrative Guardian's Stand/Unyielding Resolve descriptions, without changing the approved one-active plus one-passive starting grant.
