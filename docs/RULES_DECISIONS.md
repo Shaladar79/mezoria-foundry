@@ -586,3 +586,9 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 
 - **Evasive Footwork** (active): temporarily increases the Skirmisher's own Dodge; exact Quartz bonus, Mana/action cost, duration and progression remain pending.
 - **Aura of Swiftness** (passive): increases nearby allies' movement speed, distinct from Defender's defensive aura and Striker's physical damage aura. Exact movement bonus, radius, stacking and progression pending; no universal 2-space radius assumed until approved.
+
+## Skirmisher Aura of Swiftness correction — approved 2026-11-09
+
+- **Aura of Swiftness** is revised from a movement-speed aura to an **Action Score aura**, granting **+1 Action Score to nearby allies** at Quartz Rank. Do not apply a +1 movement-space bonus.
+- The bonus should not be interpreted as granting an extra action or +1 Action Score repeatedly every time the aura is checked; precise application timing, radius, stacking and higher-rank progression still need design.
+- **Evasive Footwork** retains its approved temporary Dodge-increase concept; the proposed +5 percentage points to Dodge is not yet approved.
