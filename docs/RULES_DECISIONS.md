@@ -563,3 +563,9 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - **Battle Fury**, Striker signature active at Quartz: temporary self-only increase to offensive damage. Exact amount, damage calculation, action/Mana cost, duration and higher-rank progression pending.
 - **Aura of Ferocity**, Striker signature passive at Quartz: increases nearby allies' damage to create synergy with Defender's distinct defensive aura. Exact bonus, radius, relevant damage types, stacking and progression pending. Do not copy Defender's defense aura or presume the same 2-space radius without approval.
 - Approval covers ability concepts, not numerical values or special mechanics. Aura-Control remains separate from passive Mark auras.
+
+## Striker starting power damage type — approved 2026-11-09
+
+- **Battle Fury** increases **Physical damage only**, not magical damage.
+- **Aura of Ferocity** increases **Physical damage only** for affected allies, not magical damage.
+- Proposed Quartz magnitudes (+2 Physical damage per successful attack success for Battle Fury and +1 for Aura of Ferocity) remain **unapproved** pending numerical confirmation. The aura radius, duration, cost and other mechanics also remain undecided.
