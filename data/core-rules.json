@@ -1887,12 +1887,15 @@
       "name": "Aura of Swiftness",
       "type": "passive aura",
       "beneficiaries": "Nearby allies",
-      "effect": "Increases nearby allies' movement speed",
-      "status": "Concept approved; movement bonus and radius pending",
-      "movementBonus": "Pending",
+      "effect": "Grants nearby allies +1 Action Score; does not increase movement distance or grant extra actions directly",
+      "status": "Quartz +1 Action Score bonus approved; radius, application timing, stacking and progression pending",
+      "movementBonus": 0,
       "radius": "Pending",
       "progression": "Pending",
-      "stacking": "Pending"
+      "stacking": "Pending",
+      "actionScoreBonus": 1,
+      "actionScoreBonusUnit": "Action Score point",
+      "applicationTiming": "Pending: whether the bonus applies when Action Score is rolled, while inside the aura, or another explicit timing; avoid repetitive +1 gains"
     }
   }
 }
