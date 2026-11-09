@@ -538,3 +538,9 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - **Every Mark of Purpose starts with a passive aura power at Quartz.** The aura gives **a small bonus to the defenses of allies within a small radius of the character** and forms the basis for later aura development.
 - Exact aura radius, defensive categories and amounts, whether the bearer is included, aura stacking, progression and distinctive Mark-specific differences are undecided. No numerical effects are approved yet.
 - This revises the earlier illustrative Guardian's Stand/Unyielding Resolve descriptions, without changing the approved one-active plus one-passive starting grant.
+
+## Quartz Mark aura range and defense coverage — approved 2026-11-09
+
+- All six starting Mark of Purpose aura passives have a **2-space radius** at Quartz Rank.
+- Allies within the aura receive bonuses to **all applicable defenses: Dodge, Parry, Block, and Spell Resistance**. Applicable means existing restrictions on which defense works against an attack still apply; the aura does not grant the ability to Dodge melee or Parry ranged attacks.
+- **Numerical bonuses are not yet approved**, and neither are aura stacking, bearer inclusion, duration/uptime, or higher-Rank progression. Review bonus magnitudes next.
