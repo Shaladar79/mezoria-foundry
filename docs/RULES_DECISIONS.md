@@ -609,3 +609,9 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 
 - **Arcane Surge** is the Arcanist's directly cast **magical attack**, not a self-buff that strengthens subsequent attacks. Its attack resolution, magical damage per success, range, Mana and Action Score costs, and progression remain undecided.
 - **Aura of Attunement** is a working name for a potential passive ally-support aura. Its effect is **not approved**: candidates for discussion include enhancing magical attack damage, magical accuracy, or Mana regeneration. Do not implement any of these before selection.
+
+## Arcanist Aura of Attunement — approved 2026-11-09
+
+- **Aura of Attunement (Quartz passive):** allies within **2 spaces** regenerate **+1 Mana per turn**, on top of their normal Mana regeneration, without exceeding their maximum Mana.
+- This is distinct from Warden's LifeForce regeneration aura. It provides neither magical damage nor magical attack target number bonuses at Quartz.
+- Exact aura proximity-check timing, stacking and higher-Rank progression remain to be specified. **Arcane Surge** remains the separately approved direct magical attack; its damage, targeting, Mana cost and action cost are pending.
