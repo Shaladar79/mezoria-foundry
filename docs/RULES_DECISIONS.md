@@ -615,3 +615,9 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - **Aura of Attunement (Quartz passive):** allies within **2 spaces** regenerate **+1 Mana per turn**, on top of their normal Mana regeneration, without exceeding their maximum Mana.
 - This is distinct from Warden's LifeForce regeneration aura. It provides neither magical damage nor magical attack target number bonuses at Quartz.
 - Exact aura proximity-check timing, stacking and higher-Rank progression remain to be specified. **Arcane Surge** remains the separately approved direct magical attack; its damage, targeting, Mana cost and action cost are pending.
+
+## Arcane Surge Quartz starting attack values — approved 2026-11-09
+
+- **Arcane Surge (Arcanist active):** a direct raw-Astral-energy **Magical** attack against **one creature within 6 spaces**, dealing **3 Magical damage per attack success**.
+- Arcane Surge is not a self-buff and does not add damage to a separate weapon or spell attack.
+- The attack check/target number, specific magical damage resistance interaction, Mana cost, Action Score cost and progression are deferred until ability-creation mechanics are designed. Do not invent numerical costs.
