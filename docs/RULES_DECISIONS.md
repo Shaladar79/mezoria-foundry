@@ -575,3 +575,9 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - Striker's **Battle Fury** active ability grants **+3 Physical damage per attack success** at Quartz Rank while active. It does **not** increase magical damage.
 - This replaces the earlier unapproved +2 damage per success suggestion. Mana cost, action cost, duration, and progression remain undecided.
 - **Aura of Ferocity** remains physical-only, but its proposed +1 Physical damage per success is not approved yet.
+
+## Striker Aura of Ferocity finalized Quartz bonus — approved 2026-11-09
+
+- **Aura of Ferocity** at Quartz: grants **allies within 2 spaces +1 Physical damage per attack success** on eligible physical attacks; magical damage does not benefit.
+- This approves the previously proposed numerical bonus and radius. The bonus does not modify hit chance, and it is not +1 per attack regardless of successes.
+- **Battle Fury** remains approved at +3 Physical damage per attack success for the Striker while active. Mana/action costs, duration, aura stacking and future progression still need design.
