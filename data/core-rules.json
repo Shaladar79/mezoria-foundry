@@ -1793,7 +1793,7 @@
       "passiveAbilities": 1
     },
     "delivery": "Automatically granted by the chosen Mark of Purpose",
-    "abilityDefinitions": "Defender's Guardian's Stand (self-only +5 percentage points Parry at Quartz) and Unyielding Resolve (allied applicable defenses +2 percentage points within 2 spaces) approved. Other Marks' distinct starting auras and active powers pending.",
+    "abilityDefinitions": "At Quartz, Defender: Guardian's Stand (+5 Parry self active) and Unyielding Resolve (+2 to applicable allied defenses within 2 spaces); Striker: Battle Fury (temporary self offensive damage boost) and Aura of Ferocity (allied damage increase), numeric Striker effects pending. Remaining Marks to design.",
     "additionalLearnedAbilities": "Separate ability creation and acquisition rules pending",
     "activeCosts": "Defined when individual abilities are designed; activated powers use Mana under the existing resources rule",
     "startingPassiveFramework": {
@@ -1836,6 +1836,30 @@
       "bonusAmount": 2,
       "progression": "Pending",
       "bonusUnit": "percentage points"
+    },
+    "strikerStartingActive": {
+      "name": "Battle Fury",
+      "status": "Approved concept; numbers and operation pending",
+      "type": "active",
+      "target": "Self only",
+      "effect": "Temporarily increases the Striker's offensive damage",
+      "damageBonus": "Pending",
+      "manaCost": "Pending",
+      "actionCost": "Pending",
+      "duration": "Pending",
+      "progression": "Pending"
+    },
+    "strikerStartingPassive": {
+      "name": "Aura of Ferocity",
+      "status": "Approved concept; numbers and operation pending",
+      "type": "passive aura",
+      "beneficiaries": "Nearby allies",
+      "effect": "Increases the damage dealt by nearby allies",
+      "damageBonus": "Pending",
+      "radius": "Pending",
+      "damageTypes": "Pending",
+      "stacking": "Pending",
+      "progression": "Pending"
     }
   }
 }
