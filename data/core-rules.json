@@ -368,7 +368,7 @@
       }
     ],
     "someSkillsRequireTraining": true,
-    "trainingGatesStatus": "complete; all 90 approved skills explicitly classified",
+    "trainingGatesStatus": "Reviewed for existing skills; Aura-Control added as untrained-usable, further mechanical details pending",
     "spellcastingAndArcana": "Magic Theory, Ritual Magic, and Use Magic Device are separate approved Intellect skills; casting mechanics remain separate",
     "approvedAdditions": [
       {
@@ -955,7 +955,8 @@
           "Animal Handling",
           "Commerce",
           "Hospitality",
-          "Discipline"
+          "Discipline",
+          "Aura-Control"
         ]
       }
     },
@@ -1048,13 +1049,14 @@
         "Performance",
         "Commerce",
         "Hospitality",
-        "Discipline"
+        "Discipline",
+        "Aura-Control"
       ]
     },
     "trainingSummary": {
-      "totalSkills": 90,
+      "totalSkills": 91,
       "trainedOnly": 51,
-      "untrainedAllowed": 39
+      "untrainedAllowed": 40
     }
   },
   "rolls": {
@@ -1791,29 +1793,21 @@
       "passiveAbilities": 1
     },
     "delivery": "Automatically granted by the chosen Mark of Purpose",
-    "abilityDefinitions": "Defender active Guardian's Stand self-only Parry bonus; all six starting passives initiate ally-defense aura powers. Exact values and remaining abilities pending.",
+    "abilityDefinitions": "Each Mark gains an active power and a distinct passive aura at Quartz. Defender: Guardian's Stand self-only Parry bonus; Unyielding Resolve grants allies within 2 spaces a small bonus to applicable Dodge, Parry, Block, Spell Resistance. Other auras pending.",
     "additionalLearnedAbilities": "Separate ability creation and acquisition rules pending",
     "activeCosts": "Defined when individual abilities are designed; activated powers use Mana under the existing resources rule",
     "startingPassiveFramework": {
-      "status": "approved base aura parameters; numerical bonus pending",
+      "status": "approved shared starting aura identity",
       "type": "Aura",
       "appliesToAllMarks": true,
-      "beneficiaries": "Allies within a small radius of the character",
-      "effect": "Small bonuses to allies' defenses",
-      "rankOne": "Aura begins at Quartz Rank and serves as the foundation of each Mark's evolving aura power",
-      "numericalDefenseBonus": "Pending user review",
-      "radius": 2,
-      "defenseTypesAffected": [
-        "Dodge",
-        "Parry",
-        "Block",
-        "Spell Resistance"
-      ],
+      "grant": "Each of the six Marks grants a different passive aura at Quartz Rank",
+      "designPrinciple": "Distinct benefits support synergy between party members",
+      "effect": "Mark-specific; do not apply Defender's defense bonuses to all Marks",
+      "radius": "To be decided separately for other Marks; Defender currently 2 spaces",
+      "numericalDefenseBonus": "Defender bonus still pending",
       "selfInclusion": "Pending",
       "stackingAndProgression": "Pending",
-      "individualMarkAuraIdentity": "Pending individual Mark design",
-      "radiusUnits": "spaces",
-      "defenseBonusRule": "Aura grants its bonus to each defense when that defense is applicable under existing combat rules; it does not enable an otherwise inapplicable defense"
+      "auraControlSkill": "Aura-Control (Presence)"
     },
     "defenderStartingActive": {
       "name": "Guardian's Stand",
@@ -1830,7 +1824,7 @@
       "name": "Unyielding Resolve",
       "type": "Aura",
       "status": "approved design direction; exact mechanics pending",
-      "effect": "Small defensive bonus to allies within a small radius",
+      "effect": "Small bonus to all applicable defenses of allied characters within 2 spaces",
       "radius": 2,
       "affectedDefenses": [
         "Dodge",
@@ -1838,7 +1832,7 @@
         "Block",
         "Spell Resistance"
       ],
-      "bonusAmount": "Pending user review",
+      "bonusAmount": "Pending",
       "progression": "Pending"
     }
   }
