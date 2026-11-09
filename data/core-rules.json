@@ -1793,7 +1793,7 @@
       "passiveAbilities": 1
     },
     "delivery": "Automatically granted by the chosen Mark of Purpose",
-    "abilityDefinitions": "Defender: Guardian's Stand self +5 Parry and Unyielding Resolve allies +2 applicable defenses within 2 spaces. Striker: Battle Fury self +3 Physical damage per attack success, Aura of Ferocity allies +1 Physical damage per attack success within 2 spaces. Skirmisher: Evasive Footwork self +5 Dodge while active, Aura of Swiftness allies within 2 spaces +1 Action Score on the round's Action Score roll, once per round. Other Marks pending. Warden: Restorative Touch heals nearby creature LifeForce per success (amount pending); Aura of Renewal grants allies within 2 spaces +1 LifeForce regeneration per turn (not Wounds). Arcanist and Adept pending. Arcanist active Arcane Surge approved as a standalone magical attack (not a self-damage buff); Aura of Attunement remains unapproved pending choice of effect. Adept pending.",
+    "abilityDefinitions": "Defender: Guardian's Stand self +5 Parry and Unyielding Resolve allies +2 applicable defenses within 2 spaces. Striker: Battle Fury self +3 Physical damage per attack success, Aura of Ferocity allies +1 Physical damage per attack success within 2 spaces. Skirmisher: Evasive Footwork self +5 Dodge while active, Aura of Swiftness allies within 2 spaces +1 Action Score on the round's Action Score roll, once per round. Other Marks pending. Warden: Restorative Touch heals nearby creature LifeForce per success (amount pending); Aura of Renewal grants allies within 2 spaces +1 LifeForce regeneration per turn (not Wounds). Arcanist and Adept pending. Arcanist active Arcane Surge approved as a standalone magical attack (not a self-damage buff); Aura of Attunement grants allies within 2 spaces +1 Mana regeneration per turn. Adept pending.",
     "additionalLearnedAbilities": "Separate ability creation and acquisition rules pending",
     "activeCosts": "Defined when individual abilities are designed; activated powers use Mana under the existing resources rule",
     "startingPassiveFramework": {
@@ -1945,10 +1945,16 @@
     "arcanistStartingPassive": {
       "name": "Aura of Attunement",
       "type": "passive aura",
-      "status": "Proposed name and concept only; not approved",
-      "effect": "Pending selection of how allies are empowered in magic",
-      "radius": "Pending",
-      "bonus": "Pending"
+      "status": "Quartz effect and radius approved; application timing, stacking and later progression pending",
+      "beneficiaries": "Allies within 2 spaces",
+      "effect": "Allies within 2 spaces regenerate 1 additional Mana per turn, capped at their normal maximum Mana",
+      "manaRegenerationBonusPerTurn": 1,
+      "radius": 2,
+      "radiusUnits": "spaces",
+      "maximumCap": "Cannot exceed normal maximum Mana",
+      "stacking": "Pending",
+      "applicationTiming": "Applied alongside the ally's normal Mana regeneration while benefiting from aura; exact range-check timing pending",
+      "progression": "Pending"
     }
   }
 }
