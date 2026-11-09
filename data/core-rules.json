@@ -1793,7 +1793,7 @@
       "passiveAbilities": 1
     },
     "delivery": "Automatically granted by the chosen Mark of Purpose",
-    "abilityDefinitions": "Defender: Guardian's Stand self +5 Parry and Unyielding Resolve allies +2 applicable defenses within 2 spaces. Striker: Battle Fury self +3 Physical damage per attack success, Aura of Ferocity allies +1 Physical damage per attack success within 2 spaces. Skirmisher: Evasive Footwork self +5 Dodge while active, Aura of Swiftness allies within 2 spaces +1 Action Score on the round's Action Score roll, once per round. Other Marks pending. Warden: Restorative Touch heals nearby creature LifeForce per success (amount pending); Aura of Renewal grants allies within 2 spaces +1 LifeForce regeneration per turn (not Wounds). Arcanist and Adept pending.",
+    "abilityDefinitions": "Defender: Guardian's Stand self +5 Parry and Unyielding Resolve allies +2 applicable defenses within 2 spaces. Striker: Battle Fury self +3 Physical damage per attack success, Aura of Ferocity allies +1 Physical damage per attack success within 2 spaces. Skirmisher: Evasive Footwork self +5 Dodge while active, Aura of Swiftness allies within 2 spaces +1 Action Score on the round's Action Score roll, once per round. Other Marks pending. Warden: Restorative Touch heals nearby creature LifeForce per success (amount pending); Aura of Renewal grants allies within 2 spaces +1 LifeForce regeneration per turn (not Wounds). Arcanist and Adept pending. Arcanist active Arcane Surge approved as a standalone magical attack (not a self-damage buff); Aura of Attunement remains unapproved pending choice of effect. Adept pending.",
     "additionalLearnedAbilities": "Separate ability creation and acquisition rules pending",
     "activeCosts": "Defined when individual abilities are designed; activated powers use Mana under the existing resources rule",
     "startingPassiveFramework": {
@@ -1927,6 +1927,28 @@
       "timing": "Apply to affected allies' normal per-turn regeneration; exact aura proximity check timing pending",
       "progression": "Pending",
       "woundHealing": false
+    },
+    "arcanistStartingActive": {
+      "name": "Arcane Surge",
+      "type": "active magical attack",
+      "status": "Approved concept: direct magical attack, not an attack-enhancing self-buff; numbers pending",
+      "target": "Enemy target; exact range and targeting pending",
+      "effect": "The Arcanist directly attacks with Astral-derived magical energy and deals magical damage based on attack successes",
+      "damageType": "Magical; precise type/resistance interaction pending",
+      "damagePerSuccess": "Pending",
+      "manaCost": "Pending",
+      "actionCost": "Pending",
+      "range": "Pending",
+      "attackCheck": "Pending under ability creation rules",
+      "progression": "Pending"
+    },
+    "arcanistStartingPassive": {
+      "name": "Aura of Attunement",
+      "type": "passive aura",
+      "status": "Proposed name and concept only; not approved",
+      "effect": "Pending selection of how allies are empowered in magic",
+      "radius": "Pending",
+      "bonus": "Pending"
     }
   }
 }
