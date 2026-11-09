@@ -1793,7 +1793,7 @@
       "passiveAbilities": 1
     },
     "delivery": "Automatically granted by the chosen Mark of Purpose",
-    "abilityDefinitions": "Each Mark gains an active power and a distinct passive aura at Quartz. Defender: Guardian's Stand self-only Parry bonus; Unyielding Resolve grants allies within 2 spaces a small bonus to applicable Dodge, Parry, Block, Spell Resistance. Other auras pending.",
+    "abilityDefinitions": "Defender's Guardian's Stand (self-only +5 percentage points Parry at Quartz) and Unyielding Resolve (allied applicable defenses +2 percentage points within 2 spaces) approved. Other Marks' distinct starting auras and active powers pending.",
     "additionalLearnedAbilities": "Separate ability creation and acquisition rules pending",
     "activeCosts": "Defined when individual abilities are designed; activated powers use Mana under the existing resources rule",
     "startingPassiveFramework": {
@@ -1807,24 +1807,25 @@
       "numericalDefenseBonus": "Defender bonus still pending",
       "selfInclusion": "Pending",
       "stackingAndProgression": "Pending",
-      "auraControlSkill": "Aura-Control (Presence)"
+      "auraControlSkill": "Aura-Control is a separate Presence skill for aura combat, exerting aura pressure and subduing others; it does not modify passive aura bonuses, range or targeting by default. Exact aura combat mechanics are deferred."
     },
     "defenderStartingActive": {
       "name": "Guardian's Stand",
-      "status": "approved design direction; values pending",
+      "status": "Quartz bonus approved; Mana cost, action cost and duration pending",
       "target": "Self only",
-      "effect": "Temporarily withstand attacks by gaining a small bonus to Parry at Quartz Rank",
-      "rankOneMagnitude": "Pending",
+      "effect": "When activated, grants the Defender +5 percentage points to their own Parry at Quartz Rank",
+      "rankOneMagnitude": 5,
       "manaCost": "Pending",
       "actionCost": "Pending",
       "duration": "Pending",
-      "progression": "Pending"
+      "progression": "Pending",
+      "rankOneMagnitudeUnit": "percentage points to Parry"
     },
     "defenderStartingPassive": {
       "name": "Unyielding Resolve",
       "type": "Aura",
-      "status": "approved design direction; exact mechanics pending",
-      "effect": "Small bonus to all applicable defenses of allied characters within 2 spaces",
+      "status": "Quartz bonus and radius approved; later progression details pending",
+      "effect": "Passively grants allied characters within 2 spaces +2 percentage points to each applicable defense: Dodge, Parry, Block and Spell Resistance",
       "radius": 2,
       "affectedDefenses": [
         "Dodge",
@@ -1832,8 +1833,9 @@
         "Block",
         "Spell Resistance"
       ],
-      "bonusAmount": "Pending",
-      "progression": "Pending"
+      "bonusAmount": 2,
+      "progression": "Pending",
+      "bonusUnit": "percentage points"
     }
   }
 }
