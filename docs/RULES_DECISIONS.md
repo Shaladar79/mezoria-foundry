@@ -592,3 +592,9 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - **Aura of Swiftness** is revised from a movement-speed aura to an **Action Score aura**, granting **+1 Action Score to nearby allies** at Quartz Rank. Do not apply a +1 movement-space bonus.
 - The bonus should not be interpreted as granting an extra action or +1 Action Score repeatedly every time the aura is checked; precise application timing, radius, stacking and higher-rank progression still need design.
 - **Evasive Footwork** retains its approved temporary Dodge-increase concept; the proposed +5 percentage points to Dodge is not yet approved.
+
+## Skirmisher Quartz powers finalized initial bonuses — approved 2026-11-09
+
+- **Evasive Footwork (active, self-only): +5 percentage points to Dodge** temporarily. Mana cost, action cost, duration and later progression remain pending.
+- **Aura of Swiftness (passive): allies within 2 spaces gain +1 Action Score** when they roll Action Score for a round. Apply this bonus **once per affected ally per round at the roll**, not again for re-entering the radius or every subsequent action. It does not add movement or automatically grant an extra action.
+- Whether different Marks' auras stack, whether an aura affects its bearer, and later Rank progression remain pending. Other Marks' aura identities remain distinct.
