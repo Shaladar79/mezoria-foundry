@@ -598,3 +598,9 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - **Evasive Footwork (active, self-only): +5 percentage points to Dodge** temporarily. Mana cost, action cost, duration and later progression remain pending.
 - **Aura of Swiftness (passive): allies within 2 spaces gain +1 Action Score** when they roll Action Score for a round. Apply this bonus **once per affected ally per round at the roll**, not again for re-entering the radius or every subsequent action. It does not add movement or automatically grant an extra action.
 - Whether different Marks' auras stack, whether an aura affects its bearer, and later Rank progression remain pending. Other Marks' aura identities remain distinct.
+
+## Warden granted Quartz abilities — approved 2026-11-09
+
+- **Restorative Touch (active):** a Mana-powered heal that restores a nearby creature's **LifeForce**, with healing based on the number of ability successes. The per-success amount, check, range, Mana and action costs, and progression are not yet determined. This does not currently restore Wounds.
+- **Aura of Renewal (passive):** allies within **2 spaces** gain **+1 LifeForce regeneration per turn** while benefiting from the aura, subject to their normal maximum LifeForce. It adds to their existing regeneration; it does not heal Wounds.
+- Exact timing for measuring aura proximity, interactions between multiple Warden auras, and later-Rank advancement remain pending.
