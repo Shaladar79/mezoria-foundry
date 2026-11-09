@@ -1795,18 +1795,25 @@
     "additionalLearnedAbilities": "Separate ability creation and acquisition rules pending",
     "activeCosts": "Defined when individual abilities are designed; activated powers use Mana under the existing resources rule",
     "startingPassiveFramework": {
-      "status": "approved design direction",
+      "status": "approved base aura parameters; numerical bonus pending",
       "type": "Aura",
       "appliesToAllMarks": true,
       "beneficiaries": "Allies within a small radius of the character",
       "effect": "Small bonuses to allies' defenses",
       "rankOne": "Aura begins at Quartz Rank and serves as the foundation of each Mark's evolving aura power",
-      "numericalDefenseBonus": "Pending",
-      "radius": "Pending",
-      "defenseTypesAffected": "Pending",
+      "numericalDefenseBonus": "Pending user review",
+      "radius": 2,
+      "defenseTypesAffected": [
+        "Dodge",
+        "Parry",
+        "Block",
+        "Spell Resistance"
+      ],
       "selfInclusion": "Pending",
       "stackingAndProgression": "Pending",
-      "individualMarkAuraIdentity": "Pending individual Mark design"
+      "individualMarkAuraIdentity": "Pending individual Mark design",
+      "radiusUnits": "spaces",
+      "defenseBonusRule": "Aura grants its bonus to each defense when that defense is applicable under existing combat rules; it does not enable an otherwise inapplicable defense"
     },
     "defenderStartingActive": {
       "name": "Guardian's Stand",
@@ -1824,9 +1831,14 @@
       "type": "Aura",
       "status": "approved design direction; exact mechanics pending",
       "effect": "Small defensive bonus to allies within a small radius",
-      "radius": "Pending",
-      "affectedDefenses": "Pending",
-      "bonusAmount": "Pending",
+      "radius": 2,
+      "affectedDefenses": [
+        "Dodge",
+        "Parry",
+        "Block",
+        "Spell Resistance"
+      ],
+      "bonusAmount": "Pending user review",
       "progression": "Pending"
     }
   }
