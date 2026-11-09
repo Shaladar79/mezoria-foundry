@@ -1793,7 +1793,7 @@
       "passiveAbilities": 1
     },
     "delivery": "Automatically granted by the chosen Mark of Purpose",
-    "abilityDefinitions": "Defender: Guardian's Stand self +5 Parry; Unyielding Resolve nearby allies +2 applicable defenses within 2 spaces. Striker: Battle Fury self +3 Physical damage per attack success; Aura of Ferocity nearby allies +1 Physical damage per attack success within 2 spaces. Other Marks pending.",
+    "abilityDefinitions": "Defender: Guardian's Stand self +5 Parry and Unyielding Resolve allies +2 applicable defenses within 2 spaces. Striker: Battle Fury self +3 Physical damage per attack success, Aura of Ferocity allies +1 Physical damage per attack success within 2 spaces. Skirmisher: Evasive Footwork self +5 Dodge while active, Aura of Swiftness allies within 2 spaces +1 Action Score on the round's Action Score roll, once per round. Other Marks pending.",
     "additionalLearnedAbilities": "Separate ability creation and acquisition rules pending",
     "activeCosts": "Defined when individual abilities are designed; activated powers use Mana under the existing resources rule",
     "startingPassiveFramework": {
@@ -1875,27 +1875,29 @@
       "name": "Evasive Footwork",
       "type": "active",
       "target": "Self only",
-      "effect": "Temporarily increases the Skirmisher's Dodge",
-      "status": "Concept approved; Quartz bonus, duration, Mana and action cost pending",
-      "dodgeBonus": "Pending",
+      "effect": "Temporarily grants the Skirmisher +5 percentage points to their own Dodge",
+      "status": "Quartz +5 percentage-point Dodge bonus approved; duration, Mana/action costs and progression pending",
+      "dodgeBonus": 5,
       "duration": "Pending",
       "manaCost": "Pending",
       "actionCost": "Pending",
-      "progression": "Pending"
+      "progression": "Pending",
+      "dodgeBonusUnit": "percentage points"
     },
     "skirmisherStartingPassive": {
       "name": "Aura of Swiftness",
       "type": "passive aura",
       "beneficiaries": "Nearby allies",
-      "effect": "Grants nearby allies +1 Action Score; does not increase movement distance or grant extra actions directly",
-      "status": "Quartz +1 Action Score bonus approved; radius, application timing, stacking and progression pending",
+      "effect": "Nearby allies within 2 spaces gain +1 to their Action Score roll once per round; does not raise movement distance or repeatedly grant points",
+      "status": "Quartz Action Score bonus, range, and once-per-round roll timing approved; stacking and progression pending",
       "movementBonus": 0,
-      "radius": "Pending",
+      "radius": 2,
       "progression": "Pending",
       "stacking": "Pending",
       "actionScoreBonus": 1,
       "actionScoreBonusUnit": "Action Score point",
-      "applicationTiming": "Pending: whether the bonus applies when Action Score is rolled, while inside the aura, or another explicit timing; avoid repetitive +1 gains"
+      "applicationTiming": "Apply +1 once when an affected ally rolls Action Score for the round, only if within 2 spaces at that roll; no repeated bonus on entering or leaving aura",
+      "radiusUnits": "spaces"
     }
   }
 }
