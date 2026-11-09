@@ -1870,6 +1870,29 @@
       "magicalDamageEligible": false,
       "damageBonusUnit": "additional Physical damage per attack success",
       "radiusUnits": "spaces"
+    },
+    "skirmisherStartingActive": {
+      "name": "Evasive Footwork",
+      "type": "active",
+      "target": "Self only",
+      "effect": "Temporarily increases the Skirmisher's Dodge",
+      "status": "Concept approved; Quartz bonus, duration, Mana and action cost pending",
+      "dodgeBonus": "Pending",
+      "duration": "Pending",
+      "manaCost": "Pending",
+      "actionCost": "Pending",
+      "progression": "Pending"
+    },
+    "skirmisherStartingPassive": {
+      "name": "Aura of Swiftness",
+      "type": "passive aura",
+      "beneficiaries": "Nearby allies",
+      "effect": "Increases nearby allies' movement speed",
+      "status": "Concept approved; movement bonus and radius pending",
+      "movementBonus": "Pending",
+      "radius": "Pending",
+      "progression": "Pending",
+      "stacking": "Pending"
     }
   }
 }
