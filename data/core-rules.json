@@ -1793,7 +1793,7 @@
       "passiveAbilities": 1
     },
     "delivery": "Automatically granted by the chosen Mark of Purpose",
-    "abilityDefinitions": "At Quartz, Defender: Guardian's Stand (+5 Parry self active) and Unyielding Resolve (+2 to applicable allied defenses within 2 spaces); Striker: Battle Fury (temporary self offensive damage boost) and Aura of Ferocity (allied damage increase), numeric Striker effects pending. Remaining Marks to design.",
+    "abilityDefinitions": "Defender: Guardian's Stand self +5 Parry; Unyielding Resolve nearby allies +2 applicable defenses within 2 spaces. Striker: Battle Fury self +3 Physical damage per attack success; Aura of Ferocity nearby allies +1 Physical damage per attack success within 2 spaces. Other Marks pending.",
     "additionalLearnedAbilities": "Separate ability creation and acquisition rules pending",
     "activeCosts": "Defined when individual abilities are designed; activated powers use Mana under the existing resources rule",
     "startingPassiveFramework": {
@@ -1856,18 +1856,20 @@
     },
     "strikerStartingPassive": {
       "name": "Aura of Ferocity",
-      "status": "Physical-only scope approved; numerical magnitude and other mechanics pending",
+      "status": "Quartz physical damage bonus and radius approved; stacking and progression pending",
       "type": "passive aura",
       "beneficiaries": "Nearby allies",
-      "effect": "Increases the damage dealt by nearby allies",
-      "damageBonus": "Pending approval; proposed +1 Physical damage per attack success",
-      "radius": "Pending",
+      "effect": "Allies within 2 spaces gain +1 Physical damage per attack success on eligible physical attacks; magical damage is not increased",
+      "damageBonus": 1,
+      "radius": 2,
       "damageTypes": [
         "Physical"
       ],
       "stacking": "Pending",
       "progression": "Pending",
-      "magicalDamageEligible": false
+      "magicalDamageEligible": false,
+      "damageBonusUnit": "additional Physical damage per attack success",
+      "radiusUnits": "spaces"
     }
   }
 }
