@@ -1839,27 +1839,34 @@
     },
     "strikerStartingActive": {
       "name": "Battle Fury",
-      "status": "Approved concept; numbers and operation pending",
+      "status": "Physical-only scope approved; numerical magnitude and other mechanics pending",
       "type": "active",
       "target": "Self only",
       "effect": "Temporarily increases the Striker's offensive damage",
-      "damageBonus": "Pending",
+      "damageBonus": "Pending approval; proposed +2 Physical damage per attack success",
       "manaCost": "Pending",
       "actionCost": "Pending",
       "duration": "Pending",
-      "progression": "Pending"
+      "progression": "Pending",
+      "damageTypes": [
+        "Physical"
+      ],
+      "magicalDamageEligible": false
     },
     "strikerStartingPassive": {
       "name": "Aura of Ferocity",
-      "status": "Approved concept; numbers and operation pending",
+      "status": "Physical-only scope approved; numerical magnitude and other mechanics pending",
       "type": "passive aura",
       "beneficiaries": "Nearby allies",
       "effect": "Increases the damage dealt by nearby allies",
-      "damageBonus": "Pending",
+      "damageBonus": "Pending approval; proposed +1 Physical damage per attack success",
       "radius": "Pending",
-      "damageTypes": "Pending",
+      "damageTypes": [
+        "Physical"
+      ],
       "stacking": "Pending",
-      "progression": "Pending"
+      "progression": "Pending",
+      "magicalDamageEligible": false
     }
   }
 }
