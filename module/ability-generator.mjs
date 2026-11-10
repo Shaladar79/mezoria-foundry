@@ -66,3 +66,68 @@ export function eligibleOptions(ability,rank,spent={}){
    unlocked:t[0]<=rank
   }))}))};
 }
+
+/**
+ * Compose a player's current tooltip from the approved base ability and its
+ * purchased EP tiers. Unknown base values are intentionally NOT guessed.
+ * Computed totals are displayed only where the base value is established.
+ */
+export function evolvedAbilityDescription(ability, purchases={}){
+ const get=(key)=>{const opt=EP_OPTIONS.find(x=>x.id===key);return opt?.tiers.find(t=>t[4]===Number(purchases[key]))||null;};
+ const damage=get("damage"),healing=get("healing"),range=get("range"),duration=get("duration");
+ const accuracy=get("accuracy"),potency=get("potency"),life=get("life-regen"),mana=get("mana-regen"),targets=get("additional-target");
+ const lines=[];
+ const plus=(tier)=>tier?Number(tier[3].match(/\d+/)?.[0]||0):0;
+ switch(ability.id){
+  case "guardians-stand":
+   lines.push("Self-only; Parry bonus: +"+(5+plus(potency))+" percentage points"+(potency?" (base +5, EP +3)":"")+".");
+   break;
+  case "unyielding-resolve":
+   lines.push("Caster and allies in aura: +"+(2+plus(potency))+" percentage points to applicable Dodge, Parry, Block, and Spell Resistance.");
+   break;
+  case "battle-fury":
+   lines.push("Physical damage bonus: +"+(3+plus(damage))+" per attack success.");
+   break;
+  case "aura-of-ferocity":
+   lines.push("Caster and allies: +1 Physical damage per attack success.");
+   break;
+  case "evasive-footwork":
+   lines.push("Self-only; Dodge bonus: +"+(5+plus(potency))+" percentage points.");
+   break;
+  case "aura-of-swiftness":
+   lines.push("Caster and allies: +1 Action Score when rolling Action Score, once per ally per round (does not grant extra actions).");
+   break;
+  case "restorative-touch":
+   lines.push("Restores LifeForce; base healing per success is pending."+(healing?" EP adds +"+plus(healing)+" LifeForce per success.":""));
+   break;
+  case "aura-of-renewal":
+   lines.push("Caster and allies: +"+(1+plus(life))+" LifeForce regeneration per turn.");
+   break;
+  case "arcane-surge":
+   lines.push("Astral Magical attack: "+(3+plus(damage))+" damage per success.");
+   break;
+  case "aura-of-attunement":
+   lines.push("Caster and allies: +"+(1+plus(mana))+" Mana regeneration per turn.");
+   break;
+  case "adaptive-insight":
+   lines.push("Temporarily improves a chosen skill; base amount remains pending."+(potency?" EP adds +"+plus(potency)+" percentage points.":""));
+   break;
+  case "aura-of-clarity":
+   lines.push("Caster and allies gain a noncombat skill-check bonus; base value is pending."+(potency?" EP adds +"+plus(potency)+" percentage points.":""));
+   break;
+  default:lines.push(ability.description);
+ }
+ if(ability.kind==="aura"){
+  lines.push("Aura radius: "+(2+plus(range))+" spaces"+(range?" (2 base + "+plus(range)+" EP)":"")+".");
+  lines.push("No Mana cost or upkeep, including EP enhancements.");
+ }else{
+  if(ability.id==="arcane-surge")lines.push("Range: "+(6+plus(range))+" spaces.");
+  else if(range)lines.push("Ability range: base range +"+plus(range)+" spaces (base range not yet specified).");
+  if(duration)lines.push("Eligible non-condition duration: "+({1:"×1.5",2:"×2",3:"×3"}[Number(purchases.duration)]||"enhanced")+" base duration"+(ability.id==="adaptive-insight"||ability.id==="battle-fury"||ability.id==="evasive-footwork"||ability.id==="guardians-stand"?" (base duration pending)":"")+".");
+  if(accuracy)lines.push("Attack accuracy: +3 percentage points (ability only).");
+  if(targets)lines.push("Targets: +1 eligible additional target; one shared roll, with independent target resolution.");
+  const manaModifiers=[damage,healing,range,duration,accuracy,potency,life,mana,targets].filter(Boolean).reduce((total,t)=>total+t[2],0);
+  if(manaModifiers)lines.push("Activation Mana: base cost +"+manaModifiers+" from purchased EP enhancements (base cost pending).");
+ }
+ return lines.join(" ");
+}
