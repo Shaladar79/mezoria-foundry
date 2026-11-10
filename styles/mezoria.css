@@ -241,3 +241,16 @@
 .mezoria.sheet .mezoria-inventory-tabs button.active{background:#afd8c9!important;border:2px solid #245a4d!important;font-weight:700}
 .mezoria.sheet .mezoria-inventory-section{border:1px solid #aaa094;border-radius:7px;background:#faf8f2;padding:14px;color:#111}
 .mezoria.sheet .mezoria-inventory-section h4{margin:0 0 8px;color:#111}
+
+/* Skills and Talents subtabs */
+.mezoria.sheet .mezoria-skills-talents-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 16px}
+.mezoria.sheet .mezoria-skills-talents-tabs button{flex:1 1 130px;min-height:36px;background:#f8f8f5!important;color:#111!important;border:1px solid #7b857e!important;border-radius:6px;padding:7px 10px;cursor:pointer}
+.mezoria.sheet .mezoria-skills-talents-tabs button.active{background:#afd8c9!important;border:2px solid #245a4d!important;font-weight:700}
+.mezoria.sheet .mezoria-talents-section{background:#faf8f2;border:1px solid #a49d91;border-radius:7px;padding:14px;color:#111}
+.mezoria.sheet .mezoria-talents-section h4{margin:0 0 10px;color:#111}
+.mezoria.sheet .mezoria-talent-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:10px}
+.mezoria.sheet .mezoria-talent-row{padding:12px;border:1px solid #d5cbbb;background:#f4efe5;border-radius:6px;min-width:0}
+.mezoria.sheet .mezoria-talent-row header{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;color:#111}
+.mezoria.sheet .mezoria-talent-row header span{font-size:11px;font-weight:650;color:#356354}
+.mezoria.sheet .mezoria-talent-row p{margin:7px 0;font-size:12px}
+.mezoria.sheet .mezoria-talent-row small{color:#404040}
