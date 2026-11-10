@@ -234,3 +234,62 @@ An ability deals 20 Physical damage and converts 50% to Fire, producing **10 Phy
 ### New near-term design scope
 
 **Prioritize playtest-complete ability enhancements for Quartz (Rank 1), Garnet (Rank 2), and Amethyst (Rank 3) before continuing Rank 4–10 design.** Existing EP allocation is Quartz 1, Garnet +2 (3 cumulative), Amethyst +3 (6 cumulative). Existing primary per-success damage enhancement costs/tiers for these ranks remain as above. Do not implement new mechanics or change code without a later explicit instruction. Higher-rank enhancement design is deferred pending the initial playtest.
+
+
+## Addendum — Q115–Q155 approved design (2026-11-10)
+
+These approvals continue Q114. This record is **design authority**, not a claim that all mechanics are implemented. Q155: **B** — granted Mark aura ranges use Euclidean straight-line circular distance on the grid. Ordinary physical obstacles do not block them, but explicitly aura-blocking magical barriers do (Q154).
+
+### Q115–Q130 — individual ability Enhancement Points
+
+- **Q115:** Successful attribute save fully negates Elemental Weakness; failure applies the full listed effect.
+- **Q116:** Primary LifeForce healing bonus per success: Quartz +1/1 cumulative EP/+1 Mana; Garnet +2/3 EP/+2 Mana; Amethyst +3/5 EP/+3 Mana. Sequential tiers replace earlier tiers.
+- **Q117:** Magical shield initial mitigation per success: +2/1 EP/+1 Mana, +4/3 EP/+2 Mana, +6/5 EP/+3 Mana at Quartz/Garnet/Amethyst.
+- **Q118:** Eligible general ability durations: ×1.5/1 EP/+1 Mana, ×2/3 EP/+2 Mana, ×3/5 EP/+3 Mana. These do not affect harmful condition duration (Q138); fractional duration rounding remains open.
+- **Q119:** Eligible ability range: +1/+2/+4 spaces with 1/3/5 cumulative EP and +1/+2/+3 Mana. Self-only abilities excluded unless explicitly allowed.
+- **Q120:** Existing AoE radius: +1/+2/+3 spaces, 1/3/5 cumulative EP, +1/+2/+3 Mana. Does not turn single-target abilities into AoE abilities.
+- **Q121:** Additional target unlocks only at **Ability Rank 3**, +1 target for 3 EP/+2 Mana, purchased once for an eligible ability.
+- **Q122:** Additional-target effects share one ability roll; resolve accuracy, defenses, and successes separately per target. One activation and Mana cost.
+- **Q123:** No generic selective AoE target exclusion enhancement at Ranks 1–3.
+- **Q124:** Individual ability accuracy unlocks at Ability Ranks 2/4/6/8/10, +3 percentage points per tier. Garnet first tier costs 2 EP and adds +1 Mana; higher-rank tier costs remain undecided.
+- **Q125:** Combat defense penetration unlocks at Amethyst: bypass 5 percentage points of one selected applicable combat defense (Dodge, Parry, Block, or Spell Resistance), 3 EP/+2 Mana, once per ability; defense not reduced below zero.
+- **Q126:** Mana efficiency unlocks at Ability Ranks 3/6/9, -10% per tier, each tier +5 EP (5/10/15 cumulative). Applies to total activation cost including modifiers.
+- **Q127:** Mana efficiency final cost rounds to nearest whole, half up; minimum 1 Mana.
+- **Q128:** Unspent EP remain on their individual ability and may be allocated later; EP do not transfer between abilities.
+- **Q129:** Eligible percentage-point non-damaging effect potency unlocks at Ranks 2/4/6/8/10; +3 per tier. Incremental EP 2/4/6/8/10 (cumulative 2/6/12/20/30); highest tier Mana modifier +2/+4/+6/+8/+10. Flat effects require their own enhancement categories.
+- **Q130:** Movement ability effects +1/+2/+3 spaces at Quartz/Garnet/Amethyst; cumulative 1/3/5 EP; +1/+2/+3 Mana. Does not permanently change movement or grant actions.
+
+### Q131–Q145 — action economy, resistance and restoration
+
+- **Q131:** Action Score ability-effect enhancement begins at Garnet, +1 for 2 EP/+2 Mana, no new Amethyst tier; does not independently grant actions.
+- **Q132:** Universal cooldown reduction unavailable at Ability Ranks 1–3.
+- **Q133:** Elemental resistance enhancement tiers at Ability Ranks 3/6/9: +5/+10/+15 percentage points, incremental 3/6/9 EP (cumulative 3/9/18). Rank 3 Mana modifier +2; later modifiers pending. Only improves already-granted elemental resistance; defensive layer +75% cap remains unless explicitly excepted.
+- **Q134:** Saving throws against existing protected conditions: Garnet +5 percentage points, 2 EP/+2 Mana, retained at Amethyst.
+- **Q135:** Amethyst condition duration reduction: -1 round remaining on an eligible existing harmful condition, 3 EP/+2 Mana.
+- **Q136:** Amethyst condition infliction: target -5 percentage points to its applicable condition save, 3 EP/+2 Mana; only for conditions ability already inflicts.
+- **Q137:** Amethyst harmful condition duration enhancement: +1 round, 3 EP/+2 Mana.
+- **Q138:** General Q118 duration multipliers do not affect harmful condition durations; Q137 is the sole general enhancement to those durations.
+- **Q139:** Amethyst cleansing: remove one eligible minor harmful condition on an eligible cleansing ability, 4 EP/+3 Mana. Minor-condition categories remain to be defined.
+- **Q140:** No universal activation Action Score cost reduction at Ability Ranks 1–3.
+- **Q141:** No universal critical-success enhancement at Ability Ranks 1–3; critical-hit rules unchanged.
+- **Q142:** Direct Mana restoration per success +1/+2/+3 at Quartz/Garnet/Amethyst, cumulative 1/3/5 EP, Mana modifier +1/+2/+3.
+- **Q143:** Mana restoration cannot target its own caster by default; individual ability may explicitly override.
+- **Q144:** LifeForce regeneration enhancement Quartz +1 per turn (1 EP/+1 Mana), retained Garnet, Amethyst +2 per turn (4 cumulative EP/+2 Mana).
+- **Q145:** Mana regeneration enhancement begins Garnet: +1 Mana per turn, 2 EP/+2 Mana, retained at Amethyst. For granted Mark auras, apply Q146 cost modifier and zero Mana rule.
+
+### Q146–Q155 — granted Mark auras
+
+- **Q146 revised:** Granted Mark auras, including their natural rank-up features and purchased EP enhancements, **never consume Mana** or require upkeep. Purchased standard EP enhancements on those auras cost **double EP**. The originally proposed purchased-passive upkeep rule is superseded for granted Mark auras; non-granted passives may have individual rules.
+- **Q147:** Normal personal EP limits apply to auras even if doubling delays affordability. E.g. Q145 regeneration normally costs 2 EP, but 4 EP on granted Arcanist aura: not affordable with Garnet's cumulative 3 EP; affordable with Amethyst's 6 EP.
+- **Q148:** Granted auras can purchase compatible Range, non-damaging Potency, LifeForce Regeneration, Mana Regeneration and Elemental Resistance enhancements. Other types require explicit permission. Double EP costs and zero Mana upkeep apply.
+- **Q149:** Granted aura radius follows Q119 range progression, doubled EP costs: +1 space/2 EP (Quartz minimum); +2 spaces/6 cumulative EP (Garnet minimum); +4 spaces/10 cumulative EP (Amethyst minimum). Affordability still governed by accumulated EP (first tier affordable at Garnet, second at Amethyst, third no earlier than Topaz).
+- **Q150:** Same named Mark auras do not stack; each recipient uses the strongest applicable instance, including enhancements. Compatible differently named auras may stack.
+- **Q151:** Each aura affects its own owner unless individually excluded.
+- **Q152:** On owner unconsciousness, base aura and bought enhancements immediately suppress; automatically resume on recovery without Mana/action. Aura ends on death.
+- **Q153:** While conscious, stun/paralysis/restraint/immobilization alone do not suppress auras; explicit aura suppression does.
+- **Q154:** Ordinary physical walls, closed doors and obstacles do not block an aura. Explicitly aura-blocking magical barriers do.
+- **Q155:** Auras use Euclidean straight-line radius measurement (circular distance, not Chebyshev or Manhattan). See Q154 barrier exceptions.
+
+### Initial implementation scope
+
+The Mark Ability tab lists five sections: Mark of Purpose, Mark of Specialty, Mark of Elements, Mark of the Beast, Eldritch Mark. The chosen Mark of Purpose populates with two **granted** starting powers. Every section exposes a **Select Ability** choice dialog with only **Custom** and **Premade** choices (no creation flow yet). Granted abilities expose a **Spend EP** advancement dialog for compatible first-playtest enhancement tiers. Remaining unknown base Mana/action costs, exact potency for some powers, the omitted Concept Mark UI, higher-rank Mark features, additional ability definitions, and actual combat effect application are deferred. Do not assume UI purchase tracking applies enhancement effects in combat.
