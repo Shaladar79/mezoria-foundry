@@ -34,6 +34,7 @@ export class MezoriaCharacterSheet extends ActorSheet {
   this.creationStep=null; // New Actors open on their sheet, not in the creator.
   this.sheetTab="attributes";
   this.skillAttributeTab="Might";
+   this.inventoryTab="equipment";
  }
  static get defaultOptions(){
   return foundry.utils.mergeObject(super.defaultOptions,{
@@ -85,7 +86,9 @@ export class MezoriaCharacterSheet extends ActorSheet {
    currentEssence:system.currentEssence??0,spentEssence:system.spentEssence??0,
    headerName:this.actor.name,headerRace:system.race||"None Selected",headerBackground:system.background||"None Selected",
    headerMark:system.mark?(mark?.id?.charAt(0).toUpperCase()+mark?.id?.slice(1)||system.mark):"None Selected",headerSubgroup:system.subgroup,showSubgroup:!!subgroupType,subgroupType,
-   sheetAttributes:this.sheetTab==="attributes",sheetSkills:this.sheetTab==="skills",sheetAbilities:this.sheetTab==="abilities",
+   sheetAttributes:this.sheetTab==="attributes",sheetSkills:this.sheetTab==="skills",sheetAbilities:this.sheetTab==="abilities",sheetInventory:this.sheetTab==="inventory",sheetResistances:this.sheetTab==="resistances",
+    inventoryTabEquipment:this.inventoryTab==="equipment",inventoryTabTreasure:this.inventoryTab==="treasure",
+    inventoryTabActive:this.sheetTab==="inventory",resistancesTabActive:this.sheetTab==="resistances",
     abilitiesTabActive:this.sheetTab==="abilities",
     markAbilitySections:MARK_SECTIONS.filter(section=>(Number(system.rank)||1)>=section.unlockRank).map(section=>({...section,abilities:section.id==="purpose"?generatedMarkAbilities(system.mark).map(a=>{const purchased=this.actor.getFlag("mezoria-foundry","epPurchases")?.[a.id]||{};return {...a,baseDescription:a.description,description:evolvedAbilityDescription(a,purchased),ep:eligibleOptions(a,Math.min(3,Number(system.rank)||1),purchased),rank:Math.min(3,Number(system.rank)||1)};}):[],isPurpose:section.id==="purpose"})),
    attrTabActive:this.sheetTab==="attributes",skillsTabActive:this.sheetTab==="skills",
@@ -125,6 +128,7 @@ export class MezoriaCharacterSheet extends ActorSheet {
   html.find("[data-close-creator]").on("click",event=>{event.preventDefault();this.creationStep=null;this.render(false);});
   html.find("[data-step]").on("click",event=>{event.preventDefault();this.creationStep=event.currentTarget.dataset.step;this.render(false);});
   html.find("[data-tab]").on("click",event=>{event.preventDefault();this.sheetTab=event.currentTarget.dataset.tab;this.render(false);});
+  html.find("[data-inventory-tab]").on("click",event=>{event.preventDefault();const tab=event.currentTarget.dataset.inventoryTab;if(!["equipment","treasure"].includes(tab))return;this.inventoryTab=tab;this.render(false);});
   html.find("[data-skill-attribute]").on("click",event=>{event.preventDefault();const attribute=event.currentTarget.dataset.skillAttribute;if(!ATTRS.includes(attribute))return;this.skillAttributeTab=attribute;this.render(false);});
   html.find("[data-finish-creator]").on("click",async event=>{
    event.preventDefault();
