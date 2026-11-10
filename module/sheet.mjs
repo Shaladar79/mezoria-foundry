@@ -1,5 +1,6 @@
 import {loadCreationRules,deriveCharacter,raceSubgroups} from "./rules.mjs";
-import {MARK_SECTIONS,generatedMarkAbilities,eligibleOptions,epBudget} from "./ability-generator.mjs";
+import {MARK_SECTIONS,generatedMarkAbilities,eligibleOptions} from "./ability-generator.mjs";
+import {registerAbilityListeners} from "./ability-ui.mjs";
 
 const ATTRS=["Might","Prowess","Endurance","Intellect","Presence"];
 const ATTR_ABBR={Might:"MGT",Prowess:"PRW",Endurance:"END",Intellect:"INT",Presence:"PRE"};
@@ -118,6 +119,7 @@ export class MezoriaCharacterSheet extends ActorSheet {
  }
  activateListeners(html){
   super.activateListeners(html);
+  registerAbilityListeners(this,html);
   if(!this.isEditable)return;
   html.find("[data-open-creator]").on("click",event=>{event.preventDefault();this.creationStep="race";this.render(false);});
   html.find("[data-close-creator]").on("click",event=>{event.preventDefault();this.creationStep=null;this.render(false);});
