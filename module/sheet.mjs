@@ -1,4 +1,5 @@
 import {loadCreationRules,deriveCharacter,raceSubgroups} from "./rules.mjs";
+import {MARK_SECTIONS,generatedMarkAbilities,eligibleOptions,epBudget} from "./ability-generator.mjs";
 
 const ATTRS=["Might","Prowess","Endurance","Intellect","Presence"];
 const ATTR_ABBR={Might:"MGT",Prowess:"PRW",Endurance:"END",Intellect:"INT",Presence:"PRE"};
@@ -83,7 +84,9 @@ export class MezoriaCharacterSheet extends ActorSheet {
    currentEssence:system.currentEssence??0,spentEssence:system.spentEssence??0,
    headerName:this.actor.name,headerRace:system.race||"None Selected",headerBackground:system.background||"None Selected",
    headerMark:system.mark?(mark?.id?.charAt(0).toUpperCase()+mark?.id?.slice(1)||system.mark):"None Selected",headerSubgroup:system.subgroup,showSubgroup:!!subgroupType,subgroupType,
-   sheetAttributes:this.sheetTab==="attributes",sheetSkills:this.sheetTab==="skills",
+   sheetAttributes:this.sheetTab==="attributes",sheetSkills:this.sheetTab==="skills",sheetAbilities:this.sheetTab==="abilities",
+    abilitiesTabActive:this.sheetTab==="abilities",
+    markAbilitySections:MARK_SECTIONS.map(section=>({...section,abilities:section.id==="purpose"?generatedMarkAbilities(system.mark).map(a=>({...a,ep:eligibleOptions(a,Math.min(3,Number(system.rank)||1),this.actor.getFlag("mezoria-foundry","epPurchases")?.[a.id]||{}),rank:Math.min(3,Number(system.rank)||1)})):[],isPurpose:section.id==="purpose"})),
    attrTabActive:this.sheetTab==="attributes",skillsTabActive:this.sheetTab==="skills",
    attributes:derived.scores,status:derived.status,trainedSkills,skillAttributeTabs,attributeSkills,
    selectedSkillAttribute:this.skillAttributeTab,
