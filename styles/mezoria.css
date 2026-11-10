@@ -234,3 +234,10 @@
 .mezoria.sheet .mezoria-ability-entry-main{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
 .mezoria.sheet .mezoria-ability-entry p{margin:5px 0}.mezoria.sheet .mezoria-ability-kind{font-size:11px;color:#4d5c58}.mezoria.sheet .mezoria-ep-count{font-size:12px;font-weight:650}
 .mezoria-ep-dialog{max-height:55vh;overflow-y:auto}.mezoria-ep-category{border-top:1px solid #ccc;padding:8px 0}.mezoria-ep-category h4{margin:4px 0}.mezoria-ep-option{display:flex;gap:8px;margin:6px 0;align-items:baseline}.mezoria-ep-option input{flex:none}.mezoria-ep-option span{flex:1}
+
+/* Inventory tab scaffolding — equipment and treasure content to follow. */
+.mezoria.sheet .mezoria-inventory-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 16px}
+.mezoria.sheet .mezoria-inventory-tabs button{flex:1 1 130px;min-height:36px;border:1px solid #7b857e!important;background:#f8f8f5!important;color:#111!important;border-radius:6px;padding:7px 10px;cursor:pointer}
+.mezoria.sheet .mezoria-inventory-tabs button.active{background:#afd8c9!important;border:2px solid #245a4d!important;font-weight:700}
+.mezoria.sheet .mezoria-inventory-section{border:1px solid #aaa094;border-radius:7px;background:#faf8f2;padding:14px;color:#111}
+.mezoria.sheet .mezoria-inventory-section h4{margin:0 0 8px;color:#111}
