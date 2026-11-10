@@ -223,3 +223,14 @@
 .mezoria.sheet .mezoria-armor-fields label{min-width:0;color:#111!important;font-size:11px;font-weight:650}
 .mezoria.sheet .mezoria-armor-fields input,.mezoria.sheet .mezoria-armor-fields select{display:block;width:100%!important;min-width:0;min-height:30px!important;margin-top:3px!important;background:#fff!important;color:#111!important;border:1px solid #888!important;border-radius:4px!important;padding:4px 7px!important}
 .mezoria.sheet .mezoria-armor-fields input[readonly]{background:#e5e5e5!important}
+
+/* Mark Abilities — playtest generator and EP advancement */
+.mezoria.sheet .mezoria-mark-abilities{max-width:none!important}
+.mezoria.sheet .mezoria-mark-ability-section{margin:12px 0;border:1px solid #aaa094;border-radius:7px;background:#faf8f2;padding:12px;color:#111}
+.mezoria.sheet .mezoria-mark-ability-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid #c2b9aa;padding-bottom:7px}
+.mezoria.sheet .mezoria-mark-ability-heading h4{margin:0;color:#111}
+.mezoria.sheet .mezoria-mark-ability-heading button,.mezoria.sheet .mezoria-ability-entry button{width:auto;min-height:30px;padding:4px 12px;background:#b8ded2!important;border:1px solid #356354!important;color:#101010!important;cursor:pointer}
+.mezoria.sheet .mezoria-ability-entry{border-bottom:1px solid #d5cbbb;padding:10px 2px}.mezoria.sheet .mezoria-ability-entry:last-child{border:0}
+.mezoria.sheet .mezoria-ability-entry-main{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.mezoria.sheet .mezoria-ability-entry p{margin:5px 0}.mezoria.sheet .mezoria-ability-kind{font-size:11px;color:#4d5c58}.mezoria.sheet .mezoria-ep-count{font-size:12px;font-weight:650}
+.mezoria-ep-dialog{max-height:55vh;overflow-y:auto}.mezoria-ep-category{border-top:1px solid #ccc;padding:8px 0}.mezoria-ep-category h4{margin:4px 0}.mezoria-ep-option{display:flex;gap:8px;margin:6px 0;align-items:baseline}.mezoria-ep-option input{flex:none}.mezoria-ep-option span{flex:1}
