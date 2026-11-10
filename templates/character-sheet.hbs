@@ -110,6 +110,8 @@
   <button type="button" data-tab="attributes" class="{{#if attrTabActive}}active{{/if}}">Attributes and Status</button>
   <button type="button" data-tab="skills" class="{{#if skillsTabActive}}active{{/if}}">Skills</button>
    <button type="button" data-tab="abilities" class="{{#if abilitiesTabActive}}active{{/if}}">Mark Abilities</button>
+  <button type="button" data-tab="inventory" class="{{#if inventoryTabActive}}active{{/if}}">Inventory</button>
+  <button type="button" data-tab="resistances" class="{{#if resistancesTabActive}}active{{/if}}">Resistances</button>
  </nav>
  {{#unless creationComplete}}<p class="mezoria-warning mezoria-incomplete">Character creation is not finished. Click the + button above to continue.</p>{{/unless}}
  {{#if sheetAttributes}}
@@ -326,6 +328,24 @@
   {{/each}}
  </section>
  {{/if}}
+ {{/if}}
+ {{#if sheetInventory}}
+ <section class="mezoria-tab-panel mezoria-inventory-panel">
+  <h3>Inventory</h3>
+  <nav class="mezoria-inventory-tabs" aria-label="Inventory sections">
+   <button type="button" data-inventory-tab="equipment" class="{{#if inventoryTabEquipment}}active{{/if}}">Equipment</button>
+   <button type="button" data-inventory-tab="treasure" class="{{#if inventoryTabTreasure}}active{{/if}}">Treasure</button>
+  </nav>
+  {{#if inventoryTabEquipment}}
+   <section class="mezoria-inventory-section" aria-label="Equipment"><h4>Equipment</h4><p class="mezoria-note">Equipment inventory will be added here.</p></section>
+  {{/if}}
+  {{#if inventoryTabTreasure}}
+   <section class="mezoria-inventory-section" aria-label="Treasure"><h4>Treasure</h4><p class="mezoria-note">Treasure inventory will be added here.</p></section>
+  {{/if}}
+ </section>
+ {{/if}}
+ {{#if sheetResistances}}
+ <section class="mezoria-tab-panel mezoria-resistances-panel" aria-label="Resistances"></section>
  {{/if}}
  {{/if}}
 </form>
