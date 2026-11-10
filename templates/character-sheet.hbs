@@ -314,7 +314,7 @@
      {{#each abilities}}
       <article class="mezoria-ability-entry">
        <div class="mezoria-ability-entry-main"><strong>{{name}}</strong><span class="mezoria-ability-kind">{{kind}} · Granted · Rank {{rank}}</span></div>
-       <p>{{description}}</p>
+       <p class="mezoria-evolved-description" title="{{description}}"><strong>Current effect:</strong> {{description}}</p>
        <p class="mezoria-ep-count">Unspent EP: {{ep.remaining}} / {{ep.budget}}</p>
        <button type="button" data-spend-ability-ep="{{id}}">Spend EP</button>
       </article>
