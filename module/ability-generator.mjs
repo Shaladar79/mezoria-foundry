@@ -3,11 +3,11 @@
 // This module supports granted Mark of Purpose abilities and test EP purchases.
 // Ability Rank defaults to the character's current Rank (limited to 1–3 in this prototype).
 export const MARK_SECTIONS=[
- {id:"purpose",name:"Mark of Purpose"},
- {id:"specialty",name:"Mark of Specialty"},
- {id:"elements",name:"Mark of Elements"},
- {id:"beast",name:"Mark of the Beast"},
- {id:"eldritch",name:"Eldritch Mark"}
+ {id:"purpose",name:"Mark of Purpose",unlockRank:1},
+ {id:"specialty",name:"Mark of Specialty",unlockRank:2},
+ {id:"elements",name:"Mark of Elements",unlockRank:4},
+ {id:"beast",name:"Mark of the Beast",unlockRank:5},
+ {id:"eldritch",name:"Eldritch Mark",unlockRank:7}
 ];
 export const GRANTED_MARK_ABILITIES={
  defender:[
