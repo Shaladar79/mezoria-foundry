@@ -1,6 +1,6 @@
 # Mezoria Foundry v2 — Ability, Elemental, and Combat Design Decisions
 
-> Approved design record through **Q109**, 2026-11-09. This is design documentation, not an assertion that rules are implemented in Foundry. **Q110 (stacking separate penetration sources) remains open and unapproved.** Later explicit corrections supersede earlier proposals. Also consult [RULES_DECISIONS.md](RULES_DECISIONS.md) for the older foundation and starting-Mark decisions.
+> Approved design record through **Q114**, 2026-11-09. This is design documentation, not an assertion that rules are implemented in Foundry. **Q110–Q114 are now approved.** Later explicit corrections supersede earlier proposals. Also consult [RULES_DECISIONS.md](RULES_DECISIONS.md) for the older foundation and starting-Mark decisions.
 
 ## Scope and earlier approved foundations
 
@@ -213,7 +213,7 @@ An ability deals 20 Physical damage and converts 50% to Fire, producing **10 Phy
 
 ## Decisions still open — do not treat as approved
 
-- **Q110:** Whether different named sources of elemental penetration add, highest-only applies, or purchased/external categories combine differently. **No answer approved.**
+- **Q110–Q114:** Approved below.
 - Exact base Mana cost tables, action costs and durations for many active abilities; later-rank slot limits and Mark aura stacking/progression.
 - Mechanical details and item statistics for specific armor materials/enchantments. Illustrative examples are not canonical item entries.
 - Explicit definitions of penetration sources other than the approved ability enhancement line, and any special exception bypassing layer caps.
@@ -222,3 +222,15 @@ An ability deals 20 Physical damage and converts 50% to Fire, producing **10 Phy
 ## Implementation status
 
 **Decisions documented only.** This file makes no change to Foundry scripts, schemas, equipment data, automation or published builds. Treat these rules as approved *design requirements* awaiting implementation, tests, and any unresolved rulings.
+
+## Addendum — Q110–Q114 approved 2026-11-10
+
+- **Q110 — penetration source stacking:** Different **named** sources of elemental resistance penetration stack **additively** on the relevant element. Multiple instances of the same named effect **do not stack**; use the strongest applicable instance. The added penetration applies in full at each defensive resistance layer reached by surviving damage. This extends the existing distinct-name stacking principle.
+- **Q111 — no overall penetration cap:** Combined penetration has **no independent numerical ceiling**. However, penetration **never reduces effective resistance below 0%** and never amplifies weakness. Excess points against a particular layer have no further effect there.
+- **Q112 — weakness directly changes resistance:** An effect inflicting elemental weakness subtracts its stated **percentage points** directly from the specified defensive layer's elemental resistance. The value may become negative and increases subsequent elemental damage. Standard resistance bounds remain **−100% to +75% per layer**, with explicit special exceptions permitted. Weakness does not inherently bypass mitigation. This is distinct from penetration, which stops at zero.
+- **Q113 — weakness source stacking:** Different named elemental weakness effects affecting the same element **and layer** stack **additively**. Duplicate applications of the same named effect do not stack; use the strongest applicable instance. Apply the layer's approved resistance minimum unless explicitly excepted.
+- **Q114 — resist weakness with ability-specified attribute save:** After a successful application attack or ability check, the target makes a **defensive attribute save specified by that ability**. A successful save **prevents the weakness entirely**; a failed save allows the **full listed weakness** to apply. This does not, by itself, define the attribute for every weakness power, duration, or later repeat saves. Do not infer a partial-effect success, since Q114 expressly specifies full prevention.
+
+### New near-term design scope
+
+**Prioritize playtest-complete ability enhancements for Quartz (Rank 1), Garnet (Rank 2), and Amethyst (Rank 3) before continuing Rank 4–10 design.** Existing EP allocation is Quartz 1, Garnet +2 (3 cumulative), Amethyst +3 (6 cumulative). Existing primary per-success damage enhancement costs/tiers for these ranks remain as above. Do not implement new mechanics or change code without a later explicit instruction. Higher-rank enhancement design is deferred pending the initial playtest.
