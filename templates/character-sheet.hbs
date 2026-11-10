@@ -249,8 +249,13 @@
  {{/if}}
   {{#if sheetSkills}}
  <section class="mezoria-tab-panel mezoria-skills-panel">
-  <h3>Skills</h3>
-  <div class="mezoria-skill-panels">
+  <h3>Skills and Talents</h3>
+   <nav class="mezoria-skills-talents-tabs" aria-label="Skills and Talents sections">
+    <button type="button" data-skills-talents-tab="skills" class="{{#if skillsSubtabActive}}active{{/if}}">Skills</button>
+    <button type="button" data-skills-talents-tab="talents" class="{{#if talentsSubtabActive}}active{{/if}}">Talents</button>
+   </nav>
+   {{#if skillsSubtabActive}}
+   <div class="mezoria-skill-panels">
    <section class="mezoria-skill-panel mezoria-trained-skills" aria-label="Trained Skills">
     <header class="mezoria-skill-panel-title">
      <h4>Trained Skills</h4><span>{{trainedCount}} trained</span>
@@ -303,6 +308,25 @@
     </div>
    </section>
   </div>
+   {{/if}}
+   {{#if talentsSubtabActive}}
+   <section class="mezoria-talents-section" aria-label="Character Talents">
+    <h4>Talents ({{talentCount}})</h4>
+    {{#if talentCount}}
+     <div class="mezoria-talent-list">
+      {{#each talentRows}}
+       <article class="mezoria-talent-row">
+        <header><strong>{{name}}</strong><span>{{source}}</span></header>
+        <p>{{effect}}</p>
+        <small>Governing attribute: {{attribute}}</small>
+       </article>
+      {{/each}}
+     </div>
+    {{else}}
+     <p class="mezoria-note">No granted or purchased talents have been recorded.</p>
+    {{/if}}
+   </section>
+   {{/if}}
  </section>
  {{/if}}
  {{#if sheetAbilities}}
