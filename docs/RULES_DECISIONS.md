@@ -627,3 +627,9 @@ All 48 entries reference approved skills (some skills are shared across Marks). 
 - **Adaptive Insight (active):** temporarily enhances one skill chosen by the Adept, supporting adaptable problem solving. Exact bonus, eligible skills, selection timing, Mana cost, Action Score cost, duration and progression pending.
 - **Aura of Clarity (passive):** provides a small bonus to **noncombat skill checks** for allies within a **2-space radius**. Exact percentage-point bonus, check timing and stacking pending; does not automatically increase combat skill checks.
 - This completes the **initial ability concept roster for all six Marks of Purpose**. Detailed mechanics and the common ability-creation rules will follow. Aura-Control remains separate from passive Mark aura bonuses.
+
+## Ability and elemental combat design record — approved through Q109, 2026-11-09
+
+- The comprehensive subsequent ability, EP, elemental fusion, resistance, armor and penetration decisions are maintained in **[ABILITY_ELEMENTAL_DECISIONS.md](ABILITY_ELEMENTAL_DECISIONS.md)**.
+- Those later decisions supersede contradictory earlier drafts where explicitly noted, including the revised shield-first resistance order and the Q100–Q101 multi-layer penetration carry-through rule.
+- Q110 (stacking penetration from different named sources) remains **unapproved**. These updates document design only; no gameplay implementation is claimed.
