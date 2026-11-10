@@ -87,7 +87,7 @@ export class MezoriaCharacterSheet extends ActorSheet {
    headerMark:system.mark?(mark?.id?.charAt(0).toUpperCase()+mark?.id?.slice(1)||system.mark):"None Selected",headerSubgroup:system.subgroup,showSubgroup:!!subgroupType,subgroupType,
    sheetAttributes:this.sheetTab==="attributes",sheetSkills:this.sheetTab==="skills",sheetAbilities:this.sheetTab==="abilities",
     abilitiesTabActive:this.sheetTab==="abilities",
-    markAbilitySections:MARK_SECTIONS.map(section=>({...section,abilities:section.id==="purpose"?generatedMarkAbilities(system.mark).map(a=>{const purchased=this.actor.getFlag("mezoria-foundry","epPurchases")?.[a.id]||{};return {...a,baseDescription:a.description,description:evolvedAbilityDescription(a,purchased),ep:eligibleOptions(a,Math.min(3,Number(system.rank)||1),purchased),rank:Math.min(3,Number(system.rank)||1)};}):[],isPurpose:section.id==="purpose"})),
+    markAbilitySections:MARK_SECTIONS.filter(section=>(Number(system.rank)||1)>=section.unlockRank).map(section=>({...section,abilities:section.id==="purpose"?generatedMarkAbilities(system.mark).map(a=>{const purchased=this.actor.getFlag("mezoria-foundry","epPurchases")?.[a.id]||{};return {...a,baseDescription:a.description,description:evolvedAbilityDescription(a,purchased),ep:eligibleOptions(a,Math.min(3,Number(system.rank)||1),purchased),rank:Math.min(3,Number(system.rank)||1)};}):[],isPurpose:section.id==="purpose"})),
    attrTabActive:this.sheetTab==="attributes",skillsTabActive:this.sheetTab==="skills",
    attributes:derived.scores,status:derived.status,trainedSkills,skillAttributeTabs,attributeSkills,
    selectedSkillAttribute:this.skillAttributeTab,
