@@ -3,6 +3,7 @@
 Design decisions are now grouped by subject to make rules development and a future tabletop rulebook easier to navigate.
 
 - [Rules Decisions](RULES_DECISIONS.md) — game foundation, skills, combat, defenses, damage, movement, and unresolved rules.
+- [Ability and Elemental Decisions](ABILITY_ELEMENTAL_DECISIONS.md) — approved ability creation, enhancement progression, advanced elements, armor resistances, and penetration through Q109 (Q110 pending).
 - [Race Decisions](RACE_DECISIONS.md) — racial roster and a readable guide to racial features.
 - [Background Decisions](BACKGROUND_DECISIONS.md) — the background framework, selection history, and approved Common backgrounds.
 
