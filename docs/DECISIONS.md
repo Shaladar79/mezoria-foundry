@@ -4,7 +4,8 @@ Design decisions are now grouped by subject to make rules development and a futu
 
 - [Rules Decisions](RULES_DECISIONS.md) — game foundation, skills, combat, defenses, damage, movement, and unresolved rules.
 - [Ability and Elemental Decisions](ABILITY_ELEMENTAL_DECISIONS.md) — approved ability creation, enhancement progression, advanced elements, armor resistances, and penetration through Q155; Defender follow-up decisions are in the dedicated Defender document.
-- [Defender Rank 1–3 Ability Design](DEFENDER_RANK_1_3_DESIGN.md) — approved Defender roster, generic abilities, specialization premades, and EP enhancements through Q302 (higher-rank cost decisions deferred).
+- [Defender Rank 1–3 Ability Design](DEFENDER_RANK_1_3_DESIGN.md) — historical Defender roster, premade abilities, and decisions through Q302; later revisions in the enhancement decision record supersede conflicting values.
+- [Rank 1–3 Enhancement Decisions through Q439](ENHANCEMENT_DECISIONS_Q327_Q439.md) — current Basic/Specialized EP progression and compatibility, finalized Defender and Relentless Assault enhancement assignments, historical exceptions, and outstanding verification. **Use this newer record where prior Defender enhancement values conflict. Q440 remains unapproved.**
 - [Race Decisions](RACE_DECISIONS.md) — racial roster and a readable guide to racial features.
 - [Background Decisions](BACKGROUND_DECISIONS.md) — the background framework, selection history, and approved Common backgrounds.
 
