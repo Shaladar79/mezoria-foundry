@@ -8,6 +8,7 @@ Design decisions are now grouped by subject to make rules development and a futu
 - [Rank 1–3 Enhancement Decisions through Q439](ENHANCEMENT_DECISIONS_Q327_Q439.md) — current Basic/Specialized EP progression and compatibility, finalized Defender and Relentless Assault enhancement assignments, historical exceptions, and outstanding verification. **Use this newer record where prior Defender enhancement values conflict. Q440 remains unapproved.**
 - [Overwhelming Assault — Generic Striker (Q451–Q498)](STRIKER_OVERWHELMING_ASSAULT_Q451_Q498.md) — approved base ability, Basic Damage/Accuracy, Shattering Blow, Deep Wound, Bleeding treatment and activation rules; documentation only.
 - [Siphoning Strike — Striker Reaver Precursor (Q499–Q526)](STRIKER_SIPHONING_STRIKE_Q499_Q526.md) — approved base ability, Vitae Barrier, Greater Siphon, Basic compatibility and open decisions; design documentation only.
+- [Pinning Shot — Striker Marksman Precursor (Q527–Q561)](STRIKER_PINNING_SHOT_Q527_Q561.md) — approved Rank 1–3 attack, Reinforced Pinning, Suppressing Shot, immobilization, escapes, stacking and Basic compatibility; Q562 and other unanswered Basics remain open; documentation only.
 - [Race Decisions](RACE_DECISIONS.md) — racial roster and a readable guide to racial features.
 - [Background Decisions](BACKGROUND_DECISIONS.md) — the background framework, selection history, and approved Common backgrounds.
 
